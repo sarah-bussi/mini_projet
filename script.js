@@ -1,5 +1,13 @@
 (() => {
   const root = document.documentElement;
+
+  if (!document.querySelector('link[href="modals.css"]')) {
+    const modalStyles = document.createElement('link');
+    modalStyles.rel = 'stylesheet';
+    modalStyles.href = 'modals.css';
+    document.head.appendChild(modalStyles);
+  }
+
   const themeButton = document.getElementById('theme-toggle');
   const themeLabel = themeButton?.querySelector('.theme-toggle-label');
   const savedTheme = localStorage.getItem('portfolio-theme');
@@ -47,6 +55,35 @@
       if (filterStatus) {
         filterStatus.textContent = `${visibleCount} projet${visibleCount > 1 ? 's' : ''} affiché${visibleCount > 1 ? 's' : ''}.`;
       }
+    });
+  });
+
+  let opener = null;
+  const dialogButtons = [...document.querySelectorAll('[data-dialog]')];
+  const dialogs = [...document.querySelectorAll('dialog.project-dialog')];
+
+  dialogButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const dialog = document.getElementById(button.dataset.dialog);
+      if (!(dialog instanceof HTMLDialogElement)) return;
+      opener = button;
+      dialog.showModal();
+      dialog.querySelector('[data-close]')?.focus();
+    });
+  });
+
+  dialogs.forEach((dialog) => {
+    dialog.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('click', (event) => {
+      const rect = dialog.getBoundingClientRect();
+      const isBackdrop = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      if (isBackdrop) dialog.close();
+    });
+
+    dialog.addEventListener('close', () => {
+      if (opener instanceof HTMLElement) opener.focus();
+      opener = null;
     });
   });
 
