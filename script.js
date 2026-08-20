@@ -1,1 +1,55 @@
-const root=document.documentElement,toggle=document.querySelector('#theme');const saved=localStorage.getItem('theme');if(saved){root.dataset.theme=saved;toggle.setAttribute('aria-pressed',saved==='dark');toggle.textContent=saved==='dark'?'Mode clair':'Mode sombre'}toggle.addEventListener('click',()=>{const dark=root.dataset.theme!=='dark';root.dataset.theme=dark?'dark':'light';localStorage.setItem('theme',root.dataset.theme);toggle.setAttribute('aria-pressed',dark);toggle.textContent=dark?'Mode clair':'Mode sombre'});const filters=[...document.querySelectorAll('.filter')],projects=[...document.querySelectorAll('.project[data-tags]')],status=document.querySelector('#status');filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});btn.classList.add('active');btn.setAttribute('aria-pressed','true');const f=btn.dataset.filter;let n=0;projects.forEach(p=>{const show=f==='all'||p.dataset.tags.split(' ').includes(f);p.classList.toggle('hidden',!show);if(show)n++});status.textContent=`${n} projets affichés`;}));
+(() => {
+  const root = document.documentElement;
+  const themeButton = document.getElementById('theme-toggle');
+  const themeLabel = themeButton?.querySelector('.theme-toggle-label');
+  const savedTheme = localStorage.getItem('portfolio-theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    const isDark = theme === 'dark';
+    if (themeButton) {
+      themeButton.setAttribute('aria-pressed', String(isDark));
+      themeButton.setAttribute('aria-label', isDark ? 'Activer le mode clair' : 'Activer le mode sombre');
+    }
+    if (themeLabel) themeLabel.textContent = isDark ? 'Contraste clair' : 'Contraste sombre';
+  };
+
+  applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+
+  themeButton?.addEventListener('click', () => {
+    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+    localStorage.setItem('portfolio-theme', nextTheme);
+  });
+
+  const filterButtons = [...document.querySelectorAll('.filter-button')];
+  const projectCards = [...document.querySelectorAll('.project-card[data-tags]')];
+  const filterStatus = document.getElementById('filter-status');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter || 'all';
+      filterButtons.forEach((candidate) => {
+        const active = candidate === button;
+        candidate.classList.toggle('is-active', active);
+        candidate.setAttribute('aria-pressed', String(active));
+      });
+
+      let visibleCount = 0;
+      projectCards.forEach((card) => {
+        const tags = (card.dataset.tags || '').split(' ');
+        const visible = filter === 'all' || tags.includes(filter);
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      if (filterStatus) {
+        filterStatus.textContent = `${visibleCount} projet${visibleCount > 1 ? 's' : ''} affiché${visibleCount > 1 ? 's' : ''}.`;
+      }
+    });
+  });
+
+  const year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
