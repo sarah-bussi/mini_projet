@@ -177,15 +177,15 @@ SNCF Connect & Tech`;
   const applyTheme = (theme) => {
     root.dataset.theme = theme;
     const isDark = theme === 'dark';
-    if (themeButton) {
-      themeButton.setAttribute('aria-pressed', String(isDark));
-      themeButton.setAttribute('aria-label', isEnglish
-        ? (isDark ? 'Switch to light mode' : 'Switch to dark mode')
-        : (isDark ? 'Activer le mode clair' : 'Activer le mode sombre'));
-    }
-    if (themeLabel) themeLabel.textContent = isEnglish
+    const visibleThemeLabel = isEnglish
       ? (isDark ? 'Light mode' : 'Dark mode')
       : (isDark ? 'Contraste clair' : 'Contraste sombre');
+    if (themeLabel) themeLabel.textContent = visibleThemeLabel;
+    if (themeButton) {
+      themeButton.setAttribute('aria-label', isEnglish
+        ? `${visibleThemeLabel}: switch to ${isDark ? 'light' : 'dark'} mode`
+        : `${visibleThemeLabel} : activer le mode ${isDark ? 'clair' : 'sombre'}`);
+    }
   };
 
   applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
@@ -233,9 +233,9 @@ SNCF Connect & Tech`;
           <p>Professional recommendations from people who directly supervised or worked with me. Audrey Gambs' recommendation is available below in a concise English version.</p>
         </div>
         <div class="recommendations-grid" aria-label="Professional recommendations">
-          <article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité - SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation</button></article>
-          <article class="recommender-card"><p class="recommender-role">Digital accessibility expert</p><h3>Accessibility expertise</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">View details</button></article>
-          <article class="recommender-card"><p class="recommender-role">Senior manager</p><h3>Management & product perspective</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">View details</button></article>
+          <article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité - SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Digital accessibility expert</p><h3>Accessibility expertise</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">View details<span class="sr-only"> for the digital accessibility expert recommendation</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Senior manager</p><h3>Management & product perspective</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">View details<span class="sr-only"> for the senior manager recommendation</span></button></article>
         </div>
         <p class="recommendation-note">Phone numbers are not published. Professional email and LinkedIn links will only be displayed with each signatory's consent.</p>` : `
         <div class="section-heading">
@@ -244,9 +244,9 @@ SNCF Connect & Tech`;
           <p>Des recommandations de personnes ayant directement encadré ou travaillé avec moi. La lettre complète d'Audrey Gambs est disponible ci-dessous.</p>
         </div>
         <div class="recommendations-grid" aria-label="Recommandations professionnelles">
-          <article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité - SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète</button></article>
-          <article class="recommender-card"><p class="recommender-role">Expert accessibilité numérique</p><h3>Expertise accessibilité</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">Voir le détail</button></article>
-          <article class="recommender-card"><p class="recommender-role">Responsable N+1</p><h3>Encadrement & vision produit</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Voir le détail</button></article>
+          <article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité - SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Expert accessibilité numérique</p><h3>Expertise accessibilité</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">Voir le détail<span class="sr-only"> de la recommandation de l’expert accessibilité numérique</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Responsable N+1</p><h3>Encadrement & vision produit</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Voir le détail<span class="sr-only"> de la recommandation du responsable N+1</span></button></article>
         </div>
         <p class="recommendation-note">Les numéros de téléphone ne sont pas publiés. L'email professionnel et LinkedIn ne seront affichés qu'avec l'accord de chaque signataire.</p>
         <div class="testimonial-subsection"><p class="eyebrow">Témoignages de collègues</p><div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Un questionnaire court permet de partager quelques phrases sur notre collaboration. Les coordonnées de vérification restent privées et aucun témoignage n'est publié automatiquement.</p></div><a class="button button-secondary" href="recommandation.html">Laisser un témoignage</a></div></div>`;
@@ -259,22 +259,31 @@ SNCF Connect & Tech`;
         <p class="privacy-note">${isEnglish ? 'Professional contact details will only be published with the signatory’s consent. No phone number is displayed.' : "Les coordonnées professionnelles ne seront publiées qu'avec l'accord de la signataire. Aucun numéro de téléphone n'est affiché."}</p>
         <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, 'Audrey Gambs')}</div>
       </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-expert-title">${isEnglish ? 'Digital accessibility expert' : 'Expert accessibilité numérique'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close recommendation' : 'Fermer la recommandation'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-nplus1-title">${isEnglish ? 'Senior manager' : 'Responsable N+1'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close recommendation' : 'Fermer la recommandation'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>`);
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-expert-title">${isEnglish ? 'Digital accessibility expert' : 'Expert accessibilité numérique'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close the digital accessibility expert recommendation' : 'Fermer la recommandation de l’expert accessibilité numérique'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-nplus1-title">${isEnglish ? 'Senior manager' : 'Responsable N+1'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close the senior manager recommendation' : 'Fermer la recommandation du responsable N+1'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>`);
   }
 
-  let opener = null;
+  const dialogOpeners = new WeakMap();
   const dialogButtons = [...document.querySelectorAll('[data-dialog]')];
   const dialogs = [...document.querySelectorAll('dialog.project-dialog')];
+
   dialogButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const dialog = document.getElementById(button.dataset.dialog);
-      if (!(dialog instanceof HTMLDialogElement)) return;
-      opener = button;
+    const dialog = document.getElementById(button.dataset.dialog);
+    if (!(dialog instanceof HTMLDialogElement)) return;
+
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.setAttribute('aria-controls', dialog.id);
+    button.addEventListener('click', (event) => {
+      const trigger = event.currentTarget;
+      if (!(trigger instanceof HTMLElement) || dialog.open) return;
+      dialogOpeners.set(dialog, trigger);
       dialog.showModal();
-      dialog.querySelector('[data-close]')?.focus();
+      window.requestAnimationFrame(() => {
+        if (dialog.open) dialog.querySelector('[data-close]')?.focus({ preventScroll: true });
+      });
     });
   });
+
   dialogs.forEach((dialog) => {
     dialog.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
     dialog.addEventListener('click', (event) => {
@@ -283,8 +292,13 @@ SNCF Connect & Tech`;
       if (isBackdrop) dialog.close();
     });
     dialog.addEventListener('close', () => {
-      if (opener instanceof HTMLElement) opener.focus();
-      opener = null;
+      const trigger = dialogOpeners.get(dialog);
+      dialogOpeners.delete(dialog);
+      window.requestAnimationFrame(() => {
+        if (trigger instanceof HTMLElement && trigger.isConnected && !document.querySelector('dialog[open]')) {
+          trigger.focus();
+        }
+      });
     });
   });
 
