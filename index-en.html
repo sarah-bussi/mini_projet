@@ -7,7 +7,7 @@
   <title>Sarah Bussi — Digital Accessibility, Inclusive UX & Product Quality</title>
   <link rel="stylesheet" href="styles.css?v=20260821-2">
   <link rel="stylesheet" href="assets/icons/icons.css">
-  <link rel="stylesheet" href="modals.css">
+  <link rel="stylesheet" href="modals.css?v=20260821-2">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to main content</a>
@@ -53,7 +53,51 @@
 
 <dialog class="project-dialog dialog-brasvo" id="dialog-brasvo" aria-labelledby="dialog-brasvo-title"><div class="dialog-head"><div><p class="eyebrow">Collaborative project · 2026</p><h2 id="dialog-brasvo-title">BRA(S)VO</h2></div><button class="dialog-close" type="button" data-close aria-label="Close the BRA(S)VO project details">×</button></div><div class="dialog-media dialog-media-contain dialog-media-wire" aria-hidden="true"><span class="dialog-media-label">Connected orthosis · Sensors · BLE</span><img src="assets/illustration-brasvo-orthosis.webp" alt="" width="900" height="675" loading="lazy" decoding="async"></div><div class="dialog-grid"><section><h3>Objective</h3><p>Design a hand rehabilitation solution combining an instrumented orthosis, a mobile application and therapeutic mini-games for patient follow-up.</p><h3>Solution</h3><p>Flexion sensors, pressure sensors and an IMU transmit data over BLE. The application uses these values in the games and separates patient and therapist needs.</p></section><aside><h3>Skills used</h3><ul class="modal-skills"><li>Flutter</li><li>Dart</li><li>BLE</li><li>ESP32</li><li>Sensors</li><li>Mobile UX</li><li>Gamification</li><li>Git</li></ul></aside></div><h3>Design challenges</h3><p>Orthosis comfort, sensor calibration, connection persistence, data comprehension, motivation and home use.</p></dialog>
 
-<dialog class="project-dialog dialog-spy" id="dialog-spy" aria-labelledby="dialog-spy-title"><div class="dialog-head"><div><p class="eyebrow">Game accessibility · 2025</p><h2 id="dialog-spy-title">SPY</h2></div><button class="dialog-close" type="button" data-close aria-label="Close the SPY project details">×</button></div><div class="dialog-grid"><section><h3>Objective</h3><p>Identify accessibility barriers in an educational game and propose practical improvements based on the Game Accessibility Guidelines.</p><h3>Areas for improvement</h3><ul><li>Block movement guidance</li><li>Sensitivity settings</li><li>Larger interface elements</li><li>Slower animations and execution</li><li>High-contrast visual themes</li></ul></section><aside><h3>Skills used</h3><ul class="modal-skills"><li>Expert audit</li><li>Game Accessibility Guidelines</li><li>Figma</li><li>UX</li><li>Cognitive analysis</li><li>Prototyping</li></ul></aside></div></dialog>
+<dialog class="project-dialog dialog-spy" id="dialog-spy" aria-labelledby="dialog-spy-title">
+  <div class="dialog-head">
+    <div><p class="eyebrow">Game accessibility · 2025</p><h2 id="dialog-spy-title">SPY</h2></div>
+    <button class="dialog-close" type="button" data-close aria-label="Close the SPY project details">×</button>
+  </div>
+  <div class="dialog-grid">
+    <section>
+      <h3>Context</h3>
+      <p>SPY is an open-source serious game developed by the Mocah team at LIP6 to introduce primary-school learners to computational thinking and programming. It includes 6 scenarios, 59 levels, a level editor and a scenario editor.</p>
+
+      <h3>Audit approach</h3>
+      <p>As part of a three-student project, the interface was reviewed using the Game Accessibility Guidelines. The assessment covered six categories of needs — motor, cognitive, visual, hearing, speech and general — across the basic, intermediate and advanced recommendation levels.</p>
+
+      <h3>Findings and design responses</h3>
+      <ol class="dialog-findings">
+        <li><strong>Moving programming blocks:</strong> the available interactions were not sufficiently explicit. We proposed visual and written guidance covering alternatives including keyboard, mouse, joystick and eye-control input.</li>
+        <li><strong>Interaction precision:</strong> selecting and moving elements could require fine motor control. We proposed adjustable mouse and touchpad sensitivity.</li>
+        <li><strong>Interface element size:</strong> some components were small and difficult to identify or manipulate. We proposed a global interface-size setting.</li>
+        <li><strong>Execution speed:</strong> program actions could be difficult to follow. We proposed adjustable slow playback to support understanding of the relationship between an action and its outcome.</li>
+        <li><strong>Contrast and colour:</strong> one audited colour combination had a 2.98:1 contrast ratio. We proposed alternative themes with stronger contrast and a calmer palette.</li>
+      </ol>
+
+      <h3>Project outcome</h3>
+      <p class="dialog-result">The team produced an assessment matrix, a requirements report and six solution mock-ups. The improvements were designed and prototyped but were not implemented in the game’s source code.</p>
+
+      <ul class="dialog-links" role="list" aria-label="Links to the SPY project">
+        <li><a href="https://spy.lip6.fr/index_fr.html" target="_blank" rel="noopener">Open the SPY game — new tab</a></li>
+        <li><a href="https://github.com/Mocahteam/SPY" target="_blank" rel="noopener">View the SPY source code — new tab</a></li>
+      </ul>
+    </section>
+    <aside>
+      <h3>At a glance</h3>
+      <dl class="dialog-facts">
+        <div><dt>Format</dt><dd>Three-student university project</dd></div>
+        <div><dt>Target audience</dt><dd>Primary-school learners</dd></div>
+        <div><dt>Technology reviewed</dt><dd>Unity · FYFY · WebGL</dd></div>
+        <div><dt>Deliverables</dt><dd>Audit · Requirements report · 6 mock-ups</dd></div>
+      </dl>
+      <h3>Skills demonstrated</h3>
+      <ul class="modal-skills" role="list">
+        <li>Expert review</li><li>Game Accessibility Guidelines</li><li>Cognitive analysis</li><li>Motor and visual accessibility</li><li>Inclusive UX</li><li>Figma</li><li>Prototyping</li><li>Recommendation writing</li><li>Teamwork</li>
+      </ul>
+    </aside>
+  </div>
+</dialog>
 
 <dialog class="project-dialog dialog-site" id="dialog-site" aria-labelledby="dialog-site-title"><div class="dialog-head"><div><p class="eyebrow">Accessible web · 2025</p><h2 id="dialog-site-title">Accessible non-profit website</h2></div><button class="dialog-close" type="button" data-close aria-label="Close the accessible non-profit website project details">×</button></div><div class="dialog-grid"><section><h3>Objective</h3><p>Redesign a non-profit website to improve access to information, navigation and content maintenance.</p><h3>Approach</h3><p>Needs analysis, information architecture, mock-ups, responsive development, dynamic content and an administration interface.</p></section><aside><h3>Skills used</h3><ul class="modal-skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Responsive design</li><li>Web accessibility</li><li>Information architecture</li></ul></aside></div></dialog>
 

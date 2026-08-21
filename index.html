@@ -7,7 +7,7 @@
   <title>Sarah Bussi — Accessibilité numérique, UX inclusive & qualité produit</title>
   <link rel="stylesheet" href="styles.css?v=20260821-2">
   <link rel="stylesheet" href="assets/icons/icons.css">
-  <link rel="stylesheet" href="modals.css">
+  <link rel="stylesheet" href="modals.css?v=20260821-2">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -61,7 +61,51 @@
 
 <dialog class="project-dialog dialog-brasvo" id="dialog-brasvo" aria-labelledby="dialog-brasvo-title"><div class="dialog-head"><div><p class="eyebrow">Projet collaboratif · 2026</p><h2 id="dialog-brasvo-title">BRA(S)VO</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche BRA(S)VO">×</button></div><div class="dialog-media dialog-media-contain dialog-media-wire" aria-hidden="true"><span class="dialog-media-label">Orthèse connectée · Capteurs · BLE</span><img src="assets/illustration-brasvo-orthosis.webp" alt="" width="900" height="675" loading="lazy" decoding="async"></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Proposer une solution de rééducation de la main combinant une orthèse instrumentée, une application mobile et des mini-jeux thérapeutiques utilisables dans le suivi patient.</p><h3>Solution</h3><p>Les capteurs de flexion, de pression et l'IMU transmettent leurs données en BLE. L'application exploite ces valeurs dans les jeux et sépare les besoins patient et thérapeute.</p></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>Flutter</li><li>Dart</li><li>BLE</li><li>ESP32</li><li>Capteurs</li><li>UX mobile</li><li>Gamification</li><li>Git</li></ul></aside></div><h3>Enjeux de conception</h3><p>Confort de l'orthèse, calibration des capteurs, persistance de la connexion, compréhension des données, motivation et usage à domicile.</p></dialog>
 
-<dialog class="project-dialog dialog-spy" id="dialog-spy" aria-labelledby="dialog-spy-title"><div class="dialog-head"><div><p class="eyebrow">Game accessibility · 2025</p><h2 id="dialog-spy-title">SPY</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche SPY">×</button></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Identifier les obstacles d'accessibilité d'un jeu éducatif et proposer des solutions concrètes à partir des Game Accessibility Guidelines.</p><h3>Axes d'amélioration</h3><ul><li>Guide de déplacement des blocs</li><li>Réglage de la sensibilité</li><li>Augmentation de la taille des éléments</li><li>Ralentissement des animations et de l'exécution</li><li>Thèmes visuels avec contraste renforcé</li></ul></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>Audit expert</li><li>Game Accessibility Guidelines</li><li>Figma</li><li>UX</li><li>Analyse cognitive</li><li>Maquettage</li></ul></aside></div></dialog>
+<dialog class="project-dialog dialog-spy" id="dialog-spy" aria-labelledby="dialog-spy-title">
+  <div class="dialog-head">
+    <div><p class="eyebrow">Game accessibility · 2025</p><h2 id="dialog-spy-title">SPY</h2></div>
+    <button class="dialog-close" type="button" data-close aria-label="Fermer la fiche SPY">×</button>
+  </div>
+  <div class="dialog-grid">
+    <section>
+      <h3>Contexte</h3>
+      <p>SPY est un jeu sérieux open source développé par l’équipe Mocah du LIP6 pour initier les élèves du primaire à la pensée informatique et à la programmation. Le jeu propose 6 scénarios, 59 niveaux ainsi que des éditeurs de niveaux et de scénarios.</p>
+
+      <h3>Démarche d’audit</h3>
+      <p>Dans le cadre d’un projet réalisé par trois étudiantes, l’interface a été analysée avec la grille des <span lang="en">Game Accessibility Guidelines</span>. L’étude a pris en compte six catégories de besoins — moteur, cognitif, visuel, auditif, parole et général — et les trois niveaux de recommandations : basique, intermédiaire et avancé.</p>
+
+      <h3>Constats et réponses de conception</h3>
+      <ol class="dialog-findings">
+        <li><strong>Déplacement des blocs :</strong> les interactions possibles étaient peu explicites. Proposition d’un guide visuel et textuel présentant les alternatives de manipulation, notamment au clavier, à la souris, au joystick ou par commande oculaire.</li>
+        <li><strong>Précision des interactions :</strong> la sélection et le déplacement pouvaient demander une forte précision. Proposition d’un réglage de sensibilité pour la souris et le pavé tactile.</li>
+        <li><strong>Taille des éléments :</strong> certains composants étaient petits et difficiles à distinguer ou à manipuler. Proposition d’un réglage global de la taille de l’interface.</li>
+        <li><strong>Vitesse d’exécution :</strong> les actions du programme pouvaient être difficiles à suivre. Proposition d’un ralentissement ajustable pour soutenir la compréhension du lien entre action et résultat.</li>
+        <li><strong>Contrastes et couleurs :</strong> une combinaison auditée présentait un contraste de 2,98:1. Proposition de thèmes alternatifs avec contrastes renforcés et palette plus sobre.</li>
+      </ol>
+
+      <h3>Résultat du projet</h3>
+      <p class="dialog-result">Production d’une matrice d’analyse, d’un cahier des charges et de six maquettes de solutions. Les améliorations ont été conçues et prototypées ; elles n’ont pas été intégrées au code source du jeu.</p>
+
+      <ul class="dialog-links" role="list" aria-label="Liens vers le projet SPY">
+        <li><a href="https://spy.lip6.fr/index_fr.html" target="_blank" rel="noopener">Ouvrir le jeu SPY — nouvel onglet</a></li>
+        <li><a href="https://github.com/Mocahteam/SPY" target="_blank" rel="noopener">Voir le code source du jeu SPY — nouvel onglet</a></li>
+      </ul>
+    </section>
+    <aside>
+      <h3>Repères</h3>
+      <dl class="dialog-facts">
+        <div><dt>Format</dt><dd>Projet universitaire en équipe de 3</dd></div>
+        <div><dt>Public étudié</dt><dd>Élèves du primaire</dd></div>
+        <div><dt>Technologie analysée</dt><dd>Unity · FYFY · WebGL</dd></div>
+        <div><dt>Livrables</dt><dd>Audit · Cahier des charges · 6 maquettes</dd></div>
+      </dl>
+      <h3>Compétences mobilisées</h3>
+      <ul class="modal-skills" role="list">
+        <li>Audit expert</li><li><span lang="en">Game Accessibility Guidelines</span></li><li>Analyse cognitive</li><li>Accessibilité motrice et visuelle</li><li>UX inclusive</li><li>Figma</li><li>Maquettage</li><li>Rédaction de recommandations</li><li>Travail en équipe</li>
+      </ul>
+    </aside>
+  </div>
+</dialog>
 
 <dialog class="project-dialog dialog-site" id="dialog-site" aria-labelledby="dialog-site-title"><div class="dialog-head"><div><p class="eyebrow">Web accessible · 2025</p><h2 id="dialog-site-title">Site associatif accessible</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche du site associatif">×</button></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Repenser un site associatif pour faciliter l'accès à l'information, la navigation et la mise à jour des contenus.</p><h3>Démarche</h3><p>Recueil des besoins, arborescence, maquettes, développement responsive, contenus dynamiques et interface d'administration.</p></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Responsive</li><li>Accessibilité web</li><li>Architecture de l'information</li></ul></aside></div></dialog>
 
