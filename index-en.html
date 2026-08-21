@@ -7,7 +7,7 @@
   <title>Sarah Bussi — Digital Accessibility, Inclusive UX & Product Quality</title>
   <link rel="stylesheet" href="styles.css?v=20260821-2">
   <link rel="stylesheet" href="assets/icons/icons.css">
-  <link rel="stylesheet" href="modals.css?v=20260821-4">
+  <link rel="stylesheet" href="modals.css?v=20260821-5">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to main content</a>
@@ -75,7 +75,118 @@
 
 <dialog class="project-dialog dialog-a11y" id="dialog-a11y" aria-labelledby="dialog-a11y-title"><div class="dialog-head"><div><p class="eyebrow">Master's thesis · 2026</p><h2 id="dialog-a11y-title">A11y Copilot</h2></div><button class="dialog-close" type="button" data-close aria-label="Close the A11y Copilot project details">×</button></div><div class="dialog-grid"><section><h3>Problem statement</h3><p>How can product teams find the relevant accessibility references and turn them into understandable recommendations without presenting an LLM as a tool that can automatically declare compliance?</p><h3>Approach</h3><p>User research, retrieval strategy benchmarking, reranking, LLM generation, deterministic safeguards and semantic review. The scenarios address the needs of designers, developers and QA teams.</p></section><aside><h3>Skills used</h3><ul class="modal-skills"><li>RGAA</li><li>Python</li><li>RAG</li><li>Prompt engineering</li><li>LLM evaluation</li><li>User research</li><li>Product tool design</li></ul></aside></div><h3>What the project demonstrates</h3><p>The ability to connect standards expertise, product needs, evaluation and AI prototyping with explicit safeguards.</p></dialog>
 
-<dialog class="project-dialog dialog-brasvo" id="dialog-brasvo" aria-labelledby="dialog-brasvo-title"><div class="dialog-head"><div><p class="eyebrow">Collaborative project · 2026</p><h2 id="dialog-brasvo-title">BRA(S)VO</h2></div><button class="dialog-close" type="button" data-close aria-label="Close the BRA(S)VO project details">×</button></div><div class="dialog-media dialog-media-contain dialog-media-wire" aria-hidden="true"><span class="dialog-media-label">Connected orthosis · Sensors · BLE</span><img src="assets/illustration-brasvo-orthosis.webp" alt="" width="900" height="675" loading="lazy" decoding="async"></div><div class="dialog-grid"><section><h3>Objective</h3><p>Design a hand rehabilitation solution combining an instrumented orthosis, a mobile application and therapeutic mini-games for patient follow-up.</p><h3>Solution</h3><p>Flexion sensors, pressure sensors and an IMU transmit data over BLE. The application uses these values in the games and separates patient and therapist needs.</p></section><aside><h3>Skills used</h3><ul class="modal-skills"><li>Flutter</li><li>Dart</li><li>BLE</li><li>ESP32</li><li>Sensors</li><li>Mobile UX</li><li>Gamification</li><li>Git</li></ul></aside></div><h3>Design challenges</h3><p>Orthosis comfort, sensor calibration, connection persistence, data comprehension, motivation and home use.</p></dialog>
+<dialog class="project-dialog dialog-brasvo" id="dialog-brasvo" aria-labelledby="dialog-brasvo-title">
+  <div class="dialog-head">
+    <div><p class="eyebrow">Collaborative project · 2026</p><h2 id="dialog-brasvo-title">BRA(S)VO</h2></div>
+    <button class="dialog-close" type="button" data-close aria-label="Close the BRA(S)VO project details">×</button>
+  </div>
+
+  <div class="dialog-media dialog-media-contain dialog-media-wire" aria-hidden="true">
+    <span class="dialog-media-label">Connected orthosis · Sensors · BLE</span>
+    <img src="assets/illustration-brasvo-orthosis.webp" alt="" width="900" height="675" loading="lazy" decoding="async">
+  </div>
+
+  <div class="dialog-grid">
+    <section>
+      <h3>Problem addressed</h3>
+      <p>Hand rehabilitation can feel repetitive, demotivating and difficult to continue at home. Patients receive little immediate feedback about their progress, while therapists need objective measurements to adapt exercises.</p>
+
+      <h3>Designed solution</h3>
+      <p>BRA(S)VO combines an instrumented orthosis, a Flutter application and five therapeutic mini-games. The prototype targets people with impaired hand mobility, particularly following a stroke or with Dupuytren’s disease, together with the occupational and physical therapists supporting them.</p>
+
+      <h3>My contribution</h3>
+      <ul class="brasvo-task-list">
+        <li><strong>Development lead</strong> within a multidisciplinary five-person team.</li>
+        <li>Co-development of the Flutter application with Hocine.</li>
+        <li>Integration of sensor data into the games with Marie-Ly.</li>
+        <li>Contribution to functional decisions, user testing, feedback analysis and shared deliverables.</li>
+      </ul>
+
+      <h3>Functional architecture</h3>
+      <ol class="dialog-findings">
+        <li><strong>Orthosis:</strong> five flex sensors measure finger range, five FSR sensors measure pressure and an IMU tracks hand orientation and movement.</li>
+        <li><strong>Embedded electronics:</strong> an ESP32 collects measurements and sends them over Bluetooth Low Energy through CircuitPython firmware.</li>
+        <li><strong>Application:</strong> Flutter rebuilds occasionally fragmented BLE frames, extracts values, normalises them and applies the thresholds used by the games.</li>
+        <li><strong>Data:</strong> an eight-table local SQLite database stores accounts, sessions, scores, sensor readings, appointments and messages offline.</li>
+      </ol>
+
+      <h3>Two complementary journeys</h3>
+      <div class="brasvo-modes">
+        <article>
+          <h4>Patient mode</h4>
+          <ul>
+            <li>Daily session and mini-games</li>
+            <li>Results, badges and progress</li>
+            <li>History and regularity</li>
+            <li>Messages and BLE connection</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Therapist mode</h4>
+          <ul>
+            <li>Patient dashboard</li>
+            <li>Session planning</li>
+            <li>Game selection and adaptation</li>
+            <li>Remote monitoring and messaging</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Five developed mini-games</h3>
+      <ul class="brasvo-games" role="list">
+        <li><strong>Catch the bubbles</strong><span>FSR pressure, precision, reaction time and progressive difficulty.</span></li>
+        <li><strong>Digital piano</strong><span>Independent flexion of five fingers, rhythm and coordination.</span></li>
+        <li><strong>Magic garden</strong><span>A gesture sequence combining flexion, pressure, pinching and inclination.</span></li>
+        <li><strong>Fill the bottle</strong><span>Simultaneously maintain target pressure and a flexion threshold.</span></li>
+        <li><strong>Balance the ball</strong><span>IMU-based wrist orientation with automatically adapted difficulty.</span></li>
+      </ul>
+
+      <h3>User testing and limitations</h3>
+      <p>A single-session test involved ten M2 students without motor impairments. The prototype was generally perceived as lightweight, playful and engaging, and the approximate 60-second duration per level was considered appropriate. Independent donning, sensor placement and long-term comfort still require improvement.</p>
+      <p class="dialog-result">The tests assessed an initial experience rather than clinical effectiveness. Calibration, solder reliability, BLE stability and incomplete accessibility features still limited full use of the system: BRA(S)VO remains a university prototype, not a validated medical device.</p>
+    </section>
+
+    <aside>
+      <h3>At a glance</h3>
+      <dl class="dialog-facts">
+        <div><dt>Format</dt><dd>M2 project · team of 5</dd></div>
+        <div><dt>My role</dt><dd>Development lead</dd></div>
+        <div><dt>Audience</dt><dd>Patients · occupational therapists · physical therapists</dd></div>
+        <div><dt>Sensors</dt><dd>5 flex · 5 FSR · 1 IMU</dd></div>
+        <div><dt>Technologies</dt><dd>Flutter · Dart · ESP32 · CircuitPython · BLE · SQLite</dd></div>
+        <div><dt>Prototype</dt><dd>2 modes · 5 mini-games · user testing</dd></div>
+      </dl>
+
+      <h3>Skills demonstrated</h3>
+      <ul class="modal-skills" role="list">
+        <li>Flutter</li><li>Dart</li><li>BLE</li><li>ESP32</li><li>CircuitPython</li><li>Sensor integration</li><li>Frame parsing</li><li>Data normalisation</li><li>SQLite</li><li>Healthcare UX</li><li>User testing</li><li>Multidisciplinary teamwork</li>
+      </ul>
+    </aside>
+  </div>
+
+  <section class="brasvo-gallery" aria-labelledby="brasvo-captures-title">
+    <h3 id="brasvo-captures-title">Selected captures</h3>
+    <p class="brasvo-gallery-intro">Four visuals show the progression from the physical prototype to both application journeys and the use of sensor data within an exercise.</p>
+    <div class="brasvo-captures">
+      <figure class="brasvo-capture">
+        <img src="assets/brasvo-prototype-demo.webp" alt="Two views of the prototype: the instrumented orthosis worn on a hand and connected to a smartphone displaying the mini-games." width="1732" height="1190" loading="lazy" decoding="async">
+        <figcaption><strong>Prototype in use</strong><span>Orthosis, sensors, electronics enclosure and application working together.</span></figcaption>
+      </figure>
+      <figure class="brasvo-capture">
+        <img src="assets/brasvo-app-patient.webp" alt="Two patient-mode screens: home with session and goals, followed by tracking for grip strength, range and regularity." width="1600" height="1360" loading="lazy" decoding="async">
+        <figcaption><strong>Patient journey</strong><span>Access a session, understand metrics and visualise progress.</span></figcaption>
+      </figure>
+      <figure class="brasvo-capture">
+        <img src="assets/brasvo-app-therapeute.webp" alt="Two therapist-mode screens: a list of monitored patients and planning a session with several mini-games." width="1530" height="1330" loading="lazy" decoding="async">
+        <figcaption><strong>Therapist journey</strong><span>Monitor patients and prepare personalised sessions.</span></figcaption>
+      </figure>
+      <figure class="brasvo-capture">
+        <img src="assets/brasvo-jeu-bouteille.webp" alt="Three states of the Fill the bottle game showing pressure that is too low, appropriate and then too high." width="2500" height="1050" loading="lazy" decoding="async">
+        <figcaption><strong>Fill the bottle</strong><span>Turn pressure and flexion thresholds into immediate feedback.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+</dialog>
 
 <dialog class="project-dialog dialog-erua" id="dialog-erua" aria-labelledby="dialog-erua-title">
   <div class="dialog-head">
