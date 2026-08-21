@@ -38,6 +38,22 @@
     else headerInner.appendChild(languageSwitch);
   }
 
+  const siteHeader = document.querySelector('.site-header');
+  const updateHeaderOffset = () => {
+    if (!siteHeader) return;
+    const offset = Math.ceil(siteHeader.getBoundingClientRect().height + 16);
+    root.style.setProperty('--header-offset', `${offset}px`);
+  };
+  if (siteHeader) {
+    updateHeaderOffset();
+    if ('ResizeObserver' in window) {
+      const headerObserver = new ResizeObserver(updateHeaderOffset);
+      headerObserver.observe(siteHeader);
+    } else {
+      window.addEventListener('resize', updateHeaderOffset, { passive: true });
+    }
+  }
+
   const guidingPrinciple = document.querySelector('.panel-quote');
   if (guidingPrinciple) {
     guidingPrinciple.textContent = isEnglish
