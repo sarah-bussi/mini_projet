@@ -16,7 +16,7 @@
     });
   };
 
-  ['modals.css', 'recommandations.css'].forEach((href) => {
+  ['modals.css', 'recommandations.css?v=20260822-2'].forEach((href) => {
     if (!document.querySelector(`link[href="${href}"]`)) {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
@@ -315,7 +315,12 @@ SNCF Connect & Tech`;
           <article class="recommender-card"><p class="recommender-role">Digital accessibility expert</p><h3>Accessibility expertise</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">View details<span class="sr-only"> for the digital accessibility expert recommendation</span></button></article>
           <article class="recommender-card"><p class="recommender-role">Senior manager</p><h3>Management & product perspective</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">View details<span class="sr-only"> for the senior manager recommendation</span></button></article>
         </div>
-        <p class="recommendation-note">Phone numbers are not published. Professional email and LinkedIn links will only be displayed with each signatory's consent.</p>` : `
+        <p class="recommendation-note">Phone numbers are not published. Professional email and LinkedIn links will only be displayed with each signatory's consent.</p>
+        <div class="testimonial-subsection">
+          <p class="eyebrow">Colleague testimonials</p>
+          <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
+          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><p id="testimonials-status" class="sr-only" aria-live="polite"></p></section>
+        </div>` : `
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
@@ -327,7 +332,11 @@ SNCF Connect & Tech`;
           <article class="recommender-card"><p class="recommender-role">Responsable N+1</p><h3>Encadrement & vision produit</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Voir le détail<span class="sr-only"> de la recommandation du responsable N+1</span></button></article>
         </div>
         <p class="recommendation-note">Les numéros de téléphone ne sont pas publiés. L'email professionnel et LinkedIn ne seront affichés qu'avec l'accord de chaque signataire.</p>
-        <div class="testimonial-subsection"><p class="eyebrow">Témoignages de collègues</p><div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Un questionnaire court permet de partager quelques phrases sur notre collaboration. Les coordonnées de vérification restent privées et aucun témoignage n'est publié automatiquement.</p></div><a class="button button-secondary" href="recommandation.html">Laisser un témoignage</a></div></div>`;
+        <div class="testimonial-subsection">
+          <p class="eyebrow">Témoignages de collègues</p>
+          <div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div>
+          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Témoignages validés</h3><div id="approved-testimonials"><p class="testimonials-empty">Aucun témoignage de collègue validé n’est encore publié.</p></div><p id="testimonials-status" class="sr-only" aria-live="polite"></p></section>
+        </div>`;
     }
 
     document.body.insertAdjacentHTML('beforeend', `
