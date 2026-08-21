@@ -10,6 +10,11 @@
     }
   });
 
+  const guidingPrinciple = document.querySelector('.panel-quote');
+  if (guidingPrinciple) {
+    guidingPrinciple.textContent = '« Partir des personnes, comprendre les obstacles et créer des solutions qui donnent davantage de choix, d’autonomie et de place à chacun. »';
+  }
+
   const themeButton = document.getElementById('theme-toggle');
   const themeLabel = themeButton?.querySelector('.theme-toggle-label');
   const savedTheme = localStorage.getItem('portfolio-theme');
