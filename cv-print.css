@@ -108,3 +108,21 @@
     border-color: #777 !important;
   }
 }
+
+
+@media print {
+  .cv-project-meta,
+  .cv-project-summary,
+  .cv-project-highlights {
+    color: #222 !important;
+  }
+
+  .cv-page .project-card {
+    min-height: 0 !important;
+    padding: 5mm !important;
+  }
+
+  .cv-page .project-card > .tags {
+    margin-top: 4mm !important;
+  }
+}

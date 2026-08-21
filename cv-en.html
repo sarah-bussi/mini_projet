@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Accessible CV of Sarah Bussi, digital accessibility consultant.">
   <title>CV — Sarah Bussi</title>
-  <link rel="stylesheet" href="styles.css?v=20260821-3">
-  <link rel="stylesheet" href="cv-print.css?v=20260821-2" media="print">
+  <link rel="stylesheet" href="styles.css?v=20260821-4">
+  <link rel="stylesheet" href="cv-print.css?v=20260821-3" media="print">
 </head>
 <body class="cv-page">
   <a class="skip-link" href="#content">Skip to main content</a>
@@ -145,7 +145,77 @@
 
     <section class="section" id="education" aria-labelledby="cv-education"><div class="container"><div class="section-heading"><p class="eyebrow">Education</p><h2 id="cv-education">Education</h2></div><div class="skills-grid"><section class="skill-group"><h3>Master MIASHS — Technology & Disability</h3><p>Université Paris 8 · 2024–2026</p><p>Degree expected September 2026.</p></section><section class="skill-group"><h3>Bachelor's degree in Psychology — Neuropsychology</h3><p>Université Paul-Valéry Montpellier · 2019–2023</p></section><section class="skill-group"><h3>University Diploma in Criminology</h3><p>Faculty of Law, Montpellier · 2022–2023</p></section><section class="skill-group"><h3>First-year health studies</h3><p>Faculty of Medicine, Montpellier · 2017–2019</p><p>Completed before changing direction to psychology.</p></section><section class="skill-group"><h3>French Scientific Baccalaureate</h3><p>2017</p></section></div></div></section>
 
-    <section class="section section-muted" id="projects" aria-labelledby="cv-projects"><div class="container"><div class="section-heading"><p class="eyebrow">Selected work</p><h2 id="cv-projects">Academic projects & achievements</h2></div><div class="projects-grid"><article class="project-card"><h3>SmartCare — pair project</h3><p>Functional design and development of a connected solution addressing stress, derealisation and panic episodes, including mobile development, sensors and Bluetooth communication.</p><ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>ESP32</li><li>BLE</li><li>Sensors</li></ul></article><article class="project-card project-featured"><h3>AI Copilot for Accessibility</h3><p>Master's thesis combining research, a professional questionnaire and the design of an AI assistant intended to help product teams integrate and maintain digital accessibility throughout the product lifecycle.</p><ul class="tags"><li>Generative AI</li><li>LLM</li><li>Python</li><li>RAG</li><li>Prompt engineering</li><li>User research</li></ul></article><article class="project-card"><h3>Accessible website for a non-profit organisation</h3><p>Design and development of a responsive accessible website with dynamic content and an administration interface.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li></ul></article><article class="project-card"><h3>BRA(S)VO — connected orthosis — team of 5</h3><p>Design of a connected hand rehabilitation orthosis and mobile application integrating sensors and therapeutic mini-games.</p><ul class="tags"><li>Flutter</li><li>BLE</li><li>Sensors</li><li>Mobile UX</li><li>Git</li></ul></article><article class="project-card"><h3>SPY — game accessibility audit</h3><p>Accessibility audit of an educational game using the Game Accessibility Guidelines, followed by improvement recommendations and Figma mock-ups.</p><ul class="tags"><li>Expert audit</li><li>Game Accessibility Guidelines</li><li>Figma</li><li>UX</li></ul></article><article class="project-card"><h3>Braille-JP</h3><p>Design of an accessible serious game for learning Japanese braille.</p><ul class="tags"><li>HCI</li><li>UX</li><li>Personas</li><li>Figma</li><li>Accessibility</li></ul></article></div></div></section>
+    <section class="section section-muted" id="projects" aria-labelledby="cv-projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="cv-projects">Academic projects & achievements</h2>
+          <p>A CV-style selection summarising each project’s objective, contribution and main technologies.</p>
+        </div>
+        <div class="projects-grid cv-projects-grid">
+          <article class="project-card project-featured">
+            <p class="cv-project-meta">Master’s thesis · 2026</p>
+            <h3>A11y Copilot — AI for accessibility</h3>
+            <p class="cv-project-summary">Design and evaluation of an educational assistant helping product teams connect real-world situations with RGAA requirements and contextual recommendations.</p>
+            <ul class="cv-project-highlights">
+              <li>Developed a Python prototype combining deterministic detection, semantic search/RAG and LLM-controlled reformulation.</li>
+              <li>Built test scenarios, a retrieval benchmark and a questionnaire for digital-accessibility professionals.</li>
+            </ul>
+            <ul class="tags" role="list"><li>Python</li><li>LLM</li><li>RAG</li><li>RGAA</li><li>Evaluation</li></ul>
+          </article>
+          <article class="project-card">
+            <p class="cv-project-meta">Five-person team · 2026</p>
+            <h3>BRA(S)VO — connected orthosis</h3>
+            <p class="cv-project-summary">An instrumented hand orthosis connected to a mobile application and therapeutic mini-games supporting hand rehabilitation.</p>
+            <ul class="cv-project-highlights">
+              <li>Co-developed the Flutter application, integrated BLE sensor data and contributed to five mini-games.</li>
+              <li>Designed patient and therapist journeys and contributed to functional and user testing.</li>
+            </ul>
+            <ul class="tags" role="list"><li>Flutter</li><li>BLE</li><li>ESP32</li><li>Sensors</li><li>Health UX</li></ul>
+          </article>
+          <article class="project-card">
+            <p class="cv-project-meta">Pair project · 2026</p>
+            <h3>SmartCare Watch — stress & biofeedback</h3>
+            <p class="cv-project-summary">A proof of concept combining physiological monitoring, a mobile application and haptic feedback to explore stress regulation.</p>
+            <ul class="cv-project-highlights">
+              <li>Designed the interface mock-ups and developed the Android application with Kotlin and Jetpack Compose.</li>
+              <li>Prototyped BLE communication with an M5StickC Plus, BPM sensor and haptic motor while distinguishing working features from simulated data.</li>
+            </ul>
+            <ul class="tags" role="list"><li>Kotlin</li><li>Jetpack Compose</li><li>BLE</li><li>M5StickC Plus</li><li>Biofeedback</li></ul>
+          </article>
+          <article class="project-card">
+            <p class="cv-project-meta">Team project · 2025</p>
+            <h3>SPY — game accessibility audit</h3>
+            <p class="cv-project-summary">Audit of an educational game using the Game Accessibility Guidelines, with recommendations targeting motor, visual and cognitive barriers.</p>
+            <ul class="cv-project-highlights">
+              <li>Conducted a structured review of interaction, readability, contrast and execution speed.</li>
+              <li>Produced an accessibility specification and six improvement mock-ups in Figma.</li>
+            </ul>
+            <ul class="tags" role="list"><li>Expert audit</li><li>GAG</li><li>Figma</li><li>Inclusive UX</li></ul>
+          </article>
+          <article class="project-card">
+            <p class="cv-project-meta">Pair project · 2025</p>
+            <h3>Braille-JP — accessible serious game</h3>
+            <p class="cv-project-summary">A prototype designed with ProgAccess for learning Japanese braille through separate player and non-technical contributor journeys.</p>
+            <ul class="cv-project-highlights">
+              <li>Created personas, scenarios, the navigation architecture and the learning and contribution journeys.</li>
+              <li>Specified keyboard, screen-reader and braille-display behaviour, supported by initial feedback from visually impaired users.</li>
+            </ul>
+            <ul class="tags" role="list"><li>HCI</li><li>Figma</li><li>User testing</li><li>Assistive technologies</li></ul>
+          </article>
+          <article class="project-card">
+            <p class="cv-project-meta">Three university projects</p>
+            <h3>Web development — data & accessibility</h3>
+            <p class="cv-project-summary">Three projects demonstrating progression from front-end implementation to back-end development, content management and accessibility.</p>
+            <ul class="cv-project-highlights">
+              <li>Three-person cooking website: PHP/MySQL, a contribution-driven catalogue and comment management.</li>
+              <li>HandiSolutions for accessibility practice, followed by an anonymised full-stack non-profit prototype that was not delivered or deployed.</li>
+            </ul>
+            <ul class="tags" role="list"><li>HTML/CSS/JS</li><li>PHP</li><li>MySQL</li><li>CRUD</li><li>Web accessibility</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="international" aria-labelledby="cv-international">
       <div class="container narrow">
