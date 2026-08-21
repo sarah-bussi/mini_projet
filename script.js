@@ -15,6 +15,24 @@
     guidingPrinciple.textContent = '« Partir des personnes, comprendre les obstacles et créer des solutions qui donnent davantage de choix, d’autonomie et de place à chacun. »';
   }
 
+  // Coordonnées professionnelles des signataires.
+  // À renseigner uniquement avec leur accord explicite de publication.
+  const recommendationContacts = {
+    manager: { email: '', linkedin: '' },
+    expert: { email: '', linkedin: '' },
+    nplus1: { email: '', linkedin: '' }
+  };
+
+  const contactActions = (contact, label) => {
+    const email = contact.email
+      ? `<a class="button button-secondary" href="mailto:${contact.email}">Email professionnel de ${label}</a>`
+      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">Email professionnel à renseigner</span>`;
+    const linkedin = contact.linkedin
+      ? `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn de ${label}</a>`
+      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">LinkedIn à renseigner</span>`;
+    return `${email}${linkedin}`;
+  };
+
   const themeButton = document.getElementById('theme-toggle');
   const themeLabel = themeButton?.querySelector('.theme-toggle-label');
   const savedTheme = localStorage.getItem('portfolio-theme');
@@ -73,7 +91,7 @@
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
-          <p>Trois recommandations professionnelles prioritaires. Un clic ouvre la lettre intégrale. Les coordonnées directes des signataires ne sont pas publiées dans le code du site.</p>
+          <p>Trois recommandations professionnelles prioritaires. Un clic ouvre la lettre intégrale. Avec l'accord de chaque signataire, son email professionnel et son profil LinkedIn permettent ensuite une prise de contact directe.</p>
         </div>
         <div class="recommendations-grid" aria-label="Recommandations professionnelles">
           <article class="recommender-card">
@@ -95,7 +113,7 @@
             <button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Lire la lettre complète</button>
           </article>
         </div>
-        <p class="recommendation-note">Les mises en relation sont possibles rapidement par email, téléphone ou LinkedIn, sans afficher publiquement les coordonnées privées des signataires.</p>
+        <p class="recommendation-note">Les coordonnées téléphoniques ne sont pas publiées. Les contacts professionnels directs proposés sont l'email et LinkedIn, avec l'accord des signataires.</p>
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta>
@@ -112,32 +130,20 @@
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
         <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-manager-title">Manager directe</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre de la manager directe">×</button></div>
         <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Coordonnées privées : la mise en relation passe par Sarah afin que l'adresse email, le numéro et l'URL LinkedIn ne soient pas exposés publiquement.</p>
-        <div class="recommendation-actions">
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Manager%20directe%20-%20Email">Contact par email</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Manager%20directe%20-%20Téléphone">Contact téléphonique</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Manager%20directe%20-%20LinkedIn">LinkedIn</a>
-        </div>
+        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
+        <div class="recommendation-actions">${contactActions(recommendationContacts.manager, 'la manager directe')}</div>
       </dialog>
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title">
         <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-expert-title">Expert accessibilité numérique</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre de l'expert accessibilité numérique">×</button></div>
         <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Coordonnées privées : la mise en relation passe par Sarah afin que l'adresse email, le numéro et l'URL LinkedIn ne soient pas exposés publiquement.</p>
-        <div class="recommendation-actions">
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Expert%20accessibilité%20-%20Email">Contact par email</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Expert%20accessibilité%20-%20Téléphone">Contact téléphonique</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Expert%20accessibilité%20-%20LinkedIn">LinkedIn</a>
-        </div>
+        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
+        <div class="recommendation-actions">${contactActions(recommendationContacts.expert, "l'expert accessibilité numérique")}</div>
       </dialog>
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title">
         <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-nplus1-title">Responsable N+1</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre du responsable N+1">×</button></div>
         <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Coordonnées privées : la mise en relation passe par Sarah afin que l'adresse email, le numéro et l'URL LinkedIn ne soient pas exposés publiquement.</p>
-        <div class="recommendation-actions">
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Responsable%20N%2B1%20-%20Email">Contact par email</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Responsable%20N%2B1%20-%20Téléphone">Contact téléphonique</a>
-          <a class="button button-secondary" href="mailto:sarah.bussi2108@gmail.com?subject=Mise%20en%20relation%20-%20Responsable%20N%2B1%20-%20LinkedIn">LinkedIn</a>
-        </div>
+        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
+        <div class="recommendation-actions">${contactActions(recommendationContacts.nplus1, 'la responsable N+1')}</div>
       </dialog>`;
     document.body.insertAdjacentHTML('beforeend', dialogsMarkup);
   }
