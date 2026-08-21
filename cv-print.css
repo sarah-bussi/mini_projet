@@ -81,6 +81,21 @@
     color: #222 !important;
   }
 
+
+  .recommendation-details,
+  .recommendation-pending {
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+    border-color: #999 !important;
+  }
+
+  .recommendation-details-body,
+  .recommendation-details summary span span,
+  .recommendation-pending p {
+    color: #222 !important;
+  }
+
   .tags {
     break-inside: avoid;
   }

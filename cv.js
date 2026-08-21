@@ -1,32 +1,48 @@
 (() => {
+  const root = document.documentElement;
+  const isEnglish = (root.lang || '').toLowerCase().startsWith('en');
   const DASHES = /[\u2010\u2011\u2012\u2013\u2014\u2212]/g;
-  const normalizeDashes = (root = document) => {
-    const walker = document.createTreeWalker(root.body || root, NodeFilter.SHOW_TEXT);
+
+  const normalizeDashes = (scope = document) => {
+    const walker = document.createTreeWalker(scope.body || scope, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) node.nodeValue = node.nodeValue.replace(DASHES, '-');
-    root.querySelectorAll?.('[aria-label],[title]').forEach((el) => {
-      ['aria-label', 'title'].forEach((attr) => {
-        const value = el.getAttribute(attr);
-        if (value) el.setAttribute(attr, value.replace(DASHES, '-'));
+    scope.querySelectorAll?.('[aria-label],[title]').forEach((element) => {
+      ['aria-label', 'title'].forEach((attribute) => {
+        const value = element.getAttribute(attribute);
+        if (value) element.setAttribute(attribute, value.replace(DASHES, '-'));
       });
     });
   };
 
-  const isEnglish = (document.documentElement.lang || '').toLowerCase().startsWith('en');
-  const printButton = document.getElementById('cv-print');
-  printButton?.addEventListener('click', () => window.print());
+  document.getElementById('cv-print')?.addEventListener('click', () => window.print());
 
-  const headerInner = document.querySelector('.header-inner');
-  if (headerInner && !headerInner.querySelector('.language-switch')) {
-    const languageSwitch = document.createElement('a');
-    languageSwitch.className = 'button button-secondary language-switch';
-    languageSwitch.href = isEnglish ? 'cv.html' : 'cv-en.html';
-    languageSwitch.lang = isEnglish ? 'fr' : 'en';
-    languageSwitch.hreflang = isEnglish ? 'fr' : 'en';
-    languageSwitch.textContent = isEnglish ? 'FR' : 'EN';
-    languageSwitch.setAttribute('aria-label', isEnglish ? 'Voir le CV en français' : 'View CV in English');
-    headerInner.appendChild(languageSwitch);
-  }
+  const themeButton = document.getElementById('theme-toggle');
+  const themeLabel = themeButton?.querySelector('.theme-toggle-label');
+  const savedTheme = localStorage.getItem('portfolio-theme');
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const initialTheme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : systemTheme;
+
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    const isDark = theme === 'dark';
+    const visibleLabel = isEnglish
+      ? (isDark ? 'Light mode' : 'Dark mode')
+      : (isDark ? 'Contraste clair' : 'Contraste sombre');
+    if (themeLabel) themeLabel.textContent = visibleLabel;
+    if (themeButton) {
+      themeButton.setAttribute('aria-label', isEnglish
+        ? `${visibleLabel}: switch to ${isDark ? 'light' : 'dark'} mode`
+        : `${visibleLabel} : activer le mode ${isDark ? 'clair' : 'sombre'}`);
+    }
+  };
+
+  applyTheme(initialTheme);
+  themeButton?.addEventListener('click', () => {
+    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+    localStorage.setItem('portfolio-theme', nextTheme);
+  });
 
   normalizeDashes(document);
 })();

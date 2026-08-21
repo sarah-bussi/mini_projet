@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-theme="auto">
+<html lang="fr" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +8,16 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cv-print.css" media="print">
 </head>
-<body>
+<body class="cv-page">
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Sarah Bussi — retour au portfolio">
-        <span class="brand-mark" aria-hidden="true">SB</span><span>Sarah Bussi</span>
-      </a>
-      <nav class="main-nav" aria-label="Navigation du CV">
-        <ul>
-          <li><a href="#profil">Profil</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#international">International</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#references">Références</a></li>
-          <li><a href="#langues">Langues</a></li>
-          <li><a class="button button-secondary" href="index.html">Portfolio</a></li>
-        </ul>
-      </nav>
+  <header class="site-header cv-header">
+    <div class="container cv-header-inner">
+      <a class="brand" href="index.html" aria-label="Sarah Bussi — retour au portfolio"><span class="brand-mark" aria-hidden="true">SB</span><span>Sarah Bussi</span></a>
+      <ul class="cv-header-actions" aria-label="Options du CV">
+        <li><a class="button button-secondary" href="index.html">Retour au portfolio</a></li>
+        <li><a class="button button-secondary language-switch" href="cv-en.html" hreflang="en" aria-label="Voir le CV en anglais">EN</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Contraste sombre : activer le mode sombre"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Contraste sombre</span></button></li>
+      </ul>
     </div>
   </header>
 
@@ -37,13 +27,12 @@
         <p class="eyebrow">Curriculum vitæ</p>
         <h1 id="cv-title">Sarah Bussi</h1>
         <p class="hero-copy"><strong>Consultante en accessibilité numérique</strong><br>UX inclusive · Technologies numériques · Qualité produit</p>
-        <p>Paris, France · <a href="tel:+33770431504">+33 7 70 43 15 04</a> · <a href="mailto:sarah.bussi2108@gmail.com">sarah.bussi2108@gmail.com</a> · <a href="https://www.linkedin.com/in/sarahbussi">LinkedIn</a> · <a href="https://github.com/sarah-bussi">GitHub</a> · <a href="index.html">Portfolio</a></p>
+        <address class="cv-contact" aria-label="Coordonnées de Sarah Bussi"><ul><li>Paris, France</li><li><a href="tel:+33770431504">Appeler Sarah Bussi au +33 7 70 43 15 04</a></li><li><a href="mailto:sarah.bussi2108@gmail.com">Envoyer un e-mail à Sarah Bussi</a></li><li><a href="https://www.linkedin.com/in/sarahbussi">Voir le profil LinkedIn de Sarah Bussi</a></li><li><a href="https://github.com/sarah-bussi">Voir le profil GitHub de Sarah Bussi</a></li></ul></address>
         <p class="hero-copy">Spécialisée en accessibilité numérique, j'accompagne la conception et l'amélioration de produits numériques en conciliant exigences d'accessibilité, expérience utilisateur et contraintes techniques. Mon parcours en psychologie, technologies et handicap me permet d'apporter une approche centrée utilisateur, de collaborer efficacement avec les équipes produit et de transformer les besoins utilisateurs et les exigences d'accessibilité en solutions concrètes, utilisables et pérennes.</p>
         <div class="hero-actions cv-actions">
-          <button class="button button-primary" id="cv-print" type="button" aria-describedby="cv-print-help">Enregistrer le CV en PDF</button>
-          <a class="button button-secondary" href="index.html">Retour au portfolio</a>
+          <button class="button button-primary" id="cv-print" type="button" aria-describedby="cv-print-help">Imprimer ou enregistrer en PDF</button>
         </div>
-        <p id="cv-print-help" class="sr-only">Ouvre la boîte de dialogue d'impression du navigateur, qui permet notamment d'enregistrer ce CV au format PDF.</p>
+        <p id="cv-print-help" class="sr-only">Ouvre la boîte de dialogue d'impression du navigateur, qui permet d'imprimer ce CV ou de l'enregistrer au format PDF.</p>
       </div>
     </section>
 
@@ -155,8 +144,15 @@
 
     <section class="section" id="references" aria-labelledby="cv-references">
       <div class="container narrow">
-        <div class="section-heading"><p class="eyebrow">Références professionnelles</p><h2 id="cv-references">Recommandations</h2><p>Des recommandations professionnelles sont disponibles auprès de ma manager directe, d'un expert en accessibilité numérique et du responsable N+1.</p></div>
-        <a class="button button-secondary" href="index.html#recommandations">Consulter les recommandations</a>
+        <div class="section-heading"><p class="eyebrow">Références professionnelles</p><h2 id="cv-references">Recommandations</h2><p>La lettre d’Audrey Gambs peut être consultée directement. Les deux autres recommandations seront ajoutées après validation de leur texte par les signataires.</p></div>
+        <div class="cv-recommendations">
+          <details class="recommendation-details">
+            <summary><span><strong>Audrey Gambs</strong><span>Tutrice d’alternance · CDP Qualité CX &amp; Accessibilité · SNCF Connect &amp; Tech</span></span></summary>
+            <div class="recommendation-details-body" aria-label="Lettre de recommandation d’Audrey Gambs"><p>À qui de droit,</p><p>C'est avec un enthousiasme sincère et sans la moindre réserve que je recommande aujourd'hui Sarah Bussi, que j'ai eu le privilège d'accompagner en tant que tutrice tout au long de son alternance au sein de notre équipe.</p><p>Au cours de ces derniers mois, Sarah s'est révélée être bien plus qu'une simple alternante. Elle a rapidement démontré des qualités professionnelles et humaines remarquables qui lui ont permis de s'imposer comme une collaboratrice de confiance et un véritable atout pour notre équipe.</p><p>Dès son arrivée, Sarah a fait preuve d'une capacité d'adaptation exceptionnelle. Grâce à son intelligence, son sens de l'observation et sa remarquable faculté d'apprentissage, elle s'est approprié son environnement de travail et ses missions en un temps extrêmement court. Là où une période d'accompagnement prolongée est souvent nécessaire, Sarah a gagné en autonomie en seulement quelques semaines et a su prendre en charge ses sujets avec une maturité professionnelle impressionnante.</p><p>Tout au long de son alternance, elle a réalisé un travail d'une qualité exemplaire. Rigoureuse, méthodique et particulièrement organisée, elle sait analyser les situations avec pertinence, identifier les enjeux importants et proposer des solutions concrètes et efficaces. Sa capacité à produire des livrables fiables et de grande qualité, tout en respectant systématiquement les délais, force le respect.</p><p>Sarah possède également une curiosité intellectuelle rare et une véritable envie d'apprendre. Elle ne se contente jamais d'exécuter ce qui lui est demandé : elle cherche à comprendre, à approfondir et à améliorer l'existant. Cette posture lui a permis de monter en compétences à une vitesse remarquable, notamment sur les sujets liés à l'accessibilité numérique, domaine exigeant qui requiert à la fois rigueur, expertise technique et sens de l'analyse.</p><p>Au-delà de ses excellentes compétences professionnelles, Sarah se distingue par des qualités humaines exceptionnelles. Toujours positive, souriante et bienveillante, elle crée naturellement des relations de confiance avec ses interlocuteurs. Son écoute, son respect des autres et son esprit collaboratif ont fait d'elle une personne particulièrement appréciée de l'ensemble de l'équipe. Son enthousiasme communicatif et son attitude constructive contribuent chaque jour à créer un environnement de travail agréable et stimulant.</p><p>J'ai également été particulièrement impressionnée par sa capacité à prendre en compte les retours qui lui étaient formulés. Sarah accueille les remarques avec intelligence et humilité, les transforme très rapidement en axes de progression et les met en œuvre avec une efficacité remarquable. Cette maturité et cette capacité à se remettre en question constituent selon moi des qualités essentielles pour construire une carrière durable et ambitieuse.</p><p>Au fil de son alternance, Sarah a démontré une combinaison rare de compétences : autonomie, professionnalisme, rigueur, esprit d'initiative, sens des responsabilités, capacité d'analyse, adaptabilité et intelligence relationnelle. Elle fait partie de ces profils que l'on rencontre peu et dont on mesure immédiatement la valeur lorsqu'ils rejoignent une équipe.</p><p>S'il avait existé une opportunité de recrutement à l'issue de son alternance, je n'aurais eu aucune hésitation à soutenir sa candidature. Malheureusement, nos contraintes budgétaires ne permettent pas aujourd'hui l'ouverture d'un poste. Cette situation ne reflète en rien l'excellence de son travail ni le potentiel exceptionnel qu'elle a démontré.</p><p>Je suis convaincue que Sarah saura réussir brillamment dans les responsabilités qui lui seront confiées et qu'elle apportera une réelle valeur ajoutée à toute organisation qui aura la chance de l'accueillir. Son professionnalisme, son engagement, son intelligence et ses qualités humaines lui promettent un très bel avenir professionnel.</p><p>C'est donc avec la plus grande conviction et les plus vives recommandations que je vous recommande Sarah. Je suis certaine qu'elle saura dépasser vos attentes comme elle a su dépasser les nôtres.</p><p>Je la recommande sans aucune réserve et avec le plus haut niveau de confiance.</p><p>Bien cordialement,<br>Audrey GAMBS<br>CDP Qualité CX &amp; Accessibilité<br>SNCF Connect &amp; Tech</p></div>
+          </details>
+          <article class="recommendation-pending" aria-labelledby="rec-expert-title"><p class="eyebrow">Texte à venir</p><h3 id="rec-expert-title">Expert accessibilité numérique</h3><p>La recommandation sera ajoutée après validation du signataire.</p></article>
+          <article class="recommendation-pending" aria-labelledby="rec-manager-title"><p class="eyebrow">Texte à venir</p><h3 id="rec-manager-title">Responsable N+1</h3><p>La recommandation sera ajoutée après validation du signataire.</p></article>
+        </div>
       </div>
     </section>
 
