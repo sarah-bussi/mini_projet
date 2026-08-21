@@ -64,7 +64,7 @@
   const navToggle = document.getElementById('nav-toggle');
   const mainNav = document.getElementById('main-nav');
   const navToggleIcon = navToggle?.querySelector('.nav-toggle-icon');
-  const mobileNavQuery = window.matchMedia('(max-width: 980px)');
+  const mobileNavQuery = window.matchMedia('(max-width: 1180px)');
 
   const arrangeHeaderItems = () => {
     if (!headerInner || !navToggle || !mainNav) return;
