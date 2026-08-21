@@ -7,7 +7,7 @@
   <title>Sarah Bussi — Accessibilité numérique, UX inclusive & qualité produit</title>
   <link rel="stylesheet" href="styles.css?v=20260821-2">
   <link rel="stylesheet" href="assets/icons/icons.css">
-  <link rel="stylesheet" href="modals.css?v=20260821-6">
+  <link rel="stylesheet" href="modals.css?v=20260821-7">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -312,7 +312,95 @@
 
 <dialog class="project-dialog dialog-site" id="dialog-site" aria-labelledby="dialog-site-title"><div class="dialog-head"><div><p class="eyebrow">Web accessible · 2025</p><h2 id="dialog-site-title">Site associatif accessible</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche du site associatif">×</button></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Repenser un site associatif pour faciliter l'accès à l'information, la navigation et la mise à jour des contenus.</p><h3>Démarche</h3><p>Recueil des besoins, arborescence, maquettes, développement responsive, contenus dynamiques et interface d'administration.</p></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Responsive</li><li>Accessibilité web</li><li>Architecture de l'information</li></ul></aside></div></dialog>
 
-<dialog class="project-dialog dialog-smartcare" id="dialog-smartcare" aria-labelledby="dialog-smartcare-title"><div class="dialog-head"><div><p class="eyebrow">Objet connecté · 2026</p><h2 id="dialog-smartcare-title">SmartCare Watch</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche SmartCare Watch">×</button></div><div class="dialog-media dialog-media-contain"><img src="assets/smartcare-bangle.webp" alt="Prototype SmartCare affiché sur une montre connectée Bangle.js." loading="lazy"></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Explorer une solution connectée d'accompagnement lors de situations de stress, déréalisation ou crise de panique à partir de données physiologiques et de feedbacks immédiats.</p><h3>Prototype</h3><p>Application mobile, fréquence cardiaque et respiration, communication BLE, retour haptique, exercices de respiration et avatar de feedback.</p></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>Kotlin</li><li>Jetpack Compose</li><li>ESP32</li><li>BLE</li><li>Capteurs</li><li>Biofeedback</li><li>UX santé</li></ul></aside></div></dialog>
+<dialog class="project-dialog dialog-smartcare" id="dialog-smartcare" aria-labelledby="dialog-smartcare-title">
+  <div class="dialog-head">
+    <div><p class="eyebrow">Objet connecté · stress & biofeedback · 2026</p><h2 id="dialog-smartcare-title">SmartCare Watch</h2></div>
+    <button class="dialog-close" type="button" data-close aria-label="Fermer la fiche SmartCare Watch">×</button>
+  </div>
+  <div class="dialog-grid">
+    <section>
+      <h3>Problème exploré</h3>
+      <p>SmartCare Watch est un projet universitaire en binôme visant à explorer un bracelet de suivi cardiorespiratoire capable d’identifier des états de stress et de proposer un biofeedback immédiat, visuel et haptique. Le dispositif s’adresse en priorité aux personnes sujettes au stress ou à l’anxiété, notamment dans les contextes d’étude et de travail.</p>
+
+      <h3>Ma contribution</h3>
+      <p>J’ai réalisé les maquettes d’interface et développé l’application Android. J’ai également travaillé sur les circuits BLE, l’écran de simulation, l’intégration du M5StickC Plus avec le capteur BPM et le moteur de vibration Grove, puis participé aux tests fonctionnels et aux ajustements techniques.</p>
+
+      <h3>Architecture prototypée</h3>
+      <ol class="dialog-findings">
+        <li><strong>Acquisition :</strong> lecture d’un capteur BPM en I²C sur M5StickC Plus et préparation d’une mesure respiratoire complémentaire.</li>
+        <li><strong>Communication :</strong> service BLE permettant de notifier le BPM vers Android et de recevoir une commande de vibration.</li>
+        <li><strong>Interprétation :</strong> agent à règles classant les valeurs en relaxation, état normal ou stress à partir de seuils cardiorespiratoires.</li>
+        <li><strong>Biofeedback :</strong> avatar Flufy, messages, recommandations d’exercices, respiration guidée et vibration discrète.</li>
+      </ol>
+
+      <h3>Ce qui fonctionne et ce qui reste simulé</h3>
+      <div class="smartcare-reality">
+        <article>
+          <h4>Prototypes fonctionnels</h4>
+          <ul>
+            <li>détection du capteur BPM et lecture des valeurs ;</li>
+            <li>déclenchement du moteur haptique ;</li>
+            <li>démonstrateur Bangle.js avec fréquence cardiaque, respiration 4–4–6–2 et vibrations ;</li>
+            <li>parcours Android : tableau de bord, historique, journal d’émotion, recommandations et exercices.</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Limites du prototype</h4>
+          <ul>
+            <li>données physiologiques de l’application partiellement simulées ;</li>
+            <li>synchronisation Android–matériel non finalisée en temps réel ;</li>
+            <li>agent fondé sur des règles, sans modèle d’apprentissage entraîné ;</li>
+            <li>tests en conditions réelles limités à des simulations ou à une personne.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Résultat</h3>
+      <p class="dialog-result">Le projet démontre la faisabilité des composants essentiels et fournit une base cohérente pour une future intégration de bout en bout. Il reste un prototype universitaire exploratoire, sans validation clinique et sans statut de dispositif médical.</p>
+    </section>
+    <aside>
+      <h3>Repères</h3>
+      <dl class="dialog-facts">
+        <div><dt>Format</dt><dd>Projet universitaire en binôme</dd></div>
+        <div><dt>Public principal</dt><dd>Personnes sujettes au stress ou à l’anxiété</dd></div>
+        <div><dt>Prototypes</dt><dd>M5StickC Plus · Bangle.js · Android</dd></div>
+        <div><dt>Feedbacks</dt><dd>Visuel · haptique · respiration guidée</dd></div>
+        <div><dt>Statut</dt><dd>Preuve de faisabilité non médicale</dd></div>
+      </dl>
+      <h3>Compétences mobilisées</h3>
+      <ul class="modal-skills" role="list">
+        <li>Figma</li><li>Kotlin</li><li>Jetpack Compose</li><li>Android</li><li>BLE</li><li>M5StickC Plus</li><li>Bangle.js</li><li>Capteurs</li><li>Feedback haptique</li><li>Agent à règles</li><li>Tests fonctionnels</li><li>UX santé</li>
+      </ul>
+    </aside>
+  </div>
+
+  <section class="smartcare-gallery" aria-labelledby="smartcare-captures-title">
+    <h3 id="smartcare-captures-title">Captures sélectionnées</h3>
+    <p class="smartcare-gallery-intro">Cinq visuels distinguent le prototype embarqué, la démonstration sur montre et les principales interactions de l’application Android.</p>
+    <div class="smartcare-captures">
+      <figure class="smartcare-capture">
+        <img src="assets/smartcare-prototype-m5stick.webp" alt="Prototype M5StickC Plus porté au poignet, relié à un capteur de fréquence cardiaque et à un moteur de vibration Grove." width="402" height="720" loading="lazy" decoding="async">
+        <figcaption><strong>Prototype embarqué</strong><span>Tester l’acquisition du BPM et le retour haptique sur le matériel disponible.</span></figcaption>
+      </figure>
+      <figure class="smartcare-capture">
+        <img src="assets/smartcare-bangle-respiration.webp" alt="Montre Bangle.js au poignet affichant l’étape d’inspiration de l’exercice de respiration et la fréquence cardiaque." width="402" height="720" loading="lazy" decoding="async">
+        <figcaption><strong>Démonstrateur montre</strong><span>Afficher le BPM et guider une respiration rythmée par des vibrations.</span></figcaption>
+      </figure>
+      <figure class="smartcare-capture">
+        <img src="assets/smartcare-app-dashboard.webp" alt="Tableau de bord Android avec l’avatar Flufy, une fréquence cardiaque de 107 BPM, une respiration à 17 cycles par minute et un état stable." width="359" height="795" loading="lazy" decoding="async">
+        <figcaption><strong>Tableau de bord Android</strong><span>Regrouper les mesures, l’état interprété et une recommandation courte.</span></figcaption>
+      </figure>
+      <figure class="smartcare-capture smartcare-capture--wide">
+        <img src="assets/smartcare-app-breathing.webp" alt="Écran de respiration guidée indiquant l’expiration, le temps restant et le quatrième cycle sur cinq." width="378" height="432" loading="lazy" decoding="async">
+        <figcaption><strong>Respiration guidée</strong><span>Transformer la recommandation en action simple, progressive et contrôlable.</span></figcaption>
+      </figure>
+      <figure class="smartcare-capture">
+        <img src="assets/smartcare-app-agent.webp" alt="Écran de l’agent adaptatif présentant une recommandation d’exercice d’ancrage, son niveau de difficulté et un bouton pour le démarrer." width="357" height="498" loading="lazy" decoding="async">
+        <figcaption><strong>Recommandation de l’agent</strong><span>Expliquer le choix de l’exercice et laisser l’utilisateur décider de le lancer.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+</dialog>
 
 <dialog class="project-dialog dialog-braille" id="dialog-braille" aria-labelledby="dialog-braille-title"><div class="dialog-head"><div><p class="eyebrow">Serious game · 2025</p><h2 id="dialog-braille-title">Braille-JP</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la fiche Braille-JP">×</button></div><div class="dialog-grid"><section><h3>Objectif</h3><p>Concevoir un serious game accessible pour soutenir l'apprentissage du braille japonais avec une démarche IHM centrée utilisateur.</p><h3>Démarche</h3><p>Personas, scénarios, prototypage, réflexion sur les feedbacks et critères ergonomiques.</p></section><aside><h3>Compétences mobilisées</h3><ul class="modal-skills"><li>IHM</li><li>Figma</li><li>Personas</li><li>Scénarios</li><li>UX</li><li>Accessibilité</li></ul></aside></div></dialog>
 
