@@ -60,6 +60,28 @@
   const navToggleIcon = navToggle?.querySelector('.nav-toggle-icon');
   const mobileNavQuery = window.matchMedia('(max-width: 980px)');
 
+  const arrangeHeaderItems = () => {
+    if (!headerInner || !navToggle || !mainNav) return;
+    const languageSwitch = headerInner.querySelector('.language-switch');
+    const themeButton = document.getElementById('theme-toggle');
+
+    if (mobileNavQuery.matches) {
+      if (languageSwitch) headerInner.appendChild(languageSwitch);
+      if (themeButton) headerInner.appendChild(themeButton);
+      headerInner.appendChild(navToggle);
+      headerInner.appendChild(mainNav);
+    } else {
+      const firstHeaderControl = languageSwitch || themeButton || navToggle;
+      headerInner.insertBefore(mainNav, firstHeaderControl);
+      if (languageSwitch && themeButton) headerInner.insertBefore(languageSwitch, themeButton);
+      headerInner.appendChild(navToggle);
+    }
+
+    updateHeaderOffset();
+  };
+
+  arrangeHeaderItems();
+
   const setNavOpen = (open, returnFocus = false) => {
     if (!navToggle || !mainNav) return;
     const shouldOpen = mobileNavQuery.matches && open;
@@ -126,7 +148,10 @@
     }
   });
 
-  const syncMobileNav = () => setNavOpen(false);
+  const syncMobileNav = () => {
+    arrangeHeaderItems();
+    setNavOpen(false);
+  };
   if (typeof mobileNavQuery.addEventListener === 'function') {
     mobileNavQuery.addEventListener('change', syncMobileNav);
   } else {
