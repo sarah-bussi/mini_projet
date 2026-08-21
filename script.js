@@ -1,5 +1,6 @@
 (() => {
   const root = document.documentElement;
+  root.classList.add('js');
   const isEnglish = (root.lang || '').toLowerCase().startsWith('en');
   const DASHES = /[\u2010\u2011\u2012\u2013\u2014\u2212]/g;
 
@@ -52,6 +53,47 @@
     } else {
       window.addEventListener('resize', updateHeaderOffset, { passive: true });
     }
+  }
+
+  const navToggle = document.getElementById('nav-toggle');
+  const mainNav = document.getElementById('main-nav');
+  const navToggleIcon = navToggle?.querySelector('.nav-toggle-icon');
+  const mobileNavQuery = window.matchMedia('(max-width: 980px)');
+
+  const setNavOpen = (open, returnFocus = false) => {
+    if (!navToggle || !mainNav) return;
+    const shouldOpen = mobileNavQuery.matches && open;
+    mainNav.classList.toggle('is-open', shouldOpen);
+    navToggle.setAttribute('aria-expanded', String(shouldOpen));
+    navToggle.setAttribute('aria-label', isEnglish
+      ? (shouldOpen ? 'Close main menu' : 'Open main menu')
+      : (shouldOpen ? 'Fermer le menu principal' : 'Ouvrir le menu principal'));
+    if (navToggleIcon) navToggleIcon.textContent = shouldOpen ? '×' : '☰';
+    updateHeaderOffset();
+    if (returnFocus) navToggle.focus();
+  };
+
+  navToggle?.addEventListener('click', () => {
+    setNavOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  mainNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (mobileNavQuery.matches) setNavOpen(false);
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navToggle?.getAttribute('aria-expanded') === 'true') {
+      setNavOpen(false, true);
+    }
+  });
+
+  const syncMobileNav = () => setNavOpen(false);
+  if (typeof mobileNavQuery.addEventListener === 'function') {
+    mobileNavQuery.addEventListener('change', syncMobileNav);
+  } else {
+    mobileNavQuery.addListener(syncMobileNav);
   }
 
   const guidingPrinciple = document.querySelector('.panel-quote');
