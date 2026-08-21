@@ -77,9 +77,46 @@
     setNavOpen(navToggle.getAttribute('aria-expanded') !== 'true');
   });
 
+  const focusNavDestination = (link) => {
+    const targetId = decodeURIComponent(link.hash.slice(1));
+    const target = targetId ? document.getElementById(targetId) : null;
+    if (!(target instanceof HTMLElement)) {
+      navToggle?.focus();
+      return;
+    }
+
+    const hadTabindex = target.hasAttribute('tabindex');
+    if (!hadTabindex) target.setAttribute('tabindex', '-1');
+    window.requestAnimationFrame(() => {
+      target.focus({ preventScroll: true });
+      if (!hadTabindex) {
+        target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+      }
+    });
+  };
+
   mainNav?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      if (mobileNavQuery.matches) setNavOpen(false);
+    let keyboardActivation = false;
+
+    link.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') keyboardActivation = true;
+      if (event.key === ' ') {
+        event.preventDefault();
+        keyboardActivation = true;
+        link.click();
+      }
+    });
+
+    link.addEventListener('click', (event) => {
+      if (!mobileNavQuery.matches) return;
+      const shouldMoveFocus = keyboardActivation || event.detail === 0;
+      keyboardActivation = false;
+      setNavOpen(false);
+      if (shouldMoveFocus) focusNavDestination(link);
+    });
+
+    link.addEventListener('blur', () => {
+      keyboardActivation = false;
     });
   });
 
