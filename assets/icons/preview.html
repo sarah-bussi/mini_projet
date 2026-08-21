@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aperçu des pictogrammes filaires</title>
+  <link rel="stylesheet" href="icons.css">
+  <style>
+    :root{--text:#12312B;--surface:#FFFDF5;--muted:#4B625B;--border:#9BB0A7;--accent-strong:#A83F32}
+    *{box-sizing:border-box}
+    body{margin:0;background:#FFF7E6;color:var(--text);font:16px/1.5 Inter,system-ui,sans-serif}
+    main{width:min(1100px,calc(100% - 2rem));margin:3rem auto}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.05;max-width:14ch}
+    .intro{max-width:68ch;color:var(--muted)}
+    .preview{margin-top:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--border);border-radius:24px;background:var(--surface)}
+    .preview--dark{--text:#FFF7E6;--surface:#12312B;--muted:#D7E7DD;--border:#4F746A;--accent-strong:#FF9A83}
+    .preview h2{margin-top:0}
+    .icon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+    .icon-card{display:flex;gap:1rem;align-items:flex-start;min-height:150px;padding:1rem;border:1px solid var(--border);border-radius:18px}
+    .icon-card h3{margin:0;font-size:1rem}.icon-card p{margin:.3rem 0;color:var(--muted);font-size:.9rem}
+    code{font-size:.72rem;overflow-wrap:anywhere}
+    @media(max-width:850px){.icon-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.icon-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <p>Palette forêt + corail</p>
+  <h1>Pictogrammes filaires légers</h1>
+  <p class="intro">Même trait, même géométrie et couleur héritée du thème. Les détails corail et or restent discrets pour ne pas alourdir le portfolio.</p>
+  <section class="preview" aria-labelledby="light-title">
+    <h2 id="light-title">Fond clair</h2>
+    <div class="icon-grid"><article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-vitruvian"></use></svg>
+  <div><h3>Homme de Vitruve</h3><p>Profil / introduction</p><code>#icon-vitruvian</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-accessibility"></use></svg>
+  <div><h3>Accessibilité universelle</h3><p>Expertise / valeurs</p><code>#icon-accessibility</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-wheelchair"></use></svg>
+  <div><h3>Mobilité</h3><p>Contenu spécifiquement PMR</p><code>#icon-wheelchair</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-orthosis"></use></svg>
+  <div><h3>Orthèse connectée</h3><p>Projet BRA(S)VO</p><code>#icon-orthosis</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-cognitive"></use></svg>
+  <div><h3>Ergonomie cognitive</h3><p>Compétences / recherche</p><code>#icon-cognitive</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-vision-contrast"></use></svg>
+  <div><h3>Vision et contraste</h3><p>Audit / accessibilité</p><code>#icon-vision-contrast</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-keyboard-focus"></use></svg>
+  <div><h3>Navigation clavier</h3><p>Tests / qualité</p><code>#icon-keyboard-focus</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-biofeedback"></use></svg>
+  <div><h3>Biofeedback</h3><p>Capteurs / BLE</p><code>#icon-biofeedback</code></div>
+</article></div>
+  </section>
+  <section class="preview preview--dark" aria-labelledby="dark-title">
+    <h2 id="dark-title">Fond forêt</h2>
+    <div class="icon-grid"><article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-vitruvian"></use></svg>
+  <div><h3>Homme de Vitruve</h3><p>Profil / introduction</p><code>#icon-vitruvian</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-accessibility"></use></svg>
+  <div><h3>Accessibilité universelle</h3><p>Expertise / valeurs</p><code>#icon-accessibility</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-wheelchair"></use></svg>
+  <div><h3>Mobilité</h3><p>Contenu spécifiquement PMR</p><code>#icon-wheelchair</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-orthosis"></use></svg>
+  <div><h3>Orthèse connectée</h3><p>Projet BRA(S)VO</p><code>#icon-orthosis</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-cognitive"></use></svg>
+  <div><h3>Ergonomie cognitive</h3><p>Compétences / recherche</p><code>#icon-cognitive</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-vision-contrast"></use></svg>
+  <div><h3>Vision et contraste</h3><p>Audit / accessibilité</p><code>#icon-vision-contrast</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-keyboard-focus"></use></svg>
+  <div><h3>Navigation clavier</h3><p>Tests / qualité</p><code>#icon-keyboard-focus</code></div>
+</article>
+<article class="icon-card">
+  <svg class="wire-icon wire-icon--large" aria-hidden="true" focusable="false"><use href="wire-icons.svg#icon-biofeedback"></use></svg>
+  <div><h3>Biofeedback</h3><p>Capteurs / BLE</p><code>#icon-biofeedback</code></div>
+</article></div>
+  </section>
+</main>
+</body>
+</html>
