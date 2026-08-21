@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Questionnaire court pour laisser un témoignage professionnel à Sarah Bussi.">
+  <title>Laisser un témoignage — Sarah Bussi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="recommendation-form.css">
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au formulaire</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html#recommandations" aria-label="Sarah Bussi — retour aux recommandations"><span class="brand-mark" aria-hidden="true">SB</span><span>Sarah Bussi</span></a>
+    <a class="button button-secondary" href="index.html#recommandations">Retour au portfolio</a>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="form-hero" aria-labelledby="form-title">
+    <div class="container form-container">
+      <p class="eyebrow">Témoignage professionnel</p>
+      <h1 id="form-title">Quelques mots sur notre collaboration</h1>
+      <p class="hero-copy">Merci de prendre quelques minutes pour partager votre expérience de travail avec moi. Les réponses ne sont jamais publiées automatiquement : je relis chaque témoignage avant toute intégration au portfolio.</p>
+      <div class="privacy-note" role="note">
+        <h2>Ce qui reste privé</h2>
+        <p>Votre adresse e-mail ou votre profil LinkedIn sert uniquement à vérifier l'origine du témoignage. Cette information ne sera jamais affichée publiquement sans votre accord explicite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted" aria-labelledby="questionnaire-title">
+    <div class="container form-container">
+      <div class="section-heading"><p class="eyebrow">3 minutes environ</p><h2 id="questionnaire-title">Questionnaire</h2></div>
+
+      <form id="recommendation-form">
+        <fieldset>
+          <legend>À propos de vous</legend>
+          <div class="form-grid">
+            <div class="field"><label for="name">Nom et prénom <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="role">Poste / fonction <span aria-hidden="true">*</span></label><input id="role" name="role" required></div>
+            <div class="field"><label for="company">Entreprise / organisation <span class="optional">facultatif</span></label><input id="company" name="company" autocomplete="organization"></div>
+            <div class="field"><label for="contact-private">E-mail ou LinkedIn de vérification <span aria-hidden="true">*</span></label><input id="contact-private" name="contact-private" required aria-describedby="contact-help"><p class="field-help" id="contact-help">Privé — ne sera pas publié sur le portfolio.</p></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Notre collaboration</legend>
+          <div class="field"><label for="context">Dans quel contexte avons-nous travaillé ensemble ? <span aria-hidden="true">*</span></label><textarea id="context" name="context" rows="3" required placeholder="Ex. équipe produit, projet universitaire, audit, développement, collaboration transverse…"></textarea></div>
+          <div class="field"><label for="testimonial">En quelques phrases, comment décririez-vous mon travail et notre collaboration ? <span aria-hidden="true">*</span></label><textarea id="testimonial" name="testimonial" rows="7" minlength="40" maxlength="1200" required aria-describedby="testimonial-help"></textarea><p class="field-help" id="testimonial-help">2 à 6 phrases suffisent. Vous pouvez parler de ma façon de travailler, de mes compétences, de ma communication ou de ce que j'ai apporté au projet.</p></div>
+
+          <fieldset class="nested-fieldset">
+            <legend>Quels points vous semblent les plus représentatifs ? <span class="optional">facultatif</span></legend>
+            <div class="check-grid">
+              <label><input type="checkbox" name="strength" value="Accessibilité numérique"> Accessibilité numérique</label>
+              <label><input type="checkbox" name="strength" value="Rigueur et qualité"> Rigueur et qualité</label>
+              <label><input type="checkbox" name="strength" value="Collaboration"> Collaboration</label>
+              <label><input type="checkbox" name="strength" value="Pédagogie et vulgarisation"> Pédagogie et vulgarisation</label>
+              <label><input type="checkbox" name="strength" value="Autonomie"> Autonomie</label>
+              <label><input type="checkbox" name="strength" value="Recherche de solutions"> Recherche de solutions</label>
+              <label><input type="checkbox" name="strength" value="UX / produit"> UX / produit</label>
+              <label><input type="checkbox" name="strength" value="Technique / développement"> Technique / développement</label>
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Publication sur le portfolio</legend>
+          <p>Si le témoignage est retenu, comment souhaitez-vous être identifié·e ?</p>
+          <div class="radio-stack">
+            <label><input type="radio" name="identity" value="Nom complet + fonction" required> Nom complet + fonction</label>
+            <label><input type="radio" name="identity" value="Prénom + fonction"> Prénom + fonction</label>
+            <label><input type="radio" name="identity" value="Initiales + fonction"> Initiales + fonction</label>
+            <label><input type="radio" name="identity" value="Fonction uniquement"> Fonction uniquement</label>
+          </div>
+          <label class="consent"><input type="checkbox" id="consent" required> J'autorise Sarah Bussi à reprendre tout ou partie de ce témoignage sur son portfolio selon le niveau d'identification choisi ci-dessus. Je pourrai demander son retrait ultérieurement.</label>
+        </fieldset>
+
+        <div class="submit-zone">
+          <button class="button button-primary" type="submit">Préparer mon témoignage</button>
+          <p class="field-help">Le bouton ouvre votre application de messagerie avec les réponses préremplies. Rien n'est envoyé automatiquement depuis ce site.</p>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-inner"><p>Questionnaire de recommandation — Sarah Bussi</p><p><a href="index.html#recommandations">Retour au portfolio</a></p></div></footer>
+<script src="recommendation.js"></script>
+</body>
+</html>
