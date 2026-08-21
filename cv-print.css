@@ -1,0 +1,87 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html {
+    font-size: 10.5pt;
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .site-header,
+  .site-footer,
+  .cv-actions,
+  .skip-link {
+    display: none !important;
+  }
+
+  main,
+  .section,
+  .hero,
+  .section-muted {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .hero,
+  .section {
+    padding: 10mm 0 !important;
+  }
+
+  .container,
+  .container.narrow,
+  .narrow {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: none !important;
+  }
+
+  .timeline-item,
+  .project-card,
+  .skill-group,
+  article,
+  section.skill-group {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .projects-grid,
+  .skills-grid {
+    gap: 8mm !important;
+  }
+
+  .project-card,
+  .skill-group {
+    box-shadow: none !important;
+    border: 1px solid #999 !important;
+  }
+
+  .eyebrow,
+  .role,
+  .hero-copy,
+  .section-heading p {
+    color: #222 !important;
+  }
+
+  .tags {
+    break-inside: avoid;
+  }
+}
