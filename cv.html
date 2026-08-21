@@ -6,6 +6,7 @@
   <meta name="description" content="CV accessible de Sarah Bussi, consultante en accessibilité numérique.">
   <title>CV — Sarah Bussi</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cv-print.css" media="print">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -38,6 +39,11 @@
         <p class="hero-copy"><strong>Consultante en accessibilité numérique</strong><br>UX inclusive · Technologies numériques · Qualité produit</p>
         <p>Paris, France · <a href="tel:+33770431504">+33 7 70 43 15 04</a> · <a href="mailto:sarah.bussi2108@gmail.com">sarah.bussi2108@gmail.com</a> · <a href="https://www.linkedin.com/in/sarahbussi">LinkedIn</a> · <a href="https://github.com/sarah-bussi">GitHub</a> · <a href="index.html">Portfolio</a></p>
         <p class="hero-copy">Spécialisée en accessibilité numérique, j'accompagne la conception et l'amélioration de produits numériques en conciliant exigences d'accessibilité, expérience utilisateur et contraintes techniques. Mon parcours en psychologie, technologies et handicap me permet d'apporter une approche centrée utilisateur, de collaborer efficacement avec les équipes produit et de transformer les besoins utilisateurs et les exigences d'accessibilité en solutions concrètes, utilisables et pérennes.</p>
+        <div class="hero-actions cv-actions">
+          <button class="button button-primary" id="cv-print" type="button" aria-describedby="cv-print-help">Enregistrer le CV en PDF</button>
+          <a class="button button-secondary" href="index.html">Retour au portfolio</a>
+        </div>
+        <p id="cv-print-help" class="sr-only">Ouvre la boîte de dialogue d'impression du navigateur, qui permet notamment d'enregistrer ce CV au format PDF.</p>
       </div>
     </section>
 
@@ -169,5 +175,6 @@
   <footer class="site-footer">
     <div class="container footer-inner"><p>CV accessible — Sarah Bussi</p><p><a href="index.html">Retour au portfolio</a></p></div>
   </footer>
+  <script src="cv.js"></script>
 </body>
 </html>
