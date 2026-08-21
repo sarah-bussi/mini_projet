@@ -17,6 +17,13 @@ ul.cv-header-actions>li::marker{content:""}
 .cv-contact li{position:relative;list-style:none}
 .cv-contact li::marker{content:""}
 .cv-contact li+li::before{content:"";position:absolute;left:-.66rem;top:.65em;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+.cv-page .timeline-content h4{margin:1.15rem 0 .4rem;color:var(--text-muted);font-size:.9rem;font-weight:850;letter-spacing:.055em;text-transform:uppercase}
+.cv-page .experience-list{margin:.35rem 0 0;padding-left:1.2rem}
+.cv-page .experience-list li+li{margin-top:.45rem}
+.cv-page .experience-skills{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none!important;margin:.55rem 0 0;padding:0!important;padding-inline-start:0!important}
+.cv-page .experience-skills>li{margin:0;padding:.28rem .62rem;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text);font-size:.84rem;font-weight:720;line-height:1.4;list-style:none}
+.cv-page .experience-skills>li::marker{content:""}
+.cv-page .experience-skills>li+li{margin-top:0}
 .cv-recommendations{display:grid;gap:1rem}
 .recommendation-details,.recommendation-pending{border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}
 .recommendation-details summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.35rem;cursor:pointer;list-style:none;font-size:1.08rem}

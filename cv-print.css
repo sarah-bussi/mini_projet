@@ -58,7 +58,8 @@
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     break-after: avoid;
     page-break-after: avoid;
   }
@@ -96,7 +97,14 @@
     color: #222 !important;
   }
 
-  .tags {
+  .tags,
+  .experience-skills {
     break-inside: avoid;
+  }
+
+  .experience-skills li {
+    background: #fff !important;
+    color: #111 !important;
+    border-color: #777 !important;
   }
 }
