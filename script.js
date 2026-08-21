@@ -26,17 +26,23 @@
   });
 
   const headerInner = document.querySelector('.header-inner');
+  const headerTools = headerInner?.querySelector('.header-tools');
   if (headerInner && !headerInner.querySelector('.language-switch')) {
     const languageSwitch = document.createElement('a');
     languageSwitch.className = 'button button-secondary language-switch';
     languageSwitch.href = isEnglish ? 'index.html' : 'index-en.html';
-    languageSwitch.lang = isEnglish ? 'fr' : 'en';
     languageSwitch.hreflang = isEnglish ? 'fr' : 'en';
     languageSwitch.textContent = isEnglish ? 'FR' : 'EN';
-    languageSwitch.setAttribute('aria-label', isEnglish ? 'Voir le portfolio en français' : 'View portfolio in English');
-    const themeButton = document.getElementById('theme-toggle');
-    if (themeButton) headerInner.insertBefore(languageSwitch, themeButton);
-    else headerInner.appendChild(languageSwitch);
+    languageSwitch.setAttribute('aria-label', isEnglish ? 'View portfolio in French' : 'Voir le portfolio en anglais');
+    if (headerTools) {
+      const languageItem = document.createElement('li');
+      languageItem.appendChild(languageSwitch);
+      headerTools.insertBefore(languageItem, headerTools.firstChild);
+    } else {
+      const themeButton = document.getElementById('theme-toggle');
+      if (themeButton) headerInner.insertBefore(languageSwitch, themeButton);
+      else headerInner.appendChild(languageSwitch);
+    }
   }
 
   const siteHeader = document.querySelector('.site-header');
@@ -62,9 +68,20 @@
 
   const arrangeHeaderItems = () => {
     if (!headerInner || !navToggle || !mainNav) return;
+
+    if (headerTools) {
+      if (mobileNavQuery.matches) {
+        headerInner.appendChild(headerTools);
+        headerInner.appendChild(mainNav);
+      } else {
+        headerInner.insertBefore(mainNav, headerTools);
+      }
+      updateHeaderOffset();
+      return;
+    }
+
     const languageSwitch = headerInner.querySelector('.language-switch');
     const themeButton = document.getElementById('theme-toggle');
-
     if (mobileNavQuery.matches) {
       if (languageSwitch) headerInner.appendChild(languageSwitch);
       if (themeButton) headerInner.appendChild(themeButton);
@@ -76,7 +93,6 @@
       if (languageSwitch && themeButton) headerInner.insertBefore(languageSwitch, themeButton);
       headerInner.appendChild(navToggle);
     }
-
     updateHeaderOffset();
   };
 
