@@ -58,6 +58,24 @@
     });
   });
 
+  const recommendations = document.getElementById('recommandations');
+  if (recommendations && !recommendations.querySelector('[data-testimonial-cta]')) {
+    const container = recommendations.querySelector('.container');
+    if (container) {
+      const colleagueCard = document.createElement('div');
+      colleagueCard.className = 'recommendation-card';
+      colleagueCard.setAttribute('data-testimonial-cta', '');
+      colleagueCard.innerHTML = `
+        <div>
+          <p class="eyebrow">Témoignages de collègues</p>
+          <h3>Vous avez travaillé avec moi ?</h3>
+          <p>Un questionnaire court permet de partager quelques phrases sur notre collaboration. Les coordonnées de vérification restent privées et aucun témoignage n'est publié automatiquement.</p>
+        </div>
+        <a class="button button-secondary" href="recommandation.html">Laisser un témoignage</a>`;
+      container.appendChild(colleagueCard);
+    }
+  }
+
   let opener = null;
   const dialogButtons = [...document.querySelectorAll('[data-dialog]')];
   const dialogs = [...document.querySelectorAll('dialog.project-dialog')];
