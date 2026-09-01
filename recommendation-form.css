@@ -117,10 +117,27 @@ textarea {
   resize: vertical;
   min-height: 7rem;
 }
+
+/* Le focus ne repose pas uniquement sur un changement de couleur de bordure. */
 input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible,
 textarea:focus-visible {
   border-color: var(--accent);
 }
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline-offset: 4px;
+}
+
 input[aria-invalid="true"],
 textarea[aria-invalid="true"] {
   border-color: var(--accent-strong);
@@ -224,6 +241,35 @@ textarea[aria-invalid="true"] {
   height: 1px !important;
   overflow: hidden !important;
 }
+
+/* Conserve des contours et états perceptibles lorsque Windows force ses couleurs. */
+@media (forced-colors: active) {
+  .privacy-note,
+  .form-section,
+  fieldset,
+  input,
+  textarea,
+  .consent {
+    border-color: CanvasText;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible,
+  a:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid Highlight;
+    outline-offset: 3px;
+  }
+
+  input[aria-invalid="true"],
+  textarea[aria-invalid="true"],
+  .publication-options[aria-invalid="true"],
+  .consent-fieldset:has(input[aria-invalid="true"]) {
+    outline-color: Mark;
+  }
+}
+
 @media (max-width: 700px) {
   .form-header {
     align-items: flex-start;
