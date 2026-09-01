@@ -58,8 +58,13 @@ legend {
   padding: 1rem;
   background: var(--surface-muted);
 }
-.nested-fieldset legend {
+.form-group-title {
+  max-width: none;
+  margin: 0 0 1rem;
   font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.35;
 }
 .publication-options {
   margin-top: 0;
