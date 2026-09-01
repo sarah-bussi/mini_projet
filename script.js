@@ -204,7 +204,7 @@
   }
 
   const recommendationContacts = {
-    audrey: { email: "", linkedin: "" },
+    audrey: { email: "Audrey_GAMBS@connect-tech.sncf", linkedin: "" },
     yannick: { email: "yannick@breavoine.net", linkedin: "" },
   };
 
@@ -212,12 +212,12 @@
     const actions = [];
     if (contact.email) {
       actions.push(
-        `<a class="button button-secondary" href="mailto:${contact.email}" aria-label="${isEnglish ? "Email" : "Envoyer un e-mail à"} ${label}">${isEnglish ? "Email" : "E-mail"} : ${label}</a>`,
+        `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? `Email ${label}` : `Contacter ${label} par e-mail`}</a>`,
       );
     }
     if (contact.linkedin) {
       actions.push(
-        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn : ${label}<span class="sr-only">${isEnglish ? ", opens in a new tab" : ", ouvre un nouvel onglet"}</span></a>`,
+        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">${isEnglish ? `View ${label}'s LinkedIn profile` : `Voir le profil LinkedIn de ${label}`}<span class="sr-only">${isEnglish ? ", opens in a new tab" : ", ouvre un nouvel onglet"}</span></a>`,
       );
     }
     return actions.length
@@ -390,10 +390,10 @@ Yannick BREAVOINE`;
           <h2 id="recommendations-title">Recommendation letters</h2>
           <p>Two recommendations from people who directly supervised or worked with me are available here.</p>
         </div>
-        <div class="recommendations-grid" aria-label="Professional recommendations">
-          <article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Digital accessibility specialist</p><h3>Yannick Breavoine</h3><p><strong>Digital accessibility and specialist training</strong></p><p>Recommendation covering screen-reader testing, code analysis, clear accessibility tickets, initiative and autonomy.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Read recommendation<span class="sr-only"> from Yannick Breavoine</span></button></article>
-        </div>
+        <ul class="recommendations-grid" aria-label="Professional recommendations">
+          <li><article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article></li>
+          <li><article class="recommender-card"><p class="recommender-role">Digital accessibility specialist</p><h3>Yannick Breavoine</h3><p><strong>Digital accessibility and specialist training</strong></p><p>Recommendation covering screen-reader testing, code analysis, clear accessibility tickets, initiative and autonomy.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Read recommendation<span class="sr-only"> from Yannick Breavoine</span></button></article></li>
+        </ul>
         <div class="testimonial-subsection">
           <p class="eyebrow">Colleague testimonials</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
@@ -405,10 +405,10 @@ Yannick BREAVOINE`;
           <h2 id="recommendations-title">Lettres de recommandation</h2>
           <p>Deux recommandations de personnes ayant directement encadré ou travaillé avec moi sont disponibles ici.</p>
         </div>
-        <div class="recommendations-grid" aria-label="Recommandations professionnelles">
-          <article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Accessibilité numérique</p><h3>Yannick Breavoine</h3><p><strong>Accessibilité numérique et formation spécialisée</strong></p><p>Recommandation portant notamment sur les tests avec lecteur d'écran, l'analyse du code, la rédaction de tickets, la prise d'initiative et l'autonomie.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la lettre complète<span class="sr-only"> de Yannick Breavoine</span></button></article>
-        </div>
+        <ul class="recommendations-grid" aria-label="Recommandations professionnelles">
+          <li><article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article></li>
+          <li><article class="recommender-card"><p class="recommender-role">Accessibilité numérique</p><h3>Yannick Breavoine</h3><p><strong>Accessibilité numérique et formation spécialisée</strong></p><p>Recommandation portant notamment sur les tests avec lecteur d'écran, l'analyse du code, la rédaction de tickets, la prise d'initiative et l'autonomie.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la lettre complète<span class="sr-only"> de Yannick Breavoine</span></button></article></li>
+        </ul>
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div>
