@@ -135,7 +135,7 @@
       const article = document.createElement("article");
       article.className = "moderation-card";
 
-      const heading = document.createElement("h2");
+      const heading = document.createElement("h3");
       heading.textContent = row.full_name;
 
       const meta = document.createElement("p");

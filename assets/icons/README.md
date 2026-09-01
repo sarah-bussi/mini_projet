@@ -1,4 +1,4 @@
-# Pictogrammes filaires — palette forêt + corail
+# Pictogrammes filaires, palette forêt et corail
 
 Mini-bibliothèque SVG conçue pour le portfolio. Les huit pictogrammes utilisent le même trait et héritent de la couleur du thème avec `currentColor`.
 

@@ -1,4 +1,4 @@
-# Portfolio accessible — Sarah Bussi
+# Portfolio accessible de Sarah Bussi
 
 Portfolio statique en HTML/CSS/JavaScript, pensé pour être déployé facilement sur GitHub Pages.
 

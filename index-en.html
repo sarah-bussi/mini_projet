@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Sarah Bussi's portfolio — digital accessibility, inclusive UX, product quality, AI and assistive technologies."
+      content="Sarah Bussi's portfolio: digital accessibility, inclusive UX, product quality, AI and assistive technologies."
     />
     <title>
-      Sarah Bussi — Digital Accessibility, Inclusive UX & Product Quality
+      Sarah Bussi - Digital Accessibility, Inclusive UX & Product Quality
     </title>
-    <link rel="stylesheet" href="styles.css?v=20260822-1" />
+    <link rel="stylesheet" href="styles.css?v=20260901-3" />
     <link rel="stylesheet" href="assets/icons/icons.css" />
     <link rel="stylesheet" href="modals.css?v=20260821-9" />
   </head>
@@ -21,7 +21,7 @@
         <a
           class="brand"
           href="#home"
-          aria-label="Sarah Bussi — back to homepage"
+          aria-label="Sarah Bussi, back to homepage"
           ><span class="brand-mark" aria-hidden="true">SB</span
           ><span class="brand-copy"
             ><span class="brand-name">Sarah Bussi</span
@@ -81,18 +81,18 @@
       <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div>
-            <p class="hero-name">Sarah Bussi</p>
+            <h1 class="hero-name">Sarah Bussi</h1>
             <p class="eyebrow">
               Digital accessibility · Inclusive UX · Product quality
             </p>
-            <h1 id="hero-title">
+            <h2 class="hero-title" id="hero-title">
               Designing digital products that are accessible, usable and
               technically robust.
-            </h1>
+            </h2>
             <p class="hero-copy">
               I combine digital accessibility, psychology, cognitive ergonomics
               and development to turn accessibility requirements into concrete
-              product decisions — from design reviews to testing and validation.
+              product decisions, from design reviews to testing and validation.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#projects-title"
@@ -104,11 +104,11 @@
             <ul class="hero-meta">
               <li class="availability">Available from autumn 2026</li>
               <li>Paris, France</li>
-              <li>Master's degree — Technology & Disability</li>
+              <li>Master's degree - Technology & Disability</li>
             </ul>
           </div>
-          <aside class="hero-panel" aria-label="Professional positioning">
-            <p class="panel-kicker">My guiding principle</p>
+          <aside class="hero-panel" aria-labelledby="positioning-title">
+            <h2 class="panel-kicker" id="positioning-title">My guiding principle</h2>
             <p class="panel-quote">
               “Start with people, understand the barriers they face, and create
               solutions that give everyone more choice, autonomy and room to
@@ -160,8 +160,8 @@
               />
             </figure>
           </div>
-          <div class="expertise-grid">
-            <article class="expertise-card">
+          <ol class="expertise-grid" role="list">
+            <li class="expertise-card">
               <div class="expertise-card-top" aria-hidden="true">
                 <span class="card-number">01</span
                 ><svg class="wire-icon" aria-hidden="true" focusable="false">
@@ -175,8 +175,8 @@
                 Web and mobile audits, keyboard testing, assistive technologies,
                 semantic structure, contrast and component analysis.
               </p>
-            </article>
-            <article class="expertise-card">
+            </li>
+            <li class="expertise-card">
               <div class="expertise-card-top" aria-hidden="true">
                 <span class="card-number">02</span
                 ><svg class="wire-icon" aria-hidden="true" focusable="false">
@@ -190,8 +190,8 @@
                 Design reviews, early identification of accessibility barriers,
                 specifications and handoff with designers and developers.
               </p>
-            </article>
-            <article class="expertise-card">
+            </li>
+            <li class="expertise-card">
               <div class="expertise-card-top" aria-hidden="true">
                 <span class="card-number">03</span
                 ><svg class="wire-icon" aria-hidden="true" focusable="false">
@@ -205,8 +205,8 @@
                 Prioritisation, actionable tickets, fix validation and
                 regression testing.
               </p>
-            </article>
-            <article class="expertise-card">
+            </li>
+            <li class="expertise-card">
               <div class="expertise-card-top" aria-hidden="true">
                 <span class="card-number">04</span
                 ><svg class="wire-icon" aria-hidden="true" focusable="false">
@@ -218,8 +218,8 @@
                 AI, mobile applications, sensors, BLE and assistive technologies
                 through a user-centred approach.
               </p>
-            </article>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -238,13 +238,13 @@
           </div>
           <article class="timeline-item">
             <div class="timeline-meta">
-              <p>2024 — 2026</p>
+              <p>2024 - 2026</p>
               <p>Paris</p>
             </div>
             <div class="timeline-content">
               <h3>SNCF Connect & Tech</h3>
               <p class="role">
-                Digital Accessibility & Product Quality — Work-study placement
+                Digital Accessibility & Product Quality - Work-study placement
               </p>
               <ul>
                 <li>
@@ -266,9 +266,9 @@
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-meta"><p>2024 — 2026</p></div>
+            <div class="timeline-meta"><p>2024 - 2026</p></div>
             <div class="timeline-content">
-              <h3>Master MIASHS — Technology & Disability</h3>
+              <h3>Master MIASHS - Technology & Disability</h3>
               <p class="role">Université Paris 8</p>
               <p>
                 Digital accessibility, HCI, cognitive ergonomics, development,
@@ -277,9 +277,9 @@
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-meta"><p>2019 — 2023</p></div>
+            <div class="timeline-meta"><p>2019 - 2023</p></div>
             <div class="timeline-content">
-              <h3>Bachelor's degree in Psychology — Neuropsychology</h3>
+              <h3>Bachelor's degree in Psychology - Neuropsychology</h3>
               <p class="role">Université Paul-Valéry Montpellier</p>
               <p>
                 Background in cognition, observation, behaviour and
@@ -317,37 +317,50 @@
                 class="filter-button is-active"
                 data-filter="all"
                 aria-pressed="true"
+                aria-controls="projects-grid"
               >
-                All</button
-              ><button
+                All
+              </button>
+              <button
                 type="button"
                 class="filter-button"
-                data-filter="a11y"
+                data-filter="a11y-audit"
                 aria-pressed="false"
+                aria-controls="projects-grid"
               >
-                Accessibility</button
-              ><button
+                Accessibility & audits
+              </button>
+              <button
                 type="button"
                 class="filter-button"
-                data-filter="tech"
+                data-filter="health"
                 aria-pressed="false"
+                aria-controls="projects-grid"
               >
-                Tech</button
-              ><button
+                Connected health
+              </button>
+              <button
                 type="button"
                 class="filter-button"
-                data-filter="ux"
+                data-filter="ux-web"
                 aria-pressed="false"
+                aria-controls="projects-grid"
               >
-                UX / HCI
+                UX & web
               </button>
             </div>
           </div>
-          <p id="filter-status" class="sr-only" aria-live="polite"></p>
-          <div class="projects-grid">
+          <p
+            id="filter-status"
+            class="sr-only"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+          <div class="projects-grid" id="projects-grid">
             <article
               class="project-card project-featured"
-              data-tags="a11y tech ux"
+              data-tags="a11y-audit"
             >
               <div class="project-topline">
                 <p class="project-type">Master's thesis · AI & accessibility</p>
@@ -370,7 +383,7 @@
                 real-world situations with accessibility requirements and
                 contextual recommendations.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>Python</li>
                 <li>LLM</li>
                 <li>RAG</li>
@@ -386,7 +399,7 @@
                 View project<span class="sr-only">: A11y Copilot</span>
               </button>
             </article>
-            <article class="project-card" data-tags="tech ux">
+            <article class="project-card" data-tags="health">
               <div class="project-topline">
                 <p class="project-type">Connected orthosis · rehabilitation</p>
                 <span class="project-status">2026</span>
@@ -405,7 +418,7 @@
                 An instrumented hand orthosis connected to a mobile app and
                 therapeutic mini-games to support hand rehabilitation.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>Flutter</li>
                 <li>BLE</li>
                 <li>Sensors</li>
@@ -421,7 +434,7 @@
                 View project<span class="sr-only">: BRA(S)VO</span>
               </button>
             </article>
-            <article class="project-card" data-tags="a11y ux">
+            <article class="project-card" data-tags="a11y-audit">
               <div class="project-topline">
                 <p class="project-type">Game accessibility · audit</p>
                 <span class="project-status">2025</span>
@@ -431,7 +444,7 @@
                 Accessibility audit of an educational game and design of
                 improvements targeting motor, visual and cognitive barriers.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>Expert audit</li>
                 <li>Figma</li>
                 <li>UX</li>
@@ -447,7 +460,7 @@
                 View project<span class="sr-only">: SPY</span>
               </button>
             </article>
-            <article class="project-card" data-tags="a11y tech ux">
+            <article class="project-card" data-tags="ux-web">
               <div class="project-topline">
                 <p class="project-type">
                   Web development · back end & accessibility
@@ -459,7 +472,7 @@
                 A collaborative cooking website, an accessibility exercise and
                 an anonymised full-stack non-profit prototype.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>HTML/CSS/JS</li>
                 <li>PHP</li>
                 <li>MySQL</li>
@@ -475,7 +488,7 @@
                 View projects<span class="sr-only">: three web projects</span>
               </button>
             </article>
-            <article class="project-card" data-tags="tech ux">
+            <article class="project-card" data-tags="health">
               <div class="project-topline">
                 <p class="project-type">
                   Connected device · stress & biofeedback
@@ -499,7 +512,7 @@
                 application, BLE and haptic feedback to explore stress
                 regulation.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>Kotlin</li>
                 <li>ESP32</li>
                 <li>BLE</li>
@@ -515,7 +528,7 @@
                 View project<span class="sr-only">: SmartCare Watch</span>
               </button>
             </article>
-            <article class="project-card" data-tags="a11y ux">
+            <article class="project-card" data-tags="ux-web">
               <div class="project-topline">
                 <p class="project-type">Accessible serious game · HCI</p>
                 <span class="project-status">2025</span>
@@ -526,7 +539,7 @@
                 braille, with player and contributor journeys and initial
                 feedback from visually impaired users.
               </p>
-              <ul class="tags">
+              <ul class="tags" role="list">
                 <li>Figma</li>
                 <li>HCI</li>
                 <li>User testing</li>
@@ -630,7 +643,7 @@
           <div class="section-heading">
             <p class="eyebrow">International & knowledge sharing</p>
             <h2 id="international-title">
-              ERUA Workshop — New Bulgarian University
+              ERUA Workshop - New Bulgarian University
             </h2>
             <p>
               On 24 October 2025, I delivered an English-language presentation
@@ -815,7 +828,7 @@
         </section>
         <aside>
           <h3>Skills used</h3>
-          <ul class="modal-skills">
+          <ul class="modal-skills" role="list">
             <li>RGAA</li>
             <li>Python</li>
             <li>RAG</li>
@@ -1236,7 +1249,7 @@
                 target="_blank"
                 rel="noopener"
                 >View the official programme on the New Bulgarian University
-                website — new tab</a
+                website, new tab</a
               >
             </li>
           </ul>
@@ -1312,9 +1325,8 @@
           <h3>Audit approach</h3>
           <p>
             As part of a three-student project, the interface was reviewed using
-            the Game Accessibility Guidelines. The assessment covered six
-            categories of needs — motor, cognitive, visual, hearing, speech and
-            general — across the basic, intermediate and advanced recommendation
+            the Game Accessibility Guidelines. The assessment covered six categories of needs: motor, cognitive, visual, hearing, speech and
+            general, across the basic, intermediate and advanced recommendation
             levels.
           </p>
 
@@ -1421,7 +1433,7 @@
                 href="https://spy.lip6.fr/index_fr.html"
                 target="_blank"
                 rel="noopener"
-                >Open the SPY game — new tab</a
+                >Open the SPY game, new tab</a
               >
             </li>
             <li>
@@ -1429,7 +1441,7 @@
                 href="https://github.com/Mocahteam/SPY"
                 target="_blank"
                 rel="noopener"
-                >View the SPY source code — new tab</a
+                >View the SPY source code, new tab</a
               >
             </li>
           </ul>
@@ -1716,7 +1728,7 @@
                 <li>BPM sensor detection and value reading;</li>
                 <li>haptic motor activation;</li>
                 <li>
-                  Bangle.js demonstrator with heart rate, 4–4–6–2 breathing and
+                  Bangle.js demonstrator with heart rate, 4-4-6-2 breathing and
                   vibration cues;
                 </li>
                 <li>
@@ -2109,7 +2121,7 @@
     </footer>
     <script src="testimonials-config.js?v=20260822-1"></script>
     \n
-    <script src="script.js?v=20260822-2"></script>
+    <script src="script.js?v=20260901-3"></script>
     \n
     <script src="testimonials.js?v=20260822-1"></script>
   </body>
