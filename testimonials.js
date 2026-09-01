@@ -5,6 +5,78 @@
   const liveStatus = document.getElementById("testimonials-status");
   if (!container) return;
 
+  const recommendationContacts = [
+    {
+      dialogId: "dialog-rec-manager",
+      name: "Audrey Gambs",
+      email: "Audrey_GAMBS@connect-tech.sncf",
+      linkedin: "https://www.linkedin.com/in/audrey-gambs-46278a137",
+    },
+    {
+      dialogId: "dialog-rec-yannick",
+      name: "Yannick Breavoine",
+      email: "yannick@breavoine.net",
+      linkedin: "https://www.linkedin.com/in/yannick-breavoine-83533551",
+    },
+  ];
+
+  const createContactLink = ({ href, text, newTab = false }) => {
+    const link = document.createElement("a");
+    link.className = "button button-secondary";
+    link.href = href;
+    link.textContent = text;
+    if (newTab) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      const newTabText = document.createElement("span");
+      newTabText.className = "sr-only";
+      newTabText.textContent = isEnglish
+        ? ", opens in a new tab"
+        : ", ouvre un nouvel onglet";
+      link.appendChild(newTabText);
+    }
+    return link;
+  };
+
+  const updateRecommendationContacts = () => {
+    let updated = 0;
+
+    recommendationContacts.forEach((contact) => {
+      const dialog = document.getElementById(contact.dialogId);
+      const actions = dialog?.querySelector(".recommendation-actions");
+      if (!(actions instanceof HTMLElement)) return;
+
+      const emailLink = createContactLink({
+        href: `mailto:${contact.email}`,
+        text: isEnglish
+          ? `Email ${contact.name}`
+          : `Contacter ${contact.name} par e-mail`,
+      });
+      const linkedinLink = createContactLink({
+        href: contact.linkedin,
+        text: isEnglish
+          ? `View ${contact.name}'s LinkedIn profile`
+          : `Voir le profil LinkedIn de ${contact.name}`,
+        newTab: true,
+      });
+
+      actions.replaceChildren(emailLink, linkedinLink);
+      updated += 1;
+    });
+
+    return updated;
+  };
+
+  if (updateRecommendationContacts() < recommendationContacts.length) {
+    const observer = new MutationObserver(() => {
+      if (updateRecommendationContacts() === recommendationContacts.length) {
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    window.setTimeout(() => observer.disconnect(), 5000);
+  }
+
   const config = window.TESTIMONIALS_CONFIG || {};
   const apiUrl = String(config.supabaseUrl || "").replace(/\/$/, "");
   const anonKey = String(config.supabaseAnonKey || "");
@@ -118,6 +190,7 @@
       render(await response.json());
     } catch {
       showMessage(copy.error);
+      if (liveStatus) liveStatus.textContent = copy.error;
     }
   };
 
