@@ -55,6 +55,13 @@ create policy testimonials_moderator_update
   using ((auth.jwt() -> 'app_metadata' ->> 'role') = 'moderator')
   with check ((auth.jwt() -> 'app_metadata' ->> 'role') = 'moderator');
 
+drop policy if exists testimonials_moderator_delete on public.testimonials;
+create policy testimonials_moderator_delete
+  on public.testimonials
+  for delete
+  to authenticated
+  using ((auth.jwt() -> 'app_metadata' ->> 'role') = 'moderator');
+
 revoke all on table public.testimonials from anon, authenticated;
 grant insert (
   full_name,
@@ -71,6 +78,7 @@ grant insert (
 grant select on public.testimonials to authenticated;
 grant update (status, moderated_at, approved_at, verification_contact)
   on public.testimonials to authenticated;
+grant delete on public.testimonials to authenticated;
 
 create or replace function public.testimonial_initials(input_name text)
 returns text
