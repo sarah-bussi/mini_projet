@@ -10,7 +10,7 @@ create table if not exists public.testimonials (
   organization text check (organization is null or char_length(trim(organization)) <= 160),
   verification_contact text check (verification_contact is null or char_length(trim(verification_contact)) between 5 and 320),
   collaboration_context text not null check (char_length(trim(collaboration_context)) between 10 and 800),
-  testimonial text not null check (char_length(trim(testimonial)) between 40 and 1200),
+  testimonial text not null check (char_length(trim(testimonial)) between 1 and 1200),
   strengths text ARRAY not null default '{}',
   identity_mode text not null check (identity_mode in ('full', 'first', 'initials', 'role')),
   consent boolean not null check (consent = true),
@@ -20,6 +20,14 @@ create table if not exists public.testimonials (
   moderated_at timestamptz,
   approved_at timestamptz
 );
+
+-- Mise à niveau d'une base déjà créée avec l'ancienne limite de 40 caractères.
+alter table public.testimonials
+  drop constraint if exists testimonials_testimonial_check;
+alter table public.testimonials
+  add constraint testimonials_testimonial_check
+  check (char_length(trim(testimonial)) between 1 and 1200);
+
 create index if not exists testimonials_status_created_idx
   on public.testimonials (status, created_at desc);
 
