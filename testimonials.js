@@ -94,6 +94,7 @@
         loaded: (count) =>
           `${count} approved testimonial${count === 1 ? "" : "s"} loaded.`,
         context: "Collaboration context",
+        testimonialLabel: "Professional testimonial from",
         organisationSeparator: " · ",
       }
     : {
@@ -102,6 +103,7 @@
         loaded: (count) =>
           `${count} témoignage${count > 1 ? "s" : ""} validé${count > 1 ? "s" : ""} chargé${count > 1 ? "s" : ""}.`,
         context: "Contexte de collaboration",
+        testimonialLabel: "Témoignage professionnel de",
         organisationSeparator: " · ",
       };
 
@@ -136,9 +138,18 @@
       const footer = document.createElement("footer");
       const author = document.createElement("cite");
       const authorName = document.createElement("strong");
-      authorName.id = `testimonial-author-${index + 1}`;
+      const authorId = `testimonial-author-${index + 1}`;
+      const articleLabelId = `testimonial-label-${index + 1}`;
+      authorName.id = authorId;
       authorName.textContent = item.display_name;
-      article.setAttribute("aria-labelledby", authorName.id);
+
+      const articleLabel = document.createElement("span");
+      articleLabel.id = articleLabelId;
+      articleLabel.className = "sr-only";
+      articleLabel.textContent = copy.testimonialLabel;
+      article.setAttribute("aria-labelledby", `${articleLabelId} ${authorId}`);
+      article.appendChild(articleLabel);
+
       author.appendChild(authorName);
 
       const details = [item.public_role, item.organization].filter(Boolean);
