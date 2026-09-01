@@ -72,7 +72,7 @@
         },
         {
           id: "verification-contact",
-          example: "Example: marie.dupont@example.com or https://www.linkedin.com/in/marie-dupont",
+          example: "Example: marie.dupont@example.com or linkedin.com/in/marie-dupont",
           required: "Enter an email address or LinkedIn profile for verification.",
           format: "Enter a valid email address or LinkedIn profile URL.",
         },
@@ -107,7 +107,7 @@
         },
         {
           id: "verification-contact",
-          example: "Exemple : marie.dupont@exemple.fr ou https://www.linkedin.com/in/marie-dupont",
+          example: "Exemple : marie.dupont@exemple.fr ou linkedin.com/in/marie-dupont",
           required: "Renseignez une adresse e-mail ou un profil LinkedIn pour la vérification.",
           format: "Saisissez une adresse e-mail valide ou l’URL d’un profil LinkedIn.",
         },
@@ -156,14 +156,14 @@
     const exampleId = `${definition.id}-example`;
     const errorId = `${definition.id}-error`;
     const field = control.closest(".field");
+    const label = form.querySelector(`label[for="${definition.id}"]`);
 
-    if (definition.example && !document.getElementById(exampleId)) {
-      const example = document.createElement("p");
+    if (definition.example && label && !document.getElementById(exampleId)) {
+      const example = document.createElement("span");
       example.id = exampleId;
-      example.className = "field-help field-example";
+      example.className = "field-example";
       example.textContent = definition.example;
-      control.insertAdjacentElement("afterend", example);
-      appendDescribedBy(control, exampleId);
+      label.append(example);
     }
 
     let error = document.getElementById(errorId);
@@ -193,7 +193,7 @@
 
   const isVerificationContactValid = (value) => {
     const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const linkedin = /^https?:\/\/(?:[a-z]{2,3}\.)?linkedin\.com\/in\/[\w%+./?=&-]+\/?$/i;
+    const linkedin = /^(?:https?:\/\/)?(?:[a-z]{2,3}\.)?linkedin\.com\/in\/[\w%+./?=&-]+\/?$/i;
     return email.test(value) || linkedin.test(value);
   };
 
