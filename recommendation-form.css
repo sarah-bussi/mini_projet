@@ -33,6 +33,7 @@ form {
   display: grid;
   gap: 1.5rem;
 }
+.form-section,
 fieldset {
   margin: 0;
   padding: 1.5rem;
@@ -40,10 +41,17 @@ fieldset {
   border-radius: 22px;
   background: var(--surface);
 }
+.form-section > h3 {
+  max-width: none;
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
 legend {
   padding: 0 0.5rem;
-  font-weight: 900;
-  font-size: 1.25rem;
+  font-weight: 800;
+  font-size: 1rem;
 }
 .nested-fieldset {
   margin-top: 1.25rem;
@@ -52,6 +60,13 @@ legend {
 }
 .nested-fieldset legend {
   font-size: 1rem;
+}
+.publication-options {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.publication-options .field-help {
+  margin: 0.25rem 0 0;
 }
 .form-grid {
   display: grid;
@@ -167,6 +182,7 @@ textarea:focus-visible {
   .check-grid {
     grid-template-columns: 1fr;
   }
+  .form-section,
   fieldset {
     padding: 1.1rem;
   }

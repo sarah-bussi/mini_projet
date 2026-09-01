@@ -82,8 +82,8 @@
               />
             </div>
 
-            <fieldset>
-              <legend>À propos de vous</legend>
+            <section class="form-section" aria-labelledby="about-you-title">
+              <h3 id="about-you-title">À propos de vous</h3>
               <div class="form-grid">
                 <div class="field">
                   <label for="full-name"
@@ -139,10 +139,10 @@
                   </p>
                 </div>
               </div>
-            </fieldset>
+            </section>
 
-            <fieldset>
-              <legend>Notre collaboration</legend>
+            <section class="form-section" aria-labelledby="collaboration-title">
+              <h3 id="collaboration-title">Notre collaboration</h3>
               <div class="field">
                 <label for="collaboration-context"
                   >Dans quel contexte avons-nous travaillé ensemble ?
@@ -243,16 +243,19 @@
                   >
                 </div>
               </fieldset>
-            </fieldset>
+            </section>
 
-            <fieldset>
-              <legend>Publication éventuelle</legend>
-              <p>
-                Si le témoignage est validé, comment souhaitez-vous être
-                identifié·e ? L’organisation renseignée pourra accompagner votre
-                fonction.
-              </p>
-              <div class="radio-stack">
+            <section class="form-section" aria-labelledby="publication-title">
+              <h3 id="publication-title">Publication éventuelle</h3>
+              <fieldset class="nested-fieldset publication-options">
+                <legend>
+                  Si le témoignage est validé, comment souhaitez-vous être
+                  identifié·e ?
+                </legend>
+                <p class="field-help">
+                  L’organisation renseignée pourra accompagner votre fonction.
+                </p>
+                <div class="radio-stack">
                 <label
                   ><input
                     type="radio"
@@ -274,14 +277,15 @@
                   ><input type="radio" name="identity_mode" value="role" />
                   Fonction uniquement</label
                 >
-              </div>
+                </div>
+              </fieldset>
               <label class="consent"
                 ><input type="checkbox" name="consent" value="true" required />
                 J’autorise Sarah Bussi à publier tout ou partie de ce témoignage
                 selon le niveau d’identification choisi. Je pourrai demander son
                 retrait ultérieurement.</label
               >
-            </fieldset>
+            </section>
 
             <div class="submit-zone">
               <button class="button button-primary" type="submit">
