@@ -1,316 +1,922 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV accessible de Sarah Bussi, consultante en accessibilité numérique.">
-  <title>CV — Sarah Bussi</title>
-  <link rel="stylesheet" href="styles.css?v=20260822-1">
-  <link rel="stylesheet" href="cv-print.css?v=20260821-3" media="print">
-</head>
-<body class="cv-page">
-  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
-  <header class="site-header cv-header">
-    <div class="container cv-header-inner">
-      <a class="brand" href="index.html" aria-label="Sarah Bussi — retour au portfolio"><span class="brand-mark" aria-hidden="true">SB</span><span>Sarah Bussi</span></a>
-      <ul class="cv-header-actions" role="list" aria-label="Options du CV">
-        <li><a class="button button-secondary" href="index.html">Retour au portfolio</a></li>
-        <li><a class="button button-secondary language-switch" href="cv-en.html" hreflang="en" aria-label="Voir le CV en anglais">EN</a></li>
-        <li><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Contraste sombre : activer le mode sombre"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Contraste sombre</span></button></li>
-      </ul>
-    </div>
-  </header>
-
-  <main id="contenu">
-    <section class="hero" id="profil" aria-labelledby="cv-title">
-      <div class="container narrow">
-        <p class="eyebrow">Curriculum vitæ</p>
-        <h1 id="cv-title">Sarah Bussi</h1>
-        <p class="hero-copy"><strong>Consultante en accessibilité numérique</strong><br>UX inclusive · Technologies numériques · Qualité produit</p>
-        <address class="cv-contact" aria-label="Coordonnées de Sarah Bussi"><ul role="list"><li>Paris, France</li><li><a href="tel:+33770431504">Appeler Sarah Bussi au +33 7 70 43 15 04</a></li><li><a href="mailto:sarah.bussi2108@gmail.com">Envoyer un e-mail à Sarah Bussi</a></li><li><a href="https://www.linkedin.com/in/sarahbussi">Voir le profil LinkedIn de Sarah Bussi</a></li><li><a href="https://github.com/sarah-bussi">Voir le profil GitHub de Sarah Bussi</a></li></ul></address>
-        <p class="hero-copy">Spécialisée en accessibilité numérique, j'accompagne la conception et l'amélioration de produits numériques en conciliant exigences d'accessibilité, expérience utilisateur et contraintes techniques. Mon parcours en psychologie, technologies et handicap me permet d'apporter une approche centrée utilisateur, de collaborer efficacement avec les équipes produit et de transformer les besoins utilisateurs et les exigences d'accessibilité en solutions concrètes, utilisables et pérennes.</p>
-        <div class="hero-actions cv-actions">
-          <button class="button button-primary" id="cv-print" type="button" aria-describedby="cv-print-help">Imprimer ou enregistrer en PDF</button>
-        </div>
-        <p id="cv-print-help" class="sr-only">Ouvre la boîte de dialogue d'impression du navigateur, qui permet d'imprimer ce CV ou de l'enregistrer au format PDF.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CV accessible de Sarah Bussi, consultante en accessibilité numérique."
+    />
+    <title>CV — Sarah Bussi</title>
+    <link rel="stylesheet" href="styles.css?v=20260822-1" />
+    <link rel="stylesheet" href="cv-print.css?v=20260821-3" media="print" />
+  </head>
+  <body class="cv-page">
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <header class="site-header cv-header">
+      <div class="container cv-header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Sarah Bussi — retour au portfolio"
+          ><span class="brand-mark" aria-hidden="true">SB</span
+          ><span>Sarah Bussi</span></a
+        >
+        <ul class="cv-header-actions" role="list" aria-label="Options du CV">
+          <li>
+            <a class="button button-secondary" href="index.html"
+              >Retour au portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              class="button button-secondary language-switch"
+              href="cv-en.html"
+              hreflang="en"
+              aria-label="Voir le CV en anglais"
+              >EN</a
+            >
+          </li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Contraste sombre : activer le mode sombre"
+            >
+              <span aria-hidden="true">◐</span
+              ><span class="theme-toggle-label">Contraste sombre</span>
+            </button>
+          </li>
+        </ul>
       </div>
-    </section>
+    </header>
 
-    <section class="section section-muted" id="experience" aria-labelledby="cv-exp">
-      <div class="container narrow">
-        <div class="section-heading"><p class="eyebrow">Parcours</p><h2 id="cv-exp">Expériences professionnelles</h2><p>Pour chaque expérience, les missions décrivent les responsabilités exercées et les compétences mettent en évidence les acquis transférables à l’accessibilité, à la qualité produit et au travail en équipe.</p></div>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2024 — 2026</p><p>Paris</p></div>
-          <div class="timeline-content">
-            <h3>SNCF Connect & Tech</h3>
-            <p class="role">Alternante — Accessibilité numérique & Qualité produit</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Réaliser des audits d’accessibilité web et mobile selon le RGAA 4.1, les WCAG 2.1 AA et le RAAM, puis formaliser et prioriser les non-conformités.</li>
-              <li>Tester les parcours avec NVDA, VoiceOver et TalkBack, au clavier, avec Voice Control, ainsi qu’en zoom, agrandissement et reflow.</li>
-              <li>Relire les maquettes Figma en amont du développement et proposer des solutions accessibles compatibles avec les contraintes produit et techniques.</li>
-              <li>Valider les corrections, contrôler l’absence de régressions et assurer le suivi des anomalies issues des audits internes et externes.</li>
-              <li>Collaborer avec les Product Managers, UX Designers, développeurs, équipes QA et auditeurs afin de traduire les exigences normatives en recommandations directement actionnables.</li>
-              <li>Contribuer au wiki interne, à la documentation des bonnes pratiques et aux actions de sensibilisation des équipes produit.</li>
+    <main id="contenu">
+      <section class="hero" id="profil" aria-labelledby="cv-title">
+        <div class="container narrow">
+          <p class="eyebrow">Curriculum vitæ</p>
+          <h1 id="cv-title">Sarah Bussi</h1>
+          <p class="hero-copy">
+            <strong>Consultante en accessibilité numérique</strong><br />UX
+            inclusive · Technologies numériques · Qualité produit
+          </p>
+          <address class="cv-contact" aria-label="Coordonnées de Sarah Bussi">
+            <ul role="list">
+              <li>Paris, France</li>
+              <li>
+                <a href="tel:+33770431504"
+                  >Appeler Sarah Bussi au +33 7 70 43 15 04</a
+                >
+              </li>
+              <li>
+                <a href="mailto:sarah.bussi2108@gmail.com"
+                  >Envoyer un e-mail à Sarah Bussi</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sarahbussi"
+                  >Voir le profil LinkedIn de Sarah Bussi</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/sarah-bussi"
+                  >Voir le profil GitHub de Sarah Bussi</a
+                >
+              </li>
             </ul>
-            <h4>Compétences acquises et consolidées</h4>
-            <ul class="experience-skills" role="list">
-              <li>Audit RGAA, WCAG et RAAM</li><li>Tests avec technologies d’assistance</li><li>Revue de design accessible</li><li>Qualité et non-régression</li><li>Priorisation des anomalies</li><li>Collaboration produit</li><li>Sensibilisation</li>
-            </ul>
+          </address>
+          <p class="hero-copy">
+            Spécialisée en accessibilité numérique, j'accompagne la conception
+            et l'amélioration de produits numériques en conciliant exigences
+            d'accessibilité, expérience utilisateur et contraintes techniques.
+            Mon parcours en psychologie, puis en MIASHStechnologies et handicap
+            me permet d'apporter une approche centrée utilisateur, de collaborer
+            efficacement avec les équipes produit et de transformer les besoins
+            utilisateurs et les exigences d'accessibilité en solutions
+            concrètes, utilisables et pérennes.
+          </p>
+          <div class="hero-actions cv-actions">
+            <button
+              class="button button-primary"
+              id="cv-print"
+              type="button"
+              aria-describedby="cv-print-help"
+            >
+              Imprimer ou enregistrer en PDF
+            </button>
           </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2022 — 2024</p></div>
-          <div class="timeline-content">
-            <h3>Mairie de Montpellier</h3>
-            <p class="role">Animatrice périscolaire</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Encadrer les temps périscolaires en veillant à la sécurité, au bien-être et à la participation de chaque enfant.</li>
-              <li>Concevoir et animer des activités adaptées à l’âge, au rythme et aux besoins des enfants.</li>
-              <li>Ajuster les consignes et l’accompagnement à partir de l’observation des comportements, des difficultés et de la dynamique du groupe.</li>
-              <li>Communiquer avec les enfants, les familles et l’équipe éducative, et coordonner les activités en équipe.</li>
-            </ul>
-            <h4>Compétences acquises</h4>
-            <ul class="experience-skills" role="list">
-              <li>Pédagogie</li><li>Adaptation aux besoins</li><li>Gestion de groupe</li><li>Observation</li><li>Communication</li><li>Travail en équipe</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2018</p></div>
-          <div class="timeline-content">
-            <h3>Cabinet médical</h3>
-            <p class="role">Secrétaire médicale</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Accueillir, informer et orienter les patients en présentiel et par téléphone.</li>
-              <li>Organiser les rendez-vous, les documents et le suivi administratif des dossiers.</li>
-              <li>Transmettre les informations utiles à l’équipe médicale tout en respectant la confidentialité des données de santé.</li>
-            </ul>
-            <h4>Compétences acquises</h4>
-            <ul class="experience-skills" role="list">
-              <li>Accueil des publics</li><li>Organisation</li><li>Gestion administrative</li><li>Confidentialité</li><li>Communication adaptée</li><li>Priorisation</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2020 — 2021</p><p>2022</p></div>
-          <div class="timeline-content">
-            <h3>Brasserie Le Reef 1830 · EHPAD Mas Marguerites</h3>
-            <p class="role">Employée polyvalente en restauration</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Assurer la mise en place, le service et l’entretien des espaces dans le respect des règles d’hygiène.</li>
-              <li>Accueillir les clients et les résidents, identifier leurs demandes et adapter la communication et le service au contexte.</li>
-              <li>Gérer plusieurs tâches simultanément, hiérarchiser les urgences et maintenir la qualité du service pendant les périodes d’activité soutenue.</li>
-              <li>Coordonner le travail avec l’équipe de salle, de cuisine et, en EHPAD, avec les professionnels présents auprès des résidents.</li>
-            </ul>
-            <h4>Compétences acquises</h4>
-            <ul class="experience-skills" role="list">
-              <li>Sens du service</li><li>Gestion des priorités</li><li>Travail sous pression</li><li>Adaptabilité</li><li>Coordination d’équipe</li><li>Rigueur</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2023</p></div>
-          <div class="timeline-content">
-            <h3>Maison Perce-Neige</h3>
-            <p class="role">Stage — MAS et foyer de vie</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Observer l’accompagnement de personnes en situation de handicap au sein d’une maison d’accueil spécialisée et d’un foyer de vie.</li>
-              <li>Participer de manière encadrée aux temps de vie quotidienne et aux activités, dans le respect du rythme, de l’autonomie et des modes de communication de chacun.</li>
-              <li>Échanger avec l’équipe pluridisciplinaire afin de comprendre les besoins des résidents, les objectifs d’accompagnement et les moyens de compensation mobilisés.</li>
-            </ul>
-            <h4>Compétences acquises</h4>
-            <ul class="experience-skills" role="list">
-              <li>Observation clinique</li><li>Communication adaptée</li><li>Écoute active</li><li>Approche centrée personne</li><li>Travail pluridisciplinaire</li><li>Compréhension du handicap</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>2023</p></div>
-          <div class="timeline-content">
-            <h3>EHPAD</h3>
-            <p class="role">Stage auprès d’une psychologue</p>
-            <h4>Missions principales</h4>
-            <ul class="experience-list">
-              <li>Observer les entretiens, les suivis et le travail institutionnel d’une psychologue auprès de personnes âgées.</li>
-              <li>Repérer les besoins cognitifs, psychoaffectifs et sociaux, ainsi que les adaptations de communication utilisées auprès des résidents.</li>
-              <li>Comprendre l’articulation entre accompagnement psychologique, équipe soignante et projet personnalisé.</li>
-            </ul>
-            <h4>Compétences acquises</h4>
-            <ul class="experience-skills" role="list">
-              <li>Observation clinique</li><li>Écoute</li><li>Communication avec les personnes âgées</li><li>Confidentialité</li><li>Analyse des besoins</li><li>Travail institutionnel</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="formation" aria-labelledby="cv-formation">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">Formation</p><h2 id="cv-formation">Formation</h2></div>
-        <div class="skills-grid">
-          <section class="skill-group"><h3>Master MIASHS — Technologie et Handicap</h3><p>Université Paris 8 · 2024–2026</p><p>Diplôme prévu en septembre 2026.</p></section>
-          <section class="skill-group"><h3>Licence de Psychologie — parcours Neuropsychologie</h3><p>Université Paul-Valéry Montpellier · 2019–2023</p></section>
-          <section class="skill-group"><h3>Diplôme universitaire de Criminologie</h3><p>Faculté de droit de Montpellier · 2022–2023</p></section>
-          <section class="skill-group"><h3>Première année commune aux études de santé (PACES)</h3><p>Faculté de médecine de Montpellier · 2017–2019</p><p>Cursus suivi avant réorientation vers la psychologie.</p></section>
-          <section class="skill-group"><h3>Baccalauréat scientifique</h3><p>2017</p></section>
+          <p id="cv-print-help" class="sr-only">
+            Ouvre la boîte de dialogue d'impression du navigateur, qui permet
+            d'imprimer ce CV ou de l'enregistrer au format PDF.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-muted" id="projets" aria-labelledby="cv-projets">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Réalisations</p>
-          <h2 id="cv-projets">Projets académiques & réalisations</h2>
-          <p>Une sélection de projets résumés comme dans un CV : objectif, contribution et technologies principales.</p>
-        </div>
-        <div class="projects-grid cv-projects-grid">
-          <article class="project-card project-featured">
-            <p class="cv-project-meta">Mémoire M2 · 2026</p>
-            <h3>A11y Copilot — copilote IA pour l’accessibilité</h3>
-            <p class="cv-project-summary">Conception et évaluation d’un assistant pédagogique aidant les équipes produit à relier une situation métier aux exigences RGAA et à des recommandations contextualisées.</p>
-            <ul class="cv-project-highlights">
-              <li>Développement d’un prototype Python combinant détection déterministe, recherche sémantique/RAG et reformulation contrôlée par LLM.</li>
-              <li>Construction de scénarios de test, benchmark de recherche et questionnaire auprès de professionnels de l’accessibilité.</li>
-            </ul>
-            <ul class="tags" role="list"><li>Python</li><li>LLM</li><li>RAG</li><li>RGAA</li><li>Évaluation</li></ul>
+      <section
+        class="section section-muted"
+        id="experience"
+        aria-labelledby="cv-exp"
+      >
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Parcours</p>
+            <h2 id="cv-exp">Expériences professionnelles</h2>
+            <p>
+              Pour chaque expérience, les missions décrivent les responsabilités
+              exercées et les compétences mettent en évidence les acquis
+              transférables à l’accessibilité, à la qualité produit et au
+              travail en équipe.
+            </p>
+          </div>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>Juillet 2024 — Septembre 2026</p>
+              <p>Saint-Denis, 93200</p>
+            </div>
+            <div class="timeline-content">
+              <h3>SNCF Connect & Tech</h3>
+              <p class="role">
+                Alternante — Accessibilité numérique & Qualité produit
+              </p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Réaliser des audits d’accessibilité web et mobile selon le
+                  RGAA 4.1, les WCAG 2.1 AA et le RAAM, puis formaliser et
+                  prioriser les non-conformités.
+                </li>
+                <li>
+                  Tester les parcours avec NVDA, VoiceOver et TalkBack, au
+                  clavier, avec Voice Control, ainsi qu’en zoom, agrandissement
+                  et reflow.
+                </li>
+                <li>
+                  Relire les maquettes Figma en amont du développement et
+                  proposer des solutions accessibles compatibles avec les
+                  contraintes produit et techniques.
+                </li>
+                <li>
+                  Valider les corrections, contrôler l’absence de régressions et
+                  assurer le suivi des anomalies issues des audits internes et
+                  externes.
+                </li>
+                <li>
+                  Collaborer avec les différents métiers (Product Managers, UX
+                  Designers, développeurs, équipes QA et auditeurs) afin de
+                  traduire les exigences normatives en recommandations
+                  directement actionnables.
+                </li>
+                <li>
+                  Contribuer au wiki interne, à la documentation des bonnes
+                  pratiques et aux actions de sensibilisation des équipes
+                  produit.
+                </li>
+              </ul>
+              <h4>Compétences acquises et consolidées</h4>
+              <ul class="experience-skills" role="list">
+                <li>Audit RGAA, WCAG et RAAM</li>
+                <li>Tests avec technologies d’assistance</li>
+                <li>Revue de design accessible</li>
+                <li>Qualité et non-régression</li>
+                <li>Priorisation des anomalies</li>
+                <li>Collaboration produit</li>
+                <li>Sensibilisation</li>
+              </ul>
+            </div>
           </article>
-          <article class="project-card">
-            <p class="cv-project-meta">Projet en équipe de 5 · 2026</p>
-            <h3>BRA(S)VO — orthèse connectée</h3>
-            <p class="cv-project-summary">Orthèse instrumentée reliée à une application mobile et à des mini-jeux destinés à soutenir la rééducation de la main.</p>
-            <ul class="cv-project-highlights">
-              <li>Co-développement de l’application Flutter, intégration BLE des données capteurs et participation au développement de cinq mini-jeux.</li>
-              <li>Conception des parcours patient et thérapeute, puis participation aux essais fonctionnels et utilisateurs.</li>
-            </ul>
-            <ul class="tags" role="list"><li>Flutter</li><li>BLE</li><li>ESP32</li><li>Capteurs</li><li>UX santé</li></ul>
-          </article>
-          <article class="project-card">
-            <p class="cv-project-meta">Projet en binôme · 2026</p>
-            <h3>SmartCare Watch — stress & biofeedback</h3>
-            <p class="cv-project-summary">Preuve de faisabilité combinant suivi physiologique, application mobile et feedback haptique pour explorer la régulation du stress.</p>
-            <ul class="cv-project-highlights">
-              <li>Conception des maquettes et développement de l’application Android avec Kotlin et Jetpack Compose.</li>
-              <li>Prototypage BLE avec M5StickC Plus, capteur BPM et moteur haptique, en distinguant les fonctions réelles des données simulées.</li>
-            </ul>
-            <ul class="tags" role="list"><li>Kotlin</li><li>Jetpack Compose</li><li>BLE</li><li>M5StickC Plus</li><li>Biofeedback</li></ul>
-          </article>
-          <article class="project-card">
-            <p class="cv-project-meta">Projet en équipe · 2025</p>
-            <h3>SPY — audit d’accessibilité d’un jeu</h3>
-            <p class="cv-project-summary">Audit d’un jeu éducatif à partir des <span lang="en">Game Accessibility Guidelines</span>, avec recommandations portant sur les obstacles moteurs, visuels et cognitifs.</p>
-            <ul class="cv-project-highlights">
-              <li>Analyse structurée des interactions, de la lisibilité, des contrastes et du rythme d’exécution.</li>
-              <li>Rédaction d’un cahier des charges et réalisation de six maquettes d’amélioration dans Figma.</li>
-            </ul>
-            <ul class="tags" role="list"><li>Audit expert</li><li>GAG</li><li>Figma</li><li>UX inclusive</li></ul>
-          </article>
-          <article class="project-card">
-            <p class="cv-project-meta">Projet en binôme · 2025</p>
-            <h3>Braille-JP — serious game accessible</h3>
-            <p class="cv-project-summary">Prototype conçu avec ProgAccess pour apprendre le braille japonais, avec parcours joueur et parcours de contribution non technique.</p>
-            <ul class="cv-project-highlights">
-              <li>Personas, scénarios, architecture de navigation et conception des parcours d’apprentissage et de contribution.</li>
-              <li>Spécifications clavier, lecteurs d’écran et plages braille, complétées par de premiers retours de personnes déficientes visuelles.</li>
-            </ul>
-            <ul class="tags" role="list"><li>IHM</li><li>Figma</li><li>Tests utilisateurs</li><li>Technologies d’assistance</li></ul>
-          </article>
-          <article class="project-card">
-            <p class="cv-project-meta">Trois projets universitaires</p>
-            <h3>Développement web — données & accessibilité</h3>
-            <p class="cv-project-summary">Trois réalisations montrant une progression du front-end vers le back-end, la gestion de contenus et l’accessibilité.</p>
-            <ul class="cv-project-highlights">
-              <li>Site cuisine réalisé à trois : PHP/MySQL, catalogue enrichi par les contributions et gestion des commentaires.</li>
-              <li>HandiSolutions pour la mise en pratique de l’accessibilité, puis prototype associatif full-stack anonymisé, non livré et non déployé.</li>
-            </ul>
-            <ul class="tags" role="list"><li>HTML/CSS/JS</li><li>PHP</li><li>MySQL</li><li>CRUD</li><li>Accessibilité web</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="international" aria-labelledby="cv-international">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">International</p>
-          <h2 id="cv-international">Intervention académique</h2>
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2022 — 2024</p></div>
+            <div class="timeline-content">
+              <h3>Mairie de Montpellier</h3>
+              <p class="role">Animatrice périscolaire</p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Encadrer les temps périscolaires en veillant à la sécurité, au
+                  bien-être et à la participation de chaque enfant.
+                </li>
+                <li>
+                  Concevoir et animer des activités adaptées à l’âge, au rythme
+                  et aux besoins des enfants.
+                </li>
+                <li>
+                  Ajuster les consignes et l’accompagnement à partir de
+                  l’observation des comportements, des difficultés et de la
+                  dynamique du groupe.
+                </li>
+                <li>
+                  Communiquer avec les enfants, les familles et l’équipe
+                  éducative, et coordonner les activités en équipe.
+                </li>
+              </ul>
+              <h4>Compétences acquises</h4>
+              <ul class="experience-skills" role="list">
+                <li>Pédagogie</li>
+                <li>Adaptation aux besoins</li>
+                <li>Gestion de groupe</li>
+                <li>Observation</li>
+                <li>Communication</li>
+                <li>Travail en équipe</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2018</p></div>
+            <div class="timeline-content">
+              <h3>Cabinet médical</h3>
+              <p class="role">Secrétaire médicale</p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Accueillir, informer et orienter les patients en présentiel et
+                  par téléphone.
+                </li>
+                <li>
+                  Organiser les rendez-vous, les documents et le suivi
+                  administratif des dossiers.
+                </li>
+                <li>
+                  Transmettre les informations utiles à l’équipe médicale tout
+                  en respectant la confidentialité des données de santé.
+                </li>
+              </ul>
+              <h4>Compétences acquises</h4>
+              <ul class="experience-skills" role="list">
+                <li>Accueil des publics</li>
+                <li>Organisation</li>
+                <li>Gestion administrative</li>
+                <li>Confidentialité</li>
+                <li>Communication adaptée</li>
+                <li>Priorisation</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>2020 — 2021</p>
+              <p>2022</p>
+            </div>
+            <div class="timeline-content">
+              <h3>Brasserie Le Reef 1830 · EHPAD Mas Marguerites</h3>
+              <p class="role">Employée polyvalente en restauration</p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Assurer la mise en place, le service et l’entretien des
+                  espaces dans le respect des règles d’hygiène.
+                </li>
+                <li>
+                  Accueillir les clients et les résidents, identifier leurs
+                  demandes et adapter la communication et le service au
+                  contexte.
+                </li>
+                <li>
+                  Gérer plusieurs tâches simultanément, hiérarchiser les
+                  urgences et maintenir la qualité du service pendant les
+                  périodes d’activité soutenue.
+                </li>
+                <li>
+                  Coordonner le travail avec l’équipe de salle, de cuisine et,
+                  en EHPAD, avec les professionnels présents auprès des
+                  résidents.
+                </li>
+              </ul>
+              <h4>Compétences acquises</h4>
+              <ul class="experience-skills" role="list">
+                <li>Sens du service</li>
+                <li>Gestion des priorités</li>
+                <li>Travail sous pression</li>
+                <li>Adaptabilité</li>
+                <li>Coordination d’équipe</li>
+                <li>Rigueur</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2023</p></div>
+            <div class="timeline-content">
+              <h3>Maison Perce-Neige</h3>
+              <p class="role">Stage — MAS et foyer de vie</p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Observer l’accompagnement de personnes en situation de
+                  handicap au sein d’une maison d’accueil spécialisée et d’un
+                  foyer de vie.
+                </li>
+                <li>
+                  Participer de manière encadrée aux temps de vie quotidienne et
+                  aux activités, dans le respect du rythme, de l’autonomie et
+                  des modes de communication de chacun.
+                </li>
+                <li>
+                  Échanger avec l’équipe pluridisciplinaire afin de comprendre
+                  les besoins des résidents, les objectifs d’accompagnement et
+                  les moyens de compensation mobilisés.
+                </li>
+              </ul>
+              <h4>Compétences acquises</h4>
+              <ul class="experience-skills" role="list">
+                <li>Observation clinique</li>
+                <li>Communication adaptée</li>
+                <li>Écoute active</li>
+                <li>Approche centrée personne</li>
+                <li>Travail pluridisciplinaire</li>
+                <li>Compréhension du handicap</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2023</p></div>
+            <div class="timeline-content">
+              <h3>EHPAD</h3>
+              <p class="role">Stage auprès d’une psychologue</p>
+              <h4>Missions principales</h4>
+              <ul class="experience-list">
+                <li>
+                  Observer les entretiens, les suivis et le travail
+                  institutionnel d’une psychologue auprès de personnes âgées.
+                </li>
+                <li>
+                  Repérer les besoins cognitifs, psychoaffectifs et sociaux,
+                  ainsi que les adaptations de communication utilisées auprès
+                  des résidents.
+                </li>
+                <li>
+                  Comprendre l’articulation entre accompagnement psychologique,
+                  équipe soignante et projet personnalisé.
+                </li>
+              </ul>
+              <h4>Compétences acquises</h4>
+              <ul class="experience-skills" role="list">
+                <li>Observation clinique</li>
+                <li>Écoute</li>
+                <li>Communication avec les personnes âgées</li>
+                <li>Confidentialité</li>
+                <li>Analyse des besoins</li>
+                <li>Travail institutionnel</li>
+              </ul>
+            </div>
+          </article>
         </div>
-        <article class="timeline-item">
-          <div class="timeline-meta"><p>24 oct. 2025</p><p>Sofia, Bulgarie</p></div>
-          <div class="timeline-content">
-            <h3><span lang="en">Digital Accessibility</span> — atelier ERUA</h3>
-            <p class="role">Intervenante · New Bulgarian University</p>
-            <p class="cv-project-summary"><strong>Présentation en anglais :</strong> <span lang="en">Cognitive and Psychological Approach to Digital Accessibility</span>.</p>
-            <ul class="experience-list">
-              <li>Conception et présentation d’un module consacré à l’accessibilité cognitive, à la diversité des profils et aux situations de limitation cognitive.</li>
-              <li>Vulgarisation des liens entre attention, mémoire, charge mentale et conception d’interfaces, puis traduction en recommandations de design inclusif.</li>
-              <li>Présentation de solutions concrètes : langage clair et FALC, navigation cohérente, contrôle du rythme, communication multimodale et réduction des distractions.</li>
-            </ul>
-            <ul class="experience-skills" role="list" aria-label="Compétences mobilisées lors de l’intervention ERUA">
-              <li>Prise de parole en anglais</li><li>Vulgarisation scientifique</li><li>Accessibilité cognitive</li><li>Design inclusif</li><li>Communication interculturelle</li>
-            </ul>
+      </section>
+
+      <section class="section" id="formation" aria-labelledby="cv-formation">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Formation</p>
+            <h2 id="cv-formation">Formation</h2>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="competences" aria-labelledby="cv-skills">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">Compétences</p><h2 id="cv-skills">Compétences & technologies</h2></div>
-        <div class="skills-grid">
-          <section class="skill-group"><h3>Référentiels</h3><ul><li>RGAA 4.1</li><li>WCAG 2.1 / 2.2</li><li>EN 301 549</li><li>RAAM</li><li>Game Accessibility Guidelines</li></ul></section>
-
-          <section class="skill-group"><h3>Tests & technologies d'assistance</h3><ul><li>NVDA</li><li>VoiceOver</li><li>TalkBack</li><li>Pilotage à la voix / Voice Control</li><li>Navigation et activation au clavier</li><li>Zoom, agrandissement et reflow</li><li>Analyse de la structure sémantique</li><li>Analyse du code HTML</li></ul></section>
-
-          <section class="skill-group"><h3>Outils d'audit</h3><ul><li>Fruggr</li><li>axe DevTools</li><li>HeadingsMap</li><li>Accessibility Insights</li><li>Lighthouse</li><li>Chrome DevTools</li><li>Colour Contrast Analyser</li></ul></section>
-
-          <section class="skill-group"><h3>Conception & produit</h3><ul><li>Figma</li><li>Jira</li><li>Notion</li><li>Revue de maquettes</li><li>UX Research</li><li>Ergonomie cognitive</li><li>Qualité produit</li><li>Agile</li></ul></section>
-
-          <section class="skill-group"><h3>Développement & prototypage</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>PHP</li><li>MySQL</li><li>Flutter</li><li>Kotlin</li><li>Jetpack Compose</li><li>Unity</li><li>Arduino</li><li>ESP32</li><li>BLE</li><li>Git</li><li>Python</li><li>LLM / IA générative</li></ul></section>
+          <div class="skills-grid">
+            <section class="skill-group">
+              <h3>Master MIASHS — Technologie et Handicap</h3>
+              <p>Université Paris 8 · 2024–2026</p>
+              <p>Diplôme prévu en septembre 2026.</p>
+            </section>
+            <section class="skill-group">
+              <h3>Licence de Psychologie — parcours Neuropsychologie</h3>
+              <p>Université Paul-Valéry Montpellier · 2019–2023</p>
+            </section>
+            <section class="skill-group">
+              <h3>Diplôme universitaire de Criminologie</h3>
+              <p>Faculté de droit de Montpellier · 2022–2023</p>
+            </section>
+            <section class="skill-group">
+              <h3>Première année commune aux études de santé (PACES)</h3>
+              <p>Faculté de médecine de Montpellier · 2017–2019</p>
+              <p>Cursus suivi avant réorientation vers la psychologie.</p>
+            </section>
+            <section class="skill-group">
+              <h3>Baccalauréat scientifique</h3>
+              <p>2017</p>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="references" aria-labelledby="cv-references">
-      <div class="container narrow">
-        <div class="section-heading"><p class="eyebrow">Références professionnelles</p><h2 id="cv-references">Recommandations</h2><p>La lettre d’Audrey Gambs peut être consultée directement. Les deux autres recommandations seront ajoutées après validation de leur texte par les signataires.</p></div>
-        <div class="cv-recommendations">
-          <details class="recommendation-details">
-            <summary><span><strong>Audrey Gambs</strong><span>Tutrice d’alternance · CDP Qualité CX &amp; Accessibilité · SNCF Connect &amp; Tech</span></span></summary>
-            <div class="recommendation-details-body" aria-label="Lettre de recommandation d’Audrey Gambs"><p>À qui de droit,</p><p>C'est avec un enthousiasme sincère et sans la moindre réserve que je recommande aujourd'hui Sarah Bussi, que j'ai eu le privilège d'accompagner en tant que tutrice tout au long de son alternance au sein de notre équipe.</p><p>Au cours de ces derniers mois, Sarah s'est révélée être bien plus qu'une simple alternante. Elle a rapidement démontré des qualités professionnelles et humaines remarquables qui lui ont permis de s'imposer comme une collaboratrice de confiance et un véritable atout pour notre équipe.</p><p>Dès son arrivée, Sarah a fait preuve d'une capacité d'adaptation exceptionnelle. Grâce à son intelligence, son sens de l'observation et sa remarquable faculté d'apprentissage, elle s'est approprié son environnement de travail et ses missions en un temps extrêmement court. Là où une période d'accompagnement prolongée est souvent nécessaire, Sarah a gagné en autonomie en seulement quelques semaines et a su prendre en charge ses sujets avec une maturité professionnelle impressionnante.</p><p>Tout au long de son alternance, elle a réalisé un travail d'une qualité exemplaire. Rigoureuse, méthodique et particulièrement organisée, elle sait analyser les situations avec pertinence, identifier les enjeux importants et proposer des solutions concrètes et efficaces. Sa capacité à produire des livrables fiables et de grande qualité, tout en respectant systématiquement les délais, force le respect.</p><p>Sarah possède également une curiosité intellectuelle rare et une véritable envie d'apprendre. Elle ne se contente jamais d'exécuter ce qui lui est demandé : elle cherche à comprendre, à approfondir et à améliorer l'existant. Cette posture lui a permis de monter en compétences à une vitesse remarquable, notamment sur les sujets liés à l'accessibilité numérique, domaine exigeant qui requiert à la fois rigueur, expertise technique et sens de l'analyse.</p><p>Au-delà de ses excellentes compétences professionnelles, Sarah se distingue par des qualités humaines exceptionnelles. Toujours positive, souriante et bienveillante, elle crée naturellement des relations de confiance avec ses interlocuteurs. Son écoute, son respect des autres et son esprit collaboratif ont fait d'elle une personne particulièrement appréciée de l'ensemble de l'équipe. Son enthousiasme communicatif et son attitude constructive contribuent chaque jour à créer un environnement de travail agréable et stimulant.</p><p>J'ai également été particulièrement impressionnée par sa capacité à prendre en compte les retours qui lui étaient formulés. Sarah accueille les remarques avec intelligence et humilité, les transforme très rapidement en axes de progression et les met en œuvre avec une efficacité remarquable. Cette maturité et cette capacité à se remettre en question constituent selon moi des qualités essentielles pour construire une carrière durable et ambitieuse.</p><p>Au fil de son alternance, Sarah a démontré une combinaison rare de compétences : autonomie, professionnalisme, rigueur, esprit d'initiative, sens des responsabilités, capacité d'analyse, adaptabilité et intelligence relationnelle. Elle fait partie de ces profils que l'on rencontre peu et dont on mesure immédiatement la valeur lorsqu'ils rejoignent une équipe.</p><p>S'il avait existé une opportunité de recrutement à l'issue de son alternance, je n'aurais eu aucune hésitation à soutenir sa candidature. Malheureusement, nos contraintes budgétaires ne permettent pas aujourd'hui l'ouverture d'un poste. Cette situation ne reflète en rien l'excellence de son travail ni le potentiel exceptionnel qu'elle a démontré.</p><p>Je suis convaincue que Sarah saura réussir brillamment dans les responsabilités qui lui seront confiées et qu'elle apportera une réelle valeur ajoutée à toute organisation qui aura la chance de l'accueillir. Son professionnalisme, son engagement, son intelligence et ses qualités humaines lui promettent un très bel avenir professionnel.</p><p>C'est donc avec la plus grande conviction et les plus vives recommandations que je vous recommande Sarah. Je suis certaine qu'elle saura dépasser vos attentes comme elle a su dépasser les nôtres.</p><p>Je la recommande sans aucune réserve et avec le plus haut niveau de confiance.</p><p>Bien cordialement,<br>Audrey GAMBS<br>CDP Qualité CX &amp; Accessibilité<br>SNCF Connect &amp; Tech</p></div>
-          </details>
-          <article class="recommendation-pending" aria-labelledby="rec-expert-title"><p class="eyebrow">Texte à venir</p><h3 id="rec-expert-title">Expert accessibilité numérique</h3><p>La recommandation sera ajoutée après validation du signataire.</p></article>
-          <article class="recommendation-pending" aria-labelledby="rec-manager-title"><p class="eyebrow">Texte à venir</p><h3 id="rec-manager-title">Responsable N+1</h3><p>La recommandation sera ajoutée après validation du signataire.</p></article>
+      <section
+        class="section section-muted"
+        id="projets"
+        aria-labelledby="cv-projets"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Réalisations</p>
+            <h2 id="cv-projets">Projets académiques & réalisations</h2>
+            <p>
+              Une sélection de projets résumés comme dans un CV : objectif,
+              contribution et technologies principales.
+            </p>
+          </div>
+          <div class="projects-grid cv-projects-grid">
+            <article class="project-card project-featured">
+              <p class="cv-project-meta">Mémoire M2 · 2026</p>
+              <h3>A11y Copilot — copilote IA pour l’accessibilité</h3>
+              <p class="cv-project-summary">
+                Conception et évaluation d’un assistant pédagogique aidant les
+                équipes produit à relier une situation métier aux exigences RGAA
+                et à des recommandations contextualisées.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Développement d’un prototype Python combinant détection
+                  déterministe, recherche sémantique/RAG et reformulation
+                  contrôlée par LLM.
+                </li>
+                <li>
+                  Construction de scénarios de test, benchmark de recherche et
+                  questionnaire auprès de professionnels de l’accessibilité.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>Python</li>
+                <li>LLM</li>
+                <li>RAG</li>
+                <li>RGAA</li>
+                <li>Évaluation</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <p class="cv-project-meta">Projet en équipe de 5 · 2026</p>
+              <h3>BRA(S)VO — orthèse connectée</h3>
+              <p class="cv-project-summary">
+                Orthèse instrumentée reliée à une application mobile et à des
+                mini-jeux destinés à soutenir la rééducation de la main.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Co-développement de l’application Flutter, intégration BLE des
+                  données capteurs et participation au développement de cinq
+                  mini-jeux.
+                </li>
+                <li>
+                  Conception des parcours patient et thérapeute, puis
+                  participation aux essais fonctionnels et utilisateurs.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>Flutter</li>
+                <li>BLE</li>
+                <li>ESP32</li>
+                <li>Capteurs</li>
+                <li>UX santé</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <p class="cv-project-meta">Projet en binôme · 2026</p>
+              <h3>SmartCare Watch — stress & biofeedback</h3>
+              <p class="cv-project-summary">
+                Preuve de faisabilité combinant suivi physiologique, application
+                mobile et feedback haptique pour explorer la régulation du
+                stress.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Conception des maquettes et développement de l’application
+                  Android avec Kotlin et Jetpack Compose.
+                </li>
+                <li>
+                  Prototypage BLE avec M5StickC Plus, capteur BPM et moteur
+                  haptique, en distinguant les fonctions réelles des données
+                  simulées.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>BLE</li>
+                <li>M5StickC Plus</li>
+                <li>Biofeedback</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <p class="cv-project-meta">Projet en équipe · 2025</p>
+              <h3>SPY — audit d’accessibilité d’un jeu</h3>
+              <p class="cv-project-summary">
+                Audit d’un jeu éducatif à partir des
+                <span lang="en">Game Accessibility Guidelines</span>, avec
+                recommandations portant sur les obstacles moteurs, visuels et
+                cognitifs.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Analyse structurée des interactions, de la lisibilité, des
+                  contrastes et du rythme d’exécution.
+                </li>
+                <li>
+                  Rédaction d’un cahier des charges et réalisation de six
+                  maquettes d’amélioration dans Figma.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>Audit expert</li>
+                <li>GAG</li>
+                <li>Figma</li>
+                <li>UX inclusive</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <p class="cv-project-meta">Projet en binôme · 2025</p>
+              <h3>Braille-JP — serious game accessible</h3>
+              <p class="cv-project-summary">
+                Prototype conçu avec ProgAccess pour apprendre le braille
+                japonais, avec parcours joueur et parcours de contribution non
+                technique.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Personas, scénarios, architecture de navigation et conception
+                  des parcours d’apprentissage et de contribution.
+                </li>
+                <li>
+                  Spécifications clavier, lecteurs d’écran et plages braille,
+                  complétées par de premiers retours de personnes déficientes
+                  visuelles.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>IHM</li>
+                <li>Figma</li>
+                <li>Tests utilisateurs</li>
+                <li>Technologies d’assistance</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <p class="cv-project-meta">Trois projets universitaires</p>
+              <h3>Développement web — données & accessibilité</h3>
+              <p class="cv-project-summary">
+                Trois réalisations montrant une progression du front-end vers le
+                back-end, la gestion de contenus et l’accessibilité.
+              </p>
+              <ul class="cv-project-highlights">
+                <li>
+                  Site cuisine réalisé à trois : PHP/MySQL, catalogue enrichi
+                  par les contributions et gestion des commentaires.
+                </li>
+                <li>
+                  HandiSolutions pour la mise en pratique de l’accessibilité,
+                  puis prototype associatif full-stack anonymisé, non livré et
+                  non déployé.
+                </li>
+              </ul>
+              <ul class="tags" role="list">
+                <li>HTML/CSS/JS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>CRUD</li>
+                <li>Accessibilité web</li>
+              </ul>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-muted" id="langues" aria-labelledby="cv-langues">
-      <div class="container narrow">
-        <div class="section-heading"><p class="eyebrow">Langues</p><h2 id="cv-langues">Langues</h2></div>
-        <div class="skills-grid">
-          <section class="skill-group"><h3>Français</h3><p>Langue maternelle</p></section>
-          <section class="skill-group"><h3>Anglais</h3><p>Niveau professionnel</p></section>
-          <section class="skill-group"><h3>LSF</h3><p>Notions</p></section>
+      <section
+        class="section"
+        id="international"
+        aria-labelledby="cv-international"
+      >
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">International</p>
+            <h2 id="cv-international">Intervention académique</h2>
+          </div>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>24 oct. 2025</p>
+              <p>Sofia, Bulgarie</p>
+            </div>
+            <div class="timeline-content">
+              <h3>
+                <span lang="en">Digital Accessibility</span> — atelier ERUA
+              </h3>
+              <p class="role">Intervenante · New Bulgarian University</p>
+              <p class="cv-project-summary">
+                <strong>Présentation en anglais :</strong>
+                <span lang="en"
+                  >Cognitive and Psychological Approach to Digital
+                  Accessibility</span
+                >.
+              </p>
+              <ul class="experience-list">
+                <li>
+                  Conception et présentation d’un module consacré à
+                  l’accessibilité cognitive, à la diversité des profils et aux
+                  situations de limitation cognitive.
+                </li>
+                <li>
+                  Vulgarisation des liens entre attention, mémoire, charge
+                  mentale et conception d’interfaces, puis traduction en
+                  recommandations de design inclusif.
+                </li>
+                <li>
+                  Présentation de solutions concrètes : langage clair et FALC,
+                  navigation cohérente, contrôle du rythme, communication
+                  multimodale et réduction des distractions.
+                </li>
+              </ul>
+              <ul
+                class="experience-skills"
+                role="list"
+                aria-label="Compétences mobilisées lors de l’intervention ERUA"
+              >
+                <li>Prise de parole en anglais</li>
+                <li>Vulgarisation scientifique</li>
+                <li>Accessibilité cognitive</li>
+                <li>Design inclusif</li>
+                <li>Communication interculturelle</li>
+              </ul>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner"><p>CV accessible — Sarah Bussi</p><p><a href="index.html">Retour au portfolio</a></p></div>
-  </footer>
-  <script src="cv.js"></script>
-</body>
+      <section
+        class="section section-muted"
+        id="competences"
+        aria-labelledby="cv-skills"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Compétences</p>
+            <h2 id="cv-skills">Compétences & technologies</h2>
+          </div>
+          <div class="skills-grid">
+            <section class="skill-group">
+              <h3>Référentiels</h3>
+              <ul>
+                <li>RGAA 4.1</li>
+                <li>WCAG 2.1 / 2.2</li>
+                <li>EN 301 549</li>
+                <li>RAAM</li>
+                <li>Game Accessibility Guidelines</li>
+              </ul>
+            </section>
+
+            <section class="skill-group">
+              <h3>Tests & technologies d'assistance</h3>
+              <ul>
+                <li>NVDA</li>
+                <li>VoiceOver</li>
+                <li>TalkBack</li>
+                <li>Pilotage à la voix / Voice Control</li>
+                <li>Navigation et activation au clavier</li>
+                <li>Zoom, agrandissement et reflow</li>
+                <li>Analyse de la structure sémantique</li>
+                <li>Analyse du code HTML</li>
+              </ul>
+            </section>
+
+            <section class="skill-group">
+              <h3>Outils d'audit</h3>
+              <ul>
+                <li>Fruggr</li>
+                <li>axe DevTools</li>
+                <li>HeadingsMap</li>
+                <li>Accessibility Insights</li>
+                <li>Lighthouse</li>
+                <li>Chrome DevTools</li>
+                <li>Colour Contrast Analyser</li>
+              </ul>
+            </section>
+
+            <section class="skill-group">
+              <h3>Conception & produit</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Jira</li>
+                <li>Notion</li>
+                <li>Revue de maquettes</li>
+                <li>UX Research</li>
+                <li>Ergonomie cognitive</li>
+                <li>Qualité produit</li>
+                <li>Agile</li>
+              </ul>
+            </section>
+
+            <section class="skill-group">
+              <h3>Développement & prototypage</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Flutter</li>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>Unity</li>
+                <li>Arduino</li>
+                <li>ESP32</li>
+                <li>BLE</li>
+                <li>Git</li>
+                <li>Python</li>
+                <li>LLM / IA générative</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="references" aria-labelledby="cv-references">
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Références professionnelles</p>
+            <h2 id="cv-references">Recommandations</h2>
+            <p>
+              La lettre d’Audrey Gambs peut être consultée directement. Les deux
+              autres recommandations seront ajoutées après validation de leur
+              texte par les signataires.
+            </p>
+          </div>
+          <div class="cv-recommendations">
+            <details class="recommendation-details">
+              <summary>
+                <span
+                  ><strong>Audrey Gambs</strong
+                  ><span
+                    >Tutrice d’alternance · CDP Qualité CX &amp; Accessibilité ·
+                    SNCF Connect &amp; Tech</span
+                  ></span
+                >
+              </summary>
+              <div
+                class="recommendation-details-body"
+                aria-label="Lettre de recommandation d’Audrey Gambs"
+              >
+                <p>À qui de droit,</p>
+                <p>
+                  C'est avec un enthousiasme sincère et sans la moindre réserve
+                  que je recommande aujourd'hui Sarah Bussi, que j'ai eu le
+                  privilège d'accompagner en tant que tutrice tout au long de
+                  son alternance au sein de notre équipe.
+                </p>
+                <p>
+                  Au cours de ces derniers mois, Sarah s'est révélée être bien
+                  plus qu'une simple alternante. Elle a rapidement démontré des
+                  qualités professionnelles et humaines remarquables qui lui ont
+                  permis de s'imposer comme une collaboratrice de confiance et
+                  un véritable atout pour notre équipe.
+                </p>
+                <p>
+                  Dès son arrivée, Sarah a fait preuve d'une capacité
+                  d'adaptation exceptionnelle. Grâce à son intelligence, son
+                  sens de l'observation et sa remarquable faculté
+                  d'apprentissage, elle s'est approprié son environnement de
+                  travail et ses missions en un temps extrêmement court. Là où
+                  une période d'accompagnement prolongée est souvent nécessaire,
+                  Sarah a gagné en autonomie en seulement quelques semaines et a
+                  su prendre en charge ses sujets avec une maturité
+                  professionnelle impressionnante.
+                </p>
+                <p>
+                  Tout au long de son alternance, elle a réalisé un travail
+                  d'une qualité exemplaire. Rigoureuse, méthodique et
+                  particulièrement organisée, elle sait analyser les situations
+                  avec pertinence, identifier les enjeux importants et proposer
+                  des solutions concrètes et efficaces. Sa capacité à produire
+                  des livrables fiables et de grande qualité, tout en respectant
+                  systématiquement les délais, force le respect.
+                </p>
+                <p>
+                  Sarah possède également une curiosité intellectuelle rare et
+                  une véritable envie d'apprendre. Elle ne se contente jamais
+                  d'exécuter ce qui lui est demandé : elle cherche à comprendre,
+                  à approfondir et à améliorer l'existant. Cette posture lui a
+                  permis de monter en compétences à une vitesse remarquable,
+                  notamment sur les sujets liés à l'accessibilité numérique,
+                  domaine exigeant qui requiert à la fois rigueur, expertise
+                  technique et sens de l'analyse.
+                </p>
+                <p>
+                  Au-delà de ses excellentes compétences professionnelles, Sarah
+                  se distingue par des qualités humaines exceptionnelles.
+                  Toujours positive, souriante et bienveillante, elle crée
+                  naturellement des relations de confiance avec ses
+                  interlocuteurs. Son écoute, son respect des autres et son
+                  esprit collaboratif ont fait d'elle une personne
+                  particulièrement appréciée de l'ensemble de l'équipe. Son
+                  enthousiasme communicatif et son attitude constructive
+                  contribuent chaque jour à créer un environnement de travail
+                  agréable et stimulant.
+                </p>
+                <p>
+                  J'ai également été particulièrement impressionnée par sa
+                  capacité à prendre en compte les retours qui lui étaient
+                  formulés. Sarah accueille les remarques avec intelligence et
+                  humilité, les transforme très rapidement en axes de
+                  progression et les met en œuvre avec une efficacité
+                  remarquable. Cette maturité et cette capacité à se remettre en
+                  question constituent selon moi des qualités essentielles pour
+                  construire une carrière durable et ambitieuse.
+                </p>
+                <p>
+                  Au fil de son alternance, Sarah a démontré une combinaison
+                  rare de compétences : autonomie, professionnalisme, rigueur,
+                  esprit d'initiative, sens des responsabilités, capacité
+                  d'analyse, adaptabilité et intelligence relationnelle. Elle
+                  fait partie de ces profils que l'on rencontre peu et dont on
+                  mesure immédiatement la valeur lorsqu'ils rejoignent une
+                  équipe.
+                </p>
+                <p>
+                  S'il avait existé une opportunité de recrutement à l'issue de
+                  son alternance, je n'aurais eu aucune hésitation à soutenir sa
+                  candidature. Malheureusement, nos contraintes budgétaires ne
+                  permettent pas aujourd'hui l'ouverture d'un poste. Cette
+                  situation ne reflète en rien l'excellence de son travail ni le
+                  potentiel exceptionnel qu'elle a démontré.
+                </p>
+                <p>
+                  Je suis convaincue que Sarah saura réussir brillamment dans
+                  les responsabilités qui lui seront confiées et qu'elle
+                  apportera une réelle valeur ajoutée à toute organisation qui
+                  aura la chance de l'accueillir. Son professionnalisme, son
+                  engagement, son intelligence et ses qualités humaines lui
+                  promettent un très bel avenir professionnel.
+                </p>
+                <p>
+                  C'est donc avec la plus grande conviction et les plus vives
+                  recommandations que je vous recommande Sarah. Je suis certaine
+                  qu'elle saura dépasser vos attentes comme elle a su dépasser
+                  les nôtres.
+                </p>
+                <p>
+                  Je la recommande sans aucune réserve et avec le plus haut
+                  niveau de confiance.
+                </p>
+                <p>
+                  Bien cordialement,<br />Audrey GAMBS<br />CDP Qualité CX &amp;
+                  Accessibilité<br />SNCF Connect &amp; Tech
+                </p>
+              </div>
+            </details>
+            <article
+              class="recommendation-pending"
+              aria-labelledby="rec-expert-title"
+            >
+              <p class="eyebrow">Texte à venir</p>
+              <h3 id="rec-expert-title">Expert accessibilité numérique</h3>
+              <p>
+                La recommandation sera ajoutée après validation du signataire.
+              </p>
+            </article>
+            <article
+              class="recommendation-pending"
+              aria-labelledby="rec-manager-title"
+            >
+              <p class="eyebrow">Texte à venir</p>
+              <h3 id="rec-manager-title">Responsable N+1</h3>
+              <p>
+                La recommandation sera ajoutée après validation du signataire.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-muted"
+        id="langues"
+        aria-labelledby="cv-langues"
+      >
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Langues</p>
+            <h2 id="cv-langues">Langues</h2>
+          </div>
+          <div class="skills-grid">
+            <section class="skill-group">
+              <h3>Français</h3>
+              <p>Langue maternelle</p>
+            </section>
+            <section class="skill-group">
+              <h3>Anglais</h3>
+              <p>Niveau professionnel</p>
+            </section>
+            <section class="skill-group">
+              <h3>LSF</h3>
+              <p>Notions</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>CV accessible — Sarah Bussi</p>
+        <p><a href="index.html">Retour au portfolio</a></p>
+      </div>
+    </footer>
+    <script src="cv.js"></script>
+  </body>
 </html>

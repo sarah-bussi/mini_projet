@@ -11,7 +11,7 @@ create table if not exists public.testimonials (
   verification_contact text check (verification_contact is null or char_length(trim(verification_contact)) between 5 and 320),
   collaboration_context text not null check (char_length(trim(collaboration_context)) between 10 and 800),
   testimonial text not null check (char_length(trim(testimonial)) between 40 and 1200),
-  strengths text[] not null default '{}',
+  strengths text ARRAY not null default '{}',
   identity_mode text not null check (identity_mode in ('full', 'first', 'initials', 'role')),
   consent boolean not null check (consent = true),
   submission_language text not null default 'fr' check (submission_language in ('fr', 'en')),
@@ -20,7 +20,6 @@ create table if not exists public.testimonials (
   moderated_at timestamptz,
   approved_at timestamptz
 );
-
 create index if not exists testimonials_status_created_idx
   on public.testimonials (status, created_at desc);
 

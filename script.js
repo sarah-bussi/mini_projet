@@ -1,70 +1,77 @@
 (() => {
   const root = document.documentElement;
-  root.classList.add('js');
-  const isEnglish = (root.lang || '').toLowerCase().startsWith('en');
+  root.classList.add("js");
+  const isEnglish = (root.lang || "").toLowerCase().startsWith("en");
   const DASHES = /[\u2010\u2011\u2012\u2013\u2014\u2212]/g;
 
   const normalizeDashes = (scope = document) => {
-    const walker = document.createTreeWalker(scope.body || scope, NodeFilter.SHOW_TEXT);
+    const walker = document.createTreeWalker(
+      scope.body || scope,
+      NodeFilter.SHOW_TEXT,
+    );
     let node;
-    while ((node = walker.nextNode())) node.nodeValue = node.nodeValue.replace(DASHES, '-');
-    scope.querySelectorAll?.('[aria-label],[title]').forEach((el) => {
-      ['aria-label', 'title'].forEach((attr) => {
+    while ((node = walker.nextNode()))
+      node.nodeValue = node.nodeValue.replace(DASHES, "-");
+    scope.querySelectorAll?.("[aria-label],[title]").forEach((el) => {
+      ["aria-label", "title"].forEach((attr) => {
         const value = el.getAttribute(attr);
-        if (value) el.setAttribute(attr, value.replace(DASHES, '-'));
+        if (value) el.setAttribute(attr, value.replace(DASHES, "-"));
       });
     });
   };
 
-  ['modals.css', 'recommandations.css?v=20260822-2'].forEach((href) => {
+  ["modals.css", "recommandations.css?v=20260822-2"].forEach((href) => {
     if (!document.querySelector(`link[href="${href}"]`)) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
       link.href = href;
       document.head.appendChild(link);
     }
   });
 
-  const headerInner = document.querySelector('.header-inner');
-  const headerTools = headerInner?.querySelector('.header-tools');
-  if (headerInner && !headerInner.querySelector('.language-switch')) {
-    const languageSwitch = document.createElement('a');
-    languageSwitch.className = 'button button-secondary language-switch';
-    languageSwitch.href = isEnglish ? 'index.html' : 'index-en.html';
-    languageSwitch.hreflang = isEnglish ? 'fr' : 'en';
-    languageSwitch.textContent = isEnglish ? 'FR' : 'EN';
-    languageSwitch.setAttribute('aria-label', isEnglish ? 'View portfolio in French' : 'Voir le portfolio en anglais');
+  const headerInner = document.querySelector(".header-inner");
+  const headerTools = headerInner?.querySelector(".header-tools");
+  if (headerInner && !headerInner.querySelector(".language-switch")) {
+    const languageSwitch = document.createElement("a");
+    languageSwitch.className = "button button-secondary language-switch";
+    languageSwitch.href = isEnglish ? "index.html" : "index-en.html";
+    languageSwitch.hreflang = isEnglish ? "fr" : "en";
+    languageSwitch.textContent = isEnglish ? "FR" : "EN";
+    languageSwitch.setAttribute(
+      "aria-label",
+      isEnglish ? "View portfolio in French" : "Voir le portfolio en anglais",
+    );
     if (headerTools) {
-      const languageItem = document.createElement('li');
+      const languageItem = document.createElement("li");
       languageItem.appendChild(languageSwitch);
       headerTools.insertBefore(languageItem, headerTools.firstChild);
     } else {
-      const themeButton = document.getElementById('theme-toggle');
+      const themeButton = document.getElementById("theme-toggle");
       if (themeButton) headerInner.insertBefore(languageSwitch, themeButton);
       else headerInner.appendChild(languageSwitch);
     }
   }
 
-  const siteHeader = document.querySelector('.site-header');
+  const siteHeader = document.querySelector(".site-header");
   const updateHeaderOffset = () => {
     if (!siteHeader) return;
     const offset = Math.ceil(siteHeader.getBoundingClientRect().height + 16);
-    root.style.setProperty('--header-offset', `${offset}px`);
+    root.style.setProperty("--header-offset", `${offset}px`);
   };
   if (siteHeader) {
     updateHeaderOffset();
-    if ('ResizeObserver' in window) {
+    if ("ResizeObserver" in window) {
       const headerObserver = new ResizeObserver(updateHeaderOffset);
       headerObserver.observe(siteHeader);
     } else {
-      window.addEventListener('resize', updateHeaderOffset, { passive: true });
+      window.addEventListener("resize", updateHeaderOffset, { passive: true });
     }
   }
 
-  const navToggle = document.getElementById('nav-toggle');
-  const mainNav = document.getElementById('main-nav');
-  const navToggleIcon = navToggle?.querySelector('.nav-toggle-icon');
-  const mobileNavQuery = window.matchMedia('(max-width: 1180px)');
+  const navToggle = document.getElementById("nav-toggle");
+  const mainNav = document.getElementById("main-nav");
+  const navToggleIcon = navToggle?.querySelector(".nav-toggle-icon");
+  const mobileNavQuery = window.matchMedia("(max-width: 1180px)");
 
   const arrangeHeaderItems = () => {
     if (!headerInner || !navToggle || !mainNav) return;
@@ -80,8 +87,8 @@
       return;
     }
 
-    const languageSwitch = headerInner.querySelector('.language-switch');
-    const themeButton = document.getElementById('theme-toggle');
+    const languageSwitch = headerInner.querySelector(".language-switch");
+    const themeButton = document.getElementById("theme-toggle");
     if (mobileNavQuery.matches) {
       if (languageSwitch) headerInner.appendChild(languageSwitch);
       if (themeButton) headerInner.appendChild(themeButton);
@@ -90,7 +97,8 @@
     } else {
       const firstHeaderControl = languageSwitch || themeButton || navToggle;
       headerInner.insertBefore(mainNav, firstHeaderControl);
-      if (languageSwitch && themeButton) headerInner.insertBefore(languageSwitch, themeButton);
+      if (languageSwitch && themeButton)
+        headerInner.insertBefore(languageSwitch, themeButton);
       headerInner.appendChild(navToggle);
     }
     updateHeaderOffset();
@@ -101,18 +109,25 @@
   const setNavOpen = (open, returnFocus = false) => {
     if (!navToggle || !mainNav) return;
     const shouldOpen = mobileNavQuery.matches && open;
-    mainNav.classList.toggle('is-open', shouldOpen);
-    navToggle.setAttribute('aria-expanded', String(shouldOpen));
-    navToggle.setAttribute('aria-label', isEnglish
-      ? (shouldOpen ? 'Close main menu' : 'Open main menu')
-      : (shouldOpen ? 'Fermer le menu principal' : 'Ouvrir le menu principal'));
-    if (navToggleIcon) navToggleIcon.textContent = shouldOpen ? '×' : '☰';
+    mainNav.classList.toggle("is-open", shouldOpen);
+    navToggle.setAttribute("aria-expanded", String(shouldOpen));
+    navToggle.setAttribute(
+      "aria-label",
+      isEnglish
+        ? shouldOpen
+          ? "Close main menu"
+          : "Open main menu"
+        : shouldOpen
+          ? "Fermer le menu principal"
+          : "Ouvrir le menu principal",
+    );
+    if (navToggleIcon) navToggleIcon.textContent = shouldOpen ? "×" : "☰";
     updateHeaderOffset();
     if (returnFocus) navToggle.focus();
   };
 
-  navToggle?.addEventListener('click', () => {
-    setNavOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+  navToggle?.addEventListener("click", () => {
+    setNavOpen(navToggle.getAttribute("aria-expanded") !== "true");
   });
 
   const focusNavDestination = (link) => {
@@ -123,29 +138,33 @@
       return;
     }
 
-    const hadTabindex = target.hasAttribute('tabindex');
-    if (!hadTabindex) target.setAttribute('tabindex', '-1');
+    const hadTabindex = target.hasAttribute("tabindex");
+    if (!hadTabindex) target.setAttribute("tabindex", "-1");
     window.requestAnimationFrame(() => {
       target.focus({ preventScroll: true });
       if (!hadTabindex) {
-        target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+        target.addEventListener(
+          "blur",
+          () => target.removeAttribute("tabindex"),
+          { once: true },
+        );
       }
     });
   };
 
-  mainNav?.querySelectorAll('a').forEach((link) => {
+  mainNav?.querySelectorAll("a").forEach((link) => {
     let keyboardActivation = false;
 
-    link.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') keyboardActivation = true;
-      if (event.key === ' ') {
+    link.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") keyboardActivation = true;
+      if (event.key === " ") {
         event.preventDefault();
         keyboardActivation = true;
         link.click();
       }
     });
 
-    link.addEventListener('click', (event) => {
+    link.addEventListener("click", (event) => {
       if (!mobileNavQuery.matches) return;
       const shouldMoveFocus = keyboardActivation || event.detail === 0;
       keyboardActivation = false;
@@ -153,13 +172,16 @@
       if (shouldMoveFocus) focusNavDestination(link);
     });
 
-    link.addEventListener('blur', () => {
+    link.addEventListener("blur", () => {
       keyboardActivation = false;
     });
   });
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && navToggle?.getAttribute('aria-expanded') === 'true') {
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      navToggle?.getAttribute("aria-expanded") === "true"
+    ) {
       setNavOpen(false, true);
     }
   });
@@ -168,32 +190,32 @@
     arrangeHeaderItems();
     setNavOpen(false);
   };
-  if (typeof mobileNavQuery.addEventListener === 'function') {
-    mobileNavQuery.addEventListener('change', syncMobileNav);
+  if (typeof mobileNavQuery.addEventListener === "function") {
+    mobileNavQuery.addEventListener("change", syncMobileNav);
   } else {
     mobileNavQuery.addListener(syncMobileNav);
   }
 
-  const guidingPrinciple = document.querySelector('.panel-quote');
+  const guidingPrinciple = document.querySelector(".panel-quote");
   if (guidingPrinciple) {
     guidingPrinciple.textContent = isEnglish
-      ? '“Start with people, understand the barriers they face, and create solutions that give everyone more choice, autonomy and room to participate.”'
-      : '« Partir des personnes, comprendre les obstacles et créer des solutions qui donnent davantage de choix, d’autonomie et de place à chacun. »';
+      ? "“Start with people, understand the barriers they face, and create solutions that give everyone more choice, autonomy and room to participate.”"
+      : "« Partir des personnes, comprendre les obstacles et créer des solutions qui donnent davantage de choix, d’autonomie et de place à chacun. »";
   }
 
   const recommendationContacts = {
-    audrey: { email: '', linkedin: '' },
-    expert: { email: '', linkedin: '' },
-    nplus1: { email: '', linkedin: '' }
+    audrey: { email: "", linkedin: "" },
+    expert: { email: "", linkedin: "" },
+    nplus1: { email: "", linkedin: "" },
   };
 
   const contactActions = (contact, label) => {
     const email = contact.email
-      ? `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? 'Professional email' : 'Email professionnel'} - ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? 'Professional email to be added' : 'Email professionnel à renseigner'}</span>`;
+      ? `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? "Professional email" : "Email professionnel"} - ${label}</a>`
+      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? "Professional email to be added" : "Email professionnel à renseigner"}</span>`;
     const linkedin = contact.linkedin
       ? `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn - ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? 'LinkedIn to be added' : 'LinkedIn à renseigner'}</span>`;
+      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? "LinkedIn to be added" : "LinkedIn à renseigner"}</span>`;
     return `${email}${linkedin}`;
   };
 
@@ -247,64 +269,76 @@ Audrey GAMBS
 CDP Qualité CX & Accessibilité
 SNCF Connect & Tech`;
 
-  const themeButton = document.getElementById('theme-toggle');
-  const themeLabel = themeButton?.querySelector('.theme-toggle-label');
-  const savedTheme = localStorage.getItem('portfolio-theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const themeButton = document.getElementById("theme-toggle");
+  const themeLabel = themeButton?.querySelector(".theme-toggle-label");
+  const savedTheme = localStorage.getItem("portfolio-theme");
+  const systemPrefersDark = window.matchMedia(
+    "(prefers-color-scheme: dark)",
+  ).matches;
 
   const applyTheme = (theme) => {
     root.dataset.theme = theme;
-    const isDark = theme === 'dark';
+    const isDark = theme === "dark";
     const visibleThemeLabel = isEnglish
-      ? (isDark ? 'Light mode' : 'Dark mode')
-      : (isDark ? 'Contraste clair' : 'Contraste sombre');
+      ? isDark
+        ? "Light mode"
+        : "Dark mode"
+      : isDark
+        ? "Contraste clair"
+        : "Contraste sombre";
     if (themeLabel) themeLabel.textContent = visibleThemeLabel;
     if (themeButton) {
-      themeButton.setAttribute('aria-label', isEnglish
-        ? `${visibleThemeLabel}: switch to ${isDark ? 'light' : 'dark'} mode`
-        : `${visibleThemeLabel} : activer le mode ${isDark ? 'clair' : 'sombre'}`);
+      themeButton.setAttribute(
+        "aria-label",
+        isEnglish
+          ? `${visibleThemeLabel}: switch to ${isDark ? "light" : "dark"} mode`
+          : `${visibleThemeLabel} : activer le mode ${isDark ? "clair" : "sombre"}`,
+      );
     }
   };
 
-  applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
-  themeButton?.addEventListener('click', () => {
-    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
+  themeButton?.addEventListener("click", () => {
+    const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(nextTheme);
-    localStorage.setItem('portfolio-theme', nextTheme);
+    localStorage.setItem("portfolio-theme", nextTheme);
   });
 
-  const filterButtons = [...document.querySelectorAll('.filter-button')];
-  const projectCards = [...document.querySelectorAll('.project-card[data-tags]')];
-  const filterStatus = document.getElementById('filter-status');
+  const filterButtons = [...document.querySelectorAll(".filter-button")];
+  const projectCards = [
+    ...document.querySelectorAll(".project-card[data-tags]"),
+  ];
+  const filterStatus = document.getElementById("filter-status");
 
   filterButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const filter = button.dataset.filter || 'all';
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter || "all";
       filterButtons.forEach((candidate) => {
         const active = candidate === button;
-        candidate.classList.toggle('is-active', active);
-        candidate.setAttribute('aria-pressed', String(active));
+        candidate.classList.toggle("is-active", active);
+        candidate.setAttribute("aria-pressed", String(active));
       });
       let visibleCount = 0;
       projectCards.forEach((card) => {
-        const tags = (card.dataset.tags || '').split(' ');
-        const visible = filter === 'all' || tags.includes(filter);
+        const tags = (card.dataset.tags || "").split(" ");
+        const visible = filter === "all" || tags.includes(filter);
         card.hidden = !visible;
         if (visible) visibleCount += 1;
       });
       if (filterStatus) {
         filterStatus.textContent = isEnglish
-          ? `${visibleCount} project${visibleCount === 1 ? '' : 's'} displayed.`
-          : `${visibleCount} projet${visibleCount > 1 ? 's' : ''} affiché${visibleCount > 1 ? 's' : ''}.`;
+          ? `${visibleCount} project${visibleCount === 1 ? "" : "s"} displayed.`
+          : `${visibleCount} projet${visibleCount > 1 ? "s" : ""} affiché${visibleCount > 1 ? "s" : ""}.`;
       }
     });
   });
 
-  const recommendations = document.getElementById('recommandations');
+  const recommendations = document.getElementById("recommandations");
   if (recommendations) {
-    const container = recommendations.querySelector('.container');
+    const container = recommendations.querySelector(".container");
     if (container) {
-      container.innerHTML = isEnglish ? `
+      container.innerHTML = isEnglish
+        ? `
         <div class="section-heading">
           <p class="eyebrow">Professional references</p>
           <h2 id="recommendations-title">Recommendation letters</h2>
@@ -320,7 +354,8 @@ SNCF Connect & Tech`;
           <p class="eyebrow">Colleague testimonials</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
           <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><p id="testimonials-status" class="sr-only" aria-live="polite"></p></section>
-        </div>` : `
+        </div>`
+        : `
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
@@ -339,57 +374,71 @@ SNCF Connect & Tech`;
         </div>`;
     }
 
-    document.body.insertAdjacentHTML('beforeend', `
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      `
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
-        <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? 'Work-study mentor' : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité - SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close Audrey Gambs recommendation' : "Fermer la lettre d'Audrey Gambs"}">×</button></div>
-        <div class="letter-body"><h3>${isEnglish ? 'Concise English version' : 'Lettre complète'}</h3><p>${isEnglish ? audreyLetterEn : audreyLetterFr}</p></div>
-        <p class="privacy-note">${isEnglish ? 'Professional contact details will only be published with the signatory’s consent. No phone number is displayed.' : "Les coordonnées professionnelles ne seront publiées qu'avec l'accord de la signataire. Aucun numéro de téléphone n'est affiché."}</p>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, 'Audrey Gambs')}</div>
+        <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? "Work-study mentor" : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité - SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Audrey Gambs recommendation" : "Fermer la lettre d'Audrey Gambs"}">×</button></div>
+        <div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3><p>${isEnglish ? audreyLetterEn : audreyLetterFr}</p></div>
+        <p class="privacy-note">${isEnglish ? "Professional contact details will only be published with the signatory’s consent. No phone number is displayed." : "Les coordonnées professionnelles ne seront publiées qu'avec l'accord de la signataire. Aucun numéro de téléphone n'est affiché."}</p>
+        <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, "Audrey Gambs")}</div>
       </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-expert-title">${isEnglish ? 'Digital accessibility expert' : 'Expert accessibilité numérique'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close the digital accessibility expert recommendation' : 'Fermer la recommandation de l’expert accessibilité numérique'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? 'Professional recommendation' : 'Recommandation professionnelle'}</p><h2 id="dialog-rec-nplus1-title">${isEnglish ? 'Senior manager' : 'Responsable N+1'}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? 'Close the senior manager recommendation' : 'Fermer la recommandation du responsable N+1'}">×</button></div><div class="letter-body"><p>${isEnglish ? 'Recommendation to be added.' : 'Recommandation à intégrer.'}</p></div></dialog>`);
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-expert-title">${isEnglish ? "Digital accessibility expert" : "Expert accessibilité numérique"}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close the digital accessibility expert recommendation" : "Fermer la recommandation de l’expert accessibilité numérique"}">×</button></div><div class="letter-body"><p>${isEnglish ? "Recommendation to be added." : "Recommandation à intégrer."}</p></div></dialog>
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-nplus1-title">${isEnglish ? "Senior manager" : "Responsable N+1"}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close the senior manager recommendation" : "Fermer la recommandation du responsable N+1"}">×</button></div><div class="letter-body"><p>${isEnglish ? "Recommendation to be added." : "Recommandation à intégrer."}</p></div></dialog>`,
+    );
   }
 
   const dialogOpeners = new WeakMap();
-  const dialogButtons = [...document.querySelectorAll('[data-dialog]')];
-  const dialogs = [...document.querySelectorAll('dialog.project-dialog')];
+  const dialogButtons = [...document.querySelectorAll("[data-dialog]")];
+  const dialogs = [...document.querySelectorAll("dialog.project-dialog")];
 
   dialogButtons.forEach((button) => {
     const dialog = document.getElementById(button.dataset.dialog);
     if (!(dialog instanceof HTMLDialogElement)) return;
 
-    button.setAttribute('aria-haspopup', 'dialog');
-    button.setAttribute('aria-controls', dialog.id);
-    button.addEventListener('click', (event) => {
+    button.setAttribute("aria-haspopup", "dialog");
+    button.setAttribute("aria-controls", dialog.id);
+    button.addEventListener("click", (event) => {
       const trigger = event.currentTarget;
       if (!(trigger instanceof HTMLElement) || dialog.open) return;
       dialogOpeners.set(dialog, trigger);
       dialog.showModal();
       window.requestAnimationFrame(() => {
-        if (dialog.open) dialog.querySelector('[data-close]')?.focus({ preventScroll: true });
+        if (dialog.open)
+          dialog.querySelector("[data-close]")?.focus({ preventScroll: true });
       });
     });
   });
 
   dialogs.forEach((dialog) => {
-    dialog.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', (event) => {
+    dialog
+      .querySelector("[data-close]")
+      ?.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (event) => {
       const rect = dialog.getBoundingClientRect();
-      const isBackdrop = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      const isBackdrop =
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom;
       if (isBackdrop) dialog.close();
     });
-    dialog.addEventListener('close', () => {
+    dialog.addEventListener("close", () => {
       const trigger = dialogOpeners.get(dialog);
       dialogOpeners.delete(dialog);
       window.requestAnimationFrame(() => {
-        if (trigger instanceof HTMLElement && trigger.isConnected && !document.querySelector('dialog[open]')) {
+        if (
+          trigger instanceof HTMLElement &&
+          trigger.isConnected &&
+          !document.querySelector("dialog[open]")
+        ) {
           trigger.focus();
         }
       });
     });
   });
 
-  const year = document.getElementById('year');
+  const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
   normalizeDashes(document);
 })();

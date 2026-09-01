@@ -42,8 +42,8 @@ Dans `testimonials-config.js`, renseigner :
 
 ```js
 window.TESTIMONIALS_CONFIG = Object.freeze({
-  supabaseUrl: 'https://PROJECT.supabase.co',
-  supabaseAnonKey: 'CLE_ANON_PUBLIQUE'
+  supabaseUrl: "https://PROJECT.supabase.co",
+  supabaseAnonKey: "CLE_ANON_PUBLIQUE",
 });
 ```
 
