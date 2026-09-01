@@ -210,13 +210,20 @@
   };
 
   const contactActions = (contact, label) => {
-    const email = contact.email
-      ? `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? "Professional email" : "Email professionnel"} : ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? "Professional email to be added" : "Email professionnel à renseigner"}</span>`;
-    const linkedin = contact.linkedin
-      ? `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn : ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">${isEnglish ? "LinkedIn to be added" : "LinkedIn à renseigner"}</span>`;
-    return `${email}${linkedin}`;
+    const actions = [];
+    if (contact.email) {
+      actions.push(
+        `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? "Professional email" : "Email professionnel"} : ${label}</a>`,
+      );
+    }
+    if (contact.linkedin) {
+      actions.push(
+        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn : ${label}</a>`,
+      );
+    }
+    return actions.length
+      ? actions.join("")
+      : `<p class="contact-unavailable">${isEnglish ? "Professional contact details are not published." : "Les coordonnées professionnelles ne sont pas publiées."}</p>`;
   };
 
   const audreyLetterFr = `À qui de droit,
@@ -268,6 +275,13 @@ Kind regards,
 Audrey GAMBS
 CDP Qualité CX & Accessibilité
 SNCF Connect & Tech`;
+
+  const formatLetter = (letter) =>
+    letter
+      .trim()
+      .split(/\n{2,}/)
+      .map((paragraph) => `<p>${paragraph.replace(/\n/g, "<br>")}</p>`)
+      .join("");
 
   const themeButton = document.getElementById("theme-toggle");
   const themeLabel = themeButton?.querySelector(".theme-toggle-label");
@@ -358,7 +372,7 @@ SNCF Connect & Tech`;
         <div class="testimonial-subsection">
           <p class="eyebrow">Colleague testimonials</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
-          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><p id="testimonials-status" class="sr-only" aria-live="polite"></p></section>
+          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section>
         </div>`
         : `
         <div class="section-heading">
@@ -375,7 +389,7 @@ SNCF Connect & Tech`;
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div>
-          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Témoignages validés</h3><div id="approved-testimonials"><p class="testimonials-empty">Aucun témoignage de collègue validé n’est encore publié.</p></div><p id="testimonials-status" class="sr-only" aria-live="polite"></p></section>
+          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Témoignages validés</h3><div id="approved-testimonials"><p class="testimonials-empty">Aucun témoignage de collègue validé n’est encore publié.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section>
         </div>`;
     }
 
@@ -384,7 +398,7 @@ SNCF Connect & Tech`;
       `
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
         <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? "Work-study mentor" : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité, SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Audrey Gambs recommendation" : "Fermer la lettre d'Audrey Gambs"}">×</button></div>
-        <div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3><p>${isEnglish ? audreyLetterEn : audreyLetterFr}</p></div>
+        <div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? audreyLetterEn : audreyLetterFr)}</div>
         <p class="privacy-note">${isEnglish ? "Professional contact details will only be published with the signatory’s consent. No phone number is displayed." : "Les coordonnées professionnelles ne seront publiées qu'avec l'accord de la signataire. Aucun numéro de téléphone n'est affiché."}</p>
         <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, "Audrey Gambs")}</div>
       </dialog>
@@ -408,6 +422,7 @@ SNCF Connect & Tech`;
   const getDialogFocusableElements = (dialog) =>
     [...dialog.querySelectorAll(dialogFocusableSelector)].filter(
       (element) =>
+        element.tabIndex >= 0 &&
         element.getAttribute("aria-hidden") !== "true" &&
         !element.closest("[hidden]") &&
         element.getClientRects().length > 0,
