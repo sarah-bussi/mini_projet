@@ -119,6 +119,41 @@
     }
   };
 
+  const removeTestimonial = async (id, name) => {
+    const confirmed = window.confirm(
+      `Supprimer définitivement le témoignage de ${name} ? Cette action est irréversible.`,
+    );
+    if (!confirmed) return;
+
+    setText(moderationStatus, `Suppression du témoignage de ${name}…`);
+
+    try {
+      const response = await request(
+        `/rest/v1/testimonials?id=eq.${encodeURIComponent(id)}`,
+        {
+          method: "DELETE",
+          headers: { Prefer: "return=minimal" },
+        },
+        true,
+      );
+      if (!response.ok)
+        throw new Error(`Deletion failed: ${response.status}`);
+
+      setText(
+        moderationStatus,
+        `Le témoignage de ${name} a été supprimé définitivement.`,
+        "success",
+      );
+      await loadRows();
+    } catch {
+      setText(
+        moderationStatus,
+        "La suppression n’a pas pu être effectuée. Vérifiez vos droits puis réessayez.",
+        "error",
+      );
+    }
+  };
+
   const renderRows = (rows) => {
     moderationList.replaceChildren();
 
@@ -197,6 +232,19 @@
         );
         actions.appendChild(reject);
       }
+
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.className = "button button-secondary moderation-delete";
+      remove.textContent = "Supprimer définitivement";
+      remove.setAttribute(
+        "aria-label",
+        `Supprimer définitivement le témoignage de ${row.full_name}`,
+      );
+      remove.addEventListener("click", () =>
+        removeTestimonial(row.id, row.full_name),
+      );
+      actions.appendChild(remove);
 
       article.append(heading, meta, quote, data, actions);
       item.appendChild(article);
