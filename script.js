@@ -20,7 +20,7 @@
     });
   };
 
-  ["modals.css", "recommandations.css?v=20260822-2"].forEach((href) => {
+  ["modals.css", "recommandations.css?v=20260901-1"].forEach((href) => {
     if (!document.querySelector(`link[href="${href}"]`)) {
       const link = document.createElement("link");
       link.rel = "stylesheet";
