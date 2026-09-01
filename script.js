@@ -15,24 +15,6 @@
     guidingPrinciple.textContent = '« Partir des personnes, comprendre les obstacles et créer des solutions qui donnent davantage de choix, d’autonomie et de place à chacun. »';
   }
 
-  // Coordonnées professionnelles des signataires.
-  // À renseigner uniquement avec leur accord explicite de publication.
-  const recommendationContacts = {
-    manager: { email: '', linkedin: '' },
-    expert: { email: '', linkedin: '' },
-    nplus1: { email: '', linkedin: '' }
-  };
-
-  const contactActions = (contact, label) => {
-    const email = contact.email
-      ? `<a class="button button-secondary" href="mailto:${contact.email}">Email professionnel de ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">Email professionnel à renseigner</span>`;
-    const linkedin = contact.linkedin
-      ? `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn de ${label}</a>`
-      : `<span class="button button-secondary contact-placeholder" aria-disabled="true">LinkedIn à renseigner</span>`;
-    return `${email}${linkedin}`;
-  };
-
   const themeButton = document.getElementById('theme-toggle');
   const themeLabel = themeButton?.querySelector('.theme-toggle-label');
   const savedTheme = localStorage.getItem('portfolio-theme');
@@ -91,29 +73,14 @@
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
-          <p>Trois recommandations professionnelles prioritaires. Un clic ouvre la lettre intégrale. Avec l'accord de chaque signataire, son email professionnel et son profil LinkedIn permettent ensuite une prise de contact directe.</p>
+          <p>Les recommandations sont ajoutées individuellement après accord de leur signataire. Chaque lettre pourra être lue directement dans une version HTML accessible, avec le document original proposé séparément lorsqu'il est disponible.</p>
         </div>
-        <div class="recommendations-grid" aria-label="Recommandations professionnelles">
-          <article class="recommender-card">
-            <p class="recommender-role">Manager directe</p>
-            <h3>Management accessibilité & qualité produit</h3>
-            <p>Recommandation sur mon travail au quotidien, ma collaboration avec les équipes produit et mon autonomie.</p>
-            <button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète</button>
-          </article>
-          <article class="recommender-card">
-            <p class="recommender-role">Expert accessibilité numérique</p>
-            <h3>Expertise accessibilité</h3>
-            <p>Recommandation centrée sur mes compétences d'audit, de test, d'analyse et d'accompagnement des corrections.</p>
-            <button class="project-button" type="button" data-dialog="dialog-rec-expert">Lire la lettre complète</button>
-          </article>
-          <article class="recommender-card">
-            <p class="recommender-role">Responsable N+1</p>
-            <h3>Encadrement & vision produit</h3>
-            <p>Recommandation portant sur mon positionnement professionnel, mon évolution et ma contribution au collectif.</p>
-            <button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Lire la lettre complète</button>
-          </article>
+        <div class="recommendation-card">
+          <div>
+            <h3>Recommandations professionnelles</h3>
+            <p>Les premières lettres sont en cours d’intégration. Aucune coordonnée personnelle ou téléphonique des signataires n’est publiée sur le portfolio.</p>
+          </div>
         </div>
-        <p class="recommendation-note">Les coordonnées téléphoniques ne sont pas publiées. Les contacts professionnels directs proposés sont l'email et LinkedIn, avec l'accord des signataires.</p>
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta>
@@ -125,32 +92,25 @@
           </div>
         </div>`;
     }
-
-    const dialogsMarkup = `
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
-        <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-manager-title">Manager directe</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre de la manager directe">×</button></div>
-        <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.manager, 'la manager directe')}</div>
-      </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title">
-        <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-expert-title">Expert accessibilité numérique</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre de l'expert accessibilité numérique">×</button></div>
-        <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.expert, "l'expert accessibilité numérique")}</div>
-      </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title">
-        <div class="dialog-head"><div><p class="eyebrow">Recommandation professionnelle</p><h2 id="dialog-rec-nplus1-title">Responsable N+1</h2></div><button class="dialog-close" type="button" data-close aria-label="Fermer la lettre du responsable N+1">×</button></div>
-        <div class="letter-body"><h3>Lettre complète</h3><p>Le texte intégral de cette lettre sera affiché ici dès que le document définitif sera intégré au portfolio.</p></div>
-        <p class="privacy-note">Contact professionnel publié avec l'accord du signataire. Aucun numéro de téléphone n'est affiché.</p>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.nplus1, 'la responsable N+1')}</div>
-      </dialog>`;
-    document.body.insertAdjacentHTML('beforeend', dialogsMarkup);
   }
 
   let opener = null;
   const dialogButtons = [...document.querySelectorAll('[data-dialog]')];
   const dialogs = [...document.querySelectorAll('dialog.project-dialog')];
+
+  const focusDialogHeading = (dialog) => {
+    const labelledBy = dialog.getAttribute('aria-labelledby');
+    const heading = labelledBy ? document.getElementById(labelledBy) : dialog.querySelector('h1, h2, h3');
+
+    if (heading instanceof HTMLElement) {
+      heading.setAttribute('tabindex', '-1');
+      heading.focus();
+      return;
+    }
+
+    const firstFocusable = dialog.querySelector('button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (firstFocusable instanceof HTMLElement) firstFocusable.focus();
+  };
 
   dialogButtons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -158,7 +118,7 @@
       if (!(dialog instanceof HTMLDialogElement)) return;
       opener = button;
       dialog.showModal();
-      dialog.querySelector('[data-close]')?.focus();
+      focusDialogHeading(dialog);
     });
   });
 
@@ -172,6 +132,10 @@
     });
 
     dialog.addEventListener('close', () => {
+      const labelledBy = dialog.getAttribute('aria-labelledby');
+      const heading = labelledBy ? document.getElementById(labelledBy) : null;
+      if (heading instanceof HTMLElement) heading.removeAttribute('tabindex');
+
       if (opener instanceof HTMLElement) opener.focus();
       opener = null;
     });
