@@ -151,3 +151,59 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Modal scroll polish */
+body:has(dialog.project-dialog[open]) {
+  overflow: hidden;
+}
+
+.project-dialog {
+  max-height: calc(100dvh - 2rem);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  overscroll-behavior: contain;
+}
+
+.project-dialog::-webkit-scrollbar {
+  width: 10px;
+}
+
+.project-dialog::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-dialog::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+.project-dialog::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.project-dialog .dialog-head {
+  position: sticky;
+  z-index: 5;
+  top: calc(-1 * clamp(1.4rem, 4vw, 2.4rem));
+  margin: calc(-1 * clamp(1.4rem, 4vw, 2.4rem)) calc(-1 * clamp(1.4rem, 4vw, 2.4rem)) 0;
+  padding: clamp(1.4rem, 4vw, 2.4rem) clamp(1.4rem, 4vw, 2.4rem) 1.25rem;
+  background: var(--surface);
+}
+
+@media (max-width: 700px) {
+  .project-dialog {
+    width: calc(100% - 1rem);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 18px;
+  }
+
+  .project-dialog .dialog-head {
+    top: -1.1rem;
+    margin: -1.1rem -1.1rem 0;
+    padding: 1.1rem 1.1rem 1rem;
+  }
+}
