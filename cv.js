@@ -112,15 +112,49 @@ Yannick BREAVOINE`;
             }</span>
           </span>
         </summary>
-        <div class="recommendation-details-body" aria-label="${
-          isEnglish
-            ? "Yannick Breavoine’s recommendation letter"
-            : "Lettre de recommandation de Yannick Breavoine"
-        }">
+        <div class="recommendation-details-body">
           ${formatLetter(isEnglish ? yannickLetterEn : yannickLetterFr)}
         </div>`;
       container.appendChild(details);
     }
+  };
+
+  const fixCvSemantics = () => {
+    const brandLink = document.querySelector(".brand");
+    if (brandLink?.hasAttribute("aria-label")) {
+      brandLink.removeAttribute("aria-label");
+      if (!brandLink.querySelector(".brand-destination-hint")) {
+        const hint = document.createElement("span");
+        hint.className = "sr-only brand-destination-hint";
+        hint.textContent = isEnglish
+          ? ", back to portfolio"
+          : ", retour au portfolio";
+        brandLink.appendChild(hint);
+      }
+    }
+
+    const siteHeader = document.querySelector(".site-header");
+    const skipLink = document.querySelector(".skip-link");
+    if (siteHeader && skipLink && skipLink.parentElement === document.body) {
+      siteHeader.prepend(skipLink);
+    }
+
+    document.querySelectorAll("article").forEach((article, index) => {
+      if (
+        article.hasAttribute("aria-label") ||
+        article.hasAttribute("aria-labelledby")
+      )
+        return;
+
+      const heading = article.querySelector("h1, h2, h3, h4, h5, h6");
+      if (!heading) return;
+      if (!heading.id) heading.id = `cv-article-heading-${index + 1}`;
+      article.setAttribute("aria-labelledby", heading.id);
+    });
+
+    document
+      .querySelectorAll(".recommendation-details-body[aria-label]")
+      .forEach((element) => element.removeAttribute("aria-label"));
   };
 
   document
@@ -167,5 +201,6 @@ Yannick BREAVOINE`;
   cleanExperienceMetadata();
   fixProfileCopy();
   syncRecommendations();
+  fixCvSemantics();
   normalizeDashes(document);
 })();
