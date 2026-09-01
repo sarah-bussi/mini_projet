@@ -9,6 +9,7 @@
   --accent-strong: #a83f32;
   --accent-soft: #ffe0d8;
   --focus: #ffd166;
+  --focus-contrast: #12312b;
   --shadow: 0 20px 60px rgba(18, 49, 43, 0.12);
   --contact-bg: #12312b;
   --contact-text: #fff7e6;
@@ -29,6 +30,7 @@
   --accent-strong: #ff9a83;
   --accent-soft: #4a3933;
   --focus: #ffd166;
+  --focus-contrast: #fff7e6;
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
   --contact-bg: #1b4239;
   --contact-text: #fff7e6;
@@ -69,10 +71,12 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
-:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 4px;
-  box-shadow: 0 0 0 6px var(--text);
+:focus {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow:
+    0 0 0 3px var(--focus),
+    0 0 0 6px var(--focus-contrast);
 }
 .container {
   width: min(calc(100% - 2rem), var(--max));
@@ -1281,6 +1285,14 @@ ul.cv-header-actions > li::marker {
     padding: 0 1rem 1rem;
   }
 }
+@media (forced-colors: active) {
+  :focus {
+    outline: 3px solid Highlight;
+    outline-offset: 3px;
+    box-shadow: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

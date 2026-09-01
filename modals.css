@@ -253,10 +253,6 @@
   border-color: var(--accent);
   background: var(--accent-soft);
 }
-.project-dialog:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 3px;
-}
 @media (max-width: 700px) {
   .dialog-grid {
     grid-template-columns: 1fr;
