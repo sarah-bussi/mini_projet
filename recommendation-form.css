@@ -104,6 +104,20 @@ input:focus-visible,
 textarea:focus-visible {
   border-color: var(--accent);
 }
+.required-note {
+  margin: 0;
+  color: var(--text);
+  font-weight: 750;
+}
+.required-note > span[aria-hidden="true"],
+.required-indicator {
+  color: var(--accent-strong);
+  font-weight: 900;
+}
+.required-indicator {
+  margin-inline-start: 0.15rem;
+  white-space: nowrap;
+}
 .field-help,
 .optional {
   color: var(--text-muted);
