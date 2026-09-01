@@ -11,7 +11,6 @@
   const identityError = document.getElementById("identity-error");
   const consent = document.getElementById("publication-consent");
   const consentFieldset = consent?.closest("fieldset");
-  const loadedAt = Date.now();
   const config = window.TESTIMONIALS_CONFIG || {};
   const apiUrl = String(config.supabaseUrl || "").replace(/\/$/, "");
   const anonKey = String(config.supabaseAnonKey || "");
@@ -30,8 +29,10 @@
           "Thank you. Your testimonial has been received and is awaiting review. Nothing has been published automatically.",
         unavailable:
           "The testimonial service is not configured yet. Please try again later.",
-        error:
-          "The testimonial could not be sent. Please check your connection and try again.",
+        network:
+          "The testimonial could not be sent because the service could not be reached. Please try again.",
+        rejected:
+          "The testimonial service refused the submission. Please try again or contact me if the problem persists.",
         invalid: "Please correct the fields indicated below before submitting.",
         identity: "Choose an identification option before submitting.",
         consent: "Please confirm that you agree to the possible publication of your testimonial.",
@@ -43,8 +44,10 @@
           "Merci. Votre témoignage a bien été reçu et attend maintenant une validation. Rien n’a été publié automatiquement.",
         unavailable:
           "Le service de témoignages n’est pas encore configuré. Merci de réessayer ultérieurement.",
-        error:
-          "Le témoignage n’a pas pu être envoyé. Vérifiez votre connexion puis réessayez.",
+        network:
+          "Le témoignage n’a pas pu être envoyé car le service est injoignable. Réessayez dans un instant.",
+        rejected:
+          "Le service de témoignages a refusé l’envoi. Réessayez ou contactez-moi si le problème persiste.",
         invalid: "Corrigez les champs indiqués ci-dessous avant l’envoi.",
         identity: "Choisissez une option d’identification avant l’envoi.",
         consent: "Confirmez que vous autorisez la publication éventuelle de votre témoignage.",
@@ -331,11 +334,6 @@
       return;
     }
 
-    if (Date.now() - loadedAt < 1800) {
-      setStatus(messages.error, "error");
-      return;
-    }
-
     if (!isConfigured) {
       setStatus(messages.unavailable, "error");
       return;
@@ -368,15 +366,18 @@
         signal: controller.signal,
         headers: {
           apikey: anonKey,
-          Authorization: `Bearer ${anonKey}`,
           "Content-Type": "application/json",
           Prefer: "return=minimal",
         },
         body: JSON.stringify(payload),
       });
 
-      if (!response.ok)
-        throw new Error(`Submission failed: ${response.status}`);
+      if (!response.ok) {
+        const detail = await response.text().catch(() => "");
+        console.error("Testimonial submission rejected", response.status, detail);
+        setStatus(messages.rejected, "error");
+        return;
+      }
 
       form.reset();
       fieldMap.forEach((_entry, control) => clearFieldError(control));
@@ -384,8 +385,9 @@
       clearConsentError();
       setStatus(messages.success, "success");
       status?.focus({ preventScroll: false });
-    } catch {
-      setStatus(messages.error, "error");
+    } catch (error) {
+      console.error("Testimonial submission failed", error);
+      setStatus(messages.network, "error");
     } finally {
       window.clearTimeout(timeout);
       setBusy(false);
