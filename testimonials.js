@@ -123,7 +123,7 @@
     const list = document.createElement("ul");
     list.className = "testimonial-list";
 
-    items.forEach((item) => {
+    items.forEach((item, index) => {
       const listItem = document.createElement("li");
       const article = document.createElement("article");
       article.className = "testimonial-card";
@@ -136,7 +136,9 @@
       const footer = document.createElement("footer");
       const author = document.createElement("cite");
       const authorName = document.createElement("strong");
+      authorName.id = `testimonial-author-${index + 1}`;
       authorName.textContent = item.display_name;
+      article.setAttribute("aria-labelledby", authorName.id);
       author.appendChild(authorName);
 
       const details = [item.public_role, item.organization].filter(Boolean);
