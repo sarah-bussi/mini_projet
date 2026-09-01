@@ -2,13 +2,19 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.recommendations-grid > li {
+  min-width: 0;
 }
 .recommender-card {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   min-height: 260px;
+  height: 100%;
   padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
