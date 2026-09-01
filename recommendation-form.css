@@ -140,6 +140,14 @@ textarea:focus-visible {
 .field-help {
   margin: 0;
 }
+.field-error {
+  margin: 0.75rem 0 0;
+  color: var(--accent-strong);
+  font-weight: 750;
+}
+.field-error[hidden] {
+  display: none;
+}
 .check-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -4,6 +4,11 @@
   const form = document.getElementById("recommendation-form");
   const status = document.getElementById("form-status");
   const submitButton = form?.querySelector('button[type="submit"]');
+  const identityGroup = form?.querySelector(".publication-options");
+  const identityRadios = Array.from(
+    form?.querySelectorAll('input[name="identity_mode"]') || [],
+  );
+  const identityError = document.getElementById("identity-error");
   const loadedAt = Date.now();
   const config = window.TESTIMONIALS_CONFIG || {};
   const apiUrl = String(config.supabaseUrl || "").replace(/\/$/, "");
@@ -54,18 +59,59 @@
 
   if (!form) return;
 
+  const clearIdentityError = () => {
+    identityGroup?.removeAttribute("aria-invalid");
+    if (identityError) identityError.hidden = true;
+  };
+
+  const showIdentityError = () => {
+    identityGroup?.setAttribute("aria-invalid", "true");
+    if (identityError) identityError.hidden = false;
+  };
+
+  const getFirstNativeInvalid = () =>
+    Array.from(form.elements).find(
+      (control) => control.willValidate && !control.validity.valid,
+    );
+
+  identityRadios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+      if (radio.checked) clearIdentityError();
+    });
+  });
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     setStatus("");
 
-    if (!form.reportValidity()) {
+    const hasIdentitySelection = identityRadios.some(
+      (radio) => radio.checked,
+    );
+    if (hasIdentitySelection) clearIdentityError();
+    else showIdentityError();
+
+    const firstNativeInvalid = getFirstNativeInvalid();
+    const identityComesFirst =
+      !firstNativeInvalid ||
+      Boolean(
+        identityRadios[0]?.compareDocumentPosition(firstNativeInvalid) &
+          Node.DOCUMENT_POSITION_FOLLOWING,
+      );
+
+    if (!hasIdentitySelection || firstNativeInvalid) {
       setStatus(messages.invalid, "error");
+      if (!hasIdentitySelection && identityComesFirst) {
+        identityRadios[0]?.focus();
+      } else {
+        firstNativeInvalid?.reportValidity();
+      }
       return;
     }
 
     const data = new FormData(form);
     if (String(data.get("website") || "").trim()) {
       form.reset();
+      clearIdentityError();
       setStatus(messages.success, "success");
       return;
     }
@@ -118,6 +164,7 @@
         throw new Error(`Submission failed: ${response.status}`);
 
       form.reset();
+      clearIdentityError();
       setStatus(messages.success, "success");
       status?.focus({ preventScroll: false });
     } catch {

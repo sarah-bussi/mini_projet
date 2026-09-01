@@ -70,7 +70,7 @@
             <h2 id="questionnaire-title">Questionnaire</h2>
           </div>
 
-          <form id="recommendation-form">
+          <form id="recommendation-form" novalidate>
             <div class="hp-field" aria-hidden="true">
               <label for="website">Your website</label>
               <input
@@ -254,7 +254,13 @@
 
             <section class="form-section" aria-labelledby="publication-title">
               <h3 id="publication-title">Possible publication</h3>
-              <fieldset class="nested-fieldset publication-options">
+              <fieldset
+                class="nested-fieldset publication-options"
+                role="radiogroup"
+                aria-labelledby="identity-title"
+                aria-describedby="identity-help identity-error"
+                aria-required="true"
+              >
                 <legend class="sr-only">
                   If approved, how would you like to be identified? — required field
                 </legend>
@@ -262,7 +268,7 @@
                   If approved, how would you like to be identified?
                   <span class="required-indicator"><span aria-hidden="true">*</span><span class="sr-only"> required field</span></span>
                 </h4>
-                <p class="field-help">
+                <p class="field-help" id="identity-help">
                   The organisation may be displayed alongside your role.
                 </p>
                 <div class="radio-stack">
@@ -271,7 +277,6 @@
                     type="radio"
                     name="identity_mode"
                     value="full"
-                    required
                   />
                   Full name + role</label
                 >
@@ -288,6 +293,9 @@
                   only</label
                 >
                 </div>
+                <p class="field-error" id="identity-error" hidden>
+                  Choose an identification option before submitting.
+                </p>
               </fieldset>
               <fieldset class="consent-fieldset">
                 <legend class="sr-only">
