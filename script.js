@@ -73,14 +73,20 @@
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
-          <p>Les recommandations sont ajoutées individuellement après accord de leur signataire. Chaque lettre pourra être lue directement dans une version HTML accessible, avec le document original proposé séparément lorsqu'il est disponible.</p>
+          <p>Des recommandations professionnelles de personnes avec qui j’ai travaillé, consultables directement dans le portfolio.</p>
         </div>
-        <div class="recommendation-card">
-          <div>
-            <h3>Recommandations professionnelles</h3>
-            <p>Les premières lettres sont en cours d’intégration. Aucune coordonnée personnelle ou téléphonique des signataires n’est publiée sur le portfolio.</p>
-          </div>
+
+        <div class="recommendations-grid">
+          <article class="recommender-card">
+            <p class="recommender-role">Accessibilité numérique</p>
+            <h3>Yannick Breavoine</h3>
+            <p>Professionnel de l’accessibilité numérique et de la formation spécialisée, en collaboration régulière avec SNCF Connect.</p>
+            <button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la recommandation</button>
+          </article>
         </div>
+
+        <p class="recommendation-note">Les coordonnées personnelles des signataires ne sont pas publiées. Une mise en relation peut être transmise sur demande.</p>
+
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta>
@@ -92,6 +98,31 @@
           </div>
         </div>`;
     }
+
+    const recommendationDialog = `
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-yannick" aria-labelledby="dialog-rec-yannick-title">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Recommandation professionnelle · 1er septembre 2026</p>
+            <h2 id="dialog-rec-yannick-title">Yannick Breavoine</h2>
+            <p>Accessibilité numérique et formation spécialisée</p>
+          </div>
+          <button class="dialog-close" type="button" data-close aria-label="Fermer la recommandation de Yannick Breavoine">×</button>
+        </div>
+
+        <div class="letter-body">
+          <p><strong>Madame, Monsieur,</strong></p>
+          <p>Depuis un an, nous avons accueilli au sein de notre service Sarah en tant qu’alternante. Après une phase de transfert de connaissances avec sa prédécesseure, elle a rapidement montré des compétences qui nous ont été très utiles. Elle a rapidement été en mesure d’effectuer des tests avec un lecteur d’écran que ce soit sur mobile ou sur PC (NVDA). Lorsque je lui ai remonté des difficultés d’usage, elle a été en mesure d’analyser le code et de rédiger des tickets que les personnes qui ne sont pas expérimentées en accessibilité sont en mesure de comprendre.</p>
+          <p>Mais là où Sarah a montré ses réelles qualités c’est dans la prise d’initiatives, dans la capacité à travailler en autonomie et dans son envie de porter un sujet qui est difficile à faire accepter au sein d’une grande entreprise. Bien sûr, elle doit encore gagner en confiance pour oser prendre la parole mais nul doute que ses compétences l’aideront dans ce sens.</p>
+          <p>En résumé, je recommande grandement l’embauche de Sarah qui saura s’intégrer dans un collectif et qui saura faire preuve d’envie de progresser.</p>
+          <p>Je reste à la disposition de toute personne qui souhaiterait échanger sur une embauche de Sarah qui, selon moi, serait une belle opportunité.</p>
+          <p class="letter-signature"><strong>Yannick Breavoine</strong></p>
+        </div>
+
+        <p class="recommendation-note">Version publique : coordonnées personnelles retirées. Référence professionnelle disponible sur demande.</p>
+      </dialog>`;
+
+    document.body.insertAdjacentHTML('beforeend', recommendationDialog);
   }
 
   let opener = null;
