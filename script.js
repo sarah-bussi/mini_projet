@@ -205,25 +205,24 @@
 
   const recommendationContacts = {
     audrey: { email: "", linkedin: "" },
-    expert: { email: "", linkedin: "" },
-    nplus1: { email: "", linkedin: "" },
+    yannick: { email: "yannick@breavoine.net", linkedin: "" },
   };
 
   const contactActions = (contact, label) => {
     const actions = [];
     if (contact.email) {
       actions.push(
-        `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? "Professional email" : "Email professionnel"} : ${label}</a>`,
+        `<a class="button button-secondary" href="mailto:${contact.email}" aria-label="${isEnglish ? "Email" : "Envoyer un e-mail à"} ${label}">${isEnglish ? "Email" : "E-mail"} : ${label}</a>`,
       );
     }
     if (contact.linkedin) {
       actions.push(
-        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn : ${label}</a>`,
+        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn : ${label}<span class="sr-only">${isEnglish ? ", opens in a new tab" : ", ouvre un nouvel onglet"}</span></a>`,
       );
     }
     return actions.length
       ? actions.join("")
-      : `<p class="contact-unavailable">${isEnglish ? "Professional contact details are not published." : "Les coordonnées professionnelles ne sont pas publiées."}</p>`;
+      : `<p class="contact-unavailable">${isEnglish ? "Direct contact details are available on request." : "Coordonnées directes disponibles sur demande."}</p>`;
   };
 
   const audreyLetterFr = `À qui de droit,
@@ -275,6 +274,34 @@ Kind regards,
 Audrey GAMBS
 CDP Qualité CX & Accessibilité
 SNCF Connect & Tech`;
+
+  const yannickLetterFr = `Madame, Monsieur,
+
+Je suis non-voyant et travaille dans le domaine de l’accessibilité numérique, la formation spécialisée en lien avec la déficience visuelle. A ce titre, je collabore avec SNCF Connect depuis 9 ans notamment en y réalisant de manière hebdomadaire des tests pour vérifier l’utilisabilité du site et des applications.
+
+Depuis un an, nous avons accueilli au sein de notre service Sarah en tant qu’alternante. Après une phase de transfert de connaissances avec sa prédécesseure, elle a rapidement montré des compétences qui nous ont été très utiles. Elle a rapidement été en mesure d’effectuer des tests avec un lecteur d’écran que ce soit sur mobile ou sur PC (NVDA). Lorsque je lui ai remonté des difficultés d’usage, elle a été en mesure d’analyser le code et de rédiger des tickets que les personnes qui ne sont pas expérimentées en accessibilité sont en mesure de comprendre.
+
+Mais là où Sarah a montré ses réelles qualités c’est dans la prise d’initiatives, dans la capacité à travailler en autonomie et dans son envie de porter un sujet qui est difficile à faire accepter au sein d’une grande entreprise. Bien sûr, elle doit encore gagner en confiance pour oser prendre la parole mais nul doute que ses compétences l’aideront dans ce sens.
+
+En résumé, je recommande grandement l’embauche de Sarah qui saura s’intégrer dans un collectif et qui saura faire preuve d’envie de progresser.
+
+Je reste à la disposition de toute personne qui souhaiterait échanger sur une embauche de Sarah qui, selon moi, serait une belle opportunité.
+
+Yannick BREAVOINE`;
+
+  const yannickLetterEn = `Dear Sir or Madam,
+
+I am blind and work in digital accessibility and specialist training related to visual impairment. In this capacity, I have collaborated with SNCF Connect for nine years, notably carrying out weekly tests to assess the usability of its website and applications.
+
+Sarah joined our team as a work-study student one year ago. After a knowledge-transfer period with her predecessor, she quickly demonstrated skills that proved very useful to us. She rapidly became able to carry out screen-reader tests on both mobile and PC using NVDA. When I reported usability difficulties to her, she was able to analyse the code and write tickets that people without accessibility expertise could understand.
+
+Sarah particularly stood out through her initiative, her ability to work independently and her willingness to champion a subject that can be difficult to establish within a large company. She still needs to gain confidence in speaking up, but I have no doubt that her skills will help her progress in this area.
+
+In summary, I strongly recommend hiring Sarah. She will integrate well into a team and will continue to show a strong desire to learn and progress.
+
+I remain available to anyone who would like to discuss Sarah's potential recruitment, which I believe would be an excellent opportunity.
+
+Yannick BREAVOINE`;
 
   const formatLetter = (letter) =>
     letter
@@ -361,14 +388,12 @@ SNCF Connect & Tech`;
         <div class="section-heading">
           <p class="eyebrow">Professional references</p>
           <h2 id="recommendations-title">Recommendation letters</h2>
-          <p>Professional recommendations from people who directly supervised or worked with me. Audrey Gambs' recommendation is available below in a concise English version.</p>
+          <p>Two recommendations from people who directly supervised or worked with me are available here.</p>
         </div>
         <div class="recommendations-grid" aria-label="Professional recommendations">
           <article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Digital accessibility expert</p><h3>Accessibility expertise</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">View details<span class="sr-only"> for the digital accessibility expert recommendation</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Senior manager</p><h3>Management & product perspective</h3><p>Recommendation to be added.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">View details<span class="sr-only"> for the senior manager recommendation</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Digital accessibility specialist</p><h3>Yannick Breavoine</h3><p><strong>Digital accessibility and specialist training</strong></p><p>Recommendation covering screen-reader testing, code analysis, clear accessibility tickets, initiative and autonomy.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Read recommendation<span class="sr-only"> from Yannick Breavoine</span></button></article>
         </div>
-        <p class="recommendation-note">Phone numbers are not published. Professional email and LinkedIn links will only be displayed with each signatory's consent.</p>
         <div class="testimonial-subsection">
           <p class="eyebrow">Colleague testimonials</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
@@ -378,14 +403,12 @@ SNCF Connect & Tech`;
         <div class="section-heading">
           <p class="eyebrow">Références professionnelles</p>
           <h2 id="recommendations-title">Lettres de recommandation</h2>
-          <p>Des recommandations de personnes ayant directement encadré ou travaillé avec moi. La lettre complète d'Audrey Gambs est disponible ci-dessous.</p>
+          <p>Deux recommandations de personnes ayant directement encadré ou travaillé avec moi sont disponibles ici.</p>
         </div>
         <div class="recommendations-grid" aria-label="Recommandations professionnelles">
           <article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Expert accessibilité numérique</p><h3>Expertise accessibilité</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-expert">Voir le détail<span class="sr-only"> de la recommandation de l’expert accessibilité numérique</span></button></article>
-          <article class="recommender-card"><p class="recommender-role">Responsable N+1</p><h3>Encadrement & vision produit</h3><p>Recommandation à intégrer.</p><button class="project-button" type="button" data-dialog="dialog-rec-nplus1">Voir le détail<span class="sr-only"> de la recommandation du responsable N+1</span></button></article>
+          <article class="recommender-card"><p class="recommender-role">Accessibilité numérique</p><h3>Yannick Breavoine</h3><p><strong>Accessibilité numérique et formation spécialisée</strong></p><p>Recommandation portant notamment sur les tests avec lecteur d'écran, l'analyse du code, la rédaction de tickets, la prise d'initiative et l'autonomie.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la lettre complète<span class="sr-only"> de Yannick Breavoine</span></button></article>
         </div>
-        <p class="recommendation-note">Les numéros de téléphone ne sont pas publiés. L'email professionnel et LinkedIn ne seront affichés qu'avec l'accord de chaque signataire.</p>
         <div class="testimonial-subsection">
           <p class="eyebrow">Témoignages de collègues</p>
           <div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div>
@@ -399,15 +422,18 @@ SNCF Connect & Tech`;
       <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
         <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? "Work-study mentor" : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité, SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Audrey Gambs recommendation" : "Fermer la lettre d'Audrey Gambs"}">×</button></div>
         <div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? audreyLetterEn : audreyLetterFr)}</div>
-        <p class="privacy-note">${isEnglish ? "Professional contact details will only be published with the signatory’s consent. No phone number is displayed." : "Les coordonnées professionnelles ne seront publiées qu'avec l'accord de la signataire. Aucun numéro de téléphone n'est affiché."}</p>
         <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, "Audrey Gambs")}</div>
       </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-expert" aria-labelledby="dialog-rec-expert-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-expert-title">${isEnglish ? "Digital accessibility expert" : "Expert accessibilité numérique"}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close the digital accessibility expert recommendation" : "Fermer la recommandation de l’expert accessibilité numérique"}">×</button></div><div class="letter-body"><p>${isEnglish ? "Recommendation to be added." : "Recommandation à intégrer."}</p></div></dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-nplus1" aria-labelledby="dialog-rec-nplus1-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-nplus1-title">${isEnglish ? "Senior manager" : "Responsable N+1"}</h2></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close the senior manager recommendation" : "Fermer la recommandation du responsable N+1"}">×</button></div><div class="letter-body"><p>${isEnglish ? "Recommendation to be added." : "Recommandation à intégrer."}</p></div></dialog>`,
+      <dialog class="project-dialog recommender-dialog" id="dialog-rec-yannick" aria-labelledby="dialog-rec-yannick-title">
+        <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation - 1 September 2026" : "Recommandation professionnelle - 1er septembre 2026"}</p><h2 id="dialog-rec-yannick-title">Yannick Breavoine</h2><p>${isEnglish ? "Digital accessibility and specialist training" : "Accessibilité numérique et formation spécialisée"}</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Yannick Breavoine recommendation" : "Fermer la lettre de Yannick Breavoine"}">×</button></div>
+        <div class="letter-body"><h3>${isEnglish ? "English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? yannickLetterEn : yannickLetterFr)}</div>
+        <div class="recommendation-actions">${contactActions(recommendationContacts.yannick, "Yannick Breavoine")}</div>
+      </dialog>`,
     );
   }
 
   const dialogOpeners = new WeakMap();
+  const dialogHeadings = new WeakMap();
   const dialogButtons = [...document.querySelectorAll("[data-dialog]")];
   const dialogs = [...document.querySelectorAll("dialog.project-dialog")];
   const dialogFocusableSelector = [
@@ -428,6 +454,20 @@ SNCF Connect & Tech`;
         element.getClientRects().length > 0,
     );
 
+  const focusDialogHeading = (dialog) => {
+    const labelledBy = dialog.getAttribute("aria-labelledby");
+    const heading = labelledBy ? document.getElementById(labelledBy) : null;
+    if (!(heading instanceof HTMLElement)) {
+      getDialogFocusableElements(dialog)[0]?.focus({ preventScroll: true });
+      return;
+    }
+
+    const hadTabindex = heading.hasAttribute("tabindex");
+    dialogHeadings.set(dialog, { heading, hadTabindex });
+    if (!hadTabindex) heading.setAttribute("tabindex", "-1");
+    heading.focus({ preventScroll: true });
+  };
+
   dialogButtons.forEach((button) => {
     const dialog = document.getElementById(button.dataset.dialog);
     if (!(dialog instanceof HTMLDialogElement)) return;
@@ -440,8 +480,7 @@ SNCF Connect & Tech`;
       dialogOpeners.set(dialog, trigger);
       dialog.showModal();
       window.requestAnimationFrame(() => {
-        if (dialog.open)
-          dialog.querySelector("[data-close]")?.focus({ preventScroll: true });
+        if (dialog.open) focusDialogHeading(dialog);
       });
     });
   });
@@ -449,7 +488,7 @@ SNCF Connect & Tech`;
   dialogs.forEach((dialog) => {
     const closeButton = dialog.querySelector("[data-close]");
     if (closeButton instanceof HTMLButtonElement) {
-      closeButton.setAttribute("autofocus", "");
+      closeButton.removeAttribute("autofocus");
       closeButton.addEventListener("click", () => dialog.close());
     }
 
@@ -479,7 +518,17 @@ SNCF Connect & Tech`;
         event.clientY > rect.bottom;
       if (isBackdrop) dialog.close();
     });
+
     dialog.addEventListener("close", () => {
+      const headingState = dialogHeadings.get(dialog);
+      dialogHeadings.delete(dialog);
+      if (
+        headingState?.heading instanceof HTMLElement &&
+        !headingState.hadTabindex
+      ) {
+        headingState.heading.removeAttribute("tabindex");
+      }
+
       const trigger = dialogOpeners.get(dialog);
       dialogOpeners.delete(dialog);
       window.requestAnimationFrame(() => {
