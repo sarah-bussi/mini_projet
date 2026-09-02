@@ -139,6 +139,10 @@ Yannick BREAVOINE`;
       siteHeader.prepend(skipLink);
     }
 
+    document.querySelectorAll("ul[role='list'], ol[role='list']").forEach((list) => {
+      list.removeAttribute("role");
+    });
+
     document.querySelectorAll("article").forEach((article, index) => {
       if (
         article.hasAttribute("aria-label") ||
