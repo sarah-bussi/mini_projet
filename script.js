@@ -75,7 +75,6 @@
 
   const arrangeHeaderItems = () => {
     if (!headerInner || !navToggle || !mainNav) return;
-
     if (headerTools) {
       if (mobileNavQuery.matches) {
         headerInner.appendChild(headerTools);
@@ -86,7 +85,6 @@
       updateHeaderOffset();
       return;
     }
-
     const languageSwitch = headerInner.querySelector(".language-switch");
     const themeButton = document.getElementById("theme-toggle");
     if (mobileNavQuery.matches) {
@@ -103,7 +101,6 @@
     }
     updateHeaderOffset();
   };
-
   arrangeHeaderItems();
 
   const setNavOpen = (open, returnFocus = false) => {
@@ -114,21 +111,16 @@
     navToggle.setAttribute(
       "aria-label",
       isEnglish
-        ? shouldOpen
-          ? "Close main menu"
-          : "Open main menu"
-        : shouldOpen
-          ? "Fermer le menu principal"
-          : "Ouvrir le menu principal",
+        ? shouldOpen ? "Close main menu" : "Open main menu"
+        : shouldOpen ? "Fermer le menu principal" : "Ouvrir le menu principal",
     );
     if (navToggleIcon) navToggleIcon.textContent = shouldOpen ? "×" : "☰";
     updateHeaderOffset();
     if (returnFocus) navToggle.focus();
   };
-
-  navToggle?.addEventListener("click", () => {
-    setNavOpen(navToggle.getAttribute("aria-expanded") !== "true");
-  });
+  navToggle?.addEventListener("click", () =>
+    setNavOpen(navToggle.getAttribute("aria-expanded") !== "true"),
+  );
 
   const focusNavDestination = (link) => {
     const targetId = decodeURIComponent(link.hash.slice(1));
@@ -137,24 +129,19 @@
       navToggle?.focus();
       return;
     }
-
     const hadTabindex = target.hasAttribute("tabindex");
     if (!hadTabindex) target.setAttribute("tabindex", "-1");
     window.requestAnimationFrame(() => {
       target.focus({ preventScroll: true });
-      if (!hadTabindex) {
-        target.addEventListener(
-          "blur",
-          () => target.removeAttribute("tabindex"),
-          { once: true },
-        );
-      }
+      if (!hadTabindex)
+        target.addEventListener("blur", () => target.removeAttribute("tabindex"), {
+          once: true,
+        });
     });
   };
 
   mainNav?.querySelectorAll("a").forEach((link) => {
     let keyboardActivation = false;
-
     link.addEventListener("keydown", (event) => {
       if (event.key === "Enter") keyboardActivation = true;
       if (event.key === " ") {
@@ -163,7 +150,6 @@
         link.click();
       }
     });
-
     link.addEventListener("click", (event) => {
       if (!mobileNavQuery.matches) return;
       const shouldMoveFocus = keyboardActivation || event.detail === 0;
@@ -171,30 +157,23 @@
       setNavOpen(false);
       if (shouldMoveFocus) focusNavDestination(link);
     });
-
     link.addEventListener("blur", () => {
       keyboardActivation = false;
     });
   });
 
   document.addEventListener("keydown", (event) => {
-    if (
-      event.key === "Escape" &&
-      navToggle?.getAttribute("aria-expanded") === "true"
-    ) {
+    if (event.key === "Escape" && navToggle?.getAttribute("aria-expanded") === "true")
       setNavOpen(false, true);
-    }
   });
 
   const syncMobileNav = () => {
     arrangeHeaderItems();
     setNavOpen(false);
   };
-  if (typeof mobileNavQuery.addEventListener === "function") {
+  if (typeof mobileNavQuery.addEventListener === "function")
     mobileNavQuery.addEventListener("change", syncMobileNav);
-  } else {
-    mobileNavQuery.addListener(syncMobileNav);
-  }
+  else mobileNavQuery.addListener(syncMobileNav);
 
   const guidingPrinciple = document.querySelector(".panel-quote");
   if (guidingPrinciple) {
@@ -210,19 +189,11 @@
 
   const contactActions = (contact, label) => {
     const actions = [];
-    if (contact.email) {
-      actions.push(
-        `<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? `Email ${label}` : `Contacter ${label} par e-mail`}</a>`,
-      );
-    }
-    if (contact.linkedin) {
-      actions.push(
-        `<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">${isEnglish ? `View ${label}'s LinkedIn profile` : `Voir le profil LinkedIn de ${label}`}<span class="sr-only">${isEnglish ? ", opens in a new tab" : ", ouvre un nouvel onglet"}</span></a>`,
-      );
-    }
-    return actions.length
-      ? actions.join("")
-      : `<p class="contact-unavailable">${isEnglish ? "Direct contact details are available on request." : "Coordonnées directes disponibles sur demande."}</p>`;
+    if (contact.email)
+      actions.push(`<a class="button button-secondary" href="mailto:${contact.email}">${isEnglish ? `Email ${label}` : `Contacter ${label} par e-mail`}</a>`);
+    if (contact.linkedin)
+      actions.push(`<a class="button button-secondary" href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">${isEnglish ? `View ${label}'s LinkedIn profile` : `Voir le profil LinkedIn de ${label}`}<span class="sr-only">${isEnglish ? ", opens in a new tab" : ", ouvre un nouvel onglet"}</span></a>`);
+    return actions.length ? actions.join("") : `<p class="contact-unavailable">${isEnglish ? "Direct contact details are available on request." : "Coordonnées directes disponibles sur demande."}</p>`;
   };
 
   const audreyLetterFr = `À qui de droit,
@@ -304,40 +275,21 @@ I remain available to anyone who would like to discuss Sarah's potential recruit
 Yannick BREAVOINE`;
 
   const formatLetter = (letter) =>
-    letter
-      .trim()
-      .split(/\n{2,}/)
-      .map((paragraph) => `<p>${paragraph.replace(/\n/g, "<br>")}</p>`)
-      .join("");
+    letter.trim().split(/\n{2,}/).map((paragraph) => `<p>${paragraph.replace(/\n/g, "<br>")}</p>`).join("");
 
   const themeButton = document.getElementById("theme-toggle");
   const themeLabel = themeButton?.querySelector(".theme-toggle-label");
   const savedTheme = localStorage.getItem("portfolio-theme");
-  const systemPrefersDark = window.matchMedia(
-    "(prefers-color-scheme: dark)",
-  ).matches;
+  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   const applyTheme = (theme) => {
     root.dataset.theme = theme;
     const isDark = theme === "dark";
-    const visibleThemeLabel = isEnglish
-      ? isDark
-        ? "Light mode"
-        : "Dark mode"
-      : isDark
-        ? "Contraste clair"
-        : "Contraste sombre";
+    const visibleThemeLabel = isEnglish ? (isDark ? "Light mode" : "Dark mode") : (isDark ? "Contraste clair" : "Contraste sombre");
     if (themeLabel) themeLabel.textContent = visibleThemeLabel;
-    if (themeButton) {
-      themeButton.setAttribute(
-        "aria-label",
-        isEnglish
-          ? `${visibleThemeLabel}: switch to ${isDark ? "light" : "dark"} mode`
-          : `${visibleThemeLabel} : activer le mode ${isDark ? "clair" : "sombre"}`,
-      );
-    }
+    if (themeButton)
+      themeButton.setAttribute("aria-label", isEnglish ? `${visibleThemeLabel}: switch to ${isDark ? "light" : "dark"} mode` : `${visibleThemeLabel} : activer le mode ${isDark ? "clair" : "sombre"}`);
   };
-
   applyTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
   themeButton?.addEventListener("click", () => {
     const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
@@ -346,15 +298,11 @@ Yannick BREAVOINE`;
   });
 
   const filterButtons = [...document.querySelectorAll(".filter-button")];
-  const projectCards = [
-    ...document.querySelectorAll(".project-card[data-tags]"),
-  ];
+  const projectCards = [...document.querySelectorAll(".project-card[data-tags]")];
   const filterStatus = document.getElementById("filter-status");
-
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       if (button.getAttribute("aria-pressed") === "true") return;
-
       const filter = button.dataset.filter || "all";
       const filterLabel = button.textContent.trim();
       filterButtons.forEach((candidate) => {
@@ -362,7 +310,6 @@ Yannick BREAVOINE`;
         candidate.classList.toggle("is-active", active);
         candidate.setAttribute("aria-pressed", String(active));
       });
-
       let visibleCount = 0;
       projectCards.forEach((card) => {
         const categories = (card.dataset.tags || "").split(" ");
@@ -370,12 +317,8 @@ Yannick BREAVOINE`;
         card.hidden = !visible;
         if (visible) visibleCount += 1;
       });
-
-      if (filterStatus) {
-        filterStatus.textContent = isEnglish
-          ? `${filterLabel} selected. ${visibleCount} project${visibleCount === 1 ? "" : "s"} displayed.`
-          : `${filterLabel} sélectionné. ${visibleCount} projet${visibleCount > 1 ? "s" : ""} affiché${visibleCount > 1 ? "s" : ""}.`;
-      }
+      if (filterStatus)
+        filterStatus.textContent = isEnglish ? `${filterLabel} selected. ${visibleCount} project${visibleCount === 1 ? "" : "s"} displayed.` : `${filterLabel} sélectionné. ${visibleCount} projet${visibleCount > 1 ? "s" : ""} affiché${visibleCount > 1 ? "s" : ""}.`;
     });
   });
 
@@ -384,76 +327,19 @@ Yannick BREAVOINE`;
     const container = recommendations.querySelector(".container");
     if (container) {
       container.innerHTML = isEnglish
-        ? `
-        <div class="section-heading">
-          <p class="eyebrow">Professional references</p>
-          <h2 id="recommendations-title">Recommendation letters</h2>
-          <p>Two recommendations from people who directly supervised or worked with me are available here.</p>
-        </div>
-        <ul class="recommendations-grid" aria-label="Professional recommendations">
-          <li><article class="recommender-card"><p class="recommender-role">Work-study mentor</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article></li>
-          <li><article class="recommender-card"><p class="recommender-role">Digital accessibility specialist</p><h3>Yannick Breavoine</h3><p><strong>Digital accessibility and specialist training</strong></p><p>Recommendation covering screen-reader testing, code analysis, clear accessibility tickets, initiative and autonomy.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Read recommendation<span class="sr-only"> from Yannick Breavoine</span></button></article></li>
-        </ul>
-        <div class="testimonial-subsection">
-          <p class="eyebrow">Colleague testimonials</p>
-          <div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div>
-          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section>
-        </div>`
-        : `
-        <div class="section-heading">
-          <p class="eyebrow">Références professionnelles</p>
-          <h2 id="recommendations-title">Lettres de recommandation</h2>
-          <p>Deux recommandations de personnes ayant directement encadré ou travaillé avec moi sont disponibles ici.</p>
-        </div>
-        <ul class="recommendations-grid" aria-label="Recommandations professionnelles">
-          <li><article class="recommender-card"><p class="recommender-role">Tutrice d'alternance</p><h3>Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article></li>
-          <li><article class="recommender-card"><p class="recommender-role">Accessibilité numérique</p><h3>Yannick Breavoine</h3><p><strong>Accessibilité numérique et formation spécialisée</strong></p><p>Recommandation portant notamment sur les tests avec lecteur d'écran, l'analyse du code, la rédaction de tickets, la prise d'initiative et l'autonomie.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la lettre complète<span class="sr-only"> de Yannick Breavoine</span></button></article></li>
-        </ul>
-        <div class="testimonial-subsection">
-          <p class="eyebrow">Témoignages de collègues</p>
-          <div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div>
-          <section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Témoignages validés</h3><div id="approved-testimonials"><p class="testimonials-empty">Aucun témoignage de collègue validé n’est encore publié.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section>
-        </div>`;
+        ? `<div class="section-heading"><p class="eyebrow">Professional references</p><h2 id="recommendations-title">Recommendation letters</h2><p>Two recommendations from people who directly supervised or worked with me are available here.</p></div><ul class="recommendations-grid"><li><article class="recommender-card" aria-labelledby="rec-audrey-title"><p class="recommender-role">Work-study mentor</p><h3 id="rec-audrey-title">Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommendation covering autonomy, learning ability, reliability, accessibility expertise and teamwork.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Read recommendation<span class="sr-only"> from Audrey Gambs</span></button></article></li><li><article class="recommender-card" aria-labelledby="rec-yannick-title"><p class="recommender-role">Digital accessibility specialist</p><h3 id="rec-yannick-title">Yannick Breavoine</h3><p><strong>Digital accessibility and specialist training</strong></p><p>Recommendation covering screen-reader testing, code analysis, clear accessibility tickets, initiative and autonomy.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Read recommendation<span class="sr-only"> from Yannick Breavoine</span></button></article></li></ul><div class="testimonial-subsection"><p class="eyebrow">Colleague testimonials</p><div class="recommendation-card" data-testimonial-cta><div><h3>Have you worked with me?</h3><p>Your testimonial is stored as pending, reviewed privately and displayed here only after approval. Verification details are never made public.</p></div><a class="button button-secondary" href="recommendation-en.html">Share a testimonial</a></div><section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Approved testimonials</h3><div id="approved-testimonials"><p class="testimonials-empty">No approved colleague testimonials have been published yet.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section></div>`
+        : `<div class="section-heading"><p class="eyebrow">Références professionnelles</p><h2 id="recommendations-title">Lettres de recommandation</h2><p>Deux recommandations de personnes ayant directement encadré ou travaillé avec moi sont disponibles ici.</p></div><ul class="recommendations-grid"><li><article class="recommender-card" aria-labelledby="rec-audrey-title"><p class="recommender-role">Tutrice d'alternance</p><h3 id="rec-audrey-title">Audrey Gambs</h3><p><strong>CDP Qualité CX & Accessibilité, SNCF Connect & Tech</strong></p><p>Recommandation portant notamment sur mon autonomie, ma capacité d'apprentissage, ma rigueur, l'accessibilité numérique et mon travail en équipe.</p><button class="project-button" type="button" data-dialog="dialog-rec-manager">Lire la lettre complète<span class="sr-only"> d’Audrey Gambs</span></button></article></li><li><article class="recommender-card" aria-labelledby="rec-yannick-title"><p class="recommender-role">Accessibilité numérique</p><h3 id="rec-yannick-title">Yannick Breavoine</h3><p><strong>Accessibilité numérique et formation spécialisée</strong></p><p>Recommandation portant notamment sur les tests avec lecteur d'écran, l'analyse du code, la rédaction de tickets, la prise d'initiative et l'autonomie.</p><button class="project-button" type="button" data-dialog="dialog-rec-yannick">Lire la lettre complète<span class="sr-only"> de Yannick Breavoine</span></button></article></li></ul><div class="testimonial-subsection"><p class="eyebrow">Témoignages de collègues</p><div class="recommendation-card" data-testimonial-cta><div><h3>Vous avez travaillé avec moi ?</h3><p>Le témoignage est enregistré en attente, relu dans un espace privé puis affiché ici uniquement après validation. Les coordonnées de vérification ne sont jamais publiques.</p></div><a class="button button-secondary" href="recommendation.html">Laisser un témoignage</a></div><section class="testimonials-public" aria-labelledby="approved-testimonials-title"><h3 id="approved-testimonials-title">Témoignages validés</h3><div id="approved-testimonials"><p class="testimonials-empty">Aucun témoignage de collègue validé n’est encore publié.</p></div><div id="testimonials-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div></section></div>`;
     }
 
-    document.body.insertAdjacentHTML(
-      "beforeend",
-      `
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title">
-        <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? "Work-study mentor" : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité, SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Audrey Gambs recommendation" : "Fermer la lettre d'Audrey Gambs"}">×</button></div>
-        <div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? audreyLetterEn : audreyLetterFr)}</div>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.audrey, "Audrey Gambs")}</div>
-      </dialog>
-      <dialog class="project-dialog recommender-dialog" id="dialog-rec-yannick" aria-labelledby="dialog-rec-yannick-title">
-        <div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation - 1 September 2026" : "Recommandation professionnelle - 1er septembre 2026"}</p><h2 id="dialog-rec-yannick-title">Yannick Breavoine</h2><p>${isEnglish ? "Digital accessibility and specialist training" : "Accessibilité numérique et formation spécialisée"}</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Yannick Breavoine recommendation" : "Fermer la lettre de Yannick Breavoine"}">×</button></div>
-        <div class="letter-body"><h3>${isEnglish ? "English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? yannickLetterEn : yannickLetterFr)}</div>
-        <div class="recommendation-actions">${contactActions(recommendationContacts.yannick, "Yannick Breavoine")}</div>
-      </dialog>`,
-    );
+    document.body.insertAdjacentHTML("beforeend", `<dialog class="project-dialog recommender-dialog" id="dialog-rec-manager" aria-labelledby="dialog-rec-manager-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation" : "Recommandation professionnelle"}</p><h2 id="dialog-rec-manager-title">Audrey Gambs</h2><p>${isEnglish ? "Work-study mentor" : "Tutrice d'alternance"} - CDP Qualité CX & Accessibilité, SNCF Connect & Tech</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Audrey Gambs recommendation" : "Fermer la lettre d'Audrey Gambs"}">×</button></div><div class="letter-body"><h3>${isEnglish ? "Concise English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? audreyLetterEn : audreyLetterFr)}</div><div class="recommendation-actions">${contactActions(recommendationContacts.audrey, "Audrey Gambs")}</div></dialog><dialog class="project-dialog recommender-dialog" id="dialog-rec-yannick" aria-labelledby="dialog-rec-yannick-title"><div class="dialog-head"><div><p class="eyebrow">${isEnglish ? "Professional recommendation - 1 September 2026" : "Recommandation professionnelle - 1er septembre 2026"}</p><h2 id="dialog-rec-yannick-title">Yannick Breavoine</h2><p>${isEnglish ? "Digital accessibility and specialist training" : "Accessibilité numérique et formation spécialisée"}</p></div><button class="dialog-close" type="button" data-close aria-label="${isEnglish ? "Close Yannick Breavoine recommendation" : "Fermer la lettre de Yannick Breavoine"}">×</button></div><div class="letter-body"><h3>${isEnglish ? "English version" : "Lettre complète"}</h3>${formatLetter(isEnglish ? yannickLetterEn : yannickLetterFr)}</div><div class="recommendation-actions">${contactActions(recommendationContacts.yannick, "Yannick Breavoine")}</div></dialog>`);
   }
 
   const dialogOpeners = new WeakMap();
   const dialogHeadings = new WeakMap();
   const dialogButtons = [...document.querySelectorAll("[data-dialog]")];
   const dialogs = [...document.querySelectorAll("dialog.project-dialog")];
-  const dialogFocusableSelector = [
-    "a[href]",
-    "button:not([disabled])",
-    "input:not([disabled])",
-    "select:not([disabled])",
-    "textarea:not([disabled])",
-    '[tabindex]:not([tabindex="-1"])',
-  ].join(", ");
-
-  const getDialogFocusableElements = (dialog) =>
-    [...dialog.querySelectorAll(dialogFocusableSelector)].filter(
-      (element) =>
-        element.tabIndex >= 0 &&
-        element.getAttribute("aria-hidden") !== "true" &&
-        !element.closest("[hidden]") &&
-        element.getClientRects().length > 0,
-    );
-
+  const dialogFocusableSelector = ["a[href]", "button:not([disabled])", "input:not([disabled])", "select:not([disabled])", "textarea:not([disabled])", '[tabindex]:not([tabindex="-1"])'].join(", ");
+  const getDialogFocusableElements = (dialog) => [...dialog.querySelectorAll(dialogFocusableSelector)].filter((element) => element.tabIndex >= 0 && element.getAttribute("aria-hidden") !== "true" && !element.closest("[hidden]") && element.getClientRects().length > 0);
   const focusDialogHeading = (dialog) => {
     const labelledBy = dialog.getAttribute("aria-labelledby");
     const heading = labelledBy ? document.getElementById(labelledBy) : null;
@@ -461,7 +347,6 @@ Yannick BREAVOINE`;
       getDialogFocusableElements(dialog)[0]?.focus({ preventScroll: true });
       return;
     }
-
     const hadTabindex = heading.hasAttribute("tabindex");
     dialogHeadings.set(dialog, { heading, hadTabindex });
     if (!hadTabindex) heading.setAttribute("tabindex", "-1");
@@ -471,7 +356,6 @@ Yannick BREAVOINE`;
   dialogButtons.forEach((button) => {
     const dialog = document.getElementById(button.dataset.dialog);
     if (!(dialog instanceof HTMLDialogElement)) return;
-
     button.setAttribute("aria-haspopup", "dialog");
     button.setAttribute("aria-controls", dialog.id);
     button.addEventListener("click", (event) => {
@@ -491,15 +375,12 @@ Yannick BREAVOINE`;
       closeButton.removeAttribute("autofocus");
       closeButton.addEventListener("click", () => dialog.close());
     }
-
     dialog.addEventListener("keydown", (event) => {
       if (event.key !== "Tab") return;
-
       const focusableElements = getDialogFocusableElements(dialog);
       const firstFocusable = focusableElements[0];
       const lastFocusable = focusableElements.at(-1);
       if (!firstFocusable || !lastFocusable) return;
-
       if (event.shiftKey && document.activeElement === firstFocusable) {
         event.preventDefault();
         lastFocusable.focus();
@@ -508,37 +389,20 @@ Yannick BREAVOINE`;
         firstFocusable.focus();
       }
     });
-
     dialog.addEventListener("click", (event) => {
       const rect = dialog.getBoundingClientRect();
-      const isBackdrop =
-        event.clientX < rect.left ||
-        event.clientX > rect.right ||
-        event.clientY < rect.top ||
-        event.clientY > rect.bottom;
+      const isBackdrop = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
       if (isBackdrop) dialog.close();
     });
-
     dialog.addEventListener("close", () => {
       const headingState = dialogHeadings.get(dialog);
       dialogHeadings.delete(dialog);
-      if (
-        headingState?.heading instanceof HTMLElement &&
-        !headingState.hadTabindex
-      ) {
+      if (headingState?.heading instanceof HTMLElement && !headingState.hadTabindex)
         headingState.heading.removeAttribute("tabindex");
-      }
-
       const trigger = dialogOpeners.get(dialog);
       dialogOpeners.delete(dialog);
       window.requestAnimationFrame(() => {
-        if (
-          trigger instanceof HTMLElement &&
-          trigger.isConnected &&
-          !document.querySelector("dialog[open]")
-        ) {
-          trigger.focus();
-        }
+        if (trigger instanceof HTMLElement && trigger.isConnected && !document.querySelector("dialog[open]")) trigger.focus();
       });
     });
   });
