@@ -16,6 +16,14 @@
   align-items: center;
   gap: 0.7rem;
 }
+/* Sur le formulaire, les titres restent en rem afin de conserver un agrandissement
+   prévisible à 200 % et plus, sans dépendre de la largeur du viewport. */
+.form-hero h1 {
+  font-size: 3rem;
+}
+.section-heading > h2 {
+  font-size: 2.5rem;
+}
 .privacy-note {
   margin-top: 2rem;
   padding: 1.25rem 1.4rem;
@@ -280,6 +288,12 @@ textarea[aria-invalid="true"] {
   }
   .form-header-actions .button:last-child {
     flex: 1;
+  }
+  .form-hero h1 {
+    font-size: 2.35rem;
+  }
+  .section-heading > h2 {
+    font-size: 2rem;
   }
   .form-grid,
   .check-grid {
