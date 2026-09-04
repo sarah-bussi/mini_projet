@@ -50,6 +50,8 @@
   border-top-color: var(--accent);
 }
 .dialog-head {
+  position: static;
+  inset: auto;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -149,6 +151,10 @@
   color: var(--text-muted);
 }
 .dialog-grid aside {
+  position: static;
+  inset: auto;
+  max-height: none;
+  overflow: visible;
   padding: 1.25rem;
   border: 1px solid var(--border);
   border-radius: 18px;
