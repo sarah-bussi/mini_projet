@@ -1,0 +1,11 @@
+{
+  "generatedAt": null,
+  "periodStart": null,
+  "periodEnd": null,
+  "model": null,
+  "inputCounts": {
+    "articles": 0,
+    "detectedTools": 0
+  },
+  "brief": null
+}
