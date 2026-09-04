@@ -12,14 +12,15 @@
 
   <main id="main" class="shell workspace-main">
     <section class="hero-panel" aria-labelledby="copilot-title">
-      <p class="eyebrow">Prototype de mémoire · médiation normative</p>
+      <p class="eyebrow">Version workspace · post-évaluation</p>
       <h1 id="copilot-title">A11Y Copilot</h1>
-      <p>Accéder au vrai pipeline du prototype : routage Web → RGAA / Mobile → RAAM, retrieval documentaire, sélection des références, génération, garde-fous et validation humaine.</p>
+      <p>Analyser une situation métier à partir d’un corpus normatif réellement recherché côté serveur, avec routage Web → RGAA / Mobile → RAAM, génération ancrée sur les références retrouvées et validation humaine obligatoire.</p>
     </section>
 
     <section class="panel" aria-labelledby="about-prototype-title">
       <h2 id="about-prototype-title">Moteur utilisé</h2>
-      <p>Quand le backend A11Y Copilot est disponible en ligne, cette page appelle directement son endpoint <code>/analyze</code> via la fonction privée Supabase. Le LLM seul ne sert que de solution de secours si le backend n’est pas configuré.</p>
+      <p>Cette version est une implémentation produit légère et séparée du prototype figé du mémoire. Elle utilise un corpus RGAA/RAAM exporté vers Supabase, un retrieval lexical enrichi côté base de données puis Groq pour la génération contextualisée.</p>
+      <p class="muted">Elle ne modifie pas le dépôt ni les benchmarks du mémoire et ne prétend pas reproduire exactement les scores expérimentaux du pipeline sentence-transformers / reranking. Les références citées doivent provenir du corpus réellement récupéré.</p>
     </section>
 
     <section class="panel" aria-labelledby="analysis-form-title">
@@ -51,7 +52,7 @@
 
     <section class="panel" aria-labelledby="copilot-result-title">
       <h2 id="copilot-result-title">Analyse structurée</h2>
-      <p class="muted">La réponse expose les références retenues, l’impact, la recommandation, la procédure de vérification, le niveau de confiance et la validation humaine obligatoire.</p>
+      <p class="muted">La réponse expose les références retenues, l’impact utilisateur, la correction proposée, la procédure de vérification, les informations manquantes et les limites. Elle ne constitue jamais un verdict automatique de conformité.</p>
       <div id="copilot-result" class="result-box">Le résultat apparaîtra ici.</div>
     </section>
   </main>
