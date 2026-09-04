@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille & archives accessibilité numérique</title>
+  <meta name="description" content="Veille automatisée et archive de ressources, articles, normes et actualités sur l’accessibilité numérique." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="top-nav" aria-label="Navigation de la bibliothèque">
+        <a href="index.html">Outils</a>
+        <a aria-current="page" href="veille.html">Veille & archives</a>
+        <a href="detected.html">Nouveaux outils détectés</a>
+        <a href="brief.html">Brief IA hebdo</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Veille automatisée</p>
+        <h1>Accessibilité numérique : veille & archives</h1>
+        <p class="intro">Articles, actualités, normes, ressources métier et sites de référence archivés dans un seul endroit. La collecte est alimentée automatiquement par des flux RSS/Atom et peut être enrichie manuellement.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="legend" aria-labelledby="sync-title">
+      <h2 id="sync-title">État de la veille</h2>
+      <p id="watch-status">Chargement de la dernière synchronisation…</p>
+      <p>La veille automatique archive les nouveaux contenus sans supprimer les anciens. Les sources sont volontairement limitées à des acteurs reconnus pour éviter de transformer cette page en agrégateur de bruit.</p>
+      <p><strong>Suivi personnel</strong> : Favori, Lu, À lire et Important sont stockés uniquement dans ce navigateur.</p>
+      <p><a href="brief.html"><strong>Voir le brief IA hebdomadaire</strong></a> pour une synthèse priorisée des éléments récents.</p>
+    </section>
+
+    <section class="source-panel" aria-labelledby="sources-title">
+      <div class="section-heading"><h2 id="sources-title">Sites & sources de référence</h2><p>À garder sous la main indépendamment des articles récents.</p></div>
+      <ul id="source-list" class="source-list"></ul>
+    </section>
+
+    <section class="controls" aria-labelledby="archive-filters-title">
+      <h2 id="archive-filters-title">Filtrer les archives</h2>
+      <div class="filters-grid filters-grid-watch">
+        <label>Recherche<input id="watch-search" type="search" placeholder="Ex. WCAG, RGAA, lecteur d’écran, axe…" /></label>
+        <label>Thème<select id="watch-category"><option value="all">Tous</option></select></label>
+        <label>Source<select id="watch-source"><option value="all">Toutes</option></select></label>
+        <label>Période<select id="watch-period"><option value="all">Toutes</option><option value="30">30 derniers jours</option><option value="90">3 derniers mois</option><option value="365">12 derniers mois</option></select></label>
+        <label>Mon suivi<select id="watch-personal-filter"><option value="all">Tout afficher</option><option value="readLater">À lire</option><option value="read">Lus</option><option value="favorite">Favoris</option><option value="important">Importants</option><option value="unread">Non lus</option></select></label>
+      </div>
+      <p id="watch-count" class="results-count" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="archive-title">
+      <div class="section-heading"><h2 id="archive-title">Articles & informations archivés</h2><p>Les contenus les plus récents apparaissent en premier. Le titre, la source et un résumé court sont conservés avec le lien d’origine.</p></div>
+      <div id="watch-grid" class="watch-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p><a href="index.html">Retour à la bibliothèque d’outils</a>.</p></div></footer>
+  <script src="personal-state.js"></script>
+  <script src="veille.js"></script>
+</body>
+</html>

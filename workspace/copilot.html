@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A11Y Copilot — Sarah Workspace</title>
+  <link rel="stylesheet" href="workspace.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="workspace-header"><div class="shell header-row"><a class="workspace-brand" href="index.html">SB Workspace</a><nav class="workspace-nav" aria-label="Navigation de l’espace privé"><a href="index.html">Dashboard</a><a href="cv-builder.html">CV Builder</a><a aria-current="page" href="copilot.html">A11Y Copilot</a></nav></div></header>
+
+  <main id="main" class="shell workspace-main">
+    <section class="hero-panel" aria-labelledby="copilot-title">
+      <p class="eyebrow">Version workspace · post-évaluation</p>
+      <h1 id="copilot-title">A11Y Copilot</h1>
+      <p>Analyser une situation métier à partir d’un corpus normatif réellement recherché côté serveur, avec routage Web → RGAA / Mobile → RAAM, génération ancrée sur les références retrouvées et validation humaine obligatoire.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="about-prototype-title">
+      <h2 id="about-prototype-title">Moteur utilisé</h2>
+      <p>Cette version est une implémentation produit légère et séparée du prototype figé du mémoire. Elle utilise un corpus RGAA/RAAM exporté vers Supabase, un retrieval lexical enrichi côté base de données puis Groq pour la génération contextualisée.</p>
+      <p class="muted">Elle ne modifie pas le dépôt ni les benchmarks du mémoire et ne prétend pas reproduire exactement les scores expérimentaux du pipeline sentence-transformers / reranking. Les références citées doivent provenir du corpus réellement récupéré.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="analysis-form-title">
+      <h2 id="analysis-form-title">Analyser une situation</h2>
+      <form id="copilot-form" class="workspace-form">
+        <div class="two-col">
+          <label>Mode d’entrée<select name="inputMode"><option value="situation">Situation métier</option><option value="code">Extrait de code</option><option value="screenshot">Capture / maquette</option></select></label>
+          <label>Produit<select name="productType"><option value="web">Web</option><option value="mobile">Mobile</option></select></label>
+        </div>
+
+        <div class="two-col">
+          <label>Technologie / framework<select name="technology"><option value="HTML/CSS">HTML / CSS</option><option value="JavaScript">JavaScript</option><option value="React">React</option><option value="Vue">Vue</option><option value="Angular">Angular</option><option value="Flutter">Flutter</option><option value="Kotlin / Jetpack Compose">Kotlin / Jetpack Compose</option><option value="Android">Android</option><option value="iOS / SwiftUI">iOS / SwiftUI</option><option value="React Native">React Native</option><option value="Autre">Autre / à préciser</option></select></label>
+          <label>Métier / point de vue<select name="role"><option value="designer">Designer / UX</option><option value="developer">Développement</option><option value="qa">QA / recette / accessibilité</option></select></label>
+        </div>
+
+        <div class="two-col">
+          <label>Composant ou écran<input name="component" required placeholder="Ex. modale de recherche, champ Départ…" /></label>
+          <label>Sortie attendue<select name="outputType"><option value="test_scenario">Scénario de vérification</option><option value="technical_fix">Correction technique</option><option value="handoff">Handoff / recommandation métier</option></select></label>
+        </div>
+
+        <label>Situation ou problème à analyser<textarea name="problem" required placeholder="Ex. Une modale Flutter s’ouvre sans titre visible et TalkBack annonce directement le premier champ…"></textarea></label>
+        <label>Code, détails techniques ou contexte métier<textarea name="details" placeholder="Comportement observé, extrait de code, contrainte produit, résultat attendu…"></textarea></label>
+        <label>Informations déjà vérifiées<textarea name="verifiedFacts" placeholder="Ex. le focus reste derrière la modale ; TalkBack annonce X ; test clavier effectué…"></textarea></label>
+
+        <button class="primary-button" type="submit">Analyser avec A11Y Copilot</button>
+        <p id="copilot-status" class="status-line" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="copilot-result-title">
+      <h2 id="copilot-result-title">Analyse structurée</h2>
+      <p class="muted">La réponse expose les références retenues, l’impact utilisateur, la correction proposée, la procédure de vérification, les informations manquantes et les limites. Elle ne constitue jamais un verdict automatique de conformité.</p>
+      <div id="copilot-result" class="result-box">Le résultat apparaîtra ici.</div>
+    </section>
+  </main>
+
+  <script src="workspace-config.js"></script>
+  <script src="guard.js"></script>
+  <script src="workspace-ai.js"></script>
+</body>
+</html>

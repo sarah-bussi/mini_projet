@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brief IA hebdomadaire — accessibilité numérique</title>
+  <meta name="description" content="Synthèse hebdomadaire assistée par IA des actualités, changements et nouveaux outils liés à l’accessibilité numérique." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="top-nav" aria-label="Navigation de la bibliothèque">
+        <a href="index.html">Outils</a>
+        <a href="veille.html">Veille & archives</a>
+        <a href="detected.html">Nouveaux outils détectés</a>
+        <a aria-current="page" href="brief.html">Brief IA hebdo</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Synthèse hebdomadaire</p>
+        <h1>Brief IA accessibilité</h1>
+        <p class="intro">Une synthèse courte de la semaine à partir de la veille et des nouveaux outils détectés. L’IA ne remplace pas les sources : chaque point important reste relié aux contenus d’origine.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="legend" aria-labelledby="brief-status-title">
+      <h2 id="brief-status-title">État du brief</h2>
+      <p id="brief-status">Chargement du dernier brief…</p>
+      <p>Le brief utilise uniquement les éléments déjà collectés par la veille. Aucun outil détecté n’est ajouté automatiquement à la bibliothèque principale.</p>
+    </section>
+
+    <section id="brief-empty" class="coverage-panel" hidden aria-labelledby="brief-empty-title">
+      <h2 id="brief-empty-title">Brief IA pas encore généré</h2>
+      <p>La génération hebdomadaire utilise désormais Groq. Pour l’automatisation GitHub Actions, ajoute le secret <code>GROQ_API_KEY</code> dans le dépôt puis lance le workflow <strong>Weekly accessibility AI brief</strong> une première fois manuellement. Le secret Supabase <code>AI_API_KEY</code> reste utilisé pour les fonctions IA du workspace privé.</p>
+    </section>
+
+    <section id="brief-overview" class="brief-overview" hidden aria-labelledby="brief-headline"></section>
+
+    <section id="brief-stories-section" hidden aria-labelledby="brief-stories-title">
+      <div class="section-heading">
+        <h2 id="brief-stories-title">À retenir cette semaine</h2>
+        <p>Les éléments les plus utiles pour l’accessibilité, la QA, le design, le développement, le produit, le mobile, le gaming et les médias.</p>
+      </div>
+      <div id="brief-stories" class="watch-grid"></div>
+    </section>
+
+    <section id="brief-tools-section" hidden aria-labelledby="brief-tools-title">
+      <div class="section-heading">
+        <h2 id="brief-tools-title">Outils à tester ou surveiller</h2>
+        <p>Des candidats détectés automatiquement, à examiner avant toute adoption.</p>
+      </div>
+      <div id="brief-tools" class="tools-grid"></div>
+    </section>
+
+    <section id="brief-actions-section" class="coverage-panel" hidden aria-labelledby="brief-actions-title">
+      <h2 id="brief-actions-title">Actions proposées</h2>
+      <ul id="brief-actions"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="veille.html">Retour à la veille & archives</a>.</p>
+    </div>
+  </footer>
+
+  <script src="brief.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: Weekly accessibility AI brief
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 7 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-weekly-brief:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate weekly AI brief
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_BRIEF_MODEL: openai/gpt-oss-20b
+        run: python scripts/generate_a11y_weekly_brief.py
+
+      - name: Commit weekly brief
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "4189824+github-actions[bot]@users.noreply.github.com"
+          git add a11y-tools/weekly-brief.json
+          if git diff --cached --quiet; then
+            echo "No weekly AI brief change to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh weekly accessibility AI brief"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
