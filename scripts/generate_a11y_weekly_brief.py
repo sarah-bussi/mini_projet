@@ -10,8 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 WATCH_FILE = ROOT / "a11y-tools" / "veille-data.json"
 DETECTED_FILE = ROOT / "a11y-tools" / "detected-tools.json"
 BRIEF_FILE = ROOT / "a11y-tools" / "weekly-brief.json"
-MODEL = os.environ.get("OPENAI_BRIEF_MODEL", "gpt-5-mini")
-API_URL = "https://api.openai.com/v1/responses"
+MODEL = os.environ.get("GROQ_BRIEF_MODEL", "openai/gpt-oss-20b")
+API_URL = "https://api.groq.com/openai/v1/chat/completions"
 TIMEOUT = 90
 
 
@@ -86,57 +86,6 @@ def recent_detected_tools(days=30, limit=40):
     return items[:limit]
 
 
-def schema():
-    source_item = {
-        "type": "object",
-        "properties": {
-            "title": {"type": "string"},
-            "whyItMatters": {"type": "string"},
-            "importance": {"type": "string", "enum": ["Important", "À surveiller", "Mineur"]},
-            "audiences": {
-                "type": "array",
-                "items": {"type": "string", "enum": ["Accessibilité", "QA", "Design", "Développement", "Produit", "Mobile", "Gaming", "Médias"]},
-            },
-            "sourceUrls": {"type": "array", "items": {"type": "string"}},
-        },
-        "required": ["title", "whyItMatters", "importance", "audiences", "sourceUrls"],
-        "additionalProperties": False,
-    }
-    tool_item = {
-        "type": "object",
-        "properties": {
-            "name": {"type": "string"},
-            "reason": {"type": "string"},
-            "action": {"type": "string", "enum": ["Tester", "Surveiller", "Ignorer pour l'instant"]},
-            "url": {"type": "string"},
-        },
-        "required": ["name", "reason", "action", "url"],
-        "additionalProperties": False,
-    }
-    return {
-        "type": "object",
-        "properties": {
-            "headline": {"type": "string"},
-            "executiveSummary": {"type": "string"},
-            "topStories": {"type": "array", "items": source_item, "maxItems": 8},
-            "toolsToWatch": {"type": "array", "items": tool_item, "maxItems": 6},
-            "weekActions": {"type": "array", "items": {"type": "string"}, "maxItems": 6},
-        },
-        "required": ["headline", "executiveSummary", "topStories", "toolsToWatch", "weekActions"],
-        "additionalProperties": False,
-    }
-
-
-def extract_output_text(response):
-    for output in response.get("output", []):
-        if output.get("type") != "message":
-            continue
-        for content in output.get("content", []):
-            if content.get("type") == "output_text" and content.get("text"):
-                return content["text"]
-    raise RuntimeError("Aucun texte exploitable dans la réponse OpenAI")
-
-
 def generate_brief(api_key, watch_items, detected_tools):
     supplied_urls = sorted({item["url"] for item in watch_items} | {item["url"] for item in detected_tools})
     input_payload = {
@@ -151,27 +100,22 @@ def generate_brief(api_key, watch_items, detected_tools):
         "Tu produis un brief hebdomadaire professionnel en français sur l'accessibilité numérique. "
         "Travaille UNIQUEMENT à partir des données JSON fournies : n'ajoute aucun fait, date, version, "
         "niveau de conformité, recommandation ou réputation non présent dans ces données. "
-        "Priorise les changements de standards, réglementation, navigateurs/AT, mobile, responsive, design, "
-        "développement, jeux vidéo, médias et outils. Évite le marketing. "
-        "Pour les outils GitHub détectés, une détection n'est pas une recommandation : juge seulement s'ils méritent "
-        "un test ou une surveillance d'après les métadonnées fournies. "
+        "Priorise standards, réglementation, navigateurs/AT, mobile, responsive, design, développement, "
+        "jeux vidéo, médias et outils. Pour les dépôts GitHub détectés, une détection n'est pas une recommandation. "
         "Toutes les URL de sortie doivent être choisies exactement parmi les URL fournies. "
-        "Si les données sont faibles, produis moins d'éléments plutôt que d'inventer."
+        "Si les données sont faibles, produis moins d'éléments plutôt que d'inventer. "
+        "Réponds UNIQUEMENT avec un objet JSON valide respectant exactement cette forme: "
+        "{headline:string, executiveSummary:string, topStories:[{title:string, whyItMatters:string, importance:'Important'|'À surveiller'|'Mineur', audiences:string[], sourceUrls:string[]}], "
+        "toolsToWatch:[{name:string, reason:string, action:'Tester'|'Surveiller'|'Ignorer pour l\'instant', url:string}], weekActions:string[]}."
     )
     request_body = {
         "model": MODEL,
-        "instructions": instructions,
-        "input": json.dumps(input_payload, ensure_ascii=False),
-        "store": False,
-        "text": {
-            "verbosity": "low",
-            "format": {
-                "type": "json_schema",
-                "name": "accessibility_weekly_brief",
-                "strict": True,
-                "schema": schema(),
-            },
-        },
+        "temperature": 0.2,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {"role": "system", "content": instructions},
+            {"role": "user", "content": json.dumps(input_payload, ensure_ascii=False)},
+        ],
     }
     data = json.dumps(request_body, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(
@@ -188,22 +132,34 @@ def generate_brief(api_key, watch_items, detected_tools):
             payload = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         details = exc.read().decode("utf-8", errors="replace")[:1200]
-        raise RuntimeError(f"OpenAI API HTTP {exc.code}: {details}") from exc
+        raise RuntimeError(f"Groq API HTTP {exc.code}: {details}") from exc
 
-    generated = json.loads(extract_output_text(payload))
+    content = payload.get("choices", [{}])[0].get("message", {}).get("content", "")
+    if not content:
+        raise RuntimeError("Aucun texte exploitable dans la réponse Groq")
+    generated = json.loads(content)
+
     allowed = set(supplied_urls)
-    for story in generated.get("topStories", []):
+    generated.setdefault("headline", "Veille accessibilité de la semaine")
+    generated.setdefault("executiveSummary", "")
+    generated.setdefault("topStories", [])
+    generated.setdefault("toolsToWatch", [])
+    generated.setdefault("weekActions", [])
+    for story in generated.get("topStories", [])[:8]:
         story["sourceUrls"] = [url for url in story.get("sourceUrls", []) if url in allowed]
-    for tool in generated.get("toolsToWatch", []):
+    generated["topStories"] = generated.get("topStories", [])[:8]
+    for tool in generated.get("toolsToWatch", [])[:6]:
         if tool.get("url") not in allowed:
             tool["url"] = ""
+    generated["toolsToWatch"] = generated.get("toolsToWatch", [])[:6]
+    generated["weekActions"] = generated.get("weekActions", [])[:6]
     return generated
 
 
 def main():
-    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
-        print("OPENAI_API_KEY absent : le brief IA hebdomadaire est ignoré sans modifier le dernier brief.")
+        print("GROQ_API_KEY absent : le brief IA hebdomadaire est ignoré sans modifier le dernier brief.")
         return
 
     watch_items = recent_watch_items()
@@ -217,12 +173,13 @@ def main():
         "generatedAt": now_iso(),
         "periodStart": (now_utc() - dt.timedelta(days=7)).date().isoformat(),
         "periodEnd": now_utc().date().isoformat(),
+        "provider": "Groq",
         "model": MODEL,
         "inputCounts": {"articles": len(watch_items), "detectedTools": len(detected_tools)},
         "brief": brief,
     }
     BRIEF_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Brief hebdomadaire généré avec {MODEL}.")
+    print(f"Brief hebdomadaire généré avec Groq / {MODEL}.")
 
 
 if __name__ == "__main__":
