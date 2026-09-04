@@ -15,6 +15,7 @@
         <a aria-current="page" href="index.html">Outils</a>
         <a href="veille.html">Veille & archives</a>
         <a href="detected.html">Nouveaux outils détectés</a>
+        <a href="brief.html">Brief IA hebdo</a>
       </nav>
       <div>
         <p class="eyebrow">Répertoire international</p>
@@ -36,45 +37,12 @@
     <section class="controls" aria-labelledby="filters-title">
       <h2 id="filters-title">Trouver un outil</h2>
       <div class="filters-grid filters-grid-tools">
-        <label>
-          Recherche
-          <input id="search" type="search" placeholder="Ex. contraste, NVDA, PDF, Flutter, jeu…" />
-        </label>
-        <label>
-          Utilité métier
-          <select id="category-filter"><option value="all">Toutes</option></select>
-        </label>
-        <label>
-          Périmètre produit
-          <select id="domain-filter"><option value="all">Tous</option></select>
-        </label>
-        <label>
-          Modèle
-          <select id="price-filter">
-            <option value="all">Tous</option>
-            <option value="Gratuit">Gratuit</option>
-            <option value="Freemium">Freemium</option>
-            <option value="Payant">Payant</option>
-          </select>
-        </label>
-        <label>
-          Priorité
-          <select id="priority-filter">
-            <option value="all">Toutes</option>
-            <option value="Indispensable">Indispensable</option>
-            <option value="Très utile">Très utile</option>
-            <option value="Complémentaire">Complémentaire</option>
-          </select>
-        </label>
-        <label>
-          Mon suivi
-          <select id="personal-filter">
-            <option value="all">Tout afficher</option>
-            <option value="favorite">Favoris</option>
-            <option value="important">Importants</option>
-            <option value="toTest">À tester</option>
-          </select>
-        </label>
+        <label>Recherche<input id="search" type="search" placeholder="Ex. contraste, NVDA, PDF, Flutter, jeu…" /></label>
+        <label>Utilité métier<select id="category-filter"><option value="all">Toutes</option></select></label>
+        <label>Périmètre produit<select id="domain-filter"><option value="all">Tous</option></select></label>
+        <label>Modèle<select id="price-filter"><option value="all">Tous</option><option value="Gratuit">Gratuit</option><option value="Freemium">Freemium</option><option value="Payant">Payant</option></select></label>
+        <label>Priorité<select id="priority-filter"><option value="all">Toutes</option><option value="Indispensable">Indispensable</option><option value="Très utile">Très utile</option><option value="Complémentaire">Complémentaire</option></select></label>
+        <label>Mon suivi<select id="personal-filter"><option value="all">Tout afficher</option><option value="favorite">Favoris</option><option value="important">Importants</option><option value="toTest">À tester</option></select></label>
       </div>
       <p id="results-count" class="results-count" aria-live="polite"></p>
     </section>
@@ -87,19 +55,12 @@
     </section>
 
     <section aria-labelledby="tools-title">
-      <div class="section-heading">
-        <h2 id="tools-title">Outils recensés</h2>
-        <p>Classement orienté pratique métier, enrichi avec mobile, responsive, gaming, médias, technologies d’assistance et projets communautaires.</p>
-      </div>
+      <div class="section-heading"><h2 id="tools-title">Outils recensés</h2><p>Classement orienté pratique métier, enrichi avec mobile, responsive, gaming, médias, technologies d’assistance et projets communautaires.</p></div>
       <div id="tools-grid" class="tools-grid"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Base de travail personnelle — accessibilité numérique. <a href="veille.html">Consulter la veille automatisée</a>.</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container"><p>Base de travail personnelle — accessibilité numérique. <a href="veille.html">Consulter la veille automatisée</a> ou le <a href="brief.html">brief IA hebdomadaire</a>.</p></div></footer>
 
   <script src="tools-data.js"></script>
   <script src="tools-extra-data.js"></script>
