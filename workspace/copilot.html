@@ -1,2 +1,116 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>A11Y Copilot — Sarah Workspace</title><link rel="stylesheet" href="workspace.css"/></head><body><a class="skip-link" href="#main">Aller au contenu</a><header class="workspace-header"><div class="shell header-row"><a class="workspace-brand" href="index.html">SB Workspace</a><nav class="workspace-nav" aria-label="Navigation de l’espace privé"><a href="index.html">Dashboard</a><a href="cv-builder.html">CV Builder</a><a aria-current="page" href="copilot.html">A11Y Copilot</a></nav></div></header><main id="main" class="shell workspace-main"><section class="hero-panel"><p class="eyebrow">Mémoire & pratique métier</p><h1>A11Y Copilot</h1><p>Décris un problème d’accessibilité et obtiens une analyse structurée avec critères potentiels, tests, pistes de correction et niveau de confiance.</p></section><section class="panel"><form id="copilot-form" class="workspace-form"><div class="two-col"><label>Contexte<select name="context"><option>Web</option><option>Mobile</option><option>Design</option><option>Développement</option><option>Jeu vidéo</option><option>Média</option></select></label><label>Référentiel<select name="standard"><option>RGAA + WCAG</option><option>RGAA</option><option>WCAG</option></select></label></div><label>Problème à analyser<textarea name="problem" required placeholder="Ex. Une modale Flutter s’ouvre sans titre visible et le lecteur d’écran annonce seulement le premier champ…"></textarea></label><label>Contexte technique ou métier<textarea name="details" placeholder="Composant, plateforme, comportement observé, contrainte produit…"></textarea></label><button class="primary-button" type="submit">Analyser</button><p id="copilot-status" class="status-line" aria-live="polite"></p></form><section aria-labelledby="copilot-result-title"><h2 id="copilot-result-title">Analyse</h2><div id="copilot-result" class="result-box">La génération IA sera activée dès que la fonction privée sera configurée.</div></section></section></main><script src="workspace-config.js"></script><script src="guard.js"></script><script src="workspace-ai.js"></script></body></html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A11Y Copilot — Sarah Workspace</title>
+  <link rel="stylesheet" href="workspace.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="workspace-header">
+    <div class="shell header-row">
+      <a class="workspace-brand" href="index.html">SB Workspace</a>
+      <nav class="workspace-nav" aria-label="Navigation de l’espace privé">
+        <a href="index.html">Dashboard</a>
+        <a href="cv-builder.html">CV Builder</a>
+        <a aria-current="page" href="copilot.html">A11Y Copilot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell workspace-main">
+    <section class="hero-panel" aria-labelledby="copilot-title">
+      <p class="eyebrow">Prototype de mémoire · médiation normative</p>
+      <h1 id="copilot-title">A11Y Copilot</h1>
+      <p>Transformer une situation métier en analyse d’accessibilité contextualisée, traçable et vérifiable, sans remplacer l’expertise humaine ni produire un verdict automatique de conformité.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="about-prototype-title">
+      <h2 id="about-prototype-title">Logique actuelle du prototype</h2>
+      <p>Le prototype du mémoire route le référentiel selon la technologie : <strong>Web → RGAA</strong>, <strong>Mobile → RAAM</strong>. Il distingue récupération documentaire, sélection des références, génération, garde-fous et validation humaine.</p>
+      <p class="muted">Cette interface du workspace reprend le format et les garde-fous du prototype. Le pipeline expérimental complet de retrieval/reranking reste dans le projet A11Y Copilot du mémoire ; cette version ne prétend donc pas reproduire ses scores de benchmark.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="analysis-form-title">
+      <h2 id="analysis-form-title">Analyser une situation</h2>
+      <form id="copilot-form" class="workspace-form">
+        <div class="two-col">
+          <label>
+            Mode d’entrée
+            <select name="inputMode">
+              <option value="situation">Situation métier</option>
+              <option value="code">Extrait de code</option>
+              <option value="screenshot">Capture / maquette</option>
+            </select>
+          </label>
+          <label>
+            Produit
+            <select name="productType">
+              <option value="web">Web</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="two-col">
+          <label>
+            Technologie / framework
+            <select name="technology">
+              <option value="HTML/CSS">HTML / CSS</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="React">React</option>
+              <option value="Vue">Vue</option>
+              <option value="Angular">Angular</option>
+              <option value="Flutter">Flutter</option>
+              <option value="Kotlin / Jetpack Compose">Kotlin / Jetpack Compose</option>
+              <option value="Android">Android</option>
+              <option value="iOS / SwiftUI">iOS / SwiftUI</option>
+              <option value="React Native">React Native</option>
+              <option value="Autre">Autre / à préciser</option>
+            </select>
+          </label>
+          <label>
+            Métier / point de vue
+            <select name="role">
+              <option value="Équipe produit">Équipe produit</option>
+              <option value="Design / UX">Design / UX</option>
+              <option value="Développement">Développement</option>
+              <option value="QA / recette">QA / recette</option>
+              <option value="Accessibilité">Accessibilité</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Situation ou problème à analyser
+          <textarea name="problem" required placeholder="Ex. Une modale Flutter s’ouvre sans titre visible et le lecteur d’écran annonce directement le premier champ…"></textarea>
+        </label>
+
+        <label>
+          Code, détails techniques ou contexte métier
+          <textarea name="details" placeholder="Composant, plateforme, comportement observé, extrait de code, contrainte produit, résultat attendu…"></textarea>
+        </label>
+
+        <label>
+          Informations déjà vérifiées
+          <textarea name="verifiedFacts" placeholder="Ex. le focus reste derrière la modale ; TalkBack annonce X ; test clavier effectué ; le composant est natif/custom…"></textarea>
+        </label>
+
+        <button class="primary-button" type="submit">Analyser avec les garde-fous du prototype</button>
+        <p id="copilot-status" class="status-line" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="copilot-result-title">
+      <h2 id="copilot-result-title">Analyse structurée</h2>
+      <p class="muted">La réponse suit les huit sections du prototype : diagnostic, références retenues, références écartées/secondaires, impact utilisateur, correction proposée, vérification, informations manquantes, limites & validation humaine.</p>
+      <div id="copilot-result" class="result-box">La génération IA sera activée dès que la fonction privée sera configurée.</div>
+    </section>
+  </main>
+
+  <script src="workspace-config.js"></script>
+  <script src="guard.js"></script>
+  <script src="workspace-ai.js"></script>
+</body>
+</html>
