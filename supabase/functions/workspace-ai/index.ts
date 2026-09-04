@@ -23,59 +23,84 @@ async function getUser(token: string) {
   return response.json();
 }
 
-function normativeTarget(productType: string, technology: string) {
-  const tech = technology.toLowerCase();
-  const mobileTech = ["flutter", "kotlin", "jetpack", "android", "ios", "swift", "react native"];
-  return productType === "mobile" || mobileTech.some((item) => tech.includes(item)) ? "RAAM" : "RGAA";
+function mapRole(value: unknown) {
+  const role = String(value || "").toLowerCase();
+  if (role.includes("design")) return "designer";
+  if (role.includes("dev")) return "developer";
+  return "qa";
+}
+
+function mapOutputType(value: unknown) {
+  const output = String(value || "");
+  if (["handoff", "technical_fix", "test_scenario"].includes(output)) return output;
+  return "test_scenario";
+}
+
+function formatRealCopilotResult(data: any) {
+  const refs = Array.isArray(data?.retained_references) && data.retained_references.length
+    ? data.retained_references.join(", ")
+    : (data?.normative_reference || "Aucune référence retenue avec certitude");
+  const assumptions = Array.isArray(data?.assumptions) && data.assumptions.length
+    ? data.assumptions.map((item: string) => `- ${item}`).join("\n")
+    : "- Aucune hypothèse explicitée.";
+  const sources = Array.isArray(data?.sources) && data.sources.length
+    ? data.sources.map((source: any) => `- ${source.document || source.source_type || "Source"} · ${source.reference || "référence non précisée"}${source.verified ? " · vérifiée" : ""}`).join("\n")
+    : "- Aucune source retournée.";
+
+  return `1. Diagnostic\n${data?.problem_summary || ""}\n\n2. Références retenues\nRéférentiel : ${data?.normative_standard || ""}\n${refs}\n${sources}\n\n3. Références écartées ou secondaires\n${assumptions}\n\n4. Impact utilisateur\n${data?.impact || ""}\n\n5. Correction proposée\n${data?.recommendation || ""}\nStatut : ${data?.recommendation_status || ""}\n\n6. Comment vérifier\n${data?.verification || ""}\n\n7. Informations manquantes\nConfiance documentaire : ${data?.confidence ?? "non renseignée"}\nConfiance d’observation : ${data?.observation_confidence || "non renseignée"}\nÉvidence normative : ${data?.normative_evidence || "non renseignée"}\n\n8. Limites et validation humaine\nValidation humaine requise : ${data?.human_validation_required === false ? "non" : "oui"}.\nGarde-fou : ${data?.guardrail_status || "non renseigné"}.`;
+}
+
+async function callRealCopilot(payload: Record<string, unknown>) {
+  const backendUrl = (Deno.env.get("A11Y_BACKEND_URL") || "").replace(/\/$/, "");
+  if (!backendUrl) return null;
+
+  const inputMode = String(payload.inputMode || "situation");
+  const details = String(payload.details || "");
+  const verifiedFacts = String(payload.verifiedFacts || "");
+  const context = [details, verifiedFacts ? `Informations déjà vérifiées : ${verifiedFacts}` : ""]
+    .filter(Boolean)
+    .join("\n\n");
+
+  const requestBody = {
+    role: mapRole(payload.role),
+    component: String(payload.component || payload.technology || "Composant à analyser"),
+    context: context || null,
+    technology: String(payload.technology || "") || null,
+    problem: String(payload.problem || ""),
+    output_type: mapOutputType(payload.outputType),
+    input_mode: inputMode,
+    code: inputMode === "code" ? details || null : null,
+    language: "fr",
+    screenshot_data_url: null,
+    screenshot_name: null,
+  };
+
+  const response = await fetch(`${backendUrl}/analyze`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(requestBody),
+  });
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    console.error("A11Y backend error", response.status, data);
+    return json({ error: "a11y_backend_error", details: data }, 502);
+  }
+
+  return json({
+    text: formatRealCopilotResult(data),
+    engine: "a11y-copilot-retrieval",
+    raw: data,
+  });
 }
 
 function buildPrompt(mode: string, payload: Record<string, unknown>) {
   if (mode === "cv") {
     return `Adapte un CV à une offre sans inventer d'expérience, compétence, date ou résultat.\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nOffre: ${payload.offer || ""}\nÀ mettre en avant: ${payload.focus || ""}\nBase factuelle autorisée: ${payload.facts || ""}\nRéponds en français avec: angle de candidature, résumé ciblé, compétences prioritaires, reformulations fondées uniquement sur les faits fournis, mots-clés à intégrer. Signale toute information manquante au lieu de l'inventer.`;
   }
-
   if (mode === "copilot") {
-    const inputMode = String(payload.inputMode || "situation");
-    const productType = String(payload.productType || "web");
-    const technology = String(payload.technology || "");
-    const role = String(payload.role || "Équipe produit");
-    const target = normativeTarget(productType, technology);
-
-    return `Tu es A11Y Copilot, prototype pédagogique de médiation normative en accessibilité numérique. Tu ne remplaces ni l'expertise humaine ni un audit et tu ne produis pas de verdict automatique de conformité.
-
-Contexte déclaré :
-- Mode d'entrée : ${inputMode}
-- Produit : ${productType}
-- Technologie / framework : ${technology}
-- Métier / point de vue : ${role}
-- Référentiel cible : ${target}
-- Situation : ${payload.problem || ""}
-- Détails / code : ${payload.details || ""}
-- Informations déjà vérifiées : ${payload.verifiedFacts || ""}
-
-Règles obligatoires :
-1. Route le web vers le RGAA et le mobile vers le RAAM. React Native est mobile. Ne mélange pas les références RGAA et RAAM dans une même analyse sauf pour expliquer une différence de périmètre.
-2. Distingue explicitement faits observés, hypothèses et vérifications encore nécessaires.
-3. Une référence candidate n'est pas automatiquement applicable : ne cite un numéro précis que si le lien avec la situation est suffisamment solide. Sinon, indique qu'une vérification normative est nécessaire.
-4. Ne présente jamais une recommandation de code ou d'API framework comme une exigence normative si elle n'est pas directement décrite par le référentiel.
-5. N'invente jamais une propriété, API, composant ou comportement d'un framework par analogie. Si l'API exacte est incertaine, décris le mécanisme attendu et recommande la documentation officielle.
-6. Pour une capture/maquette, limite-toi aux éléments observables visuellement. Ne conclus pas sur le focus réel, le nom accessible programmatique, les annonces lecteur d'écran ou le comportement dynamique.
-7. Pour du code, tiens compte de la technologie déclarée et précise ce qui ne peut pas être conclu sans exécution ou test avec technologie d'assistance.
-8. La validation humaine finale est obligatoire.
-
-Réponds en français en EXACTEMENT huit sections numérotées :
-1. Diagnostic
-2. Références retenues
-3. Références écartées ou secondaires
-4. Impact utilisateur
-5. Correction proposée
-6. Comment vérifier
-7. Informations manquantes
-8. Limites et validation humaine
-
-Dans "Références retenues", indique le référentiel utilisé (${target}) et explique brièvement pourquoi chaque référence est retenue. Dans "Références écartées ou secondaires", montre au moins les pistes proches mais non retenues si elles existent. Dans "Correction proposée", sépare exigence normative et recommandation technique. Reste pédagogique, traçable et prudent.`;
+    return `Le backend expérimental A11Y Copilot n'est pas configuré. Analyse prudemment ce problème d'accessibilité sans inventer de référence normative.\nSituation: ${payload.problem || ""}\nTechnologie: ${payload.technology || ""}\nDétails: ${payload.details || ""}\nRéponds en huit sections : Diagnostic, Références retenues, Références écartées ou secondaires, Impact utilisateur, Correction proposée, Comment vérifier, Informations manquantes, Limites et validation humaine.`;
   }
-
   return "";
 }
 
@@ -89,12 +114,20 @@ Deno.serve(async (request) => {
   const user = await getUser(token);
   if (!user?.id || user.id !== ALLOWED_USER_ID) return json({ error: "forbidden" }, 403);
 
+  const body = await request.json().catch(() => ({}));
+  const mode = String(body.mode || "");
+  const payload = body.payload || {};
+
+  if (mode === "copilot") {
+    const realResult = await callRealCopilot(payload);
+    if (realResult) return realResult;
+  }
+
   const apiKey = Deno.env.get("AI_API_KEY") || "";
   const model = Deno.env.get("AI_MODEL") || "openai/gpt-oss-20b";
   if (!apiKey) return json({ error: "ai_not_configured" }, 503);
 
-  const body = await request.json().catch(() => ({}));
-  const prompt = buildPrompt(body.mode || "", body.payload || {});
+  const prompt = buildPrompt(mode, payload);
   if (!prompt) return json({ error: "unsupported_mode" }, 400);
 
   const provider = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -104,10 +137,7 @@ Deno.serve(async (request) => {
       model,
       temperature: 0.15,
       messages: [
-        {
-          role: "system",
-          content: "Tu es un copilote pédagogique d'accessibilité. Ne fabrique jamais une référence normative ou une API technique. Privilégie l'incertitude explicite à une affirmation non vérifiée.",
-        },
+        { role: "system", content: "Réponds de façon structurée et n'invente pas de faits, références ou expériences." },
         { role: "user", content: prompt },
       ],
     }),
@@ -117,5 +147,5 @@ Deno.serve(async (request) => {
   if (!provider.ok) return json({ error: "ai_provider_error" }, 502);
   const text = data?.choices?.[0]?.message?.content || "";
   if (!text) return json({ error: "empty_ai_response" }, 502);
-  return json({ text, model });
+  return json({ text, model, engine: mode === "copilot" ? "llm-fallback" : "groq" });
 });
