@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bibliothèque d’outils d’accessibilité numérique</title>
+  <meta name="description" content="Répertoire d’extensions, outils et méthodes pour tester l’accessibilité numérique, classés par usage métier, fiabilité, popularité et modèle économique." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">Répertoire personnel</p>
+        <h1>Bibliothèque d’outils d’accessibilité numérique</h1>
+        <p class="intro">Un endroit unique pour savoir quel outil utiliser selon le besoin : audit automatisé, contraste, clavier, lecteur d’écran, structure, PDF, mobile, développement, design ou suivi qualité.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="controls" aria-labelledby="filters-title">
+      <h2 id="filters-title">Trouver un outil</h2>
+      <div class="filters-grid">
+        <label>
+          Recherche
+          <input id="search" type="search" placeholder="Ex. contraste, NVDA, PDF, axe…" />
+        </label>
+        <label>
+          Utilité métier
+          <select id="category-filter">
+            <option value="all">Toutes</option>
+          </select>
+        </label>
+        <label>
+          Modèle
+          <select id="price-filter">
+            <option value="all">Tous</option>
+            <option value="Gratuit">Gratuit</option>
+            <option value="Freemium">Freemium</option>
+            <option value="Payant">Payant</option>
+          </select>
+        </label>
+        <label>
+          Priorité
+          <select id="priority-filter">
+            <option value="all">Toutes</option>
+            <option value="Indispensable">Indispensable</option>
+            <option value="Très utile">Très utile</option>
+            <option value="Complémentaire">Complémentaire</option>
+          </select>
+        </label>
+      </div>
+      <p id="results-count" class="results-count" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="legend-title" class="legend">
+      <h2 id="legend-title">Comment lire les évaluations</h2>
+      <p><strong>Fiabilité</strong> = confiance à accorder aux résultats dans son périmètre. <strong>Usage</strong> = fréquence d’utilisation dans les équipes accessibilité / QA / produit. Aucun outil automatique ne remplace les tests manuels.</p>
+    </section>
+
+    <section aria-labelledby="tools-title">
+      <div class="section-heading">
+        <h2 id="tools-title">Outils recensés</h2>
+        <p>Classement initial orienté pratique métier. À enrichir au fil des tests.</p>
+      </div>
+      <div id="tools-grid" class="tools-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Base de travail personnelle — accessibilité numérique.</p>
+    </div>
+  </footer>
+
+  <script src="tools-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
