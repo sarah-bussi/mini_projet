@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-09-04T16:45:00Z",
+  "items": [
+    {
+      "title": "WCAG Evaluation Methodology (WCAG-EM) 2.0 — Note Published",
+      "url": "https://www.w3.org/WAI/news/2026-07-23/wcag-em-2.0-note/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-07-23T00:00:00Z",
+      "summary": "Publication de WCAG-EM 2.0, méthodologie d’évaluation applicable aux sites, applications et autres produits numériques.",
+      "pinned": true
+    },
+    {
+      "title": "The WebAIM Million — 2026 Update",
+      "url": "https://webaim.org/projects/million/",
+      "source": "WebAIM",
+      "category": "Recherche & tendances",
+      "published": "2026-03-01T00:00:00Z",
+      "summary": "Analyse annuelle à grande échelle de l’accessibilité des pages d’accueil les plus consultées du web.",
+      "pinned": true
+    },
+    {
+      "title": "W3C Accessibility Guidelines (WCAG) 3.0 Working Draft — March 2026",
+      "url": "https://www.w3.org/WAI/news/2026-03-03/for-review-wcag-3-working-draft-march-2026/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-03-03T00:00:00Z",
+      "summary": "Mise à jour du brouillon de travail WCAG 3.0 à suivre pour anticiper les évolutions futures du standard.",
+      "pinned": true
+    }
+  ]
+}
