@@ -14,6 +14,7 @@
       <nav class="top-nav" aria-label="Navigation de la bibliothèque">
         <a aria-current="page" href="index.html">Outils</a>
         <a href="veille.html">Veille & archives</a>
+        <a href="detected.html">Nouveaux outils détectés</a>
       </nav>
       <div>
         <p class="eyebrow">Répertoire international</p>
@@ -26,7 +27,7 @@
   <main id="main" class="container">
     <section class="coverage-panel" aria-labelledby="coverage-title">
       <h2 id="coverage-title">Couverture de la base</h2>
-      <p>La base regroupe les outils majeurs utilisés à l’international, des technologies d’assistance et une sélection de projets open source utiles. Elle n’est pas présentée comme exhaustive : le répertoire W3C recense lui-même plus de 100 outils et précise que sa propre liste n’est ni complète ni une recommandation de qualité.</p>
+      <p>La base regroupe les outils majeurs utilisés à l’international, des technologies d’assistance et une sélection de projets open source utiles. Elle n’est pas présentée comme exhaustive : les nouveaux projets sont d’abord placés dans une file distincte avant validation manuelle.</p>
       <div class="coverage-tags" aria-label="Périmètres couverts">
         <span>Web</span><span>Responsive</span><span>Android</span><span>iOS</span><span>Flutter</span><span>Jeux vidéo</span><span>Médias</span><span>PDF / EPUB</span><span>Design</span><span>CI / code</span><span>Assistive tech</span><span>Open source</span>
       </div>
@@ -65,6 +66,15 @@
             <option value="Complémentaire">Complémentaire</option>
           </select>
         </label>
+        <label>
+          Mon suivi
+          <select id="personal-filter">
+            <option value="all">Tout afficher</option>
+            <option value="favorite">Favoris</option>
+            <option value="important">Importants</option>
+            <option value="toTest">À tester</option>
+          </select>
+        </label>
       </div>
       <p id="results-count" class="results-count" aria-live="polite"></p>
     </section>
@@ -72,6 +82,7 @@
     <section aria-labelledby="legend-title" class="legend">
       <h2 id="legend-title">Comment lire les évaluations</h2>
       <p><strong>Fiabilité</strong> = confiance à accorder aux résultats dans son périmètre. <strong>Usage</strong> = fréquence d’utilisation estimée dans les équipes accessibilité / QA / produit. Les mentions <strong>Open source</strong> servent à repérer les projets dont le code peut être consulté, testé ou intégré. Aucun outil automatique ne remplace les tests manuels.</p>
+      <p><strong>Suivi personnel</strong> : Favori, Important et À tester sont enregistrés uniquement dans ce navigateur via le stockage local.</p>
       <p id="link-check-summary" class="sync-note">Les liens officiels sont contrôlés automatiquement par la veille GitHub Actions.</p>
     </section>
 
@@ -92,6 +103,7 @@
 
   <script src="tools-data.js"></script>
   <script src="tools-extra-data.js"></script>
+  <script src="personal-state.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
