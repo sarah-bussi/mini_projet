@@ -23,13 +23,59 @@ async function getUser(token: string) {
   return response.json();
 }
 
+function normativeTarget(productType: string, technology: string) {
+  const tech = technology.toLowerCase();
+  const mobileTech = ["flutter", "kotlin", "jetpack", "android", "ios", "swift", "react native"];
+  return productType === "mobile" || mobileTech.some((item) => tech.includes(item)) ? "RAAM" : "RGAA";
+}
+
 function buildPrompt(mode: string, payload: Record<string, unknown>) {
   if (mode === "cv") {
     return `Adapte un CV à une offre sans inventer d'expérience, compétence, date ou résultat.\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nOffre: ${payload.offer || ""}\nÀ mettre en avant: ${payload.focus || ""}\nBase factuelle autorisée: ${payload.facts || ""}\nRéponds en français avec: angle de candidature, résumé ciblé, compétences prioritaires, reformulations fondées uniquement sur les faits fournis, mots-clés à intégrer. Signale toute information manquante au lieu de l'inventer.`;
   }
+
   if (mode === "copilot") {
-    return `Analyse ce problème d'accessibilité numérique. Distingue faits, hypothèses et vérifications. N'affirme pas une conformité globale à partir d'une seule description.\nContexte: ${payload.context || ""}\nRéférentiel: ${payload.standard || ""}\nProblème: ${payload.problem || ""}\nDétails: ${payload.details || ""}\nRéponds en français avec: diagnostic, critères potentiellement concernés, tests à effectuer, corrections proposées, limites, niveau de confiance. Ne cite un numéro RGAA/WCAG précis que si tu es suffisamment certain.`;
+    const inputMode = String(payload.inputMode || "situation");
+    const productType = String(payload.productType || "web");
+    const technology = String(payload.technology || "");
+    const role = String(payload.role || "Équipe produit");
+    const target = normativeTarget(productType, technology);
+
+    return `Tu es A11Y Copilot, prototype pédagogique de médiation normative en accessibilité numérique. Tu ne remplaces ni l'expertise humaine ni un audit et tu ne produis pas de verdict automatique de conformité.
+
+Contexte déclaré :
+- Mode d'entrée : ${inputMode}
+- Produit : ${productType}
+- Technologie / framework : ${technology}
+- Métier / point de vue : ${role}
+- Référentiel cible : ${target}
+- Situation : ${payload.problem || ""}
+- Détails / code : ${payload.details || ""}
+- Informations déjà vérifiées : ${payload.verifiedFacts || ""}
+
+Règles obligatoires :
+1. Route le web vers le RGAA et le mobile vers le RAAM. React Native est mobile. Ne mélange pas les références RGAA et RAAM dans une même analyse sauf pour expliquer une différence de périmètre.
+2. Distingue explicitement faits observés, hypothèses et vérifications encore nécessaires.
+3. Une référence candidate n'est pas automatiquement applicable : ne cite un numéro précis que si le lien avec la situation est suffisamment solide. Sinon, indique qu'une vérification normative est nécessaire.
+4. Ne présente jamais une recommandation de code ou d'API framework comme une exigence normative si elle n'est pas directement décrite par le référentiel.
+5. N'invente jamais une propriété, API, composant ou comportement d'un framework par analogie. Si l'API exacte est incertaine, décris le mécanisme attendu et recommande la documentation officielle.
+6. Pour une capture/maquette, limite-toi aux éléments observables visuellement. Ne conclus pas sur le focus réel, le nom accessible programmatique, les annonces lecteur d'écran ou le comportement dynamique.
+7. Pour du code, tiens compte de la technologie déclarée et précise ce qui ne peut pas être conclu sans exécution ou test avec technologie d'assistance.
+8. La validation humaine finale est obligatoire.
+
+Réponds en français en EXACTEMENT huit sections numérotées :
+1. Diagnostic
+2. Références retenues
+3. Références écartées ou secondaires
+4. Impact utilisateur
+5. Correction proposée
+6. Comment vérifier
+7. Informations manquantes
+8. Limites et validation humaine
+
+Dans "Références retenues", indique le référentiel utilisé (${target}) et explique brièvement pourquoi chaque référence est retenue. Dans "Références écartées ou secondaires", montre au moins les pistes proches mais non retenues si elles existent. Dans "Correction proposée", sépare exigence normative et recommandation technique. Reste pédagogique, traçable et prudent.`;
   }
+
   return "";
 }
 
@@ -56,9 +102,12 @@ Deno.serve(async (request) => {
     headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
     body: JSON.stringify({
       model,
-      temperature: 0.2,
+      temperature: 0.15,
       messages: [
-        { role: "system", content: "Réponds de façon structurée, concise et professionnelle." },
+        {
+          role: "system",
+          content: "Tu es un copilote pédagogique d'accessibilité. Ne fabrique jamais une référence normative ou une API technique. Privilégie l'incertitude explicite à une affirmation non vérifiée.",
+        },
         { role: "user", content: prompt },
       ],
     }),
