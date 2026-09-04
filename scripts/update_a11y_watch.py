@@ -3,6 +3,7 @@ import datetime as dt
 import email.utils
 import html
 import json
+import os
 import re
 import ssl
 import urllib.error
@@ -19,9 +20,11 @@ TOOLS_FILES = [
 SOURCES_FILE = ROOT / "a11y-tools" / "sources.json"
 WATCH_FILE = ROOT / "a11y-tools" / "veille-data.json"
 LINK_FILE = ROOT / "a11y-tools" / "link-status.json"
-USER_AGENT = "a11y-tools-watch/1.1 (+https://github.com/sarah-bussi/mini_projet)"
+DETECTED_FILE = ROOT / "a11y-tools" / "detected-tools.json"
+USER_AGENT = "a11y-tools-watch/1.2 (+https://github.com/sarah-bussi/mini_projet)"
 TIMEOUT = 15
 MAX_ITEMS = 500
+MAX_DETECTED = 100
 
 ssl_context = ssl.create_default_context()
 
@@ -30,10 +33,18 @@ def now_iso():
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def fetch_bytes(url, method="GET"):
-    req = urllib.request.Request(url, method=method, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+def fetch_bytes(url, method="GET", headers=None):
+    merged_headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
+    if headers:
+        merged_headers.update(headers)
+    req = urllib.request.Request(url, method=method, headers=merged_headers)
     with urllib.request.urlopen(req, timeout=TIMEOUT, context=ssl_context) as response:
         return response.read(), response.status, response.geturl()
+
+
+def fetch_json(url, headers=None):
+    body, _, _ = fetch_bytes(url, headers=headers)
+    return json.loads(body.decode("utf-8"))
 
 
 def clean_text(value):
@@ -101,7 +112,6 @@ def classify(title, summary, fallback):
 def parse_feed(xml_bytes, source):
     root = ET.fromstring(xml_bytes)
     items = []
-
     for item in root.findall(".//item"):
         title = first_text(item, ["title"])
         url = first_text(item, ["link"])
@@ -109,15 +119,11 @@ def parse_feed(xml_bytes, source):
         published = first_text(item, ["pubDate", "date", "published"])
         if title and url:
             items.append({
-                "title": clean_text(title),
-                "url": url.strip(),
-                "source": source["name"],
+                "title": clean_text(title), "url": url.strip(), "source": source["name"],
                 "category": classify(title, description, source.get("category")),
-                "published": parse_date(published),
-                "summary": clean_text(description)[:420],
+                "published": parse_date(published), "summary": clean_text(description)[:420],
                 "pinned": False,
             })
-
     if items:
         return items
 
@@ -130,12 +136,9 @@ def parse_feed(xml_bytes, source):
         published = first_text(entry, [f"{{{ns}}}published", f"{{{ns}}}updated"])
         if title and url:
             items.append({
-                "title": clean_text(title),
-                "url": url.strip(),
-                "source": source["name"],
+                "title": clean_text(title), "url": url.strip(), "source": source["name"],
                 "category": classify(title, summary, source.get("category")),
-                "published": parse_date(published),
-                "summary": clean_text(summary)[:420],
+                "published": parse_date(published), "summary": clean_text(summary)[:420],
                 "pinned": False,
             })
     return items
@@ -146,7 +149,6 @@ def collect_watch():
     existing = json.loads(WATCH_FILE.read_text(encoding="utf-8")) if WATCH_FILE.exists() else {"items": []}
     by_url = {item.get("url"): item for item in existing.get("items", []) if item.get("url")}
     errors = []
-
     for source in source_data.get("sources", []):
         feed = source.get("feed")
         if not feed:
@@ -160,13 +162,8 @@ def collect_watch():
                 by_url[item["url"]] = {**old, **item} if old else item
         except Exception as exc:
             errors.append({"source": source.get("name"), "feed": feed, "error": str(exc)[:180]})
-
-    def sort_key(item):
-        return item.get("published") or "0000-00-00T00:00:00Z"
-
-    items = sorted(by_url.values(), key=sort_key, reverse=True)[:MAX_ITEMS]
-    payload = {"updatedAt": now_iso(), "errors": errors, "items": items}
-    WATCH_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    items = sorted(by_url.values(), key=lambda item: item.get("published") or "0000-00-00T00:00:00Z", reverse=True)[:MAX_ITEMS]
+    WATCH_FILE.write_text(json.dumps({"updatedAt": now_iso(), "errors": errors, "items": items}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def extract_tool_urls():
@@ -177,6 +174,73 @@ def extract_tool_urls():
         text = tool_file.read_text(encoding="utf-8")
         urls.extend(re.findall(r"url\s*:\s*['\"](https?://[^'\"]+)['\"]", text))
     return sorted(set(urls))
+
+
+def canonical_github_repo(url):
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        if parsed.netloc.lower() != "github.com":
+            return ""
+        parts = [part for part in parsed.path.split("/") if part]
+        if len(parts) < 2:
+            return ""
+        return f"https://github.com/{parts[0]}/{parts[1]}".lower()
+    except Exception:
+        return ""
+
+
+def detect_new_tools():
+    existing = json.loads(DETECTED_FILE.read_text(encoding="utf-8")) if DETECTED_FILE.exists() else {"items": []}
+    by_url = {item.get("url", "").lower(): item for item in existing.get("items", []) if item.get("url")}
+    known_repos = {canonical_github_repo(url) for url in extract_tool_urls()}
+    known_repos.discard("")
+
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=365)).date().isoformat()
+    queries = [
+        f'"accessibility checker" in:name,description pushed:>={since} stars:>=5',
+        f'a11y in:name,description pushed:>={since} stars:>=10',
+        f'"screen reader" testing in:name,description pushed:>={since} stars:>=5',
+    ]
+    errors = []
+    detected_at = now_iso()
+
+    for query in queries:
+        url = "https://api.github.com/search/repositories?" + urllib.parse.urlencode({
+            "q": query, "sort": "updated", "order": "desc", "per_page": 20,
+        })
+        try:
+            payload = fetch_json(url, headers=headers)
+            for repo in payload.get("items", []):
+                repo_url = repo.get("html_url", "").rstrip("/")
+                if not repo_url or canonical_github_repo(repo_url) in known_repos:
+                    continue
+                description = clean_text(repo.get("description") or "")
+                searchable = f"{repo.get('name', '')} {description}".lower()
+                if not any(term in searchable for term in ("accessibility", "a11y", "screen reader", "wcag", "aria")):
+                    continue
+                key = repo_url.lower()
+                old = by_url.get(key, {})
+                by_url[key] = {
+                    "name": repo.get("name") or repo.get("full_name"),
+                    "fullName": repo.get("full_name"),
+                    "url": repo_url,
+                    "description": description[:360],
+                    "language": repo.get("language"),
+                    "stars": repo.get("stargazers_count", 0),
+                    "updatedAt": repo.get("pushed_at") or repo.get("updated_at"),
+                    "detectedAt": old.get("detectedAt") or detected_at,
+                    "source": "GitHub",
+                }
+        except Exception as exc:
+            errors.append({"query": query, "error": str(exc)[:180]})
+
+    items = sorted(by_url.values(), key=lambda item: (item.get("stars", 0), item.get("updatedAt") or ""), reverse=True)[:MAX_DETECTED]
+    DETECTED_FILE.write_text(json.dumps({"updatedAt": detected_at, "errors": errors, "items": items}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def check_url(url):
@@ -204,12 +268,11 @@ def check_url(url):
 
 
 def check_links():
-    results = {}
-    for url in extract_tool_urls():
-        results[url] = check_url(url)
+    results = {url: check_url(url) for url in extract_tool_urls()}
     LINK_FILE.write_text(json.dumps({"checkedAt": now_iso(), "links": results}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
     collect_watch()
+    detect_new_tools()
     check_links()
