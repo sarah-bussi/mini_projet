@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bibliothèque d’outils d’accessibilité numérique</title>
-  <meta name="description" content="Répertoire d’extensions, outils et méthodes pour tester l’accessibilité numérique, classés par usage métier, fiabilité, popularité et modèle économique." />
+  <meta name="description" content="Répertoire d’extensions, outils et méthodes pour tester l’accessibilité numérique, classés par usage métier, fiabilité, popularité, périmètre produit et modèle économique." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,24 +16,36 @@
         <a href="veille.html">Veille & archives</a>
       </nav>
       <div>
-        <p class="eyebrow">Répertoire personnel</p>
+        <p class="eyebrow">Répertoire international</p>
         <h1>Bibliothèque d’outils d’accessibilité numérique</h1>
-        <p class="intro">Un endroit unique pour savoir quel outil utiliser selon le besoin : audit automatisé, contraste, clavier, lecteur d’écran, structure, PDF, mobile, développement, design ou suivi qualité.</p>
+        <p class="intro">Un endroit unique pour savoir quel outil utiliser selon le besoin : audit automatisé, contraste, clavier, lecteurs d’écran, responsive web, mobile natif, jeux vidéo, médias, PDF/EPUB, développement, design ou suivi qualité.</p>
       </div>
     </div>
   </header>
 
   <main id="main" class="container">
+    <section class="coverage-panel" aria-labelledby="coverage-title">
+      <h2 id="coverage-title">Couverture de la base</h2>
+      <p>La base regroupe les outils majeurs utilisés à l’international, des technologies d’assistance et une sélection de projets open source utiles. Elle n’est pas présentée comme exhaustive : le répertoire W3C recense lui-même plus de 100 outils et précise que sa propre liste n’est ni complète ni une recommandation de qualité.</p>
+      <div class="coverage-tags" aria-label="Périmètres couverts">
+        <span>Web</span><span>Responsive</span><span>Android</span><span>iOS</span><span>Flutter</span><span>Jeux vidéo</span><span>Médias</span><span>PDF / EPUB</span><span>Design</span><span>CI / code</span><span>Assistive tech</span><span>Open source</span>
+      </div>
+    </section>
+
     <section class="controls" aria-labelledby="filters-title">
       <h2 id="filters-title">Trouver un outil</h2>
-      <div class="filters-grid">
+      <div class="filters-grid filters-grid-tools">
         <label>
           Recherche
-          <input id="search" type="search" placeholder="Ex. contraste, NVDA, PDF, axe…" />
+          <input id="search" type="search" placeholder="Ex. contraste, NVDA, PDF, Flutter, jeu…" />
         </label>
         <label>
           Utilité métier
           <select id="category-filter"><option value="all">Toutes</option></select>
+        </label>
+        <label>
+          Périmètre produit
+          <select id="domain-filter"><option value="all">Tous</option></select>
         </label>
         <label>
           Modèle
@@ -59,14 +71,14 @@
 
     <section aria-labelledby="legend-title" class="legend">
       <h2 id="legend-title">Comment lire les évaluations</h2>
-      <p><strong>Fiabilité</strong> = confiance à accorder aux résultats dans son périmètre. <strong>Usage</strong> = fréquence d’utilisation dans les équipes accessibilité / QA / produit. Aucun outil automatique ne remplace les tests manuels.</p>
+      <p><strong>Fiabilité</strong> = confiance à accorder aux résultats dans son périmètre. <strong>Usage</strong> = fréquence d’utilisation estimée dans les équipes accessibilité / QA / produit. Les mentions <strong>Open source</strong> servent à repérer les projets dont le code peut être consulté, testé ou intégré. Aucun outil automatique ne remplace les tests manuels.</p>
       <p id="link-check-summary" class="sync-note">Les liens officiels sont contrôlés automatiquement par la veille GitHub Actions.</p>
     </section>
 
     <section aria-labelledby="tools-title">
       <div class="section-heading">
         <h2 id="tools-title">Outils recensés</h2>
-        <p>Classement initial orienté pratique métier. À enrichir au fil des tests.</p>
+        <p>Classement orienté pratique métier, enrichi avec mobile, responsive, gaming, médias, technologies d’assistance et projets communautaires.</p>
       </div>
       <div id="tools-grid" class="tools-grid"></div>
     </section>
@@ -79,6 +91,7 @@
   </footer>
 
   <script src="tools-data.js"></script>
+  <script src="tools-extra-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
