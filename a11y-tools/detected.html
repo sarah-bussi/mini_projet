@@ -15,6 +15,7 @@
         <a href="index.html">Outils</a>
         <a href="veille.html">Veille & archives</a>
         <a aria-current="page" href="detected.html">Nouveaux outils détectés</a>
+        <a href="brief.html">Brief IA hebdo</a>
       </nav>
       <div>
         <p class="eyebrow">File de validation</p>
@@ -28,54 +29,26 @@
     <section class="legend" aria-labelledby="detected-status-title">
       <h2 id="detected-status-title">État de la détection</h2>
       <p id="detected-status">Chargement des outils détectés…</p>
-      <p>La détection automatique sert uniquement de radar. Une apparition ici n’est pas une recommandation.</p>
+      <p>La détection automatique sert uniquement de radar. Une apparition ici n’est pas une recommandation. Le <a href="brief.html">brief IA hebdomadaire</a> peut signaler les candidats qui semblent mériter un test ou une surveillance.</p>
     </section>
 
     <section class="controls" aria-labelledby="detected-filter-title">
       <h2 id="detected-filter-title">Filtrer la file</h2>
       <div class="filters-grid">
-        <label>
-          Recherche
-          <input id="detected-search" type="search" placeholder="Ex. mobile, axe, screen reader…" />
-        </label>
-        <label>
-          Suivi personnel
-          <select id="detected-personal-filter">
-            <option value="all">Tout afficher</option>
-            <option value="toTest">À tester</option>
-            <option value="favorite">Favoris</option>
-            <option value="important">Importants</option>
-            <option value="dismissed">Ignorés</option>
-          </select>
-        </label>
-        <label>
-          Activité
-          <select id="detected-activity-filter">
-            <option value="all">Toutes</option>
-            <option value="30">Mis à jour &lt; 30 jours</option>
-            <option value="90">Mis à jour &lt; 90 jours</option>
-            <option value="365">Mis à jour &lt; 1 an</option>
-          </select>
-        </label>
+        <label>Recherche<input id="detected-search" type="search" placeholder="Ex. mobile, axe, screen reader…" /></label>
+        <label>Suivi personnel<select id="detected-personal-filter"><option value="all">Tout afficher</option><option value="toTest">À tester</option><option value="favorite">Favoris</option><option value="important">Importants</option><option value="dismissed">Ignorés</option></select></label>
+        <label>Activité<select id="detected-activity-filter"><option value="all">Toutes</option><option value="30">Mis à jour &lt; 30 jours</option><option value="90">Mis à jour &lt; 90 jours</option><option value="365">Mis à jour &lt; 1 an</option></select></label>
       </div>
       <p id="detected-count" class="results-count" aria-live="polite"></p>
     </section>
 
     <section aria-labelledby="detected-list-title">
-      <div class="section-heading">
-        <h2 id="detected-list-title">À examiner</h2>
-        <p>Marque les projets intéressants avec Favori, Important ou À tester. “Ignorer” les masque uniquement via ton suivi local.</p>
-      </div>
+      <div class="section-heading"><h2 id="detected-list-title">À examiner</h2><p>Marque les projets intéressants avec Favori, Important ou À tester. “Ignorer” les masque uniquement via ton suivi local.</p></div>
       <div id="detected-grid" class="tools-grid"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p><a href="index.html">Retour à la bibliothèque d’outils</a>.</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container"><p><a href="index.html">Retour à la bibliothèque d’outils</a>.</p></div></footer>
   <script src="personal-state.js"></script>
   <script src="detected.js"></script>
 </body>
