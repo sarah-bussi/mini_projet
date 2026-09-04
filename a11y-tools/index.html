@@ -11,6 +11,10 @@
   <a class="skip-link" href="#main">Aller au contenu</a>
   <header class="site-header">
     <div class="container header-inner">
+      <nav class="top-nav" aria-label="Navigation de la bibliothèque">
+        <a aria-current="page" href="index.html">Outils</a>
+        <a href="veille.html">Veille & archives</a>
+      </nav>
       <div>
         <p class="eyebrow">Répertoire personnel</p>
         <h1>Bibliothèque d’outils d’accessibilité numérique</h1>
@@ -29,9 +33,7 @@
         </label>
         <label>
           Utilité métier
-          <select id="category-filter">
-            <option value="all">Toutes</option>
-          </select>
+          <select id="category-filter"><option value="all">Toutes</option></select>
         </label>
         <label>
           Modèle
@@ -58,6 +60,7 @@
     <section aria-labelledby="legend-title" class="legend">
       <h2 id="legend-title">Comment lire les évaluations</h2>
       <p><strong>Fiabilité</strong> = confiance à accorder aux résultats dans son périmètre. <strong>Usage</strong> = fréquence d’utilisation dans les équipes accessibilité / QA / produit. Aucun outil automatique ne remplace les tests manuels.</p>
+      <p id="link-check-summary" class="sync-note">Les liens officiels sont contrôlés automatiquement par la veille GitHub Actions.</p>
     </section>
 
     <section aria-labelledby="tools-title">
@@ -71,7 +74,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Base de travail personnelle — accessibilité numérique.</p>
+      <p>Base de travail personnelle — accessibilité numérique. <a href="veille.html">Consulter la veille automatisée</a>.</p>
     </div>
   </footer>
 
