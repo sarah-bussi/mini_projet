@@ -14,6 +14,7 @@
       <nav class="top-nav" aria-label="Navigation de la bibliothèque">
         <a href="index.html">Outils</a>
         <a aria-current="page" href="veille.html">Veille & archives</a>
+        <a href="detected.html">Nouveaux outils détectés</a>
       </nav>
       <div>
         <p class="eyebrow">Veille automatisée</p>
@@ -28,6 +29,7 @@
       <h2 id="sync-title">État de la veille</h2>
       <p id="watch-status">Chargement de la dernière synchronisation…</p>
       <p>La veille automatique archive les nouveaux contenus sans supprimer les anciens. Les sources sont volontairement limitées à des acteurs reconnus pour éviter de transformer cette page en agrégateur de bruit.</p>
+      <p><strong>Suivi personnel</strong> : Favori, Lu, À lire et Important sont stockés uniquement dans ce navigateur.</p>
     </section>
 
     <section class="source-panel" aria-labelledby="sources-title">
@@ -40,7 +42,7 @@
 
     <section class="controls" aria-labelledby="archive-filters-title">
       <h2 id="archive-filters-title">Filtrer les archives</h2>
-      <div class="filters-grid">
+      <div class="filters-grid filters-grid-watch">
         <label>
           Recherche
           <input id="watch-search" type="search" placeholder="Ex. WCAG, RGAA, lecteur d’écran, axe…" />
@@ -62,6 +64,17 @@
             <option value="365">12 derniers mois</option>
           </select>
         </label>
+        <label>
+          Mon suivi
+          <select id="watch-personal-filter">
+            <option value="all">Tout afficher</option>
+            <option value="readLater">À lire</option>
+            <option value="read">Lus</option>
+            <option value="favorite">Favoris</option>
+            <option value="important">Importants</option>
+            <option value="unread">Non lus</option>
+          </select>
+        </label>
       </div>
       <p id="watch-count" class="results-count" aria-live="polite"></p>
     </section>
@@ -81,6 +94,7 @@
     </div>
   </footer>
 
+  <script src="personal-state.js"></script>
   <script src="veille.js"></script>
 </body>
 </html>
