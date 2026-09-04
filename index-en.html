@@ -1,48 +1,2128 @@
 <!doctype html>
 <html lang="en" data-theme="auto">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sarah Bussi's portfolio — digital accessibility, inclusive UX, product quality, AI and assistive technologies.">
-  <title>Sarah Bussi — Digital Accessibility, Inclusive UX & Product Quality</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="modals.css">
-</head>
-<body>
-<a class="skip-link" href="#content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="#home" aria-label="Sarah Bussi — back to homepage"><span class="brand-mark" aria-hidden="true">SB</span><span>Sarah Bussi</span></a>
-    <nav class="main-nav" aria-label="Main navigation"><ul><li><a href="#expertise">Expertise</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#international">International</a></li><li><a href="#recommandations">Recommendations</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Dark mode</span></button>
-  </div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sarah Bussi's portfolio: digital accessibility, inclusive UX, product quality, AI and assistive technologies."
+    />
+    <title>
+      Sarah Bussi - Digital Accessibility, Inclusive UX & Product Quality
+    </title>
+    <link rel="stylesheet" href="styles.css?v=20260901-3" />
+    <link rel="stylesheet" href="assets/icons/icons.css" />
+    <link rel="stylesheet" href="modals.css?v=20260904-2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="#home"
+          aria-label="Sarah Bussi, back to homepage"
+          ><span class="brand-mark" aria-hidden="true">SB</span
+          ><span class="brand-copy"
+            ><span class="brand-name">Sarah Bussi</span
+            ><span class="brand-role">Accessibility · UX · Tech</span></span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <ul role="list">
+            <li><a href="#expertise-title">Expertise</a></li>
+            <li><a href="#experience-title">Experience</a></li>
+            <li><a href="#projects-title">Projects</a></li>
+            <li><a href="#skills-title">Skills</a></li>
+            <li><a href="#international-title">International</a></li>
+            <li><a href="#recommendations-title">Recommendations</a></li>
+            <li><a href="#contact-title">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="header-tools" role="list" aria-label="Site options">
+          <li>
+            <a
+              class="button button-secondary language-switch"
+              href="index.html"
+              hreflang="fr"
+              aria-label="View portfolio in French"
+              >FR</a
+            >
+          </li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Dark mode: switch to dark mode"
+            >
+              <span aria-hidden="true">◐</span
+              ><span class="theme-toggle-label">Dark mode</span>
+            </button>
+          </li>
+          <li class="nav-toggle-item">
+            <button
+              class="nav-toggle"
+              id="nav-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open main menu"
+            >
+              <span class="nav-toggle-icon" aria-hidden="true">☰</span
+              ><span>Menu</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-<main id="content">
-<section class="hero" id="home" aria-labelledby="hero-title"><div class="container hero-grid"><div><p class="eyebrow">Digital accessibility · Inclusive UX · Product quality</p><h1 id="hero-title">Designing digital products that are accessible, usable and technically robust.</h1><p class="hero-copy">I combine digital accessibility, psychology, cognitive ergonomics and development to turn accessibility requirements into concrete product decisions — from design reviews to testing and validation.</p><div class="hero-actions"><a class="button button-primary" href="#projects">View my projects</a><a class="button button-secondary" href="cv-en.html">View my full CV</a></div><ul class="hero-meta"><li>Paris, France</li><li>Master's degree — Technology & Disability</li><li>Available from autumn 2026</li></ul></div><aside class="hero-panel" aria-label="Professional positioning"><p class="panel-kicker">My guiding principle</p><p class="panel-quote">“Start with people, understand the barriers they face, and create solutions that give everyone more choice, autonomy and room to participate.”</p><dl class="quick-facts"><div><dt>Standards</dt><dd>RGAA · WCAG · RAAM</dd></div><div><dt>Product</dt><dd>Figma · Jira · UX · QA</dd></div><div><dt>Tech</dt><dd>Web · Flutter · Kotlin · BLE · AI</dd></div></dl></aside></div></section>
+    <main id="content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <h1 class="hero-name">Sarah Bussi</h1>
+            <p class="eyebrow">
+              Digital accessibility · Inclusive UX · Product quality
+            </p>
+            <h2 class="hero-title" id="hero-title">
+              Designing digital products that are accessible, usable and
+              technically robust.
+            </h2>
+            <p class="hero-copy">
+              I combine digital accessibility, psychology, cognitive ergonomics
+              and development to turn accessibility requirements into concrete
+              product decisions, from design reviews to testing and validation.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects-title"
+                >View my projects</a
+              ><a class="button button-secondary" href="cv-en.html"
+                >View my full CV</a
+              >
+            </div>
+            <ul class="hero-meta">
+              <li class="availability">Available from autumn 2026</li>
+              <li>Paris, France</li>
+              <li>Master's degree - Technology & Disability</li>
+            </ul>
+          </div>
+          <aside class="hero-panel" aria-labelledby="positioning-title">
+            <h2 class="panel-kicker" id="positioning-title">My guiding principle</h2>
+            <p class="panel-quote">
+              “Start with people, understand the barriers they face, and create
+              solutions that give everyone more choice, autonomy and room to
+              participate.”
+            </p>
+            <dl class="quick-facts">
+              <div>
+                <dt>Standards</dt>
+                <dd>RGAA · WCAG · RAAM</dd>
+              </div>
+              <div>
+                <dt>Product</dt>
+                <dd>Figma · Jira · UX · QA</dd>
+              </div>
+              <div>
+                <dt>Tech</dt>
+                <dd>Web · Flutter · Kotlin · BLE · AI</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
 
-<section class="section" id="expertise" aria-labelledby="expertise-title"><div class="container"><div class="section-heading"><p class="eyebrow">What I bring</p><h2 id="expertise-title">A cross-functional approach to accessibility</h2><p>I work at the intersection of compliance, user experience, product quality and development.</p></div><div class="expertise-grid"><article class="expertise-card"><p class="card-number" aria-hidden="true">01</p><h3>Audits & testing</h3><p>Web and mobile audits, keyboard testing, assistive technologies, semantic structure, contrast and component analysis.</p></article><article class="expertise-card"><p class="card-number" aria-hidden="true">02</p><h3>Accessible design</h3><p>Design reviews, early identification of accessibility barriers, specifications and handoff with designers and developers.</p></article><article class="expertise-card"><p class="card-number" aria-hidden="true">03</p><h3>Product quality</h3><p>Prioritisation, actionable tickets, fix validation and regression testing.</p></article><article class="expertise-card"><p class="card-number" aria-hidden="true">04</p><h3>Prototyping & research</h3><p>AI, mobile applications, sensors, BLE and assistive technologies through a user-centred approach.</p></article></div></div></section>
+      <section class="section" id="expertise" aria-labelledby="expertise-title">
+        <div class="container">
+          <div class="expertise-intro">
+            <div class="section-heading">
+              <p class="eyebrow">What I bring</p>
+              <h2 id="expertise-title">
+                A cross-functional approach to accessibility
+              </h2>
+              <p>
+                I work at the intersection of compliance, user experience,
+                product quality and development.
+              </p>
+            </div>
+            <figure
+              class="section-wire-visual section-wire-visual--accessibility"
+              aria-hidden="true"
+            >
+              <span class="visual-chip">Multimodal interface</span
+              ><img
+                src="assets/illustration-accessibility-multimodal.webp"
+                alt=""
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <ol class="expertise-grid" role="list">
+            <li class="expertise-card">
+              <div class="expertise-card-top" aria-hidden="true">
+                <span class="card-number">01</span
+                ><svg class="wire-icon" aria-hidden="true" focusable="false">
+                  <use
+                    href="assets/icons/wire-icons.svg#icon-keyboard-focus"
+                  ></use>
+                </svg>
+              </div>
+              <h3>Audits & testing</h3>
+              <p>
+                Web and mobile audits, keyboard testing, assistive technologies,
+                semantic structure, contrast and component analysis.
+              </p>
+            </li>
+            <li class="expertise-card">
+              <div class="expertise-card-top" aria-hidden="true">
+                <span class="card-number">02</span
+                ><svg class="wire-icon" aria-hidden="true" focusable="false">
+                  <use
+                    href="assets/icons/wire-icons.svg#icon-accessibility"
+                  ></use>
+                </svg>
+              </div>
+              <h3>Accessible design</h3>
+              <p>
+                Design reviews, early identification of accessibility barriers,
+                specifications and handoff with designers and developers.
+              </p>
+            </li>
+            <li class="expertise-card">
+              <div class="expertise-card-top" aria-hidden="true">
+                <span class="card-number">03</span
+                ><svg class="wire-icon" aria-hidden="true" focusable="false">
+                  <use
+                    href="assets/icons/wire-icons.svg#icon-vision-contrast"
+                  ></use>
+                </svg>
+              </div>
+              <h3>Product quality</h3>
+              <p>
+                Prioritisation, actionable tickets, fix validation and
+                regression testing.
+              </p>
+            </li>
+            <li class="expertise-card">
+              <div class="expertise-card-top" aria-hidden="true">
+                <span class="card-number">04</span
+                ><svg class="wire-icon" aria-hidden="true" focusable="false">
+                  <use href="assets/icons/wire-icons.svg#icon-cognitive"></use>
+                </svg>
+              </div>
+              <h3>Prototyping & research</h3>
+              <p>
+                AI, mobile applications, sensors, BLE and assistive technologies
+                through a user-centred approach.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-<section class="section section-muted" id="experience" aria-labelledby="experience-title"><div class="container narrow"><div class="section-heading"><p class="eyebrow">Selected experience</p><h2 id="experience-title">Experience most relevant to my positioning</h2><p>My complete background is available in my full CV.</p></div><article class="timeline-item"><div class="timeline-meta"><p>2024 — 2026</p><p>Paris</p></div><div class="timeline-content"><h3>SNCF Connect & Tech</h3><p class="role">Digital Accessibility & Product Quality — Work-study placement</p><ul><li>Web and mobile accessibility audits using RGAA, WCAG and RAAM.</li><li>Testing with NVDA, VoiceOver, TalkBack, voice control, keyboard navigation and semantic structure.</li><li>Figma design reviews before development.</li><li>Validation of fixes, regression detection and issue follow-up.</li><li>Internal documentation, accessibility knowledge base and awareness initiatives.</li></ul></div></article><article class="timeline-item"><div class="timeline-meta"><p>2024 — 2026</p></div><div class="timeline-content"><h3>Master MIASHS — Technology & Disability</h3><p class="role">Université Paris 8</p><p>Digital accessibility, HCI, cognitive ergonomics, development, assistive technologies and experimental projects.</p></div></article><article class="timeline-item"><div class="timeline-meta"><p>2019 — 2023</p></div><div class="timeline-content"><h3>Bachelor's degree in Psychology — Neuropsychology</h3><p class="role">Université Paul-Valéry Montpellier</p><p>Background in cognition, observation, behaviour and understanding user needs.</p></div></article></div></section>
+      <section
+        class="section section-muted"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Selected experience</p>
+            <h2 id="experience-title">
+              Experience most relevant to my positioning
+            </h2>
+            <p>My complete background is available in my full CV.</p>
+          </div>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>2024 - 2026</p>
+              <p>Paris</p>
+            </div>
+            <div class="timeline-content">
+              <h3>SNCF Connect & Tech</h3>
+              <p class="role">
+                Digital Accessibility & Product Quality - Work-study placement
+              </p>
+              <ul>
+                <li>
+                  Web and mobile accessibility audits using RGAA, WCAG and RAAM.
+                </li>
+                <li>
+                  Testing with NVDA, VoiceOver, TalkBack, voice control,
+                  keyboard navigation and semantic structure.
+                </li>
+                <li>Figma design reviews before development.</li>
+                <li>
+                  Validation of fixes, regression detection and issue follow-up.
+                </li>
+                <li>
+                  Internal documentation, accessibility knowledge base and
+                  awareness initiatives.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2024 - 2026</p></div>
+            <div class="timeline-content">
+              <h3>Master MIASHS - Technology & Disability</h3>
+              <p class="role">Université Paris 8</p>
+              <p>
+                Digital accessibility, HCI, cognitive ergonomics, development,
+                assistive technologies and experimental projects.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><p>2019 - 2023</p></div>
+            <div class="timeline-content">
+              <h3>Bachelor's degree in Psychology - Neuropsychology</h3>
+              <p class="role">Université Paul-Valéry Montpellier</p>
+              <p>
+                Background in cognition, observation, behaviour and
+                understanding user needs.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-<section class="section" id="projects" aria-labelledby="projects-title"><div class="container"><div class="section-heading projects-heading"><div><p class="eyebrow">Case studies</p><h2 id="projects-title">Selected projects</h2><p>Projects combining accessibility, product thinking, research and technical prototyping.</p></div><div class="filters" role="group" aria-label="Filter projects"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-button" data-filter="a11y" aria-pressed="false">Accessibility</button><button type="button" class="filter-button" data-filter="tech" aria-pressed="false">Tech</button><button type="button" class="filter-button" data-filter="ux" aria-pressed="false">UX / HCI</button></div></div><p id="filter-status" class="sr-only" aria-live="polite"></p><div class="projects-grid">
-<article class="project-card project-featured" data-tags="a11y tech ux"><div class="project-topline"><p class="project-type">Master's thesis · AI & accessibility</p><span class="project-status">2026</span></div><h3>A11y Copilot</h3><p>An educational AI copilot designed to help product teams connect real-world situations with accessibility requirements and contextual recommendations.</p><ul class="tags"><li>Python</li><li>LLM</li><li>RAG</li><li>RGAA</li></ul></article>
-<article class="project-card" data-tags="tech ux"><div class="project-topline"><p class="project-type">Connected orthosis · rehabilitation</p><span class="project-status">2026</span></div><h3>BRA(S)VO</h3><p>An instrumented hand orthosis connected to a mobile app and therapeutic mini-games to support hand rehabilitation.</p><ul class="tags"><li>Flutter</li><li>BLE</li><li>Sensors</li><li>Health UX</li></ul></article>
-<article class="project-card" data-tags="a11y ux"><div class="project-topline"><p class="project-type">Game accessibility · audit</p><span class="project-status">2025</span></div><h3>SPY</h3><p>Accessibility audit of an educational game and design of improvements targeting motor, visual and cognitive barriers.</p><ul class="tags"><li>Expert audit</li><li>Figma</li><li>UX</li><li>GAG</li></ul></article>
-<article class="project-card" data-tags="a11y tech ux"><div class="project-topline"><p class="project-type">Accessible web · non-profit project</p><span class="project-status">2025</span></div><h3>Accessible non-profit website</h3><p>Redesign and development of a responsive website with dynamic content, administration tools and accessibility integrated from the design stage.</p><ul class="tags"><li>HTML/CSS/JS</li><li>PHP</li><li>MySQL</li><li>Accessibility</li></ul></article>
-<article class="project-card" data-tags="tech ux"><div class="project-topline"><p class="project-type">Connected device · stress & biofeedback</p><span class="project-status">2026</span></div><h3>SmartCare Watch</h3><p>Connected prototype combining physiological monitoring, mobile application, BLE and haptic feedback to explore stress regulation.</p><ul class="tags"><li>Kotlin</li><li>ESP32</li><li>BLE</li><li>Biofeedback</li></ul></article>
-<article class="project-card" data-tags="a11y ux"><div class="project-topline"><p class="project-type">Accessible serious game · HCI</p><span class="project-status">2025</span></div><h3>Braille-JP</h3><p>Design of an accessible serious game for learning Japanese braille, including personas, scenarios and prototyping.</p><ul class="tags"><li>Figma</li><li>HCI</li><li>Personas</li><li>Accessibility</li></ul></article>
-</div></div></section>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="projects-wire-divider" aria-hidden="true">
+          <img
+            src="assets/illustration-projects-divider.webp"
+            alt=""
+            width="1200"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="container">
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="eyebrow">Case studies</p>
+              <h2 id="projects-title">Selected projects</h2>
+              <p>
+                Projects combining accessibility, product thinking, research and
+                technical prototyping.
+              </p>
+            </div>
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button
+                type="button"
+                class="filter-button is-active"
+                data-filter="all"
+                aria-pressed="true"
+                aria-controls="projects-grid"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="filter-button"
+                data-filter="a11y-audit"
+                aria-pressed="false"
+                aria-controls="projects-grid"
+              >
+                Accessibility & audits
+              </button>
+              <button
+                type="button"
+                class="filter-button"
+                data-filter="health"
+                aria-pressed="false"
+                aria-controls="projects-grid"
+              >
+                Connected health
+              </button>
+              <button
+                type="button"
+                class="filter-button"
+                data-filter="ux-web"
+                aria-pressed="false"
+                aria-controls="projects-grid"
+              >
+                UX & web
+              </button>
+            </div>
+          </div>
+          <div
+            id="filter-status"
+            class="sr-only"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+          <div class="projects-grid" id="projects-grid">
+            <article
+              class="project-card project-featured"
+              data-tags="a11y-audit"
+            >
+              <div class="project-topline">
+                <p class="project-type">Master's thesis · AI & accessibility</p>
+                <span class="project-status">2026</span>
+              </div>
+              <div class="project-title-row">
+                <h3>A11y Copilot</h3>
+                <svg
+                  class="wire-icon wire-icon--accent"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use
+                    href="assets/icons/wire-icons.svg#icon-accessibility"
+                  ></use>
+                </svg>
+              </div>
+              <p>
+                An educational AI copilot designed to help product teams connect
+                real-world situations with accessibility requirements and
+                contextual recommendations.
+              </p>
+              <ul class="tags" role="list">
+                <li>Python</li>
+                <li>LLM</li>
+                <li>RAG</li>
+                <li>RGAA</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-a11y"
+                aria-haspopup="dialog"
+                aria-controls="dialog-a11y"
+              >
+                View project<span class="sr-only">: A11y Copilot</span>
+              </button>
+            </article>
+            <article class="project-card" data-tags="health">
+              <div class="project-topline">
+                <p class="project-type">Connected orthosis · rehabilitation</p>
+                <span class="project-status">2026</span>
+              </div>
+              <div class="project-title-row">
+                <h3>BRA(S)VO</h3>
+                <svg
+                  class="wire-icon wire-icon--accent"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="assets/icons/wire-icons.svg#icon-orthosis"></use>
+                </svg>
+              </div>
+              <p>
+                An instrumented hand orthosis connected to a mobile app and
+                therapeutic mini-games to support hand rehabilitation.
+              </p>
+              <ul class="tags" role="list">
+                <li>Flutter</li>
+                <li>BLE</li>
+                <li>Sensors</li>
+                <li>Health UX</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-brasvo"
+                aria-haspopup="dialog"
+                aria-controls="dialog-brasvo"
+              >
+                View project<span class="sr-only">: BRA(S)VO</span>
+              </button>
+            </article>
+            <article class="project-card" data-tags="a11y-audit">
+              <div class="project-topline">
+                <p class="project-type">Game accessibility · audit</p>
+                <span class="project-status">2025</span>
+              </div>
+              <h3>SPY</h3>
+              <p>
+                Accessibility audit of an educational game and design of
+                improvements targeting motor, visual and cognitive barriers.
+              </p>
+              <ul class="tags" role="list">
+                <li>Expert audit</li>
+                <li>Figma</li>
+                <li>UX</li>
+                <li>GAG</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-spy"
+                aria-haspopup="dialog"
+                aria-controls="dialog-spy"
+              >
+                View project<span class="sr-only">: SPY</span>
+              </button>
+            </article>
+            <article class="project-card" data-tags="ux-web">
+              <div class="project-topline">
+                <p class="project-type">
+                  Web development · back end & accessibility
+                </p>
+                <span class="project-status">Projects</span>
+              </div>
+              <h3>Three web projects</h3>
+              <p>
+                A collaborative cooking website, an accessibility exercise and
+                an anonymised full-stack non-profit prototype.
+              </p>
+              <ul class="tags" role="list">
+                <li>HTML/CSS/JS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Accessibility</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-site"
+                aria-haspopup="dialog"
+                aria-controls="dialog-site"
+              >
+                View projects<span class="sr-only">: three web projects</span>
+              </button>
+            </article>
+            <article class="project-card" data-tags="health">
+              <div class="project-topline">
+                <p class="project-type">
+                  Connected device · stress & biofeedback
+                </p>
+                <span class="project-status">2026</span>
+              </div>
+              <div class="project-title-row">
+                <h3>SmartCare Watch</h3>
+                <svg
+                  class="wire-icon wire-icon--accent"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use
+                    href="assets/icons/wire-icons.svg#icon-biofeedback"
+                  ></use>
+                </svg>
+              </div>
+              <p>
+                Connected prototype combining physiological monitoring, mobile
+                application, BLE and haptic feedback to explore stress
+                regulation.
+              </p>
+              <ul class="tags" role="list">
+                <li>Kotlin</li>
+                <li>ESP32</li>
+                <li>BLE</li>
+                <li>Biofeedback</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-smartcare"
+                aria-haspopup="dialog"
+                aria-controls="dialog-smartcare"
+              >
+                View project<span class="sr-only">: SmartCare Watch</span>
+              </button>
+            </article>
+            <article class="project-card" data-tags="ux-web">
+              <div class="project-topline">
+                <p class="project-type">Accessible serious game · HCI</p>
+                <span class="project-status">2025</span>
+              </div>
+              <h3>Braille-JP</h3>
+              <p>
+                Prototype designed with ProgAccess for learning Japanese
+                braille, with player and contributor journeys and initial
+                feedback from visually impaired users.
+              </p>
+              <ul class="tags" role="list">
+                <li>Figma</li>
+                <li>HCI</li>
+                <li>User testing</li>
+                <li>Accessibility</li>
+              </ul>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-braille"
+                aria-haspopup="dialog"
+                aria-controls="dialog-braille"
+              >
+                View project<span class="sr-only">: Braille-JP</span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="section section-muted" id="skills" aria-labelledby="skills-title"><div class="container"><div class="section-heading"><p class="eyebrow">Skills</p><h2 id="skills-title">What I use in practice</h2><p>Assistive technologies and audit tools are separated to make my hands-on experience easier to read.</p></div><div class="skills-grid skills-grid-five"><section class="skill-group"><h3>Standards & audit</h3><ul><li>RGAA 4.1</li><li>WCAG 2.1 / 2.2</li><li>EN 301 549</li><li>RAAM</li><li>Game Accessibility Guidelines</li></ul></section><section class="skill-group"><h3>Testing & assistive technologies</h3><ul><li>NVDA</li><li>VoiceOver</li><li>TalkBack</li><li>Voice Control</li><li>Keyboard navigation and activation</li><li>Zoom, magnification and reflow</li><li>Semantic structure analysis</li></ul></section><section class="skill-group"><h3>Audit tools</h3><ul><li>Fruggr</li><li>axe DevTools</li><li>Accessibility Insights</li><li>HeadingsMap</li><li>Lighthouse</li><li>Chrome DevTools</li><li>Colour Contrast Analyser</li></ul></section><section class="skill-group"><h3>Product & UX</h3><ul><li>Figma</li><li>Jira</li><li>Notion</li><li>UX Research</li><li>Cognitive ergonomics</li><li>Product quality</li><li>Agile</li></ul></section><section class="skill-group"><h3>Development & prototyping</h3><ul><li>HTML / CSS / JavaScript</li><li>React · PHP · MySQL</li><li>Flutter · Kotlin · Jetpack Compose</li><li>Arduino · ESP32 · BLE</li><li>Git · Python · LLM</li></ul></section></div></div></section>
+      <section
+        class="section section-muted"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">What I use in practice</h2>
+            <p>
+              Assistive technologies and audit tools are separated to make my
+              hands-on experience easier to read.
+            </p>
+          </div>
+          <div class="skills-grid skills-grid-five">
+            <section class="skill-group">
+              <h3>Standards & audit</h3>
+              <ul>
+                <li>RGAA 4.1</li>
+                <li>WCAG 2.1 / 2.2</li>
+                <li>EN 301 549</li>
+                <li>RAAM</li>
+                <li>Game Accessibility Guidelines</li>
+              </ul>
+            </section>
+            <section class="skill-group">
+              <h3>Testing & assistive technologies</h3>
+              <ul>
+                <li>NVDA</li>
+                <li>VoiceOver</li>
+                <li>TalkBack</li>
+                <li>Voice Control</li>
+                <li>Keyboard navigation and activation</li>
+                <li>Zoom, magnification and reflow</li>
+                <li>Semantic structure analysis</li>
+              </ul>
+            </section>
+            <section class="skill-group">
+              <h3>Audit tools</h3>
+              <ul>
+                <li>Fruggr</li>
+                <li>axe DevTools</li>
+                <li>Accessibility Insights</li>
+                <li>HeadingsMap</li>
+                <li>Lighthouse</li>
+                <li>Chrome DevTools</li>
+                <li>Colour Contrast Analyser</li>
+              </ul>
+            </section>
+            <section class="skill-group">
+              <h3>Product & UX</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Jira</li>
+                <li>Notion</li>
+                <li>UX Research</li>
+                <li>Cognitive ergonomics</li>
+                <li>Product quality</li>
+                <li>Agile</li>
+              </ul>
+            </section>
+            <section class="skill-group">
+              <h3>Development & prototyping</h3>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>React · PHP · MySQL</li>
+                <li>Flutter · Kotlin · Jetpack Compose</li>
+                <li>Arduino · ESP32 · BLE</li>
+                <li>Git · Python · LLM</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
 
-<section class="section" id="international" aria-labelledby="international-title"><div class="container"><div class="section-heading"><p class="eyebrow">International & knowledge sharing</p><h2 id="international-title">ERUA Conference — Bulgaria</h2><p>Conference delivered in Bulgaria within the ERUA framework, adding public speaking, knowledge sharing and international academic exchange to my background.</p></div><div class="highlight-card"><div><p class="highlight-kicker">ERUA · Bulgaria</p><h3>Presenting and sharing knowledge internationally</h3></div><ul><li>Public speaking</li><li>Structuring and explaining a topic clearly</li><li>Exchange with an international university audience</li></ul></div></div></section>
+      <section
+        class="section international-section"
+        id="international"
+        aria-labelledby="international-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">International & knowledge sharing</p>
+            <h2 id="international-title">
+              ERUA Workshop - New Bulgarian University
+            </h2>
+            <p>
+              On 24 October 2025, I delivered an English-language presentation
+              on the cognitive and psychological dimensions of digital
+              accessibility at New Bulgarian University in Sofia as part of the
+              international
+              <span lang="en">Digital Accessibility</span> workshop.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <div>
+              <p class="highlight-kicker">ERUA · NBU · Sofia</p>
+              <h3>
+                Cognitive and Psychological Approach to Digital Accessibility
+              </h3>
+              <p>
+                My contribution connected cognitive psychology, mental workload,
+                inclusive design and emotional impact, translating these
+                concepts into practical design strategies.
+              </p>
+              <button
+                class="project-button"
+                type="button"
+                data-dialog="dialog-erua"
+                aria-haspopup="dialog"
+                aria-controls="dialog-erua"
+              >
+                Explore my presentation at New Bulgarian University
+              </button>
+            </div>
+            <ul>
+              <li>Public speaking in English</li>
+              <li>Cognitive accessibility and user diversity</li>
+              <li>Attention, memory and mental workload</li>
+              <li>Inclusive design strategies</li>
+              <li>Exchange with an international academic audience</li>
+            </ul>
+          </div>
+        </div>
+        <div class="erua-wire-divider" aria-hidden="true">
+          <img
+            src="assets/illustration-erua-divider.svg"
+            alt=""
+            width="1200"
+            height="180"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
 
-<section class="section section-muted" id="recommandations" aria-labelledby="recommendations-title"><div class="container"><div class="section-heading"><p class="eyebrow">References</p><h2 id="recommendations-title">Recommendation letters</h2><p>Professional recommendations are available.</p></div></div></section>
+      <section
+        class="section section-muted"
+        id="recommandations"
+        aria-labelledby="recommendations-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">References</p>
+            <h2 id="recommendations-title">Recommendation letters</h2>
+            <p>Professional recommendations are available.</p>
+          </div>
+        </div>
+      </section>
 
-<section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="eyebrow">Contact</p><h2 id="contact-title">Interested in working together?</h2><p>For a digital accessibility, inclusive UX, product quality or accessibility-focused research opportunity, feel free to contact me.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:sarah.bussi2108@gmail.com">Email me</a><a class="button button-secondary" href="https://www.linkedin.com/in/sarahbussi">LinkedIn</a><a class="text-link" href="https://github.com/sarah-bussi">GitHub</a></div></div></section>
-</main>
-<footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> Sarah Bussi</p><p>Accessible portfolio · FR / EN</p></div></footer>
-<script src="script.js"></script>
-</body>
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div>
+            <p class="contact-name">Sarah Bussi</p>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Interested in working together?</h2>
+            <p>
+              For a digital accessibility, inclusive UX, product quality or
+              accessibility-focused research opportunity, feel free to contact
+              me.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <svg
+              class="contact-wire-art"
+              viewBox="0 0 360 140"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M12 72c34-24 70-24 104 0s70 24 104 0 70-24 128 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-dasharray="4 8"
+              />
+              <circle cx="12" cy="72" r="5" fill="#FF9A83" />
+              <circle cx="116" cy="72" r="5" fill="#FFD166" />
+              <circle cx="220" cy="72" r="5" fill="#FF9A83" />
+              <circle cx="348" cy="72" r="5" fill="#FFD166" />
+              <use
+                href="assets/icons/wire-icons.svg#icon-accessibility"
+                x="22"
+                y="42"
+                width="54"
+                height="54"
+              />
+              <use
+                href="assets/icons/wire-icons.svg#icon-keyboard-focus"
+                x="148"
+                y="40"
+                width="58"
+                height="58"
+              />
+              <use
+                href="assets/icons/wire-icons.svg#icon-biofeedback"
+                x="276"
+                y="42"
+                width="54"
+                height="54"
+              />
+            </svg>
+            <ul class="contact-links" role="list" aria-label="Contact links">
+              <li>
+                <a
+                  class="button button-primary"
+                  href="mailto:sarah.bussi2108@gmail.com"
+                  >Email Sarah Bussi</a
+                >
+              </li>
+              <li>
+                <a
+                  class="button button-secondary"
+                  href="https://www.linkedin.com/in/sarahbussi"
+                  >View Sarah Bussi’s LinkedIn profile</a
+                >
+              </li>
+              <li>
+                <a class="text-link" href="https://github.com/sarah-bussi"
+                  >View Sarah Bussi’s GitHub profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      class="project-dialog dialog-a11y"
+      id="dialog-a11y"
+      aria-labelledby="dialog-a11y-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Master's thesis · 2026</p>
+          <h2 id="dialog-a11y-title">A11y Copilot</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the A11y Copilot project details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Problem statement</h3>
+          <p>
+            How can product teams find the relevant accessibility references and
+            turn them into understandable recommendations without presenting an
+            LLM as a tool that can automatically declare compliance?
+          </p>
+          <h3>Approach</h3>
+          <p>
+            User research, retrieval strategy benchmarking, reranking, LLM
+            generation, deterministic safeguards and semantic review. The
+            scenarios address the needs of designers, developers and QA teams.
+          </p>
+        </section>
+        <aside>
+          <h3>Skills used</h3>
+          <ul class="modal-skills" role="list">
+            <li>RGAA</li>
+            <li>Python</li>
+            <li>RAG</li>
+            <li>Prompt engineering</li>
+            <li>LLM evaluation</li>
+            <li>User research</li>
+            <li>Product tool design</li>
+          </ul>
+        </aside>
+      </div>
+      <h3>What the project demonstrates</h3>
+      <p>
+        The ability to connect standards expertise, product needs, evaluation
+        and AI prototyping with explicit safeguards.
+      </p>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-brasvo"
+      id="dialog-brasvo"
+      aria-labelledby="dialog-brasvo-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Collaborative project · 2026</p>
+          <h2 id="dialog-brasvo-title">BRA(S)VO</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the BRA(S)VO project details"
+        >
+          ×
+        </button>
+      </div>
+
+      <div
+        class="dialog-media dialog-media-contain dialog-media-wire"
+        aria-hidden="true"
+      >
+        <span class="dialog-media-label"
+          >Connected orthosis · Sensors · BLE</span
+        >
+        <img
+          src="assets/illustration-brasvo-orthosis.webp"
+          alt=""
+          width="900"
+          height="675"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div class="dialog-grid">
+        <section>
+          <h3>Problem addressed</h3>
+          <p>
+            Hand rehabilitation can feel repetitive, demotivating and difficult
+            to continue at home. Patients receive little immediate feedback
+            about their progress, while therapists need objective measurements
+            to adapt exercises.
+          </p>
+
+          <h3>Designed solution</h3>
+          <p>
+            BRA(S)VO combines an instrumented orthosis, a Flutter application
+            and five therapeutic mini-games. The prototype targets people with
+            impaired hand mobility, particularly following a stroke or with
+            Dupuytren’s disease, together with the occupational and physical
+            therapists supporting them.
+          </p>
+
+          <h3>My contribution</h3>
+          <ul class="brasvo-task-list">
+            <li>
+              <strong>Development lead</strong> within a multidisciplinary
+              five-person team.
+            </li>
+            <li>Co-development of the Flutter application with Hocine.</li>
+            <li>Integration of sensor data into the games with Marie-Ly.</li>
+            <li>
+              Contribution to functional decisions, user testing, feedback
+              analysis and shared deliverables.
+            </li>
+          </ul>
+
+          <h3>Functional architecture</h3>
+          <ol class="dialog-findings">
+            <li>
+              <strong>Orthosis:</strong> five flex sensors measure finger range,
+              five FSR sensors measure pressure and an IMU tracks hand
+              orientation and movement.
+            </li>
+            <li>
+              <strong>Embedded electronics:</strong> an ESP32 collects
+              measurements and sends them over Bluetooth Low Energy through
+              CircuitPython firmware.
+            </li>
+            <li>
+              <strong>Application:</strong> Flutter rebuilds occasionally
+              fragmented BLE frames, extracts values, normalises them and
+              applies the thresholds used by the games.
+            </li>
+            <li>
+              <strong>Data:</strong> an eight-table local SQLite database stores
+              accounts, sessions, scores, sensor readings, appointments and
+              messages offline.
+            </li>
+          </ol>
+
+          <h3>Two complementary journeys</h3>
+          <div class="brasvo-modes">
+            <article>
+              <h4>Patient mode</h4>
+              <ul>
+                <li>Daily session and mini-games</li>
+                <li>Results, badges and progress</li>
+                <li>History and regularity</li>
+                <li>Messages and BLE connection</li>
+              </ul>
+            </article>
+            <article>
+              <h4>Therapist mode</h4>
+              <ul>
+                <li>Patient dashboard</li>
+                <li>Session planning</li>
+                <li>Game selection and adaptation</li>
+                <li>Remote monitoring and messaging</li>
+              </ul>
+            </article>
+          </div>
+
+          <h3>Five developed mini-games</h3>
+          <ul class="brasvo-games" role="list">
+            <li>
+              <strong>Catch the bubbles</strong
+              ><span
+                >FSR pressure, precision, reaction time and progressive
+                difficulty.</span
+              >
+            </li>
+            <li>
+              <strong>Digital piano</strong
+              ><span
+                >Independent flexion of five fingers, rhythm and
+                coordination.</span
+              >
+            </li>
+            <li>
+              <strong>Magic garden</strong
+              ><span
+                >A gesture sequence combining flexion, pressure, pinching and
+                inclination.</span
+              >
+            </li>
+            <li>
+              <strong>Fill the bottle</strong
+              ><span
+                >Simultaneously maintain target pressure and a flexion
+                threshold.</span
+              >
+            </li>
+            <li>
+              <strong>Balance the ball</strong
+              ><span
+                >IMU-based wrist orientation with automatically adapted
+                difficulty.</span
+              >
+            </li>
+          </ul>
+
+          <h3>User testing and limitations</h3>
+          <p>
+            A single-session test involved ten M2 students without motor
+            impairments. The prototype was generally perceived as lightweight,
+            playful and engaging, and the approximate 60-second duration per
+            level was considered appropriate. Independent donning, sensor
+            placement and long-term comfort still require improvement.
+          </p>
+          <p class="dialog-result">
+            The tests assessed an initial experience rather than clinical
+            effectiveness. Calibration, solder reliability, BLE stability and
+            incomplete accessibility features still limited full use of the
+            system: BRA(S)VO remains a university prototype, not a validated
+            medical device.
+          </p>
+        </section>
+
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Format</dt>
+              <dd>M2 project · team of 5</dd>
+            </div>
+            <div>
+              <dt>My role</dt>
+              <dd>Development lead</dd>
+            </div>
+            <div>
+              <dt>Audience</dt>
+              <dd>Patients · occupational therapists · physical therapists</dd>
+            </div>
+            <div>
+              <dt>Sensors</dt>
+              <dd>5 flex · 5 FSR · 1 IMU</dd>
+            </div>
+            <div>
+              <dt>Technologies</dt>
+              <dd>Flutter · Dart · ESP32 · CircuitPython · BLE · SQLite</dd>
+            </div>
+            <div>
+              <dt>Prototype</dt>
+              <dd>2 modes · 5 mini-games · user testing</dd>
+            </div>
+          </dl>
+
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>Flutter</li>
+            <li>Dart</li>
+            <li>BLE</li>
+            <li>ESP32</li>
+            <li>CircuitPython</li>
+            <li>Sensor integration</li>
+            <li>Frame parsing</li>
+            <li>Data normalisation</li>
+            <li>SQLite</li>
+            <li>Healthcare UX</li>
+            <li>User testing</li>
+            <li>Multidisciplinary teamwork</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="brasvo-gallery" aria-labelledby="brasvo-captures-title">
+        <h3 id="brasvo-captures-title">Selected captures</h3>
+        <p class="brasvo-gallery-intro">
+          Five visuals show the progression from the physical prototype to both
+          application journeys and the use of sensor data within two exercises.
+        </p>
+        <div class="brasvo-captures">
+          <figure class="brasvo-capture">
+            <img
+              src="assets/brasvo-prototype-demo.webp"
+              alt="Two views of the prototype: the instrumented orthosis worn on a hand and connected to a smartphone displaying the mini-games."
+              width="305"
+              height="283"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Prototype in use</strong
+              ><span
+                >Orthosis, sensors, electronics enclosure and application
+                working together.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="brasvo-capture">
+            <img
+              src="assets/brasvo-app-patient.webp"
+              alt="Two patient-mode screens: home with session and goals, followed by tracking for grip strength, range and regularity."
+              width="360"
+              height="335"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Patient journey</strong
+              ><span
+                >Access a session, understand metrics and visualise
+                progress.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="brasvo-capture">
+            <img
+              src="assets/brasvo-app-therapeute.webp"
+              alt="Two therapist-mode screens: a list of monitored patients and planning a session with several mini-games."
+              width="358"
+              height="347"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Therapist journey</strong
+              ><span>Monitor patients and prepare personalised sessions.</span>
+            </figcaption>
+          </figure>
+          <figure class="brasvo-capture">
+            <img
+              src="assets/brasvo-jeu-bulles.webp"
+              alt="Two states of the Catch the bubbles game: one bubble moving and another correctly captured within the target area."
+              width="377"
+              height="304"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Catch the bubbles</strong
+              ><span
+                >Use pressure and reaction time with progressively increasing
+                difficulty.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="brasvo-capture">
+            <img
+              src="assets/brasvo-jeu-bouteille.webp"
+              alt="Three states of the Fill the bottle game showing pressure that is too low, appropriate and then too high."
+              width="720"
+              height="299"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Fill the bottle</strong
+              ><span
+                >Turn pressure and flexion thresholds into immediate
+                feedback.</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-erua"
+      id="dialog-erua"
+      aria-labelledby="dialog-erua-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">ERUA · Sofia · 24 October 2025</p>
+          <h2 id="dialog-erua-title">Digital Accessibility Workshop</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the ERUA presentation details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Event context</h3>
+          <p>
+            The workshop was hosted by
+            <strong>New Bulgarian University (NBU)</strong> in Sofia and
+            organised by its Department of Cognitive Science and Psychology.
+            Five students from Université Paris 8 contributed to the programme
+            for an audience from NBU and the ERUA consortium.
+          </p>
+
+          <h3>My contribution</h3>
+          <p>
+            My presentation,
+            <strong
+              >Cognitive and Psychological Approach to Digital
+              Accessibility</strong
+            >, focused specifically on the cognitive, psychological and
+            emotional dimensions of using digital interfaces.
+          </p>
+
+          <ol class="dialog-findings">
+            <li>
+              <strong>Defining cognitive accessibility:</strong> considering
+              dyslexia, ADHD, autism, brain injury and intellectual disability,
+              together with everyday situations involving fatigue, stress or
+              distraction.
+            </li>
+            <li>
+              <strong
+                >Understanding cognitive diversity and mental workload:</strong
+              >
+              connecting differences in attention, memory, problem-solving and
+              learning pace with the limits of working memory.
+            </li>
+            <li>
+              <strong>Applying psychological principles:</strong> using visual
+              organisation, recognition rather than recall, motivating feedback
+              and error tolerance to support users.
+            </li>
+            <li>
+              <strong>Turning theory into design strategies:</strong> clear and
+              Easy-to-Read language, consistent navigation, structured headings,
+              explicit actions, motion control, multimodal communication, AAC
+              and distraction-free reading modes.
+            </li>
+            <li>
+              <strong>Highlighting emotional impact:</strong> showing how
+              accessible interfaces can support autonomy, competence and
+              dignity, while confusing experiences can cause stress, avoidance
+              and loss of confidence.
+            </li>
+          </ol>
+
+          <h3>Knowledge-sharing format</h3>
+          <p class="dialog-result">
+            An eight-part presentation delivered in English, combining design
+            examples, a forward-looking summary and collective discussion with
+            an international academic audience.
+          </p>
+
+          <ul
+            class="dialog-links"
+            role="list"
+            aria-label="Link to the official ERUA workshop programme"
+          >
+            <li>
+              <a
+                href="https://news.nbu.bg/bg/events/uyrkshop-digitalna-dostypnost%2191403"
+                target="_blank"
+                rel="noopener"
+                >View the official programme on the New Bulgarian University
+                website, new tab</a
+              >
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Date</dt>
+              <dd>24 October 2025</dd>
+            </div>
+            <div>
+              <dt>Host university</dt>
+              <dd>New Bulgarian University</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Sofia, Bulgaria</dd>
+            </div>
+            <div>
+              <dt>Framework</dt>
+              <dd>ERUA · Digital Accessibility workshop</dd>
+            </div>
+            <div>
+              <dt>Language</dt>
+              <dd>English</dd>
+            </div>
+          </dl>
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>Public speaking in English</li>
+            <li>Scientific communication</li>
+            <li>Cognitive accessibility</li>
+            <li>Cognitive psychology</li>
+            <li>Inclusive design</li>
+            <li>Educational structuring</li>
+            <li>Easy-to-Read and AAC</li>
+            <li>Cross-cultural exchange</li>
+          </ul>
+        </aside>
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-spy"
+      id="dialog-spy"
+      aria-labelledby="dialog-spy-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Game accessibility · 2025</p>
+          <h2 id="dialog-spy-title">SPY</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the SPY project details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Context</h3>
+          <p>
+            SPY is an open-source serious game developed by the Mocah team at
+            LIP6 to introduce primary-school learners to computational thinking
+            and programming. It includes 6 scenarios, 59 levels, a level editor
+            and a scenario editor.
+          </p>
+
+          <h3>Audit approach</h3>
+          <p>
+            As part of a three-student project, the interface was reviewed using
+            the Game Accessibility Guidelines. The assessment covered six categories of needs: motor, cognitive, visual, hearing, speech and
+            general, across the basic, intermediate and advanced recommendation
+            levels.
+          </p>
+
+          <h3>Findings and design responses</h3>
+          <ol class="dialog-findings">
+            <li>
+              <strong>Moving programming blocks:</strong> the available
+              interactions were not sufficiently explicit. We proposed visual
+              and written guidance covering alternatives including keyboard,
+              mouse, joystick and eye-control input.
+            </li>
+            <li>
+              <strong>Interaction precision:</strong> selecting and moving
+              elements could require fine motor control. We proposed adjustable
+              mouse and touchpad sensitivity.
+            </li>
+            <li>
+              <strong>Interface element size:</strong> some components were
+              small and difficult to identify or manipulate. We proposed a
+              global interface-size setting.
+            </li>
+            <li>
+              <strong>Execution speed:</strong> program actions could be
+              difficult to follow. We proposed adjustable slow playback to
+              support understanding of the relationship between an action and
+              its outcome.
+            </li>
+            <li>
+              <strong>Contrast and colour:</strong> one audited colour
+              combination had a 2.98:1 contrast ratio. We proposed alternative
+              themes with stronger contrast and a calmer palette.
+            </li>
+          </ol>
+
+          <section class="spy-gallery" aria-labelledby="spy-mockups-title">
+            <h3 id="spy-mockups-title">Selected mock-ups</h3>
+            <p class="spy-gallery-intro">
+              Three representative proposals show how the recommendations were
+              translated into concrete interface solutions.
+            </p>
+            <div class="spy-mockups">
+              <figure class="spy-mockup spy-mockup--featured">
+                <img
+                  src="assets/spy-guide-blocs.webp"
+                  alt="SPY interface with a help panel explaining movement by keyboard, mouse and eye-control input."
+                  width="459"
+                  height="318"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  <strong>Block movement guide</strong
+                  ><span
+                    >Make alternative interactions visible directly within the
+                    game.</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="spy-mockup">
+                <img
+                  src="assets/spy-taille-elements.webp"
+                  alt="Enlarged SPY game interface with larger inventory and view controls surrounding the grid."
+                  width="518"
+                  height="356"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  <strong>Interface element size</strong
+                  ><span>Provide a globally adjustable interface size.</span>
+                </figcaption>
+              </figure>
+              <figure class="spy-mockup">
+                <img
+                  src="assets/spy-contraste-renforce.webp"
+                  alt="SPY interface in black, white and yellow with strongly contrasted borders and controls."
+                  width="599"
+                  height="418"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  <strong>Enhanced contrast</strong
+                  ><span>Improve readability for people with low vision.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <h3>Project outcome</h3>
+          <p class="dialog-result">
+            The team produced an assessment matrix, a requirements report and
+            six solution mock-ups. The improvements were designed and prototyped
+            but were not implemented in the game’s source code.
+          </p>
+
+          <ul
+            class="dialog-links"
+            role="list"
+            aria-label="Links to the SPY project"
+          >
+            <li>
+              <a
+                href="https://spy.lip6.fr/index_fr.html"
+                target="_blank"
+                rel="noopener"
+                >Open the SPY game, new tab</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Mocahteam/SPY"
+                target="_blank"
+                rel="noopener"
+                >View the SPY source code, new tab</a
+              >
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Format</dt>
+              <dd>Three-student university project</dd>
+            </div>
+            <div>
+              <dt>Target audience</dt>
+              <dd>Primary-school learners</dd>
+            </div>
+            <div>
+              <dt>Technology reviewed</dt>
+              <dd>Unity · FYFY · WebGL</dd>
+            </div>
+            <div>
+              <dt>Deliverables</dt>
+              <dd>Audit · Requirements report · 6 mock-ups</dd>
+            </div>
+          </dl>
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>Expert review</li>
+            <li>Game Accessibility Guidelines</li>
+            <li>Cognitive analysis</li>
+            <li>Motor and visual accessibility</li>
+            <li>Inclusive UX</li>
+            <li>Figma</li>
+            <li>Prototyping</li>
+            <li>Recommendation writing</li>
+            <li>Teamwork</li>
+          </ul>
+        </aside>
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-site"
+      id="dialog-site"
+      aria-labelledby="dialog-site-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Web development · data · accessibility</p>
+          <h2 id="dialog-site-title">Three web projects</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the three web-project details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Three learning environments</h3>
+          <div class="web-projects">
+            <article>
+              <p class="web-project-kicker">Three-person team project</p>
+              <h4>Collaborative cooking website</h4>
+              <p>
+                A recipe application built to learn back-end and database
+                management within a collaborative project.
+              </p>
+              <ul>
+                <li>publishing and browsing recipes;</li>
+                <li>contributions that expand the catalogue;</li>
+                <li>storing content in MySQL;</li>
+                <li>adding, displaying and managing comments.</li>
+              </ul>
+            </article>
+            <article>
+              <p class="web-project-kicker">Focused practice project</p>
+              <h4>HandiSolutions</h4>
+              <p>
+                A small information website created to apply the foundations of
+                web accessibility in practice.
+              </p>
+              <ul>
+                <li>HTML structure and content hierarchy;</li>
+                <li>keyboard navigation and visible focus;</li>
+                <li>contrast and responsive presentation;</li>
+                <li>W3C, WAVE, Lighthouse and NVDA checks.</li>
+              </ul>
+            </article>
+            <article>
+              <p class="web-project-kicker">Anonymised university project</p>
+              <h4>Non-profit website prototype</h4>
+              <p>
+                A demonstrator based on real needs, presented without the
+                organisation’s name or identifiable content.
+              </p>
+              <ul>
+                <li>needs analysis and requirements definition;</li>
+                <li>public website with dynamic content;</li>
+                <li>PHP/MySQL administration area;</li>
+                <li>initial exploratory usability feedback.</li>
+              </ul>
+              <p class="web-project-status">
+                <strong>Status:</strong> the prototype was not delivered or
+                deployed and is not presented as work produced by the
+                organisation.
+              </p>
+            </article>
+          </div>
+
+          <h3>Skills consolidated</h3>
+          <ol class="dialog-findings">
+            <li>
+              <strong>Front end:</strong> HTML structure, responsive CSS and
+              JavaScript interactions.
+            </li>
+            <li>
+              <strong>Back end:</strong> PHP forms, MySQL queries and management
+              of stored content.
+            </li>
+            <li>
+              <strong>Contribution:</strong> adding, editing and moderating
+              content and comments.
+            </li>
+            <li>
+              <strong>Accessibility:</strong> semantics, keyboard use, focus,
+              contrast and dedicated testing tools.
+            </li>
+            <li>
+              <strong>Teamwork:</strong> dividing features, integrating work and
+              sharing a codebase.
+            </li>
+          </ol>
+
+          <h3>Outcome</h3>
+          <p class="dialog-result">
+            Together, these projects show a coherent progression: understanding
+            front-end development, managing data and contributions on the
+            server, then integrating accessibility and a user-centred approach.
+          </p>
+        </section>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Format</dt>
+              <dd>Three university projects</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>Cooking website built by three students</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>HTML · CSS · JavaScript · PHP · MySQL</dd>
+            </div>
+            <div>
+              <dt>Data</dt>
+              <dd>Recipes · contributions · comments · content</dd>
+            </div>
+            <div>
+              <dt>Accessibility</dt>
+              <dd>Keyboard · NVDA · W3C · WAVE · Lighthouse</dd>
+            </div>
+            <div>
+              <dt>Release</dt>
+              <dd>University prototypes, not production products</dd>
+            </div>
+          </dl>
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>Teamwork</li>
+            <li>Data modelling</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>CRUD</li>
+            <li>Comment management</li>
+            <li>Responsive design</li>
+            <li>Web accessibility</li>
+            <li>User testing</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="site-gallery" aria-labelledby="site-captures-title">
+        <h3 id="site-captures-title">Available visual</h3>
+        <p class="site-gallery-intro">
+          The HandiSolutions capture is retained. Cooking-website visuals will
+          be added after selection; non-profit prototype captures are withheld
+          to preserve its anonymity.
+        </p>
+        <div class="site-captures">
+          <figure class="site-capture site-capture--wide">
+            <img
+              src="assets/handisolutions-validation.webp"
+              alt="HandiSolutions prototype in a mobile viewport beside a Lighthouse report showing automated scores of 100."
+              width="1400"
+              height="831"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>HandiSolutions validation</strong
+              ><span
+                >Combine automated checking, code validation and manual tests; a
+                Lighthouse score alone does not prove compliance.</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-smartcare"
+      id="dialog-smartcare"
+      aria-labelledby="dialog-smartcare-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Connected device · stress & biofeedback · 2026</p>
+          <h2 id="dialog-smartcare-title">SmartCare Watch</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the SmartCare Watch project details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Problem explored</h3>
+          <p>
+            SmartCare Watch is a two-student university project exploring a
+            cardiorespiratory wristband that could identify stress states and
+            provide immediate visual and haptic biofeedback. Its primary
+            audience is people prone to stress or anxiety, particularly in study
+            and workplace contexts.
+          </p>
+
+          <h3>My contribution</h3>
+          <p>
+            I designed the interface mock-ups and developed the Android
+            application. I also worked on the BLE circuits, the simulation
+            screen, the integration of the M5StickC Plus with the BPM sensor and
+            Grove vibration motor, and then contributed to functional testing
+            and technical adjustments.
+          </p>
+
+          <h3>Prototyped architecture</h3>
+          <ol class="dialog-findings">
+            <li>
+              <strong>Acquisition:</strong> reading an I²C BPM sensor on an
+              M5StickC Plus and preparing an additional respiratory measurement.
+            </li>
+            <li>
+              <strong>Communication:</strong> a BLE service able to notify BPM
+              values to Android and receive a vibration command.
+            </li>
+            <li>
+              <strong>Interpretation:</strong> a rule-based agent classifying
+              values as relaxed, normal or stressed using cardiorespiratory
+              thresholds.
+            </li>
+            <li>
+              <strong>Biofeedback:</strong> the Flufy avatar, messages, exercise
+              recommendations, guided breathing and discreet vibration.
+            </li>
+          </ol>
+
+          <h3>What works and what remains simulated</h3>
+          <div class="smartcare-reality">
+            <article>
+              <h4>Functional prototypes</h4>
+              <ul>
+                <li>BPM sensor detection and value reading;</li>
+                <li>haptic motor activation;</li>
+                <li>
+                  Bangle.js demonstrator with heart rate, 4-4-6-2 breathing and
+                  vibration cues;
+                </li>
+                <li>
+                  Android journey: dashboard, history, emotion journal,
+                  recommendations and exercises.
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h4>Prototype limitations</h4>
+              <ul>
+                <li>
+                  partly simulated physiological data within the application;
+                </li>
+                <li>
+                  real-time Android-to-hardware synchronisation not completed;
+                </li>
+                <li>
+                  rule-based agent rather than a trained machine-learning model;
+                </li>
+                <li>
+                  real-world testing limited to simulations or one person.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <h3>Outcome</h3>
+          <p class="dialog-result">
+            The project demonstrates the feasibility of its essential components
+            and provides a coherent foundation for future end-to-end
+            integration. It remains an exploratory university prototype without
+            clinical validation or medical-device status.
+          </p>
+        </section>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Format</dt>
+              <dd>Two-student university project</dd>
+            </div>
+            <div>
+              <dt>Primary audience</dt>
+              <dd>People prone to stress or anxiety</dd>
+            </div>
+            <div>
+              <dt>Prototypes</dt>
+              <dd>M5StickC Plus · Bangle.js · Android</dd>
+            </div>
+            <div>
+              <dt>Feedback</dt>
+              <dd>Visual · haptic · guided breathing</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Non-medical proof of feasibility</dd>
+            </div>
+          </dl>
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>Figma</li>
+            <li>Kotlin</li>
+            <li>Jetpack Compose</li>
+            <li>Android</li>
+            <li>BLE</li>
+            <li>M5StickC Plus</li>
+            <li>Bangle.js</li>
+            <li>Sensors</li>
+            <li>Haptic feedback</li>
+            <li>Rule-based agent</li>
+            <li>Functional testing</li>
+            <li>Health UX</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section
+        class="smartcare-gallery"
+        aria-labelledby="smartcare-captures-title"
+      >
+        <h3 id="smartcare-captures-title">Selected captures</h3>
+        <p class="smartcare-gallery-intro">
+          Five visuals distinguish the embedded prototype, the watch
+          demonstrator and the main interactions within the Android application.
+        </p>
+        <div class="smartcare-captures">
+          <figure class="smartcare-capture">
+            <img
+              src="assets/smartcare-prototype-m5stick.webp"
+              alt="M5StickC Plus prototype worn on the wrist and connected to a heart-rate sensor and Grove vibration motor."
+              width="402"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Embedded prototype</strong
+              ><span
+                >Test BPM acquisition and haptic feedback on the available
+                hardware.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="smartcare-capture">
+            <img
+              src="assets/smartcare-bangle-respiration.webp"
+              alt="Bangle.js watch worn on the wrist, displaying the inhale phase of the breathing exercise and the heart rate."
+              width="402"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Watch demonstrator</strong
+              ><span
+                >Display BPM values and guide paced breathing with vibration
+                cues.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="smartcare-capture">
+            <img
+              src="assets/smartcare-app-dashboard.webp"
+              alt="Android dashboard with the Flufy avatar, heart rate of 107 BPM, breathing rate of 17 cycles per minute and a stable state."
+              width="359"
+              height="795"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Android dashboard</strong
+              ><span
+                >Combine measurements, the interpreted state and a concise
+                recommendation.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="smartcare-capture smartcare-capture--wide">
+            <img
+              src="assets/smartcare-app-breathing.webp"
+              alt="Guided breathing screen showing the exhale phase, remaining time and the fourth of five cycles."
+              width="378"
+              height="432"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Guided breathing</strong
+              ><span
+                >Turn a recommendation into a simple, progressive and
+                controllable action.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="smartcare-capture">
+            <img
+              src="assets/smartcare-app-agent.webp"
+              alt="Adaptive-agent screen presenting a grounding exercise recommendation, its difficulty and a button to start it."
+              width="357"
+              height="498"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Agent recommendation</strong
+              ><span
+                >Explain the exercise choice and let the user decide whether to
+                start it.</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </dialog>
+
+    <dialog
+      class="project-dialog dialog-braille"
+      id="dialog-braille"
+      aria-labelledby="dialog-braille-title"
+    >
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">Accessible serious game · HCI · 2025</p>
+          <h2 id="dialog-braille-title">Braille-JP</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close
+          aria-label="Close the Braille-JP project details"
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-grid">
+        <section>
+          <h3>Problem addressed</h3>
+          <p>
+            Braille-JP is a two-person project developed with Emilien Monet and
+            supported by the ProgAccess association. It addresses the shortage
+            of playful, accessible resources through which visually impaired
+            people can learn braille in a foreign language, with an initial
+            version focused on Japanese.
+          </p>
+
+          <h3>Audiences and journeys</h3>
+          <div class="braille-paths">
+            <article>
+              <h4>Player journey</h4>
+              <ul>
+                <li>discover the alphabet, numbers and punctuation;</li>
+                <li>complete memorisation, reading and writing exercises;</li>
+                <li>track progress and personalise the experience;</li>
+                <li>use a tutorial, help and accessibility settings.</li>
+              </ul>
+            </article>
+            <article>
+              <h4>Contributor journey</h4>
+              <ul>
+                <li>add a language without needing to program;</li>
+                <li>provide characters, transcriptions and pronunciations;</li>
+                <li>supply audio files and language-specific rules;</li>
+                <li>submit content to the community for validation.</li>
+              </ul>
+            </article>
+          </div>
+
+          <h3>Design approach</h3>
+          <ol class="dialog-findings">
+            <li>
+              <strong>User-centred design:</strong> player and contributor
+              personas, detailed scenarios and evaluation criteria.
+            </li>
+            <li>
+              <strong>Association collaboration:</strong> progress reviews with
+              ProgAccess approximately every two weeks.
+            </li>
+            <li>
+              <strong>Initial feedback:</strong> a version shared with around
+              ten visually impaired users, mainly association members.
+            </li>
+            <li>
+              <strong>Ergonomic references:</strong> Bastien & Scapin criteria
+              and Nielsen heuristics for guidance, workload, feedback and error
+              prevention.
+            </li>
+          </ol>
+
+          <h3>Planned accessibility</h3>
+          <p>
+            The prototype targets a desktop application usable with JAWS, NVDA
+            or VoiceOver and a braille display. Navigation is designed for the
+            keyboard, with contextual help through F1, volume adjustment through
+            F2 and F3, voice messages, audio feedback and explicit shortcuts.
+          </p>
+
+          <h3>Status and limitations</h3>
+          <p>
+            The report documents an interactive mock-up and an initial beta
+            version. Feedback was open and exploratory; the available time did
+            not allow several testing cycles or a longitudinal evaluation of
+            learning outcomes.
+          </p>
+
+          <h3>Outcome</h3>
+          <p class="dialog-result">
+            Braille-JP establishes the foundations of an accessible, modular
+            serious game open to community contribution. The project validates
+            the usage direction and navigation architecture but should not be
+            presented as a completed product.
+          </p>
+        </section>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="dialog-facts">
+            <div>
+              <dt>Format</dt>
+              <dd>Two-person HCI project</dd>
+            </div>
+            <div>
+              <dt>Partner</dt>
+              <dd>ProgAccess</dd>
+            </div>
+            <div>
+              <dt>Primary audience</dt>
+              <dd>Visually impaired people</dd>
+            </div>
+            <div>
+              <dt>First language</dt>
+              <dd>Japanese braille</dd>
+            </div>
+            <div>
+              <dt>Target platform</dt>
+              <dd>Desktop application</dd>
+            </div>
+            <div>
+              <dt>Initial feedback</dt>
+              <dd>Around 10 users</dd>
+            </div>
+          </dl>
+          <h3>Skills demonstrated</h3>
+          <ul class="modal-skills" role="list">
+            <li>HCI</li>
+            <li>Figma</li>
+            <li>Personas</li>
+            <li>Scenarios</li>
+            <li>User testing</li>
+            <li>Screen readers</li>
+            <li>Braille displays</li>
+            <li>Keyboard navigation</li>
+            <li>Bastien & Scapin</li>
+            <li>Nielsen heuristics</li>
+            <li>Agile method</li>
+            <li>Inclusive design</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="braille-gallery" aria-labelledby="braille-captures-title">
+        <h3 id="braille-captures-title">Selected captures</h3>
+        <p class="braille-gallery-intro">
+          The architecture and two screens show how help, keyboard shortcuts and
+          exercises are organised within the prototype.
+        </p>
+        <div class="braille-captures">
+          <figure class="braille-capture braille-capture--wide">
+            <img
+              src="assets/braillejp-architecture.webp"
+              alt="Braille-JP navigation diagram connecting the welcome screen, main menu, training modules, explanations and F1 contextual help."
+              width="1075"
+              height="773"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Navigation architecture</strong
+              ><span
+                >Provide consistent return paths, available help and short
+                journeys to the exercises.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="braille-capture">
+            <img
+              src="assets/braillejp-welcome.webp"
+              alt="Dark Braille-JP welcome screen introducing the beta, keyboard controls, volume adjustment and the button to begin."
+              width="929"
+              height="649"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Welcome and onboarding</strong
+              ><span
+                >Immediately explain keyboard operation and access to
+                help.</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="braille-capture">
+            <img
+              src="assets/braillejp-menu.webp"
+              alt="Dark Braille-JP main menu offering the braille table, three training activities, explanations and a resource about Japanese braille."
+              width="904"
+              height="640"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Main menu</strong
+              ><span
+                >Bring learning, practice activities and resources together in a
+                linear list.</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year">2026</span>
+          <strong class="footer-name">Sarah Bussi</strong>
+        </p>
+        <p>Accessible portfolio · FR / EN</p>
+      </div>
+    </footer>
+    <script src="testimonials-config.js?v=20260822-1"></script>
+    \n
+    <script src="script.js?v=20260901-4"></script>
+    \n
+    <script src="testimonials.js?v=20260822-1"></script>
+  </body>
 </html>

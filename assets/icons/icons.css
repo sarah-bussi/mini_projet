@@ -1,0 +1,35 @@
+.wire-icon {
+  inline-size: var(--wire-icon-size, 2.25rem);
+  block-size: var(--wire-icon-size, 2.25rem);
+  color: var(--text, #12312B);
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.wire-icon--small {
+  --wire-icon-size: 1.5rem;
+}
+
+.wire-icon--large {
+  --wire-icon-size: 3rem;
+}
+
+.wire-icon--accent {
+  color: var(--accent-strong, #A83F32);
+}
+
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.icon-label .wire-icon {
+  pointer-events: none;
+}
+
+@media (prefers-contrast: more) {
+  .wire-icon {
+    filter: contrast(1.15);
+  }
+}

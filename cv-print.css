@@ -1,36 +1,43 @@
 @media print {
   @page {
     size: A4;
-    margin: 12mm;
+    margin: 8mm 10mm;
   }
 
   html {
-    font-size: 10.5pt;
+    font-size: 8.4pt !important;
+  }
+
+  body,
+  .cv-page,
+  main,
+  .hero,
+  .section,
+  .section-muted,
+  .container,
+  .container.narrow,
+  .narrow {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
   }
 
   body {
-    background: #fff !important;
-    color: #111 !important;
+    margin: 0 !important;
+    line-height: 1.25 !important;
   }
 
   .site-header,
   .site-footer,
   .cv-actions,
-  .skip-link {
+  .skip-link,
+  .theme-toggle,
+  .eyebrow,
+  .section-heading > p,
+  .experience-skills,
+  .timeline-content > h4,
+  #references .cv-recommendations {
     display: none !important;
-  }
-
-  main,
-  .section,
-  .hero,
-  .section-muted {
-    background: #fff !important;
-    color: #111 !important;
-  }
-
-  .hero,
-  .section {
-    padding: 10mm 0 !important;
   }
 
   .container,
@@ -42,16 +49,241 @@
     padding: 0 !important;
   }
 
+  .hero,
+  .section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .hero {
+    padding-bottom: 3mm !important;
+    border-bottom: 1px solid #777 !important;
+  }
+
+  .section {
+    padding-top: 3.5mm !important;
+  }
+
+  .section-heading {
+    margin: 0 0 2mm !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  ol {
+    color: #000 !important;
+  }
+
+  h1 {
+    font-size: 18pt !important;
+    margin: 0 0 1mm !important;
+  }
+
+  h2 {
+    font-size: 11.5pt !important;
+    margin: 0 0 2mm !important;
+    padding-bottom: 1mm !important;
+    border-bottom: 1px solid #777 !important;
+  }
+
+  h3 {
+    font-size: 9.5pt !important;
+    margin: 0 0 0.6mm !important;
+  }
+
+  p {
+    margin: 0 0 1mm !important;
+  }
+
+  ul,
+  ol {
+    margin-top: 0.6mm !important;
+    margin-bottom: 1mm !important;
+    padding-left: 4mm !important;
+  }
+
+  li {
+    margin-bottom: 0.45mm !important;
+  }
+
   a {
-    color: #111 !important;
+    color: #000 !important;
     text-decoration: none !important;
+  }
+
+  .hero-copy,
+  .role,
+  .cv-project-meta,
+  .cv-project-summary,
+  .cv-project-highlights {
+    color: #000 !important;
+  }
+
+  .hero .hero-copy:last-of-type {
+    max-width: 100% !important;
+    margin-bottom: 1.5mm !important;
+  }
+
+  .cv-contact ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5mm 4mm !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1.5mm 0 2mm !important;
+  }
+
+  .cv-contact li {
+    margin: 0 !important;
+  }
+
+  .timeline-item {
+    display: grid !important;
+    grid-template-columns: 24mm 1fr !important;
+    gap: 4mm !important;
+    padding: 1.8mm 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-top: 1px solid #ccc !important;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  .timeline-item:first-of-type {
+    border-top: 0 !important;
+  }
+
+  .timeline-meta,
+  .timeline-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .timeline-meta p {
+    font-size: 7.4pt !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5mm !important;
+  }
+
+  .timeline-content .role {
+    font-size: 8pt !important;
+    margin-bottom: 0.7mm !important;
+  }
+
+  .experience-list {
+    margin: 0.5mm 0 0 !important;
+  }
+
+  #formation .skills-grid,
+  #competences .skills-grid,
+  #languages .skills-grid,
+  #langues .skills-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.5mm 5mm !important;
+  }
+
+  #competences .skill-group ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 2mm !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0.5mm 0 0 !important;
+  }
+
+  #competences .skill-group li {
+    display: inline !important;
+    margin: 0 !important;
+  }
+
+  #competences .skill-group li:not(:last-child)::after {
+    content: " ·";
+  }
+
+  .projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2mm 5mm !important;
+  }
+
+  .project-card {
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .project-card:nth-of-type(n + 5) {
+    display: none !important;
+  }
+
+  .project-card .cv-project-highlights {
+    padding-left: 4mm !important;
+    margin-bottom: 0.5mm !important;
+  }
+
+  .project-card .tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 1.5mm !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0.5mm 0 0 !important;
+  }
+
+  .project-card .tags li {
+    display: inline !important;
+    margin: 0 !important;
+    font-size: 7.4pt !important;
+  }
+
+  .project-card .tags li:not(:last-child)::after {
+    content: " ·";
+  }
+
+  .skill-group {
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  #references {
+    padding-top: 3mm !important;
+  }
+
+  #references .section-heading {
+    margin-bottom: 0 !important;
+  }
+
+  #references .section-heading::after {
+    content: "Recommandations professionnelles vérifiées disponibles sur le portfolio en ligne.";
+    display: block;
+    margin-top: 1mm;
+    font-size: 8pt;
+    color: #000;
+  }
+
+  html[lang="en"] #references .section-heading::after {
+    content: "Verified professional recommendations are available on the online portfolio.";
   }
 
   .timeline-item,
   .project-card,
-  .skill-group,
-  article,
-  section.skill-group {
+  .skill-group {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -63,25 +295,9 @@
     page-break-after: avoid;
   }
 
-  .projects-grid,
-  .skills-grid {
-    gap: 8mm !important;
-  }
-
-  .project-card,
-  .skill-group {
-    box-shadow: none !important;
-    border: 1px solid #999 !important;
-  }
-
-  .eyebrow,
-  .role,
-  .hero-copy,
-  .section-heading p {
-    color: #222 !important;
-  }
-
-  .tags {
+  #references,
+  #languages,
+  #langues {
     break-inside: avoid;
   }
 }
