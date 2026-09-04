@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: feature/a11y-tools-library
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,4 +35,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh accessibility watch"
-          git push origin HEAD:feature/a11y-tools-library
+          git push origin "HEAD:${GITHUB_REF_NAME}"
