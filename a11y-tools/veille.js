@@ -6,7 +6,9 @@
   const category = document.getElementById('watch-category');
   const source = document.getElementById('watch-source');
   const period = document.getElementById('watch-period');
+  const personalFilter = document.getElementById('watch-personal-filter');
   const count = document.getElementById('watch-count');
+  const personal = window.A11Y_PERSONAL;
   let archive = [];
   let sources = [];
 
@@ -14,6 +16,8 @@
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
+
+  const itemId = (item) => item.url || `${item.source}:${item.title}`;
 
   const fillSelect = (select, values) => {
     values.forEach((value) => {
@@ -33,16 +37,25 @@
     });
   };
 
+  const matchesPersonal = (item, selected) => {
+    if (selected === 'all') return true;
+    const id = itemId(item);
+    if (selected === 'unread') return !personal?.isActive('watch', id, 'read');
+    return personal?.isActive('watch', id, selected);
+  };
+
   const render = () => {
     const q = normalize(search.value);
     const selectedCategory = category.value;
     const selectedSource = source.value;
+    const selectedPersonal = personalFilter?.value || 'all';
     const days = period.value === 'all' ? null : Number(period.value);
     const threshold = days ? Date.now() - days * 86400000 : null;
 
     const filtered = archive
       .filter((item) => selectedCategory === 'all' || item.category === selectedCategory)
       .filter((item) => selectedSource === 'all' || item.source === selectedSource)
+      .filter((item) => matchesPersonal(item, selectedPersonal))
       .filter((item) => !threshold || !item.published || new Date(item.published).getTime() >= threshold)
       .filter((item) => !q || normalize([item.title, item.summary, item.source, item.category].join(' ')).includes(q))
       .sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0));
@@ -59,6 +72,8 @@
       const article = document.createElement('article');
       article.className = 'watch-card';
       if (item.pinned) article.dataset.pinned = 'true';
+      const id = itemId(item);
+      if (personal?.isActive('watch', id, 'read')) article.dataset.read = 'true';
       const date = item.published ? new Date(item.published).toLocaleDateString('fr-FR') : 'Date non fournie';
       article.innerHTML = `
         <div class="watch-card-top">
@@ -69,6 +84,7 @@
         <p class="watch-meta">${item.source}</p>
         ${item.summary ? `<p class="watch-summary">${item.summary}</p>` : ''}
       `;
+      if (personal) article.append(personal.createControls('watch', id, ['favorite', 'read', 'readLater', 'important']));
       grid.append(article);
     });
 
@@ -96,7 +112,8 @@
       if (status) status.textContent = 'Impossible de charger les données de veille pour le moment.';
     });
 
-  [search, category, source, period].forEach((control) => {
+  [search, category, source, period, personalFilter].filter(Boolean).forEach((control) => {
     control.addEventListener(control === search ? 'input' : 'change', render);
   });
+  window.addEventListener('a11y-personal-state-change', render);
 })();
