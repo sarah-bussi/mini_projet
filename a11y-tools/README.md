@@ -18,10 +18,13 @@ La base privilégie les outils reconnus et utilisés à l’international, mais 
 - `styles.css` : mise en page responsive et accessible
 - `veille.html` / `veille.js` / `veille-data.json` : veille et archives avec suivi de lecture
 - `detected.html` / `detected.js` / `detected-tools.json` : file des nouveaux outils détectés automatiquement
+- `brief.html` / `brief.js` / `weekly-brief.json` : synthèse IA hebdomadaire
 - `sources.json` : sources de référence suivies
 - `link-status.json` : état du contrôle automatique des liens
 - `../scripts/update_a11y_watch.py` : collecte de veille + détection GitHub + vérification des liens
+- `../scripts/generate_a11y_weekly_brief.py` : synthèse hebdomadaire assistée par IA
 - `../.github/workflows/a11y-watch.yml` : automatisation quotidienne
+- `../.github/workflows/a11y-weekly-ai.yml` : brief IA chaque dimanche + déclenchement manuel
 
 ## Suivi personnel
 
@@ -33,19 +36,36 @@ Le suivi est conservé dans `localStorage` du navigateur, sans compte ni serveur
 
 Ces états sont personnels au navigateur utilisé. Ils ne sont pas synchronisés entre plusieurs appareils.
 
-## Nouveaux outils détectés
+## Veille quotidienne
 
-La veille interroge quotidiennement GitHub avec plusieurs recherches ciblées sur l’accessibilité. Les dépôts récents sont ajoutés dans `detected-tools.json` uniquement s’ils ne correspondent pas déjà à un dépôt présent dans la bibliothèque principale.
+La veille collecte les flux configurés, interroge GitHub pour repérer de nouveaux projets d’accessibilité et vérifie les liens des outils. Cette partie ne nécessite aucune clé OpenAI.
 
-Cette file est un radar, pas une recommandation. Avant promotion dans la bibliothèque principale, vérifier notamment :
+La file des nouveaux outils est un radar, pas une recommandation. Avant promotion dans la bibliothèque principale, vérifier notamment : maintenance récente, documentation, périmètre réel, dépendances, compatibilité, activité du dépôt, crédibilité des résultats et intérêt métier concret.
 
-- maintenance récente
-- documentation
-- périmètre réel
-- dépendances et compatibilité
-- activité du dépôt
-- crédibilité des résultats
-- intérêt métier concret
+## Brief IA hebdomadaire
+
+Le brief IA analyse uniquement les données déjà collectées dans `veille-data.json` et `detected-tools.json`. Il produit une synthèse courte en français : actualités prioritaires, impact métier, outils à tester/surveiller et actions proposées. Les URL de sortie sont limitées aux URL présentes dans les données sources.
+
+Le modèle par défaut est `gpt-5-mini`. Il peut être remplacé via la variable d’environnement `OPENAI_BRIEF_MODEL`.
+
+### Configuration nécessaire
+
+Dans GitHub :
+
+1. ouvrir `Settings`
+2. `Secrets and variables`
+3. `Actions`
+4. `New repository secret`
+5. nom : `OPENAI_API_KEY`
+6. valeur : une clé API OpenAI
+
+La clé ne doit jamais être ajoutée dans les fichiers du dépôt ni dans le JavaScript envoyé au navigateur.
+
+Le workflow `.github/workflows/a11y-weekly-ai.yml` est prévu chaque dimanche à `07:23 UTC` et peut aussi être lancé manuellement avec `workflow_dispatch`.
+
+Important : les workflows GitHub Actions planifiés par `schedule` s’exécutent depuis la branche par défaut. Tant que ce projet reste uniquement sur `feature/a11y-tools-library`, utiliser le lancement manuel pour tester. Après fusion du workflow dans `main`, la planification hebdomadaire pourra fonctionner normalement.
+
+Si `OPENAI_API_KEY` est absent, le script termine proprement sans écraser le dernier brief généré.
 
 ## Champs suivis pour chaque outil
 
