@@ -53,6 +53,7 @@ function formatRealCopilotResult(data: any) {
 async function callRealCopilot(payload: Record<string, unknown>) {
   const backendUrl = (Deno.env.get("A11Y_BACKEND_URL") || "").replace(/\/$/, "");
   if (!backendUrl) return null;
+  const backendKey = Deno.env.get("A11Y_BACKEND_KEY") || "";
 
   const inputMode = String(payload.inputMode || "situation");
   const details = String(payload.details || "");
@@ -77,7 +78,10 @@ async function callRealCopilot(payload: Record<string, unknown>) {
 
   const response = await fetch(`${backendUrl}/analyze`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      ...(backendKey ? { "X-Workspace-Key": backendKey } : {}),
+    },
     body: JSON.stringify(requestBody),
   });
 
@@ -87,11 +91,7 @@ async function callRealCopilot(payload: Record<string, unknown>) {
     return json({ error: "a11y_backend_error", details: data }, 502);
   }
 
-  return json({
-    text: formatRealCopilotResult(data),
-    engine: "a11y-copilot-retrieval",
-    raw: data,
-  });
+  return json({ text: formatRealCopilotResult(data), engine: "a11y-copilot-retrieval", raw: data });
 }
 
 function buildPrompt(mode: string, payload: Record<string, unknown>) {
