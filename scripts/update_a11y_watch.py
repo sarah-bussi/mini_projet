@@ -12,11 +12,14 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TOOLS_FILE = ROOT / "a11y-tools" / "tools-data.js"
+TOOLS_FILES = [
+    ROOT / "a11y-tools" / "tools-data.js",
+    ROOT / "a11y-tools" / "tools-extra-data.js",
+]
 SOURCES_FILE = ROOT / "a11y-tools" / "sources.json"
 WATCH_FILE = ROOT / "a11y-tools" / "veille-data.json"
 LINK_FILE = ROOT / "a11y-tools" / "link-status.json"
-USER_AGENT = "a11y-tools-watch/1.0 (+https://github.com/sarah-bussi/mini_projet)"
+USER_AGENT = "a11y-tools-watch/1.1 (+https://github.com/sarah-bussi/mini_projet)"
 TIMEOUT = 15
 MAX_ITEMS = 500
 
@@ -80,9 +83,11 @@ def classify(title, summary, fallback):
     text = f"{title} {summary}".lower()
     rules = [
         ("Normes & standards", ["wcag", "aria", "wai-aria", "standard", "guideline", "wcag-em", "pdf/ua"]),
+        ("Jeux vidéo", ["game accessibility", "gaming accessibility", "xbox accessibility", "unity accessibility", "unreal accessibility"]),
+        ("Médias accessibles", ["caption", "subtitle", "audio description", "media accessibility", "webvtt", "video accessibility"]),
         ("Outils & automatisation", ["axe", "wave", "tool", "scanner", "extension", "automation", "automated", "ai ", "mcp"]),
         ("Lecteurs d’écran & AT", ["screen reader", "nvda", "jaws", "voiceover", "talkback", "assistive technolog"]),
-        ("Développement", ["developer", "development", "code", "javascript", "react", "android", "ios", "mobile"]),
+        ("Développement", ["developer", "development", "code", "javascript", "react", "android", "ios", "mobile", "flutter"]),
         ("Design & UX", ["design", "ux", "user experience", "figma", "colour", "color", "contrast"]),
         ("Réglementation & conformité", ["law", "legal", "eaa", "section 508", "ada", "compliance", "regulation", "act "]),
         ("Recherche & tendances", ["survey", "million", "research", "study", "report", "trend"]),
@@ -97,7 +102,6 @@ def parse_feed(xml_bytes, source):
     root = ET.fromstring(xml_bytes)
     items = []
 
-    # RSS / RDF-like feeds
     for item in root.findall(".//item"):
         title = first_text(item, ["title"])
         url = first_text(item, ["link"])
@@ -117,7 +121,6 @@ def parse_feed(xml_bytes, source):
     if items:
         return items
 
-    # Atom
     match = re.match(r"\{([^}]+)\}", root.tag)
     ns = match.group(1) if match else "http://www.w3.org/2005/Atom"
     for entry in root.findall(f".//{{{ns}}}entry"):
@@ -167,8 +170,12 @@ def collect_watch():
 
 
 def extract_tool_urls():
-    text = TOOLS_FILE.read_text(encoding="utf-8")
-    urls = re.findall(r"url\s*:\s*['\"](https?://[^'\"]+)['\"]", text)
+    urls = []
+    for tool_file in TOOLS_FILES:
+        if not tool_file.exists():
+            continue
+        text = tool_file.read_text(encoding="utf-8")
+        urls.extend(re.findall(r"url\s*:\s*['\"](https?://[^'\"]+)['\"]", text))
     return sorted(set(urls))
 
 
