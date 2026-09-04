@@ -23,85 +23,157 @@ async function getUser(token: string) {
   return response.json();
 }
 
-function mapRole(value: unknown) {
-  const role = String(value || "").toLowerCase();
-  if (role.includes("design")) return "designer";
-  if (role.includes("dev")) return "developer";
-  return "qa";
+function normativeTarget(productType: string, technology: string) {
+  const tech = technology.toLowerCase();
+  const mobileTech = ["flutter", "kotlin", "jetpack", "android", "ios", "swift", "react native"];
+  return productType === "mobile" || mobileTech.some((item) => tech.includes(item)) ? "RAAM" : "RGAA";
 }
 
-function mapOutputType(value: unknown) {
-  const output = String(value || "");
-  if (["handoff", "technical_fix", "test_scenario"].includes(output)) return output;
-  return "test_scenario";
+async function groqChat(apiKey: string, model: string, messages: Array<{role: string; content: string}>, jsonMode = false) {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model,
+      temperature: 0.12,
+      ...(jsonMode ? { response_format: { type: "json_object" } } : {}),
+      messages,
+    }),
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(`groq_${response.status}`);
+  return String(data?.choices?.[0]?.message?.content || "").trim();
 }
 
-function formatRealCopilotResult(data: any) {
-  const refs = Array.isArray(data?.retained_references) && data.retained_references.length
-    ? data.retained_references.join(", ")
-    : (data?.normative_reference || "Aucune référence retenue avec certitude");
-  const assumptions = Array.isArray(data?.assumptions) && data.assumptions.length
-    ? data.assumptions.map((item: string) => `- ${item}`).join("\n")
-    : "- Aucune hypothèse explicitée.";
-  const sources = Array.isArray(data?.sources) && data.sources.length
-    ? data.sources.map((source: any) => `- ${source.document || source.source_type || "Source"} · ${source.reference || "référence non précisée"}${source.verified ? " · vérifiée" : ""}`).join("\n")
-    : "- Aucune source retournée.";
-
-  return `1. Diagnostic\n${data?.problem_summary || ""}\n\n2. Références retenues\nRéférentiel : ${data?.normative_standard || ""}\n${refs}\n${sources}\n\n3. Références écartées ou secondaires\n${assumptions}\n\n4. Impact utilisateur\n${data?.impact || ""}\n\n5. Correction proposée\n${data?.recommendation || ""}\nStatut : ${data?.recommendation_status || ""}\n\n6. Comment vérifier\n${data?.verification || ""}\n\n7. Informations manquantes\nConfiance documentaire : ${data?.confidence ?? "non renseignée"}\nConfiance d’observation : ${data?.observation_confidence || "non renseignée"}\nÉvidence normative : ${data?.normative_evidence || "non renseignée"}\n\n8. Limites et validation humaine\nValidation humaine requise : ${data?.human_validation_required === false ? "non" : "oui"}.\nGarde-fou : ${data?.guardrail_status || "non renseigné"}.`;
-}
-
-async function callRealCopilot(payload: Record<string, unknown>) {
-  const backendUrl = (Deno.env.get("A11Y_BACKEND_URL") || "").replace(/\/$/, "");
-  if (!backendUrl) return null;
-  const backendKey = Deno.env.get("A11Y_BACKEND_KEY") || "";
-
-  const inputMode = String(payload.inputMode || "situation");
-  const details = String(payload.details || "");
-  const verifiedFacts = String(payload.verifiedFacts || "");
-  const context = [details, verifiedFacts ? `Informations déjà vérifiées : ${verifiedFacts}` : ""]
+function baseSearchQuery(payload: Record<string, unknown>) {
+  return [payload.component, payload.problem, payload.details, payload.verifiedFacts, payload.technology]
+    .map((value) => String(value || "").trim())
     .filter(Boolean)
-    .join("\n\n");
+    .join(" ")
+    .slice(0, 3500);
+}
 
-  const requestBody = {
-    role: mapRole(payload.role),
-    component: String(payload.component || payload.technology || "Composant à analyser"),
-    context: context || null,
-    technology: String(payload.technology || "") || null,
-    problem: String(payload.problem || ""),
-    output_type: mapOutputType(payload.outputType),
-    input_mode: inputMode,
-    code: inputMode === "code" ? details || null : null,
-    language: "fr",
-    screenshot_data_url: null,
-    screenshot_name: null,
-  };
+async function expandSearchQuery(apiKey: string, model: string, payload: Record<string, unknown>, standard: string) {
+  const base = baseSearchQuery(payload);
+  if (!base) return "accessibilité";
+  try {
+    const text = await groqChat(apiKey, model, [
+      {
+        role: "system",
+        content: "Tu prépares uniquement une requête de recherche documentaire. Retourne une seule ligne courte de mots et expressions utiles, sans référence normative, sans explication, sans markdown.",
+      },
+      {
+        role: "user",
+        content: `Référentiel: ${standard}\nTechnologie: ${payload.technology || ""}\nComposant: ${payload.component || ""}\nSituation: ${payload.problem || ""}\nDétails: ${payload.details || ""}`,
+      },
+    ]);
+    return `${base} ${text}`.slice(0, 5000);
+  } catch {
+    return base;
+  }
+}
 
-  const response = await fetch(`${backendUrl}/analyze`, {
+async function retrieveCorpus(standard: string, query: string) {
+  const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
+  const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
+  if (!supabaseUrl || !serviceKey) throw new Error("supabase_service_missing");
+
+  const response = await fetch(`${supabaseUrl}/rest/v1/rpc/search_workspace_a11y`, {
     method: "POST",
     headers: {
+      apikey: serviceKey,
+      Authorization: `Bearer ${serviceKey}`,
       "Content-Type": "application/json",
-      ...(backendKey ? { "X-Workspace-Key": backendKey } : {}),
     },
-    body: JSON.stringify(requestBody),
+    body: JSON.stringify({ p_standard: standard, p_query: query, p_limit: 10 }),
   });
-
-  const data = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    console.error("A11Y backend error", response.status, data);
-    return json({ error: "a11y_backend_error", details: data }, 502);
-  }
-
-  return json({ text: formatRealCopilotResult(data), engine: "a11y-copilot-retrieval", raw: data });
+  const data = await response.json().catch(() => []);
+  if (!response.ok) throw new Error(`retrieval_${response.status}`);
+  return Array.isArray(data) ? data : [];
 }
 
-function buildPrompt(mode: string, payload: Record<string, unknown>) {
-  if (mode === "cv") {
-    return `Adapte un CV à une offre sans inventer d'expérience, compétence, date ou résultat.\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nOffre: ${payload.offer || ""}\nÀ mettre en avant: ${payload.focus || ""}\nBase factuelle autorisée: ${payload.facts || ""}\nRéponds en français avec: angle de candidature, résumé ciblé, compétences prioritaires, reformulations fondées uniquement sur les faits fournis, mots-clés à intégrer. Signale toute information manquante au lieu de l'inventer.`;
+function candidateContext(candidates: any[]) {
+  return candidates.slice(0, 10).map((item, index) => ({
+    rank: index + 1,
+    reference: String(item.reference || ""),
+    type: String(item.reference_type || ""),
+    document: String(item.document || ""),
+    page: item.page ?? null,
+    score: Number(item.score || 0),
+    content: String(item.content || "").slice(0, 1800),
+  }));
+}
+
+function safeReferences(value: unknown, allowed: Set<string>) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item: any) => ({ reference: String(item?.reference || "").trim(), reason: String(item?.reason || "").trim() }))
+    .filter((item) => item.reference && allowed.has(item.reference));
+}
+
+function formatGroundedResult(result: any, standard: string, candidates: any[]) {
+  const allowed = new Set(candidates.map((item) => String(item.reference || "")));
+  const retained = safeReferences(result?.retainedReferences, allowed);
+  const secondary = safeReferences(result?.secondaryReferences, allowed);
+  const retainedText = retained.length
+    ? retained.map((item) => `- ${standard} ${item.reference} — ${item.reason || "référence retenue"}`).join("\n")
+    : `Aucune référence ${standard} retenue avec suffisamment de certitude.`;
+  const secondaryText = secondary.length
+    ? secondary.map((item) => `- ${standard} ${item.reference} — ${item.reason || "piste secondaire"}`).join("\n")
+    : "Aucune référence secondaire retenue.";
+
+  return `1. Diagnostic\n${result?.diagnostic || "Analyse insuffisante."}\n\n2. Références retenues\n${retainedText}\n\n3. Références écartées ou secondaires\n${secondaryText}\n\n4. Impact utilisateur\n${result?.userImpact || "À vérifier avec les usages et technologies d’assistance concernés."}\n\n5. Correction proposée\nExigence / objectif normatif :\n${result?.normativeRequirement || "À confirmer à partir des références retenues."}\n\nRecommandation technique :\n${result?.technicalRecommendation || "Aucune recommandation technique fiable sans contexte supplémentaire."}\n\n6. Comment vérifier\n${result?.verification || "Prévoir une vérification humaine et des tests adaptés."}\n\n7. Informations manquantes\n${result?.missingInformation || "Aucune information manquante explicitée."}\n\n8. Limites et validation humaine\n${result?.limits || "Cette analyse ne constitue pas un verdict de conformité."}\nValidation humaine obligatoire.\nNiveau de confiance : ${result?.confidence || "non renseigné"}.`;
+}
+
+async function runWorkspaceCopilot(apiKey: string, model: string, payload: Record<string, unknown>) {
+  const standard = normativeTarget(String(payload.productType || "web"), String(payload.technology || ""));
+  const searchQuery = await expandSearchQuery(apiKey, model, payload, standard);
+  const candidates = await retrieveCorpus(standard, searchQuery);
+
+  if (!candidates.length) {
+    return {
+      text: `1. Diagnostic\nLe corpus ${standard} du workspace n’a retourné aucune référence suffisamment proche.\n\n2. Références retenues\nAucune.\n\n3. Références écartées ou secondaires\nAucune.\n\n4. Impact utilisateur\nÀ déterminer après clarification de la situation.\n\n5. Correction proposée\nAucune correction normative proposée sans référence documentaire.\n\n6. Comment vérifier\nReformuler la situation, préciser le composant et les comportements observés, puis relancer la recherche.\n\n7. Informations manquantes\nContexte technique et comportement observé à préciser.\n\n8. Limites et validation humaine\nAucun verdict de conformité. Validation humaine obligatoire.`,
+      engine: "workspace-post-evaluation-retrieval",
+      standard,
+      candidates: [],
+    };
   }
-  if (mode === "copilot") {
-    return `Le backend expérimental A11Y Copilot n'est pas configuré. Analyse prudemment ce problème d'accessibilité sans inventer de référence normative.\nSituation: ${payload.problem || ""}\nTechnologie: ${payload.technology || ""}\nDétails: ${payload.details || ""}\nRéponds en huit sections : Diagnostic, Références retenues, Références écartées ou secondaires, Impact utilisateur, Correction proposée, Comment vérifier, Informations manquantes, Limites et validation humaine.`;
-  }
-  return "";
+
+  const context = candidateContext(candidates);
+  const prompt = {
+    productType: payload.productType || "web",
+    technology: payload.technology || "",
+    role: payload.role || "",
+    outputType: payload.outputType || "test_scenario",
+    inputMode: payload.inputMode || "situation",
+    component: payload.component || "",
+    problem: payload.problem || "",
+    details: payload.details || "",
+    verifiedFacts: payload.verifiedFacts || "",
+    normativeStandard: standard,
+    retrievedCandidates: context,
+  };
+
+  const content = await groqChat(apiKey, model, [
+    {
+      role: "system",
+      content: `Tu es la version workspace post-évaluation d’A11Y Copilot. Tu dois rester entièrement ancré dans les références documentaires fournies. Tu ne dois JAMAIS inventer une référence ${standard}, une API de framework ou un fait non fourni. Une référence présente dans les candidats n’est pas automatiquement applicable. Distingue exigence normative et recommandation technique. Pour une capture, ne conclus pas sur des propriétés non observables visuellement. La validation humaine est toujours obligatoire. Réponds UNIQUEMENT en JSON valide avec exactement les clés: diagnostic, retainedReferences, secondaryReferences, userImpact, normativeRequirement, technicalRecommendation, verification, missingInformation, limits, confidence. retainedReferences et secondaryReferences sont des tableaux d’objets {reference, reason}; chaque reference doit provenir exactement des candidats fournis. confidence vaut Faible, Moyen ou Élevé.`,
+    },
+    { role: "user", content: JSON.stringify(prompt) },
+  ], true);
+
+  const result = JSON.parse(content);
+  return {
+    text: formatGroundedResult(result, standard, candidates),
+    engine: "workspace-post-evaluation-retrieval",
+    standard,
+    searchQuery,
+    candidates: context,
+  };
+}
+
+function buildCvPrompt(payload: Record<string, unknown>) {
+  return `Adapte un CV à une offre sans inventer d'expérience, compétence, date ou résultat.\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nOffre: ${payload.offer || ""}\nÀ mettre en avant: ${payload.focus || ""}\nBase factuelle autorisée: ${payload.facts || ""}\nRéponds en français avec: angle de candidature, résumé ciblé, compétences prioritaires, reformulations fondées uniquement sur les faits fournis, mots-clés à intégrer. Signale toute information manquante au lieu de l'inventer.`;
 }
 
 Deno.serve(async (request) => {
@@ -114,38 +186,28 @@ Deno.serve(async (request) => {
   const user = await getUser(token);
   if (!user?.id || user.id !== ALLOWED_USER_ID) return json({ error: "forbidden" }, 403);
 
-  const body = await request.json().catch(() => ({}));
-  const mode = String(body.mode || "");
-  const payload = body.payload || {};
-
-  if (mode === "copilot") {
-    const realResult = await callRealCopilot(payload);
-    if (realResult) return realResult;
-  }
-
   const apiKey = Deno.env.get("AI_API_KEY") || "";
   const model = Deno.env.get("AI_MODEL") || "openai/gpt-oss-20b";
   if (!apiKey) return json({ error: "ai_not_configured" }, 503);
 
-  const prompt = buildPrompt(mode, payload);
-  if (!prompt) return json({ error: "unsupported_mode" }, 400);
+  const body = await request.json().catch(() => ({}));
+  const mode = String(body.mode || "");
+  const payload = body.payload || {};
 
-  const provider = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model,
-      temperature: 0.15,
-      messages: [
-        { role: "system", content: "Réponds de façon structurée et n'invente pas de faits, références ou expériences." },
-        { role: "user", content: prompt },
-      ],
-    }),
-  });
-
-  const data = await provider.json().catch(() => ({}));
-  if (!provider.ok) return json({ error: "ai_provider_error" }, 502);
-  const text = data?.choices?.[0]?.message?.content || "";
-  if (!text) return json({ error: "empty_ai_response" }, 502);
-  return json({ text, model, engine: mode === "copilot" ? "llm-fallback" : "groq" });
+  try {
+    if (mode === "copilot") {
+      return json(await runWorkspaceCopilot(apiKey, model, payload));
+    }
+    if (mode === "cv") {
+      const text = await groqChat(apiKey, model, [
+        { role: "system", content: "N’invente aucune expérience, compétence, date ou résultat. Signale ce qui manque." },
+        { role: "user", content: buildCvPrompt(payload) },
+      ]);
+      return json({ text, model, engine: "groq" });
+    }
+    return json({ error: "unsupported_mode" }, 400);
+  } catch (error) {
+    console.error("workspace-ai", error);
+    return json({ error: "workspace_ai_failed", detail: String(error?.message || error) }, 502);
+  }
 });
