@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "name": "W3C Web Accessibility Initiative (WAI)",
+      "site": "https://www.w3.org/WAI/",
+      "feed": "https://www.w3.org/WAI/feed.xml",
+      "category": "Normes & standards",
+      "description": "Source de référence pour WCAG, ARIA, WCAG-EM, tutoriels et actualités WAI."
+    },
+    {
+      "name": "WebAIM",
+      "site": "https://webaim.org/",
+      "feed": "https://webaim.org/blog/feed/",
+      "category": "Pratique métier & recherche",
+      "description": "Articles, études d’usage, WAVE, ressources pédagogiques et retours de terrain."
+    },
+    {
+      "name": "Deque",
+      "site": "https://www.deque.com/blog/",
+      "feed": "https://www.deque.com/blog/category/accessibility-in-the-news/feed/",
+      "category": "Outils, conformité & actualité",
+      "description": "Actualités, pratiques de développement, conformité et outils basés sur axe."
+    },
+    {
+      "name": "TPGi",
+      "site": "https://www.tpgi.com/",
+      "feed": "https://www.tpgi.com/feed/",
+      "category": "Audit, AT & expertise",
+      "description": "Articles techniques sur l’audit, les technologies d’assistance, ARIA et les pratiques professionnelles."
+    },
+    {
+      "name": "DesignGouv / Numérique écoresponsable et accessible",
+      "site": "https://design.numerique.gouv.fr/",
+      "feed": "",
+      "category": "RGAA & service public",
+      "description": "Références françaises autour du RGAA, de l’accessibilité des services publics et de la conception numérique."
+    },
+    {
+      "name": "Référentiel général d’amélioration de l’accessibilité — RGAA",
+      "site": "https://accessibilite.numerique.gouv.fr/",
+      "feed": "",
+      "category": "RGAA & réglementation",
+      "description": "Référentiel officiel français, critères, méthode technique et cadre réglementaire."
+    },
+    {
+      "name": "The A11Y Project",
+      "site": "https://www.a11yproject.com/",
+      "feed": "",
+      "category": "Bonnes pratiques",
+      "description": "Checklist et ressources pratiques pour concevoir et développer de manière accessible."
+    },
+    {
+      "name": "ARIA Authoring Practices Guide",
+      "site": "https://www.w3.org/WAI/ARIA/apg/",
+      "feed": "",
+      "category": "Composants & ARIA",
+      "description": "Patterns, comportements clavier et exemples de widgets accessibles."
+    },
+    {
+      "name": "MDN Accessibility",
+      "site": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "feed": "",
+      "category": "Développement",
+      "description": "Documentation développeur sur HTML, ARIA, CSS, formulaires et API d’accessibilité."
+    }
+  ]
+}
