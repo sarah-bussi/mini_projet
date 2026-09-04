@@ -6,8 +6,10 @@
   const domainFilter = document.getElementById('domain-filter');
   const priceFilter = document.getElementById('price-filter');
   const priorityFilter = document.getElementById('priority-filter');
+  const personalFilter = document.getElementById('personal-filter');
   const count = document.getElementById('results-count');
   const linkSummary = document.getElementById('link-check-summary');
+  const personal = window.A11Y_PERSONAL;
   let linkStatus = {};
 
   const normalize = (value) => String(value || '')
@@ -19,7 +21,6 @@
     if (Array.isArray(tool.domains) && tool.domains.length) return tool.domains;
     const text = normalize([tool.name, tool.category, tool.type, tool.scope].join(' '));
     const domains = new Set();
-
     if (/android|ios|mobile|flutter|xcode|talkback|voiceover/.test(text)) domains.add('Mobile');
     if (/responsive|viewport|reflow|device mode/.test(text)) domains.add('Responsive web');
     if (/jeu|game|gaming|unity|unreal|xbox|ablegamers/.test(text)) domains.add('Jeux vidéo');
@@ -33,9 +34,7 @@
     return [...domains];
   };
 
-  tools.forEach((tool) => {
-    tool._domains = inferDomains(tool);
-  });
+  tools.forEach((tool) => { tool._domains = inferDomains(tool); });
 
   const categories = [...new Set(tools.map((tool) => tool.category))].sort((a, b) => a.localeCompare(b, 'fr'));
   categories.forEach((category) => {
@@ -54,12 +53,10 @@
   });
 
   const stars = (value) => '★'.repeat(value) + '☆'.repeat(5 - value);
-
   const knownOpenSource = new Set([
     'axe-core', 'Pa11y', 'Storybook Accessibility Addon', 'eslint-plugin-jsx-a11y',
     'HTML_CodeSniffer', 'Screen Reader Testing Library', 'Accessibility Insights for Web',
   ]);
-
   const isOpenSource = (tool) => Boolean(tool.openSource || knownOpenSource.has(tool.name));
 
   const brandSlugs = {
@@ -94,22 +91,17 @@
     const slug = brandSlugs[brand];
     if (slug) return `https://cdn.simpleicons.org/${slug}`;
     if (!tool.url) return '';
-    try {
-      const origin = new URL(tool.url).origin;
-      return `${origin}/favicon.ico`;
-    } catch {
-      return '';
-    }
+    try { return `${new URL(tool.url).origin}/favicon.ico`; } catch { return ''; }
   };
+
+  const toolId = (tool) => tool.url || tool.name;
 
   const linkLabel = (url) => {
     const status = linkStatus[url];
     if (!status) return '';
     const labels = {
-      ok: 'Lien vérifié',
-      redirected: 'Lien redirigé mais valide',
-      blocked: 'Vérification bloquée par le site',
-      broken: 'Lien à vérifier',
+      ok: 'Lien vérifié', redirected: 'Lien redirigé mais valide',
+      blocked: 'Vérification bloquée par le site', broken: 'Lien à vérifier',
     };
     return `<span class="link-status link-status-${status.state}">${labels[status.state] || 'État inconnu'}${status.code ? ` · HTTP ${status.code}` : ''}</span>`;
   };
@@ -120,12 +112,14 @@
     const domain = domainFilter?.value || 'all';
     const price = priceFilter.value;
     const priority = priorityFilter.value;
+    const selectedPersonal = personalFilter?.value || 'all';
 
     const filtered = tools
       .filter((tool) => category === 'all' || tool.category === category)
       .filter((tool) => domain === 'all' || tool._domains.includes(domain))
       .filter((tool) => price === 'all' || normalize(tool.price).includes(normalize(price)))
       .filter((tool) => priority === 'all' || tool.priority === priority)
+      .filter((tool) => selectedPersonal === 'all' || personal?.isActive('tool', toolId(tool), selectedPersonal))
       .filter((tool) => !q || normalize([
         tool.name, tool.category, tool.type, tool.scope, tool.bestFor,
         tool.limits, tool.price, tool.priority, tool._domains.join(' '),
@@ -134,8 +128,7 @@
       .sort((a, b) => {
         const priorityOrder = { Indispensable: 0, 'Très utile': 1, Complémentaire: 2 };
         return (priorityOrder[a.priority] ?? 9) - (priorityOrder[b.priority] ?? 9)
-          || b.usage - a.usage
-          || b.reliability - a.reliability
+          || b.usage - a.usage || b.reliability - a.reliability
           || a.name.localeCompare(b.name, 'fr');
       });
 
@@ -176,15 +169,17 @@
       article.querySelector('.tool-logo')?.addEventListener('error', (event) => {
         event.currentTarget.closest('.tool-logo-wrap')?.remove();
       }, { once: true });
+      if (personal) article.append(personal.createControls('tool', toolId(tool), ['favorite', 'important', 'toTest']));
       grid.append(article);
     });
 
     count.textContent = `${filtered.length} outil${filtered.length > 1 ? 's' : ''} affiché${filtered.length > 1 ? 's' : ''} sur ${tools.length}.`;
   };
 
-  [search, categoryFilter, domainFilter, priceFilter, priorityFilter].filter(Boolean).forEach((control) => {
+  [search, categoryFilter, domainFilter, priceFilter, priorityFilter, personalFilter].filter(Boolean).forEach((control) => {
     control.addEventListener(control === search ? 'input' : 'change', render);
   });
+  window.addEventListener('a11y-personal-state-change', render);
 
   fetch('link-status.json', { cache: 'no-store' })
     .then((response) => response.ok ? response.json() : null)
