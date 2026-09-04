@@ -5,7 +5,7 @@
       "site": "https://www.w3.org/WAI/",
       "feed": "https://www.w3.org/WAI/feed.xml",
       "category": "Normes & standards",
-      "description": "Source de référence pour WCAG, ARIA, WCAG-EM, tutoriels et actualités WAI."
+      "description": "Source de référence pour WCAG, ARIA, WCAG-EM, médias accessibles, tutoriels et actualités WAI."
     },
     {
       "name": "WebAIM",
@@ -19,7 +19,7 @@
       "site": "https://www.deque.com/blog/",
       "feed": "https://www.deque.com/blog/category/accessibility-in-the-news/feed/",
       "category": "Outils, conformité & actualité",
-      "description": "Actualités, pratiques de développement, conformité et outils basés sur axe."
+      "description": "Actualités, pratiques de développement, conformité et outils axe pour web et mobile."
     },
     {
       "name": "TPGi",
@@ -62,6 +62,90 @@
       "feed": "",
       "category": "Développement",
       "description": "Documentation développeur sur HTML, ARIA, CSS, formulaires et API d’accessibilité."
+    },
+    {
+      "name": "Android Accessibility",
+      "site": "https://developer.android.com/guide/topics/ui/accessibility",
+      "feed": "",
+      "category": "Mobile Android",
+      "description": "Documentation officielle Android pour implémentation, tests, services d’accessibilité et bonnes pratiques."
+    },
+    {
+      "name": "Apple Accessibility for Developers",
+      "site": "https://developer.apple.com/accessibility/",
+      "feed": "",
+      "category": "Mobile iOS / macOS",
+      "description": "Documentation Apple sur VoiceOver, Voice Control, Switch Control, Dynamic Type et APIs d’accessibilité."
+    },
+    {
+      "name": "Flutter Accessibility",
+      "site": "https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility",
+      "feed": "",
+      "category": "Flutter",
+      "description": "Références officielles Flutter pour sémantique, lecteurs d’écran, text scaling et tests d’accessibilité."
+    },
+    {
+      "name": "Xbox Accessibility Guidelines",
+      "site": "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines",
+      "feed": "",
+      "category": "Jeux vidéo",
+      "description": "Guidelines Microsoft/Xbox destinées aux designers, développeurs et testeurs de jeux."
+    },
+    {
+      "name": "Game Accessibility Guidelines",
+      "site": "https://gameaccessibilityguidelines.com/",
+      "feed": "",
+      "category": "Jeux vidéo",
+      "description": "Référence internationale de bonnes pratiques d’accessibilité pour les jeux vidéo."
+    },
+    {
+      "name": "AbleGamers APX",
+      "site": "https://ablegamers.org/apx/",
+      "feed": "",
+      "category": "Jeux vidéo & recherche utilisateur",
+      "description": "Accessible Player Experiences : patterns issus de la recherche et de l’expérience de joueurs handicapés."
+    },
+    {
+      "name": "Unity Accessibility",
+      "site": "https://docs.unity3d.com/Manual/Accessibility.html",
+      "feed": "",
+      "category": "Jeux vidéo & moteur",
+      "description": "APIs et documentation Unity pour développer des expériences compatibles avec les réglages et technologies d’assistance."
+    },
+    {
+      "name": "Unreal Engine Accessibility",
+      "site": "https://dev.epicgames.com/documentation/unreal-engine/designing-ui-for-accessibility-in-unreal-engine",
+      "feed": "",
+      "category": "Jeux vidéo & moteur",
+      "description": "Documentation Unreal Engine sur UI accessible, lecteurs d’écran et text-to-speech."
+    },
+    {
+      "name": "W3C Accessible Audio and Video",
+      "site": "https://www.w3.org/WAI/media/av/",
+      "feed": "",
+      "category": "Médias accessibles",
+      "description": "Ressources W3C sur sous-titres, transcription, audiodescription et lecteurs multimédia accessibles."
+    },
+    {
+      "name": "Able Player",
+      "site": "https://ableplayer.github.io/ableplayer/",
+      "feed": "",
+      "category": "Médias accessibles",
+      "description": "Lecteur HTML5 accessible open source et documentation sur captions, transcript et audiodescription."
+    },
+    {
+      "name": "DAISY Consortium / Inclusive Publishing",
+      "site": "https://inclusivepublishing.org/",
+      "feed": "",
+      "category": "EPUB & édition accessible",
+      "description": "Références et outils pour l’accessibilité des publications numériques, dont Ace by DAISY."
+    },
+    {
+      "name": "W3C EPUBCheck",
+      "site": "https://github.com/w3c/epubcheck",
+      "feed": "",
+      "category": "EPUB & publications",
+      "description": "Validateur open source officiel de conformité EPUB maintenu pour le W3C par DAISY."
     }
   ]
 }
