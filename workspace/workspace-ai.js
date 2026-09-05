@@ -22,9 +22,26 @@
       },
       body: JSON.stringify({ mode, payload }),
     });
+
     const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data?.error || 'request_failed');
+    if (!response.ok) {
+      const detail = String(data?.detail || data?.error || 'request_failed');
+      const error = new Error(detail);
+      error.status = response.status;
+      throw error;
+    }
     return data;
+  };
+
+  const humanError = (error) => {
+    const message = String(error?.message || '');
+    const status = Number(error?.status || 0);
+    if (message === 'session_missing' || status === 401) return 'Ta session a expiré. Reconnecte-toi au workspace.';
+    if (status === 429 || message.startsWith('groq_429')) return 'La limite IA temporaire est atteinte. Attends quelques secondes puis relance l’analyse.';
+    if (message.startsWith('retrieval_')) return 'Le corpus accessibilité n’a pas pu être interrogé. Réessaie dans un instant.';
+    if (message.startsWith('groq_400')) return 'La réponse IA structurée n’a pas pu être générée. Réessaie ou précise davantage la situation.';
+    if (message === 'endpoint_missing') return 'Le service IA du workspace n’est pas configuré.';
+    return 'La génération a échoué. Réessaie dans quelques instants.';
   };
 
   const bindForm = (formId, statusId, resultId, mode) => {
@@ -33,21 +50,29 @@
     const result = document.getElementById(resultId);
     if (!form || !status || !result) return;
 
+    let pending = false;
+
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
+      if (pending) return;
+
+      const submitButton = form.querySelector('button[type="submit"]');
       const payload = Object.fromEntries(new FormData(form).entries());
-      status.textContent = 'Génération en cours…';
+      pending = true;
+      if (submitButton) submitButton.disabled = true;
+      status.textContent = mode === 'copilot' ? 'Analyse en cours…' : 'Génération en cours…';
       result.textContent = '';
+
       try {
         const data = await callAI(mode, payload);
         result.textContent = data.text || data.result || JSON.stringify(data, null, 2);
         status.textContent = 'Terminé.';
+        if (typeof result.focus === 'function') result.focus();
       } catch (error) {
-        if (String(error?.message || '') === 'session_missing') {
-          status.textContent = 'Session absente. Reconnecte-toi au workspace.';
-          return;
-        }
-        status.textContent = 'La génération a échoué. Vérifie la fonction Supabase et la clé API IA.';
+        status.textContent = humanError(error);
+      } finally {
+        pending = false;
+        if (submitButton) submitButton.disabled = false;
       }
     });
   };
