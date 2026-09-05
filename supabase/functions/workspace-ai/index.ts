@@ -172,8 +172,31 @@ async function runWorkspaceCopilot(apiKey: string, model: string, payload: Recor
   };
 }
 
-function buildCvPrompt(payload: Record<string, unknown>) {
-  return `Adapte un CV à une offre sans inventer d'expérience, compétence, date ou résultat.\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nOffre: ${payload.offer || ""}\nÀ mettre en avant: ${payload.focus || ""}\nBase factuelle autorisée: ${payload.facts || ""}\nRéponds en français avec: angle de candidature, résumé ciblé, compétences prioritaires, reformulations fondées uniquement sur les faits fournis, mots-clés à intégrer. Signale toute information manquante au lieu de l'inventer.`;
+function stripHtml(html: string) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function loadCvSource(source: string) {
+  const file = source === "fr" ? "cv.html" : "cv-en.html";
+  const rawUrl = `https://raw.githubusercontent.com/sarah-bussi/mini_projet/main/${file}`;
+  const response = await fetch(rawUrl, { headers: { "User-Agent": "workspace-ai" } });
+  if (!response.ok) throw new Error(`cv_source_${response.status}`);
+  const html = await response.text();
+  return { file, text: stripHtml(html).slice(0, 30000) };
+}
+
+function buildCvPrompt(payload: Record<string, unknown>, cvText: string, cvFile: string) {
+  const outputLanguage = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
+  return `Tu adaptes un CV existant à une offre d'emploi sans inventer aucune expérience, compétence, date, certification, outil, responsabilité ni résultat.\n\nCV source: ${cvFile}\nCONTENU FACTUEL DU CV SOURCE:\n${cvText}\n\nOFFRE CIBLE:\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nDescription: ${payload.offer || ""}\nÉléments à mettre en avant: ${payload.focus || ""}\nLangue de sortie: ${outputLanguage}.\n\nRègles impératives:\n- Utilise exclusivement des faits présents dans le CV source.\n- Tu peux reformuler, condenser, réordonner et prioriser, mais pas ajouter de nouveau fait.\n- N'invente jamais de nombre, niveau d'expertise, année d'expérience ou technologie absente du CV.\n- Si un prérequis de l'offre n'est pas démontré dans le CV, classe-le dans \"Écarts à ne pas inventer\".\n- Conserve les dates et employeurs exactement lorsqu'ils apparaissent dans le CV source.\n- Optimise les mots-clés ATS uniquement lorsqu'ils sont réellement justifiés par le contenu du CV.\n\nRéponds avec les sections suivantes:\n1. Verdict d'adéquation\n2. Titre professionnel recommandé\n3. Résumé professionnel ciblé\n4. Compétences à remonter en priorité\n5. Expériences à réordonner et reformulations proposées\n6. Projets / formation à mettre en avant\n7. Mots-clés ATS justifiés\n8. Écarts à ne pas inventer\n9. Version finale du contenu du CV, prête à réinjecter dans le template existant.`;
 }
 
 Deno.serve(async (request) => {
@@ -199,11 +222,13 @@ Deno.serve(async (request) => {
       return json(await runWorkspaceCopilot(apiKey, model, payload));
     }
     if (mode === "cv") {
+      const source = String(payload.cvSource || "en") === "fr" ? "fr" : "en";
+      const cv = await loadCvSource(source);
       const text = await groqChat(apiKey, model, [
-        { role: "system", content: "N’invente aucune expérience, compétence, date ou résultat. Signale ce qui manque." },
-        { role: "user", content: buildCvPrompt(payload) },
+        { role: "system", content: "Tu es un CV editor strictement factuel. Tu n'inventes rien et tu signales explicitement tout écart entre une offre et le CV source." },
+        { role: "user", content: buildCvPrompt(payload, cv.text, cv.file) },
       ]);
-      return json({ text, model, engine: "groq" });
+      return json({ text, model, engine: "groq", source: cv.file });
     }
     return json({ error: "unsupported_mode" }, 400);
   } catch (error) {
