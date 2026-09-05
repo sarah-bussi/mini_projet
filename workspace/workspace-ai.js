@@ -67,6 +67,60 @@
     ordered.forEach((article) => container.appendChild(article));
   };
 
+  const simplifyContact = (doc) => {
+    const contact = doc.querySelector('.cv-contact');
+    if (!contact) return;
+    contact.querySelectorAll('a').forEach((link) => {
+      const href = String(link.getAttribute('href') || '');
+      if (href.startsWith('tel:')) link.textContent = '+33 7 70 43 15 04';
+      else if (href.startsWith('mailto:')) link.textContent = 'sarah.bussi2108@gmail.com';
+      else if (href.includes('linkedin.com')) link.textContent = 'linkedin.com/in/sarahbussi';
+      else if (href.includes('github.com')) link.closest('li')?.remove();
+    });
+  };
+
+  const makeOnePage = (doc) => {
+    doc.body.classList.add('application-cv');
+    doc.querySelector('.site-header')?.remove();
+    doc.querySelector('.site-footer')?.remove();
+    doc.querySelectorAll('.cv-actions, .skip-link, .theme-toggle').forEach((node) => node.remove());
+
+    doc.querySelectorAll('link[rel="stylesheet"]').forEach((node) => node.remove());
+    const css = doc.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'workspace/cv-application.css';
+    doc.head.appendChild(css);
+
+    const viewport = doc.querySelector('meta[name="viewport"]');
+    if (!viewport) {
+      const meta = doc.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1';
+      doc.head.appendChild(meta);
+    }
+
+    simplifyContact(doc);
+
+    const experienceArticles = Array.from(doc.querySelectorAll('#experience article.timeline-item'));
+    experienceArticles.forEach((article, index) => {
+      const list = article.querySelector('ul.experience-list');
+      if (!list) return;
+      const items = Array.from(list.querySelectorAll('li'));
+      const max = index === 0 ? 5 : 1;
+      items.slice(max).forEach((item) => item.remove());
+    });
+
+    const projectArticles = Array.from(doc.querySelectorAll('#projects article.project-card'));
+    projectArticles.slice(6).forEach((article) => article.remove());
+    projectArticles.forEach((article) => {
+      article.querySelector('.cv-project-highlights')?.remove();
+    });
+
+    doc.querySelectorAll('.section-heading > p').forEach((node) => node.remove());
+    doc.querySelectorAll('.experience-skills').forEach((node) => node.remove());
+    doc.querySelector('#references')?.remove();
+  };
+
   const buildAdaptedCv = async (payload, patch) => {
     const sourceFile = payload.cvSource === 'fr' ? '../cv.html' : '../cv-en.html';
     const response = await fetch(sourceFile, { cache: 'no-store' });
@@ -91,7 +145,8 @@
       if (summary) summary.textContent = patch.summary;
     }
 
-    const skillsList = doc.querySelector('#skills ul');
+    const skillsRoot = doc.querySelector('#skills, #competences');
+    const skillsList = skillsRoot?.querySelector('ul');
     replaceList(doc, skillsList, patch?.prioritySkills);
 
     const experienceArticles = Array.from(doc.querySelectorAll('#experience article.timeline-item'));
@@ -117,10 +172,7 @@
     });
     reorderArticles(projectArticles[0]?.parentElement, projectArticles, patch?.projectOrder);
 
-    const printButton = doc.getElementById('cv-print');
-    if (printButton) printButton.closest('.cv-actions')?.remove();
-    doc.querySelector('.site-header')?.remove();
-
+    makeOnePage(doc);
     return '<!doctype html>\n' + doc.documentElement.outerHTML;
   };
 
@@ -139,6 +191,7 @@
     if (!section || !frame) throw new Error('preview_missing');
     adaptedCvHtml = await buildAdaptedCv(payload, data.cvPatch);
     frame.srcdoc = adaptedCvHtml;
+    frame.style.minHeight = '1123px';
     section.hidden = false;
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
