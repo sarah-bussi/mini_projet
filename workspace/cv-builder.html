@@ -23,7 +23,7 @@
     <section class="hero-panel">
       <p class="eyebrow">Candidatures</p>
       <h1>CV Builder</h1>
-      <p>Pars d’un CV existant du portfolio et adapte-le à une offre sans inventer d’expérience, de compétence, de date ou de résultat.</p>
+      <p>Pars d’un CV existant, adapte son contenu à une offre, prévisualise la vraie mise en page puis imprime ou enregistre la variante en PDF. Le CV public du portfolio n’est jamais modifié.</p>
     </section>
 
     <section class="panel">
@@ -57,16 +57,26 @@
         </label>
 
         <label>Éléments à mettre en avant
-          <textarea name="focus" placeholder="Ex. WCAG, audits, accompagnement design/dev, QA, technologies d’assistance…"></textarea>
+          <textarea name="focus" placeholder="Facultatif — laisse vide pour que le builder priorise lui-même les éléments démontrés par ton CV."></textarea>
         </label>
 
-        <button class="primary-button" type="submit">Adapter le CV existant</button>
+        <button class="primary-button" type="submit">Adapter et prévisualiser le CV</button>
         <p id="cv-status" class="status-line" aria-live="polite"></p>
       </form>
 
       <section aria-labelledby="cv-result-title">
-        <h2 id="cv-result-title">Proposition</h2>
-        <div id="cv-result" class="result-box">La version adaptée apparaîtra ici.</div>
+        <h2 id="cv-result-title">Contrôle de l’adaptation</h2>
+        <div id="cv-result" class="result-box">L’analyse de l’adaptation apparaîtra ici.</div>
+      </section>
+
+      <section id="cv-preview-section" aria-labelledby="cv-preview-title" hidden>
+        <h2 id="cv-preview-title">CV adapté — aperçu avant candidature</h2>
+        <p>Cette variante est générée uniquement dans ton workspace. Elle ne remplace pas le CV générique visible sur le portfolio.</p>
+        <div class="hero-actions">
+          <button id="cv-print-adapted" class="primary-button" type="button">Imprimer / enregistrer en PDF</button>
+          <button id="cv-open-adapted" type="button">Ouvrir l’aperçu dans un nouvel onglet</button>
+        </div>
+        <iframe id="cv-preview-frame" title="Aperçu du CV adapté" style="width:100%;min-height:1200px;border:1px solid currentColor;border-radius:12px;background:white"></iframe>
       </section>
     </section>
   </main>
