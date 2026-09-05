@@ -1,14 +1,204 @@
 {
-  "updatedAt": "2026-09-04T16:45:00Z",
+  "updatedAt": "2026-09-05T10:43:01Z",
+  "errors": [],
   "items": [
+    {
+      "title": "If you have to ask, is it accessible?",
+      "url": "https://webaim.org/blog/if-you-have-to-ask-is-it-accessible/",
+      "source": "WebAIM",
+      "category": "Outils & automatisation",
+      "published": "2026-08-31T20:02:26Z",
+      "summary": "As one of the researchers identifying products and tools for inclusion in the NCADEMI EdTech Accessibility Directory, VPATs have been on my mind. Most of the product vendors in the directory that do have VPATs do not provide them publicly, but instead require a potential customer to request the VPAT. This really surprised me, and […]",
+      "pinned": false
+    },
     {
       "title": "WCAG Evaluation Methodology (WCAG-EM) 2.0 — Note Published",
       "url": "https://www.w3.org/WAI/news/2026-07-23/wcag-em-2/",
       "source": "W3C Web Accessibility Initiative (WAI)",
       "category": "Normes & standards",
       "published": "2026-07-23T00:00:00Z",
-      "summary": "Publication de WCAG-EM 2.0, méthodologie d’évaluation applicable aux sites, applications et autres produits numériques.",
+      "summary": "WCAG Evaluation Methodology (WCAG-EM) 2.0 is published as a W3C Group Note. WCAG-EM describes a methodology with a step-by-step process to evaluate how well digital products conform to Web Content Accessibility Guidelines (WCAG) 2. WCAG-EM 1 was specifically for testing websites and web pages. WCAG-EM 2 also applies to apps and other digital products. For an introduction to WCAG-EM, see WCAG-EM Overview.",
       "pinned": true
+    },
+    {
+      "title": "France’s major court decision supporting digital accessibility under the EAA",
+      "url": "https://www.deque.com/blog/frances-major-court-decision-supporting-digital-accessibility-under-the-eaa/",
+      "source": "Deque",
+      "category": "Réglementation & conformité",
+      "published": "2026-06-11T12:56:51Z",
+      "summary": "There has just been a major court decision in France supporting digital accessibility under the EAA. The court’s ruling could have significant implications for any organization doing business in the EU. The post France’s major court decision supporting digital accessibility under the EAA appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "NFB sues DOJ and HHS over deadline extensions: What it means for your ADA Title II and Section 504 compliance program",
+      "url": "https://www.deque.com/blog/nfb-sues-doj-and-hhs-over-deadline-extensions-ada-title-ii-and-section-504/",
+      "source": "Deque",
+      "category": "Outils & automatisation",
+      "published": "2026-06-02T12:57:31Z",
+      "summary": "The deadline extensions issued by DOJ and HHS for Title II and Section 504 are being challenged in federal court by a plaintiff with strong standing and serious legal arguments. Regardless of the outcome, the underlying obligation—to make your digital experiences accessible to people with disabilities—has not changed and will not change. The post NFB sues DOJ and HHS over deadline extensions: What it means for your A",
+      "pinned": false
+    },
+    {
+      "title": "An Extension is Not an Excuse",
+      "url": "https://webaim.org/blog/an-extension-is-not-an-excuse/",
+      "source": "WebAIM",
+      "category": "Outils & automatisation",
+      "published": "2026-05-28T21:20:02Z",
+      "summary": "The Department of Health and Human Services recently announced a one-year extension of the compliance dates for web content and mobile app accessibility requirements under Section 504 of the Rehabilitation Act. The requirements themselves are not new in substance: covered recipients of HHS federal financial assistance must make covered web content and mobile apps conform […]",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List May 18 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-may-18-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-05-18T12:38:01Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List May 18 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List May 11 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-may-11-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-05-11T12:57:35Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List May 11 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "HHS Section 504 deadline extended: What did and didn’t change, and what your organization needs to do",
+      "url": "https://www.deque.com/blog/hhs-section-504-deadline-extended-what-did-and-didnt-change-and-what-your-organization-needs-to-do/",
+      "source": "Deque",
+      "category": "Réglementation & conformité",
+      "published": "2026-05-08T15:03:34Z",
+      "summary": "Section 504 digital accessibility compliance deadlines have been extended by a year. There is no rollback in requirements, no narrowing of scope, no modification to what must be made accessible. The post HHS Section 504 deadline extended: What did and didn’t change, and what your organization needs to do appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List May 4 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-may-4-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-05-04T13:44:24Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List May 4 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Tolerating Inaccessibility",
+      "url": "https://webaim.org/blog/tolerating-inaccessibility/",
+      "source": "WebAIM",
+      "category": "Recherche & tendances",
+      "published": "2026-04-30T17:50:24Z",
+      "summary": "The latest WebAIM Million report shows that detectable homepage accessibility errors increased over the past year. This article considers what those results may reveal about the organizational and societal forces that continue to deprioritize accessibility, and challenges us to imagine a world where inaccessibility is no longer tolerated.",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List April 27 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-april-27-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-04-27T13:12:02Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List April 27 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List April 20 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-april-20-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-04-20T13:51:13Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List April 20 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List April 13 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-april-13-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-04-13T22:22:23Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List April 13 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List April 6 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-april-6-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-04-06T13:13:34Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List April 6 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Ask AIMee: An accessible accessibility-focused AI chatbot",
+      "url": "https://webaim.org/blog/ask-aimee/",
+      "source": "WebAIM",
+      "category": "Outils & automatisation",
+      "published": "2026-03-31T16:49:07Z",
+      "summary": "We’re happy to introduce AIMee – an easy-to-use, AI-powered conversational chatbot focused on accessibility. AIMee has been designed to be highly accessible to users with disabilities. Ask her accessibility questions to get quick answers and guidance. The name “AIMee” plays off of the “AIM” (Accessibility In Mind) from “WebAIM” and also “AI”. Here are some […]",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List March 30 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-march-30-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-03-30T12:56:50Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List March 30 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "ADA Title II update: What we know, what we don’t, and what to do now",
+      "url": "https://www.deque.com/blog/ada-title-ii-update-what-we-know-what-we-dont-and-what-to-do-now/",
+      "source": "Deque",
+      "category": "Réglementation & conformité",
+      "published": "2026-03-24T13:07:14Z",
+      "summary": "Ongoing federal review activity has prompted questions about ADA Title II timing and implementation. Get practical guidance on how to move forward. The post ADA Title II update: What we know, what we don’t, and what to do now appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List March 23 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-march-23-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-03-23T12:39:54Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List March 23 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List March 16 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-march-16-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-03-16T12:29:59Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List March 16 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "Weekly Reading List March 9 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-march-9-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-03-09T13:16:28Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List March 9 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
+    },
+    {
+      "title": "For Review: WCAG 3 Working Draft – March 2026",
+      "url": "https://www.w3.org/WAI/news/2026-03-03/wcag3/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-03-03T00:00:00Z",
+      "summary": "W3C Accessibility Guidelines (WCAG) 3.0 Working Draft is updated. The starting place for background, timeline, and up-to-date information is the WCAG 3 Introduction. For a list of changes in the March 2026 draft, see Status: In-progress drafts.",
+      "pinned": true
+    },
+    {
+      "title": "Weekly Reading List March 2 2026",
+      "url": "https://www.tpgi.com/weekly-reading-list-march-2-2026/",
+      "source": "TPGi",
+      "category": "Audit, AT & expertise",
+      "published": "2026-03-02T13:30:26Z",
+      "summary": "A weekly roundup of links to digital accessibility industry news, posted every Monday. Compiled by Ricky Onsman. The post Weekly Reading List March 2 2026 appeared first on TPGi — a Vispero company .",
+      "pinned": false
     },
     {
       "title": "The WebAIM Million — 2026 Update",
@@ -20,13 +210,184 @@
       "pinned": true
     },
     {
-      "title": "W3C Accessibility Guidelines (WCAG) 3.0 Working Draft — March 2026",
-      "url": "https://www.w3.org/WAI/news/2026-03-03/wcag3/",
+      "title": "A New Path for Digital Accessibility?",
+      "url": "https://webaim.org/blog/a-new-path/",
+      "source": "WebAIM",
+      "category": "Développement",
+      "published": "2026-02-27T19:02:14Z",
+      "summary": "Please note This post will explore how an adaptive, intelligent system could empower users with disabilities to optimize their experience in digital environments. Even were such a system available tomorrow, developers of digital content, services, and products would still be responsible for providing equal access to ALL users. Consider a few of the many exciting […]",
+      "pinned": false
+    },
+    {
+      "title": "ACT Rules Format 1.1 is a Web Standard (W3C Recommendation)",
+      "url": "https://www.w3.org/WAI/news/2026-02-05/act-rules-11/",
       "source": "W3C Web Accessibility Initiative (WAI)",
       "category": "Normes & standards",
-      "published": "2026-03-03T00:00:00Z",
-      "summary": "Mise à jour du brouillon de travail WCAG 3.0 à suivre pour anticiper les évolutions futures du standard.",
-      "pinned": true
+      "published": "2026-02-05T00:00:00Z",
+      "summary": "Accessibility Conformance Testing (ACT) Rules Format 1.1 is now a web standard (W3C Recommendation). ACT Rules Format defines a format for writing accessibility test rules. The test rules can be used for developing automated testing tools and manual testing methodologies. For an introduction to ACT Rules, see Accessibility Conformance Testing (ACT) Overview.",
+      "pinned": false
+    },
+    {
+      "title": "For Review: Cognitive Accessibility Research Modules — First Draft Notes",
+      "url": "https://www.w3.org/WAI/news/2026-02-05/coga/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Recherche & tendances",
+      "published": "2026-02-05T00:00:00Z",
+      "summary": "Cognitive Accessibility Research Modules are available as first Draft Notes. The documents cover research on accessibility for people with cognitive and learning disabilities for Voice Systems and Conversational Interfaces, Technology Assisted Indoor Navigation / Wayfinding, Online Safety and Wellbeing (Algorithms and Data), and Supported Decision-Making Online. They address user needs, accessibility issues, directio",
+      "pinned": false
+    },
+    {
+      "title": "For Review: W3C Accessibility Guidelines Evaluation Methodology (WCAG-EM) 2.0 — First Draft Note",
+      "url": "https://www.w3.org/WAI/news/2026-02-05/wcag-em-2/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-02-05T00:00:00Z",
+      "summary": "W3C Accessibility Guidelines Evaluation Methodology (WCAG-EM) 2.0 is available as a first Draft Note. WCAG-EM describes a methodology with a step-by-step process to evaluate how well digital products conform to Web Content Accessibility Guidelines (WCAG) 2. WCAG-EM 1 is specifically for testing websites and web pages. WCAG-EM 2 also applies to apps and other digital products. For an introduction to WCAG-EM and more i",
+      "pinned": false
+    },
+    {
+      "title": "ADA reform and the path to a true win-win for businesses and people with disabilities",
+      "url": "https://www.deque.com/blog/ada-reform-and-the-path-to-a-true-win-win-for-businesses-and-people-with-disabilities/",
+      "source": "Deque",
+      "category": "Réglementation & conformité",
+      "published": "2026-01-08T13:11:29Z",
+      "summary": "Recent proposals to “reform” the Americans with Disabilities Act (ADA) are being framed as a way to protect small businesses through notice-and-cure requirements. These proposed… The post ADA reform and the path to a true win-win for businesses and people with disabilities appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "2026 Predictions: The Next Big Shifts in Web Accessibility",
+      "url": "https://webaim.org/blog/2026-predictions/",
+      "source": "WebAIM",
+      "category": "Lecteurs d’écran & AT",
+      "published": "2025-12-22T23:22:37Z",
+      "summary": "I’ve lived long enough, and worked in accessibility long enough, to have honed a healthy skepticism when I hear about the Next Big Thing. I’ve seen lush website launches that look great, until I activate a screen reader. Yet, in spite of it all, accessibility does evolve, but quietly rather than dramatically. As I gaze […]",
+      "pinned": false
+    },
+    {
+      "title": "Early signs of EAA enforcement across Europe",
+      "url": "https://www.deque.com/blog/early-signs-of-eaa-enforcement-across-europe/",
+      "source": "Deque",
+      "category": "Développement",
+      "published": "2025-12-19T06:05:00Z",
+      "summary": "A roundup of recent regulatory and legal developments you can reference in discussions with your risk and legal teams. As 2025 comes to a close,… The post Early signs of EAA enforcement across Europe appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Word and PowerPoint Alt Text Roundup",
+      "url": "https://webaim.org/blog/word-and-powerpoint-alt-text-roundup/",
+      "source": "WebAIM",
+      "category": "Pratique métier & recherche",
+      "published": "2025-10-31T19:14:54Z",
+      "summary": "Introduction In Microsoft Word and PowerPoint, there are many types of non-text content that can be given alternative text. We tested the alternative text of everything that we could think of in Word and PowerPoint and then converted these files to PDFs using Adobe’s Acrobat PDFMaker (the Acrobat Tab on Windows), Adobe’s Create PDF cloud […]",
+      "pinned": false
+    },
+    {
+      "title": "WCAG 2.2 Approved as an ISO Standard",
+      "url": "https://www.w3.org/WAI/news/2025-10-21/wcag22-iso/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2025-10-21T00:00:00Z",
+      "summary": "Web Content Accessibility Guidelines (WCAG) 2.2 is now an approved International Organization for Standardization (ISO) standard: ISO/IEC 40500:2025. It is available free from ISO/IEC 40500:2025 - Information technology — W3C Web Content Accessibility Guidelines (WCAG) 2.2. This standard enables more countries to formally adopt WCAG 2.2. Additional information is in the W3C press release on WCAG 2.2 approved as ISO/I",
+      "pinned": false
+    },
+    {
+      "title": "For Review: WCAG 3 Working Draft - September 2025",
+      "url": "https://www.w3.org/WAI/news/2025-09-04/wcag3/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2025-09-04T00:00:00Z",
+      "summary": "W3C Accessibility Guidelines (WCAG) 3.0 Working Draft is updated. For review questions and how to comment, please see the WCAG 3 section ‘About this draft’. The starting place for background, timeline, and up-to-date information is the WCAG 3 Introduction.",
+      "pinned": false
+    },
+    {
+      "title": "For Wide Review: Accessibility Maturity Model — Updated Draft Note",
+      "url": "https://www.w3.org/WAI/news/2025-09-01/maturity-model/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2025-09-01T00:00:00Z",
+      "summary": "Accessibility Maturity Model Updated Draft Note is ready for review. The Accessibility Maturity Model provides a framework to assess an organization’s policies and procedures to deliver accessible products and services. It can be used to measure current capabilities, identify gaps, and plan improvements. For more details, review questions and how to comment, see the email announcing the Accessibility Maturity Model u",
+      "pinned": false
+    },
+    {
+      "title": "WCAG2ICT — W3C Group Note updated to coordinate with EN 301 549",
+      "url": "https://www.w3.org/WAI/news/2025-08-21/wcag2ict/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2025-08-21T00:00:00Z",
+      "summary": "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT) has been updated in coordination with the work to update EN 301 549. EN 301 549 is the European standard ‘Accessibility requirements for ICT products and services’. For the list of substantive changes, see Changes since the 15 November 2024 Note. For an introduction to WCAG2ICT, see the WCAG2ICT Overview.",
+      "pinned": false
+    },
+    {
+      "title": "Call for implementations: Accessibility Conformance Testing (ACT) Rules Format 1.1 — Candidate Recommendation",
+      "url": "https://www.w3.org/WAI/news/2025-08-19/act-rules-format-1.1-CR/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Outils & automatisation",
+      "published": "2025-08-19T00:00:00Z",
+      "summary": "Accessibility Conformance Testing (ACT) Rules Format 1.1 is now a Candidate Recommendation Snapshot. That means we’re seeking example implementations. ACT Rules Format defines a format for writing accessibility test rules that can be used for developing automated testing tools and manual testing methodologies. For an introduction to Accessibility Conformance Testing, see the ACT Overview. We welcome implementations a",
+      "pinned": false
+    },
+    {
+      "title": "Accessibility by Design: Preparing K–12 Schools for What’s Next",
+      "url": "https://webaim.org/blog/accessibility-by-design/",
+      "source": "WebAIM",
+      "category": "Normes & standards",
+      "published": "2025-07-30T17:51:46Z",
+      "summary": "Delivering web and digital accessibility in any environment requires strategic planning and cross-organizational commitment. While the goal (ensuring that websites and digital platforms do not present barriers to individuals with disabilities) and the standards (the Web Content Accessibility Guidelines) remain constant, implementation must be tailored to each organization’s needs and context. For K–12 educational age",
+      "pinned": false
+    },
+    {
+      "title": "Up and Coming ARIA",
+      "url": "https://webaim.org/blog/up-and-coming-aria/",
+      "source": "WebAIM",
+      "category": "Normes & standards",
+      "published": "2025-05-30T18:19:41Z",
+      "summary": "If you work in web accessibility, you’ve probably spent a lot of time explaining and implementing the ARIA roles and attributes that have been around for years—things like aria-label, aria-labelledby, and role=\"dialog\". But the ARIA landscape isn’t static. In fact, recent ARIA specifications (especially ARIA 1.3) include a number of emerging and lesser-known features that […]",
+      "pinned": false
+    },
+    {
+      "title": "Accessibility reads: Thursday, May 29",
+      "url": "https://www.deque.com/blog/accessibility-reads-thursday-may-29/",
+      "source": "Deque",
+      "category": "Outils, conformité & actualité",
+      "published": "2025-05-29T12:23:19Z",
+      "summary": "Welcome to this month’s edition of Accessibility reads, where we cover the most important accessibility-related news happening across the globe! In my short video below,… The post Accessibility reads: Thursday, May 29 appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "States drop constitutional challenge to Section 504 in Texas v. Kennedy",
+      "url": "https://www.deque.com/blog/states-drop-constitutional-challenge-to-section-504-in-texas-v-kennedy/",
+      "source": "Deque",
+      "category": "Développement",
+      "published": "2025-05-05T12:05:47Z",
+      "summary": "On April 11, 2025, a major development occurred in the ongoing Texas v. Kennedy lawsuit (formerly Texas v. Becerra), a case brought by the state… The post States drop constitutional challenge to Section 504 in Texas v. Kennedy appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Accessibility reads: Thursday, April 24",
+      "url": "https://www.deque.com/blog/accessibility-reads-thursday-april-24/",
+      "source": "Deque",
+      "category": "Outils, conformité & actualité",
+      "published": "2025-04-24T13:01:31Z",
+      "summary": "Beginning with this edition, we’re publishing Accessibility reads monthly, allowing us to absorb, understand, and share the most important accessibility-related news happening across the globe.… The post Accessibility reads: Thursday, April 24 appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Accessibility reads: Thursday, March 27",
+      "url": "https://www.deque.com/blog/accessibility-reads-thursday-march-27/",
+      "source": "Deque",
+      "category": "Outils & automatisation",
+      "published": "2025-03-27T12:35:41Z",
+      "summary": "CSUN and axe-con recaps continue to predominate my feeds. It is amazing to see so many community members engaging and speaking about how the content… The post Accessibility reads: Thursday, March 27 appeared first on Deque .",
+      "pinned": false
+    },
+    {
+      "title": "Global Digital Accessibility Salary Survey Results",
+      "url": "https://webaim.org/blog/salary-survey-results/",
+      "source": "WebAIM",
+      "category": "Recherche & tendances",
+      "published": "2025-02-27T20:45:03Z",
+      "summary": "In December 2024 WebAIM conducted a survey to collect salary and job-related data from professionals whose job responsibilities primarily focus on making technology and digital products accessible and usable to people with disabilities. 656 responses were collected. The full survey results are now available. This survey was conducted in conjunction with the GAAD Foundation. The GAAD […]",
+      "pinned": false
     }
   ]
 }

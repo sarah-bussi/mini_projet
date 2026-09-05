@@ -1,4 +1,450 @@
 {
-  "checkedAt": null,
-  "links": {}
+  "checkedAt": "2026-09-05T10:43:35Z",
+  "links": {
+    "https://ablegamers.org/apx/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://ablegamers.org/apx/"
+    },
+    "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/"
+    },
+    "https://accessibilitycloud.com/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://www.accessibilitycloud.com/"
+    },
+    "https://accessibilityinsights.io/docs/web/getstarted/fastpass/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://accessibilityinsights.io/docs/web/getstarted/fastpass/"
+    },
+    "https://accessibilityinsights.io/docs/web/overview/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://accessibilityinsights.io/docs/web/overview/"
+    },
+    "https://amara.org/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://amara.org/"
+    },
+    "https://assistivlabs.com/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://assistivlabs.com/"
+    },
+    "https://chrispederick.com/work/web-developer/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://chrispederick.com/work/web-developer/"
+    },
+    "https://colororacle.org/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://colororacle.org/"
+    },
+    "https://commonlook.com/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://netcentric.allyant.com/"
+    },
+    "https://daisy.github.io/ace/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://daisy.github.io/ace/"
+    },
+    "https://dev.epicgames.com/documentation/unreal-engine/supporting-screen-readers-in-unreal-engine": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://dev.epicgames.com/documentation/unreal-engine/supporting-screen-readers-in-unreal-engine"
+    },
+    "https://developer.android.com/training/testing/espresso/accessibility-checking": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://developer.android.com/training/testing/espresso/accessibility-checking"
+    },
+    "https://developer.apple.com/documentation/accessibility/accessibility-inspector": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://developer.apple.com/documentation/accessibility/accessibility-inspector"
+    },
+    "https://developer.chrome.com/docs/devtools/accessibility/reference/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://developer.chrome.com/docs/devtools/accessibility/reference/"
+    },
+    "https://developer.chrome.com/docs/devtools/device-mode/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://developer.chrome.com/docs/devtools/device-mode/"
+    },
+    "https://developer.chrome.com/docs/devtools/rendering/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://developer.chrome.com/docs/devtools/rendering/"
+    },
+    "https://developer.chrome.com/docs/lighthouse/accessibility/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://developer.chrome.com/docs/lighthouse/accessibility/scoring"
+    },
+    "https://docs.deque.com/devtools-mobile/2025.7.2/en/android-setup/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://docs.deque.com/devtools-mobile/2025.7.2/en/android-setup/"
+    },
+    "https://docs.deque.com/devtools-mobile/2025.7.2/en/appium-getting-started/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://docs.deque.com/devtools-mobile/2025.7.2/en/appium-getting-started/"
+    },
+    "https://docs.flutter.dev/ui/accessibility/accessibility-testing": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://docs.flutter.dev/ui/accessibility/accessibility-testing"
+    },
+    "https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/"
+    },
+    "https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/"
+    },
+    "https://gameaccessibilityguidelines.com/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://gameaccessibilityguidelines.com/"
+    },
+    "https://github.com/DISIC/guide-mobile_app_audit": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/DISIC/guide-mobile_app_audit"
+    },
+    "https://github.com/Guidepup/guidepup": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/Guidepup/guidepup"
+    },
+    "https://github.com/Khan/tota11y": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://github.com/jdan/tota11y"
+    },
+    "https://github.com/NickColley/jest-axe": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/NickColley/jest-axe"
+    },
+    "https://github.com/SubtitleEdit/subtitleedit": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/SubtitleEdit/subtitleedit"
+    },
+    "https://github.com/Unity-Technologies/a11y-public-sample": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/Unity-Technologies/a11y-public-sample"
+    },
+    "https://github.com/ableplayer/ableplayer": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/ableplayer/ableplayer"
+    },
+    "https://github.com/component-driven/cypress-axe": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/component-driven/cypress-axe"
+    },
+    "https://github.com/dequelabs/axe-core": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/dequelabs/axe-core"
+    },
+    "https://github.com/ember-a11y/ember-a11y-testing": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/ember-a11y/ember-a11y-testing"
+    },
+    "https://github.com/game-a11y": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/game-a11y"
+    },
+    "https://github.com/google/Accessibility-Test-Framework-for-Android": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/google/Accessibility-Test-Framework-for-Android"
+    },
+    "https://github.com/josehilera/a11y-evaluation-tools": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/josehilera/a11y-evaluation-tools"
+    },
+    "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y"
+    },
+    "https://github.com/qualweb/qualweb": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/qualweb/qualweb"
+    },
+    "https://github.com/sclavijosuero/wick-a11y": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/sclavijosuero/wick-a11y"
+    },
+    "https://github.com/w3c/epubcheck": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://github.com/w3c/epubcheck"
+    },
+    "https://help.gnome.org/users/orca/stable/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://help.gnome.org/orca/"
+    },
+    "https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html"
+    },
+    "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines"
+    },
+    "https://pa11y.org/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://pa11y.org/"
+    },
+    "https://pac.pdf-accessibility.org/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://pac.pdf-accessibility.org/en"
+    },
+    "https://playwright.dev/docs/accessibility-testing": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://playwright.dev/docs/accessibility-testing"
+    },
+    "https://polypane.app/accessibility/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://polypane.app/accessibility/"
+    },
+    "https://pub.dev/packages/accessibility_tools": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://pub.dev/packages/accessibility_tools"
+    },
+    "https://quuz.org/webvtt/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://w3c.github.io/webvtt.js/parser.html"
+    },
+    "https://rumoroso.bitbucket.io/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://rumoroso.bitbucket.io/"
+    },
+    "https://sa11y.netlify.app/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://sa11y.netlify.app/"
+    },
+    "https://squizlabs.github.io/HTML_CodeSniffer/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://squizlabs.github.io/HTML_CodeSniffer/"
+    },
+    "https://storybook.js.org/addons/@storybook/addon-a11y": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://storybook.js.org/addons/@storybook/addon-a11y"
+    },
+    "https://support.apple.com/accessibility/voice-control": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.apple.com/accessibility/voice-control"
+    },
+    "https://support.apple.com/guide/iphone/use-switch-control-iph7a2466c9/ios": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://support.apple.com/guide/iphone/welcome/ios"
+    },
+    "https://support.apple.com/guide/voiceover/welcome/mac": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://support.apple.com/guide/voiceover/welcome/mac"
+    },
+    "https://support.google.com/accessibility/android/answer/6122836": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.google.com/accessibility/android/answer/6122836"
+    },
+    "https://support.google.com/accessibility/android/answer/6283677": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.google.com/accessibility/android/answer/6283677"
+    },
+    "https://support.google.com/accessibility/android/answer/6376570": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.google.com/accessibility/android/answer/6376570"
+    },
+    "https://support.microsoft.com/office/improve-accessibility-with-the-accessibility-checker-a16c31ab-39f6-4a2b-8bd8-5ad801426c7f": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.microsoft.com/en-us/topic/a16c31ab-39f6-4a2b-8bd8-5ad801426c7f"
+    },
+    "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator"
+    },
+    "https://support.microsoft.com/windows/use-voice-access-to-control-your-pc-create-text-with-your-voice-4dcd23ee-f1b4-41c2-b95a-39b6e9d5f82c": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://support.microsoft.com/en-us/topic/4dcd23ee-f1b4-41c2-b95a-39b6e9d5f82c"
+    },
+    "https://wave.webaim.org/extension/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://wave.webaim.org/extension/"
+    },
+    "https://www.a11yproject.com/checklist/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.a11yproject.com/checklist/"
+    },
+    "https://www.axes4.com/axespdf/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://www.axes4.com/en/desktop-software/axespdf"
+    },
+    "https://www.browserstack.com/docs/app-accessibility": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.browserstack.com/docs/app-accessibility"
+    },
+    "https://www.deque.com/axe/devtools/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.deque.com/axe/devtools/"
+    },
+    "https://www.deque.com/axe/monitor/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.deque.com/axe/monitor/"
+    },
+    "https://www.figma.com/community/plugin/734693888346260052/able-frictionless-accessibility": {
+      "state": "blocked",
+      "code": 403,
+      "finalUrl": "https://www.figma.com/community/plugin/734693888346260052/able-frictionless-accessibility"
+    },
+    "https://www.figma.com/community/search?query=contrast&resource_type=plugins": {
+      "state": "blocked",
+      "code": 403,
+      "finalUrl": "https://www.figma.com/community/search?query=contrast&resource_type=plugins"
+    },
+    "https://www.freedomscientific.com/products/software/jaws/": {
+      "state": "blocked",
+      "code": 403,
+      "finalUrl": "https://www.freedomscientific.com/products/software/jaws/"
+    },
+    "https://www.fruggr.io/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://www.fruggr.io/fr/"
+    },
+    "https://www.getstark.co/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.getstark.co/"
+    },
+    "https://www.ibm.com/able/toolkit/tools/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.ibm.com/able/toolkit/tools/"
+    },
+    "https://www.levelaccess.com/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.levelaccess.com/"
+    },
+    "https://www.nvaccess.org/download/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.nvaccess.org/download/"
+    },
+    "https://www.siteimprove.com/integrations/browser-extensions/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://www.siteimprove.com/why-siteimprove/integrations/browser-extensions/"
+    },
+    "https://www.siteimprove.com/platform/accessibility/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.siteimprove.com/platform/accessibility/"
+    },
+    "https://www.ssa.gov/accessibility/andi/help/install.html": {
+      "state": "blocked",
+      "code": 403,
+      "finalUrl": "https://www.ssa.gov/accessibility/andi/help/install.html"
+    },
+    "https://www.tanaguru.com/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.tanaguru.com/"
+    },
+    "https://www.tpgi.com/arc-platform/arc-toolkit/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://vispero.com/accessibility-audit-vpat-testing/arc/"
+    },
+    "https://www.tpgi.com/color-contrast-checker/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://vispero.com/lp/color-contrast-checker/"
+    },
+    "https://www.tpgi.com/jaws-inspect/": {
+      "state": "redirected",
+      "code": 200,
+      "finalUrl": "https://vispero.com/jaws-inspect-accessibility-testing-tool/"
+    },
+    "https://www.w3.org/WAI/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.w3.org/WAI/"
+    },
+    "https://www.w3.org/WAI/WCAG22/Understanding/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/"
+    },
+    "https://www.w3.org/WAI/media/av/player/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.w3.org/WAI/media/av/player/"
+    },
+    "https://www.w3.org/WAI/test-evaluate/tools/list/": {
+      "state": "ok",
+      "code": 200,
+      "finalUrl": "https://www.w3.org/WAI/test-evaluate/tools/list/"
+    },
+    "https://www.wcag.com/resource/what-is-a-contrast-checker/": {
+      "state": "broken",
+      "code": 404,
+      "finalUrl": "https://www.wcag.com/resource/what-is-a-contrast-checker/"
+    }
+  }
 }
