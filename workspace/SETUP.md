@@ -1,10 +1,10 @@
 # Mise en service du workspace privé
 
-## 1. Branche intégrée
+## 1. Branche de travail
 
-Utiliser `feature/workspace-suite`. Elle contient la bibliothèque/veille accessibilité, le workspace privé et la version workspace d’A11Y Copilot.
+Utiliser `feature/workspace-suite`. Elle contient le portfolio/workspace privé, la bibliothèque/veille accessibilité, le CV Builder et A11Y Copilot.
 
-Le dépôt du mémoire `sarah-bussi/a11y-copilot` reste séparé. La version workspace est explicitement une implémentation post-évaluation : elle peut lire une copie exportée de son corpus local, mais le script n’écrit jamais dans le dépôt du mémoire.
+A11Y Copilot est désormais un produit autonome du workspace. Le dépôt du mémoire reste séparé et hors périmètre de développement. Le seul lien historique possible est l'export local en lecture seule d'une copie du corpus RGAA/RAAM vers `mini_projet`.
 
 ## 2. Sécurité du workspace
 
@@ -12,7 +12,7 @@ Dans Supabase > SQL Editor, exécuter une fois :
 
 `supabase/workspace-security.sql`
 
-Ce script crée `workspace_profiles` et `workspace_data`, active RLS et limite les accès à l’utilisateur Supabase autorisé.
+Ce script crée `workspace_profiles` et `workspace_data`, active RLS et limite les accès à l'utilisateur Supabase autorisé.
 
 ## 3. Retrieval A11Y léger
 
@@ -26,7 +26,7 @@ Ce script crée :
 - un index plein texte + trigrammes ;
 - `search_workspace_a11y(...)` : fonction de retrieval utilisée uniquement côté serveur.
 
-Le navigateur n’a pas d’accès direct au corpus. La Supabase Edge Function utilise la clé `service_role` fournie automatiquement par Supabase.
+Le navigateur n'a pas d'accès direct au corpus. La Supabase Edge Function utilise `service_role` côté serveur.
 
 ### Générer la copie du corpus
 
@@ -43,62 +43,81 @@ Depuis `mini_projet` :
 python scripts/build_workspace_a11y_corpus.py
 ```
 
-Le script lit uniquement :
-
-- `../a11y-copilot/backend/knowledge/normative/RGAA/structured/rgaa_sections.json`
-- `../a11y-copilot/backend/knowledge/normative/RAAM/structured/raam_criteres.json`
-
-et génère :
+Le script lit uniquement les fichiers structurés RGAA/RAAM et génère :
 
 `supabase/workspace-a11y-corpus.generated.sql`
 
-Si le dépôt `a11y-copilot` est ailleurs :
+Si le dépôt source est ailleurs :
 
 ```powershell
 python scripts/build_workspace_a11y_corpus.py --source "C:\chemin\vers\a11y-copilot"
 ```
 
-Ouvrir ensuite `supabase/workspace-a11y-corpus.generated.sql`, copier son contenu dans Supabase SQL Editor et l’exécuter. Le fichier généré appartient uniquement à `mini_projet`.
+Le script n'écrit jamais dans le dépôt source.
 
 ## 4. Edge Function `workspace-ai`
 
-Le proxy IA est la Supabase Edge Function :
+Fichier source :
 
 `supabase/functions/workspace-ai/index.ts`
 
-Dans Supabase > Edge Functions > `workspace-ai` :
+Dans Supabase > Edge Functions > `workspace-ai`, déployer exactement la version du dépôt.
 
-1. remplacer le contenu de `index.ts` par la version du dépôt ;
-2. redéployer la fonction.
+### Pipeline A11Y Copilot
 
-Pour le mode A11Y Copilot, la fonction :
+1. validation de la session et de l'UUID autorisé ;
+2. routage Web → RGAA / Mobile → RAAM ;
+3. requête documentaire déterministe ;
+4. retrieval Supabase de 8 candidats maximum ;
+5. appel Groq n°1 : jugement d'applicabilité documentaire avec Structured Outputs ;
+6. contrôle serveur d'une preuve textuelle exacte (`supportQuote`) ;
+7. downgrade automatique d'une référence annoncée applicable si sa preuve n'est pas réellement présente dans le candidat ;
+8. appel Groq n°2 : génération finale uniquement à partir des références autorisées ;
+9. formatage serveur, niveau de confiance et validation humaine obligatoire.
 
-1. vérifie la session et l’UUID autorisé ;
-2. route Web vers RGAA et Mobile vers RAAM ;
-3. prépare une requête documentaire ;
-4. interroge `search_workspace_a11y` ;
-5. transmet uniquement les candidats récupérés à Groq ;
-6. supprime de la réponse toute référence qui ne faisait pas partie des candidats ;
-7. rappelle que la validation humaine reste obligatoire.
+Le Copilot utilise donc au maximum deux appels Groq par analyse A11Y. L'expansion de requête par IA a été supprimée pour réduire le coût, la latence et les erreurs 429.
 
-Cette chaîne est une implémentation workspace légère ; elle ne reproduit pas les scores de benchmark du pipeline expérimental du mémoire.
+Les candidats non évalués par le juge restent visibles comme `NOT_ASSESSED` au lieu de disparaître silencieusement.
 
 ## 5. Clé Groq
 
 Dans Supabase > Edge Functions > Secrets :
 
 - `AI_API_KEY` = clé Groq ;
-- `AI_MODEL` = `openai/gpt-oss-20b` (optionnel : valeur par défaut).
+- `AI_MODEL` = `openai/gpt-oss-20b` (valeur par défaut si absent).
 
-Ne jamais mettre la clé Groq dans le HTML/JavaScript public.
+Ne jamais mettre la clé Groq dans le HTML ou le JavaScript public.
 
-Pour le brief hebdomadaire GitHub Actions, ajouter séparément dans GitHub > Settings > Secrets and variables > Actions :
+Pour le brief hebdomadaire GitHub Actions, le secret séparé reste :
 
-- `GROQ_API_KEY` = la même clé Groq.
+- `GROQ_API_KEY`.
 
-Les secrets Supabase et GitHub Actions sont deux stockages différents.
+## 6. UX et erreurs
 
-## 6. Test local
+Le frontend :
+
+- bloque les doubles soumissions pendant une génération ;
+- place le focus sur le résultat après succès ;
+- distingue les erreurs de session, retrieval, Structured Output et rate limit 429 ;
+- n'affiche jamais de secret ni de token.
+
+## 7. Cas de non-régression
+
+Les scénarios de référence sont stockés dans :
+
+`tests/workspace-a11y-copilot-cases.json`
+
+Ils couvrent notamment :
+
+- image sans alternative ;
+- alternative présente mais non pertinente ;
+- bouton icône sans nom accessible ;
+- précondition script non établie ;
+- routage mobile vers RAAM.
+
+Ces cas doivent être rejoués après toute évolution du retrieval, du prompt ou du formatage.
+
+## 8. Test local
 
 ```powershell
 python -m http.server 5500
@@ -108,9 +127,7 @@ Puis :
 
 `http://localhost:5500/workspace/`
 
-Après connexion, tester `CV Builder` et `A11Y Copilot`.
-
-Pour vérifier le corpus dans Supabase :
+Pour vérifier le corpus :
 
 ```sql
 select standard, count(*)
@@ -119,12 +136,12 @@ group by standard
 order by standard;
 ```
 
-Il faut obtenir des lignes RGAA et, si le fichier RAAM est disponible localement, RAAM.
+## 9. Mise en ligne
 
-## 7. Mise en ligne
+Une fois validé, fusionner `feature/workspace-suite` dans `main`.
 
-Une fois validé, fusionner `feature/workspace-suite` dans `main`. GitHub Pages servira le workspace à :
+GitHub Pages servira le workspace à :
 
 `https://sarah-bussi.github.io/mini_projet/workspace/`
 
-Les pages statiques sont publiques par nature, mais les données privées sont protégées par RLS, la génération par authentification Supabase et le corpus normatif n’est interrogé que côté Edge Function.
+Les pages statiques sont publiques par nature, mais les données privées restent protégées par authentification/RLS et le corpus n'est interrogé que côté serveur.

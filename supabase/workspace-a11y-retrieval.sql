@@ -73,34 +73,46 @@ as $$
   with q as (
     select websearch_to_tsquery('simple', coalesce(nullif(trim(p_query), ''), 'accessibilite')) as tsq,
            lower(coalesce(p_query, '')) as raw
+  ),
+  ranked as (
+    select
+      c.*,
+      q.tsq,
+      q.raw,
+      (
+        setweight(to_tsvector('simple', coalesce(c.standard, '') || ' ' || coalesce(c.reference, '') || ' ' || coalesce(c.reference_type, '') || ' ' || coalesce(c.title, '') || ' ' || coalesce(c.keywords, '')), 'A') ||
+        setweight(to_tsvector('simple', coalesce(c.content, '')), 'B')
+      ) as weighted_vector
+    from public.workspace_a11y_corpus c
+    cross join q
+    where c.standard = upper(p_standard)
   )
   select
-    c.id,
-    c.standard,
-    c.version,
-    c.reference,
-    c.reference_type,
-    c.title,
-    c.content,
-    c.document,
-    c.page,
+    r.id,
+    r.standard,
+    r.version,
+    r.reference,
+    r.reference_type,
+    r.title,
+    r.content,
+    r.document,
+    r.page,
     (
-      4.0 * ts_rank_cd(c.search_vector, q.tsq) +
-      1.5 * similarity(lower(coalesce(c.title, '')), q.raw) +
-      0.8 * similarity(lower(c.content), q.raw) +
-      case when lower(c.reference) = q.raw then 5.0 else 0.0 end +
-      case when lower(c.content) like '%' || q.raw || '%' and length(q.raw) > 3 then 0.7 else 0.0 end
+      5.0 * ts_rank_cd(r.weighted_vector, r.tsq) +
+      4.0 * similarity(lower(coalesce(r.title, '')), r.raw) +
+      1.2 * similarity(lower(coalesce(r.keywords, '')), r.raw) +
+      0.35 * similarity(lower(r.content), r.raw) +
+      case when lower(r.reference) = r.raw then 8.0 else 0.0 end +
+      case when lower(coalesce(r.title, '')) like '%' || r.raw || '%' and length(r.raw) > 3 then 1.5 else 0.0 end
     )::double precision as score
-  from public.workspace_a11y_corpus c
-  cross join q
-  where c.standard = upper(p_standard)
-    and (
-      c.search_vector @@ q.tsq
-      or similarity(lower(coalesce(c.title, '')), q.raw) > 0.08
-      or similarity(lower(c.content), q.raw) > 0.04
-      or lower(c.reference) = q.raw
-    )
-  order by score desc, c.reference
+  from ranked r
+  where
+    r.weighted_vector @@ r.tsq
+    or similarity(lower(coalesce(r.title, '')), r.raw) > 0.06
+    or similarity(lower(coalesce(r.keywords, '')), r.raw) > 0.05
+    or similarity(lower(r.content), r.raw) > 0.04
+    or lower(r.reference) = r.raw
+  order by score desc, r.reference
   limit greatest(1, least(coalesce(p_limit, 8), 20));
 $$;
 

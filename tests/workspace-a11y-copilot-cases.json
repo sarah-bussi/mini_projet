@@ -1,0 +1,69 @@
+[
+  {
+    "id": "image-missing-alt",
+    "productType": "web",
+    "technology": "HTML/CSS",
+    "role": "qa",
+    "outputType": "test_scenario",
+    "component": "Carte produit – image",
+    "problem": "Une image porteuse d'information ne possède pas d'alternative textuelle.",
+    "details": "La balise <img> ne possède pas d'attribut alt.",
+    "verifiedFacts": "L'image est porteuse d'information, non décorative, et aucun texte adjacent ne restitue cette information.",
+    "expectedStandard": "RGAA",
+    "forbiddenReferences": ["1.3", "1.3.1"],
+    "forbiddenPhrases": ["alternative présente mais non pertinente"]
+  },
+  {
+    "id": "image-alt-not-pertinent",
+    "productType": "web",
+    "technology": "HTML/CSS",
+    "role": "qa",
+    "outputType": "test_scenario",
+    "component": "Carte produit – image",
+    "problem": "Une image porteuse d'information possède un attribut alt mais celui-ci n'est pas pertinent.",
+    "details": "<img src=\"produit.jpg\" alt=\"image\">",
+    "verifiedFacts": "L'attribut alt est présent. Le problème concerne sa pertinence et non son absence.",
+    "expectedStandard": "RGAA",
+    "forbiddenPhrases": ["aucune alternative textuelle"]
+  },
+  {
+    "id": "button-icon-no-accessible-name",
+    "productType": "web",
+    "technology": "HTML/CSS",
+    "role": "qa",
+    "outputType": "test_scenario",
+    "component": "Bouton de fermeture de modale – icône croix",
+    "problem": "Un bouton de fermeture est représenté uniquement par une icône et ne possède pas de nom accessible.",
+    "details": "Le bouton contient uniquement un SVG décoratif. Aucun texte visible, aria-label, aria-labelledby ou texte visuellement masqué ne fournit de nom accessible.",
+    "verifiedFacts": "Le bouton est focusable et activable au clavier. Le SVG est décoratif. Le problème concerne uniquement l'identification de l'action.",
+    "expectedStandard": "RGAA",
+    "forbiddenReferences": ["11.2", "11.2.1"],
+    "forbiddenPhrases": ["impossible de fermer", "inaccessible au clavier"]
+  },
+  {
+    "id": "button-script-precondition-unknown",
+    "productType": "web",
+    "technology": "HTML/CSS",
+    "role": "qa",
+    "outputType": "test_scenario",
+    "component": "Bouton de fermeture de modale",
+    "problem": "Le bouton ne possède pas de nom accessible.",
+    "details": "Aucune information n'est fournie sur un éventuel contrôle JavaScript du composant.",
+    "verifiedFacts": "Le bouton est focusable et activable au clavier.",
+    "expectedStandard": "RGAA",
+    "forbiddenPhrases": ["le script est confirmé", "contrôlé par JavaScript"]
+  },
+  {
+    "id": "mobile-routing",
+    "productType": "mobile",
+    "technology": "Flutter",
+    "role": "developer",
+    "outputType": "technical_fix",
+    "component": "Bouton icône",
+    "problem": "Le bouton n'est pas correctement annoncé par TalkBack.",
+    "details": "Composant Flutter natif de l'application mobile.",
+    "verifiedFacts": "Test effectué avec TalkBack sur Android.",
+    "expectedStandard": "RAAM",
+    "forbiddenPhrases": ["RGAA comme référentiel principal"]
+  }
+]

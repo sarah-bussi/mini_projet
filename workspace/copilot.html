@@ -12,15 +12,15 @@
 
   <main id="main" class="shell workspace-main">
     <section class="hero-panel" aria-labelledby="copilot-title">
-      <p class="eyebrow">Version workspace · post-évaluation</p>
+      <p class="eyebrow">Assistant accessibilité produit</p>
       <h1 id="copilot-title">A11Y Copilot</h1>
-      <p>Analyser une situation métier à partir d’un corpus normatif réellement recherché côté serveur, avec routage Web → RGAA / Mobile → RAAM, génération ancrée sur les références retrouvées et validation humaine obligatoire.</p>
+      <p>Analyser une situation Web ou mobile, retrouver les références RGAA ou RAAM réellement pertinentes et produire une recommandation adaptée au métier, avec preuves documentaires et validation humaine.</p>
     </section>
 
-    <section class="panel" aria-labelledby="about-prototype-title">
-      <h2 id="about-prototype-title">Moteur utilisé</h2>
-      <p>Cette version est une implémentation produit légère et séparée du prototype figé du mémoire. Elle utilise un corpus RGAA/RAAM exporté vers Supabase, un retrieval lexical enrichi côté base de données puis Groq pour la génération contextualisée.</p>
-      <p class="muted">Elle ne modifie pas le dépôt ni les benchmarks du mémoire et ne prétend pas reproduire exactement les scores expérimentaux du pipeline sentence-transformers / reranking. Les références citées doivent provenir du corpus réellement récupéré.</p>
+    <section class="panel" aria-labelledby="engine-title">
+      <h2 id="engine-title">Comment fonctionne l’analyse</h2>
+      <p>Le workspace recherche d’abord dans son corpus RGAA/RAAM côté serveur, puis sépare le jugement documentaire de la rédaction finale. Une référence n’est retenue que si son applicabilité est étayée ; une preuve textuelle issue du candidat récupéré est contrôlée côté serveur.</p>
+      <p class="muted">A11Y Copilot est un outil produit autonome du workspace. Il ne fournit pas de verdict automatique de conformité et n’accède pas directement au dépôt du mémoire.</p>
     </section>
 
     <section class="panel" aria-labelledby="analysis-form-title">
@@ -37,13 +37,13 @@
         </div>
 
         <div class="two-col">
-          <label>Composant ou écran<input name="component" required placeholder="Ex. modale de recherche, champ Départ…" /></label>
+          <label>Composant ou écran<input name="component" required placeholder="Ex. bouton de fermeture de modale, champ Départ…" /></label>
           <label>Sortie attendue<select name="outputType"><option value="test_scenario">Scénario de vérification</option><option value="technical_fix">Correction technique</option><option value="handoff">Handoff / recommandation métier</option></select></label>
         </div>
 
-        <label>Situation ou problème à analyser<textarea name="problem" required placeholder="Ex. Une modale Flutter s’ouvre sans titre visible et TalkBack annonce directement le premier champ…"></textarea></label>
+        <label>Situation ou problème à analyser<textarea name="problem" required placeholder="Décris le comportement observé ou le problème à analyser."></textarea></label>
         <label>Code, détails techniques ou contexte métier<textarea name="details" placeholder="Comportement observé, extrait de code, contrainte produit, résultat attendu…"></textarea></label>
-        <label>Informations déjà vérifiées<textarea name="verifiedFacts" placeholder="Ex. le focus reste derrière la modale ; TalkBack annonce X ; test clavier effectué…"></textarea></label>
+        <label>Informations déjà vérifiées<textarea name="verifiedFacts" placeholder="Ex. le bouton est focusable et activable au clavier ; TalkBack annonce X ; le SVG est décoratif…"></textarea></label>
 
         <button class="primary-button" type="submit">Analyser avec A11Y Copilot</button>
         <p id="copilot-status" class="status-line" aria-live="polite"></p>
@@ -52,8 +52,8 @@
 
     <section class="panel" aria-labelledby="copilot-result-title">
       <h2 id="copilot-result-title">Analyse structurée</h2>
-      <p class="muted">La réponse expose les références retenues, l’impact utilisateur, la correction proposée, la procédure de vérification, les informations manquantes et les limites. Elle ne constitue jamais un verdict automatique de conformité.</p>
-      <div id="copilot-result" class="result-box">Le résultat apparaîtra ici.</div>
+      <p class="muted">La réponse distingue références retenues, secondaires ou écartées, impact utilisateur, correction, vérification, informations manquantes et limites.</p>
+      <div id="copilot-result" class="result-box" tabindex="-1" aria-labelledby="copilot-result-title">Le résultat apparaîtra ici.</div>
     </section>
   </main>
 

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +31,28 @@ def compact(text: str) -> str:
     return " ".join((text or "").split())
 
 
+def clean_rgaa_content(text: str) -> str:
+    """Remove PDF extraction artefacts without changing normative meaning."""
+    value = text or ""
+    # Repeated PDF page footer, e.g. "RGAA 4.1.2 – 17/131".
+    value = re.sub(r"\bRGAA\s+4\.1\.2\s*[–-]\s*\d+\s*/\s*\d+\b", " ", value, flags=re.IGNORECASE)
+    value = compact(value)
+    # Stray bullets frequently left alone at chunk boundaries by PDF extraction.
+    value = re.sub(r"(?:\s*[•◦]\s*)+$", "", value).strip()
+    return value
+
+
+def rgaa_title(reference: str, ref_type: str, content: str) -> str:
+    """Create a short label that cannot be confused with WCAG mappings in the body."""
+    label = "Critère" if str(ref_type).lower() in {"critère", "criterion", "critere"} else "Test"
+    # The first sentence/question is generally the normative heading.
+    match = re.search(r"^(.+?[?])(?:\s|$)", content)
+    heading = match.group(1).strip() if match else content[:260].strip()
+    if not heading.lower().startswith(("critère ", "critere ", "test ")):
+        heading = f"{label} RGAA {reference} — {heading}"
+    return heading[:320]
+
+
 def rgaa_rows(source: Path):
     path = source / "backend" / "knowledge" / "normative" / "RGAA" / "structured" / "rgaa_sections.json"
     if not path.exists():
@@ -38,12 +61,12 @@ def rgaa_rows(source: Path):
     payload = json.loads(path.read_text(encoding="utf-8"))
     rows = []
     for item in payload:
-        content = compact(item.get("content", ""))
+        content = clean_rgaa_content(item.get("content", ""))
         reference = str(item.get("reference", "")).strip()
         if not reference or not content:
             continue
         ref_type = item.get("type") or "reference"
-        title = content[:240]
+        title = rgaa_title(reference, ref_type, content)
         rows.append({
             "standard": "RGAA",
             "version": item.get("version") or "4.1.2",
@@ -53,7 +76,9 @@ def rgaa_rows(source: Path):
             "content": content,
             "document": item.get("document") or "RGAA 4.1.2",
             "page": item.get("page"),
-            "keywords": f"RGAA {reference} {ref_type}",
+            # Explicitly label the reference as RGAA so a WCAG number mentioned in
+            # content cannot become the candidate identity.
+            "keywords": f"référence RGAA {reference} {ref_type} {title}",
         })
     return rows
 
@@ -110,7 +135,7 @@ def raam_rows(source: Path):
                 "content": content,
                 "document": "RAAM 1.1 — critères et tests",
                 "page": None,
-                "keywords": f"RAAM {reference} {topic_title}",
+                "keywords": f"référence RAAM {reference} {topic_title} {criterion_title}",
             })
     return rows
 
