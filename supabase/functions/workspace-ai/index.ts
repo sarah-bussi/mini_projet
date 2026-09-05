@@ -60,7 +60,7 @@ async function expandSearchQuery(apiKey: string, model: string, payload: Record<
     const text = await groqChat(apiKey, model, [
       {
         role: "system",
-        content: "Tu prépares uniquement une requête de recherche documentaire. Retourne une seule ligne courte de mots et expressions utiles, sans référence normative, sans explication, sans markdown.",
+        content: "Tu prépares uniquement une requête de recherche documentaire. Retourne une seule ligne courte de mots et expressions utiles, sans référence normative, sans numéro de critère, sans explication, sans markdown.",
       },
       {
         role: "user",
@@ -97,6 +97,7 @@ function candidateContext(candidates: any[]) {
     rank: index + 1,
     reference: String(item.reference || ""),
     type: String(item.reference_type || ""),
+    title: String(item.title || ""),
     document: String(item.document || ""),
     page: item.page ?? null,
     score: Number(item.score || 0),
@@ -157,7 +158,7 @@ async function runWorkspaceCopilot(apiKey: string, model: string, payload: Recor
   const content = await groqChat(apiKey, model, [
     {
       role: "system",
-      content: `Tu es la version workspace post-évaluation d’A11Y Copilot. Tu dois rester entièrement ancré dans les références documentaires fournies. Tu ne dois JAMAIS inventer une référence ${standard}, une API de framework ou un fait non fourni. Une référence présente dans les candidats n’est pas automatiquement applicable. Distingue exigence normative et recommandation technique. Pour une capture, ne conclus pas sur des propriétés non observables visuellement. La validation humaine est toujours obligatoire. Réponds UNIQUEMENT en JSON valide avec exactement les clés: diagnostic, retainedReferences, secondaryReferences, userImpact, normativeRequirement, technicalRecommendation, verification, missingInformation, limits, confidence. retainedReferences et secondaryReferences sont des tableaux d’objets {reference, reason}; chaque reference doit provenir exactement des candidats fournis. confidence vaut Faible, Moyen ou Élevé.`,
+      content: `Tu es la version workspace post-évaluation d’A11Y Copilot. Tu dois rester entièrement ancré dans les références documentaires fournies. Tu ne dois JAMAIS inventer une référence ${standard}, une API de framework ou un fait non fourni. Une référence présente dans les candidats n’est pas automatiquement applicable. Pour chaque candidat, le SEUL identifiant de référence ${standard} autorisé est la valeur exacte du champ "reference". Les numéros WCAG éventuellement mentionnés dans "title" ou "content" sont des mappings externes et ne doivent JAMAIS être interprétés comme des références RGAA. Ne transforme jamais un mapping WCAG en référence RGAA. Appuie-toi d’abord sur le couple reference + title pour identifier le candidat, puis utilise content uniquement pour vérifier son applicabilité. Distingue exigence normative et recommandation technique. Pour une capture, ne conclus pas sur des propriétés non observables visuellement. La validation humaine est toujours obligatoire. Réponds UNIQUEMENT en JSON valide avec exactement les clés: diagnostic, retainedReferences, secondaryReferences, userImpact, normativeRequirement, technicalRecommendation, verification, missingInformation, limits, confidence. retainedReferences et secondaryReferences sont des tableaux d’objets {reference, reason}; chaque reference doit provenir exactement des candidats fournis. confidence vaut Faible, Moyen ou Élevé.`,
     },
     { role: "user", content: JSON.stringify(prompt) },
   ], true);
@@ -208,6 +209,7 @@ Deno.serve(async (request) => {
     return json({ error: "unsupported_mode" }, 400);
   } catch (error) {
     console.error("workspace-ai", error);
-    return json({ error: "workspace_ai_failed", detail: String(error?.message || error) }, 502);
+    const detail = error instanceof Error ? error.message : String(error);
+    return json({ error: "workspace_ai_failed", detail }, 502);
   }
 });
