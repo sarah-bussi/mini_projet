@@ -29,11 +29,72 @@
   };
 
   const normalise = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+  const stripMd = (value) => normalise(String(value || '')
+    .replace(/\*\*/g, '')
+    .replace(/^>\s*/gm, '')
+    .replace(/^[-•]\s*/gm, ''));
 
-  const replaceList = (list, items) => {
+  const sectionText = (text, number) => {
+    const source = String(text || '').replace(/\r/g, '');
+    const marker = new RegExp(`(?:^|\\n)\\s*(?:\\*\\*)?${number}\\.\\s*[^\\n]*(?:\\*\\*)?\\s*\\n?`, 'i');
+    const match = marker.exec(source);
+    if (!match) return '';
+    const start = match.index + match[0].length;
+    const rest = source.slice(start);
+    const next = /\n\s*(?:\*\*)?\d+\.\s*/.exec(rest);
+    return (next ? rest.slice(0, next.index) : rest).trim();
+  };
+
+  const listItems = (section) => String(section || '')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => /^[-•]\s+/.test(line))
+    .map((line) => stripMd(line));
+
+  const splitBullets = (value) => {
+    const clean = String(value || '')
+      .replace(/<br\s*\/?\s*>/gi, '\n')
+      .replace(/\\<br\\>/gi, '\n')
+      .replace(/•/g, '\n• ');
+    const explicit = clean.split('\n').map((x) => x.trim()).filter(Boolean)
+      .map((x) => x.replace(/^[-•]\s*/, '').trim())
+      .filter(Boolean);
+    if (explicit.length > 1) return explicit.map(stripMd);
+    return clean.split(/(?<=[.!?])\s+(?=[A-Z])/).map(stripMd).filter(Boolean);
+  };
+
+  const parseExperienceTable = (section) => {
+    const rows = [];
+    String(section || '').split('\n').forEach((line) => {
+      const trimmed = line.trim();
+      if (!trimmed.startsWith('|') || /^\|\s*-/.test(trimmed)) return;
+      const cells = trimmed.split('|').slice(1, -1).map((cell) => stripMd(cell));
+      if (cells.length < 4 || /date/i.test(cells[0]) && /employ/i.test(cells[1])) return;
+      const [date, employer, role, reformulation] = cells;
+      if (!employer || !reformulation) return;
+      rows.push({ employer, date, role, bullets: splitBullets(reformulation) });
+    });
+    return rows;
+  };
+
+  const patchFromText = (text) => {
+    const title = stripMd(sectionText(text, 2).split('\n').find(Boolean) || '');
+    const summary = stripMd(sectionText(text, 3));
+    const skills = listItems(sectionText(text, 4));
+    const experiences = parseExperienceTable(sectionText(text, 5));
+    return {
+      professionalTitle: title,
+      summary,
+      prioritySkills: skills,
+      experiences,
+      experienceOrder: experiences.map((item) => item.employer),
+    };
+  };
+
+  const replaceList = (doc, list, items) => {
     if (!list || !Array.isArray(items) || !items.length) return;
     list.replaceChildren(...items.map((text) => {
-      const li = document.createElement('li');
+      const li = doc.createElement('li');
       li.textContent = text;
       return li;
     }));
@@ -49,6 +110,14 @@
     });
     articles.forEach((article) => { if (!ordered.includes(article)) ordered.push(article); });
     ordered.forEach((article) => container.appendChild(article));
+  };
+
+  const updatePrioritySkills = (doc, skills) => {
+    if (!Array.isArray(skills) || !skills.length) return;
+    const skillsSection = doc.querySelector('#skills');
+    if (!skillsSection) return;
+    const firstList = skillsSection.querySelector('ul');
+    if (firstList) replaceList(doc, firstList, skills);
   };
 
   const buildAdaptedCv = async (payload, patch) => {
@@ -77,6 +146,8 @@
       if (summary) summary.textContent = patch.summary;
     }
 
+    updatePrioritySkills(doc, patch?.prioritySkills);
+
     const experienceArticles = Array.from(doc.querySelectorAll('#experience article.timeline-item'));
     const experienceByEmployer = new Map(
       experienceArticles.map((article) => [normalise(article.querySelector('h3')?.textContent), article])
@@ -84,7 +155,7 @@
     (patch?.experiences || []).forEach((item) => {
       const article = experienceByEmployer.get(normalise(item?.employer));
       if (!article) return;
-      replaceList(article.querySelector('ul.experience-list'), item?.bullets);
+      replaceList(doc, article.querySelector('ul.experience-list'), item?.bullets);
     });
     const experienceContainer = experienceArticles[0]?.parentElement;
     reorderArticles(experienceContainer, experienceArticles, patch?.experienceOrder, 'h3');
@@ -98,7 +169,7 @@
       if (!article) return;
       const summary = article.querySelector('.cv-project-summary');
       if (summary && item?.summary) summary.textContent = item.summary;
-      replaceList(article.querySelector('.cv-project-highlights'), item?.highlights);
+      replaceList(doc, article.querySelector('.cv-project-highlights'), item?.highlights);
     });
     const projectContainer = projectArticles[0]?.parentElement;
     reorderArticles(projectContainer, projectArticles, patch?.projectOrder, 'h3');
@@ -113,8 +184,9 @@
   const showCvPreview = async (payload, data) => {
     const section = document.getElementById('cv-preview-section');
     const frame = document.getElementById('cv-preview-frame');
-    if (!section || !frame || !data?.cvPatch) return;
-    adaptedCvHtml = await buildAdaptedCv(payload, data.cvPatch);
+    if (!section || !frame) return;
+    const patch = data?.cvPatch || patchFromText(data?.text || data?.result || '');
+    adaptedCvHtml = await buildAdaptedCv(payload, patch);
     frame.srcdoc = adaptedCvHtml;
     section.hidden = false;
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -136,7 +208,7 @@
       try {
         const data = await callAI(mode, payload);
         result.textContent = data.text || data.result || JSON.stringify(data, null, 2);
-        if (mode === 'cv' && data.cvPatch) await showCvPreview(payload, data);
+        if (mode === 'cv') await showCvPreview(payload, data);
         status.textContent = 'Terminé.';
       } catch (error) {
         console.error(error);
