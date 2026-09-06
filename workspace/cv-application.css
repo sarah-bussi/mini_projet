@@ -9,8 +9,8 @@ body { min-height: 100vh; }
   padding: 9mm 11mm 8mm;
   background: #fff;
   overflow: hidden;
-  font-size: 8pt;
-  line-height: 1.26;
+  font-size: 8.15pt;
+  line-height: 1.27;
 }
 h1, h2, h3, p, ul { margin-top: 0; }
 .cv-header-block { padding-bottom: 2.8mm; border-bottom: 1px solid #aeb9c4; }
@@ -18,9 +18,9 @@ h1 { margin: 0 0 .55mm; font-size: 23pt; line-height: 1; letter-spacing: -.45px;
 .job-title { margin: 0; font-size: 12.5pt; line-height: 1.12; font-weight: 700; color: #2e6f9f; }
 .tagline { margin: .55mm 0 0; font-size: 8.8pt; font-weight: 600; color: #53697b; }
 .contact { margin: 1.35mm 0 0; font-size: 7.35pt; color: #344553; }
-.cv-section { padding-top: 2.7mm; }
+.cv-section { padding-top: 2.55mm; }
 .cv-section h2 {
-  margin: 0 0 1.25mm;
+  margin: 0 0 1.2mm;
   padding-bottom: .7mm;
   border-bottom: 1px solid #aeb9c4;
   font-size: 10pt;
@@ -28,28 +28,32 @@ h1 { margin: 0 0 .55mm; font-size: 23pt; line-height: 1; letter-spacing: -.45px;
   letter-spacing: .34px;
   color: #2e6f9f;
 }
-.profile-section p { margin: 0; font-size: 7.9pt; line-height: 1.34; }
-.exp-primary { margin-bottom: 2mm; }
+.profile-section p { margin: 0; font-size: 8pt; line-height: 1.34; }
+.exp-primary { margin-bottom: 1.8mm; }
 .exp-head, .exp-mini-head { display: flex; justify-content: space-between; gap: 3mm; align-items: baseline; }
-.exp-head h3, .exp-mini h3, .project-card h3, .skill-group h3 { margin: 0; font-size: 8.35pt; line-height: 1.15; color: #1f2d39; }
+.exp-head h3, .exp-mini h3, .project-card h3, .skill-group h3, .education-item h3 { margin: 0; font-size: 8.35pt; line-height: 1.15; color: #1f2d39; }
 .exp-head p { margin: .25mm 0 0; font-size: 7.2pt; font-style: italic; color: #506171; }
 .exp-head span, .exp-mini-head span { flex: 0 0 auto; font-size: 6.9pt; font-weight: 700; color: #4e6070; }
 .exp-primary ul { margin: .8mm 0 0; padding-left: 3.8mm; }
-.exp-primary li { margin-bottom: .35mm; font-size: 7.25pt; line-height: 1.24; }
-.exp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75mm 5mm; }
+.exp-primary li { margin-bottom: .3mm; font-size: 7.25pt; line-height: 1.23; }
+.exp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.7mm 5mm; }
 .exp-mini { break-inside: avoid; }
-.exp-mini .role { margin: .28mm 0 .3mm; font-size: 6.95pt; font-style: italic; color: #506171; }
-.exp-mini > p:last-child { margin: 0; font-size: 6.95pt; line-height: 1.22; }
-.compact { padding-top: 2.2mm; }
-.education-line { margin: 0; font-size: 6.9pt; line-height: 1.34; }
-.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2mm 3.8mm; }
+.exp-mini .employer { margin: .22mm 0 .2mm; font-size: 6.8pt; font-style: italic; color: #506171; }
+.exp-mini .exp-summary { margin: 0; font-size: 6.95pt; line-height: 1.22; }
+.compact { padding-top: 2.1mm; }
+.education-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15mm 5mm; }
+.education-item { min-width: 0; break-inside: avoid; }
+.education-item h3 { font-size: 7.4pt; }
+.education-item p { margin: .25mm 0 0; font-size: 6.65pt; line-height: 1.22; color: #435564; }
+.education-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.9mm 3.8mm; }
 .project-card { break-inside: avoid; }
-.project-card p { margin: .45mm 0 0; font-size: 6.85pt; line-height: 1.23; }
+.project-card p { margin: .42mm 0 0; font-size: 6.85pt; line-height: 1.22; }
 .project-card .tags { font-size: 6.35pt; font-weight: 600; color: #516575; }
 .skills-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2.8mm; }
 .skill-group h3 { margin-bottom: .42mm; font-size: 7.05pt; color: #2e6f9f; }
-.skill-group p { margin: 0; font-size: 6.55pt; line-height: 1.23; }
-.languages-line { margin: 1.15mm 0 0; font-size: 6.6pt; line-height: 1.25; }
+.skill-group p { margin: 0; font-size: 6.55pt; line-height: 1.22; }
+.languages-line { margin: 1.05mm 0 0; font-size: 6.6pt; line-height: 1.24; }
 strong { font-weight: 700; }
 @media print {
   html, body { width: 210mm; height: 297mm; background: #fff !important; }
