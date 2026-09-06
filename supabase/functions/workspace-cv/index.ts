@@ -21,7 +21,17 @@ async function getUser(token: string) {
   return response.json();
 }
 
-async function groqJson(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
+function parseJsonContent(content: string) {
+  const cleaned = content
+    .trim()
+    .replace(/^```json\s*/i, "")
+    .replace(/^```\s*/i, "")
+    .replace(/```$/i, "")
+    .trim();
+  return JSON.parse(cleaned);
+}
+
+async function groqJsonOnce(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -30,16 +40,49 @@ async function groqJson(apiKey: string, model: string, messages: Array<{ role: s
     },
     body: JSON.stringify({
       model,
-      temperature: 0.08,
+      temperature: 0.05,
       response_format: { type: "json_object" },
       messages,
     }),
   });
+
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(`groq_${response.status}`);
+  if (!response.ok) {
+    const groqMessage = String(data?.error?.message || data?.message || "").slice(0, 300);
+    throw new Error(`groq_${response.status}${groqMessage ? `:${groqMessage}` : ""}`);
+  }
+
   const content = String(data?.choices?.[0]?.message?.content || "").trim();
   if (!content) throw new Error("empty_ai_response");
-  return JSON.parse(content);
+
+  try {
+    return parseJsonContent(content);
+  } catch {
+    throw new Error("invalid_ai_json");
+  }
+}
+
+async function groqJson(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
+  let firstError: unknown;
+  try {
+    return await groqJsonOnce(apiKey, model, messages);
+  } catch (error) {
+    firstError = error;
+  }
+
+  const retryMessages = [
+    ...messages,
+    {
+      role: "system",
+      content: "Nouvelle tentative: renvoie uniquement un objet JSON valide, sans markdown, sans commentaire, sans texte avant ou après le JSON.",
+    },
+  ];
+
+  try {
+    return await groqJsonOnce(apiKey, model, retryMessages);
+  } catch (retryError) {
+    throw new Error(`ai_retry_failed:${String((firstError as Error)?.message || firstError)}|${String((retryError as Error)?.message || retryError)}`);
+  }
 }
 
 function decodeEntities(value: string) {
@@ -72,8 +115,8 @@ function sectionHtml(html: string, id: string) {
 function extractH3(section: string) {
   const values: string[] = [];
   for (const match of section.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>/gi)) {
-    const text = stripHtml(match[1]);
-    if (text && !values.includes(text)) values.push(text);
+    const value = stripHtml(match[1]);
+    if (value && !values.includes(value)) values.push(value);
   }
   return values;
 }
@@ -146,8 +189,8 @@ Deno.serve(async (request) => {
   const user = await getUser(token);
   if (!user?.id) return json({ error: "forbidden" }, 403);
 
-  const apiKey = Deno.env.get("AI_API_KEY") || "";
-  const model = Deno.env.get("AI_MODEL") || "openai/gpt-oss-20b";
+  const apiKey = Deno.env.get("AI_API_KEY") || Deno.env.get("GROQ_API_KEY") || "";
+  const model = Deno.env.get("AI_MODEL") || Deno.env.get("GROQ_MODEL") || "openai/gpt-oss-20b";
   if (!apiKey) return json({ error: "ai_not_configured" }, 503);
 
   const payload = await request.json().catch(() => ({}));
@@ -174,6 +217,7 @@ Deno.serve(async (request) => {
     return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-structured-cv" });
   } catch (error) {
     console.error("workspace-cv", error);
-    return json({ error: "workspace_cv_failed", detail: String(error?.message || error) }, 502);
+    const detail = String((error as Error)?.message || error).slice(0, 500);
+    return json({ error: `workspace_cv_failed:${detail}`, detail }, 502);
   }
 });
