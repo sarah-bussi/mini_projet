@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T10:43:01Z",
+  "updatedAt": "2026-09-06T11:05:01Z",
   "errors": [],
   "items": [
     {
@@ -53,7 +53,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 149,
-      "updatedAt": "2026-09-05T01:28:22Z",
+      "updatedAt": "2026-09-06T08:47:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-04T16:01:07Z",
+      "updatedAt": "2026-09-05T22:04:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -113,6 +113,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-webring.club",
+      "fullName": "ericwbailey/a11y-webring.club",
+      "url": "https://github.com/ericwbailey/a11y-webring.club",
+      "description": "🌐 A webring for digital accessibility practitioners.",
+      "language": "Nunjucks",
+      "stars": 70,
+      "updatedAt": "2026-09-06T00:37:19Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-guidelines",
       "fullName": "Orange-OpenSource/a11y-guidelines",
       "url": "https://github.com/Orange-OpenSource/a11y-guidelines",
@@ -120,17 +131,6 @@
       "language": "Nunjucks",
       "stars": 70,
       "updatedAt": "2026-09-04T13:03:10Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-webring.club",
-      "fullName": "ericwbailey/a11y-webring.club",
-      "url": "https://github.com/ericwbailey/a11y-webring.club",
-      "description": "🌐 A webring for digital accessibility practitioners.",
-      "language": "Nunjucks",
-      "stars": 69,
-      "updatedAt": "2026-09-02T19:37:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -174,7 +174,7 @@
       "description": "Essential JavaScript utilities that empower modern accessibility",
       "language": "TypeScript",
       "stars": 42,
-      "updatedAt": "2026-09-05T05:18:46Z",
+      "updatedAt": "2026-09-05T18:28:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -207,7 +207,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-05T09:25:48Z",
+      "updatedAt": "2026-09-06T08:12:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -229,7 +229,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-02T20:25:31Z",
+      "updatedAt": "2026-09-05T16:07:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-05T10:03:46Z",
+      "updatedAt": "2026-09-06T09:57:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -262,7 +262,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-04T22:57:06Z",
+      "updatedAt": "2026-09-06T07:49:08Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
