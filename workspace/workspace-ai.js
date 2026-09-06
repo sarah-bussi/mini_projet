@@ -116,28 +116,7 @@
     return data;
   };
 
-  const renderExperience = (items) => {
-    if (!items.length) return '';
-    const [primary, ...secondary] = items;
-    return `
-      <section class="cv-section" aria-labelledby="exp-title">
-        <h2 id="exp-title">Professional Experience</h2>
-        <article class="exp-primary">
-          <div class="exp-head"><div><h3>${esc(primary.employer)}</h3><p>${esc(primary.role)}</p></div><span>${esc(primary.meta)}</span></div>
-          <ul>${primary.bullets.slice(0, 6).map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
-        </article>
-        <div class="exp-grid">
-          ${secondary.slice(0, 5).map((item) => `
-            <article class="exp-mini">
-              <div class="exp-mini-head"><h3>${esc(item.employer)}</h3><span>${esc(item.meta)}</span></div>
-              <p class="role">${esc(item.role)}</p>
-              ${item.bullets[0] ? `<p>${esc(item.bullets[0])}</p>` : ''}
-            </article>`).join('')}
-        </div>
-      </section>`;
-  };
-
-  const buildDedicatedTemplate = (payload, patch, data) => {
+  const buildDedicatedTemplate = (payload, patch, data, cssText) => {
     const isFr = payload.outputLanguage === 'fr';
     const labels = isFr
       ? { profile: 'PROFIL', experience: 'EXPÉRIENCES PROFESSIONNELLES', education: 'FORMATION', projects: 'PROJETS ACADÉMIQUES & RÉALISATIONS', skills: 'COMPÉTENCES ET TECHNOLOGIES' }
@@ -208,7 +187,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sarah Bussi — ${esc(patch?.professionalTitle || '')}</title>
-  <link rel="stylesheet" href="workspace/cv-application.css" />
+  <style>${String(cssText || '').replace(/<\/style/gi, '<\\/style')}</style>
 </head>
 <body>
   <main class="application-sheet">
@@ -235,12 +214,20 @@
 
   const buildAdaptedCv = async (payload, patch) => {
     const sourceFile = payload.cvSource === 'fr' ? '../cv.html' : '../cv-en.html';
-    const response = await fetch(sourceFile, { cache: 'no-store' });
-    if (!response.ok) throw new Error('cv_template_failed');
-    const sourceHtml = await response.text();
+    const [sourceResponse, cssResponse] = await Promise.all([
+      fetch(sourceFile, { cache: 'no-store' }),
+      fetch('./cv-application.css', { cache: 'no-store' }),
+    ]);
+    if (!sourceResponse.ok) throw new Error('cv_template_failed');
+    if (!cssResponse.ok) throw new Error('cv_style_failed');
+
+    const [sourceHtml, cssText] = await Promise.all([
+      sourceResponse.text(),
+      cssResponse.text(),
+    ]);
     const sourceDoc = new DOMParser().parseFromString(sourceHtml, 'text/html');
     const data = applyPatchToData(parseSourceCv(sourceDoc), patch);
-    return buildDedicatedTemplate(payload, patch, data);
+    return buildDedicatedTemplate(payload, patch, data, cssText);
   };
 
   const renderAnalysis = (analysis) => {
@@ -293,7 +280,8 @@
         const message = String(error?.message || '');
         if (message === 'session_missing') status.textContent = 'Session absente. Reconnecte-toi au workspace.';
         else if (message === 'cv_template_failed') status.textContent = 'Le CV source n’a pas pu être chargé.';
-        else status.textContent = 'La génération a échoué. Vérifie le déploiement de workspace-cv.';
+        else if (message === 'cv_style_failed') status.textContent = 'Le style A4 du CV n’a pas pu être chargé.';
+        else status.textContent = `La génération a échoué (${message || 'erreur inconnue'}).`;
       }
     });
   };
