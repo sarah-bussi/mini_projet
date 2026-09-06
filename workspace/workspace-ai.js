@@ -44,8 +44,14 @@
     return data;
   };
 
-  const normalise = (value) => String(value || '').replace(/\s+/g, ' ').trim();
-  const esc = (value) => String(value ?? '')
+  const cleanText = (value) => String(value ?? '')
+    .replace(/[\uFFFC-\uFFFF]/g, '-')
+    .replace(/[\u2010\u2011\u2012\u2013\u2014]/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const normalise = (value) => cleanText(value);
+  const esc = (value) => cleanText(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -54,6 +60,13 @@
 
   const text = (node) => normalise(node?.textContent || '');
   const texts = (root, selector) => Array.from(root?.querySelectorAll(selector) || []).map(text).filter(Boolean);
+
+  const compactYears = (meta) => {
+    const years = Array.from(new Set((String(meta || '').match(/20\d{2}/g) || []).map(Number))).sort((a, b) => a - b);
+    if (!years.length) return cleanText(meta);
+    if (years.length === 1) return String(years[0]);
+    return `${years[0]} - ${years[years.length - 1]}`;
+  };
 
   const parseSourceCv = (doc) => {
     const experiences = Array.from(doc.querySelectorAll('#experience article.timeline-item')).map((article) => ({
@@ -94,7 +107,7 @@
     const expPatch = new Map((patch?.experiences || []).map((item) => [normalise(item?.employer), item]));
     data.experiences = data.experiences.map((item) => {
       const match = expPatch.get(normalise(item.employer));
-      return match?.bullets?.length ? { ...item, bullets: match.bullets } : item;
+      return match?.bullets?.length ? { ...item, bullets: match.bullets.map(cleanText) } : item;
     });
 
     if (Array.isArray(patch?.experienceOrder) && patch.experienceOrder.length) {
@@ -105,7 +118,7 @@
     const projectPatch = new Map((patch?.projects || []).map((item) => [normalise(item?.title), item]));
     data.projects = data.projects.map((item) => {
       const match = projectPatch.get(normalise(item.title));
-      return match ? { ...item, summary: match.summary || item.summary } : item;
+      return match ? { ...item, summary: cleanText(match.summary || item.summary) } : item;
     });
 
     if (Array.isArray(patch?.projectOrder) && patch.projectOrder.length) {
@@ -135,16 +148,16 @@
           <article class="exp-primary">
             <div class="exp-head">
               <div><h3>${esc(primary.employer)}</h3><p>${esc(primary.role)}</p></div>
-              <span>${esc(primary.meta)}</span>
+              <span>${esc(compactYears(primary.meta))}</span>
             </div>
             <ul>${primary.bullets.slice(0, 6).map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
           </article>` : ''}
         <div class="exp-grid">
           ${secondary.map((item) => `
             <article class="exp-mini">
-              <div class="exp-mini-head"><h3>${esc(item.employer)}</h3><span>${esc(item.meta)}</span></div>
-              <p class="role">${esc(item.role)}</p>
-              ${item.bullets[0] ? `<p>${esc(item.bullets[0])}</p>` : ''}
+              <div class="exp-mini-head"><h3>${esc(item.role || item.employer)}</h3><span>${esc(compactYears(item.meta))}</span></div>
+              <p class="employer">${esc(item.employer)}</p>
+              ${item.bullets[0] ? `<p class="exp-summary">${esc(item.bullets[0])}</p>` : ''}
             </article>`).join('')}
         </div>
       </section>`;
@@ -152,10 +165,13 @@
     const educationHtml = `
       <section class="cv-section compact" aria-labelledby="edu-title">
         <h2 id="edu-title">${labels.education}</h2>
-        <p class="education-line">${data.education.map((item) => {
-          const details = item.details.length ? ` · ${item.details.join(' · ')}` : '';
-          return `<strong>${esc(item.title)}</strong>${esc(details)}`;
-        }).join(' &nbsp; ')}</p>
+        <div class="education-grid">
+          ${data.education.slice(0, 5).map((item) => `
+            <article class="education-item">
+              <h3>${esc(item.title)}</h3>
+              ${item.details.length ? `<p>${esc(item.details.join(' · '))}</p>` : ''}
+            </article>`).join('')}
+        </div>
       </section>`;
 
     const projectsHtml = `
