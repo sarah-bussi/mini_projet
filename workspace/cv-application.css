@@ -6,50 +6,50 @@ body { min-height: 100vh; }
   width: 210mm;
   height: 297mm;
   margin: 0 auto;
-  padding: 8mm 10mm 7mm;
+  padding: 9mm 11mm 8mm;
   background: #fff;
   overflow: hidden;
-  font-size: 7.15pt;
-  line-height: 1.22;
+  font-size: 8pt;
+  line-height: 1.26;
 }
 h1, h2, h3, p, ul { margin-top: 0; }
-.cv-header-block { padding-bottom: 2mm; border-bottom: 1px solid #aeb9c4; }
-h1 { margin: 0 0 .35mm; font-size: 21pt; line-height: 1; letter-spacing: -.4px; color: #20272e; }
-.job-title { margin: 0; font-size: 11.5pt; line-height: 1.1; font-weight: 700; color: #2e6f9f; }
-.tagline { margin: .35mm 0 0; font-size: 8.1pt; font-weight: 600; color: #53697b; }
-.contact { margin: 1mm 0 0; font-size: 6.8pt; color: #344553; }
-.cv-section { padding-top: 1.9mm; }
+.cv-header-block { padding-bottom: 2.8mm; border-bottom: 1px solid #aeb9c4; }
+h1 { margin: 0 0 .55mm; font-size: 23pt; line-height: 1; letter-spacing: -.45px; color: #20272e; }
+.job-title { margin: 0; font-size: 12.5pt; line-height: 1.12; font-weight: 700; color: #2e6f9f; }
+.tagline { margin: .55mm 0 0; font-size: 8.8pt; font-weight: 600; color: #53697b; }
+.contact { margin: 1.35mm 0 0; font-size: 7.35pt; color: #344553; }
+.cv-section { padding-top: 2.7mm; }
 .cv-section h2 {
-  margin: 0 0 .9mm;
-  padding-bottom: .55mm;
+  margin: 0 0 1.25mm;
+  padding-bottom: .7mm;
   border-bottom: 1px solid #aeb9c4;
-  font-size: 9.2pt;
+  font-size: 10pt;
   line-height: 1;
-  letter-spacing: .32px;
+  letter-spacing: .34px;
   color: #2e6f9f;
 }
-.profile-section p { margin: 0; font-size: 7.1pt; line-height: 1.27; }
-.exp-primary { margin-bottom: 1.2mm; }
+.profile-section p { margin: 0; font-size: 7.9pt; line-height: 1.34; }
+.exp-primary { margin-bottom: 2mm; }
 .exp-head, .exp-mini-head { display: flex; justify-content: space-between; gap: 3mm; align-items: baseline; }
-.exp-head h3, .exp-mini h3, .project-card h3, .skill-group h3 { margin: 0; font-size: 7.55pt; line-height: 1.12; color: #1f2d39; }
-.exp-head p { margin: .15mm 0 0; font-size: 6.55pt; font-style: italic; color: #506171; }
-.exp-head span, .exp-mini-head span { flex: 0 0 auto; font-size: 6.2pt; font-weight: 700; color: #4e6070; }
-.exp-primary ul { margin: .55mm 0 0; padding-left: 3.4mm; }
-.exp-primary li { margin-bottom: .18mm; font-size: 6.55pt; line-height: 1.2; }
-.exp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15mm 4mm; }
+.exp-head h3, .exp-mini h3, .project-card h3, .skill-group h3 { margin: 0; font-size: 8.35pt; line-height: 1.15; color: #1f2d39; }
+.exp-head p { margin: .25mm 0 0; font-size: 7.2pt; font-style: italic; color: #506171; }
+.exp-head span, .exp-mini-head span { flex: 0 0 auto; font-size: 6.9pt; font-weight: 700; color: #4e6070; }
+.exp-primary ul { margin: .8mm 0 0; padding-left: 3.8mm; }
+.exp-primary li { margin-bottom: .35mm; font-size: 7.25pt; line-height: 1.24; }
+.exp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75mm 5mm; }
 .exp-mini { break-inside: avoid; }
-.exp-mini .role { margin: .18mm 0 .18mm; font-size: 6.25pt; font-style: italic; color: #506171; }
-.exp-mini > p:last-child { margin: 0; font-size: 6.25pt; line-height: 1.18; }
-.compact { padding-top: 1.6mm; }
-.education-line { margin: 0; font-size: 6.25pt; line-height: 1.24; }
-.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.35mm 3.2mm; }
+.exp-mini .role { margin: .28mm 0 .3mm; font-size: 6.95pt; font-style: italic; color: #506171; }
+.exp-mini > p:last-child { margin: 0; font-size: 6.95pt; line-height: 1.22; }
+.compact { padding-top: 2.2mm; }
+.education-line { margin: 0; font-size: 6.9pt; line-height: 1.34; }
+.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2mm 3.8mm; }
 .project-card { break-inside: avoid; }
-.project-card p { margin: .28mm 0 0; font-size: 6.15pt; line-height: 1.18; }
-.project-card .tags { font-size: 5.95pt; font-weight: 600; color: #516575; }
-.skills-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2.3mm; }
-.skill-group h3 { margin-bottom: .28mm; font-size: 6.6pt; color: #2e6f9f; }
-.skill-group p { margin: 0; font-size: 6.05pt; line-height: 1.18; }
-.languages-line { margin: .75mm 0 0; font-size: 6.05pt; line-height: 1.2; }
+.project-card p { margin: .45mm 0 0; font-size: 6.85pt; line-height: 1.23; }
+.project-card .tags { font-size: 6.35pt; font-weight: 600; color: #516575; }
+.skills-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2.8mm; }
+.skill-group h3 { margin-bottom: .42mm; font-size: 7.05pt; color: #2e6f9f; }
+.skill-group p { margin: 0; font-size: 6.55pt; line-height: 1.23; }
+.languages-line { margin: 1.15mm 0 0; font-size: 6.6pt; line-height: 1.25; }
 strong { font-weight: 700; }
 @media print {
   html, body { width: 210mm; height: 297mm; background: #fff !important; }
@@ -57,7 +57,7 @@ strong { font-weight: 700; }
     width: 210mm !important;
     height: 297mm !important;
     margin: 0 !important;
-    padding: 8mm 10mm 7mm !important;
+    padding: 9mm 11mm 8mm !important;
     overflow: hidden !important;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
