@@ -45,13 +45,24 @@
   };
 
   const cleanText = (value) => String(value ?? '')
-    .replace(/[\uFFFC-\uFFFF]/g, '-')
+    .normalize('NFKC')
+    .replace(/[\u0000-\u001F\u007F-\u009F\u00AD\u200B-\u200F\u202A-\u202E\u2060-\u206F\uFDD0-\uFDEF\uFEFF\uFFFC-\uFFFF]/g, '')
     .replace(/[\u2010\u2011\u2012\u2013\u2014]/g, '-')
     .replace(/\s+/g, ' ')
     .trim();
 
+  const claimSafeText = (value) => cleanText(value)
+    .replace(/\bProven ability to collaborate with\b/gi, 'Collaborates with')
+    .replace(/\bProven ability to work with\b/gi, 'Works with')
+    .replace(/\bProven ability to translate\b/gi, 'Translates')
+    .replace(/\bProven ability to support\b/gi, 'Supports')
+    .replace(/\bProven ability to conduct\b/gi, 'Conducts')
+    .replace(/\bProven ability to review\b/gi, 'Reviews')
+    .replace(/\bProven ability to test\b/gi, 'Tests')
+    .replace(/\bProven ability to validate\b/gi, 'Validates');
+
   const normalise = (value) => cleanText(value);
-  const esc = (value) => cleanText(value)
+  const esc = (value) => claimSafeText(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -66,6 +77,14 @@
     if (!years.length) return cleanText(meta);
     if (years.length === 1) return String(years[0]);
     return `${years[0]} - ${years[years.length - 1]}`;
+  };
+
+  const displayRole = (item, isFr) => {
+    const employer = normalise(item?.employer);
+    if (employer === 'Maison Perce-Neige') {
+      return isFr ? "Stage d'observation - accompagnement du handicap" : 'Disability support observation placement';
+    }
+    return cleanText(item?.role || item?.employer || '');
   };
 
   const parseSourceCv = (doc) => {
@@ -107,7 +126,7 @@
     const expPatch = new Map((patch?.experiences || []).map((item) => [normalise(item?.employer), item]));
     data.experiences = data.experiences.map((item) => {
       const match = expPatch.get(normalise(item.employer));
-      return match?.bullets?.length ? { ...item, bullets: match.bullets.map(cleanText) } : item;
+      return match?.bullets?.length ? { ...item, bullets: match.bullets.map(claimSafeText) } : item;
     });
 
     if (Array.isArray(patch?.experienceOrder) && patch.experienceOrder.length) {
@@ -118,7 +137,7 @@
     const projectPatch = new Map((patch?.projects || []).map((item) => [normalise(item?.title), item]));
     data.projects = data.projects.map((item) => {
       const match = projectPatch.get(normalise(item.title));
-      return match ? { ...item, summary: cleanText(match.summary || item.summary) } : item;
+      return match ? { ...item, summary: claimSafeText(match.summary || item.summary) } : item;
     });
 
     if (Array.isArray(patch?.projectOrder) && patch.projectOrder.length) {
@@ -155,7 +174,7 @@
         <div class="exp-grid">
           ${secondary.map((item) => `
             <article class="exp-mini">
-              <div class="exp-mini-head"><h3>${esc(item.role || item.employer)}</h3><span>${esc(compactYears(item.meta))}</span></div>
+              <div class="exp-mini-head"><h3>${esc(displayRole(item, isFr))}</h3><span>${esc(compactYears(item.meta))}</span></div>
               <p class="employer">${esc(item.employer)}</p>
               ${item.bullets[0] ? `<p class="exp-summary">${esc(item.bullets[0])}</p>` : ''}
             </article>`).join('')}
