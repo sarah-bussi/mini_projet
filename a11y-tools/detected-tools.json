@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:05:01Z",
+  "updatedAt": "2026-09-07T12:44:29Z",
   "errors": [],
   "items": [
     {
@@ -20,8 +20,19 @@
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
       "stars": 402,
-      "updatedAt": "2026-09-05T01:45:27Z",
+      "updatedAt": "2026-09-06T18:38:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y",
+      "fullName": "nuxt/a11y",
+      "url": "https://github.com/nuxt/a11y",
+      "description": "Nuxt module to provide accessibility hinting and utilities.",
+      "language": "TypeScript",
+      "stars": 229,
+      "updatedAt": "2026-09-07T09:45:33Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
@@ -53,7 +64,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 149,
-      "updatedAt": "2026-09-06T08:47:07Z",
+      "updatedAt": "2026-09-07T07:41:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -97,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-05T22:04:12Z",
+      "updatedAt": "2026-09-06T17:26:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -113,24 +124,24 @@
       "source": "GitHub"
     },
     {
-      "name": "a11y-webring.club",
-      "fullName": "ericwbailey/a11y-webring.club",
-      "url": "https://github.com/ericwbailey/a11y-webring.club",
-      "description": "🌐 A webring for digital accessibility practitioners.",
-      "language": "Nunjucks",
-      "stars": 70,
-      "updatedAt": "2026-09-06T00:37:19Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "a11y-guidelines",
       "fullName": "Orange-OpenSource/a11y-guidelines",
       "url": "https://github.com/Orange-OpenSource/a11y-guidelines",
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 70,
-      "updatedAt": "2026-09-04T13:03:10Z",
+      "updatedAt": "2026-09-07T09:06:15Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-webring.club",
+      "fullName": "ericwbailey/a11y-webring.club",
+      "url": "https://github.com/ericwbailey/a11y-webring.club",
+      "description": "🌐 A webring for digital accessibility practitioners.",
+      "language": "Nunjucks",
+      "stars": 70,
+      "updatedAt": "2026-09-06T15:21:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -152,7 +163,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 58,
-      "updatedAt": "2026-09-04T04:46:18Z",
+      "updatedAt": "2026-09-07T09:49:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -207,7 +218,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-06T08:12:41Z",
+      "updatedAt": "2026-09-06T13:06:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -229,7 +240,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-05T16:07:09Z",
+      "updatedAt": "2026-09-07T12:08:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +262,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-06T09:57:54Z",
+      "updatedAt": "2026-09-07T02:49:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -262,7 +273,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-06T07:49:08Z",
+      "updatedAt": "2026-09-07T09:27:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -275,6 +286,28 @@
       "stars": 12,
       "updatedAt": "2026-09-04T21:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "quarto-revealjs-a11y",
+      "fullName": "mcanouil/quarto-revealjs-a11y",
+      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
+      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
+      "language": "JavaScript",
+      "stars": 10,
+      "updatedAt": "2026-09-07T12:32:44Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "tailwind-a11y",
+      "fullName": "chamroro/tailwind-a11y",
+      "url": "https://github.com/chamroro/tailwind-a11y",
+      "description": "Static accessibility analysis for Tailwind CSS projects.",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2026-09-06T15:51:16Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
