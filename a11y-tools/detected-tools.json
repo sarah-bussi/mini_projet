@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T12:44:29Z",
+  "updatedAt": "2026-09-08T11:27:16Z",
   "errors": [],
   "items": [
     {
@@ -8,7 +8,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 774,
+      "stars": 775,
       "updatedAt": "2026-09-03T15:48:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -19,7 +19,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 402,
+      "stars": 403,
       "updatedAt": "2026-09-06T18:38:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -31,7 +31,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 229,
-      "updatedAt": "2026-09-07T09:45:33Z",
+      "updatedAt": "2026-09-07T12:51:38Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -52,8 +52,8 @@
       "url": "https://github.com/GovTechSG/oobee",
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
-      "stars": 168,
-      "updatedAt": "2026-09-03T03:27:14Z",
+      "stars": 169,
+      "updatedAt": "2026-09-08T07:43:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -108,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-06T17:26:38Z",
+      "updatedAt": "2026-09-08T03:21:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -118,7 +118,7 @@
       "url": "https://github.com/ianho7/ai-friendly-web-design-skill",
       "description": "A skill for coding agents that build, review, and refactor Web UI that should be easier for humans, screen readers, browser automation, Playwright tests, and AI agents to understand and operate.",
       "language": "JavaScript",
-      "stars": 75,
+      "stars": 76,
       "updatedAt": "2026-06-21T16:01:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -163,7 +163,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 58,
-      "updatedAt": "2026-09-07T09:49:14Z",
+      "updatedAt": "2026-09-08T10:54:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -198,6 +198,17 @@
       "stars": 40,
       "updatedAt": "2026-09-03T15:24:58Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-tests-web",
+      "fullName": "bbc/a11y-tests-web",
+      "url": "https://github.com/bbc/a11y-tests-web",
+      "description": "Runs automated accessibility tests against configurable lists of webpages",
+      "language": "JavaScript",
+      "stars": 35,
+      "updatedAt": "2026-09-08T10:35:13Z",
+      "detectedAt": "2026-09-08T11:27:16Z",
       "source": "GitHub"
     },
     {
@@ -262,7 +273,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-07T02:49:51Z",
+      "updatedAt": "2026-09-08T11:12:57Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +284,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-07T09:27:00Z",
+      "updatedAt": "2026-09-08T06:45:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -295,7 +306,7 @@
       "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
       "language": "JavaScript",
       "stars": 10,
-      "updatedAt": "2026-09-07T12:32:44Z",
+      "updatedAt": "2026-09-07T21:55:39Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
