@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T11:27:16Z",
+  "updatedAt": "2026-09-09T11:32:52Z",
   "errors": [],
   "items": [
     {
@@ -9,7 +9,7 @@
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
       "stars": 775,
-      "updatedAt": "2026-09-03T15:48:44Z",
+      "updatedAt": "2026-09-08T16:23:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -31,7 +31,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 229,
-      "updatedAt": "2026-09-07T12:51:38Z",
+      "updatedAt": "2026-09-09T07:52:42Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 169,
-      "updatedAt": "2026-09-08T07:43:05Z",
+      "updatedAt": "2026-09-09T10:40:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -63,7 +63,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 149,
+      "stars": 150,
       "updatedAt": "2026-09-07T07:41:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -108,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-08T03:21:38Z",
+      "updatedAt": "2026-09-09T03:24:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -124,6 +124,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-webring.club",
+      "fullName": "ericwbailey/a11y-webring.club",
+      "url": "https://github.com/ericwbailey/a11y-webring.club",
+      "description": "🌐 A webring for digital accessibility practitioners.",
+      "language": "Nunjucks",
+      "stars": 70,
+      "updatedAt": "2026-09-08T22:02:43Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-guidelines",
       "fullName": "Orange-OpenSource/a11y-guidelines",
       "url": "https://github.com/Orange-OpenSource/a11y-guidelines",
@@ -131,17 +142,6 @@
       "language": "Nunjucks",
       "stars": 70,
       "updatedAt": "2026-09-07T09:06:15Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-webring.club",
-      "fullName": "ericwbailey/a11y-webring.club",
-      "url": "https://github.com/ericwbailey/a11y-webring.club",
-      "description": "🌐 A webring for digital accessibility practitioners.",
-      "language": "Nunjucks",
-      "stars": 70,
-      "updatedAt": "2026-09-06T15:21:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -163,7 +163,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 58,
-      "updatedAt": "2026-09-08T10:54:40Z",
+      "updatedAt": "2026-09-09T10:58:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-07T12:08:22Z",
+      "updatedAt": "2026-09-08T13:51:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,8 +273,19 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-08T11:12:57Z",
+      "updatedAt": "2026-09-09T11:12:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "wp-a11y-docs",
+      "fullName": "wpaccessibility/wp-a11y-docs",
+      "url": "https://github.com/wpaccessibility/wp-a11y-docs",
+      "description": "Documentation to help WordPress creators and users create accessible work.",
+      "language": "SCSS",
+      "stars": 20,
+      "updatedAt": "2026-09-09T08:18:23Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
@@ -284,7 +295,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-08T06:45:54Z",
+      "updatedAt": "2026-09-08T19:13:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -297,6 +308,17 @@
       "stars": 12,
       "updatedAt": "2026-09-04T21:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "chrome-bridge",
+      "fullName": "siropkin/chrome-bridge",
+      "url": "https://github.com/siropkin/chrome-bridge",
+      "description": "CLI for browser automation: let any AI agent drive your real Chrome — logged-in tabs, zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
+      "language": "JavaScript",
+      "stars": 10,
+      "updatedAt": "2026-09-09T00:24:04Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
