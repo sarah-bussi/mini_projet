@@ -31,9 +31,7 @@ function parseJsonContent(content: string) {
 
   const firstBrace = cleaned.indexOf("{");
   const lastBrace = cleaned.lastIndexOf("}");
-  if (firstBrace >= 0 && lastBrace > firstBrace) {
-    cleaned = cleaned.slice(firstBrace, lastBrace + 1);
-  }
+  if (firstBrace >= 0 && lastBrace > firstBrace) cleaned = cleaned.slice(firstBrace, lastBrace + 1);
 
   try {
     return JSON.parse(cleaned);
@@ -45,7 +43,7 @@ function parseJsonContent(content: string) {
   }
 }
 
-async function groqJson(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
+async function groqJson(apiKey: string, model: string, prompt: string) {
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -54,9 +52,13 @@ async function groqJson(apiKey: string, model: string, messages: Array<{ role: s
     },
     body: JSON.stringify({
       model,
-      temperature: 0,
-      max_completion_tokens: 1500,
-      messages,
+      temperature: 0.2,
+      top_p: 0.9,
+      max_completion_tokens: 1800,
+      reasoning_effort: "low",
+      include_reasoning: false,
+      response_format: { type: "json_object" },
+      messages: [{ role: "user", content: prompt }],
     }),
   });
 
@@ -67,8 +69,10 @@ async function groqJson(apiKey: string, model: string, messages: Array<{ role: s
     throw new Error(`groq_${response.status}${groqMessage ? `:${groqMessage}` : ""}`);
   }
 
-  const content = String(data?.choices?.[0]?.message?.content || "").trim();
-  if (!content) throw new Error("empty_ai_response");
+  const message = data?.choices?.[0]?.message || {};
+  const content = String(message?.content || "").trim();
+  const finishReason = String(data?.choices?.[0]?.finish_reason || "");
+  if (!content) throw new Error(`empty_ai_response${finishReason ? `:${finishReason}` : ""}`);
 
   try {
     return parseJsonContent(content);
@@ -139,16 +143,16 @@ async function loadCv(source: string) {
   const languages = firstSection(html, ["languages", "langues"]);
 
   const compactSource = [
-    `EXPERIENCE: ${clip(stripHtml(experience), 3800)}`,
-    `PROJECTS: ${clip(stripHtml(projectsSection), 2400)}`,
-    `SKILLS: ${clip(stripHtml(skills), 1500)}`,
-    `EDUCATION: ${clip(stripHtml(education), 900)}`,
-    `LANGUAGES: ${clip(stripHtml(languages), 400)}`,
+    `EXPERIENCE: ${clip(stripHtml(experience), 3000)}`,
+    `PROJECTS: ${clip(stripHtml(projectsSection), 1800)}`,
+    `SKILLS: ${clip(stripHtml(skills), 1100)}`,
+    `EDUCATION: ${clip(stripHtml(education), 700)}`,
+    `LANGUAGES: ${clip(stripHtml(languages), 250)}`,
   ].join("\n");
 
   return {
     file,
-    text: compactSource.slice(0, 9000),
+    text: compactSource.slice(0, 7000),
     employers: extractH3(experience),
     projects: extractH3(projectsSection),
   };
@@ -197,10 +201,10 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
 
 function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text: string; employers: string[]; projects: string[] }) {
   const language = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
-  const offer = clip(payload.offer, 6000);
-  const focus = clip(payload.focus, 1000);
+  const offer = clip(payload.offer, 3500);
+  const focus = clip(payload.focus, 700);
 
-  return `Adapte ce CV à l'offre sans rien inventer. Réponse courte, factuelle, en ${language}.\n\nCV (${cv.file}):\n${cv.text}\n\nEMPLOYEURS EXACTS: ${JSON.stringify(cv.employers)}\nPROJETS EXACTS: ${JSON.stringify(cv.projects)}\n\nOFFRE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES:\n- Zéro invention: compétence, responsabilité, date, résultat, niveau ou qualité non démontrés = interdit.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet.\n- Employeurs/projets: recopier exactement un nom autorisé.\n- Pas de lead/led/own/drive/manage/expert/senior/proven ability sauf preuve explicite.\n- Maximum: 5 forces, 4 écarts, 8 mots-clés, 3 expériences adaptées, 6 bullets par expérience, 4 projets adaptés.\n- Bullets très concis. Résumé CV: 55 mots maximum. Résumé projet: 30 mots maximum.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n\nRenvoie UNIQUEMENT cet objet JSON, sans markdown:\n{"analysis":{"verdict":"...","strengths":["..."],"gaps":["..."],"atsKeywords":["..."]},"cvPatch":{"professionalTitle":"...","summary":"...","prioritySkills":["..."],"experiences":[{"employer":"nom exact","bullets":["..."]}],"experienceOrder":["nom exact"],"projects":[{"title":"titre exact","summary":"..."}],"projectOrder":["titre exact"]}}`;
+  return `Tu es un éditeur de CV conservateur. Adapte le CV ci-dessous à l'offre, en ${language}, sans rien inventer.\n\nCV (${cv.file}):\n${cv.text}\n\nEMPLOYEURS EXACTS: ${JSON.stringify(cv.employers)}\nPROJETS EXACTS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 160)}\nEntreprise: ${clip(payload.company, 160)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet.\n- Employeurs et projets doivent être recopiés exactement depuis les listes autorisées.\n- Pas de lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite.\n- Maximum 4 forces, 4 écarts, 8 mots-clés, 3 expériences, 5 bullets par expérience et 4 projets.\n- Bullets concis. Résumé CV: 50 mots max. Résumé projet: 25 mots max.\n- Exigence non démontrée = gaps, jamais cvPatch.\n\nRéponds UNIQUEMENT avec un objet JSON valide de cette forme:\n{"analysis":{"verdict":"...","strengths":["..."],"gaps":["..."],"atsKeywords":["..."]},"cvPatch":{"professionalTitle":"...","summary":"...","prioritySkills":["..."],"experiences":[{"employer":"nom exact","bullets":["..."]}],"experienceOrder":["nom exact"],"projects":[{"title":"titre exact","summary":"..."}],"projectOrder":["titre exact"]}}`;
 }
 
 Deno.serve(async (request) => {
@@ -222,29 +226,25 @@ Deno.serve(async (request) => {
   try {
     const source = String(payload.cvSource || "en") === "fr" ? "fr" : "en";
     const cv = await loadCv(source);
-    const result = await groqJson(apiKey, model, [
-      {
-        role: "system",
-        content: "Tu es un éditeur de CV conservateur. Fidélité absolue au CV source. Réponds uniquement par un objet JSON valide et compact.",
-      },
-      { role: "user", content: buildPrompt(payload, cv) },
-    ]);
+    const result = await groqJson(apiKey, model, buildPrompt(payload, cv));
 
     const analysis = {
       verdict: String(result?.analysis?.verdict || "").trim(),
-      strengths: stringArray(result?.analysis?.strengths, 5),
+      strengths: stringArray(result?.analysis?.strengths, 4),
       gaps: stringArray(result?.analysis?.gaps, 4),
       atsKeywords: stringArray(result?.analysis?.atsKeywords, 8),
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-compact-cv" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-low-reasoning-cv" });
   } catch (error) {
     console.error("workspace-cv", error);
     const rawDetail = String((error as Error)?.message || error);
     const detail = rawDetail === "groq_rate_limited"
       ? "Le service IA a atteint sa limite temporaire de requêtes. Réessaie dans quelques secondes."
-      : rawDetail.slice(0, 500);
+      : rawDetail.startsWith("empty_ai_response")
+        ? "Le modèle n'a pas produit de réponse exploitable. Réessaie une fois ; si cela persiste, le modèle configuré doit être remplacé."
+        : rawDetail.slice(0, 500);
     return json({ error: `workspace_cv_failed:${detail}`, detail }, rawDetail === "groq_rate_limited" ? 429 : 502);
   }
 });
