@@ -100,10 +100,14 @@
     }));
 
     const skillsRoot = doc.querySelector('#skills, #competences');
-    const skills = Array.from(skillsRoot?.querySelectorAll('.skill-group') || []).map((group) => ({
-      title: text(group.querySelector('h3')),
-      items: texts(group, 'li'),
-    }));
+    const skills = Array.from(skillsRoot?.querySelectorAll('.skill-group') || []).map((group) => {
+      const listItems = texts(group, 'li');
+      const paragraphItems = texts(group, 'p');
+      return {
+        title: text(group.querySelector('h3')),
+        items: [...listItems, ...paragraphItems],
+      };
+    });
 
     const languagesRoot = doc.querySelector('#languages, #langues');
     const languages = Array.from(languagesRoot?.querySelectorAll('.skill-group') || []).map((group) => ({
