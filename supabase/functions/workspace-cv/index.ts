@@ -22,7 +22,7 @@ async function getUser(token: string) {
 }
 
 function parseJsonContent(content: string) {
-  let cleaned = content
+  let cleaned = String(content || "")
     .trim()
     .replace(/^```json\s*/i, "")
     .replace(/^```\s*/i, "")
@@ -32,52 +32,60 @@ function parseJsonContent(content: string) {
   const firstBrace = cleaned.indexOf("{");
   const lastBrace = cleaned.lastIndexOf("}");
   if (firstBrace >= 0 && lastBrace > firstBrace) cleaned = cleaned.slice(firstBrace, lastBrace + 1);
-  return JSON.parse(cleaned);
+
+  try {
+    return JSON.parse(cleaned);
+  } catch {
+    const repaired = cleaned
+      .replace(/[\u0000-\u001F\u007F-\u009F]/g, " ")
+      .replace(/,\s*([}\]])/g, "$1");
+    return JSON.parse(repaired);
+  }
 }
 
 const responseSchema = {
-  type: "OBJECT",
+  type: "object",
   properties: {
     analysis: {
-      type: "OBJECT",
+      type: "object",
       properties: {
-        verdict: { type: "STRING" },
-        strengths: { type: "ARRAY", items: { type: "STRING" } },
-        gaps: { type: "ARRAY", items: { type: "STRING" } },
-        atsKeywords: { type: "ARRAY", items: { type: "STRING" } },
+        verdict: { type: "string" },
+        strengths: { type: "array", items: { type: "string" } },
+        gaps: { type: "array", items: { type: "string" } },
+        atsKeywords: { type: "array", items: { type: "string" } },
       },
       required: ["verdict", "strengths", "gaps", "atsKeywords"],
     },
     cvPatch: {
-      type: "OBJECT",
+      type: "object",
       properties: {
-        professionalTitle: { type: "STRING" },
-        summary: { type: "STRING" },
-        prioritySkills: { type: "ARRAY", items: { type: "STRING" } },
+        professionalTitle: { type: "string" },
+        summary: { type: "string" },
+        prioritySkills: { type: "array", items: { type: "string" } },
         experiences: {
-          type: "ARRAY",
+          type: "array",
           items: {
-            type: "OBJECT",
+            type: "object",
             properties: {
-              employer: { type: "STRING" },
-              bullets: { type: "ARRAY", items: { type: "STRING" } },
+              employer: { type: "string" },
+              bullets: { type: "array", items: { type: "string" } },
             },
             required: ["employer", "bullets"],
           },
         },
-        experienceOrder: { type: "ARRAY", items: { type: "STRING" } },
+        experienceOrder: { type: "array", items: { type: "string" } },
         projects: {
-          type: "ARRAY",
+          type: "array",
           items: {
-            type: "OBJECT",
+            type: "object",
             properties: {
-              title: { type: "STRING" },
-              summary: { type: "STRING" },
+              title: { type: "string" },
+              summary: { type: "string" },
             },
             required: ["title", "summary"],
           },
         },
-        projectOrder: { type: "ARRAY", items: { type: "STRING" } },
+        projectOrder: { type: "array", items: { type: "string" } },
       },
       required: ["professionalTitle", "summary", "prioritySkills", "experiences", "experienceOrder", "projects", "projectOrder"],
     },
@@ -85,8 +93,21 @@ const responseSchema = {
   required: ["analysis", "cvPatch"],
 };
 
-async function geminiJson(apiKey: string, model: string, prompt: string) {
+function extractGeminiText(data: any) {
+  const candidate = data?.candidates?.[0];
+  const parts = Array.isArray(candidate?.content?.parts) ? candidate.content.parts : [];
+  return parts.map((part: any) => String(part?.text || "")).join("").trim();
+}
+
+async function callGemini(apiKey: string, model: string, prompt: string, strictSchema: boolean) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const generationConfig: Record<string, unknown> = {
+    temperature: 0.1,
+    maxOutputTokens: 4096,
+    responseMimeType: "application/json",
+  };
+  if (strictSchema) generationConfig.responseSchema = responseSchema;
+
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -95,12 +116,7 @@ async function geminiJson(apiKey: string, model: string, prompt: string) {
     },
     body: JSON.stringify({
       contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.15,
-        maxOutputTokens: 1800,
-        responseMimeType: "application/json",
-        responseSchema,
-      },
+      generationConfig,
     }),
   });
 
@@ -111,18 +127,28 @@ async function geminiJson(apiKey: string, model: string, prompt: string) {
     throw new Error(`gemini_${response.status}${message ? `:${message}` : ""}`);
   }
 
-  const candidate = data?.candidates?.[0];
-  const content = String(candidate?.content?.parts?.map((part: any) => part?.text || "").join("") || "").trim();
-  const finishReason = String(candidate?.finishReason || "");
+  const content = extractGeminiText(data);
+  const finishReason = String(data?.candidates?.[0]?.finishReason || "");
   if (!content) {
     const blockReason = String(data?.promptFeedback?.blockReason || "");
     throw new Error(`empty_gemini_response${finishReason ? `:${finishReason}` : ""}${blockReason ? `:${blockReason}` : ""}`);
   }
 
+  return { content, finishReason };
+}
+
+async function geminiJson(apiKey: string, model: string, prompt: string) {
+  const first = await callGemini(apiKey, model, prompt, true);
   try {
-    return parseJsonContent(content);
+    return parseJsonContent(first.content);
   } catch {
-    throw new Error("invalid_gemini_json");
+    const repairPrompt = `${prompt}\n\nIMPORTANT: la réponse précédente n'était pas exploitable. Renvoie maintenant UNIQUEMENT un objet JSON complet et valide, sans markdown ni commentaire. Respecte exactement les clés analysis et cvPatch. Réduis le texte si nécessaire afin que le JSON soit complet.`;
+    const second = await callGemini(apiKey, model, repairPrompt, false);
+    try {
+      return parseJsonContent(second.content);
+    } catch {
+      throw new Error(`invalid_gemini_json:${second.finishReason || first.finishReason || "unknown"}`);
+    }
   }
 }
 
@@ -188,16 +214,16 @@ async function loadCv(source: string) {
   const languages = firstSection(html, ["languages", "langues"]);
 
   const compactSource = [
-    `EXPERIENCE: ${clip(stripHtml(experience), 3400)}`,
-    `PROJECTS: ${clip(stripHtml(projectsSection), 2400)}`,
-    `SKILLS: ${clip(stripHtml(skills), 1400)}`,
-    `EDUCATION: ${clip(stripHtml(education), 900)}`,
-    `LANGUAGES: ${clip(stripHtml(languages), 350)}`,
+    `EXPERIENCE: ${clip(stripHtml(experience), 3200)}`,
+    `PROJECTS: ${clip(stripHtml(projectsSection), 2200)}`,
+    `SKILLS: ${clip(stripHtml(skills), 1300)}`,
+    `EDUCATION: ${clip(stripHtml(education), 850)}`,
+    `LANGUAGES: ${clip(stripHtml(languages), 300)}`,
   ].join("\n");
 
   return {
     file,
-    text: compactSource.slice(0, 8500),
+    text: compactSource.slice(0, 8000),
     employers: extractH3(experience),
     projects: extractH3(projectsSection),
   };
@@ -246,10 +272,10 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
 
 function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text: string; employers: string[]; projects: string[] }) {
   const language = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
-  const offer = clip(payload.offer, 6000);
-  const focus = clip(payload.focus, 1000);
+  const offer = clip(payload.offer, 5000);
+  const focus = clip(payload.focus, 900);
 
-  return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 6 bullets par expérience et 6 projets.\n- Résumé CV: 55 mots maximum. Bullets concis. Résumé projet: 30 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
+  return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 5 bullets par expérience et 6 projets.\n- Résumé CV: 50 mots maximum. Bullets concis. Résumé projet: 25 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Tu dois toujours renvoyer analysis et cvPatch, même si certains tableaux sont vides.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
 }
 
 Deno.serve(async (request) => {
@@ -263,7 +289,7 @@ Deno.serve(async (request) => {
   if (!user?.id) return json({ error: "forbidden" }, 403);
 
   const apiKey = Deno.env.get("GEMINI_API_KEY") || "";
-  const model = Deno.env.get("GEMINI_MODEL") || "gemini-3.5-flash";
+  const model = Deno.env.get("GEMINI_MODEL") || "gemini-2.5-flash";
   if (!apiKey) return json({ error: "gemini_not_configured" }, 503);
 
   const payload = await request.json().catch(() => ({}));
@@ -281,7 +307,7 @@ Deno.serve(async (request) => {
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv-v2" });
   } catch (error) {
     console.error("workspace-cv", error);
     const rawDetail = String((error as Error)?.message || error);
@@ -289,8 +315,8 @@ Deno.serve(async (request) => {
       ? "Gemini a atteint une limite temporaire de requêtes. Réessaie dans quelques secondes."
       : rawDetail.startsWith("empty_gemini_response")
         ? "Gemini n'a pas produit de réponse exploitable pour cette requête."
-        : rawDetail === "invalid_gemini_json"
-          ? "Gemini a renvoyé une réponse structurée invalide."
+        : rawDetail.startsWith("invalid_gemini_json")
+          ? `Gemini a renvoyé une réponse JSON incomplète (${rawDetail.split(":")[1] || "raison inconnue"}).`
           : rawDetail.slice(0, 500);
     return json({ error: `workspace_cv_failed:${detail}`, detail }, rawDetail === "gemini_rate_limited" ? 429 : 502);
   }
