@@ -22,16 +22,30 @@ async function getUser(token: string) {
 }
 
 function parseJsonContent(content: string) {
-  const cleaned = content
+  let cleaned = content
     .trim()
     .replace(/^```json\s*/i, "")
     .replace(/^```\s*/i, "")
-    .replace(/```$/i, "")
+    .replace(/```\s*$/i, "")
     .trim();
-  return JSON.parse(cleaned);
+
+  const firstBrace = cleaned.indexOf("{");
+  const lastBrace = cleaned.lastIndexOf("}");
+  if (firstBrace >= 0 && lastBrace > firstBrace) {
+    cleaned = cleaned.slice(firstBrace, lastBrace + 1);
+  }
+
+  try {
+    return JSON.parse(cleaned);
+  } catch {
+    const repaired = cleaned
+      .replace(/[\u0000-\u001F\u007F-\u009F]/g, " ")
+      .replace(/,\s*([}\]])/g, "$1");
+    return JSON.parse(repaired);
+  }
 }
 
-async function groqJsonOnce(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
+async function groqJson(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -40,15 +54,16 @@ async function groqJsonOnce(apiKey: string, model: string, messages: Array<{ rol
     },
     body: JSON.stringify({
       model,
-      temperature: 0.05,
-      response_format: { type: "json_object" },
+      temperature: 0,
+      max_completion_tokens: 1500,
       messages,
     }),
   });
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const groqMessage = String(data?.error?.message || data?.message || "").slice(0, 300);
+    const groqMessage = String(data?.error?.message || data?.message || "").slice(0, 320);
+    if (response.status === 429) throw new Error("groq_rate_limited");
     throw new Error(`groq_${response.status}${groqMessage ? `:${groqMessage}` : ""}`);
   }
 
@@ -59,29 +74,6 @@ async function groqJsonOnce(apiKey: string, model: string, messages: Array<{ rol
     return parseJsonContent(content);
   } catch {
     throw new Error("invalid_ai_json");
-  }
-}
-
-async function groqJson(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
-  let firstError: unknown;
-  try {
-    return await groqJsonOnce(apiKey, model, messages);
-  } catch (error) {
-    firstError = error;
-  }
-
-  const retryMessages = [
-    ...messages,
-    {
-      role: "system",
-      content: "Nouvelle tentative: renvoie uniquement un objet JSON valide, sans markdown, sans commentaire, sans texte avant ou après le JSON.",
-    },
-  ];
-
-  try {
-    return await groqJsonOnce(apiKey, model, retryMessages);
-  } catch (retryError) {
-    throw new Error(`ai_retry_failed:${String((firstError as Error)?.message || firstError)}|${String((retryError as Error)?.message || retryError)}`);
   }
 }
 
@@ -112,6 +104,14 @@ function sectionHtml(html: string, id: string) {
   return next >= 0 ? rest.slice(0, next + 1) : rest;
 }
 
+function firstSection(html: string, ids: string[]) {
+  for (const id of ids) {
+    const section = sectionHtml(html, id);
+    if (section) return section;
+  }
+  return "";
+}
+
 function extractH3(section: string) {
   const values: string[] = [];
   for (const match of section.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>/gi)) {
@@ -121,23 +121,42 @@ function extractH3(section: string) {
   return values;
 }
 
+function clip(value: unknown, max: number) {
+  return String(value || "").replace(/\s+/g, " ").trim().slice(0, max);
+}
+
 async function loadCv(source: string) {
   const file = source === "fr" ? "cv.html" : "cv-en.html";
   const url = `https://raw.githubusercontent.com/sarah-bussi/mini_projet/main/${file}`;
   const response = await fetch(url, { headers: { "User-Agent": "workspace-cv" } });
   if (!response.ok) throw new Error(`cv_source_${response.status}`);
   const html = await response.text();
+
+  const experience = firstSection(html, ["experience"]);
+  const projectsSection = firstSection(html, ["projects", "projets"]);
+  const skills = firstSection(html, ["skills", "competences"]);
+  const education = firstSection(html, ["education", "formation"]);
+  const languages = firstSection(html, ["languages", "langues"]);
+
+  const compactSource = [
+    `EXPERIENCE: ${clip(stripHtml(experience), 3800)}`,
+    `PROJECTS: ${clip(stripHtml(projectsSection), 2400)}`,
+    `SKILLS: ${clip(stripHtml(skills), 1500)}`,
+    `EDUCATION: ${clip(stripHtml(education), 900)}`,
+    `LANGUAGES: ${clip(stripHtml(languages), 400)}`,
+  ].join("\n");
+
   return {
     file,
-    text: stripHtml(html).slice(0, 32000),
-    employers: extractH3(sectionHtml(html, "experience")),
-    projects: extractH3(sectionHtml(html, "projects")),
+    text: compactSource.slice(0, 9000),
+    employers: extractH3(experience),
+    projects: extractH3(projectsSection),
   };
 }
 
-function stringArray(value: unknown) {
+function stringArray(value: unknown, max = 10) {
   if (!Array.isArray(value)) return [];
-  return value.map((item) => String(item || "").trim()).filter(Boolean).slice(0, 20);
+  return value.map((item) => String(item || "").trim()).filter(Boolean).slice(0, max);
 }
 
 function cleanPatch(raw: any, employers: string[], projects: string[]) {
@@ -148,9 +167,10 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
     ? raw.experiences
         .map((item: any) => ({
           employer: String(item?.employer || "").trim(),
-          bullets: stringArray(item?.bullets).slice(0, 8),
+          bullets: stringArray(item?.bullets, 6),
         }))
         .filter((item: any) => allowedEmployers.has(item.employer) && item.bullets.length)
+        .slice(0, 3)
     : [];
 
   const projectItems = Array.isArray(raw?.projects)
@@ -158,25 +178,29 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
         .map((item: any) => ({
           title: String(item?.title || "").trim(),
           summary: String(item?.summary || "").trim(),
-          highlights: stringArray(item?.highlights).slice(0, 6),
+          highlights: [],
         }))
         .filter((item: any) => allowedProjects.has(item.title))
+        .slice(0, 4)
     : [];
 
   return {
     professionalTitle: String(raw?.professionalTitle || "").trim(),
     summary: String(raw?.summary || "").trim(),
-    prioritySkills: stringArray(raw?.prioritySkills).slice(0, 12),
+    prioritySkills: stringArray(raw?.prioritySkills, 8),
     experiences,
-    experienceOrder: stringArray(raw?.experienceOrder).filter((name) => allowedEmployers.has(name)),
+    experienceOrder: stringArray(raw?.experienceOrder, 8).filter((name) => allowedEmployers.has(name)),
     projects: projectItems,
-    projectOrder: stringArray(raw?.projectOrder).filter((name) => allowedProjects.has(name)),
+    projectOrder: stringArray(raw?.projectOrder, 8).filter((name) => allowedProjects.has(name)),
   };
 }
 
 function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text: string; employers: string[]; projects: string[] }) {
   const language = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
-  return `Tu adaptes un CV existant à une offre d'emploi. Tu dois optimiser sa pertinence tout en restant strictement factuel.\n\nCV SOURCE: ${cv.file}\n${cv.text}\n\nEMPLOYEURS AUTORISÉS, à recopier EXACTEMENT si utilisés:\n${JSON.stringify(cv.employers)}\n\nPROJETS AUTORISÉS, à recopier EXACTEMENT si utilisés:\n${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${payload.jobTitle || ""}\nEntreprise: ${payload.company || ""}\nDescription: ${payload.offer || ""}\nFocus facultatif: ${payload.focus || ""}\nLangue de sortie: ${language}.\n\nRÈGLES ABSOLUES:\n- N'invente aucune compétence, technologie, responsabilité, expérience, date, résultat, qualité comportementale ou niveau d'expertise.\n- Tu peux condenser, réordonner et reformuler, mais jamais élargir ou intensifier un fait.\n- Ne transforme jamais une alternance/work-study placement, un stage ou un projet académique en autre chose.\n- N'utilise pas lead/led/own/drive/spearhead/manage/oversee/expert/senior/proven ability sauf si ces mots sont explicitement justifiés dans le CV source.\n- Les noms d'employeurs et de projets dans cvPatch doivent provenir EXACTEMENT des listes autorisées ci-dessus.\n- Le résumé et les bullets doivent être prêts à être affichés dans un CV, sans markdown, sans tableaux et sans balises HTML.\n- Si une exigence de l'offre n'est pas démontrée, place-la dans gaps et NE l'ajoute jamais au cvPatch.\n\nRéponds UNIQUEMENT en JSON valide avec EXACTEMENT cette structure:\n{\n  "analysis": {\n    "verdict": "court verdict factuel",\n    "strengths": ["..."],\n    "gaps": ["..."],\n    "atsKeywords": ["mot-clé réellement justifié"]\n  },\n  "cvPatch": {\n    "professionalTitle": "titre professionnel recommandé ou titre source",\n    "summary": "résumé ciblé factuel",\n    "prioritySkills": ["..."],\n    "experiences": [{"employer": "nom exact autorisé", "bullets": ["..."]}],\n    "experienceOrder": ["noms exacts autorisés"],\n    "projects": [{"title": "titre exact autorisé", "summary": "...", "highlights": ["..."]}],\n    "projectOrder": ["titres exacts autorisés"]\n  }\n}`;
+  const offer = clip(payload.offer, 6000);
+  const focus = clip(payload.focus, 1000);
+
+  return `Adapte ce CV à l'offre sans rien inventer. Réponse courte, factuelle, en ${language}.\n\nCV (${cv.file}):\n${cv.text}\n\nEMPLOYEURS EXACTS: ${JSON.stringify(cv.employers)}\nPROJETS EXACTS: ${JSON.stringify(cv.projects)}\n\nOFFRE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES:\n- Zéro invention: compétence, responsabilité, date, résultat, niveau ou qualité non démontrés = interdit.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet.\n- Employeurs/projets: recopier exactement un nom autorisé.\n- Pas de lead/led/own/drive/manage/expert/senior/proven ability sauf preuve explicite.\n- Maximum: 5 forces, 4 écarts, 8 mots-clés, 3 expériences adaptées, 6 bullets par expérience, 4 projets adaptés.\n- Bullets très concis. Résumé CV: 55 mots maximum. Résumé projet: 30 mots maximum.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n\nRenvoie UNIQUEMENT cet objet JSON, sans markdown:\n{"analysis":{"verdict":"...","strengths":["..."],"gaps":["..."],"atsKeywords":["..."]},"cvPatch":{"professionalTitle":"...","summary":"...","prioritySkills":["..."],"experiences":[{"employer":"nom exact","bullets":["..."]}],"experienceOrder":["nom exact"],"projects":[{"title":"titre exact","summary":"..."}],"projectOrder":["titre exact"]}}`;
 }
 
 Deno.serve(async (request) => {
@@ -201,23 +225,26 @@ Deno.serve(async (request) => {
     const result = await groqJson(apiKey, model, [
       {
         role: "system",
-        content: "Tu es un éditeur de CV conservateur. La fidélité au CV source prime toujours sur l'attractivité. Réponds uniquement en JSON valide selon le schéma demandé.",
+        content: "Tu es un éditeur de CV conservateur. Fidélité absolue au CV source. Réponds uniquement par un objet JSON valide et compact.",
       },
       { role: "user", content: buildPrompt(payload, cv) },
     ]);
 
     const analysis = {
       verdict: String(result?.analysis?.verdict || "").trim(),
-      strengths: stringArray(result?.analysis?.strengths),
-      gaps: stringArray(result?.analysis?.gaps),
-      atsKeywords: stringArray(result?.analysis?.atsKeywords),
+      strengths: stringArray(result?.analysis?.strengths, 5),
+      gaps: stringArray(result?.analysis?.gaps, 4),
+      atsKeywords: stringArray(result?.analysis?.atsKeywords, 8),
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-structured-cv" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-compact-cv" });
   } catch (error) {
     console.error("workspace-cv", error);
-    const detail = String((error as Error)?.message || error).slice(0, 500);
-    return json({ error: `workspace_cv_failed:${detail}`, detail }, 502);
+    const rawDetail = String((error as Error)?.message || error);
+    const detail = rawDetail === "groq_rate_limited"
+      ? "Le service IA a atteint sa limite temporaire de requêtes. Réessaie dans quelques secondes."
+      : rawDetail.slice(0, 500);
+    return json({ error: `workspace_cv_failed:${detail}`, detail }, rawDetail === "groq_rate_limited" ? 429 : 502);
   }
 });
