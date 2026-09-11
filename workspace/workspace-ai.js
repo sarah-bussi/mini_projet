@@ -93,7 +93,7 @@
       details: texts(group, 'p'),
     }));
 
-    const projects = Array.from(doc.querySelectorAll('#projects article.project-card')).map((article) => ({
+    const projects = Array.from(doc.querySelectorAll('#projects article.project-card, #projets article.project-card')).map((article) => ({
       title: text(article.querySelector('h3')),
       summary: text(article.querySelector('.cv-project-summary')) || texts(article, 'p').find(Boolean) || '',
       tags: texts(article.querySelector('.tags'), 'li'),
