@@ -32,52 +32,97 @@ function parseJsonContent(content: string) {
   const firstBrace = cleaned.indexOf("{");
   const lastBrace = cleaned.lastIndexOf("}");
   if (firstBrace >= 0 && lastBrace > firstBrace) cleaned = cleaned.slice(firstBrace, lastBrace + 1);
-
-  try {
-    return JSON.parse(cleaned);
-  } catch {
-    const repaired = cleaned
-      .replace(/[\u0000-\u001F\u007F-\u009F]/g, " ")
-      .replace(/,\s*([}\]])/g, "$1");
-    return JSON.parse(repaired);
-  }
+  return JSON.parse(cleaned);
 }
 
-async function groqJson(apiKey: string, model: string, prompt: string) {
-  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+const responseSchema = {
+  type: "OBJECT",
+  properties: {
+    analysis: {
+      type: "OBJECT",
+      properties: {
+        verdict: { type: "STRING" },
+        strengths: { type: "ARRAY", items: { type: "STRING" } },
+        gaps: { type: "ARRAY", items: { type: "STRING" } },
+        atsKeywords: { type: "ARRAY", items: { type: "STRING" } },
+      },
+      required: ["verdict", "strengths", "gaps", "atsKeywords"],
+    },
+    cvPatch: {
+      type: "OBJECT",
+      properties: {
+        professionalTitle: { type: "STRING" },
+        summary: { type: "STRING" },
+        prioritySkills: { type: "ARRAY", items: { type: "STRING" } },
+        experiences: {
+          type: "ARRAY",
+          items: {
+            type: "OBJECT",
+            properties: {
+              employer: { type: "STRING" },
+              bullets: { type: "ARRAY", items: { type: "STRING" } },
+            },
+            required: ["employer", "bullets"],
+          },
+        },
+        experienceOrder: { type: "ARRAY", items: { type: "STRING" } },
+        projects: {
+          type: "ARRAY",
+          items: {
+            type: "OBJECT",
+            properties: {
+              title: { type: "STRING" },
+              summary: { type: "STRING" },
+            },
+            required: ["title", "summary"],
+          },
+        },
+        projectOrder: { type: "ARRAY", items: { type: "STRING" } },
+      },
+      required: ["professionalTitle", "summary", "prioritySkills", "experiences", "experienceOrder", "projects", "projectOrder"],
+    },
+  },
+  required: ["analysis", "cvPatch"],
+};
+
+async function geminiJson(apiKey: string, model: string, prompt: string) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const response = await fetch(url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
+      "x-goog-api-key": apiKey,
     },
     body: JSON.stringify({
-      model,
-      temperature: 0.2,
-      top_p: 0.9,
-      max_completion_tokens: 1800,
-      reasoning_effort: "low",
-      include_reasoning: false,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.15,
+        maxOutputTokens: 1800,
+        responseMimeType: "application/json",
+        responseSchema,
+      },
     }),
   });
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const groqMessage = String(data?.error?.message || data?.message || "").slice(0, 320);
-    if (response.status === 429) throw new Error("groq_rate_limited");
-    throw new Error(`groq_${response.status}${groqMessage ? `:${groqMessage}` : ""}`);
+    const message = String(data?.error?.message || data?.message || "").slice(0, 500);
+    if (response.status === 429) throw new Error("gemini_rate_limited");
+    throw new Error(`gemini_${response.status}${message ? `:${message}` : ""}`);
   }
 
-  const message = data?.choices?.[0]?.message || {};
-  const content = String(message?.content || "").trim();
-  const finishReason = String(data?.choices?.[0]?.finish_reason || "");
-  if (!content) throw new Error(`empty_ai_response${finishReason ? `:${finishReason}` : ""}`);
+  const candidate = data?.candidates?.[0];
+  const content = String(candidate?.content?.parts?.map((part: any) => part?.text || "").join("") || "").trim();
+  const finishReason = String(candidate?.finishReason || "");
+  if (!content) {
+    const blockReason = String(data?.promptFeedback?.blockReason || "");
+    throw new Error(`empty_gemini_response${finishReason ? `:${finishReason}` : ""}${blockReason ? `:${blockReason}` : ""}`);
+  }
 
   try {
     return parseJsonContent(content);
   } catch {
-    throw new Error("invalid_ai_json");
+    throw new Error("invalid_gemini_json");
   }
 }
 
@@ -143,16 +188,16 @@ async function loadCv(source: string) {
   const languages = firstSection(html, ["languages", "langues"]);
 
   const compactSource = [
-    `EXPERIENCE: ${clip(stripHtml(experience), 3000)}`,
-    `PROJECTS: ${clip(stripHtml(projectsSection), 1800)}`,
-    `SKILLS: ${clip(stripHtml(skills), 1100)}`,
-    `EDUCATION: ${clip(stripHtml(education), 700)}`,
-    `LANGUAGES: ${clip(stripHtml(languages), 250)}`,
+    `EXPERIENCE: ${clip(stripHtml(experience), 3400)}`,
+    `PROJECTS: ${clip(stripHtml(projectsSection), 2400)}`,
+    `SKILLS: ${clip(stripHtml(skills), 1400)}`,
+    `EDUCATION: ${clip(stripHtml(education), 900)}`,
+    `LANGUAGES: ${clip(stripHtml(languages), 350)}`,
   ].join("\n");
 
   return {
     file,
-    text: compactSource.slice(0, 7000),
+    text: compactSource.slice(0, 8500),
     employers: extractH3(experience),
     projects: extractH3(projectsSection),
   };
@@ -174,7 +219,7 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
           bullets: stringArray(item?.bullets, 6),
         }))
         .filter((item: any) => allowedEmployers.has(item.employer) && item.bullets.length)
-        .slice(0, 3)
+        .slice(0, 4)
     : [];
 
   const projectItems = Array.isArray(raw?.projects)
@@ -185,26 +230,26 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
           highlights: [],
         }))
         .filter((item: any) => allowedProjects.has(item.title))
-        .slice(0, 4)
+        .slice(0, 6)
     : [];
 
   return {
     professionalTitle: String(raw?.professionalTitle || "").trim(),
     summary: String(raw?.summary || "").trim(),
-    prioritySkills: stringArray(raw?.prioritySkills, 8),
+    prioritySkills: stringArray(raw?.prioritySkills, 10),
     experiences,
-    experienceOrder: stringArray(raw?.experienceOrder, 8).filter((name) => allowedEmployers.has(name)),
+    experienceOrder: stringArray(raw?.experienceOrder, 10).filter((name) => allowedEmployers.has(name)),
     projects: projectItems,
-    projectOrder: stringArray(raw?.projectOrder, 8).filter((name) => allowedProjects.has(name)),
+    projectOrder: stringArray(raw?.projectOrder, 10).filter((name) => allowedProjects.has(name)),
   };
 }
 
 function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text: string; employers: string[]; projects: string[] }) {
   const language = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
-  const offer = clip(payload.offer, 3500);
-  const focus = clip(payload.focus, 700);
+  const offer = clip(payload.offer, 6000);
+  const focus = clip(payload.focus, 1000);
 
-  return `Tu es un éditeur de CV conservateur. Adapte le CV ci-dessous à l'offre, en ${language}, sans rien inventer.\n\nCV (${cv.file}):\n${cv.text}\n\nEMPLOYEURS EXACTS: ${JSON.stringify(cv.employers)}\nPROJETS EXACTS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 160)}\nEntreprise: ${clip(payload.company, 160)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet.\n- Employeurs et projets doivent être recopiés exactement depuis les listes autorisées.\n- Pas de lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite.\n- Maximum 4 forces, 4 écarts, 8 mots-clés, 3 expériences, 5 bullets par expérience et 4 projets.\n- Bullets concis. Résumé CV: 50 mots max. Résumé projet: 25 mots max.\n- Exigence non démontrée = gaps, jamais cvPatch.\n\nRéponds UNIQUEMENT avec un objet JSON valide de cette forme:\n{"analysis":{"verdict":"...","strengths":["..."],"gaps":["..."],"atsKeywords":["..."]},"cvPatch":{"professionalTitle":"...","summary":"...","prioritySkills":["..."],"experiences":[{"employer":"nom exact","bullets":["..."]}],"experienceOrder":["nom exact"],"projects":[{"title":"titre exact","summary":"..."}],"projectOrder":["titre exact"]}}`;
+  return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 6 bullets par expérience et 6 projets.\n- Résumé CV: 55 mots maximum. Bullets concis. Résumé projet: 30 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
 }
 
 Deno.serve(async (request) => {
@@ -217,16 +262,16 @@ Deno.serve(async (request) => {
   const user = await getUser(token);
   if (!user?.id) return json({ error: "forbidden" }, 403);
 
-  const apiKey = Deno.env.get("AI_API_KEY") || Deno.env.get("GROQ_API_KEY") || "";
-  const model = Deno.env.get("AI_MODEL") || Deno.env.get("GROQ_MODEL") || "openai/gpt-oss-20b";
-  if (!apiKey) return json({ error: "ai_not_configured" }, 503);
+  const apiKey = Deno.env.get("GEMINI_API_KEY") || "";
+  const model = Deno.env.get("GEMINI_MODEL") || "gemini-3.5-flash";
+  if (!apiKey) return json({ error: "gemini_not_configured" }, 503);
 
   const payload = await request.json().catch(() => ({}));
 
   try {
     const source = String(payload.cvSource || "en") === "fr" ? "fr" : "en";
     const cv = await loadCv(source);
-    const result = await groqJson(apiKey, model, buildPrompt(payload, cv));
+    const result = await geminiJson(apiKey, model, buildPrompt(payload, cv));
 
     const analysis = {
       verdict: String(result?.analysis?.verdict || "").trim(),
@@ -236,15 +281,17 @@ Deno.serve(async (request) => {
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "groq-low-reasoning-cv" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv" });
   } catch (error) {
     console.error("workspace-cv", error);
     const rawDetail = String((error as Error)?.message || error);
-    const detail = rawDetail === "groq_rate_limited"
-      ? "Le service IA a atteint sa limite temporaire de requêtes. Réessaie dans quelques secondes."
-      : rawDetail.startsWith("empty_ai_response")
-        ? "Le modèle n'a pas produit de réponse exploitable. Réessaie une fois ; si cela persiste, le modèle configuré doit être remplacé."
-        : rawDetail.slice(0, 500);
-    return json({ error: `workspace_cv_failed:${detail}`, detail }, rawDetail === "groq_rate_limited" ? 429 : 502);
+    const detail = rawDetail === "gemini_rate_limited"
+      ? "Gemini a atteint une limite temporaire de requêtes. Réessaie dans quelques secondes."
+      : rawDetail.startsWith("empty_gemini_response")
+        ? "Gemini n'a pas produit de réponse exploitable pour cette requête."
+        : rawDetail === "invalid_gemini_json"
+          ? "Gemini a renvoyé une réponse structurée invalide."
+          : rawDetail.slice(0, 500);
+    return json({ error: `workspace_cv_failed:${detail}`, detail }, rawDetail === "gemini_rate_limited" ? 429 : 502);
   }
 });
