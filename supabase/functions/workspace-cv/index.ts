@@ -289,7 +289,11 @@ Deno.serve(async (request) => {
   if (!user?.id) return json({ error: "forbidden" }, 403);
 
   const apiKey = Deno.env.get("GEMINI_API_KEY") || "";
-  const model = Deno.env.get("GEMINI_MODEL") || "gemini-2.5-flash";
+  const configuredModel = (Deno.env.get("GEMINI_MODEL") || "").trim();
+  const deprecatedModels = new Set(["gemini-2.5-flash", "gemini-3.5-flash"]);
+  const model = configuredModel && !deprecatedModels.has(configuredModel)
+    ? configuredModel
+    : "gemini-3.6-flash";
   if (!apiKey) return json({ error: "gemini_not_configured" }, 503);
 
   const payload = await request.json().catch(() => ({}));
@@ -307,7 +311,7 @@ Deno.serve(async (request) => {
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv-v2" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv-v3" });
   } catch (error) {
     console.error("workspace-cv", error);
     const rawDetail = String((error as Error)?.message || error);
