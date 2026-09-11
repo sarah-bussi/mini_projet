@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T11:29:11Z",
+  "updatedAt": "2026-09-11T11:31:07Z",
   "errors": [],
   "items": [
     {
@@ -20,7 +20,7 @@
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
       "stars": 403,
-      "updatedAt": "2026-09-06T18:38:05Z",
+      "updatedAt": "2026-09-10T19:23:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 169,
-      "updatedAt": "2026-09-09T10:40:56Z",
+      "updatedAt": "2026-09-11T05:14:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -64,7 +64,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 150,
-      "updatedAt": "2026-09-09T14:33:00Z",
+      "updatedAt": "2026-09-11T08:19:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -108,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-10T06:36:32Z",
+      "updatedAt": "2026-09-11T00:58:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -124,6 +124,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-guidelines",
+      "fullName": "Orange-OpenSource/a11y-guidelines",
+      "url": "https://github.com/Orange-OpenSource/a11y-guidelines",
+      "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
+      "language": "Nunjucks",
+      "stars": 70,
+      "updatedAt": "2026-09-11T07:21:44Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-webring.club",
       "fullName": "ericwbailey/a11y-webring.club",
       "url": "https://github.com/ericwbailey/a11y-webring.club",
@@ -131,17 +142,6 @@
       "language": "Nunjucks",
       "stars": 70,
       "updatedAt": "2026-09-08T22:02:43Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-guidelines",
-      "fullName": "Orange-OpenSource/a11y-guidelines",
-      "url": "https://github.com/Orange-OpenSource/a11y-guidelines",
-      "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
-      "language": "Nunjucks",
-      "stars": 70,
-      "updatedAt": "2026-09-07T09:06:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -198,6 +198,17 @@
       "stars": 40,
       "updatedAt": "2026-09-03T15:24:58Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "react-a11y-disclosure",
+      "fullName": "KittyGiraudel/react-a11y-disclosure",
+      "url": "https://github.com/KittyGiraudel/react-a11y-disclosure",
+      "description": "A small React hook to build accessible disclosure widgets.",
+      "language": "JavaScript",
+      "stars": 35,
+      "updatedAt": "2026-09-11T09:11:43Z",
+      "detectedAt": "2026-09-11T11:31:07Z",
       "source": "GitHub"
     },
     {
@@ -267,6 +278,17 @@
       "source": "GitHub"
     },
     {
+      "name": "vlmkit",
+      "fullName": "mizchi/vlmkit",
+      "url": "https://github.com/mizchi/vlmkit",
+      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
+      "language": "TypeScript",
+      "stars": 20,
+      "updatedAt": "2026-09-11T08:47:26Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "wp-a11y-docs",
       "fullName": "wpaccessibility/wp-a11y-docs",
       "url": "https://github.com/wpaccessibility/wp-a11y-docs",
@@ -278,25 +300,25 @@
       "source": "GitHub"
     },
     {
-      "name": "vlmkit",
-      "fullName": "mizchi/vlmkit",
-      "url": "https://github.com/mizchi/vlmkit",
-      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
-      "language": "TypeScript",
-      "stars": 20,
-      "updatedAt": "2026-09-09T16:42:37Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "eslint",
       "fullName": "ofri-peretz/eslint",
       "url": "https://github.com/ofri-peretz/eslint",
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-10T08:59:07Z",
+      "updatedAt": "2026-09-10T16:24:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "chrome-bridge",
+      "fullName": "siropkin/chrome-bridge",
+      "url": "https://github.com/siropkin/chrome-bridge",
+      "description": "CLI for browser automation: let any AI agent drive your real Chrome — logged-in tabs, zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
+      "language": "JavaScript",
+      "stars": 13,
+      "updatedAt": "2026-09-10T19:05:21Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
@@ -308,17 +330,6 @@
       "stars": 12,
       "updatedAt": "2026-09-04T21:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "chrome-bridge",
-      "fullName": "siropkin/chrome-bridge",
-      "url": "https://github.com/siropkin/chrome-bridge",
-      "description": "CLI for browser automation: let any AI agent drive your real Chrome — logged-in tabs, zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
-      "language": "JavaScript",
-      "stars": 11,
-      "updatedAt": "2026-09-09T21:37:49Z",
-      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
