@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-11T11:31:53Z",
+  "checkedAt": "2026-09-12T10:56:24Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "ok",
@@ -47,9 +47,9 @@
       "finalUrl": "https://colororacle.org/"
     },
     "https://commonlook.com/": {
-      "state": "redirected",
-      "code": 200,
-      "finalUrl": "https://netcentric.allyant.com/"
+      "state": "ok",
+      "code": 202,
+      "finalUrl": "https://commonlook.com/"
     },
     "https://daisy.github.io/ace/": {
       "state": "ok",

@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-11T11:31:07Z",
+  "updatedAt": "2026-09-12T10:55:42Z",
   "errors": [],
   "items": [
+    {
+      "title": "For Review: WCAG 3 Working Draft – September 2026",
+      "url": "https://www.w3.org/WAI/news/2026-09-10/wcag3/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-09-10T00:00:00Z",
+      "summary": "W3C Accessibility Guidelines (WCAG) 3.0 Working Draft is updated. The starting place for background, timeline, and up-to-date information is the WCAG 3 Introduction. For a list of changes in the September 2026 draft and review questions on the conformance model, see Status: In-progress drafts.",
+      "pinned": false
+    },
     {
       "title": "If you have to ask, is it accessible?",
       "url": "https://webaim.org/blog/if-you-have-to-ask-is-it-accessible/",
