@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T10:55:42Z",
+  "updatedAt": "2026-09-13T12:00:29Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 404,
+      "stars": 405,
       "updatedAt": "2026-09-10T19:23:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -108,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-12T09:53:05Z",
+      "updatedAt": "2026-09-12T21:00:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-06T13:06:41Z",
+      "updatedAt": "2026-09-13T09:40:49Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-09T19:10:56Z",
+      "updatedAt": "2026-09-12T19:59:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -317,7 +317,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-10T16:24:39Z",
+      "updatedAt": "2026-09-13T08:05:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -325,10 +325,10 @@
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
-      "description": "CLI for browser automation: let any AI agent drive your real Chrome — logged-in tabs, zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
+      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
       "language": "JavaScript",
       "stars": 13,
-      "updatedAt": "2026-09-12T00:08:42Z",
+      "updatedAt": "2026-09-13T04:16:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
