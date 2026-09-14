@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T12:00:29Z",
+  "updatedAt": "2026-09-14T12:59:26Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 405,
+      "stars": 406,
       "updatedAt": "2026-09-10T19:23:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -31,7 +31,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 229,
-      "updatedAt": "2026-09-09T07:52:42Z",
+      "updatedAt": "2026-09-14T08:41:10Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 169,
-      "updatedAt": "2026-09-11T05:14:17Z",
+      "updatedAt": "2026-09-14T08:54:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -108,7 +108,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-12T21:00:22Z",
+      "updatedAt": "2026-09-14T02:51:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -118,7 +118,7 @@
       "url": "https://github.com/ianho7/ai-friendly-web-design-skill",
       "description": "A skill for coding agents that build, review, and refactor Web UI that should be easier for humans, screen readers, browser automation, Playwright tests, and AI agents to understand and operate.",
       "language": "JavaScript",
-      "stars": 76,
+      "stars": 77,
       "updatedAt": "2026-06-21T16:01:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -190,6 +190,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-mcp",
+      "fullName": "priyankark/a11y-mcp",
+      "url": "https://github.com/priyankark/a11y-mcp",
+      "description": "An MCP (Model Context Protocol) server for performing accessibility audits on webpages using axe-core. Use the results in an agentic loop with your favorite AI assistants (Amp/Cline/Cursor/GH Copilot) and let them fix a11y issues for you!",
+      "language": "JavaScript",
+      "stars": 52,
+      "updatedAt": "2026-09-13T22:22:27Z",
+      "detectedAt": "2026-09-14T12:59:26Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11ykit",
       "fullName": "patrickfox/a11ykit",
       "url": "https://github.com/patrickfox/a11ykit",
@@ -251,7 +262,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-13T09:40:49Z",
+      "updatedAt": "2026-09-14T08:15:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -295,7 +306,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-11T12:25:47Z",
+      "updatedAt": "2026-09-14T12:59:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -306,7 +317,7 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-09-10T08:04:49Z",
+      "updatedAt": "2026-09-14T07:36:42Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
@@ -317,7 +328,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-13T08:05:54Z",
+      "updatedAt": "2026-09-14T11:40:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -327,7 +338,7 @@
       "url": "https://github.com/siropkin/chrome-bridge",
       "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
       "language": "JavaScript",
-      "stars": 13,
+      "stars": 14,
       "updatedAt": "2026-09-13T04:16:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
