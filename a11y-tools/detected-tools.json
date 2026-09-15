@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T12:59:26Z",
+  "updatedAt": "2026-09-15T11:52:35Z",
   "errors": [],
   "items": [
     {
@@ -22,6 +22,17 @@
       "stars": 406,
       "updatedAt": "2026-09-10T19:23:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "hints",
+      "fullName": "nuxt/hints",
+      "url": "https://github.com/nuxt/hints",
+      "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
+      "language": "TypeScript",
+      "stars": 344,
+      "updatedAt": "2026-09-15T08:04:05Z",
+      "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
     {
@@ -53,7 +64,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 169,
-      "updatedAt": "2026-09-14T08:54:20Z",
+      "updatedAt": "2026-09-15T10:39:53Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -63,7 +74,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 150,
+      "stars": 151,
       "updatedAt": "2026-09-11T08:19:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -108,7 +119,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-14T02:51:10Z",
+      "updatedAt": "2026-09-15T03:08:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -174,7 +185,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 57,
-      "updatedAt": "2026-09-11T08:07:32Z",
+      "updatedAt": "2026-09-15T11:26:34Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -245,6 +256,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-color-contrast",
+      "fullName": "sondr3/a11y-color-contrast",
+      "url": "https://github.com/sondr3/a11y-color-contrast",
+      "description": "A TypeScript package to calculate WCAG 2.0/3.0 and APCA color contrasts",
+      "language": "TypeScript",
+      "stars": 24,
+      "updatedAt": "2026-09-14T19:45:40Z",
+      "detectedAt": "2026-09-15T11:52:35Z",
+      "source": "GitHub"
+    },
+    {
       "name": "AIMAC",
       "fullName": "GAAD-Foundation/AIMAC",
       "url": "https://github.com/GAAD-Foundation/AIMAC",
@@ -262,7 +284,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-14T08:15:20Z",
+      "updatedAt": "2026-09-14T21:46:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -284,7 +306,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-12T19:59:40Z",
+      "updatedAt": "2026-09-14T14:39:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -295,7 +317,7 @@
       "description": "",
       "language": "TypeScript",
       "stars": 21,
-      "updatedAt": "2026-09-02T21:17:02Z",
+      "updatedAt": "2026-09-14T23:28:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -306,7 +328,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-09-14T12:59:24Z",
+      "updatedAt": "2026-09-14T18:06:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -328,7 +350,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-14T11:40:05Z",
+      "updatedAt": "2026-09-15T07:09:28Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -336,10 +358,10 @@
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
-      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture. 让任何 AI 智能体(Claude/Kimi/Qwen/DeepSeek/GLM)驱动你真实的 Chrome 浏览器——已登录会话、零依赖、无需重启。",
+      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
       "language": "JavaScript",
       "stars": 14,
-      "updatedAt": "2026-09-13T04:16:27Z",
+      "updatedAt": "2026-09-15T03:02:35Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
