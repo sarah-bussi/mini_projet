@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T11:46:10Z",
+  "updatedAt": "2026-09-17T11:50:21Z",
   "errors": [],
   "items": [
     {
@@ -8,7 +8,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 776,
+      "stars": 777,
       "updatedAt": "2026-09-11T15:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -19,7 +19,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 407,
+      "stars": 409,
       "updatedAt": "2026-09-15T17:12:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -31,7 +31,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 344,
-      "updatedAt": "2026-09-16T03:13:52Z",
+      "updatedAt": "2026-09-16T23:55:04Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -64,7 +64,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 169,
-      "updatedAt": "2026-09-16T05:35:26Z",
+      "updatedAt": "2026-09-17T09:43:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 58,
-      "updatedAt": "2026-09-09T10:58:26Z",
+      "updatedAt": "2026-09-17T08:57:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -240,7 +240,7 @@
       "description": "Accessibility related discussions of the Publishing@W3C Groups",
       "language": "HTML",
       "stars": 40,
-      "updatedAt": "2026-09-03T15:24:58Z",
+      "updatedAt": "2026-09-16T14:52:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -267,6 +267,17 @@
       "source": "GitHub"
     },
     {
+      "name": "AIMAC",
+      "fullName": "GAAD-Foundation/AIMAC",
+      "url": "https://github.com/GAAD-Foundation/AIMAC",
+      "description": "AI Model Accessibility Checker",
+      "language": "Python",
+      "stars": 25,
+      "updatedAt": "2025-12-12T01:48:44Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-color-contrast",
       "fullName": "sondr3/a11y-color-contrast",
       "url": "https://github.com/sondr3/a11y-color-contrast",
@@ -278,24 +289,13 @@
       "source": "GitHub"
     },
     {
-      "name": "AIMAC",
-      "fullName": "GAAD-Foundation/AIMAC",
-      "url": "https://github.com/GAAD-Foundation/AIMAC",
-      "description": "AI Model Accessibility Checker",
-      "language": "Python",
-      "stars": 24,
-      "updatedAt": "2025-12-12T01:48:44Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "a11y-foundation",
       "fullName": "ThomasSweet/a11y-foundation",
       "url": "https://github.com/ThomasSweet/a11y-foundation",
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-15T12:42:44Z",
+      "updatedAt": "2026-09-17T09:23:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -317,7 +317,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-14T14:39:10Z",
+      "updatedAt": "2026-09-16T21:17:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -327,7 +327,7 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 21,
+      "stars": 22,
       "updatedAt": "2026-09-16T06:33:18Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -361,7 +361,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-16T06:36:50Z",
+      "updatedAt": "2026-09-17T06:33:31Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
