@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T11:50:21Z",
+  "updatedAt": "2026-09-18T11:25:54Z",
   "errors": [],
   "items": [
     {
@@ -31,7 +31,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 344,
-      "updatedAt": "2026-09-16T23:55:04Z",
+      "updatedAt": "2026-09-18T00:50:30Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -74,7 +74,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 151,
+      "stars": 153,
       "updatedAt": "2026-09-11T08:19:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -85,8 +85,8 @@
       "url": "https://github.com/ymrl/a11y-visualizer",
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
-      "stars": 131,
-      "updatedAt": "2026-09-15T23:44:04Z",
+      "stars": 132,
+      "updatedAt": "2026-09-18T02:05:35Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -130,7 +130,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-16T02:38:07Z",
+      "updatedAt": "2026-09-18T06:28:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 70,
-      "updatedAt": "2026-09-11T07:21:44Z",
+      "updatedAt": "2026-09-18T10:11:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -195,7 +195,7 @@
       "url": "https://github.com/masuP9/a11y-specialist-skills",
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
-      "stars": 57,
+      "stars": 58,
       "updatedAt": "2026-09-15T11:26:34Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
@@ -361,8 +361,19 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-17T06:33:31Z",
+      "updatedAt": "2026-09-18T00:21:33Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "quarto-revealjs-a11y",
+      "fullName": "mcanouil/quarto-revealjs-a11y",
+      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
+      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
+      "language": "JavaScript",
+      "stars": 13,
+      "updatedAt": "2026-09-17T19:51:43Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
@@ -385,17 +396,6 @@
       "stars": 12,
       "updatedAt": "2026-09-04T21:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "quarto-revealjs-a11y",
-      "fullName": "mcanouil/quarto-revealjs-a11y",
-      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
-      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
-      "language": "JavaScript",
-      "stars": 10,
-      "updatedAt": "2026-09-07T21:55:39Z",
-      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-17T11:50:57Z",
+  "checkedAt": "2026-09-18T11:26:32Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "ok",
@@ -47,9 +47,9 @@
       "finalUrl": "https://colororacle.org/"
     },
     "https://commonlook.com/": {
-      "state": "redirected",
-      "code": 200,
-      "finalUrl": "https://netcentric.allyant.com/"
+      "state": "ok",
+      "code": 202,
+      "finalUrl": "https://commonlook.com/"
     },
     "https://daisy.github.io/ace/": {
       "state": "ok",
@@ -252,8 +252,8 @@
       "finalUrl": "https://w3c.github.io/webvtt.js/parser.html"
     },
     "https://rumoroso.bitbucket.io/": {
-      "state": "blocked",
-      "code": 429,
+      "state": "ok",
+      "code": 200,
       "finalUrl": "https://rumoroso.bitbucket.io/"
     },
     "https://sa11y.netlify.app/": {
