@@ -7,6 +7,7 @@ on:
     paths:
       - "supabase/functions/workspace-cv/**"
       - "supabase/functions/workspace-cover-letter/**"
+      - "supabase/functions/workspace-cover-letter-pdf/**"
       - ".github/workflows/deploy-workspace-cv.yml"
   workflow_dispatch:
 
@@ -34,3 +35,4 @@ jobs:
           test -n "$SUPABASE_PROJECT_REF" || (echo "Missing SUPABASE_PROJECT_REF secret" && exit 1)
           supabase functions deploy workspace-cv --project-ref "$SUPABASE_PROJECT_REF"
           supabase functions deploy workspace-cover-letter --project-ref "$SUPABASE_PROJECT_REF"
+          supabase functions deploy workspace-cover-letter-pdf --project-ref "$SUPABASE_PROJECT_REF"
