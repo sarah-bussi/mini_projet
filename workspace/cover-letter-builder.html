@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Builder de lettre de motivation — Sarah Bussi</title>
+  <link rel="stylesheet" href="workspace.css">
+</head>
+<body>
+  <main class="workspace-shell">
+    <section class="tool-panel">
+      <p><a href="index.html">← Workspace</a></p>
+      <h1>Builder de lettre de motivation</h1>
+      <p>Importe un CV PDF, colle l’offre et génère une lettre fondée sur le contenu réel du CV.</p>
+
+      <form id="letter-form">
+        <label>CV au format PDF
+          <input id="letter-cv-file" name="cvFile" type="file" accept="application/pdf,.pdf" required>
+        </label>
+
+        <div class="two-col">
+          <label>Poste
+            <input name="jobTitle" required>
+          </label>
+          <label>Organisme / entreprise
+            <input name="company" required>
+          </label>
+        </div>
+
+        <label>Offre / description du poste
+          <textarea name="offer" required></textarea>
+        </label>
+
+        <label>Éléments personnels à mettre en avant
+          <textarea name="focus" placeholder="Uniquement des faits réels qui ne figurent pas clairement dans le CV : motivation spécifique, contexte du projet, mobilité, etc."></textarea>
+        </label>
+
+        <div class="two-col">
+          <label>Ton
+            <select name="tone">
+              <option value="natural" selected>Naturel et professionnel</option>
+              <option value="institutional">Institutionnel</option>
+              <option value="formal">Très formel</option>
+            </select>
+          </label>
+          <label>Longueur
+            <select name="length">
+              <option value="short">Courte</option>
+              <option value="standard" selected>Standard</option>
+              <option value="developed">Développée</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Langue
+          <select name="outputLanguage">
+            <option value="fr" selected>Français</option>
+            <option value="en">Anglais</option>
+          </select>
+        </label>
+
+        <button class="primary-button" type="submit">Générer la lettre</button>
+      </form>
+
+      <p id="letter-status" class="status-line" aria-live="polite"></p>
+
+      <section id="letter-result" hidden>
+        <h2>Lettre générée</h2>
+        <label>Texte modifiable
+          <textarea id="letter-editor" style="min-height:650px"></textarea>
+        </label>
+        <div class="hero-actions">
+          <button id="letter-copy" type="button">Copier</button>
+          <button id="letter-print" type="button">Imprimer / PDF</button>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="workspace-config.js?v=20260920-1"></script>
+  <script src="guard.js?v=20260920-1"></script>
+  <script src="cover-letter-builder.js?v=20260920-1"></script>
+</body>
+</html>
