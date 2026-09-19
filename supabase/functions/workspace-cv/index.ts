@@ -86,8 +86,31 @@ const responseSchema = {
           },
         },
         projectOrder: { type: "array", items: { type: "string" } },
+        selectedProjects: { type: "array", items: { type: "string" } },
+        skillGroups: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              title: { type: "string" },
+              items: { type: "array", items: { type: "string" } },
+            },
+            required: ["title", "items"],
+          },
+        },
+        education: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              title: { type: "string" },
+              emphasis: { type: "string" },
+            },
+            required: ["title", "emphasis"],
+          },
+        },
       },
-      required: ["professionalTitle", "summary", "prioritySkills", "experiences", "experienceOrder", "projects", "projectOrder"],
+      required: ["professionalTitle", "summary", "prioritySkills", "experiences", "experienceOrder", "projects", "projectOrder", "selectedProjects", "skillGroups", "education"],
     },
   },
   required: ["analysis", "cvPatch"],
@@ -267,15 +290,28 @@ function cleanPatch(raw: any, employers: string[], projects: string[]) {
     experienceOrder: stringArray(raw?.experienceOrder, 10).filter((name) => allowedEmployers.has(name)),
     projects: projectItems,
     projectOrder: stringArray(raw?.projectOrder, 10).filter((name) => allowedProjects.has(name)),
+    selectedProjects: stringArray(raw?.selectedProjects, 6).filter((name) => allowedProjects.has(name)),
+    skillGroups: Array.isArray(raw?.skillGroups)
+      ? raw.skillGroups.map((group: any) => ({
+          title: String(group?.title || "").trim(),
+          items: stringArray(group?.items, 12),
+        })).filter((group: any) => group.title && group.items.length).slice(0, 5)
+      : [],
+    education: Array.isArray(raw?.education)
+      ? raw.education.map((item: any) => ({
+          title: String(item?.title || "").trim(),
+          emphasis: String(item?.emphasis || "").trim(),
+        })).filter((item: any) => item.title && item.emphasis).slice(0, 3)
+      : [],
   };
 }
 
 function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text: string; employers: string[]; projects: string[] }) {
   const language = String(payload.outputLanguage || "en") === "fr" ? "français" : "anglais";
   const offer = clip(payload.offer, 5000);
-  const focus = clip(payload.focus, 900);
+  const focus = clip(payload.focus, 3500);
 
-  return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité.\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 5 bullets par expérience et 6 projets.\n- Résumé CV: 50 mots maximum. Bullets concis. Résumé projet: 25 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Tu dois toujours renvoyer analysis et cvPatch, même si certains tableaux sont vides.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
+  return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus / faits complémentaires fournis explicitement par la candidate: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité. Le champ Focus contient des informations déclarées explicitement par la candidate : tu peux les utiliser comme faits complémentaires, mais sans extrapolation.\n- Adapte réellement la hiérarchie au poste : titre, résumé, ordre des expériences, ordre/sélection des projets et groupes de compétences doivent refléter les priorités de l'offre. Ne conserve pas mécaniquement une identité centrée accessibilité si l'offre vise recherche, veille, IA, robotique ou gestion de projet.\n- skillGroups doit contenir jusqu'à 5 catégories adaptées à l'offre, composées UNIQUEMENT de compétences présentes dans le CV source ou explicitement affirmées dans Focus. Évite les doublons entre catégories.\n- selectedProjects doit contenir 3 à 5 titres EXACTS des projets les plus pertinents. projectOrder doit les ordonner par pertinence. N'inclus pas un projet faible juste pour remplir l'espace.\n- education peut ajouter une courte ligne d'emphase aux formations pertinentes, uniquement à partir du CV source ou de Focus (ex. enseignements, interdisciplinarité, recherche).\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 5 bullets par expérience, 5 projets et 5 groupes de compétences.\n- Résumé CV: 50 mots maximum. Bullets concis. Résumé projet: 25 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Tu dois toujours renvoyer analysis et cvPatch, même si certains tableaux sont vides.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
 }
 
 Deno.serve(async (request) => {
@@ -311,7 +347,7 @@ Deno.serve(async (request) => {
     };
     const cvPatch = cleanPatch(result?.cvPatch || {}, cv.employers, cv.projects);
 
-    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv-v3" });
+    return json({ analysis, cvPatch, source: cv.file, model, engine: "gemini-structured-cv-v4" });
   } catch (error) {
     console.error("workspace-cv", error);
     const rawDetail = String((error as Error)?.message || error);
