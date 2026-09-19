@@ -57,8 +57,47 @@
         </label>
 
         <label>Éléments à mettre en avant
-          <textarea name="focus" placeholder="Facultatif — laisse vide pour que le builder priorise lui-même les éléments démontrés par ton CV."></textarea>
+          <textarea name="focus" placeholder="Ajoute ici les faits complémentaires, priorités et angle de candidature. Le builder peut les utiliser, mais ne doit pas extrapoler au-delà de ce que tu affirmes."></textarea>
         </label>
+
+        <fieldset>
+          <legend>Coordonnées affichées sur le CV</legend>
+          <div class="two-col">
+            <label>LinkedIn
+              <input name="linkedinUrl" value="www.linkedin.com/in/sarah-bussi-139063220" />
+            </label>
+            <label>Portfolio
+              <input name="portfolioUrl" value="sarah-bussi.github.io/mini_projet/" />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Langues — niveaux CECRL</legend>
+          <p class="form-help">Choisis uniquement des niveaux que tu peux justifier. « Non affiché » évite au builder d’inventer un niveau.</p>
+          <div class="two-col">
+            <label>Français
+              <select name="langFrench">
+                <option value="">Non affiché</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option value="C2" selected>C2</option>
+              </select>
+            </label>
+            <label>Anglais
+              <select name="langEnglish">
+                <option value="" selected>À définir / non affiché</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option>
+              </select>
+            </label>
+            <label>LSF
+              <select name="langLsf">
+                <option value="" selected>À définir / non affiché</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option>
+              </select>
+            </label>
+            <label>Japonais
+              <select name="langJapanese">
+                <option value="" selected>Non affiché</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
 
         <button class="primary-button" type="submit">Adapter et prévisualiser le CV</button>
         <p id="cv-status" class="status-line" aria-live="polite"></p>
@@ -83,6 +122,6 @@
 
   <script src="workspace-config.js?v=20260911-4"></script>
   <script src="guard.js?v=20260911-4"></script>
-  <script src="workspace-ai.js?v=20260911-4"></script>
+  <script src="workspace-ai.js?v=20260919-1"></script>
 </body>
 </html>
