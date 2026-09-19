@@ -117,11 +117,44 @@
         </div>
         <iframe id="cv-preview-frame" title="Aperçu du CV adapté" style="width:100%;min-height:1200px;border:1px solid currentColor;border-radius:12px;background:white"></iframe>
       </section>
+
+      <section id="cover-letter-section" aria-labelledby="cover-letter-title" hidden>
+        <h2 id="cover-letter-title">Lettre de motivation associée</h2>
+        <p>Génère une lettre cohérente avec le CV adapté ci-dessus, sans inventer de faits ni répéter le CV mot pour mot.</p>
+        <div class="two-col">
+          <label>Ton
+            <select id="cover-letter-tone">
+              <option value="natural" selected>Naturel et professionnel</option>
+              <option value="institutional">Institutionnel</option>
+              <option value="formal">Très formel</option>
+            </select>
+          </label>
+          <label>Longueur
+            <select id="cover-letter-length">
+              <option value="short">Courte</option>
+              <option value="standard" selected>Standard</option>
+              <option value="developed">Développée</option>
+            </select>
+          </label>
+        </div>
+        <label>Éléments particuliers à intégrer
+          <textarea id="cover-letter-focus" placeholder="Facultatif — motivation spécifique, mobilité internationale, intérêt pour une mission, etc."></textarea>
+        </label>
+        <div class="hero-actions">
+          <button id="cover-letter-generate" class="primary-button" type="button">Générer à partir de ce CV</button>
+          <button id="cover-letter-copy" type="button" hidden>Copier la lettre</button>
+          <button id="cover-letter-print" type="button" hidden>Imprimer / enregistrer en PDF</button>
+        </div>
+        <p id="cover-letter-status" class="status-line" aria-live="polite"></p>
+        <label id="cover-letter-editor-label" hidden>Lettre générée — modifiable avant utilisation
+          <textarea id="cover-letter-editor" style="min-height:620px"></textarea>
+        </label>
+      </section>
     </section>
   </main>
 
   <script src="workspace-config.js?v=20260911-4"></script>
   <script src="guard.js?v=20260911-4"></script>
-  <script src="workspace-ai.js?v=20260919-2"></script>
+  <script src="workspace-ai.js?v=20260919-3"></script>
 </body>
 </html>
