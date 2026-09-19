@@ -320,11 +320,12 @@
     if (!lastCvPayload || !adaptedCvHtml || !status || !editor) return;
     status.textContent = 'Génération de la lettre en cours…';
     try {
-      const response = await fetch(coverLetterEndpoint, {
+      const response = await fetch(cvEndpoint, {
         method: 'POST',
         headers: authHeaders(),
         body: JSON.stringify({
           ...lastCvPayload,
+          action: 'cover-letter',
           cvText: adaptedCvPlainText(),
           cvFocus: lastCvPayload.focus || '',
           letterFocus: document.getElementById('cover-letter-focus')?.value || '',
