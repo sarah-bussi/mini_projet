@@ -138,6 +138,23 @@
       const rank = new Map(patch.projectOrder.map((name, index) => [cleanText(name), index]));
       data.projects.sort((a, b) => (rank.get(cleanText(a.title)) ?? 999) - (rank.get(cleanText(b.title)) ?? 999));
     }
+    if (Array.isArray(patch?.selectedProjects) && patch.selectedProjects.length) {
+      const selected = new Set(patch.selectedProjects.map(cleanText));
+      data.projects = data.projects.filter((item) => selected.has(cleanText(item.title)));
+    }
+    if (Array.isArray(patch?.skillGroups) && patch.skillGroups.length) {
+      data.skills = patch.skillGroups.map((group) => ({
+        title: claimSafeText(group?.title || ''),
+        items: Array.isArray(group?.items) ? group.items.map(claimSafeText).filter(Boolean) : [],
+      })).filter((group) => group.title && group.items.length).slice(0, 5);
+    }
+    if (Array.isArray(patch?.education) && patch.education.length) {
+      const educationPatch = new Map(patch.education.map((item) => [cleanText(item?.title), claimSafeText(item?.emphasis || '')]));
+      data.education = data.education.map((item) => {
+        const emphasis = educationPatch.get(cleanText(item.title));
+        return emphasis ? { ...item, emphasis } : item;
+      });
+    }
     return data;
   };
 
@@ -149,9 +166,14 @@
 
     const primary = data.experiences[0];
     const secondary = data.experiences.slice(1, 6);
-    const projects = data.projects.slice(0, 6);
+    const projects = data.projects.slice(0, 5);
     const skills = data.skills.slice(0, 5);
-    const languages = data.languages.slice(0, 3);
+    const languageNames = isFr
+      ? { langFrench: 'Français', langEnglish: 'Anglais', langLsf: 'LSF', langJapanese: 'Japonais' }
+      : { langFrench: 'French', langEnglish: 'English', langLsf: 'French Sign Language', langJapanese: 'Japanese' };
+    const languages = Object.entries(languageNames)
+      .map(([key, title]) => ({ title, detail: cleanText(payload[key] || '') }))
+      .filter((item) => item.detail);
 
     const experienceHtml = `
       <section class="cv-section" aria-labelledby="exp-title"><h2 id="exp-title">${labels.experience}</h2>
@@ -159,13 +181,13 @@
         <div class="exp-grid">${secondary.map((item)=>`<article class="exp-mini"><div class="exp-mini-head"><h3>${esc(displayRole(item,isFr))}</h3><span>${esc(compactDate(item.meta))}</span></div><p class="employer">${esc(item.employer)}</p>${item.bullets[0]?`<p class="exp-summary">${esc(item.bullets[0])}</p>`:''}</article>`).join('')}</div>
       </section>`;
 
-    const educationHtml = `<section class="cv-section compact" aria-labelledby="edu-title"><h2 id="edu-title">${labels.education}</h2><div class="education-grid">${data.education.slice(0,5).map((item)=>`<article class="education-item"><h3>${esc(item.title)}</h3>${item.details.length?`<p>${esc(item.details.join(' · '))}</p>`:''}</article>`).join('')}</div></section>`;
+    const educationHtml = `<section class="cv-section compact" aria-labelledby="edu-title"><h2 id="edu-title">${labels.education}</h2><div class="education-grid">${data.education.slice(0,5).map((item)=>`<article class="education-item"><h3>${esc(item.title)}</h3>${item.details.length?`<p>${esc(item.details.join(' · '))}</p>`:''}${item.emphasis?`<p class="education-emphasis">${esc(item.emphasis)}</p>`:''}</article>`).join('')}</div></section>`;
 
     const projectsHtml = `<section class="cv-section" aria-labelledby="projects-title"><h2 id="projects-title">${labels.projects}</h2><div class="projects-grid">${projects.map((item)=>`<article class="project-card"><h3>${esc(item.title)}</h3><p>${esc(item.summary)}</p>${item.tags.length?`<p class="tags">${item.tags.map(esc).join(' · ')}</p>`:''}</article>`).join('')}</div></section>`;
 
     const skillsHtml = `<section class="cv-section" aria-labelledby="skills-title"><h2 id="skills-title">${labels.skills}</h2><div class="skills-grid">${skills.map((group)=>`<section class="skill-group"><h3>${esc(group.title)}</h3><p>${group.items.map(esc).join(' · ')}</p></section>`).join('')}</div>${languages.length?`<p class="languages-line">${languages.map((l)=>`<strong>${esc(l.title)}</strong>${l.detail?` — ${esc(l.detail)}`:''}`).join(' &nbsp; ')}</p>`:''}</section>`;
 
-    return `<!doctype html><html lang="${isFr?'fr':'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sarah Bussi — ${esc(patch?.professionalTitle||'')}</title><style>${String(cssText||'').replace(/<\/style/gi,'<\\/style')}</style></head><body><main class="application-sheet"><header class="cv-header-block"><h1>Sarah Bussi</h1><p class="job-title">${esc(patch?.professionalTitle || (isFr?'Consultante en accessibilité numérique':'Digital Accessibility Consultant'))}</p><p class="tagline">${isFr?'UX Inclusive · Technologies numériques · Qualité Produit':'Inclusive UX · Digital Technologies · Product Quality'}</p><p class="contact">Paris, France · +33 7 70 43 15 04 · sarah.bussi2108@gmail.com · linkedin.com/in/sarahbussi</p></header><section class="cv-section profile-section" aria-labelledby="profile-title"><h2 id="profile-title">${labels.profile}</h2><p>${esc(patch?.summary||'')}</p></section>${experienceHtml}${educationHtml}${projectsHtml}${skillsHtml}</main></body></html>`;
+    return `<!doctype html><html lang="${isFr?'fr':'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sarah Bussi — ${esc(patch?.professionalTitle||'')}</title><style>${String(cssText||'').replace(/<\/style/gi,'<\\/style')}</style></head><body><main class="application-sheet"><header class="cv-header-block"><h1>Sarah Bussi</h1><p class="job-title">${esc(patch?.professionalTitle || (isFr?'Consultante en accessibilité numérique':'Digital Accessibility Consultant'))}</p><p class="tagline">${isFr?'UX Inclusive · Technologies numériques · Qualité Produit':'Inclusive UX · Digital Technologies · Product Quality'}</p><p class="contact">Paris, France · +33 7 70 43 15 04 · sarah.bussi2108@gmail.com${payload.linkedinUrl?` · ${esc(payload.linkedinUrl)}`:''}${payload.portfolioUrl?` · ${esc(payload.portfolioUrl)}`:''}</p></header><section class="cv-section profile-section" aria-labelledby="profile-title"><h2 id="profile-title">${labels.profile}</h2><p>${esc(patch?.summary||'')}</p></section>${experienceHtml}${educationHtml}${projectsHtml}${skillsHtml}</main></body></html>`;
   };
 
   const buildAdaptedCv = async (payload, patch) => {
