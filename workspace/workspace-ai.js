@@ -2,6 +2,8 @@
   const config = window.WORKSPACE_CONFIG || {};
   const aiEndpoint = String(config.aiEndpoint || '').trim();
   const cvEndpoint = `${String(config.supabaseUrl || '').replace(/\/$/, '')}/functions/v1/workspace-cv`;
+  const coverLetterEndpoint = `${String(config.supabaseUrl || '').replace(/\/$/, '')}/functions/v1/workspace-cover-letter`;
+  let lastCvPayload = null;
   const storageKey = 'sb_workspace_session';
   let adaptedCvHtml = '';
 
@@ -285,7 +287,14 @@
       status.textContent = 'Génération en cours…'; result.textContent = '';
       const previewSection = document.getElementById('cv-preview-section'); if (previewSection) previewSection.hidden = true;
       try {
-        if (mode === 'cv') { const data = await callCvAI(payload); result.textContent = renderAnalysis(data.analysis); await showCvPreview(payload, data); }
+        if (mode === 'cv') {
+          const data = await callCvAI(payload);
+          result.textContent = renderAnalysis(data.analysis);
+          await showCvPreview(payload, data);
+          lastCvPayload = payload;
+          const letterSection = document.getElementById('cover-letter-section');
+          if (letterSection) letterSection.hidden = false;
+        }
         else { const data = await callAI(mode, payload); result.textContent = data.text || data.result || JSON.stringify(data, null, 2); }
         status.textContent = 'Terminé.';
       } catch (error) {
@@ -295,6 +304,66 @@
       }
     });
   };
+
+  const adaptedCvPlainText = () => {
+    if (!adaptedCvHtml) return '';
+    const doc = new DOMParser().parseFromString(adaptedCvHtml, 'text/html');
+    return cleanText(doc.body?.innerText || doc.body?.textContent || '');
+  };
+
+  const generateCoverLetter = async () => {
+    const status = document.getElementById('cover-letter-status');
+    const editor = document.getElementById('cover-letter-editor');
+    const editorLabel = document.getElementById('cover-letter-editor-label');
+    const copyButton = document.getElementById('cover-letter-copy');
+    const printButton = document.getElementById('cover-letter-print');
+    if (!lastCvPayload || !adaptedCvHtml || !status || !editor) return;
+    status.textContent = 'Génération de la lettre en cours…';
+    try {
+      const response = await fetch(coverLetterEndpoint, {
+        method: 'POST',
+        headers: authHeaders(),
+        body: JSON.stringify({
+          ...lastCvPayload,
+          cvText: adaptedCvPlainText(),
+          cvFocus: lastCvPayload.focus || '',
+          letterFocus: document.getElementById('cover-letter-focus')?.value || '',
+          tone: document.getElementById('cover-letter-tone')?.value || 'natural',
+          length: document.getElementById('cover-letter-length')?.value || 'standard',
+        }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || !data?.letter) throw new Error(data?.error || 'cover_letter_request_failed');
+      editor.value = data.letter;
+      if (editorLabel) editorLabel.hidden = false;
+      if (copyButton) copyButton.hidden = false;
+      if (printButton) printButton.hidden = false;
+      status.textContent = 'Lettre générée. Tu peux la modifier directement avant de la copier ou de l’exporter.';
+    } catch (error) {
+      console.error(error);
+      status.textContent = `La génération de la lettre a échoué (${String(error?.message || 'erreur inconnue')}).`;
+    }
+  };
+
+  document.getElementById('cover-letter-generate')?.addEventListener('click', generateCoverLetter);
+  document.getElementById('cover-letter-copy')?.addEventListener('click', async () => {
+    const editor = document.getElementById('cover-letter-editor');
+    if (!editor?.value) return;
+    await navigator.clipboard.writeText(editor.value);
+    const status = document.getElementById('cover-letter-status');
+    if (status) status.textContent = 'Lettre copiée.';
+  });
+  document.getElementById('cover-letter-print')?.addEventListener('click', () => {
+    const value = document.getElementById('cover-letter-editor')?.value || '';
+    if (!value) return;
+    const popup = window.open('', '_blank', 'noopener');
+    if (!popup) return;
+    const safe = value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+    popup.document.write(`<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Lettre de motivation — Sarah Bussi</title><style>@page{size:A4;margin:22mm}body{font-family:Arial,sans-serif;font-size:11pt;line-height:1.55;color:#111;max-width:170mm;margin:auto}</style></head><body>${safe}</body></html>`);
+    popup.document.close();
+    popup.focus();
+    popup.print();
+  });
 
   document.getElementById('cv-print-adapted')?.addEventListener('click', () => {
     const frame = document.getElementById('cv-preview-frame'); frame?.contentWindow?.focus(); frame?.contentWindow?.print();
