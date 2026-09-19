@@ -118,6 +118,53 @@
     return { experiences, education, projects, skills, languages };
   };
 
+  const isViaScienceApplication = (payload) => {
+    const haystack = [payload?.jobTitle, payload?.company, payload?.offer, payload?.focus].map(cleanText).join(' ').toLowerCase();
+    return /veille scientifique|coopération scientifique|cooperation scientifique|service scientifique|ambassade|scientifique et technologique/.test(haystack);
+  };
+
+  const viaScienceOverrides = (payload, data, patch) => {
+    if (!isViaScienceApplication(payload) || payload?.outputLanguage !== 'fr') return { data, patch };
+
+    patch.summary = 'Diplômée d’un Master MIASHS avec des compétences hybrides en intelligence artificielle appliquée, robotique, IHM et accessibilité numérique. Expérience en recherche, analyse documentaire et travail pluridisciplinaire, orientée vers la veille scientifique et technologique.';
+
+    const sncf = data.experiences.find((item) => cleanText(item.employer) === 'SNCF Connect & Tech');
+    if (sncf) {
+      sncf.bullets = [
+        'Analyse de problématiques techniques liées aux produits numériques et formulation de recommandations auprès d’équipes pluridisciplinaires.',
+        'Collaboration avec Product Managers, UX Designers, développeurs et équipes QA sur des produits numériques web et mobiles.',
+        'Recherche, analyse et synthèse de référentiels techniques et bonnes pratiques ; contribution à leur documentation et diffusion interne.',
+        'Participation à des actions de sensibilisation et transmission de connaissances auprès des équipes produit.',
+        'Réalisation d’évaluations d’accessibilité et suivi des anomalies jusqu’à validation des corrections.',
+      ];
+    }
+
+    const a11y = data.projects.find((item) => /^A11y Copilot\b/i.test(cleanText(item.title)));
+    if (a11y) {
+      a11y.summary = 'Conception et évaluation d’un assistant IA combinant recherche sémantique, RAG et LLM. Recherche bibliographique, benchmark et évaluation auprès de professionnels.';
+    }
+
+    const preferredProjects = ['A11y Copilot', 'BRA(S)VO', 'SmartCare Watch', 'Braille-JP', 'SPY'];
+    data.projects.sort((a, b) => {
+      const rank = (title) => {
+        const index = preferredProjects.findIndex((prefix) => cleanText(title).startsWith(prefix));
+        return index < 0 ? 999 : index;
+      };
+      return rank(a.title) - rank(b.title);
+    });
+    data.projects = data.projects.filter((item) => preferredProjects.some((prefix) => cleanText(item.title).startsWith(prefix)));
+
+    data.skills = [
+      { title: 'Recherche, veille & analyse', items: ['Recherche documentaire', 'État de l’art', 'Analyse de publications scientifiques', 'Benchmark', 'Synthèse', 'Rédaction technique', 'RAG', 'Recherche sémantique', 'Bases documentaires'] },
+      { title: 'IA & technologies numériques', items: ['Python', 'LLM / IA générative', 'RAG', 'Recherche sémantique', 'IHM', 'UX Research', 'Analyse de données'] },
+      { title: 'Robotique & systèmes connectés', items: ['ESP32', 'Arduino', 'BLE', 'Capteurs', 'M5StickC Plus', 'Flutter', 'Kotlin', 'Jetpack Compose'] },
+      { title: 'Gestion de projet & collaboration', items: ['Figma', 'Jira', 'Notion', 'Git', 'Agile', 'Documentation', 'Travail pluridisciplinaire', 'Présentation / vulgarisation'] },
+      { title: 'Accessibilité numérique', items: ['RGAA', 'WCAG', 'EN 301 549', 'RAAM', 'Technologies d’assistance', 'Audit web / mobile'] },
+    ];
+
+    return { data, patch };
+  };
+
   const applyPatchToData = (data, patch) => {
     const expPatch = new Map((patch?.experiences || []).map((item) => [cleanText(item?.employer), item]));
     data.experiences = data.experiences.map((item) => {
@@ -200,8 +247,10 @@
     if (!cssResponse.ok) throw new Error('cv_style_failed');
     const [sourceHtml, cssText] = await Promise.all([sourceResponse.text(), cssResponse.text()]);
     const sourceDoc = new DOMParser().parseFromString(sourceHtml, 'text/html');
-    const data = applyPatchToData(parseSourceCv(sourceDoc), patch);
-    return buildDedicatedTemplate(payload, patch, data, cssText);
+    let data = applyPatchToData(parseSourceCv(sourceDoc), patch);
+    const overridden = viaScienceOverrides(payload, data, patch);
+    data = overridden.data;
+    return buildDedicatedTemplate(payload, overridden.patch, data, cssText);
   };
 
   const renderAnalysis = (analysis) => {
