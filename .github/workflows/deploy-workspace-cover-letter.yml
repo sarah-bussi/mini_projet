@@ -9,6 +9,8 @@ on:
       - ".github/workflows/deploy-workspace-cover-letter.yml"
   workflow_dispatch:
 
+# Edge function: workspace-cover-letter
+
 permissions:
   contents: read
 
