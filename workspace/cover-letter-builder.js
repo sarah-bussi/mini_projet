@@ -1,6 +1,6 @@
 (() => {
   const config = window.WORKSPACE_CONFIG || {};
-  const endpoint = `${String(config.supabaseUrl || '').replace(/\/$/, '')}/functions/v1/workspace-cover-letter-pdf`;
+  const endpoint = `${String(config.supabaseUrl || '').replace(/\/$/, '')}/functions/v1/workspace-cv`;
   const storageKey = 'sb_workspace_session';
 
   const session = () => {
@@ -28,7 +28,29 @@
       return;
     }
     try {
-      const response = await fetch(endpoint, { method: 'POST', headers: headers(), body: fd });
+      const arrayBuffer = await file.arrayBuffer();
+      const bytes = new Uint8Array(arrayBuffer);
+      let binary = '';
+      const chunk = 0x8000;
+      for (let i = 0; i < bytes.length; i += chunk) binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+      const cvPdfBase64 = btoa(binary);
+      const payload = {
+        action: 'cover-letter-pdf',
+        cvPdfBase64,
+        cvFileName: file.name,
+        jobTitle: String(fd.get('jobTitle') || ''),
+        company: String(fd.get('company') || ''),
+        offer: String(fd.get('offer') || ''),
+        focus: String(fd.get('focus') || ''),
+        tone: String(fd.get('tone') || 'natural'),
+        length: String(fd.get('length') || 'standard'),
+        outputLanguage: String(fd.get('outputLanguage') || 'fr'),
+      };
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { ...headers(), 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data?.letter) throw new Error(data?.error || 'letter_request_failed');
       editor.value = data.letter;
