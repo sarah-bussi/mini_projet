@@ -214,13 +214,9 @@
 
   const targetHeader = (payload, patch, data) => {
     const isFr = payload.outputLanguage === 'fr';
-    if (isViaScienceApplication(payload) && isFr) {
-      return {
-        title: 'Chargée de veille scientifique et technologique',
-        tagline: 'Veille scientifique · Intelligence artificielle · Robotique',
-      };
-    }
-    const title = cleanText(patch?.professionalTitle) || (isFr ? 'Profil numérique & technologies' : 'Digital & Technology Profile');
+    const requestedRole = cleanText(payload?.jobTitle);
+    const aiTitle = cleanText(patch?.professionalTitle);
+    const title = requestedRole || aiTitle || (isFr ? 'Profil numérique & technologies' : 'Digital & Technology Profile');
     const priorities = Array.isArray(patch?.prioritySkills) ? patch.prioritySkills.map(cleanText).filter(Boolean) : [];
     const skillItems = (data?.skills || []).flatMap((group) => Array.isArray(group.items) ? group.items : []).map(cleanText).filter(Boolean);
     return {
