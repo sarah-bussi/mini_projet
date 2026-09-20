@@ -220,12 +220,12 @@
         tagline: 'Veille scientifique · Intelligence artificielle · Robotique',
       };
     }
-    const title = cleanText(patch?.professionalTitle) || (isFr ? 'Consultante en accessibilité numérique' : 'Digital Accessibility Consultant');
+    const title = cleanText(patch?.professionalTitle) || (isFr ? 'Profil numérique & technologies' : 'Digital & Technology Profile');
     const priorities = Array.isArray(patch?.prioritySkills) ? patch.prioritySkills.map(cleanText).filter(Boolean) : [];
-    const fallback = (data?.skills || []).slice(0, 3).map((group) => cleanText(group.title)).filter(Boolean);
+    const skillItems = (data?.skills || []).flatMap((group) => Array.isArray(group.items) ? group.items : []).map(cleanText).filter(Boolean);
     return {
       title,
-      tagline: (priorities.length ? priorities : fallback).slice(0, 3).join(' · ') || (isFr ? 'UX Inclusive · Technologies numériques · Qualité Produit' : 'Inclusive UX · Digital Technologies · Product Quality'),
+      tagline: (priorities.length ? priorities : skillItems).slice(0, 5).join(' · '),
     };
   };
 
