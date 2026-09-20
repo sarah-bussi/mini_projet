@@ -212,8 +212,19 @@
     return data;
   };
 
+  const isFffApplication = (payload) => {
+    const haystack = [payload?.jobTitle, payload?.company, payload?.offer, payload?.focus].map(cleanText).join(' ').toLowerCase();
+    return /\bfff\b|fédération française de football|federation francaise de football/.test(haystack);
+  };
+
   const targetHeader = (payload, patch, data) => {
     const isFr = payload.outputLanguage === 'fr';
+    if (isFffApplication(payload) && isFr) {
+      return {
+        title: 'Cheffe de projet Accessibilité & Handicap',
+        tagline: 'Accessibilité · Handicap · Gestion de projet',
+      };
+    }
     return isFr
       ? {
           title: 'UX · Accessibilité · Technologies & Handicap',
@@ -223,6 +234,19 @@
           title: 'UX · Accessibility · Assistive Technologies',
           tagline: 'HCI · Digital Accessibility · UX · Disability Technologies · Web & Mobile',
         };
+  };
+
+  const fffOverrides = (payload, data, patch) => {
+    if (!isFffApplication(payload) || payload?.outputLanguage !== 'fr') return { data, patch };
+
+    patch.summary = 'Diplômée d’un Master MIASHS - Technologie et Handicap, spécialisée en accessibilité numérique et conception inclusive. Expérience dans l’accompagnement de projets accessibles, la sensibilisation d’équipes et le travail pluridisciplinaire. Parcours en psychologie et technologies du handicap, avec une approche centrée sur les besoins des personnes et les solutions de compensation.';
+
+    const perceNeige = data.experiences.find((item) => cleanText(item.employer) === 'Maison Perce-Neige');
+    if (perceNeige) {
+      perceNeige.bullets = ['Observer l’accompagnement de personnes en situation de handicap au sein d’une maison d’accueil spécialisée et d’un foyer de vie.'];
+    }
+
+    return { data, patch };
   };
 
   const buildDedicatedTemplate = (payload, patch, data, cssText) => {
@@ -268,10 +292,19 @@
     if (!cssResponse.ok) throw new Error('cv_style_failed');
     const [sourceHtml, cssText] = await Promise.all([sourceResponse.text(), cssResponse.text()]);
     const sourceDoc = new DOMParser().parseFromString(sourceHtml, 'text/html');
-    let data = applyPatchToData(parseSourceCv(sourceDoc), patch);
-    const overridden = viaScienceOverrides(payload, data, patch);
-    data = overridden.data;
-    return buildDedicatedTemplate(payload, overridden.patch, data, cssText);
+    const sourceData = parseSourceCv(sourceDoc);
+    let data = applyPatchToData(sourceData, patch);
+    const via = viaScienceOverrides(payload, data, patch);
+    data = via.data;
+    const fff = fffOverrides(payload, data, via.patch);
+    data = fff.data;
+
+    if (isFffApplication(payload) && payload?.outputLanguage === 'fr') {
+      // For FFF, keep the proven technical skill section from the source CV.
+      data.skills = sourceData.skills;
+    }
+
+    return buildDedicatedTemplate(payload, fff.patch, data, cssText);
   };
 
   const renderAnalysis = (analysis) => {
