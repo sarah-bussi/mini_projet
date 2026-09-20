@@ -214,15 +214,15 @@
 
   const targetHeader = (payload, patch, data) => {
     const isFr = payload.outputLanguage === 'fr';
-    const requestedRole = cleanText(payload?.jobTitle);
-    const aiTitle = cleanText(patch?.professionalTitle);
-    const title = requestedRole || aiTitle || (isFr ? 'Profil numérique & technologies' : 'Digital & Technology Profile');
-    const priorities = Array.isArray(patch?.prioritySkills) ? patch.prioritySkills.map(cleanText).filter(Boolean) : [];
-    const skillItems = (data?.skills || []).flatMap((group) => Array.isArray(group.items) ? group.items : []).map(cleanText).filter(Boolean);
-    return {
-      title,
-      tagline: (priorities.length ? priorities : skillItems).slice(0, 5).join(' · '),
-    };
+    return isFr
+      ? {
+          title: 'UX · Accessibilité · Technologies & Handicap',
+          tagline: 'IHM · Accessibilité numérique · UX · Technologies du handicap · Web & mobile',
+        }
+      : {
+          title: 'UX · Accessibility · Assistive Technologies',
+          tagline: 'HCI · Digital Accessibility · UX · Disability Technologies · Web & Mobile',
+        };
   };
 
   const buildDedicatedTemplate = (payload, patch, data, cssText) => {
