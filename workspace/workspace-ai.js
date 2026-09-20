@@ -120,7 +120,14 @@
 
   const isViaScienceApplication = (payload) => {
     const haystack = [payload?.jobTitle, payload?.company, payload?.offer, payload?.focus].map(cleanText).join(' ').toLowerCase();
-    return /veille scientifique|coopération scientifique|cooperation scientifique|service scientifique|ambassade|scientifique et technologique/.test(haystack);
+    const strongSignals = [
+      'veille scientifique', 'veille technologique', 'coopération scientifique', 'cooperation scientifique',
+      'service scientifique', 'ambassade', 'sciences de l’ingénieur', "sciences de l'ingenieur",
+      'numsi', 'coopération franco-japonaise', 'cooperation franco-japonaise'
+    ];
+    if (strongSignals.some((signal) => haystack.includes(signal))) return true;
+    const scientificSignals = ['recherche documentaire', 'publications scientifiques', 'laboratoires', 'conférences scientifiques', 'innovation', 'robotique', 'intelligence artificielle'];
+    return scientificSignals.filter((signal) => haystack.includes(signal)).length >= 3;
   };
 
   const viaScienceOverrides = (payload, data, patch) => {
