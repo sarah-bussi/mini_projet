@@ -314,6 +314,55 @@ function buildPrompt(payload: Record<string, unknown>, cv: { file: string; text:
   return `Tu es un éditeur de CV conservateur. Adapte le CV à l'offre en ${language}, sans rien inventer.\n\nCV SOURCE (${cv.file}):\n${cv.text}\n\nEMPLOYEURS AUTORISÉS: ${JSON.stringify(cv.employers)}\nPROJETS AUTORISÉS: ${JSON.stringify(cv.projects)}\n\nOFFRE CIBLE:\nPoste: ${clip(payload.jobTitle, 180)}\nEntreprise: ${clip(payload.company, 180)}\nDescription: ${offer}\nFocus / faits complémentaires fournis explicitement par la candidate: ${focus}\n\nRÈGLES ABSOLUES:\n- Zéro invention de compétence, responsabilité, date, résultat, niveau ou qualité. Le champ Focus contient des informations déclarées explicitement par la candidate : tu peux les utiliser comme faits complémentaires, mais sans extrapolation.\n- Adapte réellement la hiérarchie au poste : titre, résumé, ordre des expériences, ordre/sélection des projets et groupes de compétences doivent refléter les priorités de l'offre. Ne conserve pas mécaniquement une identité centrée accessibilité si l'offre vise recherche, veille, IA, robotique ou gestion de projet.\n- skillGroups doit contenir jusqu'à 5 catégories adaptées à l'offre, composées UNIQUEMENT de compétences présentes dans le CV source ou explicitement affirmées dans Focus. Évite les doublons entre catégories.\n- selectedProjects doit contenir 3 à 5 titres EXACTS des projets les plus pertinents. projectOrder doit les ordonner par pertinence. N'inclus pas un projet faible juste pour remplir l'espace.\n- education peut ajouter une courte ligne d'emphase aux formations pertinentes, uniquement à partir du CV source ou de Focus (ex. enseignements, interdisciplinarité, recherche).\n- Ne change jamais la nature d'une alternance, d'un stage ou d'un projet académique.\n- Employeurs et projets doivent être recopiés EXACTEMENT depuis les listes autorisées.\n- N'utilise pas lead, led, own, drive, manage, expert, senior ou proven ability sauf preuve explicite dans le CV source.\n- Toute exigence non démontrée va dans gaps, jamais dans cvPatch.\n- Maximum 4 forces, 4 écarts, 8 mots-clés ATS, 4 expériences, 5 bullets par expérience, 5 projets et 5 groupes de compétences.\n- Résumé CV: 50 mots maximum. Bullets concis. Résumé projet: 25 mots maximum.\n- professionalTitle doit rester fidèle au niveau réel du profil et ne doit pas transformer le poste visé en expérience acquise.\n- Tu dois toujours renvoyer analysis et cvPatch, même si certains tableaux sont vides.\n- Retourne uniquement les informations demandées par le schéma JSON.`;
 }
 
+async function generatePdfCoverLetter(apiKey: string, model: string, payload: Record<string, unknown>) {
+  const pdf = String(payload.cvPdfBase64 || "").trim();
+  if (!pdf) throw new Error("pdf_required");
+  if (pdf.length > 12_000_000) throw new Error("pdf_too_large");
+
+  const toneMap: Record<string,string> = {
+    natural: "naturel, professionnel, fluide et personnel",
+    institutional: "institutionnel, précis et professionnel",
+    formal: "très formel, sobre et administratif",
+  };
+  const lengthMap: Record<string,string> = { short: "350 à 450 mots", standard: "500 à 650 mots", developed: "650 à 800 mots" };
+  const language = String(payload.outputLanguage || "fr") === "en" ? "anglais" : "français";
+  const prompt = `Analyse le CV PDF joint et rédige une lettre de motivation en ${language}.
+
+POSTE: ${clip(payload.jobTitle, 180)}
+ORGANISME: ${clip(payload.company, 180)}
+OFFRE: ${clip(payload.offer, 7000)}
+FAITS / PRIORITÉS COMPLÉMENTAIRES FOURNIS PAR LA CANDIDATE: ${clip(payload.focus, 5000)}
+STYLE: ${toneMap[String(payload.tone)] || toneMap.natural}
+LONGUEUR: ${lengthMap[String(payload.length)] || lengthMap.standard}
+
+RÈGLES:
+- Le PDF joint est la source principale. Utilise uniquement les faits du CV ou ceux explicitement fournis ci-dessus.
+- N'invente aucune compétence, responsabilité, date, résultat, niveau de langue ou expérience.
+- Ne transforme jamais une alternance, un stage d'observation ou un projet académique en expérience opérationnelle différente.
+- Complète le CV au lieu de le recopier et construis un fil conducteur adapté à l'offre.
+- Évite les clichés et superlatifs non démontrés.
+- Commence par "Madame, Monsieur," (ou "Dear Sir or Madam," en anglais) et termine par une formule adaptée puis "Sarah Bussi".
+- Retourne uniquement la lettre finale, sans markdown.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+    body: JSON.stringify({
+      contents: [{ role: "user", parts: [
+        { inline_data: { mime_type: "application/pdf", data: pdf } },
+        { text: prompt },
+      ] }],
+      generationConfig: { temperature: 0.35, maxOutputTokens: 3200 },
+    }),
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(`gemini_pdf_letter_${response.status}:${String(data?.error?.message || "").slice(0, 350)}`);
+  const letter = extractGeminiText(data);
+  if (!letter) throw new Error("empty_pdf_letter_response");
+  return letter;
+}
+
 async function generateCoverLetter(apiKey: string, model: string, payload: Record<string, unknown>) {
   const toneMap: Record<string,string> = {
     natural: "naturel, professionnel, fluide et personnel, sans emphase artificielle",
@@ -388,6 +437,10 @@ Deno.serve(async (request) => {
   const payload = await request.json().catch(() => ({}));
 
   try {
+    if (payload.action === "cover-letter-pdf") {
+      const letter = await generatePdfCoverLetter(apiKey, model, payload);
+      return json({ letter, model, engine: "gemini-pdf-cover-letter-v2" });
+    }
     if (payload.action === "cover-letter") {
       const letter = await generateCoverLetter(apiKey, model, payload);
       return json({ letter, model, engine: "gemini-cover-letter-v2" });
