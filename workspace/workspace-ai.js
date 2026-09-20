@@ -212,12 +212,30 @@
     return data;
   };
 
+  const targetHeader = (payload, patch, data) => {
+    const isFr = payload.outputLanguage === 'fr';
+    if (isViaScienceApplication(payload) && isFr) {
+      return {
+        title: 'Chargée de veille scientifique et technologique',
+        tagline: 'Veille scientifique · Intelligence artificielle · Robotique',
+      };
+    }
+    const title = cleanText(patch?.professionalTitle) || (isFr ? 'Consultante en accessibilité numérique' : 'Digital Accessibility Consultant');
+    const priorities = Array.isArray(patch?.prioritySkills) ? patch.prioritySkills.map(cleanText).filter(Boolean) : [];
+    const fallback = (data?.skills || []).slice(0, 3).map((group) => cleanText(group.title)).filter(Boolean);
+    return {
+      title,
+      tagline: (priorities.length ? priorities : fallback).slice(0, 3).join(' · ') || (isFr ? 'UX Inclusive · Technologies numériques · Qualité Produit' : 'Inclusive UX · Digital Technologies · Product Quality'),
+    };
+  };
+
   const buildDedicatedTemplate = (payload, patch, data, cssText) => {
     const isFr = payload.outputLanguage === 'fr';
     const labels = isFr
       ? { profile: 'PROFIL', experience: 'EXPÉRIENCES PROFESSIONNELLES', education: 'FORMATION', projects: 'PROJETS ACADÉMIQUES & RÉALISATIONS', skills: 'COMPÉTENCES ET TECHNOLOGIES' }
       : { profile: 'PROFILE', experience: 'PROFESSIONAL EXPERIENCE', education: 'EDUCATION', projects: 'ACADEMIC PROJECTS & ACHIEVEMENTS', skills: 'SKILLS & TECHNOLOGIES' };
 
+    const header = targetHeader(payload, patch, data);
     const primary = data.experiences[0];
     const secondary = data.experiences.slice(1, 6);
     const projects = data.projects.slice(0, 5);
@@ -241,7 +259,7 @@
 
     const skillsHtml = `<section class="cv-section" aria-labelledby="skills-title"><h2 id="skills-title">${labels.skills}</h2><div class="skills-grid">${skills.map((group)=>`<section class="skill-group"><h3>${esc(group.title)}</h3><p>${group.items.map(esc).join(' · ')}</p></section>`).join('')}</div>${languages.length?`<p class="languages-line">${languages.map((l)=>`<strong>${esc(l.title)}</strong>${l.detail?` — ${esc(l.detail)}`:''}`).join(' &nbsp; ')}</p>`:''}</section>`;
 
-    return `<!doctype html><html lang="${isFr?'fr':'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sarah Bussi — ${esc(patch?.professionalTitle||'')}</title><style>${String(cssText||'').replace(/<\/style/gi,'<\\/style')}</style></head><body><main class="application-sheet"><header class="cv-header-block"><h1>Sarah Bussi</h1><p class="job-title">${esc(patch?.professionalTitle || (isFr?'Consultante en accessibilité numérique':'Digital Accessibility Consultant'))}</p><p class="tagline">${esc((Array.isArray(patch?.prioritySkills) ? patch.prioritySkills : []).slice(0, 3).join(' · ') || (isFr?'UX Inclusive · Technologies numériques · Qualité Produit':'Inclusive UX · Digital Technologies · Product Quality'))}</p><p class="contact">Paris, France · +33 7 70 43 15 04 · sarah.bussi2108@gmail.com${payload.linkedinUrl?` · ${esc(payload.linkedinUrl)}`:''}${payload.portfolioUrl?` · ${esc(payload.portfolioUrl)}`:''}</p></header><section class="cv-section profile-section" aria-labelledby="profile-title"><h2 id="profile-title">${labels.profile}</h2><p>${esc(patch?.summary||'')}</p></section>${experienceHtml}${educationHtml}${projectsHtml}${skillsHtml}</main></body></html>`;
+    return `<!doctype html><html lang="${isFr?'fr':'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sarah Bussi — ${esc(header.title)}</title><style>${String(cssText||'').replace(/<\/style/gi,'<\\/style')}</style></head><body><main class="application-sheet"><header class="cv-header-block"><h1>Sarah Bussi</h1><p class="job-title">${esc(header.title)}</p><p class="tagline">${esc(header.tagline)}</p><p class="contact">Paris, France · +33 7 70 43 15 04 · sarah.bussi2108@gmail.com${payload.linkedinUrl?` · ${esc(payload.linkedinUrl)}`:''}${payload.portfolioUrl?` · ${esc(payload.portfolioUrl)}`:''}</p></header><section class="cv-section profile-section" aria-labelledby="profile-title"><h2 id="profile-title">${labels.profile}</h2><p>${esc(patch?.summary||'')}</p></section>${experienceHtml}${educationHtml}${projectsHtml}${skillsHtml}</main></body></html>`;
   };
 
   const buildAdaptedCv = async (payload, patch) => {
