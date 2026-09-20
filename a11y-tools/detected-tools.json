@@ -1,7 +1,18 @@
 {
-  "updatedAt": "2026-09-19T11:09:36Z",
+  "updatedAt": "2026-09-20T11:34:01Z",
   "errors": [],
   "items": [
+    {
+      "name": "a11y-dialog",
+      "fullName": "KittyGiraudel/a11y-dialog",
+      "url": "https://github.com/KittyGiraudel/a11y-dialog",
+      "description": "A very lightweight and flexible accessible modal dialog script.",
+      "language": "TypeScript",
+      "stars": 2489,
+      "updatedAt": "2026-09-20T07:36:19Z",
+      "detectedAt": "2026-09-20T11:34:01Z",
+      "source": "GitHub"
+    },
     {
       "name": "equal-access",
       "fullName": "IBMa/equal-access",
@@ -19,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 409,
+      "stars": 410,
       "updatedAt": "2026-09-15T17:12:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -130,7 +141,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-18T06:28:05Z",
+      "updatedAt": "2026-09-19T18:51:23Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -262,7 +273,7 @@
       "description": "A small React hook to build accessible disclosure widgets.",
       "language": "JavaScript",
       "stars": 35,
-      "updatedAt": "2026-09-11T09:11:43Z",
+      "updatedAt": "2026-09-20T07:28:58Z",
       "detectedAt": "2026-09-11T11:31:07Z",
       "source": "GitHub"
     },
@@ -372,7 +383,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-18T00:21:33Z",
+      "updatedAt": "2026-09-20T08:30:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +427,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-09-06T15:51:16Z",
+      "updatedAt": "2026-09-19T16:59:06Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -432,6 +443,17 @@
       "source": "GitHub"
     },
     {
+      "name": "outloud",
+      "fullName": "visionably/outloud",
+      "url": "https://github.com/visionably/outloud",
+      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
+      "language": "Python",
+      "stars": 9,
+      "updatedAt": "2026-09-18T05:07:32Z",
+      "detectedAt": "2026-09-19T11:09:36Z",
+      "source": "GitHub"
+    },
+    {
       "name": "genpark-frontend-component-accessibility-checker-skill",
       "fullName": "alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
       "url": "https://github.com/alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
@@ -440,17 +462,6 @@
       "stars": 9,
       "updatedAt": "2026-07-28T04:39:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "outloud",
-      "fullName": "visionably/outloud",
-      "url": "https://github.com/visionably/outloud",
-      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
-      "language": "Python",
-      "stars": 7,
-      "updatedAt": "2026-09-18T05:07:32Z",
-      "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
     {
