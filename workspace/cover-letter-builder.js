@@ -70,12 +70,30 @@
 
   document.getElementById('letter-print')?.addEventListener('click', () => {
     if (!editor?.value) return;
-    const popup = window.open('', '_blank', 'noopener');
-    if (!popup) return;
     const safe = editor.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
-    popup.document.write(`<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Lettre de motivation — Sarah Bussi</title><style>@page{size:A4;margin:22mm}body{font-family:Arial,sans-serif;font-size:11pt;line-height:1.55;color:#111;max-width:170mm;margin:auto}</style></head><body>${safe}</body></html>`);
-    popup.document.close();
-    popup.focus();
-    popup.print();
+    const printFrame = document.createElement('iframe');
+    printFrame.setAttribute('aria-hidden', 'true');
+    printFrame.style.position = 'fixed';
+    printFrame.style.right = '0';
+    printFrame.style.bottom = '0';
+    printFrame.style.width = '0';
+    printFrame.style.height = '0';
+    printFrame.style.border = '0';
+    document.body.appendChild(printFrame);
+    const doc = printFrame.contentWindow?.document;
+    if (!doc || !printFrame.contentWindow) {
+      printFrame.remove();
+      status.textContent = 'Impossible d’ouvrir l’export PDF dans ce navigateur.';
+      return;
+    }
+    doc.open();
+    doc.write(`<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Lettre de motivation — Sarah Bussi</title><style>@page{size:A4;margin:22mm}html,body{background:#fff}body{font-family:Arial,sans-serif;font-size:11pt;line-height:1.55;color:#111;max-width:170mm;margin:0 auto;white-space:normal}</style></head><body>${safe}</body></html>`);
+    doc.close();
+    status.textContent = 'Fenêtre d’impression ouverte : choisis « Enregistrer au format PDF ».';
+    setTimeout(() => {
+      printFrame.contentWindow.focus();
+      printFrame.contentWindow.print();
+      setTimeout(() => printFrame.remove(), 1500);
+    }, 250);
   });
 })();
