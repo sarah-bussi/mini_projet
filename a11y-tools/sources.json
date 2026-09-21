@@ -29,6 +29,13 @@
       "description": "Articles techniques sur l’audit, les technologies d’assistance, ARIA et les pratiques professionnelles."
     },
     {
+      "name": "Access42",
+      "site": "https://access42.net/",
+      "feed": "",
+      "category": "France · RGAA · expertise",
+      "description": "Expertise française, RGAA, WCAG, RAWeb/RAAM, juridique, design, développement et recherche utilisateur. Source de référence consultée manuellement tant qu’aucun flux fiable n’est configuré."
+    },
+    {
       "name": "DesignGouv / Numérique écoresponsable et accessible",
       "site": "https://design.numerique.gouv.fr/",
       "feed": "",
