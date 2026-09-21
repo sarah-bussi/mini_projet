@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille scientifique & technologique — Sarah Workspace</title>
+  <meta name="description" content="Veille personnelle sur l'IA, la robotique sociale, les aides techniques, l'IHM, les neurotechnologies et le handicap." />
+  <link rel="stylesheet" href="../a11y-tools/styles.css?v=20260921-2" />
+  <link rel="stylesheet" href="research-watch.css?v=20260921-1" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="top-nav" aria-label="Navigation veille scientifique">
+        <a href="../workspace/index.html">← Workspace</a>
+        <a aria-current="page" href="index.html">Veille scientifique</a>
+        <a href="../a11y-tools/veille.html">Veille accessibilité</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Veille & recherche</p>
+        <h1>Sciences, IA, robotique & handicap</h1>
+        <p class="intro">Une base personnelle séparée de la veille accessibilité pour suivre les publications, preprints, projets de recherche, innovations et actualités utiles à ton profil : IA appliquée, robotique sociale, aides techniques, IHM, cognition, neurotechnologies, rééducation et technologies du handicap.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="coverage-panel" aria-labelledby="scope-title">
+      <h2 id="scope-title">Périmètre</h2>
+      <div class="coverage-tags">
+        <span>IA & LLM</span><span>Robotique sociale & HRI</span><span>Robotique d’assistance</span><span>Aides techniques</span><span>IHM & UX</span><span>CAA</span><span>Rééducation</span><span>Neurotechnologies</span><span>Cognition</span><span>Handicap & société</span>
+      </div>
+      <p id="research-status" class="sync-note">Chargement de la veille…</p>
+    </section>
+
+    <section class="controls" aria-labelledby="filters-title">
+      <h2 id="filters-title">Filtrer</h2>
+      <div class="filters-grid research-filters">
+        <label>Recherche<input id="research-search" type="search" placeholder="Ex. robot social, RAG, prothèse, CAA, BCI…" /></label>
+        <label>Domaine<select id="research-domain"><option value="all">Tous</option></select></label>
+        <label>Type<select id="research-type"><option value="all">Tous</option></select></label>
+        <label>Période<select id="research-period"><option value="all">Toutes</option><option value="30">30 jours</option><option value="90">3 mois</option><option value="365">12 mois</option></select></label>
+        <label>Suivi<select id="research-personal-filter"><option value="all">Tout afficher</option><option value="readLater">À lire</option><option value="read">Lus</option><option value="favorite">Favoris</option><option value="important">Importants</option><option value="unread">Non lus</option></select></label>
+      </div>
+      <p id="research-count" class="results-count" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="research-list-title">
+      <div class="section-heading">
+        <h2 id="research-list-title">À lire / à surveiller</h2>
+        <p>Les éléments les plus récents apparaissent en premier. Le suivi personnel reste stocké dans ton navigateur.</p>
+      </div>
+      <div id="research-grid" class="watch-grid"></div>
+    </section>
+
+    <section class="source-panel" aria-labelledby="research-sources-title">
+      <div class="section-heading">
+        <h2 id="research-sources-title">Sources & pistes de collecte</h2>
+        <p>Références scientifiques et technologiques à connecter progressivement à la collecte automatique.</p>
+      </div>
+      <ul class="source-list">
+        <li><strong>arXiv</strong><p>IA, HRI, robotique, IHM, systèmes intelligents et neurotechnologies.</p></li>
+        <li><strong>PubMed</strong><p>Rééducation, cognition, neurotechnologies, handicap et technologies de santé.</p></li>
+        <li><strong>HAL</strong><p>Publications françaises en sciences humaines, informatique, robotique et handicap.</p></li>
+        <li><strong>IEEE Xplore</strong><p>Robotique, capteurs, systèmes embarqués, HRI et technologies d’assistance.</p></li>
+        <li><strong>ACM Digital Library</strong><p>IHM, accessibilité, UX, HCI et interaction humain-robot.</p></li>
+        <li><strong>INRIA / CNRS</strong><p>Projets et actualités de recherche françaises en IA, robotique et interfaces.</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../a11y-tools/personal-state.js"></script>
+  <script src="research-watch.js?v=20260921-1"></script>
+</body>
+</html>
