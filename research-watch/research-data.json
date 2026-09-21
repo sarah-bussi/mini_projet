@@ -1,15 +1,5 @@
 {
-  "updatedAt": "2026-09-21T13:45:00Z",
-  "items": [
-    {
-      "title": "Base initiale — veille scientifique & technologique",
-      "url": "https://arxiv.org/",
-      "source": "Workspace",
-      "type": "Point de départ",
-      "published": "2026-09-21T00:00:00Z",
-      "domains": ["IA & LLM", "Robotique sociale & HRI", "Aides techniques", "IHM & UX"],
-      "keywords": ["veille", "recherche", "robotique", "handicap"],
-      "summary": "Cette base est prête à recevoir des publications, preprints, projets de recherche et innovations. La prochaine étape consiste à automatiser la collecte depuis des sources scientifiques fiables."
-    }
-  ]
+  "updatedAt": null,
+  "errors": [],
+  "items": []
 }
