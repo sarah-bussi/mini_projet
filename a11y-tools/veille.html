@@ -30,13 +30,15 @@
     <section class="legend" aria-labelledby="sync-title">
       <h2 id="sync-title">État de la veille</h2>
       <p id="watch-status">Chargement de la dernière synchronisation…</p>
-      <p>La veille automatique archive les nouveaux contenus sans supprimer les anciens. Les sources sont volontairement limitées à des acteurs reconnus pour éviter de transformer cette page en agrégateur de bruit.</p>
+      <div id="watch-health" class="watch-health" aria-live="polite"></div>
+      <p><strong>Collecte automatique</strong> : seuls les sites disposant d’un flux exploitable alimentent les articles ci-dessous. Les autres liens restent disponibles comme sources de référence.</p>
       <p><strong>Suivi personnel</strong> : Favori, Lu, À lire et Important sont stockés uniquement dans ce navigateur.</p>
       <p><a href="brief.html"><strong>Voir le brief IA hebdomadaire</strong></a> pour une synthèse priorisée des éléments récents.</p>
     </section>
 
     <section class="source-panel" aria-labelledby="sources-title">
-      <div class="section-heading"><h2 id="sources-title">Sites & sources de référence</h2><p>À garder sous la main indépendamment des articles récents.</p></div>
+      <div class="section-heading"><h2 id="sources-title">Sources suivies</h2><p>Le badge indique si la source alimente automatiquement la veille ou sert de référence à consulter manuellement.</p></div>
+      <div class="source-summary" id="source-summary"></div>
       <ul id="source-list" class="source-list"></ul>
     </section>
 
@@ -60,6 +62,6 @@
 
   <footer class="site-footer"><div class="container"><p><a href="index.html">Retour à la bibliothèque d’outils</a>.</p></div></footer>
   <script src="personal-state.js"></script>
-  <script src="veille.js"></script>
+  <script src="veille.js?v=20260921-2"></script>
 </body>
 </html>
