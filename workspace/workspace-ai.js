@@ -219,21 +219,12 @@
 
   const targetHeader = (payload, patch, data) => {
     const isFr = payload.outputLanguage === 'fr';
-    if (isFffApplication(payload) && isFr) {
-      return {
-        title: 'Cheffe de projet Accessibilité & Handicap',
-        tagline: 'Accessibilité · Handicap · Gestion de projet',
-      };
-    }
-    return isFr
-      ? {
-          title: 'UX · Accessibilité · Technologies & Handicap',
-          tagline: 'IHM · Accessibilité numérique · UX · Technologies du handicap · Web & mobile',
-        }
-      : {
-          title: 'UX · Accessibility · Assistive Technologies',
-          tagline: 'HCI · Digital Accessibility · UX · Disability Technologies · Web & Mobile',
-        };
+    const manualTitle = cleanText(payload?.headerTitle);
+    const manualTagline = cleanText(payload?.headerTagline);
+    return {
+      title: manualTitle || (isFr ? 'UX · Accessibilité · Technologies & Handicap' : 'UX · Accessibility · Assistive Technologies'),
+      tagline: manualTagline || (isFr ? 'IHM · Accessibilité numérique · UX · Technologies du handicap · Web & mobile' : 'HCI · Digital Accessibility · UX · Disability Technologies · Web & Mobile'),
+    };
   };
 
   const fffOverrides = (payload, data, patch) => {
