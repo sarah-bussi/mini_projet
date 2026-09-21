@@ -1,0 +1,7 @@
+.research-filters{grid-template-columns:2fr repeat(4,minmax(0,1fr))}
+.research-card .watch-category{max-width:70%}
+.research-meta{display:flex;flex-wrap:wrap;gap:.45rem;margin:.4rem 0 .8rem}
+.research-meta .badge{font-size:.75rem}
+@media(max-width:1200px){.research-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.research-filters label:first-child{grid-column:span 2}}
+@media(max-width:1000px){.research-filters{grid-template-columns:1fr 1fr}.research-filters label:first-child{grid-column:1/-1}}
+@media(max-width:650px){.research-filters{grid-template-columns:1fr}.research-filters label:first-child{grid-column:auto}}
