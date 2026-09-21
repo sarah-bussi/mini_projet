@@ -84,8 +84,9 @@
       const types = [...new Set(items.map((item) => item.type).filter(Boolean))].sort((a,b) => a.localeCompare(b,'fr'));
       fill(domain, domains);
       fill(type, types);
+      const errors = Array.isArray(data.errors) ? data.errors : [];
       status.textContent = data.updatedAt
-        ? `Dernière mise à jour : ${new Date(data.updatedAt).toLocaleString('fr-FR')} · ${items.length} élément(s) en base.`
+        ? `Dernière mise à jour : ${new Date(data.updatedAt).toLocaleString('fr-FR')} · ${items.length} élément(s) en base.${errors.length ? ` Collecte partielle : ${errors.map((item) => item.source).join(', ')} en erreur.` : ' Collecte arXiv + PubMed + HAL opérationnelle.'}`
         : `Base initialisée · ${items.length} élément(s).`;
       render();
     })
