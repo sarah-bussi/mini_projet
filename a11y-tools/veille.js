@@ -8,6 +8,8 @@
   const period = document.getElementById('watch-period');
   const personalFilter = document.getElementById('watch-personal-filter');
   const count = document.getElementById('watch-count');
+  const health = document.getElementById('watch-health');
+  const sourceSummary = document.getElementById('source-summary');
   const personal = window.A11Y_PERSONAL;
   let archive = [];
   let sources = [];
@@ -32,7 +34,8 @@
     sourceList.replaceChildren();
     sources.forEach((item) => {
       const li = document.createElement('li');
-      li.innerHTML = `<strong><a href="${item.site}" target="_blank" rel="noopener noreferrer">${item.name}<span class="sr-only"> (nouvel onglet)</span></a></strong><p>${item.description}</p>`;
+      const automated = Boolean(item.feed);
+      li.innerHTML = `<div class="source-heading"><strong><a href="${item.site}" target="_blank" rel="noopener noreferrer">${item.name}<span class="sr-only"> (nouvel onglet)</span></a></strong><span class="badge ${automated ? 'source-auto' : 'source-reference'}">${automated ? 'Collecte auto' : 'Référence'}</span></div><p>${item.description}</p>`;
       sourceList.append(li);
     });
   };
@@ -98,6 +101,15 @@
     .then(([watchData, sourceData]) => {
       archive = Array.isArray(watchData.items) ? watchData.items : [];
       sources = Array.isArray(sourceData.sources) ? sourceData.sources : [];
+      const automatedSources = sources.filter((item) => item.feed);
+      const errors = Array.isArray(watchData.errors) ? watchData.errors : [];
+      if (sourceSummary) sourceSummary.textContent = `${automatedSources.length} source(s) collectée(s) automatiquement · ${sources.length - automatedSources.length} source(s) de référence.`;
+      if (health) {
+        health.className = `watch-health ${errors.length ? 'watch-health-warning' : 'watch-health-ok'}`;
+        health.textContent = errors.length
+          ? `Collecte partielle : ${errors.length} source(s) automatique(s) en erreur lors de la dernière synchronisation (${errors.map((item) => item.source).filter(Boolean).join(', ')}).`
+          : `Collecte opérationnelle : aucune erreur signalée lors de la dernière synchronisation.`;
+      }
       if (status) {
         status.textContent = watchData.updatedAt
           ? `Dernière synchronisation : ${new Date(watchData.updatedAt).toLocaleString('fr-FR')}. ${archive.length} contenu(s) archivé(s).`
