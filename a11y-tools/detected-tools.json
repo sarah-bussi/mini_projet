@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T11:34:01Z",
+  "updatedAt": "2026-09-21T12:58:41Z",
   "errors": [],
   "items": [
     {
@@ -8,8 +8,8 @@
       "url": "https://github.com/KittyGiraudel/a11y-dialog",
       "description": "A very lightweight and flexible accessible modal dialog script.",
       "language": "TypeScript",
-      "stars": 2489,
-      "updatedAt": "2026-09-20T07:36:19Z",
+      "stars": 2488,
+      "updatedAt": "2026-09-21T08:56:07Z",
       "detectedAt": "2026-09-20T11:34:01Z",
       "source": "GitHub"
     },
@@ -52,8 +52,8 @@
       "url": "https://github.com/nuxt/a11y",
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
-      "stars": 229,
-      "updatedAt": "2026-09-14T08:41:10Z",
+      "stars": 231,
+      "updatedAt": "2026-09-21T08:01:58Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 153,
-      "updatedAt": "2026-09-11T08:19:26Z",
+      "updatedAt": "2026-09-20T19:39:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -141,7 +141,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-19T18:51:23Z",
+      "updatedAt": "2026-09-20T17:11:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -174,7 +174,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 70,
-      "updatedAt": "2026-09-18T10:11:25Z",
+      "updatedAt": "2026-09-21T06:07:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -234,6 +234,17 @@
       "source": "GitHub"
     },
     {
+      "name": "react-native-a11y-order",
+      "fullName": "ArturKalach/react-native-a11y-order",
+      "url": "https://github.com/ArturKalach/react-native-a11y-order",
+      "description": "Native-first React Native library for screen reader focus order, focus trapping, cards with nested buttons, and accessibility announcements on iOS (VoiceOver) and Android (TalkBack).",
+      "language": "TypeScript",
+      "stars": 52,
+      "updatedAt": "2026-09-21T09:02:38Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-mcp",
       "fullName": "priyankark/a11y-mcp",
       "url": "https://github.com/priyankark/a11y-mcp",
@@ -273,7 +284,7 @@
       "description": "A small React hook to build accessible disclosure widgets.",
       "language": "JavaScript",
       "stars": 35,
-      "updatedAt": "2026-09-20T07:28:58Z",
+      "updatedAt": "2026-09-21T08:56:19Z",
       "detectedAt": "2026-09-11T11:31:07Z",
       "source": "GitHub"
     },
@@ -317,7 +328,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-17T09:23:11Z",
+      "updatedAt": "2026-09-21T12:30:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -383,7 +394,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-20T08:30:22Z",
+      "updatedAt": "2026-09-21T12:25:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -432,14 +443,14 @@
       "source": "GitHub"
     },
     {
-      "name": "aria-at-tests",
-      "fullName": "guidepup/aria-at-tests",
-      "url": "https://github.com/guidepup/aria-at-tests",
-      "description": "Testing screen reader compatibility against https://github.com/w3c/aria-at test suite using Guidepup",
+      "name": "public-browser",
+      "fullName": "Silbercue/public-browser",
+      "url": "https://github.com/Silbercue/public-browser",
+      "description": "Lets Claude Code and Cursor drive Chrome. Browse your real profile: -30% tokens, -25% cost, -41% tool calls, -34% tool defs, +40% faster. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2025-11-15T16:54:01Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
+      "updatedAt": "2026-09-18T19:14:00Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
@@ -448,9 +459,20 @@
       "url": "https://github.com/visionably/outloud",
       "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
       "language": "Python",
-      "stars": 9,
+      "stars": 10,
       "updatedAt": "2026-09-18T05:07:32Z",
       "detectedAt": "2026-09-19T11:09:36Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "aria-at-tests",
+      "fullName": "guidepup/aria-at-tests",
+      "url": "https://github.com/guidepup/aria-at-tests",
+      "description": "Testing screen reader compatibility against https://github.com/w3c/aria-at test suite using Guidepup",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2025-11-15T16:54:01Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -481,7 +503,7 @@
       "url": "https://github.com/guidepup/setup-action",
       "description": "GitHub Action to setup your CI for screen reader test automation.",
       "language": "JavaScript",
-      "stars": 6,
+      "stars": 7,
       "updatedAt": "2026-08-25T20:16:46Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
