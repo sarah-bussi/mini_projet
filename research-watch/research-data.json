@@ -1,5 +1,1062 @@
 {
-  "updatedAt": null,
-  "errors": [],
-  "items": []
+  "updatedAt": "2026-09-22T12:02:23Z",
+  "errors": [
+    {
+      "source": "arXiv",
+      "error": "HTTP Error 406: Not Acceptable"
+    }
+  ],
+  "items": [
+    {
+      "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
+      "url": "https://hal.science/hal-05730529v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2028-01-01T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI",
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Formations pour adultes",
+        "Enseignement agricole",
+        "Savoirs professionnels",
+        "Savoirs professionnels des agriculteurs",
+        "Socialisation professionnelle",
+        "Métiers ruraux"
+      ],
+      "summary": "Le rôle des formations pour adultes dans les trajectoires socioprofessionnelles au sein des mondes agricoles et ruraux reste largement méconnu. À l’heure où les politiques agricoles et éducatives connaissent des transformations importantes (montée en puissance des référentiels agroécologiques, réformes de la formation dans le sens d’une individualisation accrue des parcours, mise en concurrence des opérateurs publics et privés), les formations pour adultes sont un observatoire privilégié des transformations de l’action publique et des activités de travail agricole et rural. Les formations agricoles pour adultes constituent un lieu de recompos"
+    },
+    {
+      "title": "Revisiting the anatomy of the retroperitoneum and renal fascia. Aspects applied to ra-diology, laparoscopic and robotic surgery - a narrative review.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42462154/",
+      "source": "International braz j urol : official journal of the Brazilian Society of Urology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "This review aims to provide a comprehensive analysis of the anatomy of the retroperitoneal and abdominal fascias. We analyzed papers published in the past 70 years in the databases of Pubmed, Embase and Scielo. We excluded case reports, editorials and opinions of specialists. Studies were excluded if they lacked clear anatomical descriptions of the fascias, if full-text access was unavailable, or if they were published in languages other than Portuguese, English, or Spanish. This narrative review addresses the anatomical integration, surgical techniques, and functional importance of the fascias. Renal fascia is a dense connective tissue encas"
+    },
+    {
+      "title": "Vibration shape tuning for selective vibration node shifting in a multimodal longitudinal ultrasonic system.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42715659/",
+      "source": "Ultrasonics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Ultrasonic excitation is widely applied to enhance process performance and efficiency. Multimodal vibration excitation, as employed in advanced ultrasonic motors, offers the potential to generate multi-degree-of-freedom motion within a single compact actuator, enabling complex trajectories, higher torque densities, and improved integration in precision systems such as robotics, haptics, and micro-positioning. However, simultaneous excitation of multiple vibration modes often leads to misalignment of nodal and antinodal positions between modes, which can degrade energy transfer, reduce driving efficiency, and compromise precise control of loca"
+    },
+    {
+      "title": "Acoustic-driven millimetric helical robot: Ultrasonic synergistic manipulation in confined fluidic environments.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42628223/",
+      "source": "Ultrasonics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Acoustic field-driven manipulation provides a non-contact and non-invasive strategy for controlling microscale and nanoscale objects, yet its extension to millimeter-scale robots was limited by insufficient propulsion efficiency in confined biological environments. Here, a coordinated multi-acoustic-field approach is introduced, which harnesses the synergistic action of acoustic radiation forces and acoustic streaming flows to enable controlled locomotion of millimeter-scale helical robots and enhance propulsion. Multiphysics simulations captured the dynamics of millimeter-scale helical robots under combined acoustic fields, and experimental "
+    },
+    {
+      "title": "Social priming enhances young children's trust in robots.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612395/",
+      "source": "Journal of experimental child psychology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "This study examined preschoolers' selective trust in a robot versus a human informant, and whether social priming may increase trust by making the robot's social characteristics more salient, using the word-learning paradigm. Children also completed the Theory of Mind (ToM) scale, along with an adapted naïve biology task and an Attribution of Mental States questionnaire assessing their beliefs about robots. In Experiment 1, eighty-six Italian children (aged 3 and 5) observed a competent robot (NAO) correctly labeling familiar objects and an incompetent human mislabeling them. The two informants then provided novel labels for unfamiliar object"
+    },
+    {
+      "title": "A cross-sectional survey of physical workload and assistive device use among nurses: Barriers, perceptions, and future expectations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42607581/",
+      "source": "Applied ergonomics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Aides techniques"
+      ],
+      "keywords": [],
+      "summary": "Nurses experience substantial physical demands that increase their risk of work-related musculoskeletal disorders. Assistive devices may mitigate this risk, yet their use remains inconsistent. This cross-sectional study examined physical workload and assistive device utilization among nurses. A total of 456 licensed nursing professionals in Florida who provide direct patient care were included. Participants reported moderate to high physical workload. Among the 390 participants with frequency-of-use data, 51.0% (n=199) reported frequent assistive device use. Frequent assistive device use was more common among nurses with higher physical workl"
+    },
+    {
+      "title": "Molecular Architecture of Temporal Variability Network Dysfunction in Bipolar Disorder.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42554274/",
+      "source": "International journal of neural systems",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies"
+      ],
+      "keywords": [],
+      "summary": "Characterized by recurrent fluctuations in mood states, bipolar disorder (BD) is widely conceptualized as a disconnection syndrome associated with dysregulated brain dynamics. Nevertheless, the molecular mechanisms underlying this aberrant connectivity dynamics in BD remain elusive. Using resting-state electroencephalography (EEG) data from BD patients and healthy controls, this study first delineated the characteristic alterations in temporal variability of functional connectivity in BD and further elucidated their underlying molecular mechanisms and clinical relevance. Current findings revealed significantly reduced temporal variability wit"
+    },
+    {
+      "title": "Biomaterial platforms for enhanced stem cell therapy in ischemic stroke.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42468381/",
+      "source": "Biomaterials",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "Rééducation",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Ischemic stroke remains a leading cause of long-term disability worldwide, and existing therapies have a very limited capacity to repair lost neurons or restore brain function. This review examines how biomaterial-enhanced stem cell therapies can address these shortcomings by creating microenvironments that actively drive brain tissue regeneration. We propose a comprehensive framework for classifying neural repair biomaterials, emphasizing biological scaffolds, assisted stem cell tracking, and preconditioning strategies to enhance stem cell function. Within this framework, we systematically compare different material systems and cell types ac"
+    },
+    {
+      "title": "Extraperitoneal Single-Port Robotic-Assisted Radical Cystectomy with Orthotopic Ne-obladder: Technique and Surgical Considerations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42397987/",
+      "source": "International braz j urol : official journal of the Brazilian Society of Urology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "Radical cystectomy (RC) is the standard therapy for muscle-invasive bladder cancer (MIBC) and refractory high-risk non-muscle-invasive bladder cancer (1-3). Single-port robot-assisted radical cystectomy (RARC) offers notable minimally invasive advantages (4-6), whereas conventional transperitoneal approaches are associated with intestinal and gastrointestinal complications (7). This study evaluated an optimized extraperitoneal single-port RARC with orthotopic neobladder reconstruction for improved surgical safety and clinical outcomes. A 57-year-old male presented with three months of intermittent painless gross hematuria. Pelvic CT revealed "
+    },
+    {
+      "title": "Robot-Assisted Partial Nephrectomy in a High-Complexity Renal Tumor in a Horseshoe Kidney.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42397986/",
+      "source": "International braz j urol : official journal of the Brazilian Society of Urology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Horseshoe kidney is an uncommon congenital fusion anomaly that can make renal tumor surgery especially challenging because of altered rotation, limited mobility, variable vascular supply, and an unpredictable collecting system (1-7). This video presents a robot-assisted partial nephrectomy for a high-complexity renal tumor in this setting. A 33-year-old man, with ECOG 0 and no relevant comorbidities, was diagnosed with a 7.5-cm solid renal mass in the central posterior portion of the left moiety of a horseshoe kidney. The lesion had a RENAL score of 10p. Contrast-enhanced computed tomography and three-dimensional reconstruction were used to u"
+    },
+    {
+      "title": "C-reactive protein as a universal prognosticator in hemorrhagic stroke: a meta-analysis of intracerebral and aneurysmal subarachnoid hemorrhage.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42342056/",
+      "source": "Clinica chimica acta; international journal of clinical chemistry",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Systemic inflammatory response plays a pivotal role in secondary brain injury following hemorrhagic stroke, including spontaneous intracerebral hemorrhage (ICH) and aneurysmal subarachnoid hemorrhage (SAH). C-reactive protein (CRP) is a widely used biomarker of inflammation; however, a comprehensive meta-analysis directly comparing its prognostic utility across both major hemorrhagic stroke subtypes is lacking. This study aimed to quantitatively assess the common prognostic value of admission CRP levels for poor outcomes in patients with ICH and SAH. Following PRISMA guidelines (PROSPERO: CRD42024510967), we systematically searched four datab"
+    },
+    {
+      "title": "How personalization-privacy trade-offs influence Robotaxi adoption: Insights from mobile Third Places.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42259026/",
+      "source": "Applied ergonomics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "With the development of autonomous driving technology and the sharing economy, robotaxis are expected to transform from traditional transportation tools to the future mobile Third Places. The focus is shifting from mere mobility to the enhancement of comfort, with an emphasis on delivering personalized services across diverse in-cabin scenarios. However, accessing more advanced personalized services in robotaxis may require users to disclose additional personal information, thereby creating a trade-off between the desire for personalization and concerns about privacy. Therefore, based on the privacy paradox theory and privacy calculus theory,"
+    },
+    {
+      "title": "Des socialisations hétérogènes dans les mondes du cheval : entre loisirs, professions et médiation [Appel clos]",
+      "url": "https://hal.science/hal-05530609v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Cheval",
+        "Equitation",
+        "Formations équestres",
+        "Enseignement agricole",
+        "Loisirs"
+      ],
+      "summary": "« Le cheval, c’est trop génial », titrait en 2008 une campagne de communication produite par la Fédération française d’équitation (FFE), qui donna lieu, quelques années plus tard, à une émission de télévision destinée à promouvoir les activités équestres auprès des enfants. Loin de sa tradition militaire, l’équitation est désormais le premier sport pratiqué par les femmes en club en France. On peut néanmoins constater que les processus d’apprentissage intégrant la relation avec le cheval ont rarement intéressé les revues en sciences de l’éducation ou en sciences sociales. Un constat s’impose : les activités sportives pratiquées majoritairemen"
+    },
+    {
+      "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
+      "url": "https://hal.science/hal-05699297v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-12-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "MLOps actors",
+        "Software engineering",
+        "Machine learning operations",
+        "Orchestration",
+        "Collaborative MLOps",
+        "MLOps Reference architecture",
+        "MLOps activities"
+      ],
+      "summary": "With the increasing adoption of Machine Learning (ML), the need to manage, in a tailored manner, the end-to-end engineering of ML-powered software arises. Machine Learning Operations (MLOps) extends DevOps to address the specific challenges of the development and lifelong management of this new type of software. Despite the growing attention to this domain, an accepted, accessible, and modular reference architecture for MLOps is still missing. This paper presents SkeltyMLOps a reference architecture aimed at promoting collaboration among the diverse actors involved in MLOps. SkeltyMLOps is built as rigorously as possible from knowledge gather"
+    },
+    {
+      "title": "Sparse Competition during Training For the Emergence of Specialized Modules",
+      "url": "https://hal.science/hal-05725755v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-23T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [
+        "Deep learning",
+        "Modularity",
+        "Interpretability"
+      ],
+      "summary": "Modularity in deep neural networks has been proposed as a means of improving both interpretability and training by promoting disentangled representations and reducing redundancy. In this work, we study the emergence of modular structure through competition dynamics between groups of neurons during training. We introduce a method that (i) maintains near-baseline accuracy, (ii) induces usage-based modularity by sparsely routing inputs to neuron groups, and (iii) encourages specialization of these modules, such that their activations are correlated with input classes. We evaluate the proposed approach on ImageNet-100 and CIFAR-100 and show that "
+    },
+    {
+      "title": "Gouvernance du risque et création de valeur - Piloter avec l'ISO 31000",
+      "url": "https://inria.hal.science/hal-05682674v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-19T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "ISO 31000",
+        "Gouvernance du Risque",
+        "Risk - Management of the risks - operational risk Management – Performance"
+      ],
+      "summary": "Dans un environnement marqué par les polycrises, les disruptions technologiques, les pressions climatiques et géopolitiques, ainsi que par la montée en puissance de l'intelligence artificielle générative, gérer le risque ne suffit plus. Il faut apprendre à le piloter. Loin des approches normatives et des catalogues d'outils, cet ouvrage propose une lecture renouvelée de la norme ISO 31000. Il en fait une boussole stratégique pour gouverner le risque, arbitrer les scénarios et créer de la valeur. Structuré autour du continuum décisionnel (stratégique, tactique, opérationnel), il transforme les principes de la norme en leviers concrets, articul"
+    },
+    {
+      "title": "Ethologie quantitative : vers une automatisation et un suivi continu des comportements ?",
+      "url": "https://hal.inrae.fr/hal-05707238v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-04T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Dans le contexte de l'analyse automatisée du comportement animal, nous développons une méthode basée sur l'intelligence artificielle et l'analyse d'images permettant le suivi continu et individualisé de chèvres élevées en groupe. Quatre lots de 16 chèvres (deux avec et deux sans plateforme) ont été suivis pendant quatre mois. Nous avons défini une liste de symboles facilement reconnaissables par des réseaux de neurones convolutifs pour assurer une identification automatique des individus, qui soit robuste sur plusieurs semaines indépendamment de leur posture. Les symboles ont été tondus sur le dos et les flancs. Des mesures de calibration ont"
+    },
+    {
+      "title": "AI subsidies as a tool for redistribution",
+      "url": "https://hal.science/hal-05748060v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Artificial intelligence",
+        "Optimal taxation",
+        "Redistribution",
+        "Wage inequality",
+        "Technological change",
+        "Inégalités salariales",
+        "Progrès technique",
+        "Redistribution",
+        "Taxation optimale",
+        "Intelligence artificielle"
+      ],
+      "summary": "I study the optimal taxation of artificial intelligence (AI). My analysis highlights a wage-compression effect that provides a rationale for subsidizing AI, as AI adoption may reduce rather than increase wage inequality. When this effect outweighs AI's social costs, AI should be subsidized instead of taxed. I treat AI as a productive input distinct from robots, as the two technologies perform different ranges of tasks. Using numerical simulations, I demonstrate that the optimal policy for AI may differ sharply from that for robots. Under the benchmark calibration, AI is subsidized, whereas robots are taxed. Therefore, the case for taxing AI i"
+    },
+    {
+      "title": "Les discriminations subjectives au prisme du handicap",
+      "url": "https://hal.science/hal-05651762v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-01T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Subjectivité",
+        "Discrimination",
+        "Intersectionnalité",
+        "Conscience du droit",
+        "Handicap"
+      ],
+      "summary": "À l'aide des enquêtes AAD (2016) et TeO2 (2019-2020), cette contribution documente la surexposition, par les personnes correspondant à différentes définitions du handicap, à de multiples traitements défavorables, notamment dans les domaines de l'éducation, de l'emploi, de la santé et du logement. Ces traitements (« discriminations situationnelles ») alimentent les déclarations de discriminations (« discriminations autoreportées ») ; mais à des degrés variables, selon différents motifs et de manière non exclusive. En mobilisant une approche intersectionnelle, ces résultats questionnent les cadrages sociaux de diverses inégalités, ainsi que les"
+    },
+    {
+      "title": "Diversified and Perceptible Counterfactual Examples Leveraging Expert Knowledge",
+      "url": "https://hal.science/hal-05728414v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-21T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Linguistic perceptibility",
+        "Fuzzy Linguistic Vocabulary",
+        "Expert Knowledge",
+        "Counterfactual Examples",
+        "Explainable AI"
+      ],
+      "summary": "CounterFactual Examples (CFEs) are a cornerstone of eXplainable Artificial Intelligence (XAI), offering local, post hoc, and model-agnostic explanations by identifying minimal input modifications that alter a model’s prediction. Yet, in order to be intelligible, these modifications must also be semantically meaningful to the explainee. This paper proposes to integrate knowledge expressed as a fuzzy linguistic vocabulary to represent the explainee’s perception and interpretation of the data. The domain induced by this fuzzy vocabulary imposes structural constraints that make the features dependent, preventing the use of gradient-based optimisa"
+    },
+    {
+      "title": "Text-to-MDX: LLM-assisted generation of MDX queries from user questions",
+      "url": "https://hal.inrae.fr/hal-05652708v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [
+        "Text-to-MDX",
+        "OLAP",
+        "MDX",
+        "LLMs",
+        "Conversion de texte en expression multidimensionnelle",
+        "Traitement analytique en ligne OLAP",
+        "Expression multidimensionnelle MDX",
+        "Grand modèle de langage LLM"
+      ],
+      "summary": "MDX (MultiDimensional Expressions) is the standard language for querying multidimensional data in OLAP systems, but its complex syntax poses challenges for non-expert users. While a lot of research has focused on natural language interfaces for SQL, little attention has been given to MDX. This paper explores the potential of Large Language Models (LLMs), specifically GPT-4o, in translating natural language questions into MDX statements. We investigate whether LLMs can act as full MDX query generators or assistants, and study how the writing style of questions affects output correctness. Through four research questions, we evaluate ChatGPT’s b"
+    },
+    {
+      "title": "L’IA comme vecteur d'inclusion : évolution de la pratique du maquillage chez les femmes en situation de déficience visuelle",
+      "url": "https://hal.science/hal-05682383v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-07T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "L'accès au maquillage, pratique largement ancrée dans les habitudes quotidiennes, demeure un défi majeur pour les consommateurs en situation de déficience visuelle. En mobilisant une démarche qualitative, cette recherche explore comment l’utilisation d’une technologie d’assistance basée sur l’intelligence artificielle (IA), le Voice-enabled Makeup Assistant peut accompagner les personnes en situation de déficience visuelle dans leur pratique du maquillage. Les résultats montrent que l’appropriation de cette technologie contribue au développement de l’autonomie et s’accompagne d'un sentiment d’empowerment, lié à une prise de contrôle sur leur "
+    },
+    {
+      "title": "A Methodology to Compare Real and LLM-Simulated Multimodal Interactions: The Case of Gender Bias",
+      "url": "https://hal.science/hal-05725815v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-05T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Generation",
+        "Bias",
+        "Gender",
+        "LLM",
+        "Narrative Transcripts",
+        "Interactions"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly used to generate multimodal data for building corpora or simulating synthetic behaviours. A key challenge remains the evaluation of generated data. Comparison with real multimodal human interactions may help address this issue, but unified representations and evaluation frameworks are still lacking. In this article, we introduce MAMBI (Multimodal Annotation and Measurements for Bias in Interactions), an open-source tool designed to facilitate systematic comparisons between real and LLM-simulated multimodal human interactions. For this purpose, a standardised enriched multimodal transcript format i"
+    },
+    {
+      "title": "Engineering Digital Process Twins: Towards a Methodology Based on MDE and DevOps",
+      "url": "https://hal.science/hal-05726262v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-04T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI"
+      ],
+      "keywords": [
+        "Digital Process Twins",
+        "Business Processes",
+        "DevOps",
+        "Digital Twins"
+      ],
+      "summary": "This poster is accompanying the following article: Gwendal Beaumont, Charlotte Verbruggen, Antoine Beugnard, Dominik Bork, Salvador Martínez, Christelle Urtado, and Sylvain Vauttier. 2026. Engineering Digital Process Twins: Towards a Methodology Based on MDE and DevOps. In ACM/IEEE 29th International Conference on Model Driven Engineering Languages and Systems (MODELS Companion 2026), October 04–09, 2026, Málaga, Spain. ACM, New York, NY, USA, 5 pages. https://doi.org/10.1145/3837062.3839100"
+    },
+    {
+      "title": "Exemples contrefactuels diversifiés et perceptibles linguistiquement par intégration de connaissances expertes",
+      "url": "https://hal.science/hal-05728466v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Linguistic Perceptibility",
+        "Fuzzy Linguistic Vocabulary",
+        "Expert Knowledge",
+        "Counterfactual Examples",
+        "Explainable AI XAI"
+      ],
+      "summary": "En Intelligence Artificielle Explicable, les exemples contrefactuels (EC) fournissent des explications locales, post-hoc et indépendantes du modèle, en identifiant les modifications minimales à apporter à une donnée d'intérêt pour changer la prédiction qui lui est associée. Cependant, pour être compréhensibles, ces modifications doivent être sémantiquement perceptibles par le destinataire de l'explication. Cet article propose d'étendre la méthode de génération d'exemples contrefactuels DiCE en intégrant des connaissances expertes exprimées à l'aide d'un vocabulaire linguistique flou : celui-ci permet de traduire la perception sémantique des d"
+    },
+    {
+      "title": "L’introduction de l’intelligence artificielle en radiothérapie : transformations de l’activité et de l’organisation du travail.",
+      "url": "https://asnr.hal.science/hal-05741440v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-23T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Risk management",
+        "Human-AI interaction",
+        "Radiotherapy",
+        "Intelligence artificielle",
+        "Radiothérapie",
+        "Organisation du travail"
+      ],
+      "summary": "L’introduction de dispositifs d’intelligence artificielle (IA) en radiothérapie, notamment pour automatiser le contourage des organes à risque, est présentée comme un levier d’efficacité et de fiabilisation des traitements. À partir d’une enquête menée au sein du service de radiothérapie d’un grand hôpital public parisien, combinant observations ethnographiques et entretiens semi-directifs auprès des professionnels, cette communication analyse les effets sur l’activité réelle de cette technologie. Avant l’automatisation, le contourage manuel mobilisait plusieurs heures de travail et constituait un moment central d’appropriation du dossier. Dé"
+    },
+    {
+      "title": "Conjectures sur le contrôle juridictionnel des licenciements liés à l’intelligence artificielle",
+      "url": "https://hal.science/hal-05756610v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-21T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Droit du travail",
+        "Sauvegarde de la compétitivité",
+        "Mutations technologiques",
+        "Intelligence articficielle",
+        "Emploi",
+        "Licenciement"
+      ],
+      "summary": "Face au recours à l'intelligence artificielle (IA), les dispositions légales relatives à la justification des licenciements et l'interprétation qu'en retient la Cour de cassation, n’assurent qu’une faible protection de l'emploi. L'étude de la jurisprudence des cours d'appel révèle toutefois d’importantes variations dans l'intensité de l’examen juridictionnel des choix de gestion de l’employeur. L’analyse fait également apparaître que les projets de licenciements associés à l’introduction de nouveaux procédés techniques reposent rarement sur la seule invocation de mutations technologiques et tiennent plus fréquemment à l'allégation de menaces "
+    },
+    {
+      "title": "Voyage du pape en France : quels enjeux religieux et politiques ?",
+      "url": "https://u-picardie.hal.science/hal-05758534v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-21T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Vatican",
+        "Catholicisme",
+        "Église catholique",
+        "Pape Léon XIV"
+      ],
+      "summary": "Le pape Léon XIV rend visite aux catholiques de France du 25 au 28 septembre 2026. Au Stade de France, il s’adressera à la jeunesse, se plaçant ainsi dans la continuité de son prédécesseur Jean-Paul II. Ce voyage sera l’occasion pour le pape de s’exprimer sur l’intelligence artificielle, et de saluer le catholicisme social et Robert Schuman, figure de l’Europe et de la démocratie chrétienne."
+    },
+    {
+      "title": "Le corps désirant : Éros, l'attachement et le simulacre du grain",
+      "url": "https://hal.science/hal-05755945v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-20T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [
+        "Philosophy",
+        "Artificial intelligence",
+        "Post-Humanism",
+        "Disjunctive Determinism",
+        "Eros",
+        "Intelligence artificielle",
+        "Déterminisme Disjonctif"
+      ],
+      "summary": "Ce texte poursuit le chantier ouvert par Le corps guerrier, en appliquant le même appareil — point d'entrée contre contenu portable, déplacement de probabilité contre compétence consultable, dissymétrie avec le régime machinique — à une configuration corporelle différente : le corps désirant. La figure retenue, Éros dans sa forme archaïque hésiodique, sert de signe d'orientation, non de fondement narratif. Le texte teste la distinction point d'entrée/probabilité sur un cas documenté — les circuits neuroendocriniens de l’attachement — puis examine les deux pentes de capture propres à ce corps : la capture miroir et la capture utilitariste. Il "
+    },
+    {
+      "title": "L’intelligence artificielle pour le profilage environnemental : robustesse méthodologique, périmètre spatiale et complexité territoriale",
+      "url": "https://hal.science/hal-05732200v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-16T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": ""
+    },
+    {
+      "title": "Handicap non décelé au cours de la grossesse : pas de droit à réparation pour les membres de la fratrie ou de la sororité",
+      "url": "https://shs.hal.science/halshs-05755328v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-16T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Diagnostic prénatal",
+        "Handicap",
+        "Réparation du préjudice",
+        "Responsabilité civile",
+        "Mineur"
+      ],
+      "summary": ""
+    },
+    {
+      "title": "Tracking anesthetic depth with Median Nerve Stimulation-evoked Riemannian EEG features in a clinical setting",
+      "url": "https://inria.hal.science/hal-05677420v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-16T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Accidental awareness during general anesthesia (AAGA) is defined as an unexpected return of consciousness during surgery. Despite advances in monitoring, its incidence remains stable, underscoring the need for improved techniques. The Patient State Index (PSI), derived from frontal electroencephalography (EEG), is a common clinical measure of anesthesia depth but is sensitive to electromyographic (EMG) artifacts. In paralyzed patients receiving neuromuscular blocking agents, motor signs of awareness are suppressed, making EEG-based brain-computer interfaces (BCIs) a promising approach to detect motor intentions independently of peripheral out"
+    },
+    {
+      "title": "Intelligence Artificielle en consultation : enjeux éthiques, juridiques et perspectives pour la pratique médicale",
+      "url": "https://shs.hal.science/halshs-05754934v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-16T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Gynécologie",
+        "Enjeux éthiques et juridiques",
+        "Intelligence Artificielle"
+      ],
+      "summary": ""
+    },
+    {
+      "title": "Using brain network features in motor imagery-based BCI for stroke rehabilitation",
+      "url": "https://hal.science/hal-05683845v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-14T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX",
+        "Rééducation"
+      ],
+      "keywords": [
+        "Rehabilitation",
+        "Functional connectivity FC",
+        "BCI brain computer interface",
+        "Stroke"
+      ],
+      "summary": "Motor imagery brain-computer interfaces are promising tools for post-stroke rehabilitation, but most systems rely on spectral power features and are often tested in highly selected patient populations. Because stroke affects large-scale brain networks, connectivitybased markers may provide complementary information for decoding and monitoring rehabilitation. This pilot study evaluated the feasibility of an intensive 6-week MI-BCI protocol combined with functional electrical stimulation in five chronic stroke patients with heterogeneous and often severe motor impairment. Functional connectivity analyses revealed the emergence of motor imagery-"
+    },
+    {
+      "title": "Complexité et intelligence artificielle : Vers une théorie des médiations techno-cognitives",
+      "url": "https://hal.science/hal-05752574v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-14T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Phenomenology",
+        "Technology",
+        "Knowledge",
+        "Language",
+        "Artificial Intelligence",
+        "Enaction",
+        "Complexity",
+        "Technique",
+        "Savoir",
+        "Phénoménologie"
+      ],
+      "summary": "Cette thèse analyse l’intelligence artificielle à partir des théories de la complexité. Héritière de la cybernétique, l’IA transforme les modalités de connaissance, d’action et d’interprétation. Plutôt que de l’opposer à l’intelligence humaine, il s’agit de la penser comme une médiation technique et un opérateur de transformation du complexe humain–technique, où l’externalisation et l’automatisation des facultés cognitives reconfigurent notre rapport au monde."
+    },
+    {
+      "title": "Négocier l’intelligence artificielle ?",
+      "url": "https://cnam.hal.science/hal-05748564v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-14T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Artificial intelligence technological change industrial relations company agreements collective bargaining",
+        "Artificial intelligence",
+        "Technological change",
+        "Industrial relations",
+        "Company agreements",
+        "Collective bargaining"
+      ],
+      "summary": "L’intelligence artificielle (IA) est devenue un référent obligé des réflexions sur l’avenir du travail, et l’entreprise le lieu privilégié d’encadrement de ses usages. Mais ce principe d’une régulation au niveau de l’entreprise ne dit rien des formes concrètes qu’elle prend : comment l’IA est-elle effectivement intégrée et problématisée dans la négociation collective ? À partir d’un corpus de 377 732 accords d’entreprise publiés sur Légifrance entre 2017 et 2026, dont 593 mentionnent l’IA, l’article mobilise des méthodes de fouille de textes et d’analyse lexicométrique pour saisir les opérations par lesquelles cette technologie est constituée"
+    },
+    {
+      "title": "Wrapped One-Class Riemannian EEG classifier for BCI-based detection of anesthetic states",
+      "url": "https://inria.hal.science/hal-05678185v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-14T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [
+        "Riemannian geometry",
+        "One-class classification",
+        "General anesthesia",
+        "Electroencephalography",
+        "Brain-computer interface",
+        "Median nerve stimulation",
+        "Accidental awareness under general anesthesia"
+      ],
+      "summary": "Brain-computer interfaces based on ElectroEncephaloGraphy (EEG) often represent efficiently brain signals as covariance matrices and leverage Riemannian geometry for classification of mental states. However, current approaches typically require multiple classes for training. In many applications such as intraoperative monitoring of consciousness during anesthesia, only data from one class, such as the awake state, may be available, requiring one-class classification methods. We propose a novel Riemannian one-class classifier called the One-Class Wrapped Gaussian. Unlike existing methods that rely solely on the Riemannian mean, our approach in"
+    },
+    {
+      "title": "Règlement sur l'intelligence artificielle - version enrichie (Omnibus IA)",
+      "url": "https://shs.hal.science/halshs-04680624v3",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-12T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "AI Act",
+        "Digital Law",
+        "Artificial Intelligence",
+        "Intelligence artificielle",
+        "Droit du numérique",
+        "Règlement sur l'intelligence artificielle"
+      ],
+      "summary": "Le présent document est une version enrichie du règlement sur l’intelligence artificielle - intégrant les dispositions du règlement dit Omnibus IA - afin de simplifier la lecture et la compréhension de ce texte européen majeur. Il est destiné aux professionnels et aux personnes intéressées par ce domaine. La méthode utilisée consiste à enrichir le texte initial (règlement (UE) n° 2024/1689) à partir de diverses sources d'information. Le processus implique l'extraction du texte brut du site Eur-Lex, sa restructuration dans un logiciel de traitement de texte et l'établissement de liens entre les considérants et les articles associés. L'enrichis"
+    },
+    {
+      "title": "IA et tourisme : où en est-on vraiment ?",
+      "url": "https://hal.science/hal-05748510v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-11T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Comme beaucoup d’autres, le secteur touristique s’est largement emparé de l’intelligence artificielle (IA). À moins que ce ne soit l’IA qui soit partie à la conquête du monde du tourisme, profitant du fait que ce dernier voyait dans la transformation numérique un élément largement positif de son développement futur. L’intégration de ce nouvel outil apparaît aujourd’hui éminemment stratégique pour survivre dans un secteur en pleine mutation. Ce qui est aujourd’hui ressenti comme un impératif de mobilisation de l’IA dans le secteur du voyage nécessite dès lors des reconversions importantes pour adapter l’offre de services touristiques aux usage"
+    },
+    {
+      "title": "Imaginaires touristiques médiatisés par l’IA et reconstruction de soi : mobilité interculturelle, négociation des normes et transformation identitaire",
+      "url": "https://hal.science/hal-05747493v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-11T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Imaginaires algorithmiques",
+        "IA générative",
+        "Imaginaires touristiques",
+        "Possible selves",
+        "Mobilité interculturelle",
+        "Dénaturalisation",
+        "Reconstruction identitaire",
+        "Communication interculturelle"
+      ],
+      "summary": "Cet article propose un modèle réflexif et récursif pour penser la rencontre entre imaginaires algorithmiques et expérience interculturelle. Son point de départ est simple : les plateformes numériques et l’intelligence artificielle ne nous disent pas seulement où aller ni comment regarder l’ailleurs. En organisant ce qui devient visible, répétable et désirable, elles contribuent aussi à rendre imaginables certaines manières de vivre — et, avec elles, certaines versions possibles de soi. Mais voyager, c’est aussi faire sortir l’imaginaire de l’écran. Ce qui avait été imaginé à distance rencontre alors l’épaisseur du réel : des pratiques, des no"
+    },
+    {
+      "title": "Lectures : Intégrité académique et intelligence artificielle",
+      "url": "https://shs.hal.science/halshs-05743104v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-10T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Réinventer l'intégrité académique à l'ère de l'intelligence artificielle",
+        "Michelle Bergadaà et Paulo Peixoto",
+        "Lectures 2026",
+        "Actualites"
+      ],
+      "summary": "Michelle Bergadaà et Paulo Peixoto, Réinventer l'intégrité académique à l'ère de l'intelligence artificielle, Éditions EMS, 2025, 212 p., ISBN 978-2-38630-176-6"
+    },
+    {
+      "title": "Has AI Killed Students’ Desire to Learn: Exploring Knowledge and Identity Dynamics in Higher Education",
+      "url": "https://hal.science/hal-05748968v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-10T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Apprentissage",
+        "IA générative",
+        "Connaissance",
+        "Enseignement des langues",
+        "LANSAD",
+        "LANSOD",
+        "Enseignement supérieur",
+        "Language education",
+        "Knowledge",
+        "Generative AI"
+      ],
+      "summary": "The arrival of Generative Artificial Intelligence (GenAI) tools in language teaching and learning seems to be reshaping students’ relation to learning (Law, 2024). While our previous research (Hamza-Jamann & Molle 2025) highlighted students’ uses of GenAI in language learning contexts, this study focuses on the effects of these technologies on students’ desire to learn. This desire is not simply conceived as a cognitive disposition, but as an identity-driven dynamic which integrates one’s relationship to knowledge, to oneself, and to professional projection (Mary et Costalat-Founeau, 2014). This paper presents an exploratory qualitative study"
+    },
+    {
+      "title": "Mapping the landscape of GenAI in French as a foreign language: insights from the Littérat’IA project",
+      "url": "https://hal.science/hal-05747076v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-10T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "GenAI",
+        "French as a Foreign Language FFL",
+        "Innovation adoption",
+        "Learner practices",
+        "AI literacy"
+      ],
+      "summary": "This presentation covers the results of a quantitative study on the use of generative artificial intelligence (GenAI) and was conducted with approximately one thousand French as a Foreign Language (FFL) learners enrolled in an intensive program in one of eleven university FFL centres in France and in Belgium. The study focuses on three areas: the diffusion of GenAI among learners (knowledge, usage habits, use for FFL), modalities of use (means of access, paid/free version, frequency of use, models used, language of utilisation…), and use for FFL (feelings of progression, relationship between usage and level in FFL, possibility of independent "
+    },
+    {
+      "title": "PISA 2025 : l’IA est-elle responsable de la baisse des résultats ?",
+      "url": "https://hal.science/hal-05750473v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-10T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Pisa",
+        "Pisa 2025",
+        "Education",
+        "Artificial Intelligence",
+        "Intelligence artificielle",
+        "Education",
+        "Pisa",
+        "Pisa 2025"
+      ],
+      "summary": "Les résultats de PISA 2025 sont préoccupants. Entre 2015 et 2025, la moyenne des pays de l’OCDE a diminué de 22 points en mathématiques, soit l’équivalent d’un peu plus d’une année d’apprentissage, et de 28 points en lecture. Par ailleurs, 20 % des jeunes de 15 ans se situent désormais sous le niveau de compétence de base dans les trois domaines évalués, contre 16 % en 2022. La France n’échappe pas à cette tendance. Entre 2022 et 2025, elle a perdu 18 points en lecture et 16 points en mathématiques, tandis que les résultats en sciences sont restés relativement stables (-4 points). L’OCDE souligne que ces résultats comptent désormais parmi les"
+    },
+    {
+      "title": "Lettre #5 du Programme de recherche Industries culturelles et créatives PEPR ICCARE",
+      "url": "https://hal.science/hal-05753188v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-09T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "L’été s’achève et une nouvelle année universitaire commence. Avant de nous projeter dans les mois qui viennent, cette rentrée est aussi l’occasion de regarder un instant le chemin parcouru. ICCARE a ter- miné l’année universitaire en Avignon par deux journées d’accélération consacrées à une question qui traverse aujourd’hui profondément le monde de la culture : « Libres de créer ? Les arts vivants face à la censure ». La question pourrait sembler étrange. La liberté de création est consacrée par la loi, régulièrement réaffirmée et largement défendue dans son prin- cipe. Pourtant, les faits qui la mettent à l’épreuve se multiplient : spectacle"
+    },
+    {
+      "title": "S'autonomiser n'est pas générer : réflexions sur l'autonomisation à l'ère de l'IA générative",
+      "url": "https://hal.science/hal-05745361v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-09T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Language learning",
+        "Autonomy",
+        "Advising",
+        "Artificial intelligence",
+        "Literacy",
+        "Intelligence artificielle",
+        "Conseiller",
+        "Autonomie",
+        "Apprentissage des langues"
+      ],
+      "summary": "Nous proposons une réflexion sur les liens entre autonomie en apprentissage des langues et intelligence artificielle générative (IAG) dans le contexte de l’approche développée au CRAPEL. Après avoir rappelé quelques éléments historiques et les principes de l’autonomie, nous questionnons les effets des usages actuels de l’IAG sur l’autonomisation des apprenants, et sur les pratiques d’accompagnement dites de « conseil ». Si certaines caractéristiques de l’IAG semblent à première vue favoriser l’autonomisation, il nous semble qu’une analyse plus approfondie est nécessaire. En effet, l’usage de l’IAG n’est pas sans risques et occulte certaines d"
+    },
+    {
+      "title": "Évaluation territoriale de l'exposition à l'intelligence artificielle",
+      "url": "https://hal.science/hal-05744573v2",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-09T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "L'évaluation de l'exposition des territoires à l'intelligence artificielle constitue un indicateur déterminant pour la construction des politiques publiques de l'emploi et de la formation. Pourtant, le débat public s'appuie fréquemment sur des indicateurs dont la construction méthodologique demeure opaque. Ce rapport prend pour point de départ un événement médiatique récent -la diffusion massive des résultats d'une étude menée par un organisme de certification, classant les villes françaises selon leur prétendue vulnérabilité à l'IA -pour illustrer les écueils d'une approche non documentée. L'analyse de ce cas d'école met en évidence d'import"
+    },
+    {
+      "title": "LLM-powered socially assistive robot-delivered cognitive behavioral therapy exercises: an exploratory study with university students",
+      "url": "https://hal.science/hal-05745257v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-09T00:00:00Z",
+      "domains": [
+        "Robotique d’assistance",
+        "IA & LLM",
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "Mental health is a significant healthcare challenge, and cognitive behavioral therapy (CBT) is a widely used therapeutic method for treating anxiety and depression. However, traditional CBT often requires access to trained clinicians and can be cost-prohibitive or logistically difficult for many individuals. To address these barriers, we developed a low-cost socially assistive robot (SAR) that uses a large language model (LLM) to guide the user through interactive at-home CBT exercises. In this exploratory study, 38 university students completed CBT exercises across a 15-day period using one of three modalities: with a robot (using an LLM for"
+    },
+    {
+      "title": "Dissecting burden of alcoholic cardiomyopathy: age-period-cohort analysis from the global burden of disease study 2019.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41736539/",
+      "source": "Clinical and experimental hypertension (New York, N.Y. : 1993)",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Alcoholic cardiomyopathy (ACM) is a major cause of cardiovascular morbidity and mortality, characterized by ventricular dilation and impaired contractility resulting from chronic heavy alcohol use. Understanding its temporal and demographic trends is vital for guiding targeted public health interventions. Using the Global Burden of Disease (GBD) 2019 dataset, we analyzed ACM trends from 1990 to 2019 across 204 countries and territories. Multi-level mixed-effects models were applied to assess age, period, and cohort effects on ACM mortality. Males consistently exhibited higher ACM rates across all age groups. Although global age-standardized p"
+    },
+    {
+      "title": "Enhancing Motor Imagery Decoding for Stroke Patients Using Data Augmentation and Transfer Learning.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42610205/",
+      "source": "International journal of neural systems",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "This study proposes an innovative WalkBCI real-time motor imagery brain-computer interface system to solve the problems of time-consuming model calibration and low EEG decoding accuracy in stroke patients because of individual differences. WalkBCI integrates generative adversarial networks and transfer-learning techniques to generate motor imagery feature data via RM-GAN using the resting data of target subjects, which shortens the time of calibration data acquisition and reduces patient fatigue. Meanwhile, the system enhances classification performance by combining source domain data during transfer learning optimization. The system is evalu"
+    },
+    {
+      "title": "Light-driven actuators with self-healing capability: A supramolecular core-shell elastomer approach.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42413130/",
+      "source": "Journal of colloid and interface science",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Soft actuators for flexible electronics and soft robotics have garnered significant interest, while achieving rapid actuation, mechanical robustness, and self-healing capacity within a single system remains challenging. Here we disclosed an interfacial supramolecular strategy by incorporating polydopamine (PDA) decorated Liquid metal (EGaIn) microdroplets into an aqueous polyurethane (WPU) matrix to construct a dynamic supramolecular interface. The formation of multiple hydrogen bonds and metal-catechol coordination markedly enhances interfacial adhesion and energy dissipation without sacrificing chain mobility. Consequently, the WLMP film ac"
+    },
+    {
+      "title": "Exploiting frontotemporal asymmetry in low-channel EEG emotion recognition via spectral fusion network.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42763501/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies"
+      ],
+      "keywords": [],
+      "summary": "Portable EEG devices hold promise for pervasive affective computing, yet sparse channel counts limit the resolution for capturing global cortical dynamics of emotional processing. To address this, we propose the Spatiotemporal Spectral Asymmetric Fusion Network (STSANet), a neurophysiologically grounded framework designed to decode emotional states from low-density recordings. Unlike traditional methods limited by spatial resolution, we introduce a dual-branch architecture prioritizing Frequency and Spatial Asymmetry Modeling. Instead of merely extracting features, the model explicitly quantifies non-linear hemispheric lateralization-a core m"
+    },
+    {
+      "title": "Epidemiology and potential mechanisms of structural progression in osteoarthritis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42762435/",
+      "source": "Artificial cells, nanomedicine, and biotechnology",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI",
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "There is a critical need to understand the mechanisms that govern structural progression in osteoarthritis. While epidemiological studies have largely identified obesity and joint injury as the dominant factors that contribute to osteoarthritis, recent findings suggest that cellular, molecular and biomechanical factors are responsible for the progression of osteoarthritis. At the tissue level, osteoarthritis involves progressive cartilage degeneration, synovial inflammation, disruption of the extracellular matrix and subchondral bone remodelling. The key pathogenic processes include chondrocyte apoptosis, aberrant autophagy, cellular senescen"
+    },
+    {
+      "title": "A novel therapeutic regimen based on the constrained-disorder principles may improve the response to dimethyl fumarate in multiple sclerosis: Findings from an exploratory feasibility open-label clinical trial.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42751190/",
+      "source": "IBRO neuroscience reports",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Rééducation",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Dimethyl fumarate (DMF) is an oral disease-modifying therapy recommended for patients with relapsing-remitting multiple sclerosis (MS). However, a lack of efficacy, safety concerns, tolerability issues, and poor compliance often lead to discontinuation of DMF. In an innovative approach, this exploratory proof-of-concept clinical trial aimed to assess the feasibility and safety of introducing variability into treatment regimens to overcome compensatory mechanisms that underlie the loss of drug effectiveness and to generate preliminary signals of potential improvements in response to DMF. Seven MS patients treated with DMF were enrolled in an o"
+    },
+    {
+      "title": "Inferring associations among behavior, hormonal, neurotransmitter and IgA responses of dairy cows housed in automatic milking systems.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42741280/",
+      "source": "Veterinary and animal science",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "This study investigated associations between the hormone cortisol, the neurotransmitters dopamine and serotonin, immunoglobulin A (IgA), heart rate (HR), rectal temperature (RT) and cow behavior pattern in relation to production stress, stress around calving, human handling and adaptation to the milking robot system. Blood samples of 315 Holstein-Friesian cows from five farms with AMS were taken within 14 d after calving (blood sampling date 1 (= BS1) to assess physiological responses during the early postpartum period, followed by human behavioral assessments at blood sampling date 2 (= BS2). Indicators for cow reactions to human handling at"
+    },
+    {
+      "title": "Comparison of the Efficacy of Robot-Assisted and Laparoscopic Anderson-Hynes Pyeloplasty in Pediatric Patients with Ureteropelvic Junction Obstruction.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42725562/",
+      "source": "Journal of investigative surgery : the official journal of the Academy of Surgical Research",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Comparative evidence on robot-assisted laparoscopic pyeloplasty (RALP) versus laparoscopic pyeloplasty (LP) in pediatric ureteropelvic junction obstruction (UPJO), particularly regarding postoperative anatomical changes, differential renal function (DRF), and urinary tract dilation (UTD) stratification, remains limited. We retrospectively reviewed 63 children with UPJO who underwent Anderson-Hynes pyeloplasty at a tertiary center between 2018 and 2022, including 21 RALP and 42 LP cases. Patients were classified as UTD P1-P3. Perioperative outcomes, recovery, imaging findings, DRF, complications, and follow-up results were compared. Median fol"
+    },
+    {
+      "title": "A high-rate 480-target hybrid BCI system based on SSVEP and sEMG.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42703192/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "In the field of brain-computer interfaces (BCIs), a sufficiently high information transfer rate (ITR) serves as the prerequisite guarantee for the realization of practical application of electroencephalography (EEG)-based BCIs. Hybrid BCIs combining multiple biosignals with EEG can broaden the command set and improve ITR. We propose a hybrid BCI system combining surface electromyography (sEMG) and steady-state visual evoked potential (SSVEP), which utilizes 120 flicker frequencies and 4 gesture movements to encode 480 targets. Moreover, high-density electrodes are used to acquire more EEG information. In the online experiment, the average cla"
+    },
+    {
+      "title": "Fast robot-to-iOCT calibration using conical geometry and 2D cross-scan OCT.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42662461/",
+      "source": "Journal of biomedical optics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Accurate spatial registration between optical coherence tomography (OCT) and robotic coordinate systems is critical for OCT-guided microsurgery, where precise tool localization is essential for safe, reliable intervention. We propose and validate a practical and accurate method for calibrating the transformation between OCT and robot coordinate systems in robotic microsurgical systems. A conical calibration tool rigidly attached to the robot wrist was scanned using fast 2D OCT cross-sections. After denoising, edge extraction, and two-line fitting, the cone tip was localized, and the resulting coordinates were incorporated into a vector-based "
+    },
+    {
+      "title": "Seeing humans in technology: The antecedents, boundaries and consequences of AI anthropomorphism.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42648233/",
+      "source": "Current opinion in psychology",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Anthropomorphism has received substantial attention in research on artificial intelligence (AI) because imbuing AI-driven technologies, such as algorithms, chatbots, and embodied robots, with humanlike qualities can mitigate AI aversion, a major barrier to AI acceptance and adoption. However, anthropomorphism may also weaken advantages associated with their nonhuman nature. This review advances three claims. First, AI anthropomorphism operates at two levels: design-based manipulations that companies can implement to make their technologies more humanlike, and individual tendencies to anthropomorphize those technologies. Second, while anthropo"
+    },
+    {
+      "title": "tDCS synchronous robotic training on lower-limb with post-stroke hemiplegia: a comparative study between synchronous and sequential group.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42641064/",
+      "source": "Annals of medicine",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "This study was aimed to compare the effects of tDCS synchronized with robotic training(RT)and tDCS sequential followed by RT on lower-limb with post-stroke hemiplegia, thus to inform clinical decision-making between these delivery schedules. 64 patients who met the inclusion and exclusion criteria were allocated into a synchronous group and a sequential group. The synchronous group underwent tDCS synchronous RT, while the sequential group received RT after tDCS ended. Both group received 40 minutes for treatment, five times a week, for a continuous two weeks. Gait Watch three-dimensional gait analysis system was used for both groups before an"
+    },
+    {
+      "title": "EFS-NET: EEG-fNIRS multi-scale fusion network based on spatial calibration.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42625783/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Hybrid brain-computer interfaces (hBCIs) integrate multiple neuroimaging modalities and utilize their complementary information to address the inherent limitations of single-modality neural signal decoding. For electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS) hybrid BCIs, advanced fusion algorithms are crucial to fully exploit the superior spatial localization capability of fNIRS and the millisecond-level temporal resolution of EEG. This work proposes an end-to-end spatial calibration-based multi-scale EEG-fNIRS fusion network named EFS-Net, which organically integrates EEG and fNIRS signals through a multi-scale"
+    },
+    {
+      "title": "Performance of a modular robotic cluster matches skilled human operators for complex cell therapy manufacturing tasks.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42621923/",
+      "source": "International journal of pharmaceutics: X",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "Although numerous cell and gene therapies have received regulatory approval, their adoption has been hampered by high cost and challenges in scaling out manufacturing. Many autologous cell therapies are individually manufactured for each patient using traditional manual methods in high-cost environments. Therefore, robotics and automation offer a potential solution to meet the growing demand for such therapies. To ensure identical biological outcomes, automation must replicate validated manual workflows, a requirement that poses significant engineering challenges, especially for aseptic manipulation and compatibility with manual-centric instr"
+    },
+    {
+      "title": "Feedback-regulated dual-role memory consolidation for continual learning: a stability-plasticity framework inspired by hippocampo-cortical systems consolidation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42614398/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Artificial agents trained on non-stationary task streams often acquire new categories at the cost of older representations. Systems-level accounts of hippocampo-cortical consolidation suggest that stored traces can support later learning in different ways and that consolidation can depend on both new learning and the vulnerability of established knowledge. Motivated by these functional principles, we propose dual-role memory consolidation learning (DRMCL) for class-incremental learning with a bounded replay buffer. DRMCL stores prototype-preserving core samples and decision-sensitive boundary samples, then combines both roles with replay, log"
+    },
+    {
+      "title": "Accuracy and feasibility of robot-assisted implant surgery in edentulous patients: A retrospective case series.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612962/",
+      "source": "Journal of dentistry",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "To evaluate the accuracy of robot-assisted implant placement in edentulous jaws and to assess primary stability, operative time, and short-term clinical outcomes. This retrospective study included edentulous patients who underwent robot-assisted implant surgery using a robotic arm integrated with dynamic navigation. Implant deviations were measured by superimposing pre- and postoperative CBCT images. Primary stability, operative time, and follow-up clinical outcomes were recorded. Fifteen patients with 23 edentulous jaws (10 maxillae and 13 mandibles) received 128 implants. Mean linear deviations were 0.71 ± 0.23 mm at the implant neck and 0."
+    },
+    {
+      "title": "Flexible bioelectronic electrodes: From engineering strategies to cross-domain biomedical applications.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612453/",
+      "source": "Biosensors & bioelectronics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Flexible electrodes have emerged as key bioelectronic interfaces for recording, modulation, and sensing in complex biological environments. Their mechanical compliance, conformal contact, and tunable electrochemical properties enable effective coupling between soft biological tissues and rigid electronic systems. However, the fabrication strategies and interface requirements governing flexible electrode performance differ substantially across biological domains, and this cross-domain design landscape has not been systematically addressed. This review comprehensively examines preparation and optimization strategies for flexible electrodes, cov"
+    },
+    {
+      "title": "Biohybrid organoid-robot sensing for olfaction intelligence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42580226/",
+      "source": "Biosensors & bioelectronics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Owing to the remarkable advancements in artificial intelligence (AI), the sensory modalities in artificial systems that characterize human embodiment have received significant attention. However, olfaction remains largely absent in artificial systems, primarily due to several technological challenges. In this study, we aim to advance biomimetic olfactory processing by developing a biohybrid organoid-robot (BOR) system. This system integrates an olfactory organoid-based bioelectronic nose, machine learning (ML) decoders, and an odor-triggered robotic platform. By harnessing the sensitivity and specificity inherent in biological olfactory syste"
+    },
+    {
+      "title": "Hands-free motor imagery EEG classification via LLM multi-agents.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42551560/",
+      "source": "Journal of neuroscience methods",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Motor imagery (MI) brain-computer interfaces (BCI) rely on precise electroencephalogram (EEG) classification. However, issues such as the reliance on extensive manual experience for MI-EEG model design, parameter tuning, and optimization directions, along with the poor task flexibility of foundation models and state degradation during long-term multi-agent iterations, severely restrict the state-of-the-art (SOTA) efficiency of MI-EEG. To address these challenges, we propose AutoMI, a novel framework that uses multi-agent automated rapid iterations to construct SOTA MI-EEG models. AutoMI introduces a hybrid decision mechanism that tightly coup"
+    },
+    {
+      "title": "Beyond the role in motor function, entopeduncular nucleus, a critical neural hub in psychiatric disorders and sleep regulation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42529862/",
+      "source": "Annals of medicine",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "The entopeduncular nucleus (EP) is a major output nucleus of the basal ganglia and plays a critical role in integrating motor, emotional, and behavioral processes. Although traditionally linked to motor control, accumulating evidence indicates that the EP is deeply involved in psychiatric disorders, sleep regulation, addiction, and mood-related behaviors. As the rodent homolog of the human internal Globus pallidus (GP) the EP represents a key translational structure bridging preclinical and clinical neuroscience. This narrative review was conducted following established narrative review methodology. Relevant literature was identified through "
+    },
+    {
+      "title": "Robotic-assisted intracorporeal radical cystectomy with modified ileal conduit reduces ureteroileal anastomotic stenosis risk: a comparative study with laparoscopic surgery.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42525819/",
+      "source": "Annals of medicine",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "This study aims to evaluate the clinical efficacy of an innovative robot-assisted totally intracorporeal antecolic modified ileal conduit procedure (robotic group) versus laparoscopic surgery (laparoscopic group) in bladder cancer patients, providing evidence for optimizing urinary diversion strategies and reducing associated complications. From Jan 2023 to Oct 2025, 69 patients undergoing total cystectomy by one surgeon were enrolled; 23 received robotic surgery (KangDuo SR2000) and 46 laparoscopic. Baseline, perioperative, and postoperative data were collected. Primary endpoint: radiologically confirmed ureteroileal anastomotic stenosis; se"
+    }
+  ]
 }
