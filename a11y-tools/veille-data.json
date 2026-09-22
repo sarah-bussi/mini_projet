@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-21T12:58:41Z",
+  "updatedAt": "2026-09-22T11:48:23Z",
   "errors": [],
   "items": [
+    {
+      "title": "WCAG 2.2 and 2.1 in French — Authorized translations updated",
+      "url": "https://www.w3.org/WAI/news/2026-09-22/wcag-french/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-09-22T00:00:00Z",
+      "summary": "The French authorized translations of Web Content Accessibility Guidelines (WCAG) are updated:",
+      "pinned": false
+    },
     {
       "title": "For Review: WCAG 3 Working Draft – September 2026",
       "url": "https://www.w3.org/WAI/news/2026-09-10/wcag3/",
