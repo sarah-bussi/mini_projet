@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T12:02:23Z",
+  "updatedAt": "2026-09-23T12:09:32Z",
   "errors": [
     {
       "source": "arXiv",
@@ -180,6 +180,91 @@
       "summary": "« Le cheval, c’est trop génial », titrait en 2008 une campagne de communication produite par la Fédération française d’équitation (FFE), qui donna lieu, quelques années plus tard, à une émission de télévision destinée à promouvoir les activités équestres auprès des enfants. Loin de sa tradition militaire, l’équitation est désormais le premier sport pratiqué par les femmes en club en France. On peut néanmoins constater que les processus d’apprentissage intégrant la relation avec le cheval ont rarement intéressé les revues en sciences de l’éducation ou en sciences sociales. Un constat s’impose : les activités sportives pratiquées majoritairemen"
     },
     {
+      "title": "An intelligent calibrator integrating advanced social memory optimization algorithm and improved radial basis function neural network.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42526152/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Industrial robots are a key component of intelligent manufacturing because they improve productivity, precision, and operational reliability. However, long-term operation inevitably introduces wear and other error sources that reduce absolute positioning accuracy and limit precision tasks. To address this issue, this paper develops a two-stage calibrator that combines the advanced social memory optimization algorithm with a neural network optimized by a gradient-based particle swarm optimization scheme, denoted ASMO-GPSONN. In the proposed framework, ASMO identifies robot kinematic errors through memory-guided global exploration, whereas GPSO"
+    },
+    {
+      "title": "Interactive 3D scene graph alignment for zero-shot object navigation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470807/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Navigating in unknown, dynamic, and complex 3D environments using purely visual inputs remains a significant challenge for embodied agents. To address this, we propose I3DSG (Interactive 3D Scene Graph), a novel perception framework that constructs a Bird's Eye View (BEV)-based scene graph enriched with geometric layout, semantic relationships, and actionable affordances. By integrating open-vocabulary object detection and large language models, I3DSG aligns prior commonsense knowledge with real-time scene observations, enabling robust reasoning about missing triples and feasible interactions in unseen environments. Action selection is furthe"
+    },
+    {
+      "title": "Discrete-time neural dynamics-based online quadratic programming for discrete-time trajectory tracking of cable-driven planar robot.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42462563/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Cable-driven planar robots have attracted increasing attention due to their simple mechanical structure and flexible workspace, while achieving accurate trajectory tracking in discrete-time settings remains challenging because of nonlinear kinematics and real-time computational requirements. In this paper, a discrete-time neural dynamics (DTND)-based online quadratic programming (QP) framework is developed for discrete-time trajectory tracking of a cable-driven planar robot with a structure consistent with typical wall-drawing (V-plotter) systems. The inverse kinematics problem of the robot is first formulated as an online QP by transforming "
+    },
+    {
+      "title": "A Multi-Task Learning Framework with Physics Embedded for Signal Reconstruction and State Prediction in Underground Multi-Robot Systems.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42447821/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Accurate forecasting of the collective state of hydraulic support groups is paramount to ensuring operational safety and optimizing efficiency in longwall coal mining. Existing monitoring methods face four critical bottlenecks. Contact sensors commonly employed for position prediction are highly vulnerable to harsh underground conditions, resulting in unreliable measurements. Vision-based non-contact alternatives are often hindered by labor-intensive manual data annotation requirements. Furthermore, occlusion of underground cameras by coal dust frequently results in missing spatio-temporal data, yet existing methods cannot reconstruct such mi"
+    },
+    {
+      "title": "C2LNet: Fusing infrared and visible image via a cross-modality complementarity learning network.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42447819/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Mining and fusing complementary information across modalities are crucial for infrared and visible image fusion (IVIF), yet existing methods largely rely on implicit feature aggregation and fail to explicitly mine and preserve cross-modality complementarity. To handle this issue, this paper proposes a Cross-modality Complementarity Learning Network (C2LNet) that simultaneously mines complementary features from different modalities and ensures the embedding of those mined cues in fused images. Specifically, C2LNet uses an Interactive Complementarity Mining (ICM) method to guide the network to mine and extract complementary features from infrar"
+    },
+    {
+      "title": "CANav: Cognition-aligned object-goal navigation based on a hierarchical scene graph with personalized knowledge-guided reasoning.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42431085/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Object-goal navigation (ObjNav) is a fundamental embodied AI task that requires agents to reach target objects using visual information in unfamiliar environments. However, most existing ObjNav methods rely on static priors, making them prone to failures in environments with unreliable contextual cues or human personalized preferences, particularly under semantic distractors such as mirror reflections and atypical layouts shaped by user-specific habits. To address these issues, we propose CANav, a cognition-aligned ObjNav method based on a hierarchical scene graph with personalized knowledge-guided reasoning, thereby endowing the agent with b"
+    },
+    {
+      "title": "UMind: A unified multitask network for zero-shot M/EEG visual decoding.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42431083/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Decoding visual information from time-resolved brain recordings, such as EEG and MEG, plays a pivotal role in real-time brain-computer interfaces. However, existing approaches primarily focus on direct brain-image feature alignment and are limited to single-task frameworks or task-specific models. In this paper, we propose a Unified MultItask Network for zero-shot M/EEG visual Decoding (referred to UMind), including visual stimulus retrieval, classification, and reconstruction within a shared representation space. Our method learns robust neural-visual and semantic representations through multimodal alignment with both image and text modaliti"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -283,6 +368,27 @@
         "Handicap"
       ],
       "summary": "À l'aide des enquêtes AAD (2016) et TeO2 (2019-2020), cette contribution documente la surexposition, par les personnes correspondant à différentes définitions du handicap, à de multiples traitements défavorables, notamment dans les domaines de l'éducation, de l'emploi, de la santé et du logement. Ces traitements (« discriminations situationnelles ») alimentent les déclarations de discriminations (« discriminations autoreportées ») ; mais à des degrés variables, selon différents motifs et de manière non exclusive. En mobilisant une approche intersectionnelle, ces résultats questionnent les cadrages sociaux de diverses inégalités, ainsi que les"
+    },
+    {
+      "title": "Knowledge Graphs as External Memory for LLM-based Scientific Assistants",
+      "url": "https://hal.science/hal-05747244v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-25T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "PROV-O 1 Problem statement",
+        "SHACL",
+        "AI agent",
+        "Ontologies",
+        "External memory",
+        "LLMs",
+        "Knowledge graphs",
+        "Knowledge graphs LLMs External memory Ontologies AI agent SHACL PROV-O 1 Problem statement"
+      ],
+      "summary": "Scientific assistants must remember the questions, observations, parameters, and intermediate results that accumulate across days or weeks of inquiry, and trace each conclusion back to its evidence. Large Language Models (LLMs) lack such a structured, persistent memory, which causes contextual degradation, hallucinations, and excessive cost from overusing the context window. This thesis proposes a neuro-symbolic architecture that couples an LLM-based agent with a knowledge graph (KG) built on standardized formal languages (RDF, RDFS, OWL 2 RL, SHACL, SPARQL) and reusing existing ontologies (e.g. PROV-O) whenever possible. In contrast to state"
     },
     {
       "title": "Diversified and Perceptible Counterfactual Examples Leveraging Expert Knowledge",
@@ -411,6 +517,20 @@
       "summary": "L’introduction de dispositifs d’intelligence artificielle (IA) en radiothérapie, notamment pour automatiser le contourage des organes à risque, est présentée comme un levier d’efficacité et de fiabilisation des traitements. À partir d’une enquête menée au sein du service de radiothérapie d’un grand hôpital public parisien, combinant observations ethnographiques et entretiens semi-directifs auprès des professionnels, cette communication analyse les effets sur l’activité réelle de cette technologie. Avant l’automatisation, le contourage manuel mobilisait plusieurs heures de travail et constituait un moment central d’appropriation du dossier. Dé"
     },
     {
+      "title": "L’intelligence artificielle pour suivre les macro-déchets en rivière, une solution généralisable ?",
+      "url": "https://hal.science/hal-05759458v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-22T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "In situ camera remote sensing neural networks macro-plastics"
+      ],
+      "summary": ""
+    },
+    {
       "title": "Conjectures sur le contrôle juridictionnel des licenciements liés à l’intelligence artificielle",
       "url": "https://hal.science/hal-05756610v1",
       "source": "HAL",
@@ -465,6 +585,25 @@
         "Déterminisme Disjonctif"
       ],
       "summary": "Ce texte poursuit le chantier ouvert par Le corps guerrier, en appliquant le même appareil — point d'entrée contre contenu portable, déplacement de probabilité contre compétence consultable, dissymétrie avec le régime machinique — à une configuration corporelle différente : le corps désirant. La figure retenue, Éros dans sa forme archaïque hésiodique, sert de signe d'orientation, non de fondement narratif. Le texte teste la distinction point d'entrée/probabilité sur un cas documenté — les circuits neuroendocriniens de l’attachement — puis examine les deux pentes de capture propres à ce corps : la capture miroir et la capture utilitariste. Il "
+    },
+    {
+      "title": "Fonds Verdun - Pour une histoire environnementale participative et en images",
+      "url": "https://shs.hal.science/halshs-05759219v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-19T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Intelligence artficielle",
+        "Informatique",
+        "Valorisation patrimoniale",
+        "Photographie",
+        "Hautes pyrénées",
+        "Histoire"
+      ],
+      "summary": "Le projet consacré au fonds photographique Paul Verdun vise à préserver, documenter et valoriser un ensemble de 393 plaques photographiques sur verre réalisées entre 1898 et 1902, témoignant des paysages pyrénéens et des pratiques sociales de la montagne à la Belle Époque. Le fonds est numérisé, documenté et déposé dans Nakala, puis rendu accessible à travers une application web et mobile permettant d’explorer les images, leurs métadonnées et leur contexte géographique. Le projet constitue également un terrain de recherche sur les usages de l’intelligence artificielle appliquée aux archives photographiques : colorisation, génération de descri"
     },
     {
       "title": "L’intelligence artificielle pour le profilage environnemental : robustesse méthodologique, périmètre spatiale et complexité territoriale",
