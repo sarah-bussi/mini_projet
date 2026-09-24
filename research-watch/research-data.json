@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T12:09:32Z",
+  "updatedAt": "2026-09-24T12:11:38Z",
   "errors": [
     {
       "source": "arXiv",
@@ -28,7 +28,25 @@
       "summary": "Le rôle des formations pour adultes dans les trajectoires socioprofessionnelles au sein des mondes agricoles et ruraux reste largement méconnu. À l’heure où les politiques agricoles et éducatives connaissent des transformations importantes (montée en puissance des référentiels agroécologiques, réformes de la formation dans le sens d’une individualisation accrue des parcours, mise en concurrence des opérateurs publics et privés), les formations pour adultes sont un observatoire privilégié des transformations de l’action publique et des activités de travail agricole et rural. Les formations agricoles pour adultes constituent un lieu de recompos"
     },
     {
-      "title": "Revisiting the anatomy of the retroperitoneum and renal fascia. Aspects applied to ra-diology, laparoscopic and robotic surgery - a narrative review.",
+      "title": "Impact of Artificial Intelligence on Agri-Food Production, Processing, Distribution and Trade: The French Experience in a European Context",
+      "url": "https://hal.inrae.fr/hal-05760174v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2027-08-03T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Environmental impacts Psychosocial and occupational risks Factor productivity 2",
+        "Factor productivity 2",
+        "Psychosocial and occupational risks",
+        "Environmental impacts",
+        "Environmental impacts Psychosocial and occupational risks Factor productivity 2"
+      ],
+      "summary": "Within the context of the European Single Market, this paper aims to provide an exploratory review of the applications of artificial intelligence and their socio-economic and environmental impact-whether proven or anticipated-outlining a sector-by-sector assessment of this type of digital innovation within the French agri-food system. In particular, this paper seeks to identify the impact of digital applications based on artificial intelligence systems as drivers of productivity growth in key sectors of agri-food systems and trade. The role of artificial intelligence in reducing the negative environmental externalities of agri-food supply cha"
+    },
+    {
+      "title": "Revisiting the anatomy of the retroperitoneum and renal fascia. Aspects applied to radiology, laparoscopic and robotic surgery - a narrative review.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42462154/",
       "source": "International braz j urol : official journal of the Brazilian Society of Urology",
       "type": "Publication scientifique",
@@ -263,6 +281,18 @@
       ],
       "keywords": [],
       "summary": "Decoding visual information from time-resolved brain recordings, such as EEG and MEG, plays a pivotal role in real-time brain-computer interfaces. However, existing approaches primarily focus on direct brain-image feature alignment and are limited to single-task frameworks or task-specific models. In this paper, we propose a Unified MultItask Network for zero-shot M/EEG visual Decoding (referred to UMind), including visual stimulus retrieval, classification, and reconstruction within a shared representation space. Our method learns robust neural-visual and semantic representations through multimodal alignment with both image and text modaliti"
+    },
+    {
+      "title": "Response: Misclassification of Evidence Regarding Prolonged Antibiotic Prophylaxis in the Latin American Consensus on Robot-Assisted Radical Cystectomy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42776561/",
+      "source": "International braz j urol : official journal of the Brazilian Society of Urology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": ""
     },
     {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
@@ -529,6 +559,29 @@
         "In situ camera remote sensing neural networks macro-plastics"
       ],
       "summary": ""
+    },
+    {
+      "title": "Can Zero-Edit AI Art Have a Human Author? | A Five-Dimension Agency Framework, Tested Against Case Evidence",
+      "url": "https://hal.science/hal-05761892v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-22T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Post-generation editing",
+        "Art Computer Generation",
+        "AI-assisted art",
+        "Artistic agency",
+        "Authorship",
+        "Generative Art",
+        "Generative AI",
+        "Digital art",
+        "AI art authorship",
+        "Expressive control"
+      ],
+      "summary": "Generative artificial intelligence has created a difficult question for contemporary artistic practice: when a human artist conceives an artwork, directs a generative system, evaluates multiple outputs, selects a final image, and does not manually alter that image afterward, who should be regarded as its author? This research article examines that question through the concept of Zero-Edit, defined here as a generative-AI artistic practice in which the selected output is deliberately preserved without post-generation manual modification. This research article does not argue that the use of artificial intelligence automatically produces human a"
     },
     {
       "title": "Conjectures sur le contrôle juridictionnel des licenciements liés à l’intelligence artificielle",
@@ -1196,6 +1249,19 @@
       ],
       "keywords": [],
       "summary": "This study aims to evaluate the clinical efficacy of an innovative robot-assisted totally intracorporeal antecolic modified ileal conduit procedure (robotic group) versus laparoscopic surgery (laparoscopic group) in bladder cancer patients, providing evidence for optimizing urinary diversion strategies and reducing associated complications. From Jan 2023 to Oct 2025, 69 patients undergoing total cystectomy by one surgeon were enrolled; 23 received robotic surgery (KangDuo SR2000) and 46 laparoscopic. Baseline, perioperative, and postoperative data were collected. Primary endpoint: radiologically confirmed ureteroileal anastomotic stenosis; se"
+    },
+    {
+      "title": "A novel motor imagery brain-computer interface classification framework based on augmented covariance matrix: deep Riemannian geometry learning with self-attention mechanism.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42774502/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "The rapid development of motor imagery brain-computer interface (MI-BCI) technology has introduced a novel mode of human-machine interaction, drawing significant interest. However, due to the nonlinearity and nonstationarity of motor imagery signals, this communication method faces challenges such as low recognition accuracy and poor stability, which severely hinder the practical application of MI-BCIs. Riemannian geometry techniques, leveraging their non-Euclidean properties, have shown promise in addressing motor imagery signal pattern recognition. Traditional Riemannian geometry methods, however, still suffer from limitations, such as requ"
     }
   ]
 }
