@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T11:48:08Z",
+  "updatedAt": "2026-09-24T11:56:24Z",
   "errors": [],
   "items": [
     {
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-22T18:14:30Z",
+      "updatedAt": "2026-09-23T21:18:43Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-09-22T06:22:28Z",
+      "updatedAt": "2026-09-24T11:45:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -267,6 +267,17 @@
       "source": "GitHub"
     },
     {
+      "name": "eslint-plugin-jsx-a11y-x",
+      "fullName": "es-tooling/eslint-plugin-jsx-a11y-x",
+      "url": "https://github.com/es-tooling/eslint-plugin-jsx-a11y-x",
+      "description": "An ESLint plugin to apply various a11y rules to JSX templates",
+      "language": "JavaScript",
+      "stars": 51,
+      "updatedAt": "2026-09-24T09:26:48Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11ykit",
       "fullName": "patrickfox/a11ykit",
       "url": "https://github.com/patrickfox/a11ykit",
@@ -295,7 +306,7 @@
       "description": "Accessible, lightweight and configurable modal component with a11y-enabled.",
       "language": "TypeScript",
       "stars": 37,
-      "updatedAt": "2026-09-22T00:31:17Z",
+      "updatedAt": "2026-09-24T04:29:22Z",
       "detectedAt": "2026-09-23T11:48:08Z",
       "source": "GitHub"
     },
@@ -333,6 +344,17 @@
       "source": "GitHub"
     },
     {
+      "name": "vlmkit",
+      "fullName": "mizchi/vlmkit",
+      "url": "https://github.com/mizchi/vlmkit",
+      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
+      "language": "TypeScript",
+      "stars": 24,
+      "updatedAt": "2026-09-24T11:45:36Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-color-contrast",
       "fullName": "sondr3/a11y-color-contrast",
       "url": "https://github.com/sondr3/a11y-color-contrast",
@@ -341,17 +363,6 @@
       "stars": 24,
       "updatedAt": "2026-09-14T19:45:40Z",
       "detectedAt": "2026-09-15T11:52:35Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "vlmkit",
-      "fullName": "mizchi/vlmkit",
-      "url": "https://github.com/mizchi/vlmkit",
-      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
-      "language": "TypeScript",
-      "stars": 23,
-      "updatedAt": "2026-09-23T10:33:18Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -383,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-23T03:12:37Z",
+      "updatedAt": "2026-09-24T01:50:58Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +405,7 @@
       "description": "",
       "language": "TypeScript",
       "stars": 21,
-      "updatedAt": "2026-09-22T20:13:56Z",
+      "updatedAt": "2026-09-23T22:55:52Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +427,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-23T08:35:40Z",
+      "updatedAt": "2026-09-24T06:16:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,8 +438,19 @@
       "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
       "language": "JavaScript",
       "stars": 13,
-      "updatedAt": "2026-09-23T10:37:17Z",
+      "updatedAt": "2026-09-23T13:25:23Z",
       "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "public-browser",
+      "fullName": "Silbercue/public-browser",
+      "url": "https://github.com/Silbercue/public-browser",
+      "description": "Lets Claude Code and Cursor drive Chrome. Browse your real profile: -30% tokens, -25% cost, -41% tool calls, -34% tool defs, +40% faster. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
+      "language": "TypeScript",
+      "stars": 13,
+      "updatedAt": "2026-09-21T17:33:08Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
@@ -440,17 +462,6 @@
       "stars": 13,
       "updatedAt": "2026-09-21T16:30:32Z",
       "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "public-browser",
-      "fullName": "Silbercue/public-browser",
-      "url": "https://github.com/Silbercue/public-browser",
-      "description": "Lets Claude Code and Cursor drive Chrome. Browse your real profile: -30% tokens, -25% cost, -41% tool calls, -34% tool defs, +40% faster. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
-      "language": "TypeScript",
-      "stars": 12,
-      "updatedAt": "2026-09-21T17:33:08Z",
-      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
@@ -495,6 +506,17 @@
       "stars": 10,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 9,
+      "updatedAt": "2026-09-24T10:33:10Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
