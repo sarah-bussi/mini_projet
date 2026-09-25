@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T11:56:24Z",
+  "updatedAt": "2026-09-25T11:58:03Z",
   "errors": [],
   "items": [
     {
@@ -31,7 +31,7 @@
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
       "stars": 410,
-      "updatedAt": "2026-09-15T17:12:45Z",
+      "updatedAt": "2026-09-25T11:33:29Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-23T21:18:43Z",
+      "updatedAt": "2026-09-25T02:58:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-09-24T11:45:14Z",
+      "updatedAt": "2026-09-25T06:40:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -306,7 +306,7 @@
       "description": "Accessible, lightweight and configurable modal component with a11y-enabled.",
       "language": "TypeScript",
       "stars": 37,
-      "updatedAt": "2026-09-24T04:29:22Z",
+      "updatedAt": "2026-09-25T02:09:34Z",
       "detectedAt": "2026-09-23T11:48:08Z",
       "source": "GitHub"
     },
@@ -333,6 +333,17 @@
       "source": "GitHub"
     },
     {
+      "name": "vlmkit",
+      "fullName": "mizchi/vlmkit",
+      "url": "https://github.com/mizchi/vlmkit",
+      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
+      "language": "TypeScript",
+      "stars": 26,
+      "updatedAt": "2026-09-25T10:36:40Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "AIMAC",
       "fullName": "GAAD-Foundation/AIMAC",
       "url": "https://github.com/GAAD-Foundation/AIMAC",
@@ -340,17 +351,6 @@
       "language": "Python",
       "stars": 25,
       "updatedAt": "2025-12-12T01:48:44Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "vlmkit",
-      "fullName": "mizchi/vlmkit",
-      "url": "https://github.com/mizchi/vlmkit",
-      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
-      "language": "TypeScript",
-      "stars": 24,
-      "updatedAt": "2026-09-24T11:45:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-24T01:50:58Z",
+      "updatedAt": "2026-09-25T01:15:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,8 +427,30 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-24T06:16:24Z",
+      "updatedAt": "2026-09-25T02:36:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "hive",
+      "fullName": "hazelcast/hive",
+      "url": "https://github.com/hazelcast/hive",
+      "description": "Design system built with A11Y in mind",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-09-24T13:39:29Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "public-browser",
+      "fullName": "Silbercue/public-browser",
+      "url": "https://github.com/Silbercue/public-browser",
+      "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
+      "language": "TypeScript",
+      "stars": 14,
+      "updatedAt": "2026-09-24T21:22:19Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
@@ -443,17 +465,6 @@
       "source": "GitHub"
     },
     {
-      "name": "public-browser",
-      "fullName": "Silbercue/public-browser",
-      "url": "https://github.com/Silbercue/public-browser",
-      "description": "Lets Claude Code and Cursor drive Chrome. Browse your real profile: -30% tokens, -25% cost, -41% tool calls, -34% tool defs, +40% faster. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
-      "language": "TypeScript",
-      "stars": 13,
-      "updatedAt": "2026-09-21T17:33:08Z",
-      "detectedAt": "2026-09-21T12:58:41Z",
-      "source": "GitHub"
-    },
-    {
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
@@ -462,6 +473,17 @@
       "stars": 13,
       "updatedAt": "2026-09-21T16:30:32Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "audits",
+      "fullName": "A11y-Pulse/audits",
+      "url": "https://github.com/A11y-Pulse/audits",
+      "description": "Browser-based WCAG testing for things that static accessibility scanners like axe-core can't test.",
+      "language": "TypeScript",
+      "stars": 12,
+      "updatedAt": "2026-09-25T09:27:07Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
