@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T12:13:26Z",
+  "updatedAt": "2026-09-26T11:46:43Z",
   "errors": [
     {
       "source": "arXiv",
@@ -526,6 +526,25 @@
         "Explainable AI XAI"
       ],
       "summary": "En Intelligence Artificielle Explicable, les exemples contrefactuels (EC) fournissent des explications locales, post-hoc et indépendantes du modèle, en identifiant les modifications minimales à apporter à une donnée d'intérêt pour changer la prédiction qui lui est associée. Cependant, pour être compréhensibles, ces modifications doivent être sémantiquement perceptibles par le destinataire de l'explication. Cet article propose d'étendre la méthode de génération d'exemples contrefactuels DiCE en intégrant des connaissances expertes exprimées à l'aide d'un vocabulaire linguistique flou : celui-ci permet de traduire la perception sémantique des d"
+    },
+    {
+      "title": "How can AI accelerate the green transition?",
+      "url": "https://hal.science/hal-05762465v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-24T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Societal impacts",
+        "Foresight",
+        "Society",
+        "Environmental impact",
+        "AI - Artificial Intelligence",
+        "Digital transformation"
+      ],
+      "summary": "In his essay The Gift, published in 1925, the sociologist Marcel Mauss emphasised the 'total' scope of the phenomenon of gift-and counter-gift-giving, noting that it 'expresses, simultaneously and all at once, all manner of institutions: religious, legal and moral (...) ; economic (...) ; not to mention the aesthetic phenomena to which these facts give rise (...).\" The emergence of artificial intelligence (AI), which is suddenly and profoundly disrupting individual and collective lives, bears a resemblance to the \"total social fact\" described a hundred years ago. AI refers to technologies designed to simulate human intelligence, namely an \"au"
     },
     {
       "title": "L’introduction de l’intelligence artificielle en radiothérapie : transformations de l’activité et de l’organisation du travail.",
@@ -1262,6 +1281,32 @@
       ],
       "keywords": [],
       "summary": "The rapid development of motor imagery brain-computer interface (MI-BCI) technology has introduced a novel mode of human-machine interaction, drawing significant interest. However, due to the nonlinearity and nonstationarity of motor imagery signals, this communication method faces challenges such as low recognition accuracy and poor stability, which severely hinder the practical application of MI-BCIs. Riemannian geometry techniques, leveraging their non-Euclidean properties, have shown promise in addressing motor imagery signal pattern recognition. Traditional Riemannian geometry methods, however, still suffer from limitations, such as requ"
+    },
+    {
+      "title": "Predicting six-year depression trajectories in adulthood: A super learner ensemble approach using the Add Health dataset.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600779/",
+      "source": "Journal of affective disorders",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Depression is a leading global cause of disability, and much focus has been directed toward identifying population-wide predictors of adult depression. The present study aimed to identify the strongest predictors of future depression severity using a comprehensive panel of biopsychosocial predictors and the Super Learner (a stacked ensemble algorithm based on cross-validation loss). Participants were 3208 adults from the Add Health dataset, a nationally representative longitudinal cohort study of U.S. adults, split into training (n = 2247) and fully held-out test (n = 961) sets. Data came from two waves: 2016-2018 and 2022-2025. Depression se"
+    },
+    {
+      "title": "A stereoencephalography study of internal speech.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42787344/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2026-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "With advances in intracranial recording techniques, converting speech-related brain activity into commands for brain-computer interfaces (BCIs) is becoming increasingly feasible. In this study, we explored the utility of stereoencephalography (sEEG) for decoding covert and overt speech in humans. sEEG data were collected from 11 epilepsy patients undergoing presurgical monitoring, while they performed a set of speech tasks-overt speech, articulated speech, and imagined (inner) speech, as well as a handwriting task. Time- and frequency-domain analyses revealed that each speech condition elicited distinct spectral modulations, particularly in t"
     }
   ]
 }
