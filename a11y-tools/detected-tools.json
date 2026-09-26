@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T11:58:03Z",
+  "updatedAt": "2026-09-26T11:33:06Z",
   "errors": [],
   "items": [
     {
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 410,
-      "updatedAt": "2026-09-25T11:33:29Z",
+      "stars": 411,
+      "updatedAt": "2026-09-25T16:15:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-25T02:58:38Z",
+      "updatedAt": "2026-09-26T01:57:53Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -212,6 +212,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-specialist-skills",
+      "fullName": "masuP9/a11y-specialist-skills",
+      "url": "https://github.com/masuP9/a11y-specialist-skills",
+      "description": "Accessibility specialist skills plugin for Claude Code.",
+      "language": "TypeScript",
+      "stars": 58,
+      "updatedAt": "2026-09-26T04:37:39Z",
+      "detectedAt": "2026-09-12T10:55:42Z",
+      "source": "GitHub"
+    },
+    {
       "name": "oobee-desktop",
       "fullName": "GovTechSG/oobee-desktop",
       "url": "https://github.com/GovTechSG/oobee-desktop",
@@ -223,17 +234,6 @@
       "source": "GitHub"
     },
     {
-      "name": "a11y-specialist-skills",
-      "fullName": "masuP9/a11y-specialist-skills",
-      "url": "https://github.com/masuP9/a11y-specialist-skills",
-      "description": "Accessibility specialist skills plugin for Claude Code.",
-      "language": "TypeScript",
-      "stars": 58,
-      "updatedAt": "2026-09-15T11:26:34Z",
-      "detectedAt": "2026-09-12T10:55:42Z",
-      "source": "GitHub"
-    },
-    {
       "name": "editoria11y",
       "fullName": "itmaybejj/editoria11y",
       "url": "https://github.com/itmaybejj/editoria11y",
@@ -242,6 +242,17 @@
       "stars": 54,
       "updatedAt": "2026-09-22T23:06:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y-x",
+      "fullName": "es-tooling/eslint-plugin-jsx-a11y-x",
+      "url": "https://github.com/es-tooling/eslint-plugin-jsx-a11y-x",
+      "description": "An ESLint plugin to apply various a11y rules to JSX templates",
+      "language": "JavaScript",
+      "stars": 52,
+      "updatedAt": "2026-09-24T09:26:48Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
@@ -264,17 +275,6 @@
       "stars": 52,
       "updatedAt": "2026-09-13T22:22:27Z",
       "detectedAt": "2026-09-14T12:59:26Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "eslint-plugin-jsx-a11y-x",
-      "fullName": "es-tooling/eslint-plugin-jsx-a11y-x",
-      "url": "https://github.com/es-tooling/eslint-plugin-jsx-a11y-x",
-      "description": "An ESLint plugin to apply various a11y rules to JSX templates",
-      "language": "JavaScript",
-      "stars": 51,
-      "updatedAt": "2026-09-24T09:26:48Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
@@ -339,7 +339,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 26,
-      "updatedAt": "2026-09-25T10:36:40Z",
+      "updatedAt": "2026-09-26T09:50:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-25T01:15:15Z",
+      "updatedAt": "2026-09-25T20:32:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +416,7 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-09-14T07:36:42Z",
+      "updatedAt": "2026-09-26T05:00:13Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
@@ -443,12 +443,23 @@
       "source": "GitHub"
     },
     {
+      "name": "audits",
+      "fullName": "A11y-Pulse/audits",
+      "url": "https://github.com/A11y-Pulse/audits",
+      "description": "Automated interaction-driven web accessibility testing",
+      "language": "TypeScript",
+      "stars": 15,
+      "updatedAt": "2026-09-25T22:31:10Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "public-browser",
       "fullName": "Silbercue/public-browser",
       "url": "https://github.com/Silbercue/public-browser",
       "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
       "language": "TypeScript",
-      "stars": 14,
+      "stars": 15,
       "updatedAt": "2026-09-24T21:22:19Z",
       "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
@@ -473,17 +484,6 @@
       "stars": 13,
       "updatedAt": "2026-09-21T16:30:32Z",
       "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "audits",
-      "fullName": "A11y-Pulse/audits",
-      "url": "https://github.com/A11y-Pulse/audits",
-      "description": "Browser-based WCAG testing for things that static accessibility scanners like axe-core can't test.",
-      "language": "TypeScript",
-      "stars": 12,
-      "updatedAt": "2026-09-25T09:27:07Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
@@ -553,24 +553,24 @@
       "source": "GitHub"
     },
     {
-      "name": "screen-readers-mcp",
-      "fullName": "marlon-sousa/screen-readers-mcp",
-      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
-      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
-      "language": "Swift",
-      "stars": 7,
-      "updatedAt": "2026-09-03T12:51:19Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "setup-action",
       "fullName": "guidepup/setup-action",
       "url": "https://github.com/guidepup/setup-action",
       "description": "GitHub Action to setup your CI for screen reader test automation.",
       "language": "JavaScript",
       "stars": 7,
-      "updatedAt": "2026-08-25T20:16:46Z",
+      "updatedAt": "2026-09-26T09:55:02Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "screen-readers-mcp",
+      "fullName": "marlon-sousa/screen-readers-mcp",
+      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
+      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
+      "language": "Swift",
+      "stars": 7,
+      "updatedAt": "2026-09-25T20:31:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },

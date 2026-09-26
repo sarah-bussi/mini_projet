@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-25T11:58:03Z",
+  "updatedAt": "2026-09-26T11:33:06Z",
   "errors": [],
   "items": [
+    {
+      "title": "Crafting WCAG 3 for more accessible user experiences",
+      "url": "https://www.w3.org/WAI/news/2026-09-25/wcag3-blog/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Normes & standards",
+      "published": "2026-09-25T00:00:00Z",
+      "summary": "In the W3C blog post Crafting WCAG 3 for more accessible user experiences, W3C WAI Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3.",
+      "pinned": false
+    },
     {
       "title": "WCAG 2.2 and 2.1 in French — Authorized translations updated",
       "url": "https://www.w3.org/WAI/news/2026-09-22/wcag-french/",
