@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T11:33:06Z",
+  "updatedAt": "2026-09-27T12:11:18Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 411,
+      "stars": 413,
       "updatedAt": "2026-09-25T16:15:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -338,8 +338,8 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 26,
-      "updatedAt": "2026-09-26T09:50:54Z",
+      "stars": 27,
+      "updatedAt": "2026-09-27T09:38:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-25T20:32:20Z",
+      "updatedAt": "2026-09-27T10:06:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,7 +427,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-25T02:36:16Z",
+      "updatedAt": "2026-09-27T09:05:59Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -443,6 +443,17 @@
       "source": "GitHub"
     },
     {
+      "name": "public-browser",
+      "fullName": "Silbercue/public-browser",
+      "url": "https://github.com/Silbercue/public-browser",
+      "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
+      "language": "TypeScript",
+      "stars": 16,
+      "updatedAt": "2026-09-24T21:22:19Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
+      "source": "GitHub"
+    },
+    {
       "name": "audits",
       "fullName": "A11y-Pulse/audits",
       "url": "https://github.com/A11y-Pulse/audits",
@@ -451,17 +462,6 @@
       "stars": 15,
       "updatedAt": "2026-09-25T22:31:10Z",
       "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "public-browser",
-      "fullName": "Silbercue/public-browser",
-      "url": "https://github.com/Silbercue/public-browser",
-      "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
-      "language": "TypeScript",
-      "stars": 15,
-      "updatedAt": "2026-09-24T21:22:19Z",
-      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
