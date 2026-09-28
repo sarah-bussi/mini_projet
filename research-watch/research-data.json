@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T12:26:41Z",
+  "updatedAt": "2026-09-28T14:28:06Z",
   "errors": [
     {
       "source": "arXiv",
@@ -616,6 +616,30 @@
         "Expressive control"
       ],
       "summary": "Generative artificial intelligence has created a difficult question for contemporary artistic practice: when a human artist conceives an artwork, directs a generative system, evaluates multiple outputs, selects a final image, and does not manually alter that image afterward, who should be regarded as its author? This research article examines that question through the concept of Zero-Edit, defined here as a generative-AI artistic practice in which the selected output is deliberately preserved without post-generation manual modification. This research article does not argue that the use of artificial intelligence automatically produces human a"
+    },
+    {
+      "title": "L’intelligence artificielle générative au service de l’apprentissage par projet",
+      "url": "https://hal.science/hal-05766039v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-22T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Cette recherche examine les différents usages des apprenants et leurs expériences d’utilisation des outils d’Intelligence Artificielle Générative (IAGen) dans le cadre d’un apprentissage par projet. À partir de l’analyse de 33 journaux de bord, l’étude révèle une prédominance des usages de type « prothèse » et « orthèse », aussi bien dans la réalisation des tâches élémentaires que complexes, impliquant davantage de réflexion et de pensée critique. L’étude souligne également la présence d’une contradiction entre usage et représentation des outils, ce qui introduit l’importance de proposer des approches pédagogiques favorisant une utilisation c"
+    },
+    {
+      "title": "Recours des étudiants à l’IA générative : importance de l’initiative individuelle dans l’intensité d’usage",
+      "url": "https://hal.science/hal-05766040v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-22T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Cette étude par questionnaire auto-administré examine les usages et perceptions des outils d’intelligence artificielle générative (IAGen) par des étudiants de l’Université Paris-Nanterre. Parmi les 608 répondants, 87 % déclarent les utiliser, principalement pour des tâches académiques de reformulation, de synthèse et de recherche d’idées, mais aussi comme moteur de recherche et pour trouver des définitions. Si le gain de temps est perçu positivement, des inquiétudes persistent concernant la méconnaissance des règles, le plagiat, la gestion des données personnelles et l’éthique. Les usages restent principalement liés à des initiatives individu"
     },
     {
       "title": "Conjectures sur le contrôle juridictionnel des licenciements liés à l’intelligence artificielle",
