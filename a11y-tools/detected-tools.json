@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T12:11:18Z",
+  "updatedAt": "2026-09-28T14:08:37Z",
   "errors": [],
   "items": [
     {
@@ -8,8 +8,8 @@
       "url": "https://github.com/KittyGiraudel/a11y-dialog",
       "description": "A very lightweight and flexible accessible modal dialog script.",
       "language": "TypeScript",
-      "stars": 2488,
-      "updatedAt": "2026-09-21T08:56:07Z",
+      "stars": 2489,
+      "updatedAt": "2026-09-28T07:30:38Z",
       "detectedAt": "2026-09-20T11:34:01Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 231,
-      "updatedAt": "2026-09-21T08:01:58Z",
+      "updatedAt": "2026-09-28T05:37:15Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-26T01:57:53Z",
+      "updatedAt": "2026-09-27T15:46:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -317,7 +317,7 @@
       "description": "A small React hook to build accessible disclosure widgets.",
       "language": "JavaScript",
       "stars": 35,
-      "updatedAt": "2026-09-21T08:56:19Z",
+      "updatedAt": "2026-09-28T07:30:51Z",
       "detectedAt": "2026-09-11T11:31:07Z",
       "source": "GitHub"
     },
@@ -338,8 +338,8 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 27,
-      "updatedAt": "2026-09-27T09:38:13Z",
+      "stars": 28,
+      "updatedAt": "2026-09-28T13:47:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -372,7 +372,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-21T15:59:11Z",
+      "updatedAt": "2026-09-28T08:06:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-27T10:06:13Z",
+      "updatedAt": "2026-09-28T12:53:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,7 +427,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-27T09:05:59Z",
+      "updatedAt": "2026-09-28T10:20:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
