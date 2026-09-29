@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T14:08:37Z",
+  "updatedAt": "2026-09-29T13:03:23Z",
   "errors": [],
   "items": [
     {
@@ -8,7 +8,7 @@
       "url": "https://github.com/KittyGiraudel/a11y-dialog",
       "description": "A very lightweight and flexible accessible modal dialog script.",
       "language": "TypeScript",
-      "stars": 2489,
+      "stars": 2488,
       "updatedAt": "2026-09-28T07:30:38Z",
       "detectedAt": "2026-09-20T11:34:01Z",
       "source": "GitHub"
@@ -20,7 +20,7 @@
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
       "stars": 778,
-      "updatedAt": "2026-09-11T15:25:34Z",
+      "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 413,
+      "stars": 415,
       "updatedAt": "2026-09-25T16:15:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -86,7 +86,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 153,
-      "updatedAt": "2026-09-20T19:39:09Z",
+      "updatedAt": "2026-09-29T11:26:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-09-25T06:40:36Z",
+      "updatedAt": "2026-09-29T07:39:59Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 58,
-      "updatedAt": "2026-09-26T04:37:39Z",
+      "updatedAt": "2026-09-29T09:23:48Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "An ESLint plugin to apply various a11y rules to JSX templates",
       "language": "JavaScript",
       "stars": 52,
-      "updatedAt": "2026-09-24T09:26:48Z",
+      "updatedAt": "2026-09-29T08:08:14Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
@@ -339,7 +339,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 28,
-      "updatedAt": "2026-09-28T13:47:56Z",
+      "updatedAt": "2026-09-29T12:02:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -372,7 +372,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-28T08:06:38Z",
+      "updatedAt": "2026-09-28T17:46:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-28T12:53:07Z",
+      "updatedAt": "2026-09-29T12:18:28Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +416,7 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-09-26T05:00:13Z",
+      "updatedAt": "2026-09-29T05:02:25Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
@@ -427,7 +427,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-09-28T10:20:24Z",
+      "updatedAt": "2026-09-29T05:06:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -443,6 +443,17 @@
       "source": "GitHub"
     },
     {
+      "name": "audits",
+      "fullName": "A11y-Pulse/audits",
+      "url": "https://github.com/A11y-Pulse/audits",
+      "description": "Automated interaction-driven web accessibility testing",
+      "language": "TypeScript",
+      "stars": 16,
+      "updatedAt": "2026-09-25T22:31:10Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "public-browser",
       "fullName": "Silbercue/public-browser",
       "url": "https://github.com/Silbercue/public-browser",
@@ -451,17 +462,6 @@
       "stars": 16,
       "updatedAt": "2026-09-24T21:22:19Z",
       "detectedAt": "2026-09-21T12:58:41Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "audits",
-      "fullName": "A11y-Pulse/audits",
-      "url": "https://github.com/A11y-Pulse/audits",
-      "description": "Automated interaction-driven web accessibility testing",
-      "language": "TypeScript",
-      "stars": 15,
-      "updatedAt": "2026-09-25T22:31:10Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
@@ -498,6 +498,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 10,
+      "updatedAt": "2026-09-24T10:33:10Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
       "name": "tailwind-a11y",
       "fullName": "chamroro/tailwind-a11y",
       "url": "https://github.com/chamroro/tailwind-a11y",
@@ -528,17 +539,6 @@
       "stars": 10,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessibility-skills",
-      "fullName": "zivtech/accessibility-skills",
-      "url": "https://github.com/zivtech/accessibility-skills",
-      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
-      "language": "Python",
-      "stars": 9,
-      "updatedAt": "2026-09-24T10:33:10Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
