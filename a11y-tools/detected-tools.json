@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T13:03:23Z",
+  "updatedAt": "2026-09-30T12:45:02Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 778,
+      "stars": 779,
       "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -31,7 +31,7 @@
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
       "stars": 415,
-      "updatedAt": "2026-09-25T16:15:07Z",
+      "updatedAt": "2026-09-29T22:03:03Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -74,8 +74,8 @@
       "url": "https://github.com/GovTechSG/oobee",
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
-      "stars": 169,
-      "updatedAt": "2026-09-19T04:30:04Z",
+      "stars": 170,
+      "updatedAt": "2026-09-30T11:32:18Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -85,7 +85,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 153,
+      "stars": 154,
       "updatedAt": "2026-09-29T11:26:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -97,7 +97,7 @@
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
       "stars": 132,
-      "updatedAt": "2026-09-18T02:05:35Z",
+      "updatedAt": "2026-09-30T12:35:01Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-27T15:46:27Z",
+      "updatedAt": "2026-09-29T23:28:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 70,
-      "updatedAt": "2026-09-22T00:34:50Z",
+      "updatedAt": "2026-09-30T00:05:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -242,6 +242,17 @@
       "stars": 54,
       "updatedAt": "2026-09-22T23:06:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y-x",
+      "fullName": "eslint-community/eslint-plugin-jsx-a11y-x",
+      "url": "https://github.com/eslint-community/eslint-plugin-jsx-a11y-x",
+      "description": "An ESLint plugin to apply various a11y rules to JSX templates",
+      "language": "JavaScript",
+      "stars": 53,
+      "updatedAt": "2026-09-30T11:08:31Z",
+      "detectedAt": "2026-09-30T12:45:02Z",
       "source": "GitHub"
     },
     {
@@ -339,7 +350,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 28,
-      "updatedAt": "2026-09-29T12:02:48Z",
+      "updatedAt": "2026-09-30T09:39:50Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -372,7 +383,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-28T17:46:32Z",
+      "updatedAt": "2026-09-29T19:58:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -394,7 +405,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-29T12:18:28Z",
+      "updatedAt": "2026-09-30T12:13:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,8 +427,19 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-09-29T05:02:25Z",
+      "updatedAt": "2026-09-30T05:54:36Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "hive",
+      "fullName": "hazelcast/hive",
+      "url": "https://github.com/hazelcast/hive",
+      "description": "Design system built with A11Y in mind",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-09-30T12:38:10Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
@@ -429,17 +451,6 @@
       "stars": 19,
       "updatedAt": "2026-09-29T05:06:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "hive",
-      "fullName": "hazelcast/hive",
-      "url": "https://github.com/hazelcast/hive",
-      "description": "Design system built with A11Y in mind",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-09-24T13:39:29Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
