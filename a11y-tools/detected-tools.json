@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T12:45:02Z",
+  "updatedAt": "2026-10-01T13:29:22Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 415,
+      "stars": 445,
       "updatedAt": "2026-09-29T22:03:03Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -97,7 +97,7 @@
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
       "stars": 132,
-      "updatedAt": "2026-09-30T12:35:01Z",
+      "updatedAt": "2026-09-30T23:09:40Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-09-29T23:28:14Z",
+      "updatedAt": "2026-10-01T06:15:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 70,
-      "updatedAt": "2026-09-30T00:05:15Z",
+      "updatedAt": "2026-10-01T13:14:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "An ESLint plugin to apply various a11y rules to JSX templates",
       "language": "JavaScript",
       "stars": 53,
-      "updatedAt": "2026-09-30T11:08:31Z",
+      "updatedAt": "2026-10-01T11:58:54Z",
       "detectedAt": "2026-09-30T12:45:02Z",
       "source": "GitHub"
     },
@@ -350,7 +350,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 28,
-      "updatedAt": "2026-09-30T09:39:50Z",
+      "updatedAt": "2026-10-01T11:12:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-09-30T12:13:10Z",
+      "updatedAt": "2026-10-01T13:28:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,7 +427,7 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-09-30T05:54:36Z",
+      "updatedAt": "2026-10-01T13:02:43Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
@@ -482,7 +482,7 @@
       "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
       "language": "JavaScript",
       "stars": 13,
-      "updatedAt": "2026-09-23T13:25:23Z",
+      "updatedAt": "2026-10-01T12:13:14Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -493,7 +493,7 @@
       "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
       "language": "JavaScript",
       "stars": 13,
-      "updatedAt": "2026-09-21T16:30:32Z",
+      "updatedAt": "2026-09-30T18:50:58Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
