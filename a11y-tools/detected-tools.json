@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T13:29:22Z",
+  "updatedAt": "2026-10-02T12:48:04Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 779,
+      "stars": 780,
       "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 445,
-      "updatedAt": "2026-09-29T22:03:03Z",
+      "stars": 456,
+      "updatedAt": "2026-10-01T17:36:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 231,
-      "updatedAt": "2026-09-28T05:37:15Z",
+      "updatedAt": "2026-10-02T12:37:33Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
       "stars": 132,
-      "updatedAt": "2026-09-30T23:09:40Z",
+      "updatedAt": "2026-10-01T23:09:10Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-10-01T06:15:51Z",
+      "updatedAt": "2026-10-02T12:45:52Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -184,8 +184,8 @@
       "url": "https://github.com/ericwbailey/a11y-webring.club",
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
-      "stars": 70,
-      "updatedAt": "2026-10-01T13:14:41Z",
+      "stars": 71,
+      "updatedAt": "2026-10-01T23:56:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-09-29T07:39:59Z",
+      "updatedAt": "2026-10-02T06:27:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -322,6 +322,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-tests-web",
+      "fullName": "bbc/a11y-tests-web",
+      "url": "https://github.com/bbc/a11y-tests-web",
+      "description": "Runs automated accessibility tests against configurable lists of webpages",
+      "language": "JavaScript",
+      "stars": 35,
+      "updatedAt": "2026-10-01T15:10:51Z",
+      "detectedAt": "2026-09-08T11:27:16Z",
+      "source": "GitHub"
+    },
+    {
       "name": "react-a11y-disclosure",
       "fullName": "KittyGiraudel/react-a11y-disclosure",
       "url": "https://github.com/KittyGiraudel/react-a11y-disclosure",
@@ -333,24 +344,13 @@
       "source": "GitHub"
     },
     {
-      "name": "a11y-tests-web",
-      "fullName": "bbc/a11y-tests-web",
-      "url": "https://github.com/bbc/a11y-tests-web",
-      "description": "Runs automated accessibility tests against configurable lists of webpages",
-      "language": "JavaScript",
-      "stars": 35,
-      "updatedAt": "2026-09-08T10:35:13Z",
-      "detectedAt": "2026-09-08T11:27:16Z",
-      "source": "GitHub"
-    },
-    {
       "name": "vlmkit",
       "fullName": "mizchi/vlmkit",
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 28,
-      "updatedAt": "2026-10-01T11:12:25Z",
+      "updatedAt": "2026-10-02T09:56:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -377,6 +377,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ace-gui",
+      "fullName": "daisy/ace-gui",
+      "url": "https://github.com/daisy/ace-gui",
+      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
+      "language": "JavaScript",
+      "stars": 24,
+      "updatedAt": "2026-05-01T10:52:34Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-foundation",
       "fullName": "ThomasSweet/a11y-foundation",
       "url": "https://github.com/ThomasSweet/a11y-foundation",
@@ -388,24 +399,13 @@
       "source": "GitHub"
     },
     {
-      "name": "ace-gui",
-      "fullName": "daisy/ace-gui",
-      "url": "https://github.com/daisy/ace-gui",
-      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
-      "language": "JavaScript",
-      "stars": 23,
-      "updatedAt": "2026-05-01T10:52:34Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "accessibility-checker",
       "fullName": "equalizedigital/accessibility-checker",
       "url": "https://github.com/equalizedigital/accessibility-checker",
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-01T13:28:40Z",
+      "updatedAt": "2026-10-01T16:06:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +416,7 @@
       "description": "",
       "language": "TypeScript",
       "stars": 21,
-      "updatedAt": "2026-09-23T22:55:52Z",
+      "updatedAt": "2026-10-01T20:50:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -427,7 +427,7 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-10-01T13:02:43Z",
+      "updatedAt": "2026-10-02T07:32:38Z",
       "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
