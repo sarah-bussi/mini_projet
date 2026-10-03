@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T12:48:04Z",
+  "updatedAt": "2026-10-03T11:48:11Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 456,
+      "stars": 458,
       "updatedAt": "2026-10-01T17:36:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-10-02T12:45:52Z",
+      "updatedAt": "2026-10-03T09:07:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -168,6 +168,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-webring.club",
+      "fullName": "ericwbailey/a11y-webring.club",
+      "url": "https://github.com/ericwbailey/a11y-webring.club",
+      "description": "🌐 A webring for digital accessibility practitioners.",
+      "language": "Nunjucks",
+      "stars": 74,
+      "updatedAt": "2026-10-01T23:56:54Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "awesome-japanese-a11y-companies",
       "fullName": "yamanoku/awesome-japanese-a11y-companies",
       "url": "https://github.com/yamanoku/awesome-japanese-a11y-companies",
@@ -176,17 +187,6 @@
       "stars": 73,
       "updatedAt": "2026-09-19T01:39:00Z",
       "detectedAt": "2026-09-19T11:09:36Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-webring.club",
-      "fullName": "ericwbailey/a11y-webring.club",
-      "url": "https://github.com/ericwbailey/a11y-webring.club",
-      "description": "🌐 A webring for digital accessibility practitioners.",
-      "language": "Nunjucks",
-      "stars": 71,
-      "updatedAt": "2026-10-01T23:56:54Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -405,7 +405,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-01T16:06:15Z",
+      "updatedAt": "2026-10-02T21:45:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -476,6 +476,17 @@
       "source": "GitHub"
     },
     {
+      "name": "chrome-bridge",
+      "fullName": "siropkin/chrome-bridge",
+      "url": "https://github.com/siropkin/chrome-bridge",
+      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
+      "language": "JavaScript",
+      "stars": 13,
+      "updatedAt": "2026-10-02T18:40:56Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
       "name": "quarto-revealjs-a11y",
       "fullName": "mcanouil/quarto-revealjs-a11y",
       "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
@@ -487,17 +498,6 @@
       "source": "GitHub"
     },
     {
-      "name": "chrome-bridge",
-      "fullName": "siropkin/chrome-bridge",
-      "url": "https://github.com/siropkin/chrome-bridge",
-      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
-      "language": "JavaScript",
-      "stars": 13,
-      "updatedAt": "2026-09-30T18:50:58Z",
-      "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
       "name": "ecom-a11y-audit",
       "fullName": "kgelster/ecom-a11y-audit",
       "url": "https://github.com/kgelster/ecom-a11y-audit",
@@ -506,6 +506,17 @@
       "stars": 12,
       "updatedAt": "2026-09-04T21:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "outloud",
+      "fullName": "visionably/outloud",
+      "url": "https://github.com/visionably/outloud",
+      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
+      "language": "Python",
+      "stars": 11,
+      "updatedAt": "2026-10-02T13:18:45Z",
+      "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
     {
@@ -528,17 +539,6 @@
       "stars": 10,
       "updatedAt": "2026-09-19T16:59:06Z",
       "detectedAt": "2026-09-07T12:44:29Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "outloud",
-      "fullName": "visionably/outloud",
-      "url": "https://github.com/visionably/outloud",
-      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
-      "language": "Python",
-      "stars": 10,
-      "updatedAt": "2026-09-18T05:07:32Z",
-      "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
     {
