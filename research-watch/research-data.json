@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T13:10:29Z",
+  "updatedAt": "2026-10-03T12:01:39Z",
   "errors": [],
   "items": [
     {
@@ -21,6 +21,33 @@
         "Métiers ruraux"
       ],
       "summary": "Le rôle des formations pour adultes dans les trajectoires socioprofessionnelles au sein des mondes agricoles et ruraux reste largement méconnu. À l’heure où les politiques agricoles et éducatives connaissent des transformations importantes (montée en puissance des référentiels agroécologiques, réformes de la formation dans le sens d’une individualisation accrue des parcours, mise en concurrence des opérateurs publics et privés), les formations pour adultes sont un observatoire privilégié des transformations de l’action publique et des activités de travail agricole et rural. Les formations agricoles pour adultes constituent un lieu de recompos"
+    },
+    {
+      "title": "Anemoia in the Streaming Age: What Kate Bush’s “Running Up That Hill” revival in Stranger Things Netflix TV series tells us about young people’s connection to the music culture of the 1970s and 1980s",
+      "url": "https://hal.science/hal-05763543v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2027-09-25T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI",
+        "Neurotechnologies",
+        "IA & LLM",
+        "IHM & UX",
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Anemoia",
+        "Sociology of music",
+        "Vicarious nostalgia",
+        "Reflective nostalgia",
+        "Semiotic mediation",
+        "Musical authenticity",
+        "Cultural archive",
+        "Retromania",
+        "Attention economy",
+        "Cognitive psychology"
+      ],
+      "summary": "Anemoia in the Streaming Age: What Kate Bush’s “Running Up That Hill” revival in Stranger Things tells us about young people’s connection to the music culture of the 1970s and 1980s Frédéric Gimello-Mesplomb International Research Chair on Cultural and Creative Industries (Andorra) Lara-Seppia, University Toulouse Jean-Jaurès (France) frederic.gimello@icc-edu.org [Manuscript submitted for publication in Sociology of Folk-Rock (F. Monneyron and D. Fleurdorge, eds.), OpenCulture Academic Publishing, 2027, Isbn 9791043146664] Abstract The generations born in the late 20th and early 21st centuries—Millennials and Generation Z—exhibit a unique att"
     },
     {
       "title": "Impact of Artificial Intelligence on Agri-Food Production, Processing, Distribution and Trade: The French Experience in a European Context",
@@ -302,6 +329,18 @@
       "summary": "Robotic-assisted gait training (RAGT) is increasingly used in paediatric rehabilitation to promote intensive walking practice in children with cerebral palsy (CP). However, evidence regarding its effectiveness on gait quality remains limited. This retrospective observational study aims to: i) assess the effects of Lokomat-based RAGT and physical therapy (PT) on spatiotemporal gait parameters and overall gait quality; (ii) investigate whether treatment response differs by motor impairment severity, classified by the Gross Motor Function Classification System (GMFCS levels I, II, III). The study included 52 children with CP (GMFCS levels I-III)"
     },
     {
+      "title": "Cobot-based automation in sample preparation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470852/",
+      "source": "Talanta",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Sample preparation remains a pivotal and labor-intensive stage in analytical workflows, critically affecting the reliability and reproducibility of results. While laboratory automation has traditionally focused on static, high-throughput systems, recent advances in collaborative robotics (cobots) offer a promising alternative. Designed to operate safely alongside humans, cobots combine enhanced flexibility with intuitive programming and lower deployment costs, making them particularly attractive for dynamic laboratory environments. This review focuses on current knowledge on cobot-based sample preparation, highlighting recent applications acr"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -466,6 +505,69 @@
         "Grand modèle de langage LLM"
       ],
       "summary": "MDX (MultiDimensional Expressions) is the standard language for querying multidimensional data in OLAP systems, but its complex syntax poses challenges for non-expert users. While a lot of research has focused on natural language interfaces for SQL, little attention has been given to MDX. This paper explores the potential of Large Language Models (LLMs), specifically GPT-4o, in translating natural language questions into MDX statements. We investigate whether LLMs can act as full MDX query generators or assistants, and study how the writing style of questions affects output correctness. Through four research questions, we evaluate ChatGPT’s b"
+    },
+    {
+      "title": "Un cadre conceptuel d'assistance hybride adaptative centré utilisateur : Orchestration dynamique d'assistants humains et artificiels à partir d'un modèle utilisateur",
+      "url": "https://hal.science/hal-05776383v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Adap- tive orchestration",
+        "Human-Centered AI",
+        "Adaptive Learning Systems",
+        "Intelligent User Interfaces",
+        "Human-System Interaction",
+        "Dynamic user model",
+        "Modèle utilisateur dynamique",
+        "IA centrée-Humain",
+        "Système d'apprentissage adaptatif",
+        "Interfaces utilisateur intelligentes"
+      ],
+      "summary": "Les systèmes d'assistance numérique s'appuient aujourd'hui largement sur l'intelligence artificielle, mais peinent encore à prendre en compte conjointement l'évolution de l'utilisateur et la complémentarité entre ressources humaines et artificielles. Nous proposons un cadre conceptuel d'orchestration adaptative de l'assistance centré utilisateur, fondé sur un modèle utilisateur dynamique intégrant des dimensions cognitives, comportementales et contextuelles. Ce cadre formalise une boucle décisionnelle continue composée de cinq fonctions complémentaires : Observe, Update, Assess, Decide et Orchestrate, qui permettent de sélectionner à chaque i"
+    },
+    {
+      "title": "Développement d'un média d'interaction pour la communication humain-robot en coprésence et en téléprésence",
+      "url": "https://hal.science/hal-05775616v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [
+        "Téléprésence",
+        "Interface",
+        "Design",
+        "Enfants",
+        "Interaction Humain-Robot",
+        "Interaction Humain-Machine"
+      ],
+      "summary": "La robotique de téléprésence permet à un utilisateur distant d’interagir socialement dans un autre lieu à travers un robot mobile. Ce type de système est notamment utilisé avec des enfants hospitalisés pour qu’ils puissent conserver un lien avec leur famille. Ma recherche, basée sur ce cas d’utilisation, combine robotique et Interaction Humain-Machine (IHM) en travaillant avec les enfants et leur environnement de soin. Mon objectif est de repenser les interfaces du média de contrôle et du robot afin d’obtenir un système adapté aux enfants en les impliquant dans les différentes étapes de conception."
+    },
+    {
+      "title": "Annotation manuelle de texte en environnement virtuel : du navigateur au casque",
+      "url": "https://hal.science/hal-05776372v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Browsers",
+        "Extended Reality",
+        "Text Annotation",
+        "Named Entity Recognition",
+        "Navigateurs",
+        "Réalité étendue",
+        "Annotation textuelle",
+        "Reconnaissance d’entités nommées"
+      ],
+      "summary": "L’annotation textuelle manuelle est une tâche particulièrement fas- tidieuse mais essentielle pour l’entraînement et l’évaluation des systèmes d’intelligence artificielle, notamment en traitement au- tomatique des langues (TAL). Dans ce domaine, la reconnaissance d’entités nommées (NER) est une activité centrale qui se base sur l’annotation humaine. Malgré le développement de nombreux outils spécialisés, il n’en existe pratiquement aucun dédié à l’annotation textuelle immersive. Dans cet article, nous présentons un travail préliminaire visant à adapter un outil d’annotation textuelle basé sur un navigateur afin de permettre l’annotation de te"
     },
     {
       "title": "L’IA comme vecteur d'inclusion : évolution de la pratique du maquillage chez les femmes en situation de déficience visuelle",
@@ -5394,68 +5496,6 @@
       ],
       "keywords": [],
       "summary": "This study was aimed to compare the effects of tDCS synchronized with robotic training(RT)and tDCS sequential followed by RT on lower-limb with post-stroke hemiplegia, thus to inform clinical decision-making between these delivery schedules. 64 patients who met the inclusion and exclusion criteria were allocated into a synchronous group and a sequential group. The synchronous group underwent tDCS synchronous RT, while the sequential group received RT after tDCS ended. Both group received 40 minutes for treatment, five times a week, for a continuous two weeks. Gait Watch three-dimensional gait analysis system was used for both groups before an"
-    },
-    {
-      "title": "EFS-NET: EEG-fNIRS multi-scale fusion network based on spatial calibration.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42625783/",
-      "source": "Cognitive neurodynamics",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "Neurotechnologies",
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Hybrid brain-computer interfaces (hBCIs) integrate multiple neuroimaging modalities and utilize their complementary information to address the inherent limitations of single-modality neural signal decoding. For electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS) hybrid BCIs, advanced fusion algorithms are crucial to fully exploit the superior spatial localization capability of fNIRS and the millisecond-level temporal resolution of EEG. This work proposes an end-to-end spatial calibration-based multi-scale EEG-fNIRS fusion network named EFS-Net, which organically integrates EEG and fNIRS signals through a multi-scale"
-    },
-    {
-      "title": "Performance of a modular robotic cluster matches skilled human operators for complex cell therapy manufacturing tasks.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42621923/",
-      "source": "International journal of pharmaceutics: X",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "Rééducation"
-      ],
-      "keywords": [],
-      "summary": "Although numerous cell and gene therapies have received regulatory approval, their adoption has been hampered by high cost and challenges in scaling out manufacturing. Many autologous cell therapies are individually manufactured for each patient using traditional manual methods in high-cost environments. Therefore, robotics and automation offer a potential solution to meet the growing demand for such therapies. To ensure identical biological outcomes, automation must replicate validated manual workflows, a requirement that poses significant engineering challenges, especially for aseptic manipulation and compatibility with manual-centric instr"
-    },
-    {
-      "title": "Feedback-regulated dual-role memory consolidation for continual learning: a stability-plasticity framework inspired by hippocampo-cortical systems consolidation.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42614398/",
-      "source": "Cognitive neurodynamics",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "Neurotechnologies",
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Artificial agents trained on non-stationary task streams often acquire new categories at the cost of older representations. Systems-level accounts of hippocampo-cortical consolidation suggest that stored traces can support later learning in different ways and that consolidation can depend on both new learning and the vulnerability of established knowledge. Motivated by these functional principles, we propose dual-role memory consolidation learning (DRMCL) for class-incremental learning with a bounded replay buffer. DRMCL stores prototype-preserving core samples and decision-sensitive boundary samples, then combines both roles with replay, log"
-    },
-    {
-      "title": "Accuracy and feasibility of robot-assisted implant surgery in edentulous patients: A retrospective case series.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42612962/",
-      "source": "Journal of dentistry",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "Rééducation"
-      ],
-      "keywords": [],
-      "summary": "To evaluate the accuracy of robot-assisted implant placement in edentulous jaws and to assess primary stability, operative time, and short-term clinical outcomes. This retrospective study included edentulous patients who underwent robot-assisted implant surgery using a robotic arm integrated with dynamic navigation. Implant deviations were measured by superimposing pre- and postoperative CBCT images. Primary stability, operative time, and follow-up clinical outcomes were recorded. Fifteen patients with 23 edentulous jaws (10 maxillae and 13 mandibles) received 128 implants. Mean linear deviations were 0.71 ± 0.23 mm at the implant neck and 0."
-    },
-    {
-      "title": "Flexible bioelectronic electrodes: From engineering strategies to cross-domain biomedical applications.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42612453/",
-      "source": "Biosensors & bioelectronics",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Flexible electrodes have emerged as key bioelectronic interfaces for recording, modulation, and sensing in complex biological environments. Their mechanical compliance, conformal contact, and tunable electrochemical properties enable effective coupling between soft biological tissues and rigid electronic systems. However, the fabrication strategies and interface requirements governing flexible electrode performance differ substantially across biological domains, and this cross-domain design landscape has not been systematically addressed. This review comprehensively examines preparation and optimization strategies for flexible electrodes, cov"
     }
   ]
 }
