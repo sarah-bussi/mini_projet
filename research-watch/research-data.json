@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T12:01:39Z",
+  "updatedAt": "2026-10-04T12:51:59Z",
   "errors": [],
   "items": [
     {
@@ -359,6 +359,25 @@
         "MLOps activities"
       ],
       "summary": "With the increasing adoption of Machine Learning (ML), the need to manage, in a tailored manner, the end-to-end engineering of ML-powered software arises. Machine Learning Operations (MLOps) extends DevOps to address the specific challenges of the development and lifelong management of this new type of software. Despite the growing attention to this domain, an accepted, accessible, and modular reference architecture for MLOps is still missing. This paper presents SkeltyMLOps a reference architecture aimed at promoting collaboration among the diverse actors involved in MLOps. SkeltyMLOps is built as rigorously as possible from knowledge gather"
+    },
+    {
+      "title": "Is semantic SLAM ready for embedded systems? A comparative survey",
+      "url": "https://cea.hal.science/cea-05747393v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-12-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [
+        "Robotics",
+        "Object detection",
+        "Visual SLAM",
+        "Embedded systems",
+        "Semantic SLAM",
+        "Semantic SLAM embedded systems visual SLAM object detection robotics"
+      ],
+      "summary": "Semantic SLAM holds promise for robust robot navigation in complex environments, but its practicality on embedded systems remains uncertain. This paper presents a comparative survey of existing semantic visual SLAM systems from an embedded-deployment perspective. Unlike recent surveys centered on implicit representations, NeRFs, or 3D Gaussian Splatting as scene representations, our scope is the deployability of complete Semantic SLAM pipelines on resource-constrained robotics platforms, with particular emphasis on the NVIDIA Jetson AGX Orin. Three semantic-aware architectural approaches, namely Geometric SLAM, NeRF, and Gaussian Splattingbas"
     },
     {
       "title": "Sparse Competition during Training For the Emergence of Specialized Modules",
@@ -4790,6 +4809,29 @@
       "summary": "Vulgarisation auprès du grand public."
     },
     {
+      "title": "Verbatims clients : comment l’IA révèle les signaux faibles de satisfaction et d’insatisfaction",
+      "url": "https://hal.science/hal-05776871v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-09-25T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Signaux faibles",
+        "Commerce de détail",
+        "Aide à la décision",
+        "Détection de communautés",
+        "Théorie des graphes",
+        "Analyse de sentiments",
+        "Intelligence artificielle générative",
+        "Expérience client",
+        "Insatisfaction client",
+        "Satisfaction client"
+      ],
+      "summary": "Cet article présente une démarche d’analyse des verbatims clients associant l’intelligence artificielle générative et la théorie des graphes pour identifier les facteurs de satisfaction, les sources d’insatisfaction et les signaux faibles de l’expérience client. L’approche est illustrée par l’analyse de 3 000 avis Google Maps concernant Costco Wholesale à Los Angeles. Un grand modèle de langage, Mistral 7B, extrait les relations entre les attributs de l’expérience, les opinions et les sentiments exprimés. Ces relations sont représentées sous forme de graphe, puis analysées par détection de communautés pour faire émerger des ensembles thématiq"
+    },
+    {
       "title": "How can AI accelerate the green transition?",
       "url": "https://hal.science/hal-05762465v1",
       "source": "HAL",
@@ -5472,30 +5514,6 @@
       ],
       "keywords": [],
       "summary": "Accurate spatial registration between optical coherence tomography (OCT) and robotic coordinate systems is critical for OCT-guided microsurgery, where precise tool localization is essential for safe, reliable intervention. We propose and validate a practical and accurate method for calibrating the transformation between OCT and robot coordinate systems in robotic microsurgical systems. A conical calibration tool rigidly attached to the robot wrist was scanned using fast 2D OCT cross-sections. After denoising, edge extraction, and two-line fitting, the cone tip was localized, and the resulting coordinates were incorporated into a vector-based "
-    },
-    {
-      "title": "Seeing humans in technology: The antecedents, boundaries and consequences of AI anthropomorphism.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42648233/",
-      "source": "Current opinion in psychology",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Anthropomorphism has received substantial attention in research on artificial intelligence (AI) because imbuing AI-driven technologies, such as algorithms, chatbots, and embodied robots, with humanlike qualities can mitigate AI aversion, a major barrier to AI acceptance and adoption. However, anthropomorphism may also weaken advantages associated with their nonhuman nature. This review advances three claims. First, AI anthropomorphism operates at two levels: design-based manipulations that companies can implement to make their technologies more humanlike, and individual tendencies to anthropomorphize those technologies. Second, while anthropo"
-    },
-    {
-      "title": "tDCS synchronous robotic training on lower-limb with post-stroke hemiplegia: a comparative study between synchronous and sequential group.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42641064/",
-      "source": "Annals of medicine",
-      "type": "Publication scientifique",
-      "published": "2026-01-01T00:00:00Z",
-      "domains": [
-        "Handicap & société"
-      ],
-      "keywords": [],
-      "summary": "This study was aimed to compare the effects of tDCS synchronized with robotic training(RT)and tDCS sequential followed by RT on lower-limb with post-stroke hemiplegia, thus to inform clinical decision-making between these delivery schedules. 64 patients who met the inclusion and exclusion criteria were allocated into a synchronous group and a sequential group. The synchronous group underwent tDCS synchronous RT, while the sequential group received RT after tDCS ended. Both group received 40 minutes for treatment, five times a week, for a continuous two weeks. Gait Watch three-dimensional gait analysis system was used for both groups before an"
     }
   ]
 }
