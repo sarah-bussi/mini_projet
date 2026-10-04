@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T11:48:11Z",
+  "updatedAt": "2026-10-04T12:30:33Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 458,
+      "stars": 459,
       "updatedAt": "2026-10-01T17:36:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -350,7 +350,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 28,
-      "updatedAt": "2026-10-02T09:56:00Z",
+      "updatedAt": "2026-10-03T15:17:23Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-02T21:45:00Z",
+      "updatedAt": "2026-10-03T15:38:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -459,8 +459,8 @@
       "url": "https://github.com/A11y-Pulse/audits",
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
-      "stars": 16,
-      "updatedAt": "2026-09-25T22:31:10Z",
+      "stars": 18,
+      "updatedAt": "2026-10-04T08:22:44Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
