@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T13:25:01Z",
+  "updatedAt": "2026-10-07T13:34:53Z",
   "errors": [],
   "items": [
     {
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 459,
-      "updatedAt": "2026-10-01T17:36:44Z",
+      "stars": 464,
+      "updatedAt": "2026-10-07T11:17:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 345,
-      "updatedAt": "2026-10-06T12:36:55Z",
+      "updatedAt": "2026-10-07T00:28:27Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 231,
-      "updatedAt": "2026-10-05T07:22:07Z",
+      "updatedAt": "2026-10-07T00:33:10Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -75,7 +75,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-06T12:49:21Z",
+      "updatedAt": "2026-10-07T08:46:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -152,7 +152,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-10-05T19:19:28Z",
+      "updatedAt": "2026-10-07T05:27:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -174,7 +174,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 74,
-      "updatedAt": "2026-10-06T03:38:09Z",
+      "updatedAt": "2026-10-06T15:45:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -250,7 +250,7 @@
       "url": "https://github.com/eslint-community/eslint-plugin-jsx-a11y-x",
       "description": "An ESLint plugin to apply various a11y rules to JSX templates",
       "language": "JavaScript",
-      "stars": 55,
+      "stars": 56,
       "updatedAt": "2026-10-06T09:51:12Z",
       "detectedAt": "2026-09-30T12:45:02Z",
       "source": "GitHub"
@@ -262,7 +262,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 54,
-      "updatedAt": "2026-09-22T23:06:42Z",
+      "updatedAt": "2026-10-07T01:40:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -360,8 +360,8 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 28,
-      "updatedAt": "2026-10-05T03:17:32Z",
+      "stars": 29,
+      "updatedAt": "2026-10-07T06:06:57Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -416,7 +416,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-06T12:14:36Z",
+      "updatedAt": "2026-10-07T13:06:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -443,6 +443,17 @@
       "source": "GitHub"
     },
     {
+      "name": "hive",
+      "fullName": "hazelcast/hive",
+      "url": "https://github.com/hazelcast/hive",
+      "description": "Design system built with A11Y in mind",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-10-07T10:04:58Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "eslint",
       "fullName": "ofri-peretz/eslint",
       "url": "https://github.com/ofri-peretz/eslint",
@@ -451,17 +462,6 @@
       "stars": 19,
       "updatedAt": "2026-10-06T00:57:08Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "hive",
-      "fullName": "hazelcast/hive",
-      "url": "https://github.com/hazelcast/hive",
-      "description": "Design system built with A11Y in mind",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-09-30T12:38:10Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
@@ -536,7 +536,7 @@
       "url": "https://github.com/zivtech/accessibility-skills",
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
-      "stars": 10,
+      "stars": 11,
       "updatedAt": "2026-09-24T10:33:10Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
@@ -572,6 +572,17 @@
       "stars": 9,
       "updatedAt": "2026-07-28T04:39:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 7,
+      "updatedAt": "2026-10-07T12:38:02Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -627,6 +638,17 @@
       "stars": 5,
       "updatedAt": "2026-04-21T23:23:16Z",
       "detectedAt": "2026-10-06T13:25:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "altscribe",
+      "fullName": "ahb-sjsu/altscribe",
+      "url": "https://github.com/ahb-sjsu/altscribe",
+      "description": "AI-powered WCAG 2.1 AA document accessibility checker and fixer, built on pandoc + Claude — designed for CSU faculty accessibility compliance",
+      "language": "Python",
+      "stars": 5,
+      "updatedAt": "2026-04-20T05:19:29Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     }
   ]
