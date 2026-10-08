@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T13:34:53Z",
+  "updatedAt": "2026-10-08T13:40:27Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 464,
+      "stars": 465,
       "updatedAt": "2026-10-07T11:17:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -41,9 +41,20 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 345,
-      "updatedAt": "2026-10-07T00:28:27Z",
+      "stars": 346,
+      "updatedAt": "2026-10-08T13:13:56Z",
       "detectedAt": "2026-09-15T11:52:35Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint-plugin-vuejs-accessibility",
+      "fullName": "vue-a11y/eslint-plugin-vuejs-accessibility",
+      "url": "https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility",
+      "description": "An eslint plugin for checking Vue.js files for accessibility",
+      "language": "TypeScript",
+      "stars": 322,
+      "updatedAt": "2026-10-07T17:25:05Z",
+      "detectedAt": "2026-10-08T13:40:27Z",
       "source": "GitHub"
     },
     {
@@ -52,7 +63,7 @@
       "url": "https://github.com/nuxt/a11y",
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
-      "stars": 231,
+      "stars": 232,
       "updatedAt": "2026-10-07T00:33:10Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
@@ -75,7 +86,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-07T08:46:09Z",
+      "updatedAt": "2026-10-08T09:29:43Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -86,7 +97,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 154,
-      "updatedAt": "2026-10-05T22:41:25Z",
+      "updatedAt": "2026-10-08T07:30:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -99,6 +110,17 @@
       "stars": 132,
       "updatedAt": "2026-10-01T23:09:10Z",
       "detectedAt": "2026-09-16T11:46:10Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11yjson",
+      "fullName": "sozialhelden/a11yjson",
+      "url": "https://github.com/sozialhelden/a11yjson",
+      "description": "A11yJSON: A standard to describe the accessibility of the physical world.",
+      "language": "TypeScript",
+      "stars": 114,
+      "updatedAt": "2026-10-07T14:21:45Z",
+      "detectedAt": "2026-10-08T13:40:27Z",
       "source": "GitHub"
     },
     {
@@ -152,7 +174,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-10-07T05:27:55Z",
+      "updatedAt": "2026-10-08T12:59:30Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -262,7 +284,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 54,
-      "updatedAt": "2026-10-07T01:40:51Z",
+      "updatedAt": "2026-10-07T19:49:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -339,7 +361,7 @@
       "description": "Runs automated accessibility tests against configurable lists of webpages",
       "language": "JavaScript",
       "stars": 35,
-      "updatedAt": "2026-10-01T15:10:51Z",
+      "updatedAt": "2026-10-08T11:35:31Z",
       "detectedAt": "2026-09-08T11:27:16Z",
       "source": "GitHub"
     },
@@ -352,6 +374,17 @@
       "stars": 35,
       "updatedAt": "2026-09-28T07:30:51Z",
       "detectedAt": "2026-09-11T11:31:07Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-discov-vocab",
+      "fullName": "w3c-cg/a11y-discov-vocab",
+      "url": "https://github.com/w3c-cg/a11y-discov-vocab",
+      "description": "Repository for the maintenance of the schema.org accessibility property values for discoverability.",
+      "language": "HTML",
+      "stars": 31,
+      "updatedAt": "2026-10-07T17:58:19Z",
+      "detectedAt": "2026-10-08T13:40:27Z",
       "source": "GitHub"
     },
     {
@@ -416,7 +449,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-07T13:06:32Z",
+      "updatedAt": "2026-10-08T13:34:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +482,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-07T10:04:58Z",
+      "updatedAt": "2026-10-07T13:49:24Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -542,6 +575,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-hd",
+      "fullName": "holmdigital/a11y-hd",
+      "url": "https://github.com/holmdigital/a11y-hd",
+      "description": "Accessibility testing that maps WCAG failures to EN 301 549 and national law across 17 jurisdictions: CLI + CI reporting, accessible React components, and a machine-readable regulatory database.",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2026-10-06T20:00:32Z",
+      "detectedAt": "2026-10-08T13:40:27Z",
+      "source": "GitHub"
+    },
+    {
       "name": "tailwind-a11y",
       "fullName": "chamroro/tailwind-a11y",
       "url": "https://github.com/chamroro/tailwind-a11y",
@@ -564,6 +608,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 9,
+      "updatedAt": "2026-10-08T13:32:58Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "genpark-frontend-component-accessibility-checker-skill",
       "fullName": "alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
       "url": "https://github.com/alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
@@ -572,17 +627,6 @@
       "stars": 9,
       "updatedAt": "2026-07-28T04:39:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 7,
-      "updatedAt": "2026-10-07T12:38:02Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
