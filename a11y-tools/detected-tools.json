@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T13:40:27Z",
+  "updatedAt": "2026-10-09T13:26:06Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 780,
+      "stars": 781,
       "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 465,
-      "updatedAt": "2026-10-07T11:17:16Z",
+      "stars": 466,
+      "updatedAt": "2026-10-08T18:31:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -41,8 +41,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 346,
-      "updatedAt": "2026-10-08T13:13:56Z",
+      "stars": 347,
+      "updatedAt": "2026-10-09T04:23:24Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-08T09:29:43Z",
+      "updatedAt": "2026-10-09T11:22:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -239,8 +239,8 @@
       "url": "https://github.com/masuP9/a11y-specialist-skills",
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
-      "stars": 58,
-      "updatedAt": "2026-10-06T09:13:43Z",
+      "stars": 59,
+      "updatedAt": "2026-10-08T13:59:53Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -283,8 +283,8 @@
       "url": "https://github.com/itmaybejj/editoria11y",
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
-      "stars": 54,
-      "updatedAt": "2026-10-07T19:49:38Z",
+      "stars": 55,
+      "updatedAt": "2026-10-09T12:33:57Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +449,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-08T13:34:20Z",
+      "updatedAt": "2026-10-09T12:05:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,8 +471,19 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-10-02T07:32:38Z",
+      "updatedAt": "2026-10-09T09:35:34Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint",
+      "fullName": "ofri-peretz/eslint",
+      "url": "https://github.com/ofri-peretz/eslint",
+      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-10-09T06:10:27Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -484,17 +495,6 @@
       "stars": 19,
       "updatedAt": "2026-10-07T13:49:24Z",
       "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "eslint",
-      "fullName": "ofri-peretz/eslint",
-      "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-10-06T00:57:08Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -553,6 +553,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 11,
+      "updatedAt": "2026-10-08T20:44:00Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "outloud",
       "fullName": "visionably/outloud",
       "url": "https://github.com/visionably/outloud",
@@ -605,17 +616,6 @@
       "stars": 10,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 9,
-      "updatedAt": "2026-10-08T13:32:58Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
