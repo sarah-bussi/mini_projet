@@ -1,11 +1,6 @@
 {
-  "updatedAt": "2026-10-09T13:46:13Z",
-  "errors": [
-    {
-      "source": "HAL",
-      "error": "<urlopen error timed out>"
-    }
-  ],
+  "updatedAt": "2026-10-10T13:02:51Z",
+  "errors": [],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -356,6 +351,19 @@
       ],
       "keywords": [],
       "summary": "Despite the widespread adoption of deep learning techniques in motor imagery (MI) electroencephalogram (EEG) decoding, the limited decoding performance persists due to the low signal-to-noise ratio of EEG signals and insufficient exploration of MI-related information from temporal, frequency and spatial domains. Therefore, this paper proposed a novel end-to-end neural network with multi-type attention (MTANet) to extract the spatiotemporal-frequency coupling features in MI EEG and enhance MI EEG decoding. In MTANet, the EEG inception attention module was established to efficiently extract and weight temporal-frequency-spatial features inheren"
+    },
+    {
+      "title": "Clinical significance of lncRNA-miRNA axes in ischemic stroke: Diagnostic value, prognostic relevance, and therapeutic potential.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42648528/",
+      "source": "Clinica chimica acta; international journal of clinical chemistry",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Ischemic stroke and subsequent reperfusion injury are major causes of mortality and long-term neurological disability, driven by complex mechanisms of excitotoxicity, oxidative stress, neuroinflammation, endothelial dysfunction, and blood-brain barrier disruption. Increasing evidence indicates that long non-coding RNA (lncRNA)-microRNA (miRNA) regulatory axes are central components of this pathobiology. Acting through competing endogenous RNA (ceRNA) mechanisms, lncRNAs sequester miRNAs and thereby modulate downstream messenger RNA expression. In turn, this mechanism affects critical pathways involved in neuronal apoptosis, autophagy, pyropto"
     },
     {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
@@ -5105,7 +5113,7 @@
       "summary": "Prépublication d'un article soumis à la Revue d'études augustiniennes et patristiques (octobre 2026). Version de l'auteur, non évaluée par les pairs. Entre 340 et 403, l'Église de Rome participe activement aux controverses trinitaires. Cette étude cherche à savoir si le langage de ces controverses apparaît dans la mémoire funéraire des chrétiens de la ville, et par quels canaux. Le corpus réunit 478 épitaphes chrétiennes de Rome datées avec précision, pour la plupart par les fastes consulaires. Elles sont tirées de l'Epigraphik-Datenbank Clauss-Slaby et des Inscriptiones Christianae Urbis Romae, nova series. Chaque inscription a été lue et co"
     },
     {
-      "title": "Cultural Appropriation of AI in Preservice Teacher Education: Contrasting Perspectives on AI Literacy in Quebec, Martinique, and France",
+      "title": "Appropriations culturelles de l’IA dans la formation des futurs enseignants : Regards contrastés sur la littératie IA au Québec, en Martinique et en France",
       "url": "https://hal.science/hal-05786328v1",
       "source": "HAL",
       "type": "Publication scientifique",
@@ -5114,7 +5122,7 @@
         "IA & LLM"
       ],
       "keywords": [],
-      "summary": "The rapid integration of generative artificial intelligence (AI) into educational environments is transforming teaching practices and raising questions about the professional development of future teachers. Beyond its potential to automate tasks and support learning, generative AI raises significant cognitive, ethical, and professional identity concerns (Miao & Holmes, 2024). Its adoption and appropriation occur within sociocultural and institutional contexts that may shape how future educators perceive, use, and develop AI literacy. This paper presents findings from a two-phase study (2024–2026) involving preservice teachers and other future"
+      "summary": "L’intégration rapide de l’intelligence artificielle (IA) générative dans les environnements éducatifs transforme les pratiques pédagogiques et interroge les processus de professionnalisation des futurs enseignants. Au-delà des possibilités d’automatisation et d’assistance à l’apprentissage, ces technologies soulèvent des enjeux cognitifs, éthiques et identitaires (Miao & Holmes, 2024). Leur appropriation s’inscrit dans des contextes socioculturels et institutionnels susceptibles d’influencer les représentations, les usages et les conditions de développement de la littératie IA. Cette communication présente les résultats d’une recherche menée "
     },
     {
       "title": "Engineering Digital Process Twins: Towards a Methodology Based on MDE and DevOps",
@@ -5634,28 +5642,6 @@
       ],
       "keywords": [],
       "summary": "Reinforcement learning (RL) for learning path recommendation (LPR) faces two coupled obstacles. First, the policy must commit to a sequence of L concepts without intermediate feedback, producing a combinatorial search space that grows super-exponentially with L and provides reward only at the final step. Second, expert learning paths would be the natural cure for sparse-reward RL, but they do not exist in educational data, because student logs record what learners did, not what they should have done. We address both obstacles by importing a recipe from simulator-based demonstration learning in robotics: the knowledge tracing simulator is used"
-    },
-    {
-      "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
-      "url": "http://arxiv.org/abs/2610.03226v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-02T12:42:12Z",
-      "authors": [
-        "Daifeng Li",
-        "Huiqiang Jiang",
-        "Chengruidong Zhang",
-        "Wei Wu",
-        "Xudong Guo",
-        "Jianhong Tu",
-        "Jianwei Zhang",
-        "Binhang Yuan"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agents translate expert design guidance into efficient GPU kernels. The guidance covers L1: high-level algorithmic insights, L2: dataflow design, and L3: low-level optimization tricks, including dependencies among these levels. Pairwise runs with and without guidance share task descriptions, workloads, tools, hardware, and a 350-turn "
     }
   ]
 }
