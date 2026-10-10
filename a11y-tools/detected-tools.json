@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T13:26:06Z",
+  "updatedAt": "2026-10-10T12:41:49Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 781,
+      "stars": 782,
       "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-09T04:23:24Z",
+      "updatedAt": "2026-10-10T04:26:06Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -75,7 +75,7 @@
       "description": "Kit de ferramentas para facilitar o entendimento das diretrizes WCAG",
       "language": null,
       "stars": 225,
-      "updatedAt": "2026-09-03T15:21:55Z",
+      "updatedAt": "2026-10-10T00:32:59Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-09T11:22:00Z",
+      "updatedAt": "2026-10-10T11:34:59Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -174,7 +174,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 82,
-      "updatedAt": "2026-10-08T12:59:30Z",
+      "updatedAt": "2026-10-10T00:48:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -448,8 +448,8 @@
       "url": "https://github.com/equalizedigital/accessibility-checker",
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
-      "stars": 22,
-      "updatedAt": "2026-10-09T12:05:39Z",
+      "stars": 21,
+      "updatedAt": "2026-10-09T15:20:52Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -482,7 +482,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-09T06:10:27Z",
+      "updatedAt": "2026-10-09T16:08:46Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -520,6 +520,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 13,
+      "updatedAt": "2026-10-08T20:44:00Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
@@ -553,17 +564,6 @@
       "source": "GitHub"
     },
     {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 11,
-      "updatedAt": "2026-10-08T20:44:00Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
-      "source": "GitHub"
-    },
-    {
       "name": "outloud",
       "fullName": "visionably/outloud",
       "url": "https://github.com/visionably/outloud",
@@ -592,7 +592,7 @@
       "description": "Accessibility testing that maps WCAG failures to EN 301 549 and national law across 17 jurisdictions: CLI + CI reporting, accessible React components, and a machine-readable regulatory database.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-10-06T20:00:32Z",
+      "updatedAt": "2026-10-10T05:26:11Z",
       "detectedAt": "2026-10-08T13:40:27Z",
       "source": "GitHub"
     },
