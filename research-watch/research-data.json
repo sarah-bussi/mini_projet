@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T13:02:51Z",
+  "updatedAt": "2026-10-11T13:31:18Z",
   "errors": [],
   "items": [
     {
@@ -366,6 +366,32 @@
       "summary": "Ischemic stroke and subsequent reperfusion injury are major causes of mortality and long-term neurological disability, driven by complex mechanisms of excitotoxicity, oxidative stress, neuroinflammation, endothelial dysfunction, and blood-brain barrier disruption. Increasing evidence indicates that long non-coding RNA (lncRNA)-microRNA (miRNA) regulatory axes are central components of this pathobiology. Acting through competing endogenous RNA (ceRNA) mechanisms, lncRNAs sequester miRNAs and thereby modulate downstream messenger RNA expression. In turn, this mechanism affects critical pathways involved in neuronal apoptosis, autophagy, pyropto"
     },
     {
+      "title": "What's New in Hand and Wrist Arthroscopy: Indications, Techniques, and Emerging Applications.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42859520/",
+      "source": "Journal of hand surgery global online",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI",
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Wrist arthroscopy has undergone substantial evolution over the past 2 decades, transitioning from a primarily diagnostic procedure to a versatile therapeutic platform with applications across trauma, instability, degenerative disease, and reconstructive surgery. Advances in instrumentation, visualization, and surgical technique have expanded indications while facilitating less invasive management of complex wrist pathology. In acute fracture care, arthroscopy provides direct assessment of articular reduction and associated soft tissue injuries in scaphoid and distal radius fractures, with emerging applications in distal radius malunion correc"
+    },
+    {
+      "title": "Hierarchical strain-isolation architecture inspired by campaniform sensilla for anti-interference pressure sensing.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42772152/",
+      "source": "Biosensors & bioelectronics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Flexible pressure sensors have been widely utilized in wearable electronics and robotic systems. However, their practical deployment is hampered by mechanical strain interference, which severely compromises pressure sensing accuracy. Here, we report a campaniform sensilla-inspired flexible pressure sensor (CIFPS) that successfully achieves anti-mechanical interference sensing through a hierarchical biomimetic design. The CIFPS integrates the spindle microstructure, the ring-pit architecture, and the interfacial adhesive layer to synergistically suppress small-strain noise and large-strain-induced signal distortion. Experiments show that the C"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -658,6 +684,25 @@
         "Interaction Humain-Robot"
       ],
       "summary": "Le projet IPaTRo (« Paradigme d’interaction pour la robotique de téléprésence »), a pour objectif de concevoir, mettre en œuvre et évaluer des systèmes de téléopération de robots de téléprésence déployés chez les familles d’enfants hospitalisés, afin de renforcer le lien entre les enfants et leurs familles et de réduire le sentiment d’isolement. Ce projet s’appuie sur une application concrète dans le Centre Hospitalier Universitaire de Toulouse, qui rencontre actuellement certaines difficultés en matière d’interface et de matériel. Afin de pallier les limites du robot actuellement utilisé et en nous appuyant sur la base du Turtlebot 4, nous a"
+    },
+    {
+      "title": "Mapping the Intersection of Artificial Intelligence and Sustainable Finance: A TCCM-Driven Bibliometric Analysis and Conceptual Framework",
+      "url": "https://hal.science/hal-05791598v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-10T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Artificial intelligence",
+        "Sustainable finance",
+        "Green finance",
+        "ESG",
+        "Bibliometric analysis",
+        "TCCM framework"
+      ],
+      "summary": "Artificial intelligence (AI) and sustainable finance are increasingly intersecting, yet re search at their intersection remains fragmented and theoretically underdeveloped. This study combines bibliometric analysis with the Theory–Context–Characteristics–Method ology (TCCM) framework to examine 61 PRISMA-screened articles retrieved from Web of Science. No publication-year restriction was applied; the included corpus spans 2021 to July 2025. Publication output within the corpus increased from seven articles in 2023 to fifteen in 2024, while the 2025 count covers only the period up to the July search date. China accounts for the largest share b"
     },
     {
       "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
@@ -5590,58 +5635,6 @@
       ],
       "keywords": [],
       "summary": "Large language models are increasingly used where small syntactic errors matter, yet character-level reasoning is still evaluated mostly through isolated probes and aggregate accuracy. We introduce SyntaxBench, a diagnostic benchmark and statistical evaluation framework for character-level reasoning. It contains five core tasks, character counting, letter containment, palindrome detection, edit distance, and longest-string selection, plus index_to_span, a harder substring-extraction stress test. The five core tasks use paired English and character-length-matched random-string inputs. index_to_span documents share a 200-500 word band and are n"
-    },
-    {
-      "title": "Multi-Task Evolution for Zero-Shot Cross-Problem Generalization using LLMs",
-      "url": "http://arxiv.org/abs/2610.03316v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-02T13:53:34Z",
-      "authors": [
-        "Zhouliang Xie",
-        "Changliang Zhou",
-        "Genghui Li",
-        "Zhenkun Wang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Designing effective heuristics for diverse combinatorial optimization problems requires substantial expertise and repeated search. Large language models (LLMs) automate heuristic generation and refinement, but heuristic search typically depends on evaluation feedback from the problem being optimized. Generalizing to new problem definitions using only source-task feedback therefore remains a central challenge. We introduce MECo, an LLM-driven multi-task evolutionary framework for zero-shot cross-problem generalization. MECo maintains task-conditioned heuristic populations and uses a transfer gap based on cross-task population performance to gu"
-    },
-    {
-      "title": "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs",
-      "url": "http://arxiv.org/abs/2610.03283v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-02T13:26:38Z",
-      "authors": [
-        "Patrick Wolf",
-        "Mateo de Mayo",
-        "Daniel Cremers"
-      ],
-      "domains": [
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "The ability of a device to localize itself within its surroundings is a fundamental prerequisite for spatial computing. Visual-inertial odometry (VIO) has proven to be a cost-effective and accurate solution for this task. Robots, wearables, XR devices, and drones can benefit significantly from efficient implementations of VIO since they allow for cooler, lighter, and cheaper devices with longer battery life and a better user experience. In this work, we propose to enhance the efficiency of a VIO system by leveraging the Hexagon DSP, a commodity co-processor present in many modern smartphones and XR devices. Our approach offloads the visual fr"
-    },
-    {
-      "title": "EVOL: Simulator-Guided Evolutionary Expert Synthesis for Deployment-Free Learning Path Recommendation",
-      "url": "http://arxiv.org/abs/2610.03273v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-02T13:16:40Z",
-      "authors": [
-        "Geonwoo Bang",
-        "Dongho Kim",
-        "Moohong Min"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Reinforcement learning (RL) for learning path recommendation (LPR) faces two coupled obstacles. First, the policy must commit to a sequence of L concepts without intermediate feedback, producing a combinatorial search space that grows super-exponentially with L and provides reward only at the final step. Second, expert learning paths would be the natural cure for sparse-reward RL, but they do not exist in educational data, because student logs record what learners did, not what they should have done. We address both obstacles by importing a recipe from simulator-based demonstration learning in robotics: the knowledge tracing simulator is used"
     }
   ]
 }
