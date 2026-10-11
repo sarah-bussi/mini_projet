@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T12:41:49Z",
+  "updatedAt": "2026-10-11T13:03:23Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 782,
+      "stars": 783,
       "updatedAt": "2026-09-28T19:01:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -30,7 +30,7 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 466,
+      "stars": 467,
       "updatedAt": "2026-10-08T18:31:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-10T04:26:06Z",
+      "updatedAt": "2026-10-11T12:24:56Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -96,7 +96,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 154,
+      "stars": 155,
       "updatedAt": "2026-10-08T07:30:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -162,7 +162,7 @@
       "url": "https://github.com/guidepup/guidepup-playwright",
       "description": "Screen reader automation library for Playwright testing.",
       "language": "TypeScript",
-      "stars": 84,
+      "stars": 85,
       "updatedAt": "2026-08-25T20:06:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -173,8 +173,8 @@
       "url": "https://github.com/openameba/a11y-guidelines",
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
-      "stars": 82,
-      "updatedAt": "2026-10-10T00:48:22Z",
+      "stars": 83,
+      "updatedAt": "2026-10-11T01:57:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -228,7 +228,7 @@
       "url": "https://github.com/eps1lon/screen-reader-testing-library",
       "description": "Utilities to match the speech output of screen readers when replaying user interactions.",
       "language": "JavaScript",
-      "stars": 60,
+      "stars": 61,
       "updatedAt": "2026-04-17T21:28:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -240,7 +240,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 59,
-      "updatedAt": "2026-10-08T13:59:53Z",
+      "updatedAt": "2026-10-10T20:46:58Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -267,6 +267,17 @@
       "source": "GitHub"
     },
     {
+      "name": "editoria11y",
+      "fullName": "itmaybejj/editoria11y",
+      "url": "https://github.com/itmaybejj/editoria11y",
+      "description": "A user-friendly automatic content accessibility checker.",
+      "language": "JavaScript",
+      "stars": 56,
+      "updatedAt": "2026-10-09T12:33:57Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "eslint-plugin-jsx-a11y-x",
       "fullName": "eslint-community/eslint-plugin-jsx-a11y-x",
       "url": "https://github.com/eslint-community/eslint-plugin-jsx-a11y-x",
@@ -275,17 +286,6 @@
       "stars": 56,
       "updatedAt": "2026-10-06T09:51:12Z",
       "detectedAt": "2026-09-30T12:45:02Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "editoria11y",
-      "fullName": "itmaybejj/editoria11y",
-      "url": "https://github.com/itmaybejj/editoria11y",
-      "description": "A user-friendly automatic content accessibility checker.",
-      "language": "JavaScript",
-      "stars": 55,
-      "updatedAt": "2026-10-09T12:33:57Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -394,7 +394,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-10-07T06:06:57Z",
+      "updatedAt": "2026-10-11T12:36:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -482,7 +482,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-09T16:08:46Z",
+      "updatedAt": "2026-10-11T10:55:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -553,6 +553,28 @@
       "source": "GitHub"
     },
     {
+      "name": "outloud",
+      "fullName": "visionably/outloud",
+      "url": "https://github.com/visionably/outloud",
+      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
+      "language": "Python",
+      "stars": 12,
+      "updatedAt": "2026-10-06T02:48:03Z",
+      "detectedAt": "2026-09-19T11:09:36Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 12,
+      "updatedAt": "2026-09-24T10:33:10Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
       "name": "ecom-a11y-audit",
       "fullName": "kgelster/ecom-a11y-audit",
       "url": "https://github.com/kgelster/ecom-a11y-audit",
@@ -564,25 +586,14 @@
       "source": "GitHub"
     },
     {
-      "name": "outloud",
-      "fullName": "visionably/outloud",
-      "url": "https://github.com/visionably/outloud",
-      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
-      "language": "Python",
+      "name": "aria-at-tests",
+      "fullName": "guidepup/aria-at-tests",
+      "url": "https://github.com/guidepup/aria-at-tests",
+      "description": "Testing screen reader compatibility against https://github.com/w3c/aria-at test suite using Guidepup",
+      "language": "TypeScript",
       "stars": 11,
-      "updatedAt": "2026-10-06T02:48:03Z",
-      "detectedAt": "2026-09-19T11:09:36Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessibility-skills",
-      "fullName": "zivtech/accessibility-skills",
-      "url": "https://github.com/zivtech/accessibility-skills",
-      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
-      "language": "Python",
-      "stars": 11,
-      "updatedAt": "2026-09-24T10:33:10Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
+      "updatedAt": "2025-11-15T16:54:01Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -605,17 +616,6 @@
       "stars": 10,
       "updatedAt": "2026-09-19T16:59:06Z",
       "detectedAt": "2026-09-07T12:44:29Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "aria-at-tests",
-      "fullName": "guidepup/aria-at-tests",
-      "url": "https://github.com/guidepup/aria-at-tests",
-      "description": "Testing screen reader compatibility against https://github.com/w3c/aria-at test suite using Guidepup",
-      "language": "TypeScript",
-      "stars": 10,
-      "updatedAt": "2025-11-15T16:54:01Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -663,6 +663,17 @@
       "source": "GitHub"
     },
     {
+      "name": "claude-wcag-accessibility-skill",
+      "fullName": "mrKanoh/claude-wcag-accessibility-skill",
+      "url": "https://github.com/mrKanoh/claude-wcag-accessibility-skill",
+      "description": "Claude Code skill for WCAG 2.1 accessibility audits, WAI-ARIA patterns, screen reader testing, and CI/CD integration.",
+      "language": "Python",
+      "stars": 6,
+      "updatedAt": "2026-04-21T23:23:16Z",
+      "detectedAt": "2026-10-06T13:25:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "domain-checker",
       "fullName": "chebur-net/domain-checker",
       "url": "https://github.com/chebur-net/domain-checker",
@@ -671,17 +682,6 @@
       "stars": 6,
       "updatedAt": "2026-03-24T21:27:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "claude-wcag-accessibility-skill",
-      "fullName": "mrKanoh/claude-wcag-accessibility-skill",
-      "url": "https://github.com/mrKanoh/claude-wcag-accessibility-skill",
-      "description": "Claude Code skill for WCAG 2.1 accessibility audits, WAI-ARIA patterns, screen reader testing, and CI/CD integration.",
-      "language": "Python",
-      "stars": 5,
-      "updatedAt": "2026-04-21T23:23:16Z",
-      "detectedAt": "2026-10-06T13:25:01Z",
       "source": "GitHub"
     },
     {
