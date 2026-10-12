@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T13:03:23Z",
+  "updatedAt": "2026-10-12T15:41:20Z",
   "errors": [],
   "items": [
     {
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-11T12:24:56Z",
+      "updatedAt": "2026-10-12T00:25:52Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -63,8 +63,8 @@
       "url": "https://github.com/nuxt/a11y",
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
-      "stars": 232,
-      "updatedAt": "2026-10-07T00:33:10Z",
+      "stars": 233,
+      "updatedAt": "2026-10-12T10:51:56Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-10T11:34:59Z",
+      "updatedAt": "2026-10-12T10:34:30Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -110,6 +110,17 @@
       "stars": 132,
       "updatedAt": "2026-10-01T23:09:10Z",
       "detectedAt": "2026-09-16T11:46:10Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-checker",
+      "fullName": "Muhnad/a11y-checker",
+      "url": "https://github.com/Muhnad/a11y-checker",
+      "description": "Accessibility scanner for humans and AI agents.",
+      "language": "JavaScript",
+      "stars": 117,
+      "updatedAt": "2026-10-11T21:36:11Z",
+      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
@@ -174,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-11T01:57:05Z",
+      "updatedAt": "2026-10-12T15:18:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +229,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-02T06:27:15Z",
+      "updatedAt": "2026-10-12T08:01:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -240,7 +251,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 59,
-      "updatedAt": "2026-10-10T20:46:58Z",
+      "updatedAt": "2026-10-12T15:41:07Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -394,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-10-11T12:36:13Z",
+      "updatedAt": "2026-10-12T15:36:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -438,7 +449,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-09-29T19:58:25Z",
+      "updatedAt": "2026-10-11T19:53:59Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +460,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 21,
-      "updatedAt": "2026-10-09T15:20:52Z",
+      "updatedAt": "2026-10-12T14:05:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -482,7 +493,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-11T10:55:36Z",
+      "updatedAt": "2026-10-12T15:02:37Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -525,8 +536,8 @@
       "url": "https://github.com/aaron-gh/accessible-android-emulator",
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
-      "stars": 13,
-      "updatedAt": "2026-10-08T20:44:00Z",
+      "stars": 15,
+      "updatedAt": "2026-10-12T14:07:09Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -594,6 +605,17 @@
       "stars": 11,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "ghostfox",
+      "fullName": "autokeren/ghostfox",
+      "url": "https://github.com/autokeren/ghostfox",
+      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
+      "language": "C++",
+      "stars": 10,
+      "updatedAt": "2026-10-12T15:08:33Z",
+      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
