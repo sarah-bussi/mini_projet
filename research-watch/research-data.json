@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T16:06:50Z",
+  "updatedAt": "2026-10-13T14:34:33Z",
   "errors": [],
   "items": [
     {
@@ -705,6 +705,24 @@
         "Robots parallèles déformables"
       ],
       "summary": "We present the results of a workshop involving 23 participants that focused on assembling low-fidelity prototypes of deformable paral- lel robots to explore their parameters through the manipulation and actuation of various materials. This workshop had 3 goals: teach fundamental concepts of soft robotics to students, investigate what materials are used when quickly assembling robot prototypes and why, and how the produced movements of the prototypes are per- ceived. We collected data through self documentation using online shared documents in the form of continuous quantitative scales and notes. The results indicate that the assembly tasks en"
+    },
+    {
+      "title": "Participer à l'IA autrement : retrouver prise sur un objet fuyant par l'enquête collective",
+      "url": "https://hal.science/hal-05796482v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-13T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Enquête collective",
+        "Objet fuyant",
+        "Innovation sociotechnique",
+        "Participation",
+        "Intelligence artificielle"
+      ],
+      "summary": "Les débats sur l'intelligence artificielle sont largement structurés par des récits qui tendent à réifier les technologies, à invisibiliser les transformations concrètes du travail et à cantonner la participation à des dispositifs éloignés des situations réelles. En mobilisant les travaux sur l'économie de la promesse et la notion d'« objet fuyant » d'Yrjö Engeström, cet article analyse trois formes d’« éclipse » – technique, sociale et participative – qui façonnent les développements de l'IA. Il présente ensuite les enseignements d'une enquête collective menée dans le cadre du projet international Shaping AI, réunissant une pluralité de prat"
     },
     {
       "title": "Quand le génie des procédés s’inscrit dans le développement d’une future filière e-biocarburants pour la décarbonation du transport aérien et maritime",
@@ -5653,25 +5671,6 @@
       ],
       "keywords": [],
       "summary": "When a large language model handles a multi-turn task and a user proposes a change but ultimately rejects it, the model should continue as if nothing changed. We find a surprising failure: merely mentioning a rejected change can derail task execution, even when the user's final intent remains unchanged. To systematically study language model behavior under evolving user intent, we introduce Intent-Eval, a controlled benchmark spanning tool actions, code, databases, and mathematics. Across diverse tasks, models are vulnerable to both rejected proposals and superseded requirements, consistent with mentioned-as-in-effect confusion: conversationa"
-    },
-    {
-      "title": "Traversability-Aware Cooperative Path Planning for Human-UGV Casualty Evacuation",
-      "url": "http://arxiv.org/abs/2610.06487v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:12:03Z",
-      "authors": [
-        "Kristian Dalland",
-        "Prithvi Poddar",
-        "Souma Chowdhury",
-        "Karthik Dantu",
-        "Ehsan T. Esfahani"
-      ],
-      "domains": [
-        "Robotique sociale & HRI"
-      ],
-      "keywords": [],
-      "summary": "Heterogeneous multi-robot path planning is a well-studied problem in which agents with disparate kinematic and dynamic models must coordinate to achieve shared objectives. These formulations, however, treat all agents as robotic-their cost models are mechanical and their traversability is sensor-derived. In human-robot teaming, the human partner remains relegated to command and supervisory roles rather than being modeled as a physical co-navigator with distinct mobility constraints and dynamic energy reserves. This work investigates joint path planning for a two-agent human-UGV team in search-and-rescue casualty retrieval scenarios. We model "
     }
   ]
 }
