@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T15:41:20Z",
+  "updatedAt": "2026-10-13T14:21:39Z",
   "errors": [],
   "items": [
     {
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 467,
-      "updatedAt": "2026-10-08T18:31:34Z",
+      "stars": 468,
+      "updatedAt": "2026-10-13T14:06:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -64,7 +64,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 233,
-      "updatedAt": "2026-10-12T10:51:56Z",
+      "updatedAt": "2026-10-13T13:59:59Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -117,9 +117,9 @@
       "fullName": "Muhnad/a11y-checker",
       "url": "https://github.com/Muhnad/a11y-checker",
       "description": "Accessibility scanner for humans and AI agents.",
-      "language": "JavaScript",
+      "language": "TypeScript",
       "stars": 117,
-      "updatedAt": "2026-10-11T21:36:11Z",
+      "updatedAt": "2026-10-13T08:42:44Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-12T15:18:45Z",
+      "updatedAt": "2026-10-13T06:25:18Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -206,8 +206,8 @@
       "url": "https://github.com/ericwbailey/a11y-webring.club",
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
-      "stars": 74,
-      "updatedAt": "2026-10-06T15:45:07Z",
+      "stars": 76,
+      "updatedAt": "2026-10-12T15:55:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 59,
-      "updatedAt": "2026-10-12T15:41:07Z",
+      "updatedAt": "2026-10-13T10:00:56Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -261,8 +261,8 @@
       "url": "https://github.com/GovTechSG/oobee-desktop",
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
-      "stars": 58,
-      "updatedAt": "2026-09-17T08:57:32Z",
+      "stars": 59,
+      "updatedAt": "2026-10-13T09:18:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-10-12T15:36:04Z",
+      "updatedAt": "2026-10-13T12:49:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +449,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-11T19:53:59Z",
+      "updatedAt": "2026-10-13T10:01:04Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -460,7 +460,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 21,
-      "updatedAt": "2026-10-12T14:05:40Z",
+      "updatedAt": "2026-10-13T12:14:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -487,25 +487,25 @@
       "source": "GitHub"
     },
     {
-      "name": "eslint",
-      "fullName": "ofri-peretz/eslint",
-      "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-10-12T15:02:37Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "hive",
       "fullName": "hazelcast/hive",
       "url": "https://github.com/hazelcast/hive",
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-07T13:49:24Z",
+      "updatedAt": "2026-10-13T10:09:18Z",
       "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint",
+      "fullName": "ofri-peretz/eslint",
+      "url": "https://github.com/ofri-peretz/eslint",
+      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-10-13T05:59:34Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -520,6 +520,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 17,
+      "updatedAt": "2026-10-13T10:31:31Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "public-browser",
       "fullName": "Silbercue/public-browser",
       "url": "https://github.com/Silbercue/public-browser",
@@ -531,14 +542,14 @@
       "source": "GitHub"
     },
     {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 15,
-      "updatedAt": "2026-10-12T14:07:09Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
+      "name": "outloud",
+      "fullName": "visionably/outloud",
+      "url": "https://github.com/visionably/outloud",
+      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
+      "language": "Python",
+      "stars": 13,
+      "updatedAt": "2026-10-06T02:48:03Z",
+      "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
     {
@@ -561,17 +572,6 @@
       "stars": 13,
       "updatedAt": "2026-10-01T12:13:14Z",
       "detectedAt": "2026-09-07T12:44:29Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "outloud",
-      "fullName": "visionably/outloud",
-      "url": "https://github.com/visionably/outloud",
-      "description": "What a PDF says out loud. The PDF accessibility checker that runs anywhere: PDF/UA-1 + WCAG 2.2 in your terminal, CI and browser, plus the semantic checks validators cannot make.",
-      "language": "Python",
-      "stars": 12,
-      "updatedAt": "2026-10-06T02:48:03Z",
-      "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
     {
@@ -614,7 +614,7 @@
       "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
       "language": "C++",
       "stars": 10,
-      "updatedAt": "2026-10-12T15:08:33Z",
+      "updatedAt": "2026-10-13T07:51:29Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
