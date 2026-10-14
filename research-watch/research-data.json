@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T14:34:33Z",
+  "updatedAt": "2026-10-14T12:22:29Z",
   "errors": [],
   "items": [
     {
@@ -392,6 +392,30 @@
       "summary": "Flexible pressure sensors have been widely utilized in wearable electronics and robotic systems. However, their practical deployment is hampered by mechanical strain interference, which severely compromises pressure sensing accuracy. Here, we report a campaniform sensilla-inspired flexible pressure sensor (CIFPS) that successfully achieves anti-mechanical interference sensing through a hierarchical biomimetic design. The CIFPS integrates the spindle microstructure, the ring-pit architecture, and the interfacial adhesive layer to synergistically suppress small-strain noise and large-strain-induced signal distortion. Experiments show that the C"
     },
     {
+      "title": "Brain-inspired navigation based on the entorhinal cortex- hippocampal neural circuit: Bridging spatial cognitive mechanisms and robotic applications.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42580091/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "The spatial cognitive neural circuit comprising the mammalian hippocampal (HPC) and entorhinal cortex (EC) constitutes the neurobiological foundation that enables organisms to achieve autonomous navigation in complex environments. Brain-inspired navigation technology, as an innovative paradigm for addressing the challenge of autonomous robot localization in complex environments, substantially improves the adaptability of navigation systems in unstructured and dynamic environments through the emulation of mammalian spatial cognitive neural mechanisms. To address the limitations in adaptability and energy consumption faced by current robot navi"
+    },
+    {
+      "title": "Temporal compensation physics-informed neural network modeling repetitive small-range rotation inverse dynamics.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42561877/",
+      "source": "Neural networks : the official journal of the International Neural Network Society",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "High-fidelity motion mapping is fundamental for high-precision robotic operations. However, existing models exhibit dynamic hysteresis effects during repetitive small-range rotations, resulting in diminished modeling accuracy. Therefore, we propose a temporal compensation physics-informed neural network (TC-PINN) to mitigate the dynamic hysteresis effects. First, we construct a rotational state trajectory encoded with cumulative joint rotation features to explicitly characterize the temporal phase deviations of motion hysteresis. Second, we design a Linformer-based nonlinear error fitting structure to compensate for unstructured dynamic error"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -707,6 +731,1081 @@
       "summary": "We present the results of a workshop involving 23 participants that focused on assembling low-fidelity prototypes of deformable paral- lel robots to explore their parameters through the manipulation and actuation of various materials. This workshop had 3 goals: teach fundamental concepts of soft robotics to students, investigate what materials are used when quickly assembling robot prototypes and why, and how the produced movements of the prototypes are per- ceived. We collected data through self documentation using online shared documents in the form of continuous quantitative scales and notes. The results indicate that the assembly tasks en"
     },
     {
+      "title": "HMK-D V2 : démonstration d'un clavier StreamDeck accessible pour la saisie mathématique, autour d'un scénario de recopie",
+      "url": "https://hal.science/hal-05789823v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Handicap",
+        "Conception centrée utilisateur",
+        "StreamDeck",
+        "Dispositif matériel",
+        "Saisie mathématique",
+        "Accessibilité"
+      ],
+      "summary": "Nous présentons une démonstration de HMK-D V2, un clavier StreamDeck à 32 touches dédié à la saisie mathématique accessible. Les visiteur•euses vivent un scénario de recopie : reproduire une même expression mathématique avec HMK-D V2 puis avec un éditeur d'équations classique, et comparer en direct l'effort de saisie engagé grâce à un indice de complexité procédurale calculé à partir de l'enregistrement de l'activité sur le dispositif. Issu d'observations de terrain conduites en classe auprès d'élèves en situation de handicap moteur, visuel et cognitif, le dispositif illustre ainsi, de façon tangible, l'écart entre confort de saisie et object"
+    },
+    {
+      "title": "LE GUIDE PRATIQUE DU RAPPORT DE STAGE EN PSYCHOLOGIE: De la recherche du stage à la soutenance du rapport",
+      "url": "https://hal.science/hal-05798141v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-17T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Le guide pratique pour préparer son stage, observer le terrain, construire son analyse et rédiger un rapport de stage en psychologie rigoureux, réflexif et professionnel. Effectuer un stage constitue une étape essentielle de la formation en psychologie. Mais comment choisir son terrain, comprendre ce qui est attendu du stagiaire, trouver sa place dans une institution, observer sans interpréter trop rapidement et transformer progressivement l’expérience vécue en matériau de réflexion ? Comment sélectionner les situations à présenter, construire un questionnement, articuler théorie et terrain et rédiger un rapport qui ne soit ni un simple récit"
+    },
+    {
+      "title": "Les juristes juniors et l'intelligence artificielle : après moi, le déluge ?",
+      "url": "https://shs.hal.science/halshs-05798368v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-15T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Juriste junior",
+        "Juriste junior",
+        "Intelligence artificielle",
+        "Nouvelle technologie",
+        "Informatique"
+      ],
+      "summary": ""
+    },
+    {
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "url": "http://arxiv.org/abs/2610.18874v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:59:57Z",
+      "authors": [
+        "Bingxin Xu",
+        "Wenrui Bao",
+        "Xinxin Liu",
+        "Jiawei Zhou",
+        "Yuzhang Shang",
+        "Emilio Ferrara"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) tools under the guidance of a memory and thereby generalizes to new tasks without retraining. This generality comes at a steep price in efficiency. Every primitive requires a round of LLM reasoning over the full interaction history, so the cost of an episode grows with the number of primitives. We find this reasoning largely redundant: once a sub-goal is chosen, its primitives follow a routine already prescribed by memory. We present ChunkAct, which introduces action chunking to agentic r"
+    },
+    {
+      "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+      "url": "http://arxiv.org/abs/2610.18873v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:59:56Z",
+      "authors": [
+        "Wenxuan Guo",
+        "Yingping Liang",
+        "Zhaoguo Wang",
+        "Ziyuan Li",
+        "Angyuan Ma",
+        "Zhenyu Wu",
+        "Chengkun Wang",
+        "Bingyao Yu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Scaling expert demonstrations alone does not enable generalist robot policies to improve from deployment. Real-world rollouts contain successes, suboptimal behavior, and failures: imitating every recorded action can reinforce poor behavior, while filtering out failures discards evidence of physical interactions and their consequences. We introduce \\textbf{LoopWAM}, a closed-loop world-action model that learns directly from this full quality spectrum, using rollouts from both itself and other deployed policies. Source-dependent noise sampling unifies behavior learning and action-conditioned world modeling, while quality steering and quality-we"
+    },
+    {
+      "title": "Hybrid Reasoning Agents",
+      "url": "http://arxiv.org/abs/2610.18861v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:59:31Z",
+      "authors": [
+        "Jiaru Zou",
+        "Yunzhe Qi",
+        "Sirui Chen",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Pan Lu",
+        "Jingrui He",
+        "James Zou"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAgents), which dynamically navigate between latent reasoning and text-based interaction throughout a unified generation process. Architecturally, a lightweight HybridLink enables seamless transitions between text and latent modes, while the agent's continuous working memory preserves lossless"
+    },
+    {
+      "title": "Interaction Latents as Actions for Contact-Rich Manipulation",
+      "url": "http://arxiv.org/abs/2610.18855v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:59:16Z",
+      "authors": [
+        "Yuhang Zheng",
+        "Yujie Zang",
+        "Yuchen Liu",
+        "Yupeng Zheng",
+        "Zhennan Jiang",
+        "Zebin Xing",
+        "Shuai Tian",
+        "Songen Gu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Contact-rich manipulation requires robots to coordinate not only where to move, but also how contact and force should evolve throughout an interaction. Yet most robot policies represent actions primarily as motion trajectories, using tactile signals as inputs or auxiliary prediction targets without explicitly encoding contact dynamics in the action representation. We propose ILA (Interaction Latents as Actions), which uses decodable interaction latents that jointly capture the evolution of motion, contact, and force application as policy action units, providing a shared representation for action generation, evaluation, and offline improvement"
+    },
+    {
+      "title": "ForceWAM: Decoupling Future and Response Learning from Demo and Play Data for Contact-Rich Manipulation",
+      "url": "http://arxiv.org/abs/2610.18852v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:58:44Z",
+      "authors": [
+        "Zijun Xu",
+        "Wendi Chen",
+        "Xinkai Wang",
+        "Jiachen Zou",
+        "Hongjin Chen",
+        "Hairuo Liu",
+        "Bokai Lin",
+        "Shihao Ma"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Expert demonstrations show how to complete contact-rich tasks, but provide limited coverage of how interaction forces respond to different actions. Task-agnostic play provides broader experience of contact dynamics without specifying task goals. To fully leverage these two types of data, we introduce ForceWAM, a force world action model that decouples knowledge of task-compatible interaction outcomes from knowledge of how local actions change contact. A world model learns from successful demonstrations to jointly predict future video and six-axis force/torque trajectories. Together, these futures describe the expected evolution of motion and "
+    },
+    {
+      "title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
+      "url": "http://arxiv.org/abs/2610.18851v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:58:41Z",
+      "authors": [
+        "Trieu Nguyen",
+        "Frazier N. Baker",
+        "Ruoxi Gao",
+        "Daniel Adu-Ampratwum",
+        "Xia Ning"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Multi-objective molecular optimization is a critical process in drug discovery that aims to modify a given molecule to simultaneously improve multiple properties while maintaining a similar overall structure. This process often requires iterative modifications guided by computational or experimental feedback. Recent large language model (LLM)-based methods have begun to explore this iterative approach; however, these methods are not explicitly trained to leverage such feedback, while existing approaches primarily focus on single-turn molecular optimization. To address this gap, we introduce Multi-turn Feedback Guided (MFG) molecular optimizat"
+    },
+    {
+      "title": "Collaborative Planning for UAV-UGV Teams under Operational Constraints via Masked Error-bounded Neuro-Symbolic Diffusion",
+      "url": "http://arxiv.org/abs/2610.18850v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:58:37Z",
+      "authors": [
+        "Zihao Deng",
+        "Qianhuang Li",
+        "Maggie Wigness",
+        "John Rogers",
+        "Donghyun Kim",
+        "Hao Zhang"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Collaborative planning under operational constraints is essential for heterogeneous robot teams in large-scale missions. Unmanned Aerial Vehicles (UAVs) provide rapid area coverage but are limited by onboard energy, while Unmanned Ground Vehicles (UGVs) can serve as mobile recharging stations yet are constrained by road-network traversability. Effective collaboration must enforce operational constraints during execution while enabling parallel, coordinated actions. Masked Diffusion Models (MDMs) have shown promise through token unmasking but have two key limitations: entropy-guided scheduling assumes distributional alignment and reliance on d"
+    },
+    {
+      "title": "Contact Trajectory Prompting: In-Context Transfer of Contact-Rich Behaviors from a Single Demonstration",
+      "url": "http://arxiv.org/abs/2610.18848v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:58:08Z",
+      "authors": [
+        "Xian Nie",
+        "Yujie Zang",
+        "Yuhang Zheng",
+        "Yupeng Zheng",
+        "Songen Gu",
+        "Wendi Chen",
+        "Chuan Wen",
+        "Cewu Lu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "In-context robot learning enables robots to acquire new behaviors from demonstrations without test-time parameter updates. However, visual and kinematic specifications alone may not distinguish contact-rich behaviors that share similar motions but require different interaction intensities or patterns. We propose Contact Trajectory Prompting (CTP), a framework for one-shot transfer of contact-rich manipulation behaviors. CTP encodes motion and contact information from a single demonstration into an ordered contact trajectory prompt that captures their temporal evolution and specifies the desired physical interaction behavior. During execution,"
+    },
+    {
+      "title": "LIBERO-RIG: A Hardware-Setup Robustness Benchmark for Vision-Language-Action Models",
+      "url": "http://arxiv.org/abs/2610.18843v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:57:18Z",
+      "authors": [
+        "Andrea Yaoyun Cui",
+        "Hanyu Wang",
+        "Xinyi Wang",
+        "Bangzheng Li",
+        "Lin Zhang",
+        "Zhenggang Tang",
+        "Shyamal Buch",
+        "Dejia Xu"
+      ],
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Robot policies are expected to generalize across deployment environments, including variations in the robot itself: cameras are bumped and remounted, calibrations drift, controllers run at different rates, and end-effector pads wear down. We present LIBERO-RIG, a benchmark that perturbs only the robot's hardware and setup while holding every LIBERO task fixed. The benchmark spans eleven perturbation axes, including camera mounting and optics, camera-to-arm calibration, actuation gain, control rate, proprioceptive noise, base pose, table height, and gripper pads. Each axis has five severity levels, yielding 210 conditions across the four LIBER"
+    },
+    {
+      "title": "Who Improves the Robot? Toward Physical Recursive Self-Improvement",
+      "url": "http://arxiv.org/abs/2610.18842v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:57:04Z",
+      "authors": [
+        "Hai Zhou",
+        "Fan Yang",
+        "Zeyi Chen",
+        "Lejun Zhang",
+        "Chenyang Fu",
+        "Jianping Li",
+        "Jiayi Zhu",
+        "Xianyang Liu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Robots are increasingly autonomous in task execution, yet their improvement remains largely human-driven. This study investigates Physical Recursive Self-Improvement (Physical RSI), in which physical experience guides lasting updates to both a robot's capabilities and its improvement procedure, making subsequent improvement more effective across tasks. Physical RSI faces challenges from noisy observations, continuous dynamics, costly trials, and irreversible consequences. We present an L0-L5 framework that differentiates capability-level from meta-level updates and within-task from across-task gains, reserving L5 for independently verified re"
+    },
+    {
+      "title": "RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks",
+      "url": "http://arxiv.org/abs/2610.18835v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:55:14Z",
+      "authors": [
+        "Kaiyuan Chen",
+        "Shuangyu Xie",
+        "Uksang Yoo",
+        "Xinyue Zhu",
+        "Cael Magner",
+        "Alvin Zhu",
+        "Daehwa Kim",
+        "Eric Heiden"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "It is difficult to accurately model the physics of the interaction between a robot and the objects it manipulates, including contact mechanics, coupled contact dynamics, deformations, stiffness and friction. We present RoboSimStudio (RSS), an interactive toolkit that makes choices of solver, contact model, and physical parameters explicit and editable, allowing both humans and coding agents to iteratively refine simulations based on observed physical behavior. We implement RSS with the open Newton physics simulation system and describe experiments with human-guided real2sim using (1) visual evaluation, (2) force-feedback and (3) agentic Real2"
+    },
+    {
+      "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+      "url": "http://arxiv.org/abs/2610.18822v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:51:46Z",
+      "authors": [
+        "Ziheng Wang",
+        "Yanming Shao",
+        "Ting Mao",
+        "Kaihan Chen",
+        "Yiqun Wang",
+        "Xuanye Wu",
+        "Yao Mu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Egocentric human videos offer a scalable alternative to robot teleoperation for collecting dexterous manipulation data. However, two challenges limit their use as reliable training data: accurate hand-object interaction (HOI) reconstruction from monocular RGB and high-quality robot demonstrations, especially visual observations. We present EgoMatrix, an end-to-end data engine that converts monocular egocentric human videos into bimanual dexterous trajectories and paired robot observation videos, with the trajectories directly replayable on real robots. It reconstructs HOI with emphasis on relative geometry and contact rather than exact metric"
+    },
+    {
+      "title": "Read the Room Before Your Model Generates",
+      "url": "http://arxiv.org/abs/2610.18820v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:51:18Z",
+      "authors": [
+        "Muyao Kong",
+        "Zhihao Lin"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models (LLMs) generally rely on sampling temperature to regulate the amount of randomness in their outputs. Mainstream methods for selecting temperature typically involve fixed, heuristic global settings and context or token-level calibration, rather than a geometrically interpretable representation of the communicative scenario. In this work, we introduce a simple and interpretable temperature selection framework, the \\textbf{Scenario-Actor}, which adapts decoding to the inferred situational characteristics. Scenario-Actor extracts scenario-relevant structures from Transformer hidden states and determines the temperature from "
+    },
+    {
+      "title": "Back-Translation Still Matters: Leveraging Monolingual Data for Low-Resource Machine Translation with LLMs",
+      "url": "http://arxiv.org/abs/2610.18818v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:50:18Z",
+      "authors": [
+        "Divyanshu Bathla",
+        "Parag Singla",
+        "Jitin Singla"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Pre-trained Large Language Model (LLMs) are effective on many tasks in zero-shot and few-shot settings. For machine translation of low-resource languages, the obvious options are few-shot prompting and fine-tuning on a small parallel set. We ask: what if moderate amounts of low-resource monolingual data are also available? We argue that, rather than continued pretraining, a more effective use of this data is the pre-LLM era technique of back-translation (BT). The current fine-tuned LLM translates monolingual sentences in each language, and the resulting pairs train it in the reverse direction. Updates on the parallel set are interleaved for s"
+    },
+    {
+      "title": "SEAR: Self-Evolving Agentic Robotics",
+      "url": "http://arxiv.org/abs/2610.18792v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:40:20Z",
+      "authors": [
+        "Xinyi Wang",
+        "Bangzheng Li",
+        "Hanyu Wang",
+        "Lin Zhang",
+        "Andrea Yaoyun Cui",
+        "Zhenggang Tang",
+        "Shyamal Buch",
+        "Dejia Xu"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Frontier language-model agents can now improve robots on their own: they write control code, test it, and keep what works as skills and memories for the next task. We introduce SEAR (Self-Evolving Agentic Robotics), a framework and benchmark built around two questions. Is the agent really learning, or just trying more often? And does what it learns still help on new tasks, in a new simulator, and on a real robot? The framework runs an agent in three modes: it writes code that becomes the policy (code-as-policy), acts live in the control loop (agent-as-policy), or works as a researcher that fine-tunes a vision-language-action model (auto-resea"
+    },
+    {
+      "title": "EqC: Equilibrium Energy Control for Introspective Lifelong Robot Learning",
+      "url": "http://arxiv.org/abs/2610.18790v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:39:36Z",
+      "authors": [
+        "Haodong Yang",
+        "Runhan Huang",
+        "Bowen Zhang",
+        "Iofai Lei",
+        "Zunzhe Zhang",
+        "Xiangcheng Zhang",
+        "Shaoting Zhu",
+        "Linzhan Mou"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Long-term robot autonomy depends on more than effective action generation: a policy must recognize when its behavior is no longer sufficiently supported and use assistance to improve. We introduce Equilibrium Energy Control (EqC), a framework for introspective lifelong robot learning built around an explicit conditional energy landscape. EqC casts generative action refinement as equilibrium-seeking optimization, while the geometry of the refinement process reveals whether the generated behavior remains consistent with the learned landscape. This competence signal enables Energy-Gated DAgger, where persistent energy-consistency violations trig"
+    },
+    {
+      "title": "BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems",
+      "url": "http://arxiv.org/abs/2610.18780v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:34:34Z",
+      "authors": [
+        "Xiaoguang Guo",
+        "Yaohao Long",
+        "Chuxu Zhang"
+      ],
+      "domains": [
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Large language model multi-agent systems extend individual agents' capabilities through collaboration across specialized roles, tools, and workflows. Yet collaboration makes failures harder to diagnose: one agent may misinterpret a correct result while others carry the mistake forward. Failure attribution therefore seeks to identify the responsible agent and decisive error step. Recent methods trace dependencies, but knowing where information came from is not the same as knowing where it went wrong. We introduce BLADE (Blame Localization via Audited Dependency Evidence), a training-free framework that moves beyond tracing information to audit"
+    },
+    {
+      "title": "GreenWAM: A World Foundation Model for Robotics",
+      "url": "http://arxiv.org/abs/2610.18774v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:31:29Z",
+      "authors": [
+        "Gennady Sidorov",
+        "Valerii Kornilov",
+        "Denis Grankin",
+        "Polina Fedotova",
+        "Aleksey Postnikov"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "A robot needs a world model that predicts how its actions will change the scene and a policy that chooses those actions. Models are usually built and evaluated for only one of these roles, and every robot records its actions in its own format. We ask whether one robot world model can serve both roles across different bodies, and what makes this work. We present GreenWAM, a world foundation model for robotics, together with the recipe that produces it: (1) a shared anatomical action space that describes 20 robot families, from bimanual arms to dexterous humanoids, in common joint coordinates; (2) joint training on these families in visual, act"
+    },
+    {
+      "title": "Beyond the Verdict: Agentic Code Judging with Verifiable Feedback",
+      "url": "http://arxiv.org/abs/2610.18760v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:22:58Z",
+      "authors": [
+        "Zheye Deng",
+        "Sha Li",
+        "Changlong Yu",
+        "Xin Liu",
+        "Qin Lu",
+        "Priyanka Nigam",
+        "Yangqiu Song"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Test-time scaling for large language models (LLMs) can involve generating multiple candidate solutions for selection or revising an earlier attempt. To guide selection and revision, we need a verifier that can estimate candidate correctness and provide evidence of failure. In competitive programming, however, official judging systems provide authoritative verdicts under finite submission budgets, without revealing failure explanations or failing inputs. To provide informative feedback without consuming official submissions, we formulate a task in which a model judges and diagnoses a candidate program using only the problem statement and sourc"
+    },
+    {
+      "title": "SolBehave: Evaluating the Behavioural Correctness of LLM-Generated Smart Contracts",
+      "url": "http://arxiv.org/abs/2610.18745v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:12:59Z",
+      "authors": [
+        "Giovanni Pio Delvecchio",
+        "Stefano Fantazzini",
+        "Giacomo Frisoni",
+        "Gianluca Moro",
+        "Lorenzo Bacchiani",
+        "Mario Bravetti",
+        "Thomas Troels Hildebrandt"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models increasingly generate Solidity smart contracts that, once deployed, can never be patched, making a single latent fault permanent and exploitable. Yet current evaluations mostly ask only whether generated code compiles. We introduce SolBehave, a benchmark for evaluating the correctness of model-generated contracts at scale, moving beyond ad hoc unit tests. Across 250 real, reproducible Ethereum contracts, we apply three complementary tests of behavioural fidelity: differential fuzzing, historical-transaction replay, and, as our core contribution, synthetic-transaction replay guided by a Dynamic Condition Response (DCR) gr"
+    },
+    {
+      "title": "AIRRI: Towards a Human-Readable, Machine-Resistant Reading Interface",
+      "url": "http://arxiv.org/abs/2610.18724v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T17:04:33Z",
+      "authors": [
+        "Emory Salaun",
+        "Syed Ayon",
+        "Kaleel Mahmood",
+        "Shaun Wallace"
+      ],
+      "domains": [
+        "IA & LLM",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "The rapid advancement of image-to-text extraction systems and large language models (LLMs) poses new challenges for educational assessment by making assignment materials easy to transcribe and solve with minimal human effort. To address this problem, we present AIRRI (Artificial Intelligence Resilient Reading Interface), a framework for generating machine-resistant educational content, a dataset of higher-education assignments for evaluation, and an initial evaluation of the human readability of AIRRI machine-resistant text designs. AIRRI employs two categories of machine-resistance techniques. First, AIRRI applies image transformations inclu"
+    },
+    {
+      "title": "Steertuning Policies from a Few Human Videos",
+      "url": "http://arxiv.org/abs/2610.18711v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:55:32Z",
+      "authors": [
+        "Billy Yan",
+        "Isaac Tu",
+        "Kelly Lee",
+        "Blake Chang",
+        "Kenny Ma",
+        "Kanad Patel",
+        "Dhawal Kabra",
+        "Neer Patel"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Current recipes for robot learning require massive amounts of robot demonstrations to obtain robust and adaptive policies. In this work, we introduce Steertuning, a system that enables robots to learn new tasks in new environments from 5 human demonstrations in under 5 Steertuning consists of two parts. (1) We pretrain a 400M-parameter diffusion policy on our egocentric human dataset, which consists of 100 hours of densely annotated random interactions. This pretraining makes Steertuning robust to background differences and enables spatial and object generalization when deployed on new tasks. (2) Given 5 demonstrations of a new task, we finet"
+    },
+    {
+      "title": "RoboFQE: Rollout-Free Evaluation of Visual Robot Policies from Offline Trajectories",
+      "url": "http://arxiv.org/abs/2610.18699v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:48:25Z",
+      "authors": [
+        "Yunfu Deng",
+        "Sangwoo Shin",
+        "Brahma S. Pavse",
+        "Josiah P. Hanna"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Evaluating robot policies before deployment typically requires producing new trajectories through real-world execution, simulators, or learned world models. These rollout-based approaches impose infrastructure requirements; simulator and world-model evaluators additionally face prediction errors that can compound over the evaluation horizon. In this paper, we study off-policy evaluation as an alternative to rollout-based robot-policy evaluation methods. Specifically, we introduce RoboFQE, an evaluator that estimates the discounted expected return of a target policy from offline robot trajectories without estimating a behavior-policy density, "
+    },
+    {
+      "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+      "url": "http://arxiv.org/abs/2610.18683v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:39:38Z",
+      "authors": [
+        "Bowen Ding",
+        "Mingda Wan",
+        "Yuhan Chen",
+        "Jiyao Yuan",
+        "Qi Zhu",
+        "Futing Wang",
+        "Heyuan Deng",
+        "Fei Mi"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally invalid actions in preferred trajectories and ignores the downstream cascading influence of early pivotal deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that levera"
+    },
+    {
+      "title": "From Relation-Specific Heads to Shared Interventions: Contextual Entrainment in Language Models",
+      "url": "http://arxiv.org/abs/2610.18674v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:33:02Z",
+      "authors": [
+        "Jinghan Zheng",
+        "Jiajun Shi"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models rely on prompt context to perform in-context learning, follow formats, and adapt to local evidence. This ability, however, also raises a robustness concern: models may reuse irrelevant tokens from earlier context when answering a later query. Prior work identifies this behavior as contextual entrainment and finds attention heads whose ablation reduces it, arguing that these heads are largely task- or relation-specific. But are the mechanisms behind contextual entrainment truly isolated by relation, or do relation-conditioned searches recover reusable components shared across relations? Using factual-distractor relation-c"
+    },
+    {
+      "title": "Perception Beyond the Visible: Incompleteness-Aware Scene Understanding for Robot Autonomy",
+      "url": "http://arxiv.org/abs/2610.18670v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:29:25Z",
+      "authors": [
+        "Rohit Mohan"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Reliable robot autonomy requires reasoning about the world from partial and noisy observations. However, many perception systems model only visible scene regions, rely on fixed semantic categories, and assume reliable sensor measurements. These assumptions break under occlusion, novel object encounters, and sensor degradation. In this paper, I present a research vision for incompleteness-aware scene understanding. I organize this vision around three fundamental challenges: incomplete evidence, incomplete knowledge, and incomplete sensor reliability. I discuss my research contributions toward addressing these challenges through amodal percepti"
+    },
+    {
+      "title": "Known-Voice Cloning and the Limits of Personality Transfer for Character Design",
+      "url": "http://arxiv.org/abs/2610.18669v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:27:44Z",
+      "authors": [
+        "Johanna Magdalena Kuch",
+        "Maud van Lier",
+        "Daksitha Senel Withanage Don",
+        "Patrick Gebhard",
+        "Tanja Schneeberger",
+        "Elisabeth André"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Recent advances in zero-shot voice cloning systems make it possible to reproduce a recognizable voice from a short recording and attach it to arbitrary virtual characters. Prior work suggests that familiar vocal identity can carry over associated personality impressions to new targets such as robots or virtual characters. However, these works have mainly examined familiarity and personalization effects rather than directly testing whether a cloned familiar voice systematically transfers personality impressions to an embodied virtual character. Such transference raises the concern that cloned voices could be used to manipulate people into enga"
+    },
+    {
+      "title": "ForkCast: Predictive Recovery for Vision-Language-Action Policies via Counterfactual Futures",
+      "url": "http://arxiv.org/abs/2610.18650v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:13:36Z",
+      "authors": [
+        "Chenru Wen",
+        "Huajian Zeng",
+        "Haokai Ding",
+        "Jian Kang",
+        "Anqing Duan",
+        "Dawei Zhou",
+        "Dezhen Song",
+        "Xingxing Zuo"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Vision-language-action (VLA) policies perform manipulation tasks using camera images and language instructions, but object slip or visual occlusion can disrupt execution. Recovery is typically learned during policy training or delegated to a monitor that triggers a scripted repair after detecting a failure. We introduce ForkCast, a predictive recovery framework that compares counterfactual futures to determine whether and how to intervene in a frozen VLA policy. At each decision point, ForkCast evaluates three candidates: executing the policy's nominal action chunk (Commit), adjusting the camera viewpoint (Reobserve), and replanning the arm t"
+    },
+    {
+      "title": "Grid or Nodes? Probing Object Memory in World Models Under Partial Observability",
+      "url": "http://arxiv.org/abs/2610.18637v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:09:16Z",
+      "authors": [
+        "Justin McMillen",
+        "Yasin Yilmaz"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "A robot's world model must remember objects that leave the camera's view. FloWM, a learned world model, keeps them in a spatial grid of features that it moves with five built-in velocities. A node memory instead keeps each object's position and velocity as numbers. We compare them in FloWM's own block world, with an oracle-fed Kalman tracker as the node memory. How the grid is read changes its score: a single-cell probe finds 66% of out-of-view blocks, while FloWM's own probe 89%. FloWM also scores 8 points higher in view although no frame is shown, which we attribute to its write-back of its own predictions. Out of view, the tracker reaches "
+    },
+    {
+      "title": "DTScribe: Generating Models for Digital Twin Reporting using Local Large Language Models",
+      "url": "http://arxiv.org/abs/2610.18635v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T16:07:43Z",
+      "authors": [
+        "Kérian Fiter",
+        "Angelica Portocarrero",
+        "Bentley Oakes"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "The development of a digital twin brings together many stakeholders and technical components. We have previously investigated the reporting of the conceptual architecture for these digital twins as an artifact for discussion. However, we find that the activity of modeling the digital twin for visualization and consensus-building can be quite tedious and time-consuming. In this article, we explore the automation of model generation using large language models, targeting the model required for digital twin reporting. Our approach is designed to ingest digital twin documents and output both the conceptual architecture visualization and a reporti"
+    },
+    {
+      "title": "Jev-ToM: Evaluating Theory of Mind in Typed Decision Models",
+      "url": "http://arxiv.org/abs/2610.18610v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:59:00Z",
+      "authors": [
+        "Kawai Chung",
+        "Chunkit Chan",
+        "Yuxuan Liu",
+        "Yauwai Yim",
+        "Xi Yang",
+        "Wenbin Hu",
+        "Huihao Jing",
+        "Chiu Yeung Tang"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Dialogue and collaborative assistants repeatedly judge what a partner knows, believes, or intends. Typed decision models offer a potential alternative to generative large language models for bounded Theory of Mind (ToM) selection. We present Jev-ToM, comparing five typed decision models and seven generative baselines on 11,117 English text questions from nine ToM benchmarks across six capability groups. TypeSafe Jev reaches 73.2% source-balanced accuracy including native controls and ranks first or second across all six capabilities, leading beliefs, goals/desires/intentions, and emotions. Other typed models show distinct strengths across tas"
+    },
+    {
+      "title": "Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through Graph Alignment across Sampled Traces",
+      "url": "http://arxiv.org/abs/2610.18606v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:58:02Z",
+      "authors": [
+        "Haotian Liu",
+        "Yingjian Chen",
+        "Xiaohang Xu",
+        "Lang Huang",
+        "Yusuke Iwasawa",
+        "Yutaka Matsuo",
+        "Irene Li"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models increasingly tackle tasks that require multi-step reasoning, where errors in intermediate claims can affect the final answer. Self-consistency (SC) improves reasoning by voting over sampled final answers, but its vote leaves intermediate disagreements unresolved. To address this problem, we introduce DDRG (Disagreement-Driven Verification Guided by Reasoning Graphs), a framework for selective correction from a frozen bank of reasoning traces. Our insight is that graph alignment can expose claim-level disagreements and provide correction evidence without expanding the sampled trace bank. DDRG builds source-grounded claim "
+    },
+    {
+      "title": "LLM2R: From Large Language Models to 3D Reassemblers",
+      "url": "http://arxiv.org/abs/2610.18604v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:57:41Z",
+      "authors": [
+        "Zhouhan Zhong",
+        "Qiuhong Shen",
+        "Xingyi Yang",
+        "Jinyi Xu",
+        "Xinchao Wang"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "3D part assembly aims to reconstruct a complete shape from a set of unassembled parts by predicting a rigid SE(3) transformation for each part. Because the placement of a part is rarely determined by its own geometry, the task demands reasoning over the entire part set, and existing methods, which rely on pairwise relations or iterative generation and verification, scale poorly to objects with many parts. We present LLM2R, which casts part assembly as sequence modeling with a pretrained decoder-only large language model (LLM): a Point-BERT encoder and a Q-Former compress each part into a block of geometric tokens, the blocks of all parts are "
+    },
+    {
+      "title": "Auditing Future-Memory Use in Point-in-Time Language Agents",
+      "url": "http://arxiv.org/abs/2610.18602v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:56:58Z",
+      "authors": [
+        "Rongtian Ye"
+      ],
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Point-in-time (PIT) agents can recall post-cutoff facts even when their external evidence respects a historical cutoff. We examine whether this access predicts evidence gathering in 48 historical company-comparison tasks. Independent closed-book revenue probes identify the better-remembered company for each model on tasks with unequal recall, fixing the predicted direction before agent runs. We then compare paired runs with real or anonymized company identities while keeping external evidence PIT-valid. Both Qwen and DeepSeek recalled future facts, but neither supported the prespecified shift toward the better-remembered company. Qwen's four "
+    },
+    {
+      "title": "ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models",
+      "url": "http://arxiv.org/abs/2610.18596v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:53:26Z",
+      "authors": [
+        "Changyeon Kim",
+        "Kimin Lee",
+        "Yashraj Narang",
+        "Yijie Guo"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Reinforcement learning (RL) post-training improves robot foundation models (RFMs) beyond their demonstrations, but real-world deployment demands more: learning new tasks efficiently while retaining previously acquired behaviors. Existing continual RL methods on top of VLAs mitigate forgetting but rely on on-policy updates with limited forward transfer, whereas off-policy methods improve single-task sample efficiency without addressing learner persistence across tasks. We propose ACCRUE, a continual off-policy RL framework that carries lightweight actor and critic networks across tasks, allowing each stage to reuse behavioral and value knowled"
+    },
+    {
+      "title": "The Many Morals of AI: The cautionary bias of North American news narratives in global perspective",
+      "url": "http://arxiv.org/abs/2610.18573v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:40:19Z",
+      "authors": [
+        "Andrew Piper",
+        "Edie Pearman"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "The stories told about artificial intelligence (AI) play a central role in shaping public understanding, policy debates, and expectations about technological change. News media are especially influential in this process. Using a cross-regional corpus of 12,924 English-language news articles about AI published since 2022, we examine how storytelling about AI varies across media systems in four regions: North America, China, India, and the Middle East. Leveraging large language models, we extract the implicit narrative lessons conveyed by each article---commonly known as story morals---capturing value-laden interpretations that extend beyond th"
+    },
+    {
+      "title": "LLM Agents for Automated Post-Training via Structured Recipe Optimization",
+      "url": "http://arxiv.org/abs/2610.18572v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:39:34Z",
+      "authors": [
+        "Ruohong Liu",
+        "Bohan Tang",
+        "Lekang Jiang",
+        "Jack Umenberger",
+        "Yiwen Guo"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Automated post-training transforms pre-trained large language models (LLMs) into models capable of handling diverse domains by automatically constructing and optimizing a recipe of coupled decisions over data sources, data processing, cross-domain composition, and training configuration under a limited experimental budget. Existing automation either searches predefined recipe spaces that enable systematic optimization but remain fixed rather than adapting their available choices to the target tasks, or uses open-ended agents that discover task-specific choices but leave them implicit in trial-level edits, limiting their systematic reuse and r"
+    },
+    {
+      "title": "WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction",
+      "url": "http://arxiv.org/abs/2610.18568v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:37:50Z",
+      "authors": [
+        "Haomin Wang",
+        "Anqiong Ji",
+        "Ke Wang",
+        "Zhongshan Liu",
+        "Ru Ying",
+        "Ran Zheng",
+        "Zhipeng Zhang"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Vision-language-action (VLA) policies excel at generalist robotic manipulation but generate actions without explicitly modeling their environmental consequences. World action models (WAMs) incorporate future prediction, yet most rely on costly video generation, while latent alternatives either use predicted futures only as auxiliary targets or infer latent actions from suboptimal visual transitions through costly large-scale video pretraining. We introduce WAVE-0 (World-model-Augmented VLA Execution), a framework that bridges VLAs and WAMs through a lightweight latent world model. By connecting the semantic understanding of pretrained VLAs wi"
+    },
+    {
+      "title": "Configuring RAG Systems: What Breaks, Where Originates, and How to Fix",
+      "url": "http://arxiv.org/abs/2610.18567v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:37:27Z",
+      "authors": [
+        "Liangyu Chen",
+        "Youpeng Ma",
+        "Yulong Ye",
+        "Zezhen Xiang",
+        "Tao Chen"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Retrieval-Augmented Generation (RAG) has emerged as a dominant paradigm for improving Large Language Model (LLM) by intertwining it with other components, such as a vector/graph database. Therefore, the resulting RAG systems are often highly configurable, under which a non-trivial amount of failures are related to the configurations. However, there remains a lack of systematic understanding regarding the configuration issues for RAG systems. To bridge this gap, in this paper, we conduct the first large-scale empirical study of 654 real-world configuration issues collected from 10 diverse RAG systems. Drawing on this, we provide a complete cat"
+    },
+    {
+      "title": "Rethinking Quality in Large Language Model Routing: Security-Conditioned Model-and-Budget Selection",
+      "url": "http://arxiv.org/abs/2610.18566v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:36:57Z",
+      "authors": [
+        "Yichi Zhang",
+        "Zhenxiang Huang",
+        "Yuyang Zhang",
+        "Yuchen Yang"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language model (LLM) routers reduce serving cost by choosing which model to call and how many output tokens to grant it for each query. Existing routers rank model-budget actions using a single quality metric. This does not work for mixed workloads. For ordinary queries, a good answer is correct and useful (utility); for security-sensitive queries, a good answer refuses harmful requests or resists malicious instructions (security). These two objectives prefer different models and budgets. We propose SCRouter, a router that learns when to prioritize security and how to allocate the token budget. For each model-budget pair, it estimates t"
+    },
+    {
+      "title": "From Mind Mapping to Dream Interpretation: Understanding Muslim Users' Engagement with GenAI Tools in Religious Context",
+      "url": "http://arxiv.org/abs/2610.18549v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:25:56Z",
+      "authors": [
+        "Ishrat Jahan",
+        "Soomanib Kamruzzaman",
+        "K M Nazib Hossen",
+        "Novia Nurain",
+        "A. B. M. Alim Al Islam"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Generative Artificial Intelligence (GenAI) tools are increasingly integrated into everyday life, including sensitive domains such as religion. Prior works examined alignment with religious values and discussed the potential risks. However, to gain empirical insights into the adoption of these tools in users' religious lives, in this study, we conducted an online survey with 178 Muslim participants in Bangladesh and collected 726 prompts on religious use cases, along with open-ended responses about using these tools in religious contexts. Using reflexive thematic analysis, we identify three key roles these tools play in users' religious lives:"
+    },
+    {
+      "title": "APTree: Extended Behavior Trees for Adaptive and Scalable Automated Robotic Task Planning in Construction",
+      "url": "http://arxiv.org/abs/2610.18523v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:12:13Z",
+      "authors": [
+        "Shermin Sherkat",
+        "Thomas Wortmann",
+        "Andreas Wortmann"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Task planning for robots in off-site construction prefabrication is primarily manual, leading to planning inefficiencies and reluctance to adopt robotic solutions. Existing approaches provide limited support for scalable, modular automated task planning and localized runtime replanning. This paper proposes APTree, a model-driven framework that integrates automated task planning with modular task execution using behavior trees as the execution model. APTree repeatedly applies and coordinates heterogeneous symbolic planners to automatically generate and compose modular task plans at runtime. To support this approach, we develop a domain-specifi"
+    },
+    {
+      "title": "A Global View of How LLMs Value Human Time",
+      "url": "http://arxiv.org/abs/2610.18515v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T15:08:38Z",
+      "authors": [
+        "Yifan He",
+        "Sofie Goethals",
+        "Manon Reusens",
+        "David Martens"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models (LLMs) increasingly act as personal assistants; however, little is known about how they capture national-level preferences on a global scale. Given that \"time\" is a universal and representative concept, we examine LLMs' time preferences by varying only users' country and measuring the compensation LLMs deem appropriate for a 60-minute appointment delay. We then compare LLMs' responses with GDP per capita on Purchasing Power Parity (GDP_PPP), Mean Income, and a literature-based index (Patience Score). Our results across 193 countries and 5 LLMs demonstrate that people's time across the world is evaluated in noticeably dif"
+    },
+    {
+      "title": "EgoOmniWorld: Unifying Egocentric Understanding via Ego-Action-World Interactions",
+      "url": "http://arxiv.org/abs/2610.18499v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:53:16Z",
+      "authors": [
+        "Songruo Chen",
+        "Yuqian Fu",
+        "Yu Li",
+        "Mingkang Dong",
+        "Sifan Zhou",
+        "Bin Ren",
+        "Xu Zheng",
+        "Tianwen Qian"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Egocentric video understanding spans diverse capabilities, modalities, and evaluation formats, yet these are often studied in isolation despite their tight coupling in real-world interaction. We propose the Ego-Action-World interaction loop as a unifying principle: the wearer perceives the world, forms goals, acts, changes the world, and uses feedback to guide subsequent behavior. Based on this view, we introduce EgoOmniWorld, a benchmark organized around four complementary interaction structures: Node captures ego, action, and world states; Edge captures directed relations among them; Chain captures linked dependencies; and Loop captures fee"
+    },
+    {
+      "title": "RTISSLAM: In-air Imaging Sonar SLAM using a Robust Pose Graph and Occupancy Grid Mapping",
+      "url": "http://arxiv.org/abs/2610.18479v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:40:38Z",
+      "authors": [
+        "Jan Steckel"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Sonar was one of the first sensors with which mobile robots built maps, and in-air sonar keeps working where cameras and lidar fail, in darkness, smoke, dust and next to glass. Classical sonar SLAM, however, relied on geometric features or occupancy grids built from sparse range readings, and both struggle with the specular reflections that dominate indoor sonar. In this letter, we introduce RTISSLAM, a novel sonar-only SLAM system for an embedded 3D imaging sonar, which combines the robust pose graph of BatSLAM 2.0 as back-end with an occupancy grid as map. Energyscapes from delay-multiply-and-sum beamforming with a range-wise CFAR serve as "
+    },
+    {
+      "title": "Thinker-WM: A Unified World Model with Shared Multimodal Representations for Embodied Intelligence",
+      "url": "http://arxiv.org/abs/2610.18447v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:18:47Z",
+      "authors": [
+        "Thinker Team",
+        "Peng Gao",
+        "Jichao Jiao",
+        "Chen Liao",
+        "Daqin Luo",
+        "Yiming Ma",
+        "Baiyu Pan",
+        "Hailin Shi"
+      ],
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "World models have emerged as a promising paradigm for embodied AI, yet existing systems often remain fragmented in the modalities they model and the functions they support. In particular, visual dynamics, geometric structure, and executable action are commonly coupled through separate interfaces or downstream modules rather than being jointly represented and evolved within a shared dynamics model. In this work, we present Thinker-WM, a unified multimodal world model that jointly models and generates RGB, metric depth, and robot action through a shared intermediate Unified Dynamics Transformer with modality-specific encoders and decoders. The "
+    },
+    {
+      "title": "PACT: Posture-Aligned Co-Design Technique for Hand Configuration and Retargeting in Multi-Finger Imitation Learning",
+      "url": "http://arxiv.org/abs/2610.18443v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:16:45Z",
+      "authors": [
+        "Koyo Sasazaki",
+        "Satoshi Funabashi",
+        "Pranav Ponnivalavan",
+        "Alexander Schmitz",
+        "Tetsuya Ogata",
+        "Shigeki Sugano"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "The fidelity of teleoperated demonstrations used for imitation learning is determined by how faithfully a robot hand can replicate the operator's posture. The posture retargeting law that the robot will execute is typically selected only once the hardware has been finalized, and conventional hand designs often neglect human-like grasping postures. We introduce PACT, an optimization based on human grasping postures that jointly optimizes the mechanical parameters of a 17-servo robot hand (link lengths, joint offsets, mounting angles, and base placements) and its nonlinear posture retargeter (a linear human-to-robot joint map, per-joint posture"
+    },
+    {
+      "title": "STAMP as a topology-aware molecular language for fragment-level learning and editing",
+      "url": "http://arxiv.org/abs/2610.18438v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:13:38Z",
+      "authors": [
+        "Yuxuan Ren",
+        "Jiatong Li",
+        "Ziqiao Meng",
+        "Yatao Bian"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Molecular fragments provide chemically meaningful units, but existing molecular languages rarely make their locations and connections explicit for editing. Here we introduce STAMP (Sequential Tree Attachment-based Motif-Preserving representation), a topology-aware molecular language that connects fragment-level representation learning with precise structural editing. STAMP separately encodes motif identity, attachment sites and tree topology, making fragments reusable across contexts and subtrees directly accessible. Learned representations capture motif similarity and recurring transformations, and lower activity-cliff prediction error on 23"
+    },
+    {
+      "title": "How Well Do LLMs Perform in Peer Review? Evidence from Finance and Accounting",
+      "url": "http://arxiv.org/abs/2610.18435v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:11:35Z",
+      "authors": [
+        "Hai Lu",
+        "Yichen Luo",
+        "Luping Yu"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Referees increasingly use large language models (LLMs), while finance and accounting journals disagree about whether to allow it. We ask which part of a referee's job the models can do. GPT-4o, whose training data end before the 2024 conference season, referees the papers presented at the 2024 AFA and NBER finance meetings, and we compare its verdicts with publication in the top-three finance journals over the next two years. Papers the model scores one standard deviation higher are 44\\% more likely to be published, net of author reputation. The result is not driven by look-ahead bias, as the model does not recall the outcomes. The informatio"
+    },
+    {
+      "title": "FedGraph: Defending Federated Large Language Model Fine-Tuning Against Backdoor Attacks via Graph-Based Aggregation",
+      "url": "http://arxiv.org/abs/2610.18430v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:08:49Z",
+      "authors": [
+        "Xi Chen",
+        "Chunyi Zhou",
+        "Rui Zeng",
+        "Xiaogang Xu",
+        "Zhe Liu",
+        "Shouling Ji"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Federated fine-tuning of large language models (LLMs) allows multiple clients to collaboratively adapt models without sharing raw data, offering strong privacy benefits. However, this setting is highly vulnerable to backdoor attacks, in which malicious clients manipulate their updates to induce targeted behaviors while maintaining normal performance on benign inputs. In this work, we make a key observation specific to federated LLM fine-tuning: malicious clients tend to exhibit strong consistency in their model updates, whereas benign clients produce more diverse and dispersed updates. This structural difference is not well captured by existi"
+    },
+    {
+      "title": "CALM: Decentralized Control of Cooperative Aerial Manipulation with Multi-Agent Reinforcement Learning",
+      "url": "http://arxiv.org/abs/2610.18425v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T14:03:36Z",
+      "authors": [
+        "Jiaxi Huo",
+        "Petre Ricioppo",
+        "Fausto Francesco Lizzio"
+      ],
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Cooperative aerial manipulation is difficult under wind, payload motion, and noisy goal broadcasts because multiple Unmanned Aerial Vehicles (UAVs) are coupled through a shared payload. We present CALM (Cooperative Aerial Learned Manipulation), a decentralized controller for aerial manipulators carrying a basket while tracking a moving ground robot. CALM combines a parameter-shared Multi-Agent Reinforcement Learning (MARL) policy, trained using Multi-Agent Proximal Policy Optimization (MAPPO), with goal estimation, per-UAV Extended State Observers (ESOs), basket-mass estimation, and anticipatory formation-yaw feedforward. The anticipatory for"
+    },
+    {
+      "title": "Do Factuality Methods Make LLMs More Factual? Reproducibility and Fair Comparison",
+      "url": "http://arxiv.org/abs/2610.18415v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T13:54:51Z",
+      "authors": [
+        "Pratuat Amatya",
+        "Vinay Setty",
+        "V Venktesh",
+        "Avishek Anand"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large Language Models (LLMs) are aligned to human preferences, after pre-training and supervised fine-tuning steps. However, standard RL alignment steps such as RLHF do not focus on factuality of LLMs, hence they may generate non-factual information, which could result in unintended consequences. In response, a number of factuality alignment approaches have been proposed in the literature which claim to improve factuality of LLMs on their own benchmarks. However, these methods have not been reproduced independently and are also not comparable since each uses a different base model, training data, evaluation set, judge, and metric. In this pap"
+    },
+    {
+      "title": "PRISM: Calibrating Black-Box Judges with Counterfactual Probes",
+      "url": "http://arxiv.org/abs/2610.18389v1",
+      "source": "arXiv",
+      "type": "Preprint",
+      "published": "2026-10-13T13:39:50Z",
+      "authors": [
+        "Kakei Yamamoto",
+        "So Kuroki"
+      ],
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Large language models are increasingly used as judges to reduce reliance on costly human evaluation, yet their scores can systematically disagree with human judgments. We ask whether responses to an explicitly imposed evaluative bias can help correct a judge's implicit scoring biases. We introduce PRISM (Probe-based Residual Inference of Scoring Misalignment), which holds the evaluated content fixed and measures score changes when attributes are emphasized or de-emphasized. A local sensitivity model motivates representing these responses as a surrogate Jacobian. Ridge regression on human labels learns a correction to the baseline score. The r"
+    },
+    {
       "title": "Participer à l'IA autrement : retrouver prise sur un objet fuyant par l'enquête collective",
       "url": "https://hal.science/hal-05796482v1",
       "source": "HAL",
@@ -723,6 +1822,19 @@
         "Intelligence artificielle"
       ],
       "summary": "Les débats sur l'intelligence artificielle sont largement structurés par des récits qui tendent à réifier les technologies, à invisibiliser les transformations concrètes du travail et à cantonner la participation à des dispositifs éloignés des situations réelles. En mobilisant les travaux sur l'économie de la promesse et la notion d'« objet fuyant » d'Yrjö Engeström, cet article analyse trois formes d’« éclipse » – technique, sociale et participative – qui façonnent les développements de l'IA. Il présente ensuite les enseignements d'une enquête collective menée dans le cadre du projet international Shaping AI, réunissant une pluralité de prat"
+    },
+    {
+      "title": "ORBICOM 2025. COMMUNICATION, INTELLIGENCE ARTIFICIELLE, REMEDIATION, ETHIQUE ET INCLUSION (CIAREI), vol.2",
+      "url": "https://hal.science/hal-05798192v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-13T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": ""
     },
     {
       "title": "Quand le génie des procédés s’inscrit dans le développement d’une future filière e-biocarburants pour la décarbonation du transport aérien et maritime",
@@ -1876,6 +2988,24 @@
       "summary": "Learning from Demonstrations (LfD) enables robots to learn object manipulation directly from human demonstrations. In contrast to resource-intensive and labor-intensive teleoperation, egocentric demonstrations are easy to collect, enabling scalable data collection. Manipulated objects are often partially occluded in everyday environments, yet prior egocentric demonstration-based methods that require no robots or specialized teaching devices do not explicitly address occlusions. To fill this gap, we propose EgoReveal, a framework that learns viewpoint-repositioning together with manipulation actions from egocentric human demonstrations to repo"
     },
     {
+      "title": "Coenseigner à l’école primaire : étude de pratiques inclusives entre professeurs des écoles et enseignants spécialisés des Rased",
+      "url": "https://hal.science/hal-05793845v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-09T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [
+        "Coenseignement",
+        "Accessibilité didactique",
+        "Éducation inclusive",
+        "Rased",
+        "Enseignement primaire"
+      ],
+      "summary": "Cette communication présente les principaux résultats d’une recherche doctorale consacrée aux pratiques de coenseignement entre professeurs des écoles et enseignants spécialisés des réseaux d’aides spécialisées aux élèves en difficulté (Rased), dans une perspective d’éducation inclusive. Elle examine comment les articulations entre système didactique principal et système didactique auxiliaire, sur les plans topogénétique, mésogénétique et temporel, contribuent à produire des conditions favorables ou des obstacles à l’accessibilité didactique. La recherche s’appuie sur une méthodologie mixte associant un questionnaire (n = 193), des entretiens"
+    },
+    {
       "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
       "url": "http://arxiv.org/abs/2610.12470v1",
       "source": "arXiv",
@@ -3009,6 +4139,23 @@
         "Intelligence artificielle"
       ],
       "summary": ""
+    },
+    {
+      "title": "Le Trouble Neurologique Fonctionnel, Volume 1 : Revue non systématique de la littérature scientifique",
+      "url": "https://hal.science/hal-05705251v2",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-08T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "TNF",
+        "Trouble neurologique fonctionnel",
+        "FND",
+        "Functional neurological disease"
+      ],
+      "summary": "Ce document a pour but de rassembler les informations sur le TNF, une maladie cérébrale trop largement méconnue, et surtout stigmatisée en raison de sa physiopathologie particulière. Les objectifs sont multiples : apporter les connaissances nécessaires à l'amélioration de l'accompagnement des patients ; sensibiliser sur le handicap lié à cette maladie et déstigmatiser la maladie pour soulager les patients du regard péjoratif de l'ensemble de la société sur leur condition."
     },
     {
       "title": "RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input",
@@ -4213,6 +5360,43 @@
       "summary": "Research in data visualization of artificial intelligence (AI) models has historically focused on enhancing trust through visual explanations of AI. The trustworthiness line of work was built at least partially on an assumption that humans were critical users unlikely to adopt AI technology. It is increasingly clear that human trust levels in AI span, in fact, a wide range from critical to over-reliant. There is an urgent need to support both trust and healthy skepticism in AI solutions. We argue that it is healthy for humans to adopt a skeptical view both on the results of AI models and on the use of such AI models. We share our thoughts on "
     },
     {
+      "title": "S'inventer parents. Ce que le handicap nous dit de la parentalité",
+      "url": "https://hal.science/hal-05799586v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-07T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Famille",
+        "Parents",
+        "Enfant",
+        "Ordinaire",
+        "Polyhandicap",
+        "Éducation",
+        "Parentalité",
+        "Handicap"
+      ],
+      "summary": "« Être parent, c’est avoir un enfant et s’en occuper. Cela paraît naturel, évident. Mais l’expérience des parents d’enfants polyhandicapés nous invite à interroger cette évidence et à explorer cette réalité. En effet, elle fait passer à l’avant-plan les relations de soin qui se nouent entre le parent et l’enfant, et dont celui-ci dépend pour vivre et grandir. Elle en rend ainsi visibles les multiples facettes et questionne l’idée que l’on pourrait être parent en dehors de ces relations. » À travers les récits de parents d’enfants polyhandicapés qui ont besoin d’un accompagnement tout au long de leur vie, l'auteur explore la parentalité comme "
+    },
+    {
+      "title": "Influence of an occupational soft-back exoskeleton on lumbar loads and neuromuscular stress during a simulated manual order picking task",
+      "url": "https://hal.univ-lorraine.fr/hal-05795125v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-07T00:00:00Z",
+      "domains": [
+        "Robotique d’assistance"
+      ],
+      "keywords": [
+        "Musculoskeletal modeling",
+        "Biomechanics",
+        "Ergonomics Practitioner"
+      ],
+      "summary": "Soft-back exoskeletons are known to reduce back muscle activity during lifting tasks, especially in laboratory settings. However, limited research exists concerning the impact of back-support exoskeletons on lumbar loads in more complex workplace tasks. This study aimed to assess the effects of the CORFOR ® soft-back exoskeleton on lumbar loads, trunk muscle activity and perceived exertion during a simulated manual order picking task while using stoop or squat techniques. Results showed a significant reduction in lumbar loads at the L5-S1 joint across most phases of the task (p < 0.05), as well as in erector spinae muscle activity with reduct"
+    },
+    {
       "title": "QF3: Fast Flow RL with Filtered Q-Gradients",
       "url": "http://arxiv.org/abs/2610.08789v1",
       "source": "arXiv",
@@ -4470,1207 +5654,6 @@
       ],
       "keywords": [],
       "summary": "When learning probabilistic policies from human demonstrations, data-efficient learning and fast adaptations to new scenarios are key requirements. One popular way to achieve intuitive and reliable adaptations is through non-parametric, typically kernel-based, methods. However, existing solutions either fail to account for the geometry of manifolds common in robotics, limiting data efficiency, or, when geometry-aware, provide unreliable uncertainty estimates or require retraining to adapt. We propose a non-parametric approach leveraging geometric priors in scenarios of data scarcity and heteroscedastic uncertainties for probabilistic modeling"
-    },
-    {
-      "title": "HygieneRoboBench: Benchmarking Hygiene-Aware Planning for Household Robots",
-      "url": "http://arxiv.org/abs/2610.08642v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:33:44Z",
-      "authors": [
-        "Yurun Chen",
-        "Josh Qixuan Sun",
-        "Jason Qin",
-        "Chengtai Li",
-        "Tianyi Wang",
-        "Mark Crowley",
-        "Wentao Zhu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Contact with contaminated objects can spread hazards through a household robot's grippers, tools, and shared surfaces, while new contacts can make an existing plan unsafe. Existing benchmarks do not jointly assess how planners identify hygiene risks from contact history and plan safe continuations after new contact events. Planners must do so within time and resource limits while respecting user priorities. We introduce HygieneRoboBench, with 624 instances across 134 task families, to evaluate safe resolution of household tasks from a given execution history. Tasks capture contamination through two grippers and shared objects, treatment costs"
-    },
-    {
-      "title": "Feeling Through the Load: Compliant Quadruped Locomotion under Payload Interactions",
-      "url": "http://arxiv.org/abs/2610.08637v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:32:23Z",
-      "authors": [
-        "Shaunak A. Mehta",
-        "Mayank Mishra",
-        "Prajit KrisshnaKumar",
-        "Sebastian Scherer",
-        "Koichiro Niinuma"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Quadruped robots are increasingly expected to carry objects while moving through human environments. But what happens when a person interacts directly with the payload rather than with the robot? If the payload is unrestrained, the robot must distinguish intentional external interactions from ordinary payload motion, while still keeping the load balanced and maintaining stable locomotion. How can a quadruped infer and compliantly respond to such interactions using only onboard measurements? In this work, we develop a force-aware locomotion framework that treats payload interactions as commands that shape the motion of the combined robot-paylo"
-    },
-    {
-      "title": "Agentic RCA for Internet-Scale Services Using Constrained Creativity",
-      "url": "http://arxiv.org/abs/2610.08622v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:21:57Z",
-      "authors": [
-        "Sayan Sinha",
-        "Vipul Harsh",
-        "B. Aditya Prakash",
-        "Vyas Sekar",
-        "Hui Zhang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "System administrators of Internet-scale services need to resolve failure incidents to maintain reliability of such services. Ideally, we want a troubleshooting system to be: (1) expressive to known and unknown incidents with high accuracy; (2) cost efficient at scale; (3) explainable to provide actionable insights operators can act on; and (4) entail low effort from the operators. Unfortunately, most existing systems, including emerging LLM-assisted agentic workflows and structured frameworks for authoring diverse RCA algorithms fall short of achieving all four requirements. We present E4, a novel agentic system for troubleshooting for Intern"
-    },
-    {
-      "title": "Demo: Closed-Loop Sionna-Isaac Sim Co-Simulation Framework for Wireless-Aware Robot Navigation over ROS 2",
-      "url": "http://arxiv.org/abs/2610.08618v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:17:51Z",
-      "authors": [
-        "Yi Shen Lim",
-        "Seungeun Oh",
-        "Jihong Park"
-      ],
-      "domains": [
-        "Aides techniques"
-      ],
-      "keywords": [],
-      "summary": "A robot that offloads its control loop to the network carries the receiver with it, so link quality is decided by where it goes. Simulating this requires both a physics engine and a site-specific propagation model at once; to our knowledge no simulator natively unifies both, with existing couplings of the two limited to offline analyses. We demonstrate a real-time co-simulation framework coupling NVIDIA Isaac Sim and NVIDIA Sionna over ROS 2 that closes the perception-action-communication (PAC) loop between them. Sionna ray-traces the base-station-to-robot channel over the exact geometry Isaac Sim simulates on, rather than modeling it stochas"
-    },
-    {
-      "title": "A Swarm-Coordinated Multi-Robot System for Early Stress Detection in Agricultural Rows Using Multimodal Leaf Sensing",
-      "url": "http://arxiv.org/abs/2610.08603v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:07:15Z",
-      "authors": [
-        "Rishi Gupta",
-        "Astha Goyal",
-        "Vinay Vishwakarma"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Early stress detection in crops is a necessity today to improve efficiency and reduce waste of time, money, and effort. However, most modern techniques, such as hyperspectral imaging and AI-based systems, are too costly and complex for medium and small-scale farmers to implement. This paper showcases CropSentry, a low-cost, ground-based multi-robot system that uses multimodal leaf sensing to continuously monitor crop health by tracking stress levels. The system comprises two autonomous bots that continuously detect leaf color and environmental data row by row. The observations are spatially mapped and sent over to the master bot, which uses c"
-    },
-    {
-      "title": "One for All, All for One: Coordinated Multi-Agent Diffusion Steering via Stochastic Optimal Control",
-      "url": "http://arxiv.org/abs/2610.08595v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T16:02:49Z",
-      "authors": [
-        "Riccardo Barbano",
-        "Vincent Pauline",
-        "Runchang Li",
-        "George Webber",
-        "Alexander Denker",
-        "Željko Kereta",
-        "Stefan Bauer",
-        "Francisco Vargas"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Deep generative models often produce structured outputs composed of interacting components. Modelling these outputs with a single model requires learning both the component distributions and their interactions. We pursue a modular alternative: reuse independently trained component generators and learn only how to coordinate them to produce coherent structured outputs. Our framework, Coordinated Multi-Agent Diffusion Steering (CMDS), treats frozen pretrained diffusion models as reusable generative primitives and coordinates their reverse processes through a learned control. We formulate coordination as a stochastic optimal control problem, bal"
-    },
-    {
-      "title": "MINDSET: Energy-based Schema Evolution for Long Conversational Agent Memory",
-      "url": "http://arxiv.org/abs/2610.08586v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:55:42Z",
-      "authors": [
-        "Sujato Dutta",
-        "Sreekruthy Tummala",
-        "Shashank Vanga",
-        "Ayushmi Pavani"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Long conversational agents have become essential in our daily lives. They must remember what was said long back in order to help us efficiently complete a task without needing the user to repeat instructions and context repeatedly. However, the main issue is that instructions and context change over time and so the agents must be able to adapt accordingly. A useful memory system should preserve both current and historical states, distinguish stale information from active knowledge, retrieve evidence appropriate to the query and avoid repeatedly invoking a large language model to rewrite prior interactions. We introduce MINDSET, a memory contr"
-    },
-    {
-      "title": "Adaptive Power Sampling for LLM Reasoning",
-      "url": "http://arxiv.org/abs/2610.08563v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:43:35Z",
-      "authors": [
-        "Bingnan Xiao",
-        "Chenhao Yang",
-        "Bingcong Li",
-        "Wei Ni",
-        "Xin Wang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Sequence-level power sampling has recently emerged as a training-free approach to reasoning by sampling from a sharpened output distribution of a base large language model (LLM). Nevertheless, existing methods typically sharpen the base model distribution uniformly across queries, overlooking variations in query difficulty and in how well the base model already handles each query. The goal of this work is to equip power sampling with query adaptivity. Theoretically, we show that the benefits of further sharpening are determined by the self-reward gap between correct and incorrect responses. Based on this insight, we propose \\emph{Adaptive Pow"
-    },
-    {
-      "title": "Latent space bias directions in LLMs capture confidence, not fairness",
-      "url": "http://arxiv.org/abs/2610.08559v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:42:35Z",
-      "authors": [
-        "Stephanie Buttigieg",
-        "Maeve Madigan",
-        "Parameswaran Kamalaruban",
-        "Stuart Burrell"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Activation steering has gained popularity as a lightweight inference-time debiasing technique for large language models. However, prior work reports that steering vectors generalise poorly, with unintended effects on model performance and limited transfer to new datasets. Our work analyses what the debiasing direction used for activation steering actually encodes, in order to shed light on its inconsistent performance. We study the linear debiasing direction obtained by contrasting the activations of anti-biased and biased prompts, and evaluate it as a steering intervention across bias and general knowledge benchmarks. We find that this direc"
-    },
-    {
-      "title": "Towards Efficient Robotic Manipulation Models with Self-Recursive Pruning",
-      "url": "http://arxiv.org/abs/2610.08555v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:40:35Z",
-      "authors": [
-        "Zijia Chen",
-        "Yuenan Hou",
-        "Yu Li",
-        "Weijie Li",
-        "Li Liu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Network pruning can reduce parameter redundancy in robotic policies. However, generic pruning criteria are tailored for image recognition tasks and commonly designed to preserve weight magnitude, local reconstruction, or language-model likelihood rather than closed-loop action behavior. Directly applying these pruning algorithms to robotic tasks yields unsatisfactory performance. In this paper, we propose Loss-Conditioned Activation-Moment (LCAM) pruning, a training-free method for unstructured pruning of pre-trained robotic manipulation policies. Specifically, we first rank connections using row-normalized weight contribution, activation mom"
-    },
-    {
-      "title": "Micro Neural Policies for Safe Real-Time Robotic Control",
-      "url": "http://arxiv.org/abs/2610.08541v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:29:28Z",
-      "authors": [
-        "Hongpeng Cao",
-        "Riccardo Curcio",
-        "Daniele Ottaviano",
-        "Marco Caccamo"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "In this paper, we investigate the synthesis of Micro Neural Policies (MNP) to enable safe and robust real-time robotic control on computationally constrained embedded devices. We demonstrate that integrating Evolution Strategy (ES) and Statistical Model Checking (SMC)-based verification for policy search can drastically reduce neural network size without compromising safety and robustness. We conduct a large-scale training and evaluation of MNP on Cartpole and Quadrotor control tasks, varying control frequencies and network architectures. After validating these policies in simulation, we evaluate their deployability through zero-shot transfer"
-    },
-    {
-      "title": "Pareto-Optimal Entropy-Regularized Trajectory Optimization",
-      "url": "http://arxiv.org/abs/2610.08532v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:25:16Z",
-      "authors": [
-        "Dimitrios S. Georgiou",
-        "Augustinos D. Saravanos",
-        "Evangelos A. Theodorou"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Trajectory optimization (TO) under nonlinear dynamics, actuation limits and collision avoidance constraints is a fundamental problem in robotics, albeit especially challenging due to its highly non-convex nature. For this setting, Differential Dynamic Programming (DDP) is an efficient second-order shooting method, yet its local structure renders it vulnerable to suboptimal basins. Sampling-augmented variants mitigate this susceptibility through stochastic exploration, but often sample only around the few trajectories they retain for reoptimization, based solely on their cost which restricts exploration breadth. We introduce Pareto-Optimal Ent"
-    },
-    {
-      "title": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
-      "url": "http://arxiv.org/abs/2610.08526v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:21:14Z",
-      "authors": [
-        "Thinh D. Le",
-        "Son T. Nguyen",
-        "Duong Q. Nguyen",
-        "Dung D. Le",
-        "Ngo Anh Vien",
-        "H. Nguyen-Xuan"
-      ],
-      "domains": [
-        "Aides techniques",
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Vision-Language-Action (VLA) models have achieved impressive results in robotic manipulation and ground-mobile navigation, yet language-conditioned control of unmanned aerial vehicles (UAVs) in smart warehouses remains largely unexplored, hindered by the lack of benchmarks that jointly provide continuous low-level flight actions, fine-grained natural-language target descriptions, and realistic industrial environments. This paper introduces WareFly-VLA, a photorealistic UAV VLA framework and dataset for language-guided human search, localization, and tracking in warehouse environments. It contains 507 human-teleoperated flight episodes and 8,5"
-    },
-    {
-      "title": "No Need to Stop the Fleet: Localized Anomaly Isolation via Dead Zones in AGV Fleets",
-      "url": "http://arxiv.org/abs/2610.08524v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T15:20:09Z",
-      "authors": [
-        "Natalia Ogorelysheva",
-        "Falk Howar",
-        "Jian-Jia Chen"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Automated Guided Vehicle (AGV) fleets in production and logistics environments rely on a system-wide emergency stop to handle local anomalies such as malfunctions, hazards, or contaminated areas. While safe, this approach halts the entire fleet even when only a small area is affected, causing unnecessary downtime. This paper proposes dead zones --- a formally defined localized isolation approach that serves as an additional fail-operational mechanism for situations where a full system-wide halt is not strictly needed. Rather than shutting down the entire fleet, a dead zone isolates the anomalous area, allowing unaffected robots to continue op"
-    },
-    {
-      "title": "AssemState: Manual and Physical-State-Guided Reasoning for Zero-shot Furniture Assembly",
-      "url": "http://arxiv.org/abs/2610.08446v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:35:49Z",
-      "authors": [
-        "Zhiyuan Qi",
-        "Jierui Li",
-        "Yifan Shen",
-        "Cheng Qian",
-        "Jiateng Liu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Multimodal large language models (MLLMs) have made significant progress in visual understanding, but precise 3D spatial reasoning integrated with physical environment remains difficult. Furniture assembly requires not only recovering step-level operations from diagrammatic manuals, but also translating semantic attachment relations into 6D pose updates that enable parts to physically interact with the environment and previously assembled components. To study this problem, we propose AssemState, a zero-shot framework for manual and physical-state-guided furniture assembly. It firstly employs anchor-guided boundary assembly states to decompose "
-    },
-    {
-      "title": "ActTune: Action-Aware Precision and GPU Operating-Point Adaptation for Energy-Efficient Vision-Language-Action Inference",
-      "url": "http://arxiv.org/abs/2610.08444v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:35:22Z",
-      "authors": [
-        "Zou Qingyun",
-        "Bin Gao",
-        "Wenju Zhao",
-        "Weng-Fai Wong",
-        "Bingsheng He",
-        "Tulika Mitra"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Vision-language-action (VLA) policies repeatedly invoke inference to control robots, making graphics processing unit (GPU) energy a recurring cost of task execution. Reducing energy per inference call, however, may not reduce energy per successful task if numerical errors increase failures or slower inference prolongs execution. We therefore target GPU energy per successful task while preserving task success and keeping the inference-latency increase within 10\\%. Our approach builds on two observations: quantization sensitivity varies across action classes, model layers, and weights versus activations; and numerical precision changes the work"
-    },
-    {
-      "title": "Safe Multi-Robot Collaborative Transport Using Density Functions",
-      "url": "http://arxiv.org/abs/2610.08441v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:34:36Z",
-      "authors": [
-        "Jagannath Prasad Sahoo",
-        "Sriram S. K. S. Narayanan",
-        "Umesh Vaidya"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "This paper presents a hierarchical density-based model predictive control framework for safe collaborative manipulation by multiple quadrupedal robots. The framework enables a team of robots to push a shared object to a desired pose using only the initial and goal poses, without requiring a precomputed reference trajectory. A centralized box-level MPC optimizes contact forces while enforcing a control-density constraint for goal convergence and obstacle avoidance. Each robot then solves its own distributed robot-level whole-body MPC, under a stated shared-information assumption, to track its moving contact location while accounting for static"
-    },
-    {
-      "title": "MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback",
-      "url": "http://arxiv.org/abs/2610.08425v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:28:07Z",
-      "authors": [
-        "Jaeyoung Lee",
-        "Jiyeon Koo",
-        "Taehwa Kim",
-        "Yerin Cha",
-        "Andrew Jaeyong Choi"
-      ],
-      "domains": [
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Vision-language-action (VLA) policies infer grasp actions primarily from visual observations and robot state, but do not explicitly represent the physical response observed after contact. We present MIM-VLA, a motor-feedback-based architecture that encodes recent gripper current, position, velocity, and signal validity as a 128-dimensional interaction token. A motor-only Motor Interaction Module (MIM) is pretrained with human-reviewed contact and interaction-phase labels and then conditions only the gripper-action pathway of SmolVLA; arm actions and the position-control interface remain unchanged. The same token supports the MEM selector VLM "
-    },
-    {
-      "title": "Post-Grasp Kinematic Repair for Robotic Insertion via Object-in-Gripper Reorientation",
-      "url": "http://arxiv.org/abs/2610.08421v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:23:38Z",
-      "authors": [
-        "Haegu Lee",
-        "Christoffer Sloth"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "A stable grasp does not guarantee kinematically feasible robotic insertion because the object-in-gripper transform may force the robot towards singularities or joint limits along the prescribed insertion path. We study post-grasp kinematic feasibility repair through object-in-gripper reorientation. Given an achieved grasp and a fixed insertion path, we seek a small reorientation that restores kinematic feasibility. Sequential IK can miss such candidates by following an unfavorable joint-space path, while the nonsmooth feasibility landscape makes the search computationally expensive. We evaluate candidates using a branch-aware IK graph that ma"
-    },
-    {
-      "title": "Knowing When Not to Answer: Cross-Domain and Multi-Turn Generalization of Latent Underspecification Signals",
-      "url": "http://arxiv.org/abs/2610.08413v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:18:13Z",
-      "authors": [
-        "Jerzy Kamiński",
-        "Ilya Galyukshev",
-        "Artem Kuznetsov",
-        "Danil Fedorov",
-        "Kirill Redko",
-        "Sergey Chuprin",
-        "Aidar Shumbalov",
-        "Stanislav Chumakov"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large language models routinely answer questions that cannot be answered from the information given, and in dialogue they answer before enough has been said. Unanswerability is linearly decodable from hidden states, but it is unclear which of its forms share a representation and whether the signal is useful in dialogue. We contribute a turn-labeled multi-turn benchmark (423 conversations, 1,661 labeled turn-states) and an evaluation harness with a simulated user who answers clarifying questions, and use them with six datasets and six open-weight LLMs to test how far probes for unanswerability carry. Probes transfer robustly between datasets t"
-    },
-    {
-      "title": "Learning from Failures: A Failure-Driven Prompt Refinement for LLM-Based Vulnerability Analysis",
-      "url": "http://arxiv.org/abs/2610.08405v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:15:44Z",
-      "authors": [
-        "Mandana Ghadamian",
-        "David Mohaisen"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large Language Models have emerged as promising tools for software vulnerability analysis, but their effectiveness depends heavily on prompt design. Existing research primarily compares prompting strategies using aggregate performance metrics, providing limited insight into why models fail or how prompts can be improved systematically. We propose Failure-Driven Prompt Refinement (FDPR), a methodology that analyzes recurring model failures to guide evidence-based prompt refinement. Using the Damn Vulnerable Java Application (DVJA), we identify recurring failure modes, including false positives, false negatives, unsupported reasoning, and CWE m"
-    },
-    {
-      "title": "Foresight-over-Graph: Reasoning Beyond Local Horizons for Knowledge Base Question Answering",
-      "url": "http://arxiv.org/abs/2610.08388v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:07:43Z",
-      "authors": [
-        "Yang Hong",
-        "Yajun Yang",
-        "Xin Wang",
-        "Liping Jing",
-        "Qinghua Hu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large language models (LLMs) have demonstrated strong capabilities in question answering, yet they still frequently suffer from hallucinations on knowledge-intensive tasks. Knowledge graphs (KGs) provide LLMs with structured, interpretable, and updatable factual grounding, making them a promising external knowledge source for reliable reasoning. However, existing LLM-guided graph reasoning methods typically rely on hop-wise greedy or beam-style pruning during evidence retrieval. Such local decision processes are inherently myopic: evidence that appears weak near the source may become crucial only after deeper graph context is explored, causin"
-    },
-    {
-      "title": "From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids",
-      "url": "http://arxiv.org/abs/2610.08381v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T14:02:41Z",
-      "authors": [
-        "Jiyeon Koo",
-        "Eunseom Pyo",
-        "Jeonghee Seo",
-        "Taehwa Kim",
-        "Andrew Jaeyong Choi"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Human video offers a scalable source of robot demonstrations, yet most human-to-humanoid retargeting methods assume a legged robot with human-like kinematics. This assumption does not hold for mobile-base humanoids equipped with a wheeled base, vertical lift, and two arms. Human walking must be expressed through base motion, while torso bending may require coordinated lift and arm motion. We address this mismatch with a task-conditioned framework that assigns reconstructed human motion to base, lift, and arm responsibilities before robot-specific realization. The allocator preserves the human-derived path, stabilizes heading, separates turn a"
-    },
-    {
-      "title": "Transect: Retaining Observability for Long-Horizon LLM Agent Evaluations",
-      "url": "http://arxiv.org/abs/2610.08364v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:52:15Z",
-      "authors": [
-        "Toby D. Pilditch",
-        "Konstantinos Voudouris",
-        "Alexandra Abbas",
-        "Cozmin Ududec"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Frontier AI evaluations increasingly use open-ended, agentic, long-horizon tasks whose transcripts can span hundreds of pages of outputs and actions from complex multi-agent networks. The observability envelop-the range of what evaluators can reliably infer about an agent's behaviours-is therefore narrowing. Language model assistants can help classify and interpret agent behaviour but also afford human evaluators significant analytical degrees of freedom, threatening the reproducibility and auditability of language-model-based transcript analysis. Transect is an open source package built on Inspect Scout to help evaluators understand how a lo"
-    },
-    {
-      "title": "Explainable Failure Prediction and Prevention in Maritime",
-      "url": "http://arxiv.org/abs/2610.08363v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:51:58Z",
-      "authors": [
-        "Dionisis Kalogeropoulos",
-        "Georgia Sovatzidi",
-        "Panagiotis G. Kalozoumis",
-        "Dimitris K. Iakovidis"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Maritime systems operate in highly dynamic environments where unexpected equipment failures can compromise safety, reliability, and operational efficiency. Recent advances in artificial intelligence (AI), machine learning, digital twins, and predictive maintenance enable proactive failure prediction and prevention. However, ensuring trustworthy and explainable decision-making remains a major challenge in safety-critical maritime applications. This chapter reviews key AI technologies required for explainable failure prediction and prevention in maritime systems and presents a conceptual architecture capable of supporting autonomous or human-in"
-    },
-    {
-      "title": "Event-Driven Proactive Robot Assistance through Vision-Language Reasoning",
-      "url": "http://arxiv.org/abs/2610.08344v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:39:46Z",
-      "authors": [
-        "Fengkai Liu",
-        "Hao Su",
-        "Haozhuang Chi",
-        "Rui Geng",
-        "Congzhi Ren",
-        "Xuqing Liu",
-        "Chenfei Xu",
-        "Yuichi Ohsita"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Assistance in collaborative manipulation is often initiated by user instructions, making high-level reasoning request-driven. In fluent human teamwork, however, partners often infer the next helpful step from the observed outcome of an action rather than waiting for instructions. Motivated by this, we investigate an event-driven formulation of proactive assistance, where human--object interaction outcomes initiate assistive reasoning without user-provided task specifications at inference time. To this end, we propose an event-driven framework that monitors workspace state changes with an event monitor and, upon event completion, extracts stab"
-    },
-    {
-      "title": "SC3BF: Shifted Collision Cone Control Barrier Function for Dynamic Obstacle Avoidance",
-      "url": "http://arxiv.org/abs/2610.08332v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:30:23Z",
-      "authors": [
-        "Amin Kashiri",
-        "Yasin Yazıcıoğlu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "The collision cone used by velocity-space control barrier functions is conservative: it rejects every relative velocity aimed into an obstacle, however slow. We propose the \\emph{shifted collision-cone CBF} (SC3BF), which adds a state-dependent \\emph{allowance} to the cone condition, so the robot may approach the obstacle at a rate that grows with distance and with its own speed. SC3BF is enforced by an ordinary quadratic program, and its safe set is forward invariant under bounded inputs without a minimum forward speed or a clearance margin. We prove that a nonzero allowance preserving safety always exists, and derive one in closed form. Aga"
-    },
-    {
-      "title": "MoF: Preference-Aware Mixture Modeling for Black-Box LLM Personalization",
-      "url": "http://arxiv.org/abs/2610.08330v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:29:26Z",
-      "authors": [
-        "Hun Park"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Proprietary Large Language Models (LLMs) have demonstrated remarkable capabilities across a wide range of tasks, yet aligning their outputs with diverse user preferences remains challenging. Existing personalization approaches for black-box LLMs often rely on user-specific scoring heads, causing the number of personalized parameters to grow linearly with the number of users and requiring additional adaptation for unseen users. To address these limitations, we propose Mixture-of-Facets (MoF), a scalable personalization framework for black-box LLMs that models user preferences as compositions of shared latent preference facets rather than dedic"
-    },
-    {
-      "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
-      "url": "http://arxiv.org/abs/2610.08327v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:25:55Z",
-      "authors": [
-        "Xilin Dang",
-        "Weilin Ruan",
-        "Xue Yang",
-        "Jinghao Wang",
-        "Xiaowei Hu",
-        "Jinpeng Li",
-        "Pheng-Ann Heng"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large language models (LLMs) have shown promise in medical question answering and clinical reasoning, yet their improvement remains constrained by static parametric knowledge and costly expert supervision. Self-evolving agents offer a promising alternative by enabling models to improve through iterative task generation and problem-solving. However, most existing self-evolving methods are designed for easily verifiable domains such as mathematics and coding, where solutions can be checked by exact answers or executable programs. Medical reasoning is fundamentally different: it is open-ended, knowledge-intensive, and often only partially verifi"
-    },
-    {
-      "title": "Communication-Free Obstacle Localization from Aggregate Wrench Measurements in Leader--Follower Cooperative Transport",
-      "url": "http://arxiv.org/abs/2610.08324v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:24:13Z",
-      "authors": [
-        "Amin Kashiri",
-        "Aditya Mohan",
-        "Yasin Yazıcıoğlu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "We consider obstacle localization for a team of robots cooperatively transporting a rigid payload without explicit inter-robot communication. A leader robot directs the payload's motion, while follower robots assist and react to locally detected obstacles. The leader measures the followers' aggregate wrench, i.e., the combined force and torque they exert on the payload, but cannot directly distinguish their individual reactions. We design a follower control law that allows the leader to recover obstacle locations from these measurements. Each follower resists motion toward nearby obstacles, resulting in a piecewise-linear relationship between"
-    },
-    {
-      "title": "Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating",
-      "url": "http://arxiv.org/abs/2610.08320v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:22:30Z",
-      "authors": [
-        "Haozhuo Zhang",
-        "Qiang Zhang",
-        "Jian Tang",
-        "Mingzhe Ni",
-        "Michele Caprio",
-        "Angelo Cangelosi",
-        "Wei Pan"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Cluttered indoor environments, where large and heavy objects are scattered across diverse surfaces, require humanoid robots to sequentially navigate, grasp, transport, and accurately place each item at its target location within a single uninterrupted episode. This long-horizon, whole-body loco-manipulation task remains a significant challenge for current methods. Previous approaches often suffer from two main issues: easy-reward bias, where training overemphasizes early transport stages at the expense of later ones, and catastrophic forgetting, where focusing on later stages leads to a decline in earlier-stage performance. In this work, we i"
-    },
-    {
-      "title": "CoDe-LoRA: Mitigating the Orthogonality Dilemma in Continual Learning of LLMs via Knowledge Consolidation and Decoupling",
-      "url": "http://arxiv.org/abs/2610.08312v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:17:25Z",
-      "authors": [
-        "Maoqi Liu",
-        "Quan Fang",
-        "Yufei He"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Continual learning (CL) is essential for Large Language Models (LLMs) to sequentially adapt to evolving tasks. To mitigate catastrophic forgetting, recent advances implement low-rank adaptation with orthogonal projections (e.g., O-LoRA) to isolate task parameters. However, we reveal that such strict geometric constraints trigger an \"Orthogonality Dilemma\": rigid parameter isolation impedes the transfer and accumulation of shared representations across semantically related tasks. In this work, we propose a new replay-free method, called Consolidation and Decoupling LoRA (CoDe-LoRA), for CL of LLMs. CoDe-LoRA disentangles the learning process i"
-    },
-    {
-      "title": "Sensor-Layout-Agnostic Navigation via Geometric Observation Canonicalization",
-      "url": "http://arxiv.org/abs/2610.08306v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T13:11:38Z",
-      "authors": [
-        "Welf Rehberg",
-        "Kostas Alexis"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Existing visual navigation policies are inherently bound to fixed camera configurations, creating a fundamental barrier to zero-shot deployment across heterogeneous robot sensor layouts. To overcome this limitation, we present an embodiment-informed navigation policy capable of generalizing across diverse depth sensor configurations on a specific aerial platform. Instead of implicitly learning spatial alignments, our approach explicitly unprojects depth measurements from arbitrary depth sensor payloads, varying in sensor count, mounting extrinsics, and intrinsics, into a shared robot-centric frame, stitching them into a unified spherical rang"
-    },
-    {
-      "title": "DySCo: Dynamic Sharding for Collaborative Edge-Cloud LLM Inference with Depth-Synchronized Batching",
-      "url": "http://arxiv.org/abs/2610.08268v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:42:11Z",
-      "authors": [
-        "Jingpo Xu",
-        "Paul Joe Maliakel",
-        "Ivona Brandic",
-        "Shashikant Ilager"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Pervasive intelligent applications are increasingly deployed on mobile and Internet of Things (IoT) edge devices. Consequently, Large Language Models (LLMs) are increasingly used to support these applications. Yet, due to their high resource demands, LLMs are mostly deployed in the cloud. Layer-wise edge-cloud inference lets resource-constrained edge devices contribute computation to LLMs they cannot host in full. However, heterogeneous split points introduce two coupled inefficiencies. First, edge execution and communication create idle gaps between cloud invocations. Second, requests arriving at different model depths cannot be conventional"
-    },
-    {
-      "title": "zkLLMPoT: Efficient Zero Knowledge Proof of Training for Large Language Models",
-      "url": "http://arxiv.org/abs/2610.08258v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:35:49Z",
-      "authors": [
-        "Junkai Liang",
-        "Zhanpeng Guo",
-        "Pengfei Wu",
-        "Qingni Shen",
-        "Jiaheng Zhang",
-        "Zhonghai Wu",
-        "Haiyang Xue",
-        "Shengfang Zhai"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Auditing the claimed outcomes of large language model (LLM) training is challenging when model weights and training data are private, while cryptographically proving the full training process is prohibitively expensive at Transformer scale. We present zkLLMPoT, a zero-knowledge framework that certifies auditor-defined properties of a trained checkpoint through forward evaluation rather than verification of its optimization trajectory. zkLLMPoT includes 2 phases: 1) The trainer fixes the architecture and the model weights are committed. Then the auditor selects challenge sequences, preventing the trainer from modifying the checkpoint in respon"
-    },
-    {
-      "title": "MASC: A Multi-Agent Self-Calibration Framework with Latent Construct Alignment for Consistent Client Role-Playing in Psychological Counseling",
-      "url": "http://arxiv.org/abs/2610.08250v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:31:05Z",
-      "authors": [
-        "Shixin Peng",
-        "Kun Jiang",
-        "Jiaxing Zheng",
-        "Qihao Yang",
-        "Jingying Chen"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large language models are increasingly used to simulate clients for counselor training and psychological counseling research, but reliable simulation requires clients to remain psychologically coherent across extended interactions. Existing role-playing methods largely rely on static profile prompts and may exhibit persona drift, unrealistic cooperativeness, or inconsistent psychological states, communicative actions, and emotions. Existing evaluations also lack a unified testbed for both stable client characteristics and evolving psychological dynamics. We propose MASC, a Multi-Agent Self-Calibration framework with latent construct alignment"
-    },
-    {
-      "title": "LeanPlan: Optimal Planning with LLM-Generated Heuristics and Admissibility Proofs",
-      "url": "http://arxiv.org/abs/2610.08246v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:27:34Z",
-      "authors": [
-        "André G. Pereira",
-        "Augusto B. Corrêa",
-        "Felipe Meneguzzi",
-        "Jendrik Seipp"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Frontier large language models (LLMs) can generate heuristic functions that guide search to achieve state-of-the-art performance in satisficing planning, where any plan is acceptable. However, these heuristics are not guaranteed to be admissible and can lead to suboptimal plans. We introduce LeanPlan, the first planning system that finds optimal plans with LLM-generated heuristics whose admissibility is machine-checked. Given a domain description and training tasks, an agentic loop uses planner feedback to iteratively improve a reusable domain-specific heuristic, its admissibility proof and the required domain assumptions. LeanPlan implements"
-    },
-    {
-      "title": "OSFP4: Joint Optimization of Diagonal Smoothing and Block Scales for NVFP4 Quantization",
-      "url": "http://arxiv.org/abs/2610.08231v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:17:52Z",
-      "authors": [
-        "Neriah Ben David",
-        "Ori Meir",
-        "Or Ordentlich"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "NVFP4 is an attractive datatype for large language model (LLM) inference, offering compact storage and native tensor-core acceleration. However, preserving accuracy using NVFP4 requires careful quantization. In this work we develop a novel quantization scheme called Optimized Smoothing and Scaling for NVFP4 (OSFP4). For each linear projection it uses a diagonal smoothing matrix whose entries are optimized to minimize the squared matrix-product quantization error under NVFP4, taking into account the rounding procedure that is used (either round-to-nearest, or GPTQ-style successive interference cancellation). This requires performing joint opti"
-    },
-    {
-      "title": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
-      "url": "http://arxiv.org/abs/2610.08225v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:13:21Z",
-      "authors": [
-        "Martin Schuck",
-        "Marcel P. Rath",
-        "Yufei Hua",
-        "Abhishek Goudar",
-        "SiQi Zhou",
-        "Angela P. Schoellig"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "In this work, we introduce Crazyflow, an accurate, differentiable simulator built on JAX. By leveraging jit compilation via XLA, Crazyflow unifies physics and control into a single differentiable computation graph, enabling massive parallelization on accelerated hardware without sacrificing modeling accuracy. This architecture achieves order-of-magnitude speedups over existing baselines, capable of training deployable reinforcement learning agents in seconds. To highlight its highly modular design, we demonstrate how easily Crazyflow can be extended by integrating a complete, high-fidelity Ultra-Wideband (UWB) and Inertial Measurement Unit (I"
-    },
-    {
-      "title": "VOMMI: Collecting and Leveraging Portable Demonstrations for Mobile Manipulation",
-      "url": "http://arxiv.org/abs/2610.08220v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:10:48Z",
-      "authors": [
-        "Yutian Zhang",
-        "Xingrui Xiong",
-        "Siyuan Ma",
-        "Yang Li",
-        "Jiawen Wen",
-        "Jiaqi Zhai",
-        "Liwen Yang",
-        "Ce Hao"
-      ],
-      "domains": [
-        "Robotique sociale & HRI",
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Portable mobile-manipulation demonstrations can help alleviate data scarcity for embodied intelligence, but obtaining reliable, low-cost, and robot-free motion supervision from RGB observations remains challenging. Existing approaches often rely on teleoperation or specialized devices equipped with additional sensing hardware, while directly using estimated visual odometry (VO) trajectories can introduce inconsistencies due to accumulated drift and imperfect motion supervision. We present the Visual-Odometry-Conditioned Mobile Manipulation Interface (VOMMI), a portable demonstration collection and learning framework that connects portable RGB"
-    },
-    {
-      "title": "Quantum Entangled Multimodal Fusion Networks (QEMFN): Resource-Aware Hybrid Vision-Language Fusion via Trainable Entanglement",
-      "url": "http://arxiv.org/abs/2610.08216v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-06T12:08:58Z",
-      "authors": [
-        "Srikar Alla",
-        "Ali Shiri Sichani",
-        "Chi-Ren Shyu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Multimodal vision-language systems typically fuse image and text embeddings through classical operators such as concatenation, attention, bilinear pooling, or tensor interactions. We propose Quantum Entangled Multimodal Fusion Networks (QEMFN), a hybrid quantum-classical framework that introduces parameterized entanglement as a structured inductive bias for multimodal fusion. Pretrained visual and textual features are projected into compact latent spaces, encoded as angle-parameterized quantum states, processed through intra-modal and paired cross-modal entangling circuits, and measured to produce fused representations for retrieval. Under ma"
-    },
-    {
-      "title": "Littératie en IA et co-intelligence : apprendre autrement avec l’IA générative dans l’enseignement supérieur",
-      "url": "https://hal.science/hal-05780292v1",
-      "source": "HAL",
-      "type": "Publication scientifique",
-      "published": "2026-10-06T00:00:00Z",
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [
-        "IntellIgence Artificielle",
-        "Enseignement supérieur",
-        "Pédagogie",
-        "Co-intelligence"
-      ],
-      "summary": "Cet article présente les résultats d'une étude compréhensive et qualitative conduite entre 2023 et 2025 auprès de 64 étudiants de master en sciences de l'éducation dans une université française, dans le cadre d'un projet de transformation numérique financé par l’agence nationale de la recherche (ANR). Il examine comment un dispositif socio-pédagogique hybride, adossé à un cours existant de sociologie des organisations, peut créer les conditions favorables au développement de la littératie en intelligence artificielle (IA) et de la co-intelligence chez les étudiants. S'appuyant sur deux cadres conceptuels complémentaires, à savoir la littérati"
-    },
-    {
-      "title": "InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation",
-      "url": "http://arxiv.org/abs/2610.06850v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:59:50Z",
-      "authors": [
-        "Yucheng Zhang",
-        "Sirui Xu",
-        "Jinhong Li",
-        "Liuyu Bian",
-        "Anatulya Nandi",
-        "Derek Zhang",
-        "Xiangchen Liu",
-        "Xueting Li"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Captured human-object interactions provide rich supervision for humanoid loco-manipulation, but they are sparse, heterogeneous, and not directly executable by robots. We introduce InterMimicGen, a self-evolving motion-imitation framework in which robot motion data and a tracking policy improve each other. First, we consolidate motion-captured human-object interaction datasets and retarget them into humanoid robot references while preserving whole-body coordination and dexterous hand-object relationships. This produces a large and diverse humanoid robot reference collection for dexterous whole-body loco-manipulation. Second, we train a physics"
-    },
-    {
-      "title": "Learning to Read the Contextual Tokens in Diffusion Transformers",
-      "url": "http://arxiv.org/abs/2610.06844v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:59:17Z",
-      "authors": [
-        "Omer Dahary",
-        "Etai Sella",
-        "Hadar Averbuch-Elor",
-        "Daniel Cohen-Or",
-        "Or Patashnik"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Multimodal Diffusion Transformers (MM-DiTs) jointly process visual and textual representations throughout generation. These models repeatedly update the text tokens through multimodal attention, forming dynamic contextual tokens whose function is not well understood. In this work, we introduce a framework for reading this contextual space through natural-language interrogation. We train a lightweight bottleneck network that maps intermediate contextual tokens into the input space of a frozen Large Language Model (LLM), allowing the LLM to answer questions about the emerging image directly from these hidden representations. Our reader reveals "
-    },
-    {
-      "title": "Recursive Video In-Context Learning for Agentic Robot",
-      "url": "http://arxiv.org/abs/2610.06843v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:59:11Z",
-      "authors": [
-        "Wenrui Bao",
-        "Xinxin Liu",
-        "Bingxin Xu",
-        "Yuzhang Shang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the agent navigates rather than a prompt it receives."
-    },
-    {
-      "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
-      "url": "http://arxiv.org/abs/2610.06830v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:58:06Z",
-      "authors": [
-        "Haozhen Zhang",
-        "Haodong Yue",
-        "Quanyu Long",
-        "Jianzhu Bao",
-        "Qingyuan Liu",
-        "Tao Feng",
-        "Bohan Liu",
-        "Weida Liang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies have begun shifting memory processing toward runtime adaptation, but typically specialize in particular operations or fixed processing schemes, leaving flexible control over performance, cost, and latency largely underexplored. To address this challenge, we present \\textbf{MemPilot}, a flexible framework that orchestrates on-deman"
-    },
-    {
-      "title": "TAPDreamer: Transferable Adversarial Patches for World Action Models",
-      "url": "http://arxiv.org/abs/2610.06814v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:55:21Z",
-      "authors": [
-        "Xuanyu Lu",
-        "Fengqing Jiang",
-        "Kaiyuan Zheng",
-        "Yichen Feng",
-        "Yaorui Ding",
-        "Yuetai Li",
-        "Zhen Xiang",
-        "Bhaskar Ramasubramanian"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "World models learn to predict how their environment will evolve, making them an important foundation for general-purpose robotic control. Yet world action models depend on camera inputs whose manipulation can corrupt the visual representations used across tasks and action policies. Existing attacks on these models optimize against the victim's actions or predicted futures and therefore require access to target-model outputs. In this paper, we propose an attack, TAPDreamer, against world action models that instead uses a public encoder alone to construct a fixed local perturbation that transfers across tasks and action architectures. TAPDreame"
-    },
-    {
-      "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
-      "url": "http://arxiv.org/abs/2610.06805v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:53:34Z",
-      "authors": [
-        "Wancong Zhang",
-        "Basile Terver",
-        "Michael Rabbat",
-        "Yann LeCun",
-        "Randall Balestriero"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with multiple horizons in one shared latent space. We introduce H-JEPA, an end-to-end recipe for training a hierarchy of action-conditioned JEPAs in which each level predicts farther ahead in its own learned latent space. Planning proceeds top-down: the top level optimizes progress toward the goal, and each level's predictions become subgoals for the planner below it. When factors in the data evolve at separated timescales, higher levels discard fast, "
-    },
-    {
-      "title": "Back to the Future: Rethinking EDA Infrastructure for Agentic Systems in Chip Design Verification",
-      "url": "http://arxiv.org/abs/2610.06790v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:48:14Z",
-      "authors": [
-        "Je Yang",
-        "Ivan Lobov",
-        "Thomas Karpati"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "The unprecedented computational scale of modern artificial intelligence depends on complex, multi-billion-transistor Systems-on-Chip, yet the workflows that verify these chips remain stubbornly manual. Although Large Language Models (LLMs) have made rapid inroads into Electronic Design Automation (EDA), approximately 74.6% of existing studies target static Register-Transfer Level (RTL) code generation, leaving post-simulation verification and interactive waveform debugging largely untouched. We introduce Back-to-the-Future (BTTF), an end-to-end agentic framework that closes this infrastructural gap. BTTF distills massive, unstructured simulat"
-    },
-    {
-      "title": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
-      "url": "http://arxiv.org/abs/2610.06748v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T17:26:17Z",
-      "authors": [
-        "Ziyan Wang",
-        "Shuqing Shi",
-        "James Oldfield",
-        "Samuele Marro",
-        "Jialin Yu",
-        "Philip Torr",
-        "Yali Du",
-        "Adel Bibi"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation. Large language model (LLM) agents now act for users, raising risks to their money, privacy, and reputation. We introduce BazaarBench, a simulated C2C marketplace and benchmark for evaluating the safety of these agents. It tracks ownership, item condition, and commitments across transactions, combining record checks with rubric-based LLM judgments to identify six failure types across five stages. We run three base markets for 30 simulated days, each with 100 agents using one model and invent"
-    },
-    {
-      "title": "Mind Perception Influences Perceived AI Companionability",
-      "url": "http://arxiv.org/abs/2610.06681v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:48:37Z",
-      "authors": [
-        "Jaime Banks",
-        "Zhixin Li"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Humans increasingly keep company with AI companions, yet whether mind perception (MP) precedes machine companionship remains untested. In a field-sampled experiment, participants received mind-attributive or mind-negating descriptions of an AIC before interacting with and rating its companionability. Baseline skepticism was high; minded primes somewhat reduced skepticism for connective coordination (CC; dyadic co-presence) but not eudaimonic exchange (EE; self-elevating links). Pre-interaction MP beliefs predicted companionability dimensionally: Agentic MP predicted EE potential while experiential MP predicted CC potential. Meaning in life mo"
-    },
-    {
-      "title": "AffordCraft: Scalable Construction of Task-Ready Simulation Assets from Single Images",
-      "url": "http://arxiv.org/abs/2610.06643v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:26:48Z",
-      "authors": [
-        "Haoyun Yang",
-        "Xueyang Zhou",
-        "Ziyi Xie",
-        "Yongchao Chen"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Robot learning in simulation depends on the objects the simulator offers. Many tasks need objects with separate parts, joints that allow the required motion, and physical properties that remain valid under contact. Existing methods recover this structure anew for every image: generative models predict parts and joints that mostly fail to settle or move in simulation, and general-purpose agents need a long session of model calls for each photograph. AffordCraft builds such an asset from a single RGB image and a task instruction by retrieval instead of generation: it locates the object and the part to operate, selects a matching entry from a li"
-    },
-    {
-      "title": "Physics Residual Dynamics and Reduced Order Whole-Body Planning for Obstacle Aware Human Robot Cloth CoTransportation",
-      "url": "http://arxiv.org/abs/2610.06641v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:26:31Z",
-      "authors": [
-        "Moein Forouhar",
-        "Kosar Behnia",
-        "Anirvan Dutta",
-        "Hamid Sadeghian",
-        "Ville Kyrki",
-        "Sami Haddadin",
-        "Gokhan Alcan",
-        "Eckehard Steinbach"
-      ],
-      "domains": [
-        "Robotique sociale & HRI"
-      ],
-      "keywords": [],
-      "summary": "Human--robot co-transportation of deformable objects requires predicting object deformation during motion, since obstacle clearance depends on both the grasp points and the unactuated interior. We present a hierarchical planning framework that combines a learned cloth model with a reduced-order whole-body model of a dual-arm mobile manipulator. A physics-residual conditional recurrent variational autoencoder (p-cRVAE) predicts the full cloth configuration from grasp-point observations by learning a residual correction to a computationally efficient linearized physics model, limiting error accumulation over 40-step planning horizon. The predic"
-    },
-    {
-      "title": "Large Language Model-Guided Discovery of Weight-Five Bivariate Bicycle Codes",
-      "url": "http://arxiv.org/abs/2610.06623v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:21:27Z",
-      "authors": [
-        "Juan Cruz-Benito"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Building on our earlier program-evolution workflow guided by large language models (LLMs), we study weight-five bivariate bicycle (BB) and perturbed bivariate bicycle (PBB) codes. The resulting catalogue contains 1,142 distinct code proposals, including 1,081 nonbaseline proposals attributable to LLM-generated programs. Across the catalogue, we certify connected Calderbank--Shor--Steane (CSS) realizations [[96,4,10]], [[140,6,10]], and [[180,4,14]]. A post-search comparison certifies seven imported Lin--Pryadko archive constructions. For leading parameter triples also represented in that archive, we provide exact distance evidence, explicit b"
-    },
-    {
-      "title": "FREA: A Multi-Source Expert Benchmark for Reaction Feasibility Verification",
-      "url": "http://arxiv.org/abs/2610.06614v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:17:37Z",
-      "authors": [
-        "Botao Yu",
-        "Bo Zhou",
-        "Daniel Adu-Ampratwum",
-        "Frazier N. Baker",
-        "Ziru Chen",
-        "Reza Averly",
-        "Ye Liu",
-        "Wenhao Gao"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "As generative models and AI agents propose chemical reactions at a scale beyond expert review, feasibility verifiers decide which proposals enter synthesis planning. But do their decisions agree with chemists across different kinds of candidates? We introduce FREA, a benchmark of 751 reactions labeled by expert chemists under an explicit feasibility criterion, drawn from retrosynthesis model proposals, zero-yield experimental records, edits by large language models (LLMs), and five negative candidate generation methods. Our evaluation finds that no verifier leads across all sources: LLMs given only the criterion are competitive with dedicated"
-    },
-    {
-      "title": "SimForcing: Distilling Simulation Motion Priors into Real-Domain Robot World Models",
-      "url": "http://arxiv.org/abs/2610.06598v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:08:01Z",
-      "authors": [
-        "Xiaodong Wang",
-        "Tianle Li",
-        "Chuanxin Song",
-        "Junliang Xie",
-        "Zhanmi Zhong",
-        "Suiying Wu",
-        "Peixi Peng"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Action-conditioned robot world models must respond precisely to robot trajectories while preserving realistic visual dynamics, yet learning both from heterogeneous robot videos remains challenging. Simulation offers structured motion supervision, but appearance differences hinder direct transfer, and inaccurate simulation predictions can misguide real-video generation. We present SimForcing, a simulation-guided framework that uses simulation both as a source of transferable motion knowledge and as a controllable reference for prediction. First, we transfer motion knowledge from a simulation teacher through latent-motion distillation, aligning"
-    },
-    {
-      "title": "Mind the Accent Gap: British Accent Robustness in Speech-Driven Financial Voice Assistants",
-      "url": "http://arxiv.org/abs/2610.06587v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T16:02:45Z",
-      "authors": [
-        "Aadam Haq",
-        "Oggi Rudovic",
-        "Malcolm Chadwick",
-        "Jay Rainey",
-        "Shucong Zhang",
-        "Ricardo Guerrero",
-        "Sourav Bhattacharya",
-        "Maja Pantic"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "AI voice assistants often use Automatic Speech Recognition (ASR) with LLM-based reasoning, yet existing systems struggle with regional British accents, including Scottish, Irish, and Welsh accents, since most ASR models are trained predominantly on American English voice data. Consequently, errors can carry through to the LLM stage, corrupting tool-call arguments and producing wrong or missing responses, which is especially costly in finance. Deployable ASR must also meet tight latency and memory budgets, making an accent-robust model choice even harder. We introduce CavaBench, the first internally collected benchmark of spoken financial quer"
-    },
-    {
-      "title": "HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention",
-      "url": "http://arxiv.org/abs/2610.06563v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:49:12Z",
-      "authors": [
-        "Han Luo",
-        "Bingbing Wen",
-        "Guang Yang",
-        "Zora Zhiruo Wang",
-        "Pan Lu",
-        "Lucy Lu Wang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approaches typically optimize a model or agent harness against a fixed set of tasks, leading to limited generalization to unseen failure modes. We introduce HERA, a framework for harness-environment co-evolution for agentic abstention. HERA consists of (i) a pipeline to automatically construct verifiable pairs of feasible and infeasible tasks by applying co"
-    },
-    {
-      "title": "ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing",
-      "url": "http://arxiv.org/abs/2610.06514v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:30:02Z",
-      "authors": [
-        "Fan Li",
-        "Xiangyu Gao",
-        "Zixuan Liu",
-        "Tong Li",
-        "Chuanpu Fu",
-        "Ziqiang Wang",
-        "Ke Xu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "The growing adoption of large language model (LLM) agents creates a need for network administrators and security teams to audit agent behavior within organizational networks without inspecting private user content. Network traffic offers an observable source of evidence, but how much it reveals about agent tasks and operations remains unclear. Existing traffic datasets lack the joint task and stage annotations needed to evaluate this question. We introduce ANT (Agent Network Traffic), a dataset providing agent behavior information at risk, scenario, and behavior primitive granularities alongside network traffic. ANT contains 3,114 execution e"
-    },
-    {
-      "title": "ArtifactArena: Evaluating Models by What They Build in the Physical World",
-      "url": "http://arxiv.org/abs/2610.06511v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:28:48Z",
-      "authors": [
-        "Kushagra Tiwary*",
-        "David Mayo*",
-        "Nikhil Behari",
-        "Xiangzhou Sun",
-        "Abdulrahman Alabdulkareem",
-        "Isaac Galatzer-Levy",
-        "Boris Katz",
-        "Brian Cheung"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "To evaluate the frontier, we must measure models not by what they say, but by what they can engineer and build in grounded physical environments. We introduce \\textsc{ArtifactArena}, an open-ended platform where models face a physically grounded hardware-software co-design challenge: engineering fully functional robots to compete in a simulated arena. We evaluate a frontier model's zero-shot, verifier guided refinement, and open-ended physical design capabilities through three harnesses that refine their bot artifacts based on text descriptions, physics simulator feedback, and gameplay data. We benchmark these capabilities with an Elo ranking"
-    },
-    {
-      "title": "MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation",
-      "url": "http://arxiv.org/abs/2610.06510v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:28:25Z",
-      "authors": [
-        "Jincheng Wang",
-        "Chi Pui Chan",
-        "Wei Zeng",
-        "Shuyang Zhang",
-        "Jianhao Jiao",
-        "Dimitrios Kanoulas"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "When searching for an object, people choose their next move by considering both likely target locations and places already explored. The current view can cue place-associated memories, bringing target relevance and prior exploration into the same spatial context. In many zero-shot object navigation (ZSON) methods, however, vision-language models (VLMs) infer promising search areas from egocentric images, while exploration history is represented separately, e.g., as text or maps. This separation either requires an additional fusion step or leaves the correspondence between memory and route choices implicit for the VLM to recover. We instead ma"
-    },
-    {
-      "title": "AISSA Demo: AI-based Student Slides Analysis Tool for Automated Grading and Feedback",
-      "url": "http://arxiv.org/abs/2610.06506v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:25:06Z",
-      "authors": [
-        "Alvaro Becerra",
-        "Diego Gomez",
-        "Ruth Cobos",
-        "Julian Fierrez"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "We present an AI-based web-oriented tool designed to support formative feedback for oral presentation slides in higher education: AISSA. It allows students to upload their slides before presentation and automatically receive rubric-based quantitative scores and qualitative feedback generated by large language models (LLMs). The tool analyses slide-level features and content using a teacher-defined rubric and delivers feedback through interactive Learning Analytics dashboards. These dashboards enable students to visualize performance indicators, inspect feedback in context, and reflect on strengths and areas for improvement, while teachers can"
-    },
-    {
-      "title": "You Changed Your Mind, The Model Didn't: Demystifying Intent in Multi-Turn Dialogue",
-      "url": "http://arxiv.org/abs/2610.06496v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-05T15:16:03Z",
-      "authors": [
-        "Junle Chen",
-        "Wei Chen",
-        "Zhengjun Huang",
-        "Zhoujin Tian",
-        "Yuxuan Liu",
-        "Kai Wang",
-        "Rui Chen",
-        "Xiaofang Zhou"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "When a large language model handles a multi-turn task and a user proposes a change but ultimately rejects it, the model should continue as if nothing changed. We find a surprising failure: merely mentioning a rejected change can derail task execution, even when the user's final intent remains unchanged. To systematically study language model behavior under evolving user intent, we introduce Intent-Eval, a controlled benchmark spanning tool actions, code, databases, and mathematics. Across diverse tasks, models are vulnerable to both rejected proposals and superseded requirements, consistent with mentioned-as-in-effect confusion: conversationa"
     }
   ]
 }
