@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T14:21:39Z",
+  "updatedAt": "2026-10-14T12:03:56Z",
   "errors": [],
   "items": [
     {
@@ -31,7 +31,7 @@
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
       "stars": 468,
-      "updatedAt": "2026-10-13T14:06:36Z",
+      "updatedAt": "2026-10-13T16:30:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -64,7 +64,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 233,
-      "updatedAt": "2026-10-13T13:59:59Z",
+      "updatedAt": "2026-10-13T17:14:55Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-13T06:25:18Z",
+      "updatedAt": "2026-10-13T18:50:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -250,8 +250,8 @@
       "url": "https://github.com/masuP9/a11y-specialist-skills",
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
-      "stars": 59,
-      "updatedAt": "2026-10-13T10:00:56Z",
+      "stars": 60,
+      "updatedAt": "2026-10-14T10:59:18Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -262,7 +262,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 59,
-      "updatedAt": "2026-10-13T09:18:19Z",
+      "updatedAt": "2026-10-14T10:10:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -284,7 +284,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 56,
-      "updatedAt": "2026-10-09T12:33:57Z",
+      "updatedAt": "2026-10-14T11:13:21Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -295,7 +295,7 @@
       "description": "An ESLint plugin to apply various a11y rules to JSX templates",
       "language": "JavaScript",
       "stars": 56,
-      "updatedAt": "2026-10-06T09:51:12Z",
+      "updatedAt": "2026-10-14T09:05:06Z",
       "detectedAt": "2026-09-30T12:45:02Z",
       "source": "GitHub"
     },
@@ -404,8 +404,8 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 29,
-      "updatedAt": "2026-10-13T12:49:00Z",
+      "stars": 30,
+      "updatedAt": "2026-10-13T17:34:08Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -459,8 +459,8 @@
       "url": "https://github.com/equalizedigital/accessibility-checker",
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
-      "stars": 21,
-      "updatedAt": "2026-10-13T12:14:17Z",
+      "stars": 22,
+      "updatedAt": "2026-10-13T22:08:47Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -509,6 +509,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 18,
+      "updatedAt": "2026-10-13T10:31:31Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "audits",
       "fullName": "A11y-Pulse/audits",
       "url": "https://github.com/A11y-Pulse/audits",
@@ -517,17 +528,6 @@
       "stars": 18,
       "updatedAt": "2026-10-04T08:22:44Z",
       "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 17,
-      "updatedAt": "2026-10-13T10:31:31Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -542,6 +542,17 @@
       "source": "GitHub"
     },
     {
+      "name": "chrome-bridge",
+      "fullName": "siropkin/chrome-bridge",
+      "url": "https://github.com/siropkin/chrome-bridge",
+      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
+      "language": "JavaScript",
+      "stars": 14,
+      "updatedAt": "2026-10-14T00:00:23Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
       "name": "outloud",
       "fullName": "visionably/outloud",
       "url": "https://github.com/visionably/outloud",
@@ -550,17 +561,6 @@
       "stars": 13,
       "updatedAt": "2026-10-06T02:48:03Z",
       "detectedAt": "2026-09-19T11:09:36Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "chrome-bridge",
-      "fullName": "siropkin/chrome-bridge",
-      "url": "https://github.com/siropkin/chrome-bridge",
-      "description": "CLI for browser automation: let any AI agent drive your real logged-in Chrome — you watch every action and can veto any tab. Zero deps, no relaunch, no MCP server. A11y snapshots + element refs, CDP screenshots, network capture",
-      "language": "JavaScript",
-      "stars": 13,
-      "updatedAt": "2026-10-02T18:40:56Z",
-      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
@@ -614,7 +614,7 @@
       "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
       "language": "C++",
       "stars": 10,
-      "updatedAt": "2026-10-13T07:51:29Z",
+      "updatedAt": "2026-10-13T20:19:54Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
@@ -674,6 +674,17 @@
       "source": "GitHub"
     },
     {
+      "name": "claude-wcag-accessibility-skill",
+      "fullName": "mrKanoh/claude-wcag-accessibility-skill",
+      "url": "https://github.com/mrKanoh/claude-wcag-accessibility-skill",
+      "description": "Claude Code skill for WCAG 2.1 accessibility audits, WAI-ARIA patterns, screen reader testing, and CI/CD integration.",
+      "language": "Python",
+      "stars": 7,
+      "updatedAt": "2026-04-21T23:23:16Z",
+      "detectedAt": "2026-10-06T13:25:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "zimmar-accessibility-checker",
       "fullName": "praizjosh/zimmar-accessibility-checker",
       "url": "https://github.com/praizjosh/zimmar-accessibility-checker",
@@ -682,17 +693,6 @@
       "stars": 6,
       "updatedAt": "2026-08-11T21:59:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "claude-wcag-accessibility-skill",
-      "fullName": "mrKanoh/claude-wcag-accessibility-skill",
-      "url": "https://github.com/mrKanoh/claude-wcag-accessibility-skill",
-      "description": "Claude Code skill for WCAG 2.1 accessibility audits, WAI-ARIA patterns, screen reader testing, and CI/CD integration.",
-      "language": "Python",
-      "stars": 6,
-      "updatedAt": "2026-04-21T23:23:16Z",
-      "detectedAt": "2026-10-06T13:25:01Z",
       "source": "GitHub"
     },
     {
