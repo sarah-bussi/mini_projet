@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T11:40:51Z",
+  "updatedAt": "2026-10-16T11:34:30Z",
   "errors": [],
   "items": [
     {
@@ -19,8 +19,8 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 783,
-      "updatedAt": "2026-09-28T19:01:56Z",
+      "stars": 784,
+      "updatedAt": "2026-10-15T23:59:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 170,
-      "updatedAt": "2026-10-15T06:55:33Z",
+      "updatedAt": "2026-10-16T08:30:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -96,7 +96,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 155,
+      "stars": 156,
       "updatedAt": "2026-10-08T07:30:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-15T07:04:25Z",
+      "updatedAt": "2026-10-16T10:19:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -229,7 +229,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-12T08:01:41Z",
+      "updatedAt": "2026-10-16T06:54:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 60,
-      "updatedAt": "2026-10-14T15:35:54Z",
+      "updatedAt": "2026-10-16T08:01:30Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 30,
-      "updatedAt": "2026-10-13T17:34:08Z",
+      "updatedAt": "2026-10-16T09:19:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +449,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-14T15:36:12Z",
+      "updatedAt": "2026-10-16T10:24:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-13T22:08:47Z",
+      "updatedAt": "2026-10-15T20:26:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -504,7 +504,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-15T09:39:30Z",
+      "updatedAt": "2026-10-15T13:02:28Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -526,7 +526,7 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 18,
-      "updatedAt": "2026-10-13T10:31:31Z",
+      "updatedAt": "2026-10-15T19:44:08Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
       "language": "C++",
       "stars": 10,
-      "updatedAt": "2026-10-13T20:19:54Z",
+      "updatedAt": "2026-10-16T00:25:03Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
@@ -652,6 +652,17 @@
       "source": "GitHub"
     },
     {
+      "name": "screen-readers-mcp",
+      "fullName": "marlon-sousa/screen-readers-mcp",
+      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
+      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
+      "language": "Swift",
+      "stars": 8,
+      "updatedAt": "2026-09-25T20:31:27Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "setup-action",
       "fullName": "guidepup/setup-action",
       "url": "https://github.com/guidepup/setup-action",
@@ -659,17 +670,6 @@
       "language": "JavaScript",
       "stars": 7,
       "updatedAt": "2026-09-26T09:55:02Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "screen-readers-mcp",
-      "fullName": "marlon-sousa/screen-readers-mcp",
-      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
-      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
-      "language": "Swift",
-      "stars": 7,
-      "updatedAt": "2026-09-25T20:31:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -682,6 +682,17 @@
       "stars": 7,
       "updatedAt": "2026-04-21T23:23:16Z",
       "detectedAt": "2026-10-06T13:25:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "kirby-editoria11y",
+      "fullName": "medienbaecker/kirby-editoria11y",
+      "url": "https://github.com/medienbaecker/kirby-editoria11y",
+      "description": "Editoria11y accessibility checker for Kirby editors",
+      "language": "PHP",
+      "stars": 6,
+      "updatedAt": "2026-10-16T08:13:50Z",
+      "detectedAt": "2026-10-15T11:40:51Z",
       "source": "GitHub"
     },
     {
@@ -704,17 +715,6 @@
       "stars": 6,
       "updatedAt": "2026-03-24T21:27:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "kirby-editoria11y",
-      "fullName": "medienbaecker/kirby-editoria11y",
-      "url": "https://github.com/medienbaecker/kirby-editoria11y",
-      "description": "Editoria11y accessibility checker for Kirby editors",
-      "language": "PHP",
-      "stars": 5,
-      "updatedAt": "2026-10-14T12:51:49Z",
-      "detectedAt": "2026-10-15T11:40:51Z",
       "source": "GitHub"
     },
     {
