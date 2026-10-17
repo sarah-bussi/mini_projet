@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T11:34:30Z",
+  "updatedAt": "2026-10-17T10:54:14Z",
   "errors": [],
   "items": [
     {
@@ -20,7 +20,7 @@
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
       "stars": 784,
-      "updatedAt": "2026-10-15T23:59:48Z",
+      "updatedAt": "2026-10-16T16:40:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 468,
-      "updatedAt": "2026-10-13T16:30:02Z",
+      "stars": 470,
+      "updatedAt": "2026-10-16T19:43:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-12T00:25:52Z",
+      "updatedAt": "2026-10-17T09:15:11Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -141,7 +141,7 @@
       "description": "An accessibility checker tool for validating the color contrast based on WCAG 2.0 and WCAG 2.1 standards.",
       "language": "JavaScript",
       "stars": 106,
-      "updatedAt": "2026-01-24T12:30:38Z",
+      "updatedAt": "2026-10-17T04:45:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-16T10:19:38Z",
+      "updatedAt": "2026-10-17T02:24:31Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -217,8 +217,8 @@
       "url": "https://github.com/yamanoku/awesome-japanese-a11y-companies",
       "description": "アクセシビリティに取り組む・推進している日本企業まとめ（随時更新）",
       "language": "TypeScript",
-      "stars": 73,
-      "updatedAt": "2026-09-19T01:39:00Z",
+      "stars": 74,
+      "updatedAt": "2026-10-17T01:34:56Z",
       "detectedAt": "2026-09-19T11:09:36Z",
       "source": "GitHub"
     },
@@ -229,7 +229,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-16T06:54:10Z",
+      "updatedAt": "2026-10-16T14:54:06Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 30,
-      "updatedAt": "2026-10-16T09:19:39Z",
+      "updatedAt": "2026-10-17T04:01:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-15T20:26:01Z",
+      "updatedAt": "2026-10-16T19:11:49Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -526,7 +526,7 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 18,
-      "updatedAt": "2026-10-15T19:44:08Z",
+      "updatedAt": "2026-10-16T15:32:37Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -597,6 +597,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ghostfox",
+      "fullName": "autokeren/ghostfox",
+      "url": "https://github.com/autokeren/ghostfox",
+      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
+      "language": "C++",
+      "stars": 11,
+      "updatedAt": "2026-10-16T00:25:03Z",
+      "detectedAt": "2026-10-12T15:41:20Z",
+      "source": "GitHub"
+    },
+    {
       "name": "aria-at-tests",
       "fullName": "guidepup/aria-at-tests",
       "url": "https://github.com/guidepup/aria-at-tests",
@@ -605,17 +616,6 @@
       "stars": 11,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "ghostfox",
-      "fullName": "autokeren/ghostfox",
-      "url": "https://github.com/autokeren/ghostfox",
-      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
-      "language": "C++",
-      "stars": 10,
-      "updatedAt": "2026-10-16T00:25:03Z",
-      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
