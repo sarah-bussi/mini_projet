@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T11:54:17Z",
+  "updatedAt": "2026-10-17T11:10:34Z",
   "errors": [],
   "items": [
     {
@@ -863,6 +863,25 @@
       ],
       "keywords": [],
       "summary": "Le guide pratique pour préparer son stage, observer le terrain, construire son analyse et rédiger un rapport de stage en psychologie rigoureux, réflexif et professionnel. Effectuer un stage constitue une étape essentielle de la formation en psychologie. Mais comment choisir son terrain, comprendre ce qui est attendu du stagiaire, trouver sa place dans une institution, observer sans interpréter trop rapidement et transformer progressivement l’expérience vécue en matériau de réflexion ? Comment sélectionner les situations à présenter, construire un questionnement, articuler théorie et terrain et rédiger un rapport qui ne soit ni un simple récit"
+    },
+    {
+      "title": "Quand l'IA entre dans l'activité, que reste-t-il de la compétence ?",
+      "url": "https://hal.science/hal-05803902v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-17T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Intelligence artificielle",
+        "Compétence",
+        "Diplôme",
+        "Validation des acquis de l'expérience",
+        "Métacognition",
+        "Didactique professionnelle"
+      ],
+      "summary": "Les outils d'intelligence artificielle générative entrent dans l'activité de nombreux professionnels. Les recherches disponibles mesurent surtout des performances assistées ; elles ne permettent pas, à elles seules, de conclure à l'acquisition de compétences. L'article distingue la performance assistée, la compétence mobilisée et la compétence développée, examine ce que font déjà les institutions (déclarer, vérifier, répondre) et en tire des pistes pour la reconnaissance de l'expérience, à partir de travaux de l'auteur sur les diplômes, les compétences et la validation des acquis de l'expérience."
     },
     {
       "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
@@ -3075,6 +3094,43 @@
         "Expérience patient"
       ],
       "summary": "Cette communication interroge les conditions d’adaptation d’une méthode de modélisation des connaissances aux spécificités de la médiation en santé, dans la perspective de concevoir des dispositifs d’intelligence artificielle guidée susceptibles de soutenir l’expérience patient. Elle prend appui sur THERAMED (THÉRApie, MÉDecine, Médiation et Communication), projet exploratoire mobilisant ETHCOMOD (ETHnographie, Communication, Ontologie, MODélisation), une méthode initialement développée dans le champ de la Recherche et Développement (R&D) industrielle. Le passage au domaine de la santé ne constitue toutefois pas une simple transposition : la "
+    },
+    {
+      "title": "Actualisation d’une typologie des dispositifs hybrides en enseignement supérieur et illustrations",
+      "url": "https://uca.hal.science/hal-05803613v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-14T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Formation hybride typologie enseignement supérieur HyPES Hy-Sup"
+      ],
+      "summary": "Si la formation hybride occupait déjà une place croissante dans l'enseignement supérieur au cours des années 2010, elle constitue aujourd'hui une modalité prédominante dans les établissements postsecondaires (Heilporn, 2021 ; Peltier et Séguin, 2021). Le projet européen Hy-Sup (2009-2012) a produit une typologie des dispositifs hybrides fondée sur cinq dimensions : l'articulation présence/distance, la médiatisation, la médiation, l'accompagnement humain et le degré d'ouverture du dispositif (Burton et al., 2011). Cette typologie a contribué à rendre intelligibles les pratiques de formation mobilisant le numérique selon diverses configurations"
+    },
+    {
+      "title": "Volume measures for non-market education output",
+      "url": "https://insee.hal.science/hal-05803536v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-14T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Price and Volume Measures",
+        "Education volume measurement",
+        "Productivity of Public Services",
+        "Human capital",
+        "Quality adjustment",
+        "Productivité des services publics",
+        "Capital humain",
+        "Ajustement qualité",
+        "Mesure du volume de l'éducation",
+        "Partage volume-prix"
+      ],
+      "summary": "Measuring the volume of public services output is a fundamental challenge for national accounts, due to the absence of market prices. In France, the volume of non-market education is measured using an output approach based on student enrollment. As this indicator mainly reflects demographic trends, the recent decline in the number of students mechanically reduces the estimated volume of education, even though quality could have improved through smaller class sizes. Conversely, the decline in PISA scores could reflect a decrease in teaching quality. This study compares alternative volume measurements, and examines different quality adjustments"
     },
     {
       "title": "ChunkAct: Action Chunking for Agentic Robotics",
@@ -5576,65 +5632,6 @@
       ],
       "keywords": [],
       "summary": "Close-proximity multi-arm manipulation requires collision models that are both geometrically accurate and differentiable enough for real-time optimization. Classical geometry checkers provide reliable distances but are difficult to use inside gradient-based model predictive control, while conservative proxy models can restrict tightly coupled motion. We present PI-UDF, a physics-informed unified differentiable framework for body-to-body collision distance prediction between articulated robots. PI-UDF combines analytical forward kinematics with learnable link-geometry embeddings and a shared residual network to predict pairwise inter-arm dista"
-    },
-    {
-      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
-      "url": "http://arxiv.org/abs/2610.12391v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:39:12Z",
-      "authors": [
-        "Jialu Wang",
-        "Ruichen Zhang",
-        "Xiaoou Liu",
-        "Hua Wei",
-        "Tianlong Chen"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Multimodal large language models (MLLMs) often struggle to identify and use geometric relations in diagrams. Recent methods address this challenge by converting geometric entities, relations, and constraints into explicit textual representations for the model to reason over. However, effective formalization is highly non-trivial: on Geometry3K, structure injection fixes 28 errors but introduces 13 new ones among 200 examples. Redundant relations can distract the model, while ambiguous references to diagram elements can lead it to apply constraints incorrectly. This suggests that the key challenge is not merely extracting more geometric facts,"
-    },
-    {
-      "title": "ARC: A Reasoning Recipe for Robot Foundation Models",
-      "url": "http://arxiv.org/abs/2610.12386v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:38:04Z",
-      "authors": [
-        "Gokul Puthumanaillam",
-        "Tao Sun",
-        "Elie Aljalbout",
-        "Moritz Reuss",
-        "Zhaoshuo Li",
-        "Fabio Ramos",
-        "Ankit Goyal",
-        "Jenai Xuning Yang"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "The prevailing approach to improving robot foundation models (RFMs) relies on larger models, more robot demonstrations, and costly training at scale. We show that there exists an effective and efficient complementary approach: the right reasoning recipe can substantially improve the zero-shot task performance of existing state-of-the-art RFMs. We refer to this recipe as ARC. It consists of three key ingredients: a reasoning trace, a scalable automatic labeling pipeline, and a strategy for adapting pretrained RFMs to use these traces for control. First, we find that effective reasoning traces should be grounded in the robot's next action and e"
-    },
-    {
-      "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
-      "url": "http://arxiv.org/abs/2610.12375v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:32:08Z",
-      "authors": [
-        "Babak Barazandeh",
-        "Connor Swanson",
-        "Chinmay Kulkarni",
-        "Nikhil Mungel"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Agents are deployed in applications from trip planners and stock trading to IT incident triage. In most cases, LLM agents work autonomously with minimal rule-based safeguarding, leading to cost and safety issues from irreversible actions. Recent works resolve this either by using a safeguard agent to monitor behavior or evaluating logs post-hoc. The first adds cost and latency to every step; the second delivers its verdict after the run, when tokens are burned and damage is done. To overcome this, we propose OnTrack, a streaming monitoring mechanism that compares an agent's steps and dependencies against recorded successful runs to alert user"
     }
   ]
 }
