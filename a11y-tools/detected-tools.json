@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T10:54:14Z",
+  "updatedAt": "2026-10-18T11:20:18Z",
   "errors": [],
   "items": [
     {
@@ -19,7 +19,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 784,
+      "stars": 785,
       "updatedAt": "2026-10-16T16:40:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -42,7 +42,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-17T09:15:11Z",
+      "updatedAt": "2026-10-17T20:25:47Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -64,7 +64,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 233,
-      "updatedAt": "2026-10-13T17:14:55Z",
+      "updatedAt": "2026-10-17T20:45:55Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 156,
-      "updatedAt": "2026-10-08T07:30:27Z",
+      "updatedAt": "2026-10-17T16:13:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -162,7 +162,7 @@
       "url": "https://github.com/daisy/ace",
       "description": "Ace by DAISY, an Accessibility Checker for EPUB",
       "language": "JavaScript",
-      "stars": 98,
+      "stars": 99,
       "updatedAt": "2026-05-01T10:14:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-17T02:24:31Z",
+      "updatedAt": "2026-10-18T01:46:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 30,
-      "updatedAt": "2026-10-17T04:01:51Z",
+      "updatedAt": "2026-10-18T11:10:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -449,7 +449,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-16T10:24:13Z",
+      "updatedAt": "2026-10-17T22:56:08Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -481,8 +481,8 @@
       "url": "https://github.com/A11y-Pulse/audits",
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
-      "stars": 20,
-      "updatedAt": "2026-10-15T08:37:52Z",
+      "stars": 21,
+      "updatedAt": "2026-10-18T08:32:31Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -495,6 +495,17 @@
       "stars": 20,
       "updatedAt": "2026-10-09T09:35:34Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 19,
+      "updatedAt": "2026-10-16T15:32:37Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -517,17 +528,6 @@
       "stars": 19,
       "updatedAt": "2026-10-13T05:59:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 18,
-      "updatedAt": "2026-10-16T15:32:37Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -575,6 +575,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ecom-a11y-audit",
+      "fullName": "kgelster/ecom-a11y-audit",
+      "url": "https://github.com/kgelster/ecom-a11y-audit",
+      "description": "Finds the accessibility failures your Shopify apps inject, and blames the right party: theme or app. WCAG 2.2 AA agent skill that never claims compliance from a clean scan.",
+      "language": "JavaScript",
+      "stars": 12,
+      "updatedAt": "2026-10-18T00:14:52Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "accessibility-skills",
       "fullName": "zivtech/accessibility-skills",
       "url": "https://github.com/zivtech/accessibility-skills",
@@ -586,24 +597,13 @@
       "source": "GitHub"
     },
     {
-      "name": "ecom-a11y-audit",
-      "fullName": "kgelster/ecom-a11y-audit",
-      "url": "https://github.com/kgelster/ecom-a11y-audit",
-      "description": "Finds the accessibility failures your Shopify apps inject, and blames the right party: theme or app. WCAG 2.2 AA agent skill that never claims compliance from a clean scan.",
-      "language": "JavaScript",
-      "stars": 12,
-      "updatedAt": "2026-09-04T21:25:34Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "ghostfox",
       "fullName": "autokeren/ghostfox",
       "url": "https://github.com/autokeren/ghostfox",
       "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 52 MCP tools, unhookable a11y/compositor vision, captcha solvers, visual QA for AI-built UIs.",
       "language": "C++",
       "stars": 11,
-      "updatedAt": "2026-10-16T00:25:03Z",
+      "updatedAt": "2026-10-17T14:46:00Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
