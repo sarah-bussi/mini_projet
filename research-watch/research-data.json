@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-10-18T11:42:25Z",
-  "errors": [],
+  "updatedAt": "2026-10-19T13:57:17Z",
+  "errors": [
+    {
+      "source": "arXiv",
+      "error": "The read operation timed out"
+    }
+  ],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -851,6 +856,41 @@
         "Accessibilité"
       ],
       "summary": "Nous présentons une démonstration de HMK-D V2, un clavier StreamDeck à 32 touches dédié à la saisie mathématique accessible. Les visiteur•euses vivent un scénario de recopie : reproduire une même expression mathématique avec HMK-D V2 puis avec un éditeur d'équations classique, et comparer en direct l'effort de saisie engagé grâce à un indice de complexité procédurale calculé à partir de l'enregistrement de l'activité sur le dispositif. Issu d'observations de terrain conduites en classe auprès d'élèves en situation de handicap moteur, visuel et cognitif, le dispositif illustre ainsi, de façon tangible, l'écart entre confort de saisie et object"
+    },
+    {
+      "title": "LLM benchmarking for HTR on french historical death records",
+      "url": "https://hal.science/hal-05805310v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": ""
+    },
+    {
+      "title": "Outils numériques en rééducation fonctionnelle : Protocole d'une étude qualitative sur ScenaSuite",
+      "url": "https://hal.science/hal-05782928v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-19T00:00:00Z",
+      "domains": [
+        "Rééducation"
+      ],
+      "keywords": [
+        "Qualitative study",
+        "Technology acceptance",
+        "Post-stroke rehabilitation",
+        "Professional identity",
+        "Therapeutic relationship",
+        "Digital tools",
+        "Occupational therapy",
+        "Étude qualitative",
+        "Acceptation des technologies",
+        "Rééducation post-AVC"
+      ],
+      "summary": "L'intégration croissante des outils numériques dans les soins transforme les pratiques professionnelles en ergothérapie, notamment en rééducation fonctionnelle post-AVC. Leur impact sur la relation thérapeutique et l'identité professionnelle restent cependant insuffisamment documentés. Cet article présente le cadre théorique et le protocole de recherche d'une étude qualitative examinant la façon dont des ergothérapeutes perçoivent l'intégration de la plateforme ScenaSuite outil numérique co-conçu avec des ergothérapeutes dans leur pratique clinique. À partir d'un état de l'art ciblé sur la science de l’occupation, l'adhérence professionnelle "
     },
     {
       "title": "LE GUIDE PRATIQUE DU RAPPORT DE STAGE EN PSYCHOLOGIE: De la recherche du stage à la soutenance du rapport",
@@ -4190,6 +4230,24 @@
       "summary": ""
     },
     {
+      "title": "Appréhender l’impact de l’IA sur le travail à travers une approche par les chaînes de valeurs globales.",
+      "url": "https://hal.science/hal-05797567v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-13T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Chaines de valeur globales",
+        "Externalisation",
+        "Précarisation",
+        "Travail",
+        "Intelligence artificielle"
+      ],
+      "summary": "L’intelligence artificielle est souvent présentée comme une technologie susceptible de transformer en profondeur le travail, principalement à travers l’automatisation des tâches. Pourtant, ces analyses peinent à saisir les transformations concrètes du travail liées au déploiement des systèmes d’IA, en particulier lorsqu’elles négligent les dimensions organisationnelles, sociales et géographiques de leur production. À partir d’une enquête qualitative et quantitative menée entre la France et Madagascar, cet article propose d’analyser l’impact de l’IA sur le travail à travers une approche par les chaînes de valeur globales. Il montre que le déve"
+    },
+    {
       "title": "Quand le génie des procédés s’inscrit dans le développement d’une future filière e-biocarburants pour la décarbonation du transport aérien et maritime",
       "url": "https://hal.science/hal-05793485v1",
       "source": "HAL",
@@ -5576,62 +5634,6 @@
       ],
       "keywords": [],
       "summary": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before it is reused. We introduce RoboRSI, a robot self-improvement system built on Top-Down Skill Refinement (TSR). TSR decomposes tasks into compound, atomi"
-    },
-    {
-      "title": "GLIO2: A GPU-Parallelized Tightly-Coupled LiDAR-Inertial-GNSS System for Robust and Real-Time Global Localization and Mapping",
-      "url": "http://arxiv.org/abs/2610.12411v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:49:33Z",
-      "authors": [
-        "Qi Zhang",
-        "Xikun Liu",
-        "Qijun Qin",
-        "Xiangru Wang",
-        "Junzhe Wang",
-        "Naigui Xiao",
-        "Jianhao Jiao",
-        "Weisong Wen"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Globally consistent, real-time state estimation in large-scale, perceptually degraded environments is essential for autonomous vehicles and aerial robots, and requires fusing LiDAR, inertial, and GNSS measurements. Existing fusion methods, however, share a scan-to-map front-end with two failure modes. First, each scan is aligned to an incrementally built map that drifts under degeneracy, and once the estimate diverges the error is irrecoverable. Second, even without divergence, a registration biased by dynamic objects or wrong correspondences is propagated as a single pose constraint with an over-confident covariance, leaving its corresponden"
-    },
-    {
-      "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
-      "url": "http://arxiv.org/abs/2610.12407v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:46:03Z",
-      "authors": [
-        "Shashank Hegde",
-        "Alexander Popov",
-        "Elie Aljalbout",
-        "Nikolai Smolyanskiy"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predictions. We introduce LeWAM, a bidirectional transformer for forward, backward, inverse dynamics and policy prediction, on a decoder-free JEPA latent trained end-to-end through all four modes. We see the following benefits: 1) Alignment: linear probes read robot and object state from LeWAM's latent better than from a regular Le World Model (a forward-only JEPA world model), while the latent ignores visual distractors as well as LeWM does and far b"
-    },
-    {
-      "title": "A Physics-Informed Collision Learning Framework for Collaborative Robot Motion Generation",
-      "url": "http://arxiv.org/abs/2610.12404v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-08T17:45:04Z",
-      "authors": [
-        "Chen Cai",
-        "Steven Liu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Close-proximity multi-arm manipulation requires collision models that are both geometrically accurate and differentiable enough for real-time optimization. Classical geometry checkers provide reliable distances but are difficult to use inside gradient-based model predictive control, while conservative proxy models can restrict tightly coupled motion. We present PI-UDF, a physics-informed unified differentiable framework for body-to-body collision distance prediction between articulated robots. PI-UDF combines analytical forward kinematics with learnable link-geometry embeddings and a shared residual network to predict pairwise inter-arm dista"
     }
   ]
 }
