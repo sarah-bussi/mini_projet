@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T13:33:47Z",
+  "updatedAt": "2026-10-20T11:48:47Z",
   "errors": [],
   "items": [
     {
@@ -85,8 +85,8 @@
       "url": "https://github.com/GovTechSG/oobee",
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
-      "stars": 170,
-      "updatedAt": "2026-10-16T08:30:34Z",
+      "stars": 171,
+      "updatedAt": "2026-10-20T05:55:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 156,
-      "updatedAt": "2026-10-18T20:26:10Z",
+      "updatedAt": "2026-10-19T17:20:28Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -206,8 +206,8 @@
       "url": "https://github.com/ericwbailey/a11y-webring.club",
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
-      "stars": 76,
-      "updatedAt": "2026-10-12T15:55:13Z",
+      "stars": 75,
+      "updatedAt": "2026-10-19T18:22:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 60,
-      "updatedAt": "2026-10-16T08:01:30Z",
+      "updatedAt": "2026-10-20T11:22:48Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -262,7 +262,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 59,
-      "updatedAt": "2026-10-15T10:27:24Z",
+      "updatedAt": "2026-10-20T10:42:03Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -360,7 +360,7 @@
       "url": "https://github.com/mizchi/vlmkit",
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
-      "stars": 38,
+      "stars": 39,
       "updatedAt": "2026-10-19T13:18:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -443,6 +443,17 @@
       "source": "GitHub"
     },
     {
+      "name": "jupyterlab-a11y-checker",
+      "fullName": "berkeley-cdss/jupyterlab-a11y-checker",
+      "url": "https://github.com/berkeley-cdss/jupyterlab-a11y-checker",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 23,
+      "updatedAt": "2026-10-19T16:17:09Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-foundation",
       "fullName": "ThomasSweet/a11y-foundation",
       "url": "https://github.com/ThomasSweet/a11y-foundation",
@@ -450,17 +461,6 @@
       "language": "Vue",
       "stars": 23,
       "updatedAt": "2026-10-18T14:20:54Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "jupyterlab-a11y-checker",
-      "fullName": "berkeley-cdss/jupyterlab-a11y-checker",
-      "url": "https://github.com/berkeley-cdss/jupyterlab-a11y-checker",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 23,
-      "updatedAt": "2026-10-14T00:55:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -487,6 +487,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 20,
+      "updatedAt": "2026-10-20T08:45:30Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "wp-a11y-docs",
       "fullName": "wpaccessibility/wp-a11y-docs",
       "url": "https://github.com/wpaccessibility/wp-a11y-docs",
@@ -504,7 +515,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-19T13:02:49Z",
+      "updatedAt": "2026-10-20T03:13:46Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -517,17 +528,6 @@
       "stars": 19,
       "updatedAt": "2026-10-19T08:54:43Z",
       "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 19,
-      "updatedAt": "2026-10-16T15:32:37Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -641,6 +641,17 @@
       "source": "GitHub"
     },
     {
+      "name": "screen-readers-mcp",
+      "fullName": "marlon-sousa/screen-readers-mcp",
+      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
+      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
+      "language": "Swift",
+      "stars": 9,
+      "updatedAt": "2026-09-25T20:31:27Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "genpark-frontend-component-accessibility-checker-skill",
       "fullName": "alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
       "url": "https://github.com/alphaparkinc/genpark-frontend-component-accessibility-checker-skill",
@@ -648,17 +659,6 @@
       "language": "Python",
       "stars": 9,
       "updatedAt": "2026-07-28T04:39:14Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "screen-readers-mcp",
-      "fullName": "marlon-sousa/screen-readers-mcp",
-      "url": "https://github.com/marlon-sousa/screen-readers-mcp",
-      "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
-      "language": "Swift",
-      "stars": 8,
-      "updatedAt": "2026-09-25T20:31:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
