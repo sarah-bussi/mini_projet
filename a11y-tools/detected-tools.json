@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T11:48:47Z",
+  "updatedAt": "2026-10-21T12:00:50Z",
   "errors": [],
   "items": [
     {
@@ -30,8 +30,8 @@
       "url": "https://github.com/fecarrico/A11Y.md",
       "description": "A context system for building accessible software by default — for developers and AI, with enforceable rules aligned to WCAG.",
       "language": "Python",
-      "stars": 470,
-      "updatedAt": "2026-10-16T19:43:36Z",
+      "stars": 469,
+      "updatedAt": "2026-10-20T19:58:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -85,8 +85,8 @@
       "url": "https://github.com/GovTechSG/oobee",
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
-      "stars": 171,
-      "updatedAt": "2026-10-20T05:55:36Z",
+      "stars": 172,
+      "updatedAt": "2026-10-20T20:02:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 156,
-      "updatedAt": "2026-10-19T17:20:28Z",
+      "updatedAt": "2026-10-21T01:12:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-18T17:39:15Z",
+      "updatedAt": "2026-10-21T03:32:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -207,7 +207,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-10-19T18:22:16Z",
+      "updatedAt": "2026-10-21T00:24:06Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +251,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 60,
-      "updatedAt": "2026-10-20T11:22:48Z",
+      "updatedAt": "2026-10-21T06:58:15Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -262,7 +262,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 59,
-      "updatedAt": "2026-10-20T10:42:03Z",
+      "updatedAt": "2026-10-21T07:54:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -377,6 +377,17 @@
       "source": "GitHub"
     },
     {
+      "name": "Portfolio-V2",
+      "fullName": "BobShoaun/Portfolio-V2",
+      "url": "https://github.com/BobShoaun/Portfolio-V2",
+      "description": "Second iteration of my personal portfolio website to showcase my coding and design skills. Featuring cool animations, colors, dark/light theme, and WAI-ARIA a11y. Made with the new framework Svelte.",
+      "language": "Svelte",
+      "stars": 36,
+      "updatedAt": "2026-10-21T06:06:57Z",
+      "detectedAt": "2026-10-21T12:00:50Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-tests-web",
       "fullName": "bbc/a11y-tests-web",
       "url": "https://github.com/bbc/a11y-tests-web",
@@ -471,7 +482,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-19T12:14:14Z",
+      "updatedAt": "2026-10-20T12:12:29Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -482,7 +493,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 21,
-      "updatedAt": "2026-10-18T22:03:16Z",
+      "updatedAt": "2026-10-21T09:09:55Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -509,25 +520,25 @@
       "source": "GitHub"
     },
     {
-      "name": "eslint",
-      "fullName": "ofri-peretz/eslint",
-      "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-10-20T03:13:46Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "hive",
       "fullName": "hazelcast/hive",
       "url": "https://github.com/hazelcast/hive",
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-19T08:54:43Z",
+      "updatedAt": "2026-10-21T12:00:37Z",
       "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint",
+      "fullName": "ofri-peretz/eslint",
+      "url": "https://github.com/ofri-peretz/eslint",
+      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "language": "TypeScript",
+      "stars": 18,
+      "updatedAt": "2026-10-20T03:13:46Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -619,6 +630,17 @@
       "source": "GitHub"
     },
     {
+      "name": "tailwind-a11y",
+      "fullName": "chamroro/tailwind-a11y",
+      "url": "https://github.com/chamroro/tailwind-a11y",
+      "description": "Static accessibility analysis for Tailwind CSS projects.",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2026-10-21T02:08:19Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-hd",
       "fullName": "holmdigital/a11y-hd",
       "url": "https://github.com/holmdigital/a11y-hd",
@@ -627,17 +649,6 @@
       "stars": 10,
       "updatedAt": "2026-10-10T05:26:11Z",
       "detectedAt": "2026-10-08T13:40:27Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "tailwind-a11y",
-      "fullName": "chamroro/tailwind-a11y",
-      "url": "https://github.com/chamroro/tailwind-a11y",
-      "description": "Static accessibility analysis for Tailwind CSS projects.",
-      "language": "TypeScript",
-      "stars": 10,
-      "updatedAt": "2026-09-19T16:59:06Z",
-      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
