@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-10-20T12:11:49Z",
-  "errors": [],
+  "updatedAt": "2026-10-21T12:25:03Z",
+  "errors": [
+    {
+      "source": "arXiv",
+      "error": "The read operation timed out"
+    }
+  ],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -704,6 +709,27 @@
         "Explainable AI"
       ],
       "summary": "CounterFactual Examples (CFEs) are a cornerstone of eXplainable Artificial Intelligence (XAI), offering local, post hoc, and model-agnostic explanations by identifying minimal input modifications that alter a model’s prediction. Yet, in order to be intelligible, these modifications must also be semantically meaningful to the explainee. This paper proposes to integrate knowledge expressed as a fuzzy linguistic vocabulary to represent the explainee’s perception and interpretation of the data. The domain induced by this fuzzy vocabulary imposes structural constraints that make the features dependent, preventing the use of gradient-based optimisa"
+    },
+    {
+      "title": "Approches in silico en recherche médicale. Quel encadrement réglementaire ?",
+      "url": "https://hal.science/hal-05828798v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-20T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Transparency",
+        "Publication bias",
+        "Regulations",
+        "In silico clinical trials",
+        "Biais de publication",
+        "Transparence",
+        "Réglementation",
+        "Essais cliniques in silico"
+      ],
+      "summary": "L'essor des données massives de santé, des méthodes d'intelligence artificielle et des capacités de simulation numérique favorise le développement d'approches dites in silico en recherche médicale. Ces approches offrent des perspectives enthousiasmantes pour l'évaluation des interventions médicales et l'aide à la décision clinique, dans un but de personnalisation de la médecine. Souvent considérés comme relevant des recherches non-interventionnelles, les essais in silico échappent à une grande partie des dispositifs réglementaires encadrant les recherches impliquant la personne humaine. Cet allègement des contraintes administratives soulève t"
     },
     {
       "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
@@ -5553,24 +5579,6 @@
       ],
       "keywords": [],
       "summary": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As"
-    },
-    {
-      "title": "When LiDAR Fades, Radar Takes Over: LiDAR Reliability-Aware Adaptive Localization Under Airborne Obscurants",
-      "url": "http://arxiv.org/abs/2610.13788v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-09T16:04:41Z",
-      "authors": [
-        "Moumita Mukherjee",
-        "Avijit Banerjee",
-        "Anton Koval",
-        "George Nikolakopoulo"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "LiDAR-inertial odometry (LIO) is widely used for real-time localization and mapping, but its reliability can degrade substantially in subterranean environments affected by smoke, dust, and other airborne obscurants, whereas radar remains comparatively robust. This article presents a one-class temporal learning framework for LiDAR degradation detection and reliability-aware localization under such conditions. A broad set of degradation-sensitive cues, including spatial, cross-modal, geometric/motion, intensity, and measurement-recency features, is evaluated to characterize changes in LiDAR sensing quality. Their temporal evolution is modelled "
     }
   ]
 }
