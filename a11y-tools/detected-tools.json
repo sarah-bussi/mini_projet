@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T12:03:21Z",
+  "updatedAt": "2026-10-23T11:48:39Z",
   "errors": [],
   "items": [
     {
@@ -52,8 +52,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 347,
-      "updatedAt": "2026-10-17T20:25:47Z",
+      "stars": 348,
+      "updatedAt": "2026-10-23T09:40:49Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 172,
-      "updatedAt": "2026-10-20T20:02:32Z",
+      "updatedAt": "2026-10-23T06:15:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -173,7 +173,7 @@
       "url": "https://github.com/daisy/ace",
       "description": "Ace by DAISY, an Accessibility Checker for EPUB",
       "language": "JavaScript",
-      "stars": 99,
+      "stars": 100,
       "updatedAt": "2026-05-01T10:14:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-21T03:32:17Z",
+      "updatedAt": "2026-10-23T02:51:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-10-22T01:54:25Z",
+      "updatedAt": "2026-10-22T15:51:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -240,7 +240,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-19T11:32:20Z",
+      "updatedAt": "2026-10-23T06:52:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "HTML",
       "stars": 59,
-      "updatedAt": "2026-10-21T07:54:07Z",
+      "updatedAt": "2026-10-22T14:19:28Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -432,6 +432,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ace-gui",
+      "fullName": "daisy/ace-gui",
+      "url": "https://github.com/daisy/ace-gui",
+      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
+      "language": "JavaScript",
+      "stars": 25,
+      "updatedAt": "2026-05-01T10:52:34Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "AIMAC",
       "fullName": "GAAD-Foundation/AIMAC",
       "url": "https://github.com/GAAD-Foundation/AIMAC",
@@ -451,17 +462,6 @@
       "stars": 24,
       "updatedAt": "2026-09-14T19:45:40Z",
       "detectedAt": "2026-09-15T11:52:35Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "ace-gui",
-      "fullName": "daisy/ace-gui",
-      "url": "https://github.com/daisy/ace-gui",
-      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
-      "language": "JavaScript",
-      "stars": 24,
-      "updatedAt": "2026-05-01T10:52:34Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -493,7 +493,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-21T12:12:20Z",
+      "updatedAt": "2026-10-22T12:18:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -597,6 +597,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 12,
+      "updatedAt": "2026-10-22T23:01:00Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
       "name": "ecom-a11y-audit",
       "fullName": "kgelster/ecom-a11y-audit",
       "url": "https://github.com/kgelster/ecom-a11y-audit",
@@ -608,24 +619,13 @@
       "source": "GitHub"
     },
     {
-      "name": "accessibility-skills",
-      "fullName": "zivtech/accessibility-skills",
-      "url": "https://github.com/zivtech/accessibility-skills",
-      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
-      "language": "Python",
-      "stars": 12,
-      "updatedAt": "2026-09-24T10:33:10Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
-      "source": "GitHub"
-    },
-    {
       "name": "libero",
       "fullName": "tdymel/libero",
       "url": "https://github.com/tdymel/libero",
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-10-22T11:57:45Z",
+      "updatedAt": "2026-10-23T11:03:11Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -636,7 +636,7 @@
       "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 71 MCP tools, unhookable a11y/compositor vision, captcha solvers, page_download, Android dial-out, visual QA for AI-built UIs.",
       "language": "C++",
       "stars": 11,
-      "updatedAt": "2026-10-22T02:45:00Z",
+      "updatedAt": "2026-10-23T00:02:10Z",
       "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
