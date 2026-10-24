@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T12:06:44Z",
+  "updatedAt": "2026-10-24T11:37:42Z",
   "errors": [],
   "items": [
     {
@@ -725,6 +725,24 @@
         "Handicap"
       ],
       "summary": "À l'aide des enquêtes AAD (2016) et TeO2 (2019-2020), cette contribution documente la surexposition, par les personnes correspondant à différentes définitions du handicap, à de multiples traitements défavorables, notamment dans les domaines de l'éducation, de l'emploi, de la santé et du logement. Ces traitements (« discriminations situationnelles ») alimentent les déclarations de discriminations (« discriminations autoreportées ») ; mais à des degrés variables, selon différents motifs et de manière non exclusive. En mobilisant une approche intersectionnelle, ces résultats questionnent les cadrages sociaux de diverses inégalités, ainsi que les"
+    },
+    {
+      "title": "Proposition de loi relative à l'instauration d'une présomption d'utilisation des contenus culturels par les fournisseurs d'intelligence artificielle",
+      "url": "https://shs.hal.science/halshs-05837324v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-27T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Présomption d'utilisation",
+        "Contenus culturels",
+        "Intelligence artificielle",
+        "Droit d'auteur",
+        "Propriété Littéraire et Artistique"
+      ],
+      "summary": "(Doc. Sénat, no 220, 12 déc. 2025)"
     },
     {
       "title": "Knowledge Graphs as External Memory for LLM-based Scientific Assistants",
@@ -5471,28 +5489,6 @@
       ],
       "keywords": [],
       "summary": "Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic verification bypass (CVE-2026-65616) in isolated repos"
-    },
-    {
-      "title": "When Do Discrete Actions Make Good Continuous Controllers?",
-      "url": "http://arxiv.org/abs/2610.20429v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-14T16:20:58Z",
-      "authors": [
-        "Zeji Yi",
-        "Soham Dasgupta",
-        "Xinyang Zhang",
-        "Koushil Sreenath",
-        "Guannan Qu",
-        "Xi Chen",
-        "Max Simchowitz",
-        "Guanya Shi"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Though modern AI models like LLMs predict discrete tokens, today's robotic foundation models represent actions as continuous vectors. In this paper, we challenge this common consensus by asking if continuous action parametrizations are superior to their discrete counterparts. We conduct an extensive comparison of single-step regression and multi-step flow variants of both continuous and discrete policies in both from-scratch single-task and multi-task VLA training, in both simulation and on real hardware. In all regimes, we find that discrete action prediction, even the most naive, uniform-bin quantization, can match or even outperform contin"
     }
   ]
 }
