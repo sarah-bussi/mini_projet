@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T11:48:39Z",
+  "updatedAt": "2026-10-24T11:13:50Z",
   "errors": [],
   "items": [
     {
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-23T02:51:01Z",
+      "updatedAt": "2026-10-23T20:19:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -242,6 +242,17 @@
       "stars": 69,
       "updatedAt": "2026-10-23T06:52:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "opencanvas",
+      "fullName": "aayushman-singh/opencanvas",
+      "url": "https://github.com/aayushman-singh/opencanvas",
+      "description": "Live one-Cloudflare-Worker site builder. Yjs CRDT co-edit. Self-verifying a11y remediation engine on 'a fix is a proof, not a claim.' Rebrand AI agent with preview-then-accept diffs. Live: opencanvas.aayushman.dev",
+      "language": "TypeScript",
+      "stars": 67,
+      "updatedAt": "2026-10-23T17:51:29Z",
+      "detectedAt": "2026-10-24T11:13:50Z",
       "source": "GitHub"
     },
     {
@@ -295,7 +306,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 56,
-      "updatedAt": "2026-10-14T11:13:21Z",
+      "updatedAt": "2026-10-24T04:19:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -355,6 +366,17 @@
       "source": "GitHub"
     },
     {
+      "name": "vlmkit",
+      "fullName": "mizchi/vlmkit",
+      "url": "https://github.com/mizchi/vlmkit",
+      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
+      "language": "TypeScript",
+      "stars": 40,
+      "updatedAt": "2026-10-23T07:08:27Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "publ-a11y",
       "fullName": "w3c-cg/publ-a11y",
       "url": "https://github.com/w3c-cg/publ-a11y",
@@ -362,17 +384,6 @@
       "language": "HTML",
       "stars": 40,
       "updatedAt": "2026-09-16T14:52:19Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "vlmkit",
-      "fullName": "mizchi/vlmkit",
-      "url": "https://github.com/mizchi/vlmkit",
-      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
-      "language": "TypeScript",
-      "stars": 39,
-      "updatedAt": "2026-10-19T13:18:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -493,7 +504,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-22T12:18:01Z",
+      "updatedAt": "2026-10-24T10:42:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +614,7 @@
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
       "stars": 12,
-      "updatedAt": "2026-10-22T23:01:00Z",
+      "updatedAt": "2026-10-23T20:35:55Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
@@ -625,7 +636,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-10-23T11:03:11Z",
+      "updatedAt": "2026-10-23T15:59:12Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
