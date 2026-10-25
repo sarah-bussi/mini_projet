@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-10-24T11:37:42Z",
-  "errors": [],
+  "updatedAt": "2026-10-25T11:59:01Z",
+  "errors": [
+    {
+      "source": "arXiv",
+      "error": "HTTP Error 406: Not Acceptable"
+    }
+  ],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -544,6 +549,18 @@
       "summary": "Artificial potential field (APF) approach is a classical path planning algorithm widely employed for its simplicity. However, in intricate dynamic environments, conventional APF approaches intrinsically suffer from local minima and oscillation issues. In this regard, this paper constructs a modified artificial potential field (MAPF) approach based on adaptive gradient neural network (AGNN) presented to generate safe and smooth real-time paths. Specifically, a linear gravitational field is tactfully designed to ensure global convergence, while avoiding singularity problems of traditional formulations. Furthermore, a piecewise force amplificati"
     },
     {
+      "title": "Hierarchical multi-atlas fusion network for robust and interpretable cross-site analysis of functional connectomes in major depressive disorder.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42822187/",
+      "source": "Medical image analysis",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Major depressive disorder (MDD) is associated with distributed disruptions in functional brain networks, yet current connectome-based biomarkers often rely on a single parcellation and show limited cross-site robustness and biological interpretability. We propose a Hierarchical Multi-Atlas Fusion Network (HMAF-Net) for robust and interpretable cross-site analysis of functional connectomes in MDD. HMAF-Net reconciles heterogeneous anatomical and functional atlases by learning a small set of shared fusion nodes that serve as latent anchors for cross-atlas semantic alignment. For each atlas, it extracts node-wise descriptors and uses Transformer"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -764,6 +781,24 @@
         "Knowledge graphs LLMs External memory Ontologies AI agent SHACL PROV-O 1 Problem statement"
       ],
       "summary": "Scientific assistants must remember the questions, observations, parameters, and intermediate results that accumulate across days or weeks of inquiry, and trace each conclusion back to its evidence. Large Language Models (LLMs) lack such a structured, persistent memory, which causes contextual degradation, hallucinations, and excessive cost from overusing the context window. This thesis proposes a neuro-symbolic architecture that couples an LLM-based agent with a knowledge graph (KG) built on standardized formal languages (RDF, RDFS, OWL 2 RL, SHACL, SPARQL) and reusing existing ontologies (e.g. PROV-O) whenever possible. In contrast to state"
+    },
+    {
+      "title": "Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique",
+      "url": "https://hal.science/hal-05837953v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-10-24T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Intelligence artificielle",
+        "Éducation",
+        "Non-usage",
+        "Élèves",
+        "Éthique"
+      ],
+      "summary": "French high school students make extensive use of generative artificial intelligence (GAI) in their schoolwork. All of them? No. This study focuses on non-users and the reasons for their non-use. It is based on the responses of 153 non-user high school students, collected during a survey conducted in France in December 2024. Using a mixed-method approach, we show, on the one hand, that variables related to ethics significantly influence the intention to use GAI and, on the other hand, that the profiles of non-users are characterized by different attitudes toward ethical issues. Finally, the qualitative analysis of the reasons for non-use draw"
     },
     {
       "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
@@ -5452,43 +5487,6 @@
       ],
       "keywords": [],
       "summary": "Safely executing long-horizon multi-arm tasks online in complex dynamic environments remains challenging. We propose a new distributed dynamic Gaussian belief propagation (DD-GBP) method that directly plans joint-space trajectories through parallel local inference. A unified Gaussian-process (GP) parameterization connects adaptive planning horizons, interpolation-time factors, and continuous execution. Each robot maintains a local tree-structured factor graph and exchanges messages asynchronously over active inter-arm links. Dynamic subnet reconstruction and event-triggered updates reduce communication and inference costs while responding to "
-    },
-    {
-      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
-      "url": "http://arxiv.org/abs/2610.20442v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-14T16:32:22Z",
-      "authors": [
-        "Chonghan Qin",
-        "Dongming Wu",
-        "Kaituo Feng",
-        "Jiaxu Wang",
-        "Xinlei Yu",
-        "Peiwen Sun",
-        "Yijia Fan",
-        "Xilin He"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper"
-    },
-    {
-      "title": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
-      "url": "http://arxiv.org/abs/2610.20437v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-14T16:28:09Z",
-      "authors": [
-        "Alicia Colmenero-Fernández"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic verification bypass (CVE-2026-65616) in isolated repos"
     }
   ]
 }
