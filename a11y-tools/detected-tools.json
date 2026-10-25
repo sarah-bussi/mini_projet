@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T11:13:50Z",
+  "updatedAt": "2026-10-25T11:44:06Z",
   "errors": [],
   "items": [
     {
@@ -52,8 +52,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 348,
-      "updatedAt": "2026-10-23T09:40:49Z",
+      "stars": 347,
+      "updatedAt": "2026-10-24T22:23:02Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -75,7 +75,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 233,
-      "updatedAt": "2026-10-19T10:09:13Z",
+      "updatedAt": "2026-10-24T22:21:55Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -256,6 +256,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-specialist-skills",
+      "fullName": "masuP9/a11y-specialist-skills",
+      "url": "https://github.com/masuP9/a11y-specialist-skills",
+      "description": "Accessibility specialist skills plugin for Claude Code.",
+      "language": "TypeScript",
+      "stars": 61,
+      "updatedAt": "2026-10-25T11:40:50Z",
+      "detectedAt": "2026-09-12T10:55:42Z",
+      "source": "GitHub"
+    },
+    {
       "name": "screen-reader-testing-library",
       "fullName": "eps1lon/screen-reader-testing-library",
       "url": "https://github.com/eps1lon/screen-reader-testing-library",
@@ -264,17 +275,6 @@
       "stars": 61,
       "updatedAt": "2026-04-17T21:28:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-specialist-skills",
-      "fullName": "masuP9/a11y-specialist-skills",
-      "url": "https://github.com/masuP9/a11y-specialist-skills",
-      "description": "Accessibility specialist skills plugin for Claude Code.",
-      "language": "TypeScript",
-      "stars": 60,
-      "updatedAt": "2026-10-22T02:50:33Z",
-      "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
     {
@@ -306,7 +306,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 56,
-      "updatedAt": "2026-10-24T04:19:48Z",
+      "updatedAt": "2026-10-25T00:29:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -476,6 +476,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-foundation",
+      "fullName": "ThomasSweet/a11y-foundation",
+      "url": "https://github.com/ThomasSweet/a11y-foundation",
+      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
+      "language": "Vue",
+      "stars": 23,
+      "updatedAt": "2026-10-24T21:43:12Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "jupyterlab-a11y-checker",
       "fullName": "berkeley-cdss/jupyterlab-a11y-checker",
       "url": "https://github.com/berkeley-cdss/jupyterlab-a11y-checker",
@@ -483,17 +494,6 @@
       "language": "TypeScript",
       "stars": 23,
       "updatedAt": "2026-10-21T16:46:58Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-foundation",
-      "fullName": "ThomasSweet/a11y-foundation",
-      "url": "https://github.com/ThomasSweet/a11y-foundation",
-      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
-      "language": "Vue",
-      "stars": 23,
-      "updatedAt": "2026-10-18T14:20:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -570,7 +570,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 18,
-      "updatedAt": "2026-10-20T03:13:46Z",
+      "updatedAt": "2026-10-25T08:39:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -636,7 +636,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-10-23T15:59:12Z",
+      "updatedAt": "2026-10-25T08:47:46Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
