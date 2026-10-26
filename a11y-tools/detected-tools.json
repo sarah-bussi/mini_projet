@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T11:44:06Z",
+  "updatedAt": "2026-10-26T13:16:20Z",
   "errors": [],
   "items": [
     {
@@ -53,7 +53,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-24T22:23:02Z",
+      "updatedAt": "2026-10-26T02:59:30Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -74,8 +74,8 @@
       "url": "https://github.com/nuxt/a11y",
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
-      "stars": 233,
-      "updatedAt": "2026-10-24T22:21:55Z",
+      "stars": 234,
+      "updatedAt": "2026-10-26T12:27:43Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 172,
-      "updatedAt": "2026-10-23T06:15:11Z",
+      "updatedAt": "2026-10-26T09:18:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -185,7 +185,7 @@
       "description": "Screen reader automation library for Playwright testing.",
       "language": "TypeScript",
       "stars": 85,
-      "updatedAt": "2026-10-15T10:09:39Z",
+      "updatedAt": "2026-10-25T19:41:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-23T20:19:56Z",
+      "updatedAt": "2026-10-25T16:44:26Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -240,8 +240,19 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-23T06:52:15Z",
+      "updatedAt": "2026-10-26T13:06:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11ymyths",
+      "fullName": "sergeicodes/a11ymyths",
+      "url": "https://github.com/sergeicodes/a11ymyths",
+      "description": "",
+      "language": "Nunjucks",
+      "stars": 68,
+      "updatedAt": "2026-10-25T16:10:26Z",
+      "detectedAt": "2026-10-26T13:16:20Z",
       "source": "GitHub"
     },
     {
@@ -262,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-10-25T11:40:50Z",
+      "updatedAt": "2026-10-26T08:44:15Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -306,7 +317,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 56,
-      "updatedAt": "2026-10-25T00:29:15Z",
+      "updatedAt": "2026-10-26T12:20:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -504,7 +515,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-24T10:42:01Z",
+      "updatedAt": "2026-10-26T12:18:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -515,7 +526,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 21,
-      "updatedAt": "2026-10-21T09:09:55Z",
+      "updatedAt": "2026-10-25T22:23:32Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -570,7 +581,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 18,
-      "updatedAt": "2026-10-25T08:39:26Z",
+      "updatedAt": "2026-10-26T09:32:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -627,6 +638,17 @@
       "stars": 12,
       "updatedAt": "2026-10-18T00:14:52Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "born-accessible-ui",
+      "fullName": "ginader/born-accessible-ui",
+      "url": "https://github.com/ginader/born-accessible-ui",
+      "description": "Agent Skill + Playwright/axe-core verification loop that teaches AI coding agents to build accessible frontends on the first pass. Companion kit for the a11yTO Conf 2026 talk \"The Aesthetic-A11y Paradox\".",
+      "language": "JavaScript",
+      "stars": 11,
+      "updatedAt": "2026-10-25T17:17:39Z",
+      "detectedAt": "2026-10-26T13:16:20Z",
       "source": "GitHub"
     },
     {
