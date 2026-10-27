@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T13:16:58Z",
+  "checkedAt": "2026-10-27T12:24:42Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "ok",
@@ -362,9 +362,9 @@
       "finalUrl": "https://www.freedomscientific.com/products/software/jaws/"
     },
     "https://www.fruggr.io/": {
-      "state": "ok",
+      "state": "redirected",
       "code": 200,
-      "finalUrl": "https://www.fruggr.io/"
+      "finalUrl": "https://www.fruggr.io:443/fr/"
     },
     "https://www.getstark.co/": {
       "state": "ok",
