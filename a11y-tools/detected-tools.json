@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T12:24:01Z",
+  "updatedAt": "2026-10-28T13:10:31Z",
   "errors": [],
   "items": [
     {
@@ -52,8 +52,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 347,
-      "updatedAt": "2026-10-26T02:59:30Z",
+      "stars": 346,
+      "updatedAt": "2026-10-28T08:10:57Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -97,7 +97,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 172,
-      "updatedAt": "2026-10-27T07:15:48Z",
+      "updatedAt": "2026-10-28T05:00:49Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -107,7 +107,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 156,
+      "stars": 157,
       "updatedAt": "2026-10-22T11:51:49Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -119,7 +119,7 @@
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
       "stars": 132,
-      "updatedAt": "2026-10-01T23:09:10Z",
+      "updatedAt": "2026-10-27T12:10:40Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-27T02:15:10Z",
+      "updatedAt": "2026-10-28T01:47:57Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -289,6 +289,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-audit-elixir",
+      "fullName": "angelikatyborska/a11y-audit-elixir",
+      "url": "https://github.com/angelikatyborska/a11y-audit-elixir",
+      "description": "Automated accessibility testing for Elixir web applications using axe-core.",
+      "language": "Elixir",
+      "stars": 59,
+      "updatedAt": "2026-10-27T17:14:59Z",
+      "detectedAt": "2026-10-28T13:10:31Z",
+      "source": "GitHub"
+    },
+    {
       "name": "oobee-desktop",
       "fullName": "GovTechSG/oobee-desktop",
       "url": "https://github.com/GovTechSG/oobee-desktop",
@@ -311,6 +322,17 @@
       "source": "GitHub"
     },
     {
+      "name": "editoria11y",
+      "fullName": "itmaybejj/editoria11y",
+      "url": "https://github.com/itmaybejj/editoria11y",
+      "description": "A user-friendly automatic content accessibility checker.",
+      "language": "JavaScript",
+      "stars": 57,
+      "updatedAt": "2026-10-26T12:20:36Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "react-native-a11y",
       "fullName": "ArturKalach/react-native-a11y",
       "url": "https://github.com/ArturKalach/react-native-a11y",
@@ -319,17 +341,6 @@
       "stars": 57,
       "updatedAt": "2026-10-04T17:50:55Z",
       "detectedAt": "2026-10-05T14:54:21Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "editoria11y",
-      "fullName": "itmaybejj/editoria11y",
-      "url": "https://github.com/itmaybejj/editoria11y",
-      "description": "A user-friendly automatic content accessibility checker.",
-      "language": "JavaScript",
-      "stars": 56,
-      "updatedAt": "2026-10-26T12:20:36Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -515,7 +526,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-27T12:16:17Z",
+      "updatedAt": "2026-10-27T21:48:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -548,7 +559,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-27T10:54:42Z",
+      "updatedAt": "2026-10-28T10:22:31Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -581,7 +592,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 18,
-      "updatedAt": "2026-10-26T17:54:11Z",
+      "updatedAt": "2026-10-28T02:27:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -641,6 +652,17 @@
       "source": "GitHub"
     },
     {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "JavaScript",
+      "stars": 11,
+      "updatedAt": "2026-10-27T03:28:51Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "born-accessible-ui",
       "fullName": "ginader/born-accessible-ui",
       "url": "https://github.com/ginader/born-accessible-ui",
@@ -682,17 +704,6 @@
       "stars": 11,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "JavaScript",
-      "stars": 10,
-      "updatedAt": "2026-10-27T03:28:51Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
