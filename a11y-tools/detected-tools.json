@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T13:10:31Z",
+  "updatedAt": "2026-10-29T13:16:39Z",
   "errors": [],
   "items": [
     {
@@ -52,8 +52,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 346,
-      "updatedAt": "2026-10-28T08:10:57Z",
+      "stars": 347,
+      "updatedAt": "2026-10-29T07:59:57Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-28T01:47:57Z",
+      "updatedAt": "2026-10-29T00:58:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-10-26T08:44:15Z",
+      "updatedAt": "2026-10-29T04:33:10Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -289,6 +289,17 @@
       "source": "GitHub"
     },
     {
+      "name": "oobee-desktop",
+      "fullName": "GovTechSG/oobee-desktop",
+      "url": "https://github.com/GovTechSG/oobee-desktop",
+      "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
+      "language": "HTML",
+      "stars": 59,
+      "updatedAt": "2026-10-29T11:05:00Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-audit-elixir",
       "fullName": "angelikatyborska/a11y-audit-elixir",
       "url": "https://github.com/angelikatyborska/a11y-audit-elixir",
@@ -297,17 +308,6 @@
       "stars": 59,
       "updatedAt": "2026-10-27T17:14:59Z",
       "detectedAt": "2026-10-28T13:10:31Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "oobee-desktop",
-      "fullName": "GovTechSG/oobee-desktop",
-      "url": "https://github.com/GovTechSG/oobee-desktop",
-      "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
-      "language": "HTML",
-      "stars": 59,
-      "updatedAt": "2026-10-22T14:19:28Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -328,7 +328,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 57,
-      "updatedAt": "2026-10-26T12:20:36Z",
+      "updatedAt": "2026-10-29T01:28:56Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -504,7 +504,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-26T22:01:09Z",
+      "updatedAt": "2026-10-29T12:02:40Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -526,7 +526,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-27T21:48:55Z",
+      "updatedAt": "2026-10-29T13:10:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -548,8 +548,30 @@
       "description": "Documentation to help WordPress creators and users create accessible work.",
       "language": "SCSS",
       "stars": 20,
-      "updatedAt": "2026-10-27T08:45:20Z",
+      "updatedAt": "2026-10-29T10:30:11Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 20,
+      "updatedAt": "2026-10-20T08:45:30Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "eslint",
+      "fullName": "ofri-peretz/eslint",
+      "url": "https://github.com/ofri-peretz/eslint",
+      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-10-28T22:53:58Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -575,25 +597,14 @@
       "source": "GitHub"
     },
     {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 19,
-      "updatedAt": "2026-10-20T08:45:30Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "eslint",
-      "fullName": "ofri-peretz/eslint",
-      "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
-      "language": "TypeScript",
-      "stars": 18,
-      "updatedAt": "2026-10-28T02:27:45Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
+      "name": "quarto-revealjs-a11y",
+      "fullName": "mcanouil/quarto-revealjs-a11y",
+      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
+      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
+      "language": "JavaScript",
+      "stars": 15,
+      "updatedAt": "2026-10-28T22:22:22Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
@@ -619,17 +630,6 @@
       "source": "GitHub"
     },
     {
-      "name": "quarto-revealjs-a11y",
-      "fullName": "mcanouil/quarto-revealjs-a11y",
-      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
-      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
-      "language": "JavaScript",
-      "stars": 13,
-      "updatedAt": "2026-10-01T12:13:14Z",
-      "detectedAt": "2026-09-07T12:44:29Z",
-      "source": "GitHub"
-    },
-    {
       "name": "accessibility-skills",
       "fullName": "zivtech/accessibility-skills",
       "url": "https://github.com/zivtech/accessibility-skills",
@@ -652,13 +652,24 @@
       "source": "GitHub"
     },
     {
+      "name": "libero",
+      "fullName": "tdymel/libero",
+      "url": "https://github.com/tdymel/libero",
+      "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
+      "language": "Rust",
+      "stars": 11,
+      "updatedAt": "2026-10-29T09:56:07Z",
+      "detectedAt": "2026-10-22T12:03:21Z",
+      "source": "GitHub"
+    },
+    {
       "name": "omowright",
       "fullName": "code-yeongyu/omowright",
       "url": "https://github.com/code-yeongyu/omowright",
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "JavaScript",
       "stars": 11,
-      "updatedAt": "2026-10-27T03:28:51Z",
+      "updatedAt": "2026-10-28T18:07:54Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -671,17 +682,6 @@
       "stars": 11,
       "updatedAt": "2026-10-25T17:17:39Z",
       "detectedAt": "2026-10-26T13:16:20Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "libero",
-      "fullName": "tdymel/libero",
-      "url": "https://github.com/tdymel/libero",
-      "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
-      "language": "Rust",
-      "stars": 11,
-      "updatedAt": "2026-10-25T08:47:46Z",
-      "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
     {
@@ -713,7 +713,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-10-21T02:08:19Z",
+      "updatedAt": "2026-10-29T06:49:42Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
