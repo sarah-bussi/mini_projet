@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T13:16:39Z",
+  "updatedAt": "2026-10-30T13:08:46Z",
   "errors": [],
   "items": [
     {
@@ -30,8 +30,8 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 786,
-      "updatedAt": "2026-10-16T16:40:24Z",
+      "stars": 787,
+      "updatedAt": "2026-10-30T04:36:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-29T07:59:57Z",
+      "updatedAt": "2026-10-30T11:22:30Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -107,7 +107,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 157,
+      "stars": 158,
       "updatedAt": "2026-10-22T11:51:49Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -118,8 +118,8 @@
       "url": "https://github.com/ymrl/a11y-visualizer",
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
-      "stars": 132,
-      "updatedAt": "2026-10-27T12:10:40Z",
+      "stars": 131,
+      "updatedAt": "2026-10-29T11:27:50Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -173,7 +173,7 @@
       "url": "https://github.com/daisy/ace",
       "description": "Ace by DAISY, an Accessibility Checker for EPUB",
       "language": "JavaScript",
-      "stars": 100,
+      "stars": 101,
       "updatedAt": "2026-05-01T10:14:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-10-22T15:51:44Z",
+      "updatedAt": "2026-10-29T18:06:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -240,7 +240,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-26T13:06:16Z",
+      "updatedAt": "2026-10-30T07:41:53Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-10-29T04:33:10Z",
+      "updatedAt": "2026-10-30T06:54:58Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -465,6 +465,17 @@
       "source": "GitHub"
     },
     {
+      "name": "codemirror-blocks",
+      "fullName": "bootstrapworld/codemirror-blocks",
+      "url": "https://github.com/bootstrapworld/codemirror-blocks",
+      "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
+      "language": "TypeScript",
+      "stars": 29,
+      "updatedAt": "2026-10-30T13:04:38Z",
+      "detectedAt": "2026-10-30T13:08:46Z",
+      "source": "GitHub"
+    },
+    {
       "name": "ace-gui",
       "fullName": "daisy/ace-gui",
       "url": "https://github.com/daisy/ace-gui",
@@ -504,7 +515,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-29T12:02:40Z",
+      "updatedAt": "2026-10-30T10:23:19Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -526,7 +537,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-29T13:10:42Z",
+      "updatedAt": "2026-10-30T12:29:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -658,7 +669,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-10-29T09:56:07Z",
+      "updatedAt": "2026-10-29T18:43:20Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -713,8 +724,19 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-10-29T06:49:42Z",
+      "updatedAt": "2026-10-30T08:08:34Z",
       "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "jev-mobile",
+      "fullName": "xinwang-nwpu/jev-mobile",
+      "url": "https://github.com/xinwang-nwpu/jev-mobile",
+      "description": "One TypeSafe Jev decision per step over the A11Y tree, executed via ADB. No screenshots and ultra fast!",
+      "language": "Python",
+      "stars": 10,
+      "updatedAt": "2026-10-30T01:47:27Z",
+      "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
     {

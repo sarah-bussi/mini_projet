@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-29T13:16:39Z",
+  "updatedAt": "2026-10-30T13:08:46Z",
   "errors": [],
   "items": [
+    {
+      "title": "Captioned Doesn’t Always Mean Accessible",
+      "url": "https://webaim.org/blog/captioned-doesnt-always-mean-accessible/",
+      "source": "WebAIM",
+      "category": "Médias accessibles",
+      "published": "2026-10-29T16:40:55Z",
+      "summary": "Accurate dialogue is only part of accessible video captions. Quality captions also identify speakers, convey meaningful sounds, and provide readable, synchronized text. Whether captions come from an automatic tool or a professional service, this article explains why evaluating the finished viewing experience is essential for people who rely on captions.",
+      "pinned": false
+    },
     {
       "title": "Crafting WCAG 3 for more accessible user experiences",
       "url": "https://www.w3.org/WAI/news/2026-09-25/wcag3-blog/",
