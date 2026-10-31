@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T13:08:46Z",
+  "updatedAt": "2026-10-31T12:45:06Z",
   "errors": [],
   "items": [
     {
@@ -19,8 +19,8 @@
       "url": "https://github.com/KittyGiraudel/a11y-dialog",
       "description": "A very lightweight and flexible accessible modal dialog script.",
       "language": "TypeScript",
-      "stars": 2490,
-      "updatedAt": "2026-10-22T10:53:51Z",
+      "stars": 2492,
+      "updatedAt": "2026-10-31T10:30:08Z",
       "detectedAt": "2026-09-20T11:34:01Z",
       "source": "GitHub"
     },
@@ -53,7 +53,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-30T11:22:30Z",
+      "updatedAt": "2026-10-31T10:35:01Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -328,7 +328,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 57,
-      "updatedAt": "2026-10-29T01:28:56Z",
+      "updatedAt": "2026-10-31T02:04:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -438,7 +438,7 @@
       "description": "A small React hook to build accessible disclosure widgets.",
       "language": "JavaScript",
       "stars": 35,
-      "updatedAt": "2026-10-22T10:55:46Z",
+      "updatedAt": "2026-10-31T10:27:38Z",
       "detectedAt": "2026-09-11T11:31:07Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-10-30T13:04:38Z",
+      "updatedAt": "2026-10-31T10:52:49Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -515,7 +515,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-30T10:23:19Z",
+      "updatedAt": "2026-10-31T10:01:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -537,7 +537,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-30T12:29:44Z",
+      "updatedAt": "2026-10-30T21:10:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
