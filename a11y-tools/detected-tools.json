@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T12:45:06Z",
+  "updatedAt": "2026-11-01T13:35:26Z",
   "errors": [],
   "items": [
     {
@@ -53,7 +53,7 @@
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
       "stars": 347,
-      "updatedAt": "2026-10-31T10:35:01Z",
+      "updatedAt": "2026-11-01T02:34:27Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-10-30T06:54:58Z",
+      "updatedAt": "2026-11-01T01:36:34Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -328,7 +328,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 57,
-      "updatedAt": "2026-10-31T02:04:16Z",
+      "updatedAt": "2026-10-31T13:29:30Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -515,7 +515,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-10-31T10:01:22Z",
+      "updatedAt": "2026-11-01T13:16:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -553,14 +553,14 @@
       "source": "GitHub"
     },
     {
-      "name": "wp-a11y-docs",
-      "fullName": "wpaccessibility/wp-a11y-docs",
-      "url": "https://github.com/wpaccessibility/wp-a11y-docs",
-      "description": "Documentation to help WordPress creators and users create accessible work.",
-      "language": "SCSS",
+      "name": "eslint",
+      "fullName": "ofri-peretz/eslint",
+      "url": "https://github.com/ofri-peretz/eslint",
+      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-10-29T10:30:11Z",
-      "detectedAt": "2026-09-09T11:32:52Z",
+      "updatedAt": "2026-11-01T10:59:02Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -570,19 +570,19 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 20,
-      "updatedAt": "2026-10-20T08:45:30Z",
+      "updatedAt": "2026-10-31T21:21:25Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
-      "name": "eslint",
-      "fullName": "ofri-peretz/eslint",
-      "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-10-28T22:53:58Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
+      "name": "wp-a11y-docs",
+      "fullName": "wpaccessibility/wp-a11y-docs",
+      "url": "https://github.com/wpaccessibility/wp-a11y-docs",
+      "description": "Documentation to help WordPress creators and users create accessible work.",
+      "language": "SCSS",
+      "stars": 20,
+      "updatedAt": "2026-10-29T10:30:11Z",
+      "detectedAt": "2026-09-09T11:32:52Z",
       "source": "GitHub"
     },
     {
