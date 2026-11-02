@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T13:35:26Z",
+  "updatedAt": "2026-11-02T16:13:25Z",
   "errors": [],
   "items": [
     {
@@ -75,7 +75,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-10-26T17:58:09Z",
+      "updatedAt": "2026-11-02T13:48:26Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-10-29T00:58:45Z",
+      "updatedAt": "2026-11-01T17:22:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-10-29T18:06:09Z",
+      "updatedAt": "2026-11-02T00:18:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-01T01:36:34Z",
+      "updatedAt": "2026-11-02T10:08:21Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 40,
-      "updatedAt": "2026-10-23T07:08:27Z",
+      "updatedAt": "2026-11-02T13:15:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-10-31T10:52:49Z",
+      "updatedAt": "2026-11-02T12:45:14Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -515,7 +515,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-11-01T13:16:27Z",
+      "updatedAt": "2026-11-01T16:39:18Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -537,7 +537,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-10-30T21:10:55Z",
+      "updatedAt": "2026-11-02T16:02:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -547,8 +547,8 @@
       "url": "https://github.com/A11y-Pulse/audits",
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
-      "stars": 21,
-      "updatedAt": "2026-10-25T22:23:32Z",
+      "stars": 22,
+      "updatedAt": "2026-11-02T07:42:51Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -559,7 +559,7 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-01T10:59:02Z",
+      "updatedAt": "2026-11-02T15:10:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -570,7 +570,7 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 20,
-      "updatedAt": "2026-10-31T21:21:25Z",
+      "updatedAt": "2026-11-01T19:28:08Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
       "language": "JavaScript",
       "stars": 15,
-      "updatedAt": "2026-10-28T22:22:22Z",
+      "updatedAt": "2026-11-01T17:36:13Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -641,12 +641,23 @@
       "source": "GitHub"
     },
     {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "JavaScript",
+      "stars": 13,
+      "updatedAt": "2026-11-02T14:34:34Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "accessibility-skills",
       "fullName": "zivtech/accessibility-skills",
       "url": "https://github.com/zivtech/accessibility-skills",
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
-      "stars": 12,
+      "stars": 13,
       "updatedAt": "2026-10-23T20:35:55Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
@@ -669,19 +680,8 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-10-29T18:43:20Z",
+      "updatedAt": "2026-11-02T14:34:19Z",
       "detectedAt": "2026-10-22T12:03:21Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "JavaScript",
-      "stars": 11,
-      "updatedAt": "2026-10-28T18:07:54Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {

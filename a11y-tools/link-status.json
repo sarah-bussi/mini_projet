@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01T13:36:03Z",
+  "checkedAt": "2026-11-02T16:14:38Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "ok",
@@ -117,9 +117,10 @@
       "finalUrl": "https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/"
     },
     "https://gameaccessibilityguidelines.com/": {
-      "state": "ok",
-      "code": 200,
-      "finalUrl": "https://gameaccessibilityguidelines.com/"
+      "state": "broken",
+      "code": null,
+      "finalUrl": "https://gameaccessibilityguidelines.com/",
+      "error": "<urlopen error timed out>"
     },
     "https://github.com/DISIC/guide-mobile_app_audit": {
       "state": "ok",
@@ -247,9 +248,10 @@
       "finalUrl": "https://pub.dev/packages/accessibility_tools"
     },
     "https://quuz.org/webvtt/": {
-      "state": "redirected",
-      "code": 200,
-      "finalUrl": "https://w3c.github.io/webvtt.js/parser.html"
+      "state": "broken",
+      "code": null,
+      "finalUrl": "https://quuz.org/webvtt/",
+      "error": "<urlopen error timed out>"
     },
     "https://rumoroso.bitbucket.io/": {
       "state": "ok",
