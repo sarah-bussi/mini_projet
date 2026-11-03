@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T16:13:25Z",
+  "updatedAt": "2026-11-03T14:27:01Z",
   "errors": [],
   "items": [
     {
@@ -8,8 +8,8 @@
       "url": "https://github.com/a11yproject/a11yproject.com",
       "description": "The A11Y Project is a community-driven effort to make digital accessibility easier.",
       "language": "Nunjucks",
-      "stars": 3901,
-      "updatedAt": "2026-10-22T06:40:10Z",
+      "stars": 3906,
+      "updatedAt": "2026-11-03T03:15:26Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -75,7 +75,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-02T13:48:26Z",
+      "updatedAt": "2026-11-03T07:05:59Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-01T17:22:54Z",
+      "updatedAt": "2026-11-03T05:47:07Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-02T00:18:25Z",
+      "updatedAt": "2026-11-03T11:57:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-02T12:45:14Z",
+      "updatedAt": "2026-11-03T13:57:37Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -498,6 +498,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 24,
+      "updatedAt": "2026-11-01T19:28:08Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-color-contrast",
       "fullName": "sondr3/a11y-color-contrast",
       "url": "https://github.com/sondr3/a11y-color-contrast",
@@ -515,7 +526,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-11-01T16:39:18Z",
+      "updatedAt": "2026-11-02T21:33:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -537,7 +548,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-02T16:02:55Z",
+      "updatedAt": "2026-11-03T14:26:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -548,7 +559,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 22,
-      "updatedAt": "2026-11-02T07:42:51Z",
+      "updatedAt": "2026-11-03T02:45:25Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -559,19 +570,8 @@
       "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-02T15:10:22Z",
+      "updatedAt": "2026-11-03T14:22:47Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 20,
-      "updatedAt": "2026-11-01T19:28:08Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -592,7 +592,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-10-28T10:22:31Z",
+      "updatedAt": "2026-11-03T10:12:48Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -630,6 +630,17 @@
       "source": "GitHub"
     },
     {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "JavaScript",
+      "stars": 14,
+      "updatedAt": "2026-11-03T09:03:43Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
@@ -638,17 +649,6 @@
       "stars": 14,
       "updatedAt": "2026-10-14T23:15:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "JavaScript",
-      "stars": 13,
-      "updatedAt": "2026-11-02T14:34:34Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -680,7 +680,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-11-02T14:34:19Z",
+      "updatedAt": "2026-11-03T12:29:23Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -715,6 +715,17 @@
       "stars": 11,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "web-a11y-testing",
+      "fullName": "LukaszNowakPL/web-a11y-testing",
+      "url": "https://github.com/LukaszNowakPL/web-a11y-testing",
+      "description": "Repo supporting talk about automated a11y testing of web applications",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2026-11-03T12:55:49Z",
+      "detectedAt": "2026-11-03T14:27:01Z",
       "source": "GitHub"
     },
     {
