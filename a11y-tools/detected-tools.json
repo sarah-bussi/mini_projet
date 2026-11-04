@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T14:27:01Z",
+  "updatedAt": "2026-11-04T14:42:01Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 787,
+      "stars": 786,
       "updatedAt": "2026-10-30T04:36:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -118,8 +118,8 @@
       "url": "https://github.com/ymrl/a11y-visualizer",
       "description": "A Browser Extension for Enhanced Web Accessibility Checking",
       "language": "TypeScript",
-      "stars": 131,
-      "updatedAt": "2026-10-29T11:27:50Z",
+      "stars": 132,
+      "updatedAt": "2026-11-03T07:33:44Z",
       "detectedAt": "2026-09-16T11:46:10Z",
       "source": "GitHub"
     },
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-03T05:47:07Z",
+      "updatedAt": "2026-11-04T01:27:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-03T11:57:12Z",
+      "updatedAt": "2026-11-03T21:55:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-02T10:08:21Z",
+      "updatedAt": "2026-11-04T11:53:45Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -394,7 +394,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 40,
-      "updatedAt": "2026-11-02T13:15:22Z",
+      "updatedAt": "2026-11-04T11:05:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,8 +471,19 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-03T13:57:37Z",
+      "updatedAt": "2026-11-03T23:08:41Z",
       "detectedAt": "2026-10-30T13:08:46Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 25,
+      "updatedAt": "2026-11-01T19:28:08Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -498,17 +509,6 @@
       "source": "GitHub"
     },
     {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 24,
-      "updatedAt": "2026-11-01T19:28:08Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
-      "source": "GitHub"
-    },
-    {
       "name": "a11y-color-contrast",
       "fullName": "sondr3/a11y-color-contrast",
       "url": "https://github.com/sondr3/a11y-color-contrast",
@@ -526,7 +526,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-11-02T21:33:20Z",
+      "updatedAt": "2026-11-03T22:27:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -548,7 +548,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-03T14:26:42Z",
+      "updatedAt": "2026-11-03T22:47:29Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -567,10 +567,10 @@
       "name": "eslint",
       "fullName": "ofri-peretz/eslint",
       "url": "https://github.com/ofri-peretz/eslint",
-      "description": "Security and code-quality ESLint plugins — 477 rules across 30 packages: 272 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
+      "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-03T14:22:47Z",
+      "updatedAt": "2026-11-04T14:34:36Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -592,7 +592,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-03T10:12:48Z",
+      "updatedAt": "2026-11-04T14:31:48Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -605,6 +605,17 @@
       "stars": 19,
       "updatedAt": "2026-10-22T11:39:39Z",
       "detectedAt": "2026-09-21T12:58:41Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "JavaScript",
+      "stars": 15,
+      "updatedAt": "2026-11-03T09:03:43Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -627,17 +638,6 @@
       "stars": 15,
       "updatedAt": "2026-10-06T02:48:03Z",
       "detectedAt": "2026-09-19T11:09:36Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "JavaScript",
-      "stars": 14,
-      "updatedAt": "2026-11-03T09:03:43Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -680,7 +680,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-11-03T12:29:23Z",
+      "updatedAt": "2026-11-04T09:30:33Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -715,6 +715,17 @@
       "stars": 11,
       "updatedAt": "2025-11-15T16:54:01Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-blog",
+      "fullName": "TatianaFokina/a11y-blog",
+      "url": "https://github.com/TatianaFokina/a11y-blog",
+      "description": "",
+      "language": "SCSS",
+      "stars": 10,
+      "updatedAt": "2026-11-04T03:42:43Z",
+      "detectedAt": "2026-11-04T14:42:01Z",
       "source": "GitHub"
     },
     {
