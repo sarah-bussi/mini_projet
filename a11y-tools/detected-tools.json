@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T14:42:01Z",
+  "updatedAt": "2026-11-05T14:46:27Z",
   "errors": [],
   "items": [
     {
@@ -108,7 +108,7 @@
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
       "stars": 158,
-      "updatedAt": "2026-10-22T11:51:49Z",
+      "updatedAt": "2026-11-05T08:05:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-04T11:53:45Z",
+      "updatedAt": "2026-11-05T06:59:30Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -311,6 +311,17 @@
       "source": "GitHub"
     },
     {
+      "name": "editoria11y",
+      "fullName": "itmaybejj/editoria11y",
+      "url": "https://github.com/itmaybejj/editoria11y",
+      "description": "A user-friendly automatic content accessibility checker.",
+      "language": "JavaScript",
+      "stars": 58,
+      "updatedAt": "2026-10-31T13:29:30Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "eslint-plugin-jsx-a11y-x",
       "fullName": "eslint-community/eslint-plugin-jsx-a11y-x",
       "url": "https://github.com/eslint-community/eslint-plugin-jsx-a11y-x",
@@ -319,17 +330,6 @@
       "stars": 58,
       "updatedAt": "2026-10-27T08:57:18Z",
       "detectedAt": "2026-09-30T12:45:02Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "editoria11y",
-      "fullName": "itmaybejj/editoria11y",
-      "url": "https://github.com/itmaybejj/editoria11y",
-      "description": "A user-friendly automatic content accessibility checker.",
-      "language": "JavaScript",
-      "stars": 57,
-      "updatedAt": "2026-10-31T13:29:30Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -394,7 +394,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 40,
-      "updatedAt": "2026-11-04T11:05:32Z",
+      "updatedAt": "2026-11-04T18:29:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-03T23:08:41Z",
+      "updatedAt": "2026-11-05T13:25:56Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -526,7 +526,7 @@
       "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
       "language": "Vue",
       "stars": 23,
-      "updatedAt": "2026-11-03T22:27:22Z",
+      "updatedAt": "2026-11-05T08:26:52Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -537,7 +537,7 @@
       "description": "",
       "language": "TypeScript",
       "stars": 23,
-      "updatedAt": "2026-10-26T16:23:52Z",
+      "updatedAt": "2026-11-05T00:01:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -548,7 +548,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-03T22:47:29Z",
+      "updatedAt": "2026-11-05T12:19:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -570,7 +570,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-04T14:34:36Z",
+      "updatedAt": "2026-11-05T11:52:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -592,7 +592,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-04T14:31:48Z",
+      "updatedAt": "2026-11-05T13:02:33Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "JavaScript",
       "stars": 15,
-      "updatedAt": "2026-11-03T09:03:43Z",
+      "updatedAt": "2026-11-05T14:26:46Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -680,7 +680,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-11-04T09:30:33Z",
+      "updatedAt": "2026-11-04T21:29:00Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -718,25 +718,25 @@
       "source": "GitHub"
     },
     {
-      "name": "a11y-blog",
-      "fullName": "TatianaFokina/a11y-blog",
-      "url": "https://github.com/TatianaFokina/a11y-blog",
-      "description": "",
-      "language": "SCSS",
-      "stars": 10,
-      "updatedAt": "2026-11-04T03:42:43Z",
-      "detectedAt": "2026-11-04T14:42:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "web-a11y-testing",
       "fullName": "LukaszNowakPL/web-a11y-testing",
       "url": "https://github.com/LukaszNowakPL/web-a11y-testing",
       "description": "Repo supporting talk about automated a11y testing of web applications",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-03T12:55:49Z",
+      "updatedAt": "2026-11-04T22:14:22Z",
       "detectedAt": "2026-11-03T14:27:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-blog",
+      "fullName": "TatianaFokina/a11y-blog",
+      "url": "https://github.com/TatianaFokina/a11y-blog",
+      "description": "",
+      "language": "SCSS",
+      "stars": 10,
+      "updatedAt": "2026-11-04T16:25:15Z",
+      "detectedAt": "2026-11-04T14:42:01Z",
       "source": "GitHub"
     },
     {
