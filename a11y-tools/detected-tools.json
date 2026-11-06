@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T14:46:27Z",
+  "updatedAt": "2026-11-06T14:24:10Z",
   "errors": [],
   "items": [
     {
@@ -9,7 +9,7 @@
       "description": "The A11Y Project is a community-driven effort to make digital accessibility easier.",
       "language": "Nunjucks",
       "stars": 3906,
-      "updatedAt": "2026-11-03T03:15:26Z",
+      "updatedAt": "2026-11-06T06:27:26Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-03T21:55:25Z",
+      "updatedAt": "2026-11-06T00:16:33Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -273,7 +273,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-05T06:59:30Z",
+      "updatedAt": "2026-11-06T02:03:51Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -377,6 +377,17 @@
       "source": "GitHub"
     },
     {
+      "name": "vlmkit",
+      "fullName": "mizchi/vlmkit",
+      "url": "https://github.com/mizchi/vlmkit",
+      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
+      "language": "TypeScript",
+      "stars": 43,
+      "updatedAt": "2026-11-06T13:54:54Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11ykit",
       "fullName": "patrickfox/a11ykit",
       "url": "https://github.com/patrickfox/a11ykit",
@@ -384,17 +395,6 @@
       "language": "TypeScript",
       "stars": 42,
       "updatedAt": "2026-09-10T03:48:18Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "vlmkit",
-      "fullName": "mizchi/vlmkit",
-      "url": "https://github.com/mizchi/vlmkit",
-      "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
-      "language": "TypeScript",
-      "stars": 40,
-      "updatedAt": "2026-11-04T18:29:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-05T13:25:56Z",
+      "updatedAt": "2026-11-06T13:06:40Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -548,7 +548,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-05T12:19:54Z",
+      "updatedAt": "2026-11-05T17:10:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -570,7 +570,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-05T11:52:34Z",
+      "updatedAt": "2026-11-06T01:04:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -592,7 +592,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-05T13:02:33Z",
+      "updatedAt": "2026-11-06T10:02:55Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "JavaScript",
       "stars": 15,
-      "updatedAt": "2026-11-05T14:26:46Z",
+      "updatedAt": "2026-11-06T04:45:41Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
