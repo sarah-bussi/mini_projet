@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T14:36:37Z",
+  "updatedAt": "2026-11-07T13:32:44Z",
   "errors": [],
   "items": [
     {
@@ -732,6 +732,19 @@
       "summary": "During laparoscopic surgery, abdominal carbon dioxide (CO2) insufflation in the supine position and with head-down tilt for robotic surgery increases abdominal pressure and pushes the diaphragm cranially. This causes a decrease in end-expiratory lung volume and in lung and chest wall compliance. These effects can be counteracted by the application of PEEP. Our study aimed to measure lung and chest wall mechanics during laparoscopic surgery using a non-invasive method (PEEP-step method) and to determine the optimal PEEP level for each patient. Thirty-two patients scheduled for abdominal surgery participated in this observational study with pne"
     },
     {
+      "title": "Fragility Fracture Risk Prediction through the integration of Artificial Intelligence and Radiofrequency Echographic Multi Spectrometry (REMS) Technology.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42832940/",
+      "source": "Computer methods and programs in biomedicine",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Bone fragility is a major clinical issue and a leading cause of disability, especially in aging populations. Traditional diagnostics rely on bone mineral density, which does not fully capture structural and micro-architectural factors influencing fracture risk. This study investigates Deep Learning applied to ultrasound Radiofrequency Echographic Multi Spectrometry (REMS) data to improve fracture risk identification and stratification. A retrospective multicenter dataset of 3510 participants was analyzed. A Convolutional Neural Network based on AlexNet was trained in a supervised manner to classify subjects as non-fractured, at-risk, or fract"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -854,6 +867,24 @@
       ],
       "keywords": [],
       "summary": "Introduction Le cancer de la vessie est l’un des cancers urologiques les plus fréquents et son diagnostic repose principalement sur l’endoscopie. Néanmoins, l’interprétation des images endoscopiques reste subjective, générant un grand risque d’erreur et une grande variabilité entre cliniciens. L’intelligence artificielle offre un potentiel important pour améliorer la précision diagnostique et standardiser la prise en charge thérapeutique. Ce travail vise à concevoir les bases d’un outil d’aide à la décision clinique afin de réduire les erreurs et optimiser le suivi des patients. Méthodes À partir de 155 vidéos de résection transurétrale prove"
+    },
+    {
+      "title": "L’Accès aux soins des personnes en situation de handicap : De l’objet de soin à l’acteur de son parcours de vie",
+      "url": "https://hal.science/hal-05855570v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Interdisciplinaire",
+        "Espace de Réflexion Ethique ERER",
+        "Handicap",
+        "Accès aux soins",
+        "Éthique"
+      ],
+      "summary": "Ouvrage sous la direction d'Amandine Andruchiw et Sahar Moussa Badran. Vingt ans après la loi du 11 février 2005, le décalage entre l’affirmation des droits et leur effectivité demeure la marque persistante de notre rapport collectif au handicap. Non par manque de textes, mais parce qu’un paradigme résiste à sa propre transformation: celui qui continue de penser la personne en situation de handicap majoritairement comme objet de soins plutôt que comme sujet de son propre parcours de vie. En faisant de l’éthique le fil conducteur d’un dialogue interdisciplinaire mêlant philosophie, droit, clinique, sociologie et témoignages de personnes direct"
     },
     {
       "title": "From Answers to Questions: Generative AI, Scientific Modeling, and the Future of Learning",
@@ -2901,7 +2932,7 @@
         "IHM & UX"
       ],
       "keywords": [],
-      "summary": "Ceramic materials are increasingly recognized as critical enablers in strategic technological sectors, including aerospace, energy, electronics, electric mobility, and healthcare. Their unique combination of thermal stability, chemical resistance, and functional versatility allows them to operate under extreme conditions, supporting advanced applications such as ceramic matrix composites, solid-state batteries, and bioceramics. This article reviews recent advances in ceramic materials and processing, emphasizing the growing impact of additive manufacturing, artificial intelligence, and nanostructuring approaches. These innovations enable impr"
+      "summary": "Cet article dresse un panorama du rôle central des matériaux céramiques dans les secteurs industriels stratégiques et des innovations qui accompagnent leur développement. Il met en évidence leur adoption croissante dans des domaines tels que l’aérospatial, l’énergie, l’électronique, la mobilité électrique et la santé, où leurs propriétés uniques (résistance thermique, stabilité chimique, performances mécaniques ou fonctionnelles) répondent à des exigences extrêmes. Les composites à matrice céramique (CMC), les matériaux pour batteries ou encore les biocéramiques illustrent la diversité des applications. L’article souligne également les avancé"
     },
     {
       "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
@@ -5359,42 +5390,6 @@
       ],
       "keywords": [],
       "summary": "Embodied surgical AI requires reliable multimodal data, yet surgical data collection remains costly, difficult to repeat, and strongly dependent on the hardware setup. We present Sensorium, an open-source Python library for recording, processing, annotating, and curating multimodal surgical data from configurable robot and sensor streams using the Robot Operating System (ROS) and ROS2 middleware. The library combines operator-facing data acquisition, configurable processing, semantic annotation, and episodic dataset generation. We evaluate Sensorium across 1516 recordings of phantom, ex vivo, and in vivo porcine experiments involving multiple"
-    },
-    {
-      "title": "Structure-Aware Skill Retrieval and Arbitration for Optimization Modeling",
-      "url": "http://arxiv.org/abs/2610.41909v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-30T15:45:17Z",
-      "authors": [
-        "Anran Liu",
-        "Benzhao Hou",
-        "Zongsheng Cao",
-        "Daichao Wang",
-        "Lang Chen",
-        "Shitong Chen"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Large Language Models (LLMs) can turn natural-language optimization tasks into solver-checked answers, but current agents remain brittle under narrative rewrites and often store reusable experience at the instance level. We introduce \\textsc{ArchOR}, an archetype-centric skill agent that builds on \\textsc{OptSkills} by adding two retrieval-focused modules. \\emph{Centroid-Aware Representation Learning} (CARL) refines the ordering of cached skill representations through a low-rank prototype residual. \\emph{Signature-Guided Retrieval} (S\\textsuperscript{3}R) attaches open-dimensional structural signatures to skills, prioritizes candidates by wei"
-    },
-    {
-      "title": "ReX-GG: a LLM Ensemble Pipeline for Relation-extraction and Graph Generation",
-      "url": "http://arxiv.org/abs/2610.41901v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-10-30T15:39:02Z",
-      "authors": [
-        "Giacomo Magnifico",
-        "Eduard Barbu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Current LLM ensemble frameworks focus on multi-step setups with additional modules for answer ranking, often opting for token and span analysis rather than structured outputs, leading to heavyweight architectures with potential fail states along the pipeline. Faster, lighter solutions are more vulnerable to hallucination propagation and can lack output control in more complex pipelines. This paper proposes a customisable, lightweight ensemble workflow of coordinated Large Language Models that leverages JSON-structured outputs and anonymous peer-review ranking to mitigate hallucinatory outputs and single-model failure points. The pipeline is d"
     }
   ]
 }
