@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T13:15:18Z",
+  "updatedAt": "2026-11-08T13:36:38Z",
   "errors": [],
   "items": [
     {
@@ -317,7 +317,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-07T02:36:57Z",
+      "updatedAt": "2026-11-08T13:02:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -383,7 +383,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 43,
-      "updatedAt": "2026-11-06T18:25:55Z",
+      "updatedAt": "2026-11-08T12:38:38Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +471,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-07T10:53:18Z",
+      "updatedAt": "2026-11-08T04:55:58Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -481,7 +481,7 @@
       "url": "https://github.com/GAAD-Foundation/AIMAC",
       "description": "AI Model Accessibility Checker",
       "language": "Python",
-      "stars": 27,
+      "stars": 28,
       "updatedAt": "2025-12-12T01:48:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -570,7 +570,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-07T13:13:59Z",
+      "updatedAt": "2026-11-08T10:39:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -623,9 +623,9 @@
       "fullName": "code-yeongyu/omowright",
       "url": "https://github.com/code-yeongyu/omowright",
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "JavaScript",
+      "language": "TypeScript",
       "stars": 15,
-      "updatedAt": "2026-11-06T17:39:27Z",
+      "updatedAt": "2026-11-08T13:35:03Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -641,6 +641,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 14,
+      "updatedAt": "2026-10-23T20:35:55Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
       "name": "chrome-bridge",
       "fullName": "siropkin/chrome-bridge",
       "url": "https://github.com/siropkin/chrome-bridge",
@@ -649,17 +660,6 @@
       "stars": 14,
       "updatedAt": "2026-10-14T23:15:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessibility-skills",
-      "fullName": "zivtech/accessibility-skills",
-      "url": "https://github.com/zivtech/accessibility-skills",
-      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
-      "language": "Python",
-      "stars": 13,
-      "updatedAt": "2026-10-23T20:35:55Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
@@ -778,7 +778,7 @@
       "url": "https://github.com/marlon-sousa/screen-readers-mcp",
       "description": "MCP server for AI-agent control of screen readers — drive gestures, capture speech/braille, and automate add-on testing. NVDA today; JAWS/TalkBack bridges planned.",
       "language": "Swift",
-      "stars": 9,
+      "stars": 10,
       "updatedAt": "2026-09-25T20:31:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
