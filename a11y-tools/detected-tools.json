@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T13:36:38Z",
+  "updatedAt": "2026-11-09T16:35:46Z",
   "errors": [],
   "items": [
     {
@@ -8,8 +8,8 @@
       "url": "https://github.com/a11yproject/a11yproject.com",
       "description": "The A11Y Project is a community-driven effort to make digital accessibility easier.",
       "language": "Nunjucks",
-      "stars": 3906,
-      "updatedAt": "2026-11-06T06:27:26Z",
+      "stars": 3907,
+      "updatedAt": "2026-11-09T01:19:40Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
@@ -75,7 +75,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-03T07:05:59Z",
+      "updatedAt": "2026-11-09T03:47:08Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -107,7 +107,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 158,
+      "stars": 159,
       "updatedAt": "2026-11-05T08:05:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -184,7 +184,7 @@
       "url": "https://github.com/guidepup/guidepup-playwright",
       "description": "Screen reader automation library for Playwright testing.",
       "language": "TypeScript",
-      "stars": 85,
+      "stars": 86,
       "updatedAt": "2026-10-25T19:41:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -196,7 +196,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-06T17:58:15Z",
+      "updatedAt": "2026-11-08T16:39:45Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-06T00:16:33Z",
+      "updatedAt": "2026-11-08T20:17:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -231,6 +231,17 @@
       "stars": 74,
       "updatedAt": "2026-10-17T01:34:56Z",
       "detectedAt": "2026-09-19T11:09:36Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-guidelines",
+      "fullName": "freee/a11y-guidelines",
+      "url": "https://github.com/freee/a11y-guidelines",
+      "description": "freee Accessibility Guidelines",
+      "language": "Python",
+      "stars": 71,
+      "updatedAt": "2026-11-09T09:58:39Z",
+      "detectedAt": "2026-11-09T16:35:46Z",
       "source": "GitHub"
     },
     {
@@ -273,7 +284,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-06T02:03:51Z",
+      "updatedAt": "2026-11-09T15:35:13Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -317,7 +328,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-08T13:02:16Z",
+      "updatedAt": "2026-11-09T02:18:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -471,7 +482,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-08T04:55:58Z",
+      "updatedAt": "2026-11-09T15:16:34Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -548,7 +559,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-05T17:10:55Z",
+      "updatedAt": "2026-11-09T12:29:46Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -570,7 +581,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-08T10:39:42Z",
+      "updatedAt": "2026-11-09T13:55:22Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -625,7 +636,7 @@
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "TypeScript",
       "stars": 15,
-      "updatedAt": "2026-11-08T13:35:03Z",
+      "updatedAt": "2026-11-09T09:24:34Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -647,7 +658,7 @@
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
       "stars": 14,
-      "updatedAt": "2026-10-23T20:35:55Z",
+      "updatedAt": "2026-11-09T16:33:43Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
@@ -718,6 +729,17 @@
       "source": "GitHub"
     },
     {
+      "name": "tailwind-a11y",
+      "fullName": "chamroro/tailwind-a11y",
+      "url": "https://github.com/chamroro/tailwind-a11y",
+      "description": "Static accessibility analysis for Tailwind CSS projects.",
+      "language": "TypeScript",
+      "stars": 10,
+      "updatedAt": "2026-11-09T10:13:14Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
       "name": "web-a11y-testing",
       "fullName": "LukaszNowakPL/web-a11y-testing",
       "url": "https://github.com/LukaszNowakPL/web-a11y-testing",
@@ -737,17 +759,6 @@
       "stars": 10,
       "updatedAt": "2026-11-04T16:25:15Z",
       "detectedAt": "2026-11-04T14:42:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "tailwind-a11y",
-      "fullName": "chamroro/tailwind-a11y",
-      "url": "https://github.com/chamroro/tailwind-a11y",
-      "description": "Static accessibility analysis for Tailwind CSS projects.",
-      "language": "TypeScript",
-      "stars": 10,
-      "updatedAt": "2026-10-30T08:08:34Z",
-      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
