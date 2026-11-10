@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T16:35:46Z",
+  "updatedAt": "2026-11-10T15:00:19Z",
   "errors": [],
   "items": [
     {
@@ -218,7 +218,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-08T20:17:17Z",
+      "updatedAt": "2026-11-10T02:17:20Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -284,7 +284,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-09T15:35:13Z",
+      "updatedAt": "2026-11-10T05:44:11Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -482,7 +482,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-09T15:16:34Z",
+      "updatedAt": "2026-11-10T03:00:18Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -559,7 +559,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-09T12:29:46Z",
+      "updatedAt": "2026-11-10T14:59:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -581,7 +581,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-09T13:55:22Z",
+      "updatedAt": "2026-11-10T01:14:42Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +603,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-06T10:02:55Z",
+      "updatedAt": "2026-11-10T09:35:56Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -619,6 +619,17 @@
       "source": "GitHub"
     },
     {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "TypeScript",
+      "stars": 16,
+      "updatedAt": "2026-11-10T08:52:56Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "outloud",
       "fullName": "visionably/outloud",
       "url": "https://github.com/visionably/outloud",
@@ -627,17 +638,6 @@
       "stars": 16,
       "updatedAt": "2026-10-06T02:48:03Z",
       "detectedAt": "2026-09-19T11:09:36Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "TypeScript",
-      "stars": 15,
-      "updatedAt": "2026-11-09T09:24:34Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -658,7 +658,7 @@
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
       "stars": 14,
-      "updatedAt": "2026-11-09T16:33:43Z",
+      "updatedAt": "2026-11-09T16:37:18Z",
       "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
@@ -671,6 +671,17 @@
       "stars": 14,
       "updatedAt": "2026-10-14T23:15:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "ngxsmk-ui-kit",
+      "fullName": "NGXSMK/ngxsmk-ui-kit",
+      "url": "https://github.com/NGXSMK/ngxsmk-ui-kit",
+      "description": "Signals-native Angular UI kit for Angular 17.3–22: 176+ standalone components, zoneless & SSR-ready, design tokens, dark mode, a11y, AI chat UI, MCP tooling. MIT open-source alternative to Angular Material.",
+      "language": "TypeScript",
+      "stars": 12,
+      "updatedAt": "2026-11-09T23:48:12Z",
+      "detectedAt": "2026-11-10T15:00:19Z",
       "source": "GitHub"
     },
     {
