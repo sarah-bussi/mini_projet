@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T15:00:19Z",
+  "updatedAt": "2026-11-11T14:31:14Z",
   "errors": [],
   "items": [
     {
@@ -22,6 +22,17 @@
       "stars": 2492,
       "updatedAt": "2026-10-31T10:30:08Z",
       "detectedAt": "2026-09-20T11:34:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "flynt",
+      "fullName": "flyntwp/flynt",
+      "url": "https://github.com/flyntwp/flynt",
+      "description": "Component based WordPress starter theme, powered by ACF Pro and Timber, optimized for performance and a11y.",
+      "language": "PHP",
+      "stars": 808,
+      "updatedAt": "2026-11-11T11:09:04Z",
+      "detectedAt": "2026-11-11T14:31:14Z",
       "source": "GitHub"
     },
     {
@@ -196,7 +207,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-08T16:39:45Z",
+      "updatedAt": "2026-11-10T16:52:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +229,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-10T02:17:20Z",
+      "updatedAt": "2026-11-11T01:28:47Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -251,7 +262,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-10-30T07:41:53Z",
+      "updatedAt": "2026-11-11T10:57:41Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -284,7 +295,7 @@
       "description": "Accessibility specialist skills plugin for Claude Code.",
       "language": "TypeScript",
       "stars": 61,
-      "updatedAt": "2026-11-10T05:44:11Z",
+      "updatedAt": "2026-11-11T09:10:05Z",
       "detectedAt": "2026-09-12T10:55:42Z",
       "source": "GitHub"
     },
@@ -410,6 +421,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-outline",
+      "fullName": "xi/a11y-outline",
+      "url": "https://github.com/xi/a11y-outline",
+      "description": "web extension to navigate document outlines easily",
+      "language": "JavaScript",
+      "stars": 41,
+      "updatedAt": "2026-11-11T06:39:56Z",
+      "detectedAt": "2026-11-11T14:31:14Z",
+      "source": "GitHub"
+    },
+    {
       "name": "publ-a11y",
       "fullName": "w3c-cg/publ-a11y",
       "url": "https://github.com/w3c-cg/publ-a11y",
@@ -504,7 +526,7 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 25,
-      "updatedAt": "2026-11-01T19:28:08Z",
+      "updatedAt": "2026-11-11T12:32:21Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -559,7 +581,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-10T14:59:51Z",
+      "updatedAt": "2026-11-11T14:27:53Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -624,8 +646,8 @@
       "url": "https://github.com/code-yeongyu/omowright",
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "TypeScript",
-      "stars": 16,
-      "updatedAt": "2026-11-10T08:52:56Z",
+      "stars": 17,
+      "updatedAt": "2026-11-11T10:27:30Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -746,7 +768,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-09T10:13:14Z",
+      "updatedAt": "2026-11-11T06:01:27Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -839,6 +861,17 @@
       "source": "GitHub"
     },
     {
+      "name": "zimmar-accessibility-checker",
+      "fullName": "praizjosh/zimmar-accessibility-checker",
+      "url": "https://github.com/praizjosh/zimmar-accessibility-checker",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 6,
+      "updatedAt": "2026-11-10T20:46:48Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "kirby-editoria11y",
       "fullName": "medienbaecker/kirby-editoria11y",
       "url": "https://github.com/medienbaecker/kirby-editoria11y",
@@ -847,17 +880,6 @@
       "stars": 6,
       "updatedAt": "2026-10-16T08:13:50Z",
       "detectedAt": "2026-10-15T11:40:51Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "zimmar-accessibility-checker",
-      "fullName": "praizjosh/zimmar-accessibility-checker",
-      "url": "https://github.com/praizjosh/zimmar-accessibility-checker",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 6,
-      "updatedAt": "2026-08-11T21:59:02Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {

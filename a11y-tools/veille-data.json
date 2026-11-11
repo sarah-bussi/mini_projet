@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-10T15:00:19Z",
+  "updatedAt": "2026-11-11T14:31:14Z",
   "errors": [],
   "items": [
+    {
+      "title": "The multiplier effect: How authoring tools can transform web accessibility",
+      "url": "https://www.w3.org/WAI/news/2026-11-10/atag-blog/",
+      "source": "W3C Web Accessibility Initiative (WAI)",
+      "category": "Outils & automatisation",
+      "published": "2026-11-10T00:00:00Z",
+      "summary": "In the W3C blog post The multiplier effect: How authoring tools can transform web accessibility, W3C WAI Director Shawn Lawton Henry covers how authoring tools can help make vast amounts of content more accessible with less effort.",
+      "pinned": false
+    },
     {
       "title": "Captioned Doesn’t Always Mean Accessible",
       "url": "https://webaim.org/blog/captioned-doesnt-always-mean-accessible/",
