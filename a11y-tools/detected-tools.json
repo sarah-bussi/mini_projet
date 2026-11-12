@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T14:31:14Z",
+  "updatedAt": "2026-11-12T15:25:01Z",
   "errors": [],
   "items": [
     {
@@ -207,7 +207,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-10T16:52:02Z",
+      "updatedAt": "2026-11-12T03:52:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -526,7 +526,7 @@
       "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
       "language": "Rust",
       "stars": 25,
-      "updatedAt": "2026-11-11T12:32:21Z",
+      "updatedAt": "2026-11-11T22:34:21Z",
       "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
@@ -542,6 +542,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-foundation",
+      "fullName": "ThomasSweet/a11y-foundation",
+      "url": "https://github.com/ThomasSweet/a11y-foundation",
+      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
+      "language": "Vue",
+      "stars": 24,
+      "updatedAt": "2026-11-12T14:02:29Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-color-contrast",
       "fullName": "sondr3/a11y-color-contrast",
       "url": "https://github.com/sondr3/a11y-color-contrast",
@@ -550,17 +561,6 @@
       "stars": 24,
       "updatedAt": "2026-09-14T19:45:40Z",
       "detectedAt": "2026-09-15T11:52:35Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-foundation",
-      "fullName": "ThomasSweet/a11y-foundation",
-      "url": "https://github.com/ThomasSweet/a11y-foundation",
-      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
-      "language": "Vue",
-      "stars": 23,
-      "updatedAt": "2026-11-05T08:26:52Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -581,7 +581,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-11T14:27:53Z",
+      "updatedAt": "2026-11-12T14:08:13Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +603,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-10T01:14:42Z",
+      "updatedAt": "2026-11-12T09:45:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -625,7 +625,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-10T09:35:56Z",
+      "updatedAt": "2026-11-12T13:24:45Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -638,6 +638,17 @@
       "stars": 19,
       "updatedAt": "2026-10-22T11:39:39Z",
       "detectedAt": "2026-09-21T12:58:41Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "ghostfox",
+      "fullName": "autokeren/ghostfox",
+      "url": "https://github.com/autokeren/ghostfox",
+      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 71 MCP tools, unhookable a11y/compositor vision, captcha solvers, page_download, Android dial-out, visual QA for AI-built UIs.",
+      "language": "C++",
+      "stars": 18,
+      "updatedAt": "2026-11-12T10:54:35Z",
+      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
@@ -696,6 +707,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-hub",
+      "fullName": "inakuhn/a11y-hub",
+      "url": "https://github.com/inakuhn/a11y-hub",
+      "description": "femalITy A11y",
+      "language": null,
+      "stars": 12,
+      "updatedAt": "2026-11-12T12:19:08Z",
+      "detectedAt": "2026-11-12T15:25:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "ngxsmk-ui-kit",
       "fullName": "NGXSMK/ngxsmk-ui-kit",
       "url": "https://github.com/NGXSMK/ngxsmk-ui-kit",
@@ -740,17 +762,6 @@
       "source": "GitHub"
     },
     {
-      "name": "ghostfox",
-      "fullName": "autokeren/ghostfox",
-      "url": "https://github.com/autokeren/ghostfox",
-      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 71 MCP tools, unhookable a11y/compositor vision, captcha solvers, page_download, Android dial-out, visual QA for AI-built UIs.",
-      "language": "C++",
-      "stars": 11,
-      "updatedAt": "2026-10-23T00:02:10Z",
-      "detectedAt": "2026-10-12T15:41:20Z",
-      "source": "GitHub"
-    },
-    {
       "name": "aria-at-tests",
       "fullName": "guidepup/aria-at-tests",
       "url": "https://github.com/guidepup/aria-at-tests",
@@ -768,7 +779,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-11T06:01:27Z",
+      "updatedAt": "2026-11-12T04:58:37Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
