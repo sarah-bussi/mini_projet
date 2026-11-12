@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T14:42:45Z",
+  "updatedAt": "2026-11-12T15:36:04Z",
   "errors": [],
   "items": [
     {
@@ -973,6 +973,21 @@
         "Coastal Soil Salinization"
       ],
       "summary": "This presentation explores the role of Generative Artificial Intelligence (GenAI) in scientific modeling, using the development of a coastal soil salinization framework for the Occitanie region as a case study. Rather than serving as an automatic producer of knowledge, GenAI was used as a methodological partner to help formulate hypotheses, structure physical processes, identify key assumptions, and design sensitivity analyses. The resulting compartment-based model highlights the dominant influence of baseline saline intrusion and groundwater conditions on root-zone salinity under sea-level-rise scenarios. Beyond the modeling application, the"
+    },
+    {
+      "title": "Formation Prompt Engineering",
+      "url": "https://hal.science/hal-05853502v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-12T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Prompt Engineering",
+        "Llm"
+      ],
+      "summary": "Les LLMs et autres générateurs à base d'intelligence artificielle sont aujourd'hui ubiquitaires. Il est donc nécessaire d'apprendre à en tirer le meilleur parti. Dans le cadre du Comité Scientifique IA de l'UFR SEN, Clément a préparé une communication à destination du grand public. Cette présentation propose d'introduire plusieurs techniques d'optimisation des prompts, non sans rappeler les limites et dangers de ces assistants IA."
     },
     {
       "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
@@ -5345,22 +5360,6 @@
       ],
       "keywords": [],
       "summary": "Dexterous robotic hands are increasingly coupled to large-scale human data and foundation models, yet progress in hardware, representation learning and evaluation is often assessed separately. This survey reviews work from January 2024 to early November 2026, with earlier studies included to establish technical lineages. We organize the literature into five interdependent layers: hardware; data collection and curation; cross-embodiment transfer; learning and foundation models; and evaluation and applications. Human hand-object understanding and tactile sensing provide two cross-cutting perspectives. A system-level architecture, comparative ta"
-    },
-    {
-      "title": "Where Is VLA Inference Time Spent? Bottlenecks and Optimization Interactions Across GPUs",
-      "url": "http://arxiv.org/abs/2611.06710v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-04T16:09:02Z",
-      "authors": [
-        "Muhammad Danish Waseem",
-        "Ahmed Ali-Eldin Hassan"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Vision-language-action (VLA) models map camera observations and language instructions to robot actions. However, their large backbones and repeated action generation can make inference take longer than the robot's real-time requirements for its next action. To reduce the load of VLA computations, researchers have proposed multiple optimization approaches, including quantization and pruning. These optimizations can be combined with other general optimizations such as better kernel compilation or using CUDA graphs instead of the eager mode. However, most of these optimization results are usually reported on a single GPU type, typically for a fe"
     }
   ]
 }
