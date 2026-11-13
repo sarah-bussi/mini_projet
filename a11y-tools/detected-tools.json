@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T15:25:01Z",
+  "updatedAt": "2026-11-13T14:42:01Z",
   "errors": [],
   "items": [
     {
@@ -207,7 +207,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-12T03:52:25Z",
+      "updatedAt": "2026-11-13T02:53:32Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -217,7 +217,7 @@
       "url": "https://github.com/ianho7/ai-friendly-web-design-skill",
       "description": "A skill for coding agents that build, review, and refactor Web UI that should be easier for humans, screen readers, browser automation, Playwright tests, and AI agents to understand and operate.",
       "language": "JavaScript",
-      "stars": 77,
+      "stars": 78,
       "updatedAt": "2026-06-21T16:01:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -262,7 +262,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-11-11T10:57:41Z",
+      "updatedAt": "2026-11-13T07:51:09Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -405,7 +405,7 @@
       "description": "VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and multi-step goal runner",
       "language": "TypeScript",
       "stars": 43,
-      "updatedAt": "2026-11-08T12:38:38Z",
+      "updatedAt": "2026-11-13T14:00:18Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -504,7 +504,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-10T03:00:18Z",
+      "updatedAt": "2026-11-13T14:27:33Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -603,7 +603,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-12T09:45:12Z",
+      "updatedAt": "2026-11-13T09:14:37Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -625,8 +625,19 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-12T13:24:45Z",
+      "updatedAt": "2026-11-13T13:29:39Z",
       "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "ghostfox",
+      "fullName": "autokeren/ghostfox",
+      "url": "https://github.com/autokeren/ghostfox",
+      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 71 MCP tools, unhookable a11y/compositor vision, captcha solvers, page_download, Android dial-out, visual QA for AI-built UIs.",
+      "language": "C++",
+      "stars": 19,
+      "updatedAt": "2026-11-13T09:23:22Z",
+      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
@@ -638,17 +649,6 @@
       "stars": 19,
       "updatedAt": "2026-10-22T11:39:39Z",
       "detectedAt": "2026-09-21T12:58:41Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "ghostfox",
-      "fullName": "autokeren/ghostfox",
-      "url": "https://github.com/autokeren/ghostfox",
-      "description": "👻 Ghostfox — the browser that can SEE: Gecko-native agent browser. 71 MCP tools, unhookable a11y/compositor vision, captcha solvers, page_download, Android dial-out, visual QA for AI-built UIs.",
-      "language": "C++",
-      "stars": 18,
-      "updatedAt": "2026-11-12T10:54:35Z",
-      "detectedAt": "2026-10-12T15:41:20Z",
       "source": "GitHub"
     },
     {
