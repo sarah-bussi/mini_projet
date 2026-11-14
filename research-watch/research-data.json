@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-11-13T14:54:11Z",
-  "errors": [],
+  "updatedAt": "2026-11-14T13:47:31Z",
+  "errors": [
+    {
+      "source": "HAL",
+      "error": "<urlopen error timed out>"
+    }
+  ],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -834,6 +839,19 @@
       ],
       "keywords": [],
       "summary": "Electroencephalography (EEG) is the most scalable window onto brain dynamics, yet how cortical activity is transformed before reaching extracranial electrodes has largely been inferred from forward models rather than directly measured. We built a dual-scale sensing platform in awake mice that records a 16-channel flexible micro-electrocorticography (micro-ECoG) array and five skull-screw EEG electrodes on a single 30-kHz clock, enabling sample-aligned comparison of cortical and skull-level signals. Across 115 simultaneously recorded ECoG-EEG pairs from three mice, cortex-to-skull spectral gain was not frequency-flat but increased with frequen"
+    },
+    {
+      "title": "Psychological Adjustment and Mental Health Among Those Seeking Pain Rehabilitation Treatment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025915/",
+      "source": "Physical medicine and rehabilitation clinics of North America",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Rééducation",
+        "Handicap & société"
+      ],
+      "keywords": [],
+      "summary": "Chronic pain is a leading cause of disability worldwide and is strongly intertwined with psychological distress, functional impairment, and reduced quality of life, particularly among individuals seeking pain rehabilitation services and those living with disability. This article introduces the neural exposome as an integrative, lifespan-oriented model for understanding pain as the product of cumulative endogenous, exogenous, behavioral exposures that shape nervous system function over time. This article introduces the neural exposome as an integrative, lifespan-oriented model for understanding pain as the product of cumulative result of inter"
     },
     {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
@@ -5334,23 +5352,6 @@
       ],
       "keywords": [],
       "summary": "Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced by cyber-physical agents. In this work, we propose SCALE, a real-time latent communication method tailored for cyber-physical agents. Motivated by the spatio-temporal continuity of the physical world, SCALE matches tokens across consecutive latent messages using similarity scores to identify reusable information and avoid redund"
-    },
-    {
-      "title": "FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning",
-      "url": "http://arxiv.org/abs/2611.08383v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-05T18:00:58Z",
-      "authors": [
-        "Ali Mohammadi Ruzbahani",
-        "Abbas Yazdinejad",
-        "Hadis Karimipour"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Federated learning servers combine client models with a fixed aggregation rule, and each rule in common use is designed for one kind of heterogeneity. We study whether a large language model (LLM) that inspects the client models can choose the rule itself, without any training on the server. In FedReason, the LLM is called every ten rounds. It analyses the weights by running code in a restricted server-side sandbox, sees only the printed results, may score a few candidates on a 500-image proxy set, and submits a short Python aggregation program. The server applies the program until the next call and falls back to FedAvg whenever its output is"
     }
   ]
 }
