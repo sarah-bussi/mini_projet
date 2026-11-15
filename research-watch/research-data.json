@@ -1,11 +1,6 @@
 {
-  "updatedAt": "2026-11-14T13:47:31Z",
-  "errors": [
-    {
-      "source": "HAL",
-      "error": "<urlopen error timed out>"
-    }
-  ],
+  "updatedAt": "2026-11-15T14:18:11Z",
+  "errors": [],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -854,6 +849,31 @@
       "summary": "Chronic pain is a leading cause of disability worldwide and is strongly intertwined with psychological distress, functional impairment, and reduced quality of life, particularly among individuals seeking pain rehabilitation services and those living with disability. This article introduces the neural exposome as an integrative, lifespan-oriented model for understanding pain as the product of cumulative endogenous, exogenous, behavioral exposures that shape nervous system function over time. This article introduces the neural exposome as an integrative, lifespan-oriented model for understanding pain as the product of cumulative result of inter"
     },
     {
+      "title": "A benchmarking framework for organoid computing.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034668/",
+      "source": "Bioactive materials",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Organoid computing leverages functional neural networks of lab-grown neural organoids to recapitulate key aspects of human brain information processing, holding promising potential in brain-inspired computing, brain-computer interfaces, neuroscience, and medicine. However, its broad application remains constrained due to technical limitations including biological variability, interface instability, stochastic performance, and limited reproducibility. Here, we present a benchmarking framework that systematically quantifies the key performance determinants of organoid computing. We operationally define 'benchmark-ready' organoid substrates usin"
+    },
+    {
+      "title": "The effect of social robot authority on epistemic vigilance in early childhood.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42874494/",
+      "source": "Journal of experimental child psychology",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI"
+      ],
+      "keywords": [],
+      "summary": "Social robots are increasingly deployed as tutors and learning partners, yet their authority cues may discourage children from questioning or verifying information. We investigated whether robot authority influences Chinese children's epistemic vigilance and which source of authority drives this effect. In Study 1 (N = 128, ages 4 and 6, Mage = 5.39 years, SD = 0.92, 66 girls and 62 boys), robots with high and low overall authority asserted that all aliens in a task had three eyes. Children's verification behaviors were assessed in terms of the number of times they checked the information, the length of time they spent checking, and how much "
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -994,6 +1014,24 @@
         "Éthique"
       ],
       "summary": "Ouvrage sous la direction d'Amandine Andruchiw et Sahar Moussa Badran. Vingt ans après la loi du 11 février 2005, le décalage entre l’affirmation des droits et leur effectivité demeure la marque persistante de notre rapport collectif au handicap. Non par manque de textes, mais parce qu’un paradigme résiste à sa propre transformation: celui qui continue de penser la personne en situation de handicap majoritairement comme objet de soins plutôt que comme sujet de son propre parcours de vie. En faisant de l’éthique le fil conducteur d’un dialogue interdisciplinaire mêlant philosophie, droit, clinique, sociologie et témoignages de personnes direct"
+    },
+    {
+      "title": "Échanger avec un agent conversationnel : une conversation réelle, et non simulée. De la simulation objective à l’effectivité de la relation : altérité, individuation et fabrique sémiotique hybride du sens",
+      "url": "https://hal.sorbonne-universite.fr/hal-05863985v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-13T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Intelligence artificielle conversationnelle",
+        "Grands modèles de langage",
+        "Miroir algorithmique",
+        "Altérité fonctionnelle",
+        "Fabrique sémiotique hybride"
+      ],
+      "summary": "Échanger avec un agent conversationnel simulation objective, nous examinons les limites d'une définition de la conversation fondée exclusivement sur les propriétés intrinsèques des interlocuteurs. Nous proposons ensuite une conception relationnelle et sémiotique de l'activité conversationnelle, en mobilisant la pragmatique du langage, la théorie lacanienne du miroir, le concept de simulacre chez Baudrillard, la philosophie de l'individuation de Simondon et la sémiotique de Peirce. Cette approche permet de distinguer la réalité d'une interaction conversationnelle, l'apparence d'une subjectivité artificielle et la validité épistémique des signi"
     },
     {
       "title": "Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs",
@@ -5286,72 +5324,6 @@
       ],
       "keywords": [],
       "summary": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines c"
-    },
-    {
-      "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
-      "url": "http://arxiv.org/abs/2611.08413v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-05T18:17:29Z",
-      "authors": [
-        "Mohammed Hassan",
-        "Zhenyang Chen",
-        "Zheng Wang",
-        "Zhixin Zhu",
-        "Tianlong Chen",
-        "Yingyan",
-        "Lin",
-        "Chaojian Li"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowing irrelevant background content to distract action prediction under distribution shift. We argue that these issues stem from two complementary forms of redundancy: many visual tokens are spatially irrelevant, while attention over the remaining tokens is often misallocated. Based on this observation, we propose T3R, a Training-Free Two-Stage Token Refinement framework. In the first stage, segmentation-guided"
-    },
-    {
-      "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
-      "url": "http://arxiv.org/abs/2611.08407v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-05T18:14:06Z",
-      "authors": [
-        "Vongani H. Maluleke",
-        "James Ni",
-        "Kie Horiuchi",
-        "Lea Wilken",
-        "Jiahui Lei",
-        "Evonne Ng",
-        "Roei Herzig",
-        "Jitendra Malik"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Humanoid robots are typically trained as solitary agents, leaving them unable to coordinate physically with human partners who naturally anticipate and adjust to one another. To bridge this gap, we present Social Humanoid, a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner's motion. Its high-level policy performs flexible sequence modeling of human and humanoid motion through a shared tokenized representation, generating reactive humanoid motion and anticipating the partner's motion when they are occluded, while a low-level whole-body tracking controlle"
-    },
-    {
-      "title": "SCALE: Real-Time Latent Communication for Cyber-Physical Agents",
-      "url": "http://arxiv.org/abs/2611.08390v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-05T18:05:58Z",
-      "authors": [
-        "Shanghao Shi",
-        "Jian Xiao",
-        "Ching-Hsiang Chan",
-        "Sanjoy Baruah",
-        "Sastry Kompella",
-        "Yevgeniy Vorobeychik",
-        "William Yeoh",
-        "Ning Zhang"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced by cyber-physical agents. In this work, we propose SCALE, a real-time latent communication method tailored for cyber-physical agents. Motivated by the spatio-temporal continuity of the physical world, SCALE matches tokens across consecutive latent messages using similarity scores to identify reusable information and avoid redund"
     }
   ]
 }
