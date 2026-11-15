@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T13:39:12Z",
+  "updatedAt": "2026-11-15T14:04:06Z",
   "errors": [],
   "items": [
     {
@@ -41,7 +41,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 786,
+      "stars": 787,
       "updatedAt": "2026-11-13T22:50:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -542,6 +542,17 @@
       "source": "GitHub"
     },
     {
+      "name": "a11y-color-contrast",
+      "fullName": "sondr3/a11y-color-contrast",
+      "url": "https://github.com/sondr3/a11y-color-contrast",
+      "description": "A TypeScript package to calculate WCAG 2.0/3.0 and APCA color contrasts",
+      "language": "TypeScript",
+      "stars": 24,
+      "updatedAt": "2026-11-15T11:43:54Z",
+      "detectedAt": "2026-09-15T11:52:35Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-foundation",
       "fullName": "ThomasSweet/a11y-foundation",
       "url": "https://github.com/ThomasSweet/a11y-foundation",
@@ -550,17 +561,6 @@
       "stars": 24,
       "updatedAt": "2026-11-12T14:02:29Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-color-contrast",
-      "fullName": "sondr3/a11y-color-contrast",
-      "url": "https://github.com/sondr3/a11y-color-contrast",
-      "description": "A TypeScript package to calculate WCAG 2.0/3.0 and APCA color contrasts",
-      "language": "TypeScript",
-      "stars": 24,
-      "updatedAt": "2026-09-14T19:45:40Z",
-      "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
     {
@@ -575,25 +575,25 @@
       "source": "GitHub"
     },
     {
-      "name": "accessibility-checker",
-      "fullName": "equalizedigital/accessibility-checker",
-      "url": "https://github.com/equalizedigital/accessibility-checker",
-      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
-      "language": "PHP",
-      "stars": 22,
-      "updatedAt": "2026-11-12T14:08:13Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "audits",
       "fullName": "A11y-Pulse/audits",
       "url": "https://github.com/A11y-Pulse/audits",
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 22,
-      "updatedAt": "2026-11-03T02:45:25Z",
+      "updatedAt": "2026-11-15T09:49:00Z",
       "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessibility-checker",
+      "fullName": "equalizedigital/accessibility-checker",
+      "url": "https://github.com/equalizedigital/accessibility-checker",
+      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
+      "language": "PHP",
+      "stars": 22,
+      "updatedAt": "2026-11-14T21:27:01Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -603,7 +603,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-13T09:14:37Z",
+      "updatedAt": "2026-11-15T11:05:31Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
