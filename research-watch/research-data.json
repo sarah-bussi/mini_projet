@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-11-16T16:25:03Z",
-  "errors": [],
+  "updatedAt": "2026-11-17T16:28:55Z",
+  "errors": [
+    {
+      "source": "arXiv",
+      "error": "The read operation timed out"
+    }
+  ],
   "items": [
     {
       "title": "Les formations pour adultes dans les mondes agricoles et ruraux comme observatoires des trajectoires sociales : insertion, reconversions et aspirations à l’émancipation [Appel en cours]",
@@ -887,6 +892,18 @@
       "summary": "P300-based brain-computer interface (BCI) systems provide a vital communication channel for individuals with severe physical disabilities. While deep learning has achieved significant progress in signal processing, P300 recognition remains hindered by low signal-to-noise ratios and non-stationary dynamics. Existing deep learning approaches exhibit two primary limitations: they rely on fixed-scale temporal filters that fail to capture multi-resolution event-related potential (ERP) dynamics, and they treat electrode channels homogeneously, overlooking the functional modularity of cortical regions and the interaction between local and global net"
     },
     {
+      "title": "Future Directions in Endoscopic Pituitary Surgery: Robotics, Artificial Intelligence, and Technological Innovations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43039604/",
+      "source": "Neurosurgery clinics of North America",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Endoscopic endonasal surgery has transformed pituitary and skull base surgery by enabling minimally invasive access, improved visualization, and safer tumor resection. Despite these advances, challenges remain in managing anatomic variability, tumor invasiveness, and intraoperative uncertainty, which continue to impact the consistency of outcomes. Advances in artificial intelligence have enabled optimization of surgical workflows, supporting preoperative tumor characterization, risk stratification, intraoperative decision-making, and postoperative outcome prediction. In parallel, augmented and virtual reality, enhance spatial orientation, sur"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -947,6 +964,29 @@
         "Certification en langues"
       ],
       "summary": "En France, tests de langue et certifications en langues relèvent du même re-gistre administratif, comme s’ils ne différaient que par le prix ou la notoriété. Cet article soutient que la différence est de nature : le test mesure une perfor-mance, quand la certification de type actionnel reconnaît un parcours, c’est-à-dire la construction progressive d’un savoir-agir en langue. L’argumentation part de la tension entre jugement et mesure, éclairée par la phronèsis aristotéli-cienne et la théorie de la valuation de Dewey, puis clarifie les notions d’assessment, d’evaluation, de test et de certification. Elle montre que le lan-guage testing a lui-"
+    },
+    {
+      "title": "Déploiement de plusieurs stations météorologiques ECOLOGGING dans le cadre de l'infrastructure de recherche REINFFORCE II dans des arboretums (Neuvic (19), Cendrieux (24) et Auga (64).",
+      "url": "https://hal.inrae.fr/hal-05867848v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-30T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Pluviométrie",
+        "Pression Atmosphérique",
+        "Humidité Relative",
+        "Humidité",
+        "Température",
+        "Rayonnement solaire",
+        "4G COMMUNICATIONS",
+        "Vent",
+        "MQTTs",
+        "Météorologie"
+      ],
+      "summary": "REINFFORCE II : REseau INFrastructure de recherche pour le suivi et l'adaptation des FORêts au Changement climatiquE 2. REINFFORCE II est une initiative européenne visant à adapter les forêts de l'espace atlantique au changement climatique. Le changement climatique, avec ses sécheresses, ses incendies et ses tempêtes de vent, menace la ressource clé de la région atlantique que sont les forêts à croissance rapide et la biodiversité qui leur est associée. Les décideurs politiques et les forestiers s'inquiètent de la gestion des forêts actuelles et de la plantation des espèces adaptées au changement climatique. REINFFORCE II fournira des solutio"
     },
     {
       "title": "Sparse Competition during Training For the Emergence of Specialized Modules",
@@ -1027,6 +1067,18 @@
         "Éthique"
       ],
       "summary": "Ouvrage sous la direction d'Amandine Andruchiw et Sahar Moussa Badran. Vingt ans après la loi du 11 février 2005, le décalage entre l’affirmation des droits et leur effectivité demeure la marque persistante de notre rapport collectif au handicap. Non par manque de textes, mais parce qu’un paradigme résiste à sa propre transformation: celui qui continue de penser la personne en situation de handicap majoritairement comme objet de soins plutôt que comme sujet de son propre parcours de vie. En faisant de l’éthique le fil conducteur d’un dialogue interdisciplinaire mêlant philosophie, droit, clinique, sociologie et témoignages de personnes direct"
+    },
+    {
+      "title": "Décider dans l’incertitude à l’ère de l’IA est-ce plus facile ?",
+      "url": "https://hal.sorbonne-universite.fr/hal-05867502v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Décider en situation de crise signifie agir avant d’avoir entièrement compris la situation. L’information demeure partielle, parfois contradictoire, le temps manque et chaque option comporte des risques. Attendre des données supplémentaires n’est pas toujours une position neutre, car le retard peut lui-même aggraver la crise. L’intelligence artificielle ne supprime pas cette incertitude. Elle accélère le traitement de l’information, mais transforme aussi la manière dont la situation est représentée et interprétée. L’épisode d’Ulysse entre Charybde et Scylla servira de fil conducteur. Ulysse ne peut écarter simultanément les deux dangers. Il d"
     },
     {
       "title": "Discovery of Dynamic Functional MRI Markers of Sleep Onset Period",
@@ -5224,65 +5276,6 @@
       ],
       "keywords": [],
       "summary": "Recent Vision-Language-Action (VLA) models have begun incorporating thermal sensing, but existing approaches typically treat thermal images as ordinary visual inputs, providing limited support for temperature-aware relational reasoning in manipulation. To address this limitation, we propose Thermo-VLA with a ThermoRes Encoder, which decomposes thermal images into cold and hot attribute representations and injects them into the RGB token through language-conditioned residual modulation, enabling temperature-driven target selection and continuous manipulation. We further construct six real-world robotic tasks on a dual-arm Unitree G1 platform, "
-    },
-    {
-      "title": "AutoQS: Automated Quantization Strategy Design with Large Language Models",
-      "url": "http://arxiv.org/abs/2611.11975v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-09T06:59:18Z",
-      "authors": [
-        "Zhen Liu",
-        "Zhiqin Yang",
-        "Yonggang Zhang",
-        "Jianyi Liu",
-        "Jinjun Wang",
-        "Jingwen Fu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Quantization reduces LLM deployment costs, but effective strategies must balance model quality and storage. LLM-driven search can automate strategy design through repeated proposal and evaluation. This process must identify useful strategies within a limited evaluation budget. The key challenge is that \\textit{actual quantization is expensive, while inexpensive proxies may not reflect quantized-model performance.} To address this challenge, we present AutoQS, an \\textbf{Auto}mated \\textbf{Q}uantization \\textbf{S}trategy Design with LLMs. AutoQS keeps weight precision fixed and searches group-size allocations across layers and operators under "
-    },
-    {
-      "title": "Intelligence artificielle & naturelle pour le climat, de la diplomatie à l’éthique",
-      "url": "https://hal.science/hal-05857893v1",
-      "source": "HAL",
-      "type": "Publication scientifique",
-      "published": "2026-11-09T00:00:00Z",
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [
-        "Diplomatie climatique",
-        "Intelligence naturelle",
-        "Intelligence artificielle",
-        "Diplomatie scientifique"
-      ],
-      "summary": "Dans leur récente note de recherche, Chaloux, Rüland et al. (2026) évoquent la nécessité de « parler le même langage » en matière de diplomatie scientifique pour le climat. Cette intervention en interroge la possibilité : comment est-il possible de parler le même langage lorsqu’on re-court à des systèmes d’algorithmes pour observer, modéliser et comprendre les questions climatiques et environnementales ? En effet, celles-ci concernent les interactions complexes qui existent entre les effets des activités humaines sur l’environnement, le système de l’atmosphère et la dynamique de la biodiversité. Concernant ce dernier niveau du sujet, on souli"
-    },
-    {
-      "title": "On Agentic Manipulation Policies",
-      "url": "http://arxiv.org/abs/2611.09892v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-06T18:59:34Z",
-      "authors": [
-        "Chen Chen",
-        "Omid Bagherieh",
-        "Naveen Nikamanth Appiah Balaji",
-        "Jesse T. Gonzalez",
-        "Negin Heravi",
-        "Fahad Islam",
-        "Xueting Li",
-        "Jean-Baptiste Regli"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demons"
     }
   ]
 }
