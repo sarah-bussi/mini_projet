@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T16:02:27Z",
+  "checkedAt": "2026-11-17T16:14:58Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "redirected",
@@ -287,18 +287,18 @@
       "finalUrl": "https://support.apple.com/guide/voiceover/welcome/mac"
     },
     "https://support.google.com/accessibility/android/answer/6122836": {
-      "state": "ok",
-      "code": 204,
+      "state": "broken",
+      "code": 404,
       "finalUrl": "https://support.google.com/accessibility/android/answer/6122836"
     },
     "https://support.google.com/accessibility/android/answer/6283677": {
-      "state": "ok",
-      "code": 204,
+      "state": "broken",
+      "code": 404,
       "finalUrl": "https://support.google.com/accessibility/android/answer/6283677"
     },
     "https://support.google.com/accessibility/android/answer/6376570": {
-      "state": "ok",
-      "code": 204,
+      "state": "broken",
+      "code": 404,
       "finalUrl": "https://support.google.com/accessibility/android/answer/6376570"
     },
     "https://support.microsoft.com/office/improve-accessibility-with-the-accessibility-checker-a16c31ab-39f6-4a2b-8bd8-5ad801426c7f": {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T16:01:35Z",
+  "updatedAt": "2026-11-17T16:12:57Z",
   "errors": [],
   "items": [
     {
@@ -41,7 +41,7 @@
       "url": "https://github.com/IBMa/equal-access",
       "description": "IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment",
       "language": "JavaScript",
-      "stars": 787,
+      "stars": 788,
       "updatedAt": "2026-11-13T22:50:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -63,8 +63,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 348,
-      "updatedAt": "2026-11-16T05:01:51Z",
+      "stars": 349,
+      "updatedAt": "2026-11-16T21:14:07Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -86,7 +86,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-16T12:08:47Z",
+      "updatedAt": "2026-11-17T04:43:57Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -207,7 +207,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-15T17:56:24Z",
+      "updatedAt": "2026-11-17T02:54:35Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -217,7 +217,7 @@
       "url": "https://github.com/ianho7/ai-friendly-web-design-skill",
       "description": "A skill for coding agents that build, review, and refactor Web UI that should be easier for humans, screen readers, browser automation, Playwright tests, and AI agents to understand and operate.",
       "language": "JavaScript",
-      "stars": 78,
+      "stars": 77,
       "updatedAt": "2026-06-21T16:01:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -229,7 +229,7 @@
       "description": "🌐 A webring for digital accessibility practitioners.",
       "language": "Nunjucks",
       "stars": 75,
-      "updatedAt": "2026-11-11T01:28:47Z",
+      "updatedAt": "2026-11-17T01:19:39Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -262,7 +262,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-11-16T15:40:30Z",
+      "updatedAt": "2026-11-17T11:36:21Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -339,7 +339,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-16T14:15:07Z",
+      "updatedAt": "2026-11-17T12:05:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -520,6 +520,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ace-gui",
+      "fullName": "daisy/ace-gui",
+      "url": "https://github.com/daisy/ace-gui",
+      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
+      "language": "JavaScript",
+      "stars": 25,
+      "updatedAt": "2026-11-16T18:29:21Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "accessible-android-emulator",
       "fullName": "aaron-gh/accessible-android-emulator",
       "url": "https://github.com/aaron-gh/accessible-android-emulator",
@@ -531,13 +542,13 @@
       "source": "GitHub"
     },
     {
-      "name": "ace-gui",
-      "fullName": "daisy/ace-gui",
-      "url": "https://github.com/daisy/ace-gui",
-      "description": "Ace by DAISY App, the official graphical user interface for the EPUB accessibility checker developed by the DAISY Consortium, available for the Windows, MacOS and Linux desktop operating systems.",
-      "language": "JavaScript",
-      "stars": 25,
-      "updatedAt": "2026-05-01T10:52:34Z",
+      "name": "a11y-foundation",
+      "fullName": "ThomasSweet/a11y-foundation",
+      "url": "https://github.com/ThomasSweet/a11y-foundation",
+      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
+      "language": "Vue",
+      "stars": 24,
+      "updatedAt": "2026-11-17T00:40:23Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -550,17 +561,6 @@
       "stars": 24,
       "updatedAt": "2026-11-15T11:43:54Z",
       "detectedAt": "2026-09-15T11:52:35Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-foundation",
-      "fullName": "ThomasSweet/a11y-foundation",
-      "url": "https://github.com/ThomasSweet/a11y-foundation",
-      "description": "An accessibility-first styling playground — how much of accessibility the modern web platform handles natively, with little to no JavaScript. WCAG rules you can break, cutting-edge CSS showcases, tokens and cascade layers.",
-      "language": "Vue",
-      "stars": 24,
-      "updatedAt": "2026-11-12T14:02:29Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -603,7 +603,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-16T13:44:42Z",
+      "updatedAt": "2026-11-16T21:42:55Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -790,7 +790,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-16T04:15:23Z",
+      "updatedAt": "2026-11-17T09:00:04Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
