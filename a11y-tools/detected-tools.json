@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T16:12:57Z",
+  "updatedAt": "2026-11-18T15:47:54Z",
   "errors": [],
   "items": [
     {
@@ -168,6 +168,17 @@
       "source": "GitHub"
     },
     {
+      "name": "ace",
+      "fullName": "daisy/ace",
+      "url": "https://github.com/daisy/ace",
+      "description": "Ace by DAISY, an Accessibility Checker for EPUB",
+      "language": "JavaScript",
+      "stars": 102,
+      "updatedAt": "2026-05-01T10:14:02Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "figma-include-accessibility-annotations",
       "fullName": "eBay/figma-include-accessibility-annotations",
       "url": "https://github.com/eBay/figma-include-accessibility-annotations",
@@ -176,17 +187,6 @@
       "stars": 101,
       "updatedAt": "2026-09-21T17:18:14Z",
       "detectedAt": "2026-09-22T11:48:23Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "ace",
-      "fullName": "daisy/ace",
-      "url": "https://github.com/daisy/ace",
-      "description": "Ace by DAISY, an Accessibility Checker for EPUB",
-      "language": "JavaScript",
-      "stars": 101,
-      "updatedAt": "2026-05-01T10:14:02Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -339,7 +339,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-17T12:05:48Z",
+      "updatedAt": "2026-11-18T01:33:02Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -504,7 +504,7 @@
       "description": "A library for building language-specific, CodeMirror-friendly editors that are a11y-friendly.",
       "language": "TypeScript",
       "stars": 29,
-      "updatedAt": "2026-11-14T13:08:11Z",
+      "updatedAt": "2026-11-18T02:12:42Z",
       "detectedAt": "2026-10-30T13:08:46Z",
       "source": "GitHub"
     },
@@ -520,6 +520,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessible-android-emulator",
+      "fullName": "aaron-gh/accessible-android-emulator",
+      "url": "https://github.com/aaron-gh/accessible-android-emulator",
+      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
+      "language": "Rust",
+      "stars": 26,
+      "updatedAt": "2026-11-11T22:34:21Z",
+      "detectedAt": "2026-10-07T13:34:53Z",
+      "source": "GitHub"
+    },
+    {
       "name": "ace-gui",
       "fullName": "daisy/ace-gui",
       "url": "https://github.com/daisy/ace-gui",
@@ -528,17 +539,6 @@
       "stars": 25,
       "updatedAt": "2026-11-16T18:29:21Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessible-android-emulator",
-      "fullName": "aaron-gh/accessible-android-emulator",
-      "url": "https://github.com/aaron-gh/accessible-android-emulator",
-      "description": "Create, run and test Android virtual devices without sighted help: a screen reader from first boot, the full keyboard, and dependable audio.",
-      "language": "Rust",
-      "stars": 25,
-      "updatedAt": "2026-11-11T22:34:21Z",
-      "detectedAt": "2026-10-07T13:34:53Z",
       "source": "GitHub"
     },
     {
@@ -575,13 +575,24 @@
       "source": "GitHub"
     },
     {
+      "name": "public-browser",
+      "fullName": "Silbercue/public-browser",
+      "url": "https://github.com/Silbercue/public-browser",
+      "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
+      "language": "TypeScript",
+      "stars": 22,
+      "updatedAt": "2026-11-18T15:26:52Z",
+      "detectedAt": "2026-09-21T12:58:41Z",
+      "source": "GitHub"
+    },
+    {
       "name": "accessibility-checker",
       "fullName": "equalizedigital/accessibility-checker",
       "url": "https://github.com/equalizedigital/accessibility-checker",
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-16T14:20:01Z",
+      "updatedAt": "2026-11-18T00:22:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +614,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-16T21:42:55Z",
+      "updatedAt": "2026-11-18T14:42:53Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -625,7 +636,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-16T11:39:33Z",
+      "updatedAt": "2026-11-18T14:28:42Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -638,17 +649,6 @@
       "stars": 19,
       "updatedAt": "2026-11-13T09:23:22Z",
       "detectedAt": "2026-10-12T15:41:20Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "public-browser",
-      "fullName": "Silbercue/public-browser",
-      "url": "https://github.com/Silbercue/public-browser",
-      "description": "Lets Claude Code and Cursor drive Chrome. Blind benchmark vs agent-browser: -33% tokens, -33% cost, -24% tool calls, +48% speed, 30/30. Direct CDP, a11y-tree refs, server-side plan executor. MIT, no paid tier.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-10-22T11:39:39Z",
-      "detectedAt": "2026-09-21T12:58:41Z",
       "source": "GitHub"
     },
     {
@@ -674,14 +674,14 @@
       "source": "GitHub"
     },
     {
-      "name": "quarto-revealjs-a11y",
-      "fullName": "mcanouil/quarto-revealjs-a11y",
-      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
-      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
-      "language": "JavaScript",
+      "name": "a11y-starter-kit-code",
+      "fullName": "thefrontkit/a11y-starter-kit-code",
+      "url": "https://github.com/thefrontkit/a11y-starter-kit-code",
+      "description": "",
+      "language": "TypeScript",
       "stars": 15,
-      "updatedAt": "2026-11-01T17:36:13Z",
-      "detectedAt": "2026-09-07T12:44:29Z",
+      "updatedAt": "2026-11-18T07:23:40Z",
+      "detectedAt": "2026-11-18T15:47:54Z",
       "source": "GitHub"
     },
     {
@@ -690,9 +690,20 @@
       "url": "https://github.com/zivtech/accessibility-skills",
       "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
       "language": "Python",
-      "stars": 14,
+      "stars": 15,
       "updatedAt": "2026-11-09T16:37:18Z",
       "detectedAt": "2026-09-24T11:56:24Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "quarto-revealjs-a11y",
+      "fullName": "mcanouil/quarto-revealjs-a11y",
+      "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
+      "description": "A Quarto Reveal.js plugin extension providing accessibility (a11y) enhancements for presentations.",
+      "language": "JavaScript",
+      "stars": 15,
+      "updatedAt": "2026-11-01T17:36:13Z",
+      "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
     {
@@ -790,7 +801,7 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-17T09:00:04Z",
+      "updatedAt": "2026-11-18T15:42:23Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
