@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T15:47:54Z",
+  "updatedAt": "2026-11-19T15:53:03Z",
   "errors": [],
   "items": [
     {
@@ -118,7 +118,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 159,
+      "stars": 157,
       "updatedAt": "2026-11-05T08:05:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -207,7 +207,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-17T02:54:35Z",
+      "updatedAt": "2026-11-19T07:16:51Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -253,6 +253,17 @@
       "stars": 71,
       "updatedAt": "2026-11-09T09:58:39Z",
       "detectedAt": "2026-11-09T16:35:46Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-accordion-tabs",
+      "fullName": "matthiasott/a11y-accordion-tabs",
+      "url": "https://github.com/matthiasott/a11y-accordion-tabs",
+      "description": "A script for an accessible accordion tabs component",
+      "language": "JavaScript",
+      "stars": 70,
+      "updatedAt": "2026-11-19T06:18:25Z",
+      "detectedAt": "2026-11-19T15:53:03Z",
       "source": "GitHub"
     },
     {
@@ -575,6 +586,28 @@
       "source": "GitHub"
     },
     {
+      "name": "accessibility-checker",
+      "fullName": "equalizedigital/accessibility-checker",
+      "url": "https://github.com/equalizedigital/accessibility-checker",
+      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
+      "language": "PHP",
+      "stars": 22,
+      "updatedAt": "2026-11-19T12:13:28Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "audits",
+      "fullName": "A11y-Pulse/audits",
+      "url": "https://github.com/A11y-Pulse/audits",
+      "description": "Automated interaction-driven web accessibility testing",
+      "language": "TypeScript",
+      "stars": 22,
+      "updatedAt": "2026-11-19T09:24:34Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "public-browser",
       "fullName": "Silbercue/public-browser",
       "url": "https://github.com/Silbercue/public-browser",
@@ -586,35 +619,13 @@
       "source": "GitHub"
     },
     {
-      "name": "accessibility-checker",
-      "fullName": "equalizedigital/accessibility-checker",
-      "url": "https://github.com/equalizedigital/accessibility-checker",
-      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
-      "language": "PHP",
-      "stars": 22,
-      "updatedAt": "2026-11-18T00:22:51Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "audits",
-      "fullName": "A11y-Pulse/audits",
-      "url": "https://github.com/A11y-Pulse/audits",
-      "description": "Automated interaction-driven web accessibility testing",
-      "language": "TypeScript",
-      "stars": 22,
-      "updatedAt": "2026-11-15T09:49:00Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
       "name": "eslint",
       "fullName": "ofri-peretz/eslint",
       "url": "https://github.com/ofri-peretz/eslint",
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-18T14:42:53Z",
+      "updatedAt": "2026-11-19T13:57:11Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -636,7 +647,7 @@
       "description": "Design system built with A11Y in mind",
       "language": "TypeScript",
       "stars": 19,
-      "updatedAt": "2026-11-18T14:28:42Z",
+      "updatedAt": "2026-11-19T15:29:42Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -657,8 +668,8 @@
       "url": "https://github.com/code-yeongyu/omowright",
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "TypeScript",
-      "stars": 17,
-      "updatedAt": "2026-11-11T10:27:30Z",
+      "stars": 18,
+      "updatedAt": "2026-11-19T11:28:08Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
@@ -801,8 +812,19 @@
       "description": "Static accessibility analysis for Tailwind CSS projects.",
       "language": "TypeScript",
       "stars": 10,
-      "updatedAt": "2026-11-18T15:42:23Z",
+      "updatedAt": "2026-11-19T06:13:48Z",
       "detectedAt": "2026-09-07T12:44:29Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "patternfly-a11y",
+      "fullName": "patternfly/patternfly-a11y",
+      "url": "https://github.com/patternfly/patternfly-a11y",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 10,
+      "updatedAt": "2026-11-18T16:44:19Z",
+      "detectedAt": "2026-11-19T15:53:03Z",
       "source": "GitHub"
     },
     {
