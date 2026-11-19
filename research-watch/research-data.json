@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-18T15:58:05Z",
+  "updatedAt": "2026-11-19T16:03:24Z",
   "errors": [
     {
-      "source": "HAL",
-      "error": "<urlopen error timed out>"
+      "source": "arXiv",
+      "error": "HTTP Error 429: Unknown Error"
     }
   ],
   "items": [
@@ -942,6 +942,119 @@
       "summary": "Artificial intelligence (AI) in emergency neuroradiology is currently used mainly for worklist prioritization and selected detection tasks rather than autonomous diagnosis. The best current evidence for clinical utility in detection is in intracranial hemorrhage and acute ischemic stroke, especially large vessel occlusion, with additional emerging use in cervical/thoracolumbar fracture detection and incidental extracranial findings on computed tomography angiography head/neck. Across these areas, AI generally shows good diagnostic performance and can improve workflow metrics. However, evidence that AI improves hard patient outcomes, particula"
     },
     {
+      "title": "Next-generation analytical platforms for neurochemical sensing: from conventional biosensors to intelligent brain interfaces.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42956608/",
+      "source": "Talanta",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IHM & UX"
+      ],
+      "keywords": [],
+      "summary": "Neurochemical sensing is central to understanding brain function, neurological disorders, and precision neurotherapeutics. Despite advances in electrochemical, optical, implantable, wearable, and genetically encoded technologies, current platforms remain limited by molecular selectivity, long-term stability, biofouling, complex data interpretation, and clinical translation. This review critically examines 83 representative studies encompassing nanomaterial-enabled electrochemical sensors, implantable and wearable devices, genetically encoded and CRISPR-engineered systems, AI-assisted analytical frameworks, and multimodal bioelectronic interfa"
+    },
+    {
+      "title": "A multifunctional memristor for neuromorphic vision and secure voice encryption.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42832867/",
+      "source": "Journal of colloid and interface science",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Neuromorphic vision and secure voice encryption are crucial for next-generation intelligent systems, enabling efficient visual perception and confidential acoustic information processing beyond conventional computing architectures. However, the integration of reliable resistive switching, synaptic plasticity, neural-network inference, logic computing, and secure signal processing in a memristive device remains challenging. In this work, an Ag/CeOx/FTO memristor was fabricated by magnetron sputtering and developed as a multifunctional hardware platform for neuromorphic visual computing and secure voice encryption. The device exhibits stable bi"
+    },
+    {
+      "title": "Surgery for Middle Mediastinal Masses.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43045206/",
+      "source": "Thoracic surgery clinics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Lesions of the middle mediastinum represent a focused but clinically significant subset of mediastinal pathology. Although frequently benign and cystic, these tumors arise in close proximity to critical cardiopulmonary and aerodigestive structures, making diagnosis and management potentially complex. Evaluation is image-driven with biopsy reserved for lesions in which tissue confirmation alters management. Minimally invasive approaches, particularly robotic-assisted techniques, have become preferred choices for appropriately selected cases, while open surgery remains necessary for some tumors. Successful management requires precise imaging an"
+    },
+    {
+      "title": "Barriers to Clinical Integration of Artificial Intelligence in Computer-Assisted Dental Implant Surgery: A Critical Review.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42855343/",
+      "source": "Oral and maxillofacial surgery clinics of North America",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Translating artificial intelligence (AI) from virtual implant planning to dental implant surgical execution is obstructed by technical, clinical, and socioethical barriers. This critical review appraises these impediments, focusing on tomographic data heterogeneity, closed hardware ecosystems that block kinematic data extraction, and algorithmic opacity that erodes clinician trust. Current literature over-relies on static retrospective validations with high bias risk. This gap should be bridged by a roadmap prioritizing federated learning, open-source interoperability, explainable AI, and prospective multicenter trials to establish algorithms"
+    },
+    {
+      "title": "The Transformative Role of Artificial Intelligence in Wearable Health Monitoring: Applications in Diagnosis, Therapy, and Rehabilitation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052671/",
+      "source": "Methods in molecular biology (Clifton, N.J.)",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IA & LLM",
+        "IHM & UX",
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "This chapter explores the transformative impact of artificial intelligence (AI)-augmented wearable technology in dynamic health monitoring across diagnosis, treatment, and rehabilitation. Innovations include real-time cardiovascular disease detection, AI-driven continuous glucose monitoring for diabetes, and neurological disorder tracking using flexible electroencephalograph (EEG) sensors. Therapeutic advances feature smart drug-delivery patches responsive to biomarkers, remote intervention systems, and surgical tools like augmented reality (AR) navigation. Rehabilitation breakthroughs encompass wearables for motor recovery, cardiopulmonary o"
+    },
+    {
+      "title": "Brain-Computer Interface: Exploring Alternative Solutions for Neurological Disorders.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052670/",
+      "source": "Methods in molecular biology (Clifton, N.J.)",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Neurotechnologies",
+        "IHM & UX",
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "Brain-computer interface (BCI) refers to a system that enables direct communication between the brain and external devices. Although the concept of BCI was introduced over 50 years ago, recent advancements in hardware technology and decoding algorithms have accelerated its development significantly. In the realm of neurological disorders, BCI has shown great potential as a tool for diagnosis, treatment, rehabilitation, and functional compensation. This chapter provides a comprehensive review of BCI applications in neurological disorders, covering aspects such as diagnosis and prognosis, therapeutic interventions, rehabilitation strategies, an"
+    },
+    {
+      "title": "From Experience to Precision: The Role of Artificial Intelligence and Robot-Assisted Surgery in Modern Precision Medicine.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052666/",
+      "source": "Methods in molecular biology (Clifton, N.J.)",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "With the development of precision medicine, the demand for precision, personalization, minimal invasiveness, and intelligentization in surgical operations has become increasingly prominent. Traditional surgeries, which rely on the experience of doctors, have limitations in lesion localization, operational accuracy, and real-time monitoring, making it difficult to meet clinical needs. Here, we systematically review the application value and implementation paths of artificial intelligence (AI) and robot-assisted surgical technologies in promoting the surgical precision and clinical effects. By systematically expounding the basic principles and "
+    },
+    {
+      "title": "Robot Navigation for Precise Puncture of Solid Tumors.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052665/",
+      "source": "Methods in molecular biology (Clifton, N.J.)",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "With the advent of precision medicine, solid tumor puncture treatment has shifted from traditional manual techniques to a new, personalized era of robotic navigation. The incidence of lung, liver, and other cancers continues to increase, creating an urgent need for minimally invasive interventions. However, due to challenges such as respiratory movement and small lesion size, traditional methods still struggle to achieve precise, single-attempt puncture. Robotic navigation systems that integrate multimodal image fusion, AI-based path planning, and intelligent control algorithms have been developed to address these limitations. This paper revi"
+    },
+    {
+      "title": "Artificial Intelligence in Robotic Microsurgery.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43045323/",
+      "source": "Clinics in plastic surgery",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Robotic platforms address the mechanical limits of microsurgery, but they execute the surgeon's commands without interpreting the operative field. This article examines where artificial intelligence has been introduced into that gap, organized by the layer of the robotic system in which the algorithms sit. Signal processing separates physiologic tremor from voluntary hand motion in real time, paired with motion downscaling. Neural networks recognize operative phase, step, and instruments from intraoperative video. Supervised autonomous suturing has been demonstrated at a larger caliber, deep learning quantifies tissue handling and instrument "
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -1004,6 +1117,29 @@
       "summary": "En France, tests de langue et certifications en langues relèvent du même re-gistre administratif, comme s’ils ne différaient que par le prix ou la notoriété. Cet article soutient que la différence est de nature : le test mesure une perfor-mance, quand la certification de type actionnel reconnaît un parcours, c’est-à-dire la construction progressive d’un savoir-agir en langue. L’argumentation part de la tension entre jugement et mesure, éclairée par la phronèsis aristotéli-cienne et la théorie de la valuation de Dewey, puis clarifie les notions d’assessment, d’evaluation, de test et de certification. Elle montre que le lan-guage testing a lui-"
     },
     {
+      "title": "Towards a simulation-based approach for enhancing smallholder business models",
+      "url": "https://imt-mines-ales.hal.science/hal-05870805v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-12-01T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Information processing",
+        "Canvas model",
+        "Agricultural information systems",
+        "Decision-support systems",
+        "Simulation",
+        "Smallholder farming",
+        "Generative AI",
+        "Discrete-event simulation",
+        "Smallholder resilience",
+        "BPMN-based modeling"
+      ],
+      "summary": "Smallholder farms face increasing challenges in strategic decision-making due to economic, environmental, and organizational uncertainties. While frameworks such as the Business Model Canvas (BMC) support structured representation of strategic knowledge, they remain qualitative and do not enable quantitative evaluation of operational feasibility. This study proposes an information-processing framework to bridge this gap by linking strategic knowledge with executable process models and simulation-based analysis. The proposed framework transforms structured business model inputs into formal process representations using Business Process Model a"
+    },
+    {
       "title": "Déploiement de plusieurs stations météorologiques ECOLOGGING dans le cadre de l'infrastructure de recherche REINFFORCE II dans des arboretums (Neuvic (19), Cendrieux (24) et Auga (64).",
       "url": "https://hal.inrae.fr/hal-05867848v1",
       "source": "HAL",
@@ -1013,18 +1149,35 @@
         "IA & LLM"
       ],
       "keywords": [
-        "Pluviométrie",
-        "Pression Atmosphérique",
-        "Humidité Relative",
-        "Humidité",
-        "Température",
         "Rayonnement solaire",
+        "Température",
+        "Humidité",
+        "Humidité Relative",
+        "Pression Atmosphérique",
+        "Pluviométrie",
         "4G COMMUNICATIONS",
         "Vent",
         "MQTTs",
         "Météorologie"
       ],
       "summary": "REINFFORCE II : REseau INFrastructure de recherche pour le suivi et l'adaptation des FORêts au Changement climatiquE 2. REINFFORCE II est une initiative européenne visant à adapter les forêts de l'espace atlantique au changement climatique. Le changement climatique, avec ses sécheresses, ses incendies et ses tempêtes de vent, menace la ressource clé de la région atlantique que sont les forêts à croissance rapide et la biodiversité qui leur est associée. Les décideurs politiques et les forestiers s'inquiètent de la gestion des forêts actuelles et de la plantation des espèces adaptées au changement climatique. REINFFORCE II fournira des solutio"
+    },
+    {
+      "title": "Le handicap en France: Des politiques publiques en transformation",
+      "url": "https://sciencespo.hal.science/hal-05869439v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-26T00:00:00Z",
+      "domains": [
+        "Handicap & société"
+      ],
+      "keywords": [
+        "Citoyenneté",
+        "Evaluation des politiques publiques",
+        "Impact des politiques publiques",
+        "Politiques du handicap"
+      ],
+      "summary": "Comment les politiques du handicap ont-elles évolué depuis un demi-siècle en France ? Quels sont leurs effets sur les personnes concernées qui constituent une minorité extrêmement nombreuse ? Cet ouvrage en propose un bilan sous forme de 19 fiches pratiques couvrant une diversité de secteurs thématiques (accessibilité, éducation, emploi, citoyenneté …) et d’enjeux transversaux (définition du handicap, lois-cadres, droit international et européen, discriminations, représentations du handicap…). En dépit de transformations du cadre d’action publique, les effets concrets sur les vies des personnes handicapées restent limités. Au-delà de la multi"
     },
     {
       "title": "Sparse Competition during Training For the Emergence of Specialized Modules",
@@ -1117,6 +1270,70 @@
       ],
       "keywords": [],
       "summary": "Décider en situation de crise signifie agir avant d’avoir entièrement compris la situation. L’information demeure partielle, parfois contradictoire, le temps manque et chaque option comporte des risques. Attendre des données supplémentaires n’est pas toujours une position neutre, car le retard peut lui-même aggraver la crise. L’intelligence artificielle ne supprime pas cette incertitude. Elle accélère le traitement de l’information, mais transforme aussi la manière dont la situation est représentée et interprétée. L’épisode d’Ulysse entre Charybde et Scylla servira de fil conducteur. Ulysse ne peut écarter simultanément les deux dangers. Il d"
+    },
+    {
+      "title": "Intelligence artificielle pour la robotique agricole",
+      "url": "https://hal.inrae.fr/hal-05871868v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "IntellIgence Artificielle",
+        "Capteur",
+        "Robotique Autonome"
+      ],
+      "summary": "L’intelligence artificielle révolutionne la robotique agricole et permet d’accompagner la transition agroécologique. Face à la complexité croissante des systèmes de culture (bandes, cultures en mélange, pixel cropping) qui multiplie les contraintes de perception, de décision et de commande, les approches classiques atteignent leurs limites. Cet exposé montre, à partir de travaux de l’unité TSCF (INRAE) et de la littérature internationale, comment l’apprentissage profond transforme ces trois dimensions : perception robuste en conditions réelles, décision adaptative à partir de mesures multi-capteurs, commande apprise plutôt que pilotée par des"
+    },
+    {
+      "title": "Learned Subspace Compression for Communication-Efficient Pipeline Parallelism",
+      "url": "https://hal.science/hal-05870326v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Pipeline parallelism enables training of large language models that exceed single-device memory, yet inter-stage activation communication becomes the dominant bottleneck when trained on low-bandwidth networks. Recent work in this area has proposed using fixed orthogonal projections to compress activations. However, this still results in a significant performance degradation and requires a number of non-standard adaptations to constrain the optimization. A natural alternative is to learn a low rank projection for each pipeline stage, however maintaining the necessary orthogonality of these projectors during training remains a challenge. We pre"
+    },
+    {
+      "title": "Model Parallelism With Subnetwork Data Parallelism",
+      "url": "https://hal.science/hal-05870267v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": "Pre-training large neural networks at scale imposes heavy memory demands on accelerators and often requires costly communication. We introduce Subnetwork Data Parallelism (SDP), a distributed training framework that partitions a model into structured subnetworks trained across workers without exchanging activations. We study two complementary masking regimes: backward masking, which applies sparsity only in the backward step to retain unbiased gradients, and forward masking, which also removes parameters in the forward pass to deliver stronger efficiency gains while providing additional regularization. We further explore two subnetwork constr"
+    },
+    {
+      "title": "SPICE: Sparse Parameter Gossip for LLM Pretraining",
+      "url": "https://hal.science/hal-05870243v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Pretraining language models across geographically distributed resources requires communication-efficient methods that operate under limited and variable internet bandwidth. Decentralized training replaces global collectives with peer exchanges, but full-model messages make larger peer neighborhoods costly. We introduce SPICE, which combines sparse parameter gossip with error feedback through corrected parameter values that remain directly interpretable as peer neighborhoods change. These sparse exchanges make broader neighborhoods affordable, achieving better training quality with less communication than the evaluated dense decentralized base"
+    },
+    {
+      "title": "How Inner Optimizers Shape Replica Scaling",
+      "url": "https://hal.science/hal-05870332v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-18T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Training large language models (LLMs) across geographically distributed and poorly interconnected compute pools or data centers has become a topic of significant interest. This has led to increased study of local optimization methods such as DiLoco for LLMs, especially those that use local (or inner) adaptive or preconditioned optimizers, which are critical for high-performance LLM training. However, a central challenge remains: it is well known that increasing the number of model replicas (replica scaling) while fixing the total training budget leads to monotonically decreasing performance. Existing work has empirically demonstrated that the"
     },
     {
       "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
@@ -4910,298 +5127,6 @@
       ],
       "keywords": [],
       "summary": "Three-dimensional scene graphs (3DSGs) can provide robots with persistent metric-semantic representations for spatial reasoning, but the existing methods have primarily been developed for indoor and terrestrial environments. In this paper we investigate how a representative outdoor open-vocabulary method transfers to maritime environments and which adaptations are needed. Our experiments show that zero-shot representative outdoor 3DSG descriptions agree with our labeled ground truth for a majority of geometry-supported objects on our data, but the resulting map exhibits considerable physical-entity fragmentation, and its terrestrial higher-le"
-    },
-    {
-      "title": "Learn-To-Propagate: Distributionally Robust Motion Planning for Nonlinear Uncertain Systems",
-      "url": "http://arxiv.org/abs/2611.13863v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T10:23:12Z",
-      "authors": [
-        "Eduardo Figueiredo",
-        "Adrien Banse",
-        "Qi Heng Ho",
-        "Raphael Jungers",
-        "Morteza Lahijanian",
-        "Luca Laurenti"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Motion planning for stochastic systems aims to find a sequence of control inputs that drives a system to a goal set while avoiding unsafe states with high probability. Existing approaches, however, are either restricted to linear dynamics with perfect knowledge of the underlying distributions or lack formal correctness guarantees. To address these limitations, we propose \\emph{Learn-To-Propagate Distributionally-Robust Forest (L2P-DR-Forest)}, a distributionally-robust sampling-based planning algorithm for \\emph{nonlinear} stochastic systems with \\emph{unknown} initial state and process noise distributions. Our approach leverages recent advan"
-    },
-    {
-      "title": "Taxonomy-Agnostic Neurosymbolic Grounding of Robot Kinematics",
-      "url": "http://arxiv.org/abs/2611.13850v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T10:11:30Z",
-      "authors": [
-        "Bastien Dussard",
-        "Aur{é}lie Clodic",
-        "Guillaume Sarthou"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "While symbolic reasoning for task allocation requires grounding a robot's physical capabilities, standard Unified Robot Description Format (URDF) files provide only low-level kinematics without the formal semantic context needed for reasoning. We present URDF2Ontology, an automated, taxonomy-agnostic neurosymbolic framework that transforms raw URDF files into populated, grounded OWL ontologies. It leverages a Large Language Model (LLM) for targeted semantic reasoning, coupled with an iterative sequential graph-purging mechanism to prevent context window saturation. To process complex kinematic structures, it employs a morphology-aware dual-tr"
-    },
-    {
-      "title": "Oscillatory Processing Units as a computing substrate for biomimetic intelligence",
-      "url": "http://arxiv.org/abs/2611.13840v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T10:03:14Z",
-      "authors": [
-        "Alexander A. Wolf"
-      ],
-      "domains": [
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Biological intelligence emerges from neural activity that connects sensation, memory and action. Synaptic plasticity, neuronal assemblies and oscillations provide principles for biomimetic computing, but translating them into reusable operations requires a defined computational unit. We introduce Oscillatory Processing Units (OPUs), groups of synthetic neurons sharing a rhythm. Their directed interactions transform incoming activity and prior receiving state into an Oscillatory Occupancy Space (OOS), which becomes available to subsequent computation. We show that source--receiver conditions and oscillatory organization shape these transformat"
-    },
-    {
-      "title": "Game-Enhanced Embodied Learning with Event and Foresight Pretraining",
-      "url": "http://arxiv.org/abs/2611.13819v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T09:46:21Z",
-      "authors": [
-        "Lianlei Shan",
-        "Han Jin",
-        "Yaunchao Ma",
-        "Xinpeng Chen",
-        "Linhao Zhou",
-        "Xin Bin"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Human gameplay supplies paired observations, actions, and visual consequences that can supplement robot-policy training. We study event-and-foresight pretraining for InternVLA-A1.5, combining recorded keyboard/mouse event prediction with history-conditioned visual supervision through a frozen video model. Coverage-preserving anchor selection constructs one-second targets, and an attention mask prevents teacher-forced future actions from entering foresight queries. The selected corpus contains 394 recordings across 20 games, with 223.36 hours of recorded timestamp span and 2,072,084 training anchors. After 12,400 game-pretraining updates, we c"
-    },
-    {
-      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
-      "url": "http://arxiv.org/abs/2611.13810v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T09:40:58Z",
-      "authors": [
-        "Simon Cowling"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Real-robot benchmarks of learned visuomotor policies often record room illuminance as the lighting condition. We show that, on a typical low-cost rig, room light and image light can be almost unrelated. Four imitation-learning policies (ACT, SmolVLA, Diffusion Policy and pi0.5) were trained on the same 50 demonstrations of a pick-and-place task on an SO-101 arm. Each was run for ten rollouts at about 520 lux and again at about 45 lux, an 11.5x reduction. Success was 20/40 in normal light and 19/40 in low light: a change of -2.5 percentage points (95% CI -23 to +19), with no evidence that the policies differed in sensitivity (interaction p = 0"
-    },
-    {
-      "title": "Softness is something you also need! Why compliance helps control: information metrics of a passive walker with compliant ankle",
-      "url": "http://arxiv.org/abs/2611.13779v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T09:17:17Z",
-      "authors": [
-        "Fabio Bonsignorio",
-        "Elisabetta Barletta",
-        "Sorin Dragomir",
-        "Francesco Esposito",
-        "Enrica Zereik"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "A great gap in adaptivity, flexibility, and dexterity still exists between intelligent robots, whether they are made of rigid or (partially) compliant components, and their naturally evolved animal and vegetal counterparts. One reason could be of `paradigm' nature. On the one hand, most robots (both rigid and soft) are still designed by following a `Cartesian' approach, with top-down control and a clear mind-body separation. Designing artificial agents on the basis of the principles that we observe in biology is not an easy task. The principles of organization of animals and plants rely on morphological computation and emergence of fit behavi"
-    },
-    {
-      "title": "From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation",
-      "url": "http://arxiv.org/abs/2611.13769v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T09:07:44Z",
-      "authors": [
-        "Saeid Firouzi Daghigh",
-        "Saeed Ayat"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Monocular depth foundation models make it tempting to replace depth sensors on mobile robots with a single RGB camera. We show that, used off the shelf, this is unsafe: in a simulated indoor navigation benchmark, a standard Nav2 stack driven by Depth Anything V2 (metric) collides in 63\\% of 120 episodes, because the model systematically over-estimates the distance to nearby obstacles. We propose a lightweight plug-in module that turns predicted depth into \\emph{safe depth}. A 0.58\\,M-parameter head on top of the \\emph{frozen} depth model predicts, per pixel, a log-depth correction $μ$ and an uncertainty $σ$, trained with a $β$-weighted Gaussi"
-    },
-    {
-      "title": "CIALLO: Learning Shared Intent Representations for Cross-Embodiment Manipulation",
-      "url": "http://arxiv.org/abs/2611.13732v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T08:35:27Z",
-      "authors": [
-        "Choo Sin Wai",
-        "Dake Zhong",
-        "Jingye Zhang",
-        "Zhifang Liu",
-        "Siyao Xiao",
-        "Zirong Ding",
-        "Yuhong Zhang",
-        "Kangjie Chen"
-      ],
-      "domains": [
-        "IHM & UX"
-      ],
-      "keywords": [],
-      "summary": "Robot demonstrations contain reusable manipulation knowledge, but transferring this knowledge across embodiments requires representations that bridge differences in control interfaces. Action reconstruction alone does not ensure that similar behaviors across robots share a representation. To address this gap, we introduce CIALLO, an action codec that aligns actions, visual changes, and observation-grounded language in a shared space of short-horizon behavioral intent. An embodiment-conditioned decoder maps this intent back to robot-specific actions, allowing a shared representation to support different control interfaces. After pretraining on"
-    },
-    {
-      "title": "Toward Autonomous RTL and Synthesis Optimization: Benchmarking and Self-Improving Agents",
-      "url": "http://arxiv.org/abs/2611.13713v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T08:07:31Z",
-      "authors": [
-        "Wenji Fang",
-        "Yao Lu",
-        "Jinghua Wang",
-        "Zhiyao Xie"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Recent advances in large language models (LLMs) and autonomous agents are creating new opportunities for hardware design optimization. This paper examines three connected directions toward autonomous RTL and synthesis optimization: (1) Realistic benchmarking. We discuss reference-based and open-ended RTL optimization benchmarks that evaluate optimization opportunities under realistic EDA workflows. (2) Tool-grounded RTL optimization. We present Dr. RTL, a multi-agent framework that automates critical-path analysis, RTL rewriting, and implementation-level evaluation, while continuously improving through reusable optimization skills. Evaluated "
-    },
-    {
-      "title": "AutoManifold: Agentic Design of Data Visualisation Algorithms via Manifold Embedding",
-      "url": "http://arxiv.org/abs/2611.13710v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T08:03:15Z",
-      "authors": [
-        "Burak Susam",
-        "Ruiyuan Kang",
-        "Tingting Mu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Manifold embedding for data visualisation is dominated by a small set of hand-designed state-of-the-art (SOTA) algorithms. Their design targets are fixed at development time, resulting in inflexible algorithmic behaviour that cannot be readily steered towards user-specified structural priorities. Hand-designing new embedding algorithms to address user priority requires highly specialised expertise and is time consuming. To address autonomous algorithm design tailored to user preference, we introduce an agentic algorithm generation pipeline AutoManifold. It composes new manifold embedding algorithms from a constrained vocabulary of affinity, c"
-    },
-    {
-      "title": "On Private Knowledge Retrieval and Private Inference for secure multi-agent systems",
-      "url": "http://arxiv.org/abs/2611.13696v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T07:43:02Z",
-      "authors": [
-        "Vicenç Torra",
-        "Maria Bras-Amorós"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Multi-agent systems provide a convenient framework for the massive deployment of agents based on Large Language Models (LLMs). It provides a sound framework where agents can interact with existing software to perform actions in an autonomous way. Agentic AI is the new term to denote these AI-based autonomous systems. In real multi-agent systems, agents need to deal with malicious agents some of which can exploit security vulnerabilities to do harm. A memory poisoning attack is an example of exploiting a vulnerability to modify agents knowledge and, thus, affect its behavior. In an agent, there are different types of memory systems (semantic, "
-    },
-    {
-      "title": "AURA: Auditory Spatial Intelligence via a Unified Representation from a General-Audio Encoder through Complete Alignment",
-      "url": "http://arxiv.org/abs/2611.13687v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T07:34:05Z",
-      "authors": [
-        "Boyan Han",
-        "Xiaoyan Wang",
-        "Zhe Sun",
-        "Ziqi Wang",
-        "Yujun Cai",
-        "Hongli Cao",
-        "Yiwei Wang",
-        "Ming-Hsuan Yang"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Answering spatial questions about multi-source scenes requires a model both to identify each sound and to locate it. Existing spatial audio-language models obtain spatial information from a dedicated encoder, which separates spatial and semantic processing into distinct feature spaces. We study whether a general-audio codec trained without spatial supervision can serve both purposes. A controlled layer-wise analysis shows that the frozen codec retains spatial information, with lateral cues carried by the difference between the two ear channels. This information, however, is not readily accessible: in dual-source scenes, a model trained on the"
-    },
-    {
-      "title": "Ego Guidance: Enhancing Robot Policy Learning with Action-Free Human Egocentric Videos",
-      "url": "http://arxiv.org/abs/2611.13685v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T07:33:35Z",
-      "authors": [
-        "Lin Long",
-        "Tianren Ma",
-        "Zhong Chu",
-        "Di Wu",
-        "Maosong Cao",
-        "Qixiang Ye",
-        "Junbo Zhao",
-        "Shanghang Zhang"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "In this paper, we investigate how human egocentric videos can benefit robot policy learning without action supervision. Building on a pretrained VLM, we propose Shared Prediction on Action and Representation (SPAR), an MoT architecture in which future visual state prediction can provide independent and complementary learning signals alongside action prediction. We find that representations learned from egocentric videos improve downstream performance on out-of-distribution robot tasks, with further gains as video data scales. We also study the effects of objective choices and data curation, providing insights into how to leverage action-free "
-    },
-    {
-      "title": "A computational framework for understanding embodied plans",
-      "url": "http://arxiv.org/abs/2611.13669v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-10T07:15:38Z",
-      "authors": [
-        "Aalap D. Shah",
-        "Basil Saeed",
-        "Joshua B. Tenenbaum",
-        "Tobias Gerstenberg",
-        "Hyowon Gweon",
-        "Ilker Yildirim"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Reasoning about people's plans and goals based on their actions is fundamental to human social interaction and essential for cooperative, embodied artificial intelligence. Formalizing this capacity in naturalistic, embodied settings has been a longstanding challenge. Here, we present GenEA, a novel agent representation capable of reasoning over multi-step, long-horizon embodied plans. At the heart of GenEA lies a multilevel state-space that couples the coarse biomechanics of an articulated body and its interactions with nearby objects by extending the task-and-motion planning framework from robotics with simulation-based intuitive physics. By"
-    },
-    {
-      "title": "« De Rantsev c. Chypre et Russie à I.C. c. République de Moldova. La protection contre la traite des êtres humains à l’épreuve des vulnérabilités post-communistes »",
-      "url": "https://hal.science/hal-05859890v1",
-      "source": "HAL",
-      "type": "Publication scientifique",
-      "published": "2026-11-10T00:00:00Z",
-      "domains": [
-        "Handicap & société"
-      ],
-      "keywords": [
-        "Traite des êtres humains – article 4 CEDH – obligations positives – vulnérabilité – intersectionnalité – handicap – désinstitutionnalisation – Groupe d’experts sur la lutte contre la traite des êtres humains GRETA – République de Moldova"
-      ],
-      "summary": "L’article 4 de la Convention européenne des droits de l’homme ne mentionne pas la traite des êtres humains. La protection que la Cour de Strasbourg offre contre ce phénomène est donc tout entière une construction prétorienne. Cette étude en retrace la trajectoire, de l’arrêt Rantsev c. Chypre et Russie (2010) à l’arrêt I.C. c. République de Moldova (2025). Elle montre comment la Cour a d’abord pensé l’effectivité de l’article 4 à travers le volet pénal – incriminer, enquêter, qualifier, poursuivre, réparer –, avant que l’arrêt I.C. n’en déplace le centre de gravité. En constatant une violation malgré une loi pénale jugée adéquate, parce que l"
-    },
-    {
-      "title": "Organisation des filières de soins non programmés et des services d’urgences, de la ville à l’hôpital à travers l’épidémiologie, l’innovation et la pédagogie : pour une optimisation des soins et une meilleure expérience patient",
-      "url": "https://hal.science/tel-05861165v1",
-      "source": "HAL",
-      "type": "Publication scientifique",
-      "published": "2026-11-10T00:00:00Z",
-      "domains": [
-        "IA & LLM",
-        "IHM & UX"
-      ],
-      "keywords": [
-        "Emergency department ED",
-        "Escape Game Pédagogique",
-        "Gamification",
-        "Orientation",
-        "Urgences"
-      ],
-      "summary": "Ce mémoire d’habilitation à diriger des recherches porte sur le parcours du patient nécessitant un soin urgent ou non programmé de la médecine de ville aux services d’urgence. Il part d’un constat : la qualité et la sécurité des soins dépend à la fois de l’orientation des patients, de la capacité à anticiper les flux et des compétences des professionnels qui prennent ces décisions. Mes travaux analysent les parcours des patients, les déterminants des admissions aux urgences et les interactions entre les acteurs de ville et de l’hôpital. Ils mobilisent l’épidémiologie, la modélisation et les nouvelles technologies dont l’intelligence artificie"
     }
   ]
 }
