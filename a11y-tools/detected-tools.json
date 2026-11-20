@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T15:53:03Z",
+  "updatedAt": "2026-11-20T15:35:46Z",
   "errors": [],
   "items": [
     {
@@ -273,7 +273,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-11-17T11:36:21Z",
+      "updatedAt": "2026-11-20T06:52:05Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -374,6 +374,17 @@
       "stars": 57,
       "updatedAt": "2026-10-04T17:50:55Z",
       "detectedAt": "2026-10-05T14:54:21Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "terraria-coop-calora",
+      "fullName": "mashhood0233-a11y/terraria-coop-calora",
+      "url": "https://github.com/mashhood0233-a11y/terraria-coop-calora",
+      "description": "Build and explore together in a shared Terraria world — progress side by side.",
+      "language": "TypeScript",
+      "stars": 54,
+      "updatedAt": "2026-11-20T00:24:13Z",
+      "detectedAt": "2026-11-20T15:35:46Z",
       "source": "GitHub"
     },
     {
@@ -592,7 +603,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-19T12:13:28Z",
+      "updatedAt": "2026-11-20T12:39:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +614,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 22,
-      "updatedAt": "2026-11-19T09:24:34Z",
+      "updatedAt": "2026-11-19T22:51:27Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -625,7 +636,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-19T13:57:11Z",
+      "updatedAt": "2026-11-20T15:06:06Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -762,6 +773,17 @@
       "source": "GitHub"
     },
     {
+      "name": "libero",
+      "fullName": "tdymel/libero",
+      "url": "https://github.com/tdymel/libero",
+      "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
+      "language": "Rust",
+      "stars": 11,
+      "updatedAt": "2026-11-19T15:49:50Z",
+      "detectedAt": "2026-10-22T12:03:21Z",
+      "source": "GitHub"
+    },
+    {
       "name": "jev-mobile",
       "fullName": "xinwang-nwpu/jev-mobile",
       "url": "https://github.com/xinwang-nwpu/jev-mobile",
@@ -770,17 +792,6 @@
       "stars": 11,
       "updatedAt": "2026-11-16T07:03:27Z",
       "detectedAt": "2026-10-30T13:08:46Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "libero",
-      "fullName": "tdymel/libero",
-      "url": "https://github.com/tdymel/libero",
-      "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
-      "language": "Rust",
-      "stars": 11,
-      "updatedAt": "2026-11-04T21:29:00Z",
-      "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
     {
