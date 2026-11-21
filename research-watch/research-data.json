@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T15:45:07Z",
+  "updatedAt": "2026-11-21T14:55:58Z",
   "errors": [],
   "items": [
     {
@@ -3260,6 +3260,29 @@
       "summary": "Abstract Understanding the Sleep Onset Period (SOP) remains challenging despite its critical role in sleep architecture. Recent research suggests that resting-state functional MRI (rs-fMRI) and its Blood-Oxygen-Level-Dependent (BOLD) signal may offer new insights. This study investigates brain activity during SOP using BOLD oscillation and focuses on detecting drowsiness through an innovative scoring system. Forty-one healthy young volunteers underwent a 45-minute rs-fMRI scan. Drowsiness was assessed by analyzing standard MRI surveillance video, specifically measuring ocular activity. This method, originally designed for road accident preven"
     },
     {
+      "title": "How do students put the Declaration on the Use of Generative Artificial Intelligence into practice?",
+      "url": "https://hal.science/hal-05874903v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-16T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "University",
+        "Generative artificial intelligence",
+        "Practice analysis",
+        "Research theses",
+        "Theses",
+        "Style guide",
+        "Usage",
+        "Practical",
+        "Students",
+        "Professional writing"
+      ],
+      "summary": "In response to the development of AI, bodies such as the High Council for Social Work¹ (HCTS) and the CNAPE (National Convention of Child Protection Associations) are setting up think tanks to provide guidance on practices and are calling for a future professional convention tasked with jointly developing a framework to identify the challenges involved in integrating AI into the field of social work. These initiatives aim to move away from isolated uses in order to promote a collective, transparent and controlled adoption of these technologies. In the justice sector, as in education, the creation of an AI Observatory is also recommended to en"
+    },
+    {
       "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
       "url": "http://arxiv.org/abs/2611.18562v1",
       "source": "arXiv",
@@ -5090,22 +5113,6 @@
       ],
       "keywords": [],
       "summary": "Vision-language models (VLMs) have become a powerful foundation for robotic scene understanding, task planning, and language-conditioned control. A natural question follows: can these models also decode what a human operator intends while teleoperating a robot, without any explicit instruction? We formulate this as hierarchical intent prediction, jointly inferring the ongoing atomic action and the broader mission it serves from a short visual teleoperation history. To study this, we introduce VI AMO (Vision Intention Action and Mission Ongoing), a dataset of 6,600 episodes from eleven robot sources with 13,653 temporally aligned action annota"
-    },
-    {
-      "title": "Small Language Models for Inference-Capability Routing: Effects of Model Capacity and Prompt Optimization on Downstream Quality and Efficiency",
-      "url": "http://arxiv.org/abs/2611.16414v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-12T07:25:46Z",
-      "authors": [
-        "Sailendra Kolluru",
-        "Maheshkumar Duvvarapu"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Optional reasoning, retrieval, web search, and tool use can improve large language model responses but incur unnecessary computation when activated indiscriminately. This study investigates whether prompt optimization can compensate for limited router capacity and whether classification gains translate into downstream efficiency. The proposed framework uses prompt-driven small language models to make four independent capability decisions, allowing multiple capabilities to be selected per query. Qwen2.5 routers ranging from 1.5B to 14B parameters are compared across five prompting strategies, followed by an evaluation of capability-specific op"
     }
   ]
 }
