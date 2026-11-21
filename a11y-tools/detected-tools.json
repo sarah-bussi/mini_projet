@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T15:35:46Z",
+  "updatedAt": "2026-11-21T14:46:03Z",
   "errors": [],
   "items": [
     {
@@ -63,8 +63,8 @@
       "url": "https://github.com/nuxt/hints",
       "description": "Nuxt module that shows hints for aspects of your application such as Performance, A11Y, Security, and more!",
       "language": "TypeScript",
-      "stars": 349,
-      "updatedAt": "2026-11-16T21:14:07Z",
+      "stars": 348,
+      "updatedAt": "2026-11-21T11:04:22Z",
       "detectedAt": "2026-09-15T11:52:35Z",
       "source": "GitHub"
     },
@@ -121,6 +121,17 @@
       "stars": 157,
       "updatedAt": "2026-11-05T08:05:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "terraria-coop-calora",
+      "fullName": "mashhood0233-a11y/terraria-coop-calora",
+      "url": "https://github.com/mashhood0233-a11y/terraria-coop-calora",
+      "description": "Build and explore together in a shared Terraria world — progress side by side.",
+      "language": "TypeScript",
+      "stars": 150,
+      "updatedAt": "2026-11-20T00:24:13Z",
+      "detectedAt": "2026-11-20T15:35:46Z",
       "source": "GitHub"
     },
     {
@@ -377,17 +388,6 @@
       "source": "GitHub"
     },
     {
-      "name": "terraria-coop-calora",
-      "fullName": "mashhood0233-a11y/terraria-coop-calora",
-      "url": "https://github.com/mashhood0233-a11y/terraria-coop-calora",
-      "description": "Build and explore together in a shared Terraria world — progress side by side.",
-      "language": "TypeScript",
-      "stars": 54,
-      "updatedAt": "2026-11-20T00:24:13Z",
-      "detectedAt": "2026-11-20T15:35:46Z",
-      "source": "GitHub"
-    },
-    {
       "name": "a11y-mcp",
       "fullName": "priyankark/a11y-mcp",
       "url": "https://github.com/priyankark/a11y-mcp",
@@ -597,6 +597,17 @@
       "source": "GitHub"
     },
     {
+      "name": "audits",
+      "fullName": "A11y-Pulse/audits",
+      "url": "https://github.com/A11y-Pulse/audits",
+      "description": "Automated interaction-driven web accessibility testing",
+      "language": "TypeScript",
+      "stars": 22,
+      "updatedAt": "2026-11-20T22:43:43Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "accessibility-checker",
       "fullName": "equalizedigital/accessibility-checker",
       "url": "https://github.com/equalizedigital/accessibility-checker",
@@ -605,17 +616,6 @@
       "stars": 22,
       "updatedAt": "2026-11-20T12:39:16Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "audits",
-      "fullName": "A11y-Pulse/audits",
-      "url": "https://github.com/A11y-Pulse/audits",
-      "description": "Automated interaction-driven web accessibility testing",
-      "language": "TypeScript",
-      "stars": 22,
-      "updatedAt": "2026-11-19T22:51:27Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
     {
@@ -636,7 +636,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-20T15:06:06Z",
+      "updatedAt": "2026-11-20T22:08:03Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -680,7 +680,7 @@
       "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
       "language": "TypeScript",
       "stars": 18,
-      "updatedAt": "2026-11-19T11:28:08Z",
+      "updatedAt": "2026-11-21T14:45:26Z",
       "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
