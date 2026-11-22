@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:55:58Z",
+  "updatedAt": "2026-11-22T14:54:04Z",
   "errors": [],
   "items": [
     {
@@ -1048,6 +1048,21 @@
       ],
       "keywords": [],
       "summary": "Robotic platforms address the mechanical limits of microsurgery, but they execute the surgeon's commands without interpreting the operative field. This article examines where artificial intelligence has been introduced into that gap, organized by the layer of the robotic system in which the algorithms sit. Signal processing separates physiologic tremor from voluntary hand motion in real time, paired with motion downscaling. Neural networks recognize operative phase, step, and instruments from intraoperative video. Supervised autonomous suturing has been demonstrated at a larger caliber, deep learning quantifies tissue handling and instrument "
+    },
+    {
+      "title": "Brain-computer interfaces in clinical translation: technological advances, clinical practice and future challenges.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067821/",
+      "source": "Cognitive neurodynamics",
+      "type": "Publication scientifique",
+      "published": "2027-01-01T00:00:00Z",
+      "domains": [
+        "Aides techniques",
+        "Neurotechnologies",
+        "IHM & UX",
+        "Rééducation"
+      ],
+      "keywords": [],
+      "summary": "As a transformative technology in neuroengineering, brain-computer interfaces (BCIs) establish a direct communication pathway between the brain and external devices, independent of peripheral neuromuscular circuits by decoding neural activity and enabling bidirectional feedback. This capability fundamentally reshapes the paradigm of human-machine interaction. Based on the integration depth of neural interfaces, BCIs can be classified into invasive, semi-invasive, and non-invasive approaches, each supporting a range of applications from motor control to cognitive monitoring through multiple paradigms. Despite rapid technological advances, comp"
     },
     {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
@@ -5093,26 +5108,6 @@
       ],
       "keywords": [],
       "summary": "Whole-body motion tracking lets a humanoid robot follow reference motions, but training a tracking policy for a library of motions has usually taken hours of GPU time. SuperMimic showed that the policy can instead be trained by backpropagating through a world model learned from parallel simulation, and InstantTrack added Muon updates, a residual policy around the reference and an averaged deployed policy. We build on both and present BlinkMimic, a recipe that makes this training faster. On a simulated Unitree G1, BlinkMimic trains one policy for all 40 LAFAN1 clips in 3.4 minutes on a single RTX 4090, measured until three consecutive checkpoi"
-    },
-    {
-      "title": "I See What You Want: Decoding Hierarchical Operator Intent from Visual Teleoperation History",
-      "url": "http://arxiv.org/abs/2611.16419v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-12T07:30:14Z",
-      "authors": [
-        "Xiangyi Jia",
-        "Kaixian Qu",
-        "Shengzhi Wang",
-        "Chenyu Yang",
-        "Robert Katzschmann",
-        "Marco Hutter"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Vision-language models (VLMs) have become a powerful foundation for robotic scene understanding, task planning, and language-conditioned control. A natural question follows: can these models also decode what a human operator intends while teleoperating a robot, without any explicit instruction? We formulate this as hierarchical intent prediction, jointly inferring the ongoing atomic action and the broader mission it serves from a short visual teleoperation history. To study this, we introduce VI AMO (Vision Intention Action and Mission Ongoing), a dataset of 6,600 episodes from eleven robot sources with 13,653 temporally aligned action annota"
     }
   ]
 }
