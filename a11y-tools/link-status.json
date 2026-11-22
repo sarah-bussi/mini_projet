@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T14:46:44Z",
+  "checkedAt": "2026-11-22T14:43:23Z",
   "links": {
     "https://ablegamers.org/apx/": {
       "state": "redirected",
@@ -314,7 +314,7 @@
     "https://support.microsoft.com/windows/use-voice-access-to-control-your-pc-create-text-with-your-voice-4dcd23ee-f1b4-41c2-b95a-39b6e9d5f82c": {
       "state": "broken",
       "code": 404,
-      "finalUrl": "https://support.microsoft.com/en-us/topic/4dcd23ee-f1b4-41c2-b95a-39b6e9d5f82c"
+      "finalUrl": "https://support.microsoft.com/windows/use-voice-access-to-control-your-pc-create-text-with-your-voice-4dcd23ee-f1b4-41c2-b95a-39b6e9d5f82c"
     },
     "https://wave.webaim.org/extension/": {
       "state": "ok",

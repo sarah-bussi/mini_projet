@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:46:03Z",
+  "updatedAt": "2026-11-22T14:42:43Z",
   "errors": [],
   "items": [
     {
@@ -86,7 +86,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-17T04:43:57Z",
+      "updatedAt": "2026-11-22T14:23:54Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -218,7 +218,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-19T07:16:51Z",
+      "updatedAt": "2026-11-21T17:21:54Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -361,7 +361,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-18T01:33:02Z",
+      "updatedAt": "2026-11-22T12:41:21Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -536,7 +536,7 @@
       "url": "https://github.com/GAAD-Foundation/AIMAC",
       "description": "AI Model Accessibility Checker",
       "language": "Python",
-      "stars": 28,
+      "stars": 29,
       "updatedAt": "2025-12-12T01:48:44Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -603,7 +603,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 22,
-      "updatedAt": "2026-11-20T22:43:43Z",
+      "updatedAt": "2026-11-22T03:17:44Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -636,7 +636,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-20T22:08:03Z",
+      "updatedAt": "2026-11-22T13:49:10Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -649,6 +649,17 @@
       "stars": 20,
       "updatedAt": "2026-10-29T10:30:11Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-11-22T13:47:04Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -671,17 +682,6 @@
       "stars": 19,
       "updatedAt": "2026-11-13T09:23:22Z",
       "detectedAt": "2026-10-12T15:41:20Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "TypeScript",
-      "stars": 18,
-      "updatedAt": "2026-11-21T14:45:26Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -779,7 +779,7 @@
       "description": "A rust/dioxus batteries included component library with a focus on dx, ux, a11y and configurability",
       "language": "Rust",
       "stars": 11,
-      "updatedAt": "2026-11-19T15:49:50Z",
+      "updatedAt": "2026-11-21T16:09:45Z",
       "detectedAt": "2026-10-22T12:03:21Z",
       "source": "GitHub"
     },
