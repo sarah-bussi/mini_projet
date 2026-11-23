@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T14:42:43Z",
+  "updatedAt": "2026-11-23T18:26:23Z",
   "errors": [],
   "items": [
     {
@@ -22,6 +22,17 @@
       "stars": 2492,
       "updatedAt": "2026-10-31T10:30:08Z",
       "detectedAt": "2026-09-20T11:34:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "awesome-a11y",
+      "fullName": "brunopulis/awesome-a11y",
+      "url": "https://github.com/brunopulis/awesome-a11y",
+      "description": "A curate list about A11Y",
+      "language": null,
+      "stars": 2007,
+      "updatedAt": "2026-11-23T14:34:27Z",
+      "detectedAt": "2026-11-23T18:26:23Z",
       "source": "GitHub"
     },
     {
@@ -86,7 +97,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-22T14:23:54Z",
+      "updatedAt": "2026-11-23T15:12:54Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -107,8 +118,8 @@
       "url": "https://github.com/GovTechSG/oobee",
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
-      "stars": 172,
-      "updatedAt": "2026-10-28T05:00:49Z",
+      "stars": 173,
+      "updatedAt": "2026-11-23T11:12:58Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -218,7 +229,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-21T17:21:54Z",
+      "updatedAt": "2026-11-23T18:18:25Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -361,7 +372,7 @@
       "description": "A user-friendly automatic content accessibility checker.",
       "language": "JavaScript",
       "stars": 58,
-      "updatedAt": "2026-11-22T12:41:21Z",
+      "updatedAt": "2026-11-22T21:10:27Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -603,7 +614,7 @@
       "description": "Automated interaction-driven web accessibility testing",
       "language": "TypeScript",
       "stars": 22,
-      "updatedAt": "2026-11-22T03:17:44Z",
+      "updatedAt": "2026-11-23T01:20:40Z",
       "detectedAt": "2026-09-25T11:58:03Z",
       "source": "GitHub"
     },
@@ -636,7 +647,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-22T13:49:10Z",
+      "updatedAt": "2026-11-23T18:25:34Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
