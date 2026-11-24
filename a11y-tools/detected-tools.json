@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T18:26:23Z",
+  "updatedAt": "2026-11-24T17:55:19Z",
   "errors": [],
   "items": [
     {
@@ -30,7 +30,7 @@
       "url": "https://github.com/brunopulis/awesome-a11y",
       "description": "A curate list about A11Y",
       "language": null,
-      "stars": 2007,
+      "stars": 2009,
       "updatedAt": "2026-11-23T14:34:27Z",
       "detectedAt": "2026-11-23T18:26:23Z",
       "source": "GitHub"
@@ -129,7 +129,7 @@
       "url": "https://github.com/guidepup/virtual-screen-reader",
       "description": "Virtual Screen Reader is a screen reader simulator for testing.",
       "language": "TypeScript",
-      "stars": 157,
+      "stars": 158,
       "updatedAt": "2026-11-05T08:05:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
@@ -229,7 +229,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-23T18:18:25Z",
+      "updatedAt": "2026-11-24T04:58:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -295,7 +295,7 @@
       "description": "Our vision of mobile & web accessibility guidelines and best practices, with valid/invalid examples",
       "language": "Nunjucks",
       "stars": 69,
-      "updatedAt": "2026-11-20T06:52:05Z",
+      "updatedAt": "2026-11-24T10:54:24Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -608,6 +608,17 @@
       "source": "GitHub"
     },
     {
+      "name": "accessibility-checker",
+      "fullName": "equalizedigital/accessibility-checker",
+      "url": "https://github.com/equalizedigital/accessibility-checker",
+      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
+      "language": "PHP",
+      "stars": 22,
+      "updatedAt": "2026-11-23T20:17:11Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "audits",
       "fullName": "A11y-Pulse/audits",
       "url": "https://github.com/A11y-Pulse/audits",
@@ -616,17 +627,6 @@
       "stars": 22,
       "updatedAt": "2026-11-23T01:20:40Z",
       "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "accessibility-checker",
-      "fullName": "equalizedigital/accessibility-checker",
-      "url": "https://github.com/equalizedigital/accessibility-checker",
-      "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
-      "language": "PHP",
-      "stars": 22,
-      "updatedAt": "2026-11-20T12:39:16Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
@@ -647,7 +647,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-23T18:25:34Z",
+      "updatedAt": "2026-11-24T17:46:15Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -663,6 +663,17 @@
       "source": "GitHub"
     },
     {
+      "name": "hive",
+      "fullName": "hazelcast/hive",
+      "url": "https://github.com/hazelcast/hive",
+      "description": "Design system built with A11Y in mind",
+      "language": "TypeScript",
+      "stars": 19,
+      "updatedAt": "2026-11-24T16:00:30Z",
+      "detectedAt": "2026-09-25T11:58:03Z",
+      "source": "GitHub"
+    },
+    {
       "name": "omowright",
       "fullName": "code-yeongyu/omowright",
       "url": "https://github.com/code-yeongyu/omowright",
@@ -674,17 +685,6 @@
       "source": "GitHub"
     },
     {
-      "name": "hive",
-      "fullName": "hazelcast/hive",
-      "url": "https://github.com/hazelcast/hive",
-      "description": "Design system built with A11Y in mind",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-11-19T15:29:42Z",
-      "detectedAt": "2026-09-25T11:58:03Z",
-      "source": "GitHub"
-    },
-    {
       "name": "ghostfox",
       "fullName": "autokeren/ghostfox",
       "url": "https://github.com/autokeren/ghostfox",
@@ -693,6 +693,17 @@
       "stars": 19,
       "updatedAt": "2026-11-13T09:23:22Z",
       "detectedAt": "2026-10-12T15:41:20Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "accessibility-skills",
+      "fullName": "zivtech/accessibility-skills",
+      "url": "https://github.com/zivtech/accessibility-skills",
+      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
+      "language": "Python",
+      "stars": 16,
+      "updatedAt": "2026-11-09T16:37:18Z",
+      "detectedAt": "2026-09-24T11:56:24Z",
       "source": "GitHub"
     },
     {
@@ -718,17 +729,6 @@
       "source": "GitHub"
     },
     {
-      "name": "accessibility-skills",
-      "fullName": "zivtech/accessibility-skills",
-      "url": "https://github.com/zivtech/accessibility-skills",
-      "description": "AI agent skills for accessibility testing and WCAG 2.2 audits in Claude Code: planner, critic, Playwright/axe-core tester, screen reader reviews, bug reports, and draft ACRs.",
-      "language": "Python",
-      "stars": 15,
-      "updatedAt": "2026-11-09T16:37:18Z",
-      "detectedAt": "2026-09-24T11:56:24Z",
-      "source": "GitHub"
-    },
-    {
       "name": "quarto-revealjs-a11y",
       "fullName": "mcanouil/quarto-revealjs-a11y",
       "url": "https://github.com/mcanouil/quarto-revealjs-a11y",
@@ -748,6 +748,17 @@
       "stars": 14,
       "updatedAt": "2026-10-14T23:15:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-toolkit",
+      "fullName": "kinti/a11y-toolkit",
+      "url": "https://github.com/kinti/a11y-toolkit",
+      "description": "The accessibility layer for AI coding agents, WCAG 2.2: static and rendered audits, contrast over images, blindfold usability testing, PDF/DOCX screening, caption quality, prefers-reduced-motion audit, evidence packs a human can sign. Zero deps",
+      "language": "Python",
+      "stars": 12,
+      "updatedAt": "2026-11-24T00:18:08Z",
+      "detectedAt": "2026-11-24T17:55:19Z",
       "source": "GitHub"
     },
     {
@@ -905,17 +916,6 @@
       "source": "GitHub"
     },
     {
-      "name": "setup-action",
-      "fullName": "guidepup/setup-action",
-      "url": "https://github.com/guidepup/setup-action",
-      "description": "GitHub Action to setup your CI for screen reader test automation.",
-      "language": "JavaScript",
-      "stars": 7,
-      "updatedAt": "2026-09-26T09:55:02Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "claude-wcag-accessibility-skill",
       "fullName": "mrKanoh/claude-wcag-accessibility-skill",
       "url": "https://github.com/mrKanoh/claude-wcag-accessibility-skill",
@@ -946,6 +946,17 @@
       "stars": 6,
       "updatedAt": "2026-10-16T08:13:50Z",
       "detectedAt": "2026-10-15T11:40:51Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "setup-action",
+      "fullName": "guidepup/setup-action",
+      "url": "https://github.com/guidepup/setup-action",
+      "description": "GitHub Action to setup your CI for screen reader test automation.",
+      "language": "JavaScript",
+      "stars": 6,
+      "updatedAt": "2026-09-26T09:55:02Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
     {
