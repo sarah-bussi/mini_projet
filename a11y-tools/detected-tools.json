@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T17:55:19Z",
+  "updatedAt": "2026-11-25T17:23:31Z",
   "errors": [],
   "items": [
     {
@@ -97,7 +97,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-23T15:12:54Z",
+      "updatedAt": "2026-11-25T13:32:30Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -119,7 +119,7 @@
       "description": "Oobee (formerly known as Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
       "language": "EJS",
       "stars": 173,
-      "updatedAt": "2026-11-23T11:12:58Z",
+      "updatedAt": "2026-11-25T16:23:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -229,7 +229,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-24T04:58:15Z",
+      "updatedAt": "2026-11-24T21:03:46Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-23T20:17:11Z",
+      "updatedAt": "2026-11-25T15:01:12Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -647,7 +647,7 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-24T17:46:15Z",
+      "updatedAt": "2026-11-25T17:23:30Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -693,6 +693,17 @@
       "stars": 19,
       "updatedAt": "2026-11-13T09:23:22Z",
       "detectedAt": "2026-10-12T15:41:20Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11y-toolkit",
+      "fullName": "kinti/a11y-toolkit",
+      "url": "https://github.com/kinti/a11y-toolkit",
+      "description": "The accessibility layer for AI coding agents, WCAG 2.2: static and rendered audits, contrast over images, blindfold usability testing, PDF/DOCX screening, caption quality, prefers-reduced-motion audit, evidence packs a human can sign. Zero deps",
+      "language": "Python",
+      "stars": 17,
+      "updatedAt": "2026-11-25T14:17:18Z",
+      "detectedAt": "2026-11-24T17:55:19Z",
       "source": "GitHub"
     },
     {
@@ -748,17 +759,6 @@
       "stars": 14,
       "updatedAt": "2026-10-14T23:15:27Z",
       "detectedAt": "2026-09-09T11:32:52Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "a11y-toolkit",
-      "fullName": "kinti/a11y-toolkit",
-      "url": "https://github.com/kinti/a11y-toolkit",
-      "description": "The accessibility layer for AI coding agents, WCAG 2.2: static and rendered audits, contrast over images, blindfold usability testing, PDF/DOCX screening, caption quality, prefers-reduced-motion audit, evidence packs a human can sign. Zero deps",
-      "language": "Python",
-      "stars": 12,
-      "updatedAt": "2026-11-24T00:18:08Z",
-      "detectedAt": "2026-11-24T17:55:19Z",
       "source": "GitHub"
     },
     {
@@ -927,6 +927,17 @@
       "source": "GitHub"
     },
     {
+      "name": "kirby-editoria11y",
+      "fullName": "medienbaecker/kirby-editoria11y",
+      "url": "https://github.com/medienbaecker/kirby-editoria11y",
+      "description": "Editoria11y accessibility checker for Kirby editors",
+      "language": "PHP",
+      "stars": 6,
+      "updatedAt": "2026-11-25T08:31:02Z",
+      "detectedAt": "2026-10-15T11:40:51Z",
+      "source": "GitHub"
+    },
+    {
       "name": "zimmar-accessibility-checker",
       "fullName": "praizjosh/zimmar-accessibility-checker",
       "url": "https://github.com/praizjosh/zimmar-accessibility-checker",
@@ -935,17 +946,6 @@
       "stars": 6,
       "updatedAt": "2026-11-10T20:46:48Z",
       "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "kirby-editoria11y",
-      "fullName": "medienbaecker/kirby-editoria11y",
-      "url": "https://github.com/medienbaecker/kirby-editoria11y",
-      "description": "Editoria11y accessibility checker for Kirby editors",
-      "language": "PHP",
-      "stars": 6,
-      "updatedAt": "2026-10-16T08:13:50Z",
-      "detectedAt": "2026-10-15T11:40:51Z",
       "source": "GitHub"
     },
     {
