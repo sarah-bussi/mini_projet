@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T17:23:31Z",
+  "updatedAt": "2026-11-26T17:03:19Z",
   "errors": [],
   "items": [
     {
@@ -97,7 +97,7 @@
       "description": "Nuxt module to provide accessibility hinting and utilities.",
       "language": "TypeScript",
       "stars": 234,
-      "updatedAt": "2026-11-25T13:32:30Z",
+      "updatedAt": "2026-11-26T15:01:45Z",
       "detectedAt": "2026-09-07T12:44:29Z",
       "source": "GitHub"
     },
@@ -229,7 +229,7 @@
       "description": "Ameba Accessibility Guidelines",
       "language": "CSS",
       "stars": 83,
-      "updatedAt": "2026-11-24T21:03:46Z",
+      "updatedAt": "2026-11-26T08:06:31Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -322,6 +322,17 @@
       "source": "GitHub"
     },
     {
+      "name": "oobee-desktop",
+      "fullName": "GovTechSG/oobee-desktop",
+      "url": "https://github.com/GovTechSG/oobee-desktop",
+      "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
+      "language": "HTML",
+      "stars": 61,
+      "updatedAt": "2026-11-26T08:10:13Z",
+      "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
       "name": "a11y-specialist-skills",
       "fullName": "masuP9/a11y-specialist-skills",
       "url": "https://github.com/masuP9/a11y-specialist-skills",
@@ -340,17 +351,6 @@
       "language": "JavaScript",
       "stars": 61,
       "updatedAt": "2026-04-17T21:28:39Z",
-      "detectedAt": "2026-09-05T10:43:01Z",
-      "source": "GitHub"
-    },
-    {
-      "name": "oobee-desktop",
-      "fullName": "GovTechSG/oobee-desktop",
-      "url": "https://github.com/GovTechSG/oobee-desktop",
-      "description": "Oobee Desktop (formerly Purple A11y) is a customisable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve persons with disabilities (PWDs) access to digital services.",
-      "language": "HTML",
-      "stars": 59,
-      "updatedAt": "2026-10-29T11:05:00Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -614,7 +614,7 @@
       "description": "Real-time automated accessibility testing inside the WordPress editor to help you find and fix WCAG compliance issues before publishing.",
       "language": "PHP",
       "stars": 22,
-      "updatedAt": "2026-11-25T15:01:12Z",
+      "updatedAt": "2026-11-26T12:21:17Z",
       "detectedAt": "2026-09-05T10:43:01Z",
       "source": "GitHub"
     },
@@ -647,8 +647,19 @@
       "description": "Security and code-quality ESLint plugins — 495 rules across 31 plugins: 290 security rules mapped to CWE + OWASP, 107 quality, 98 React/a11y. ESLint 8.40/9/10 + Oxlint. The lint layer AI-generated code needs.",
       "language": "TypeScript",
       "stars": 20,
-      "updatedAt": "2026-11-25T17:23:30Z",
+      "updatedAt": "2026-11-26T17:03:14Z",
       "detectedAt": "2026-09-05T10:43:01Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "omowright",
+      "fullName": "code-yeongyu/omowright",
+      "url": "https://github.com/code-yeongyu/omowright",
+      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
+      "language": "TypeScript",
+      "stars": 20,
+      "updatedAt": "2026-11-26T13:57:28Z",
+      "detectedAt": "2026-10-27T12:24:01Z",
       "source": "GitHub"
     },
     {
@@ -674,17 +685,6 @@
       "source": "GitHub"
     },
     {
-      "name": "omowright",
-      "fullName": "code-yeongyu/omowright",
-      "url": "https://github.com/code-yeongyu/omowright",
-      "description": "Playwright, but built for AI agents: the browser API models already know, token-efficient a11y snapshots, and scroll-driven collection over the network. Zero-port CDP underneath.",
-      "language": "TypeScript",
-      "stars": 19,
-      "updatedAt": "2026-11-22T13:47:04Z",
-      "detectedAt": "2026-10-27T12:24:01Z",
-      "source": "GitHub"
-    },
-    {
       "name": "ghostfox",
       "fullName": "autokeren/ghostfox",
       "url": "https://github.com/autokeren/ghostfox",
@@ -701,9 +701,20 @@
       "url": "https://github.com/kinti/a11y-toolkit",
       "description": "The accessibility layer for AI coding agents, WCAG 2.2: static and rendered audits, contrast over images, blindfold usability testing, PDF/DOCX screening, caption quality, prefers-reduced-motion audit, evidence packs a human can sign. Zero deps",
       "language": "Python",
-      "stars": 17,
-      "updatedAt": "2026-11-25T14:17:18Z",
+      "stars": 18,
+      "updatedAt": "2026-11-26T03:05:54Z",
       "detectedAt": "2026-11-24T17:55:19Z",
+      "source": "GitHub"
+    },
+    {
+      "name": "a11yc",
+      "fullName": "jidaikobo-shibata/a11yc",
+      "url": "https://github.com/jidaikobo-shibata/a11yc",
+      "description": "Check accessibility of target page and generate accessibility evaluate page and policy.",
+      "language": "PHP",
+      "stars": 16,
+      "updatedAt": "2026-11-26T05:05:07Z",
+      "detectedAt": "2026-11-26T17:03:19Z",
       "source": "GitHub"
     },
     {
