@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T17:18:38Z",
+  "updatedAt": "2026-11-27T16:58:48Z",
   "errors": [],
   "items": [
     {
@@ -1065,6 +1065,48 @@
       "summary": "As a transformative technology in neuroengineering, brain-computer interfaces (BCIs) establish a direct communication pathway between the brain and external devices, independent of peripheral neuromuscular circuits by decoding neural activity and enabling bidirectional feedback. This capability fundamentally reshapes the paradigm of human-machine interaction. Based on the integration depth of neural interfaces, BCIs can be classified into invasive, semi-invasive, and non-invasive approaches, each supporting a range of applications from motor control to cognitive monitoring through multiple paradigms. Despite rapid technological advances, comp"
     },
     {
+      "title": "Memristors based on two-dimensional materials for low-power neuromorphic computing",
+      "url": "https://hal.science/tel-05885231v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-12-11T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "2D materials",
+        "Neuromorphic Engineering",
+        "Memristors",
+        "Matériaux 2D",
+        "Ingénierie neuromorphique",
+        "Memristors"
+      ],
+      "summary": "The rapid growth of computational demands and data generation, particularly in the artificial intelligence (AI) era, has intensified the search for more efficient computing and data storage technologies beyond conventional semiconductor devices, which are increasingly approaching their scaling limits. For this purpose, novel materials, device architectures, and integration approaches are being explored. Among these, memristive devices have emerged as a promising scalable and low-power alternative to conventional memory technologies. Within this context, two-dimensional materials (2DMs) have attracted significant interest due to their atomical"
+    },
+    {
+      "title": "Low-Power Transformer Accelerators for Efficient Edge AI in 18nm FD-SOI CMOS",
+      "url": "https://hal.science/tel-05885175v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-12-03T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Edge AI",
+        "Flash Attention",
+        "Addressable MAC Array",
+        "Systolic Array",
+        "Transformers",
+        "Co-processor",
+        "Flash Attention",
+        "Réseau de MAC Adressable",
+        "Réseau Systolique",
+        "Transformers"
+      ],
+      "summary": "The implementation of artificial intelligence (AI) applications in edge devices demands efficient, low-latency, and power-conscious computing solutions. Transformers, a powerful deep learning architecture originally developed for natural language processing, have demonstrated remarkable versatility and accuracy across various AI domains. However, their substantial computational and memory requirements pose significant challenges for deployment on resource-constrained edge hardware. This thesis explores the design, optimization, and implementation of Transformer models, architected around Flash Attention Mechanism, directly on chip to enable A"
+    },
+    {
       "title": "A reference architecture for an orchestrated collaborative MLOps: A ground-up design from literature combining human and LLM expertise",
       "url": "https://hal.science/hal-05699297v1",
       "source": "HAL",
@@ -1188,6 +1230,18 @@
         "Politiques du handicap"
       ],
       "summary": "Comment les politiques du handicap ont-elles évolué depuis un demi-siècle en France ? Quels sont leurs effets sur les personnes concernées qui constituent une minorité extrêmement nombreuse ? Cet ouvrage en propose un bilan sous forme de 19 fiches pratiques couvrant une diversité de secteurs thématiques (accessibilité, éducation, emploi, citoyenneté …) et d’enjeux transversaux (définition du handicap, lois-cadres, droit international et européen, discriminations, représentations du handicap…). En dépit de transformations du cadre d’action publique, les effets concrets sur les vies des personnes handicapées restent limités. Au-delà de la multi"
+    },
+    {
+      "title": "Quelle accessibilité pour les personnes en grande dépendance?",
+      "url": "https://hal.science/hal-05885355v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-26T00:00:00Z",
+      "domains": [
+        "Recherche & technologies"
+      ],
+      "keywords": [],
+      "summary": ""
     },
     {
       "title": "MERLoc: Robust Robot Localization in Dynamic Environments with Pose-Based Retrieval over 3D Gaussian Splatting References",
@@ -2284,6 +2338,23 @@
       ],
       "keywords": [],
       "summary": "Vision-Language-Action (VLA) models benefit from large, diverse datasets for robotic manipulation, yet collecting robot demonstrations remains costly. Recent work has explored egocentric videos as a source of supervision, primarily drawing on demonstrations of human-object interaction. We show that in-the-wild videos can improve robotic manipulation even when they contain no demonstrations of object manipulation. Specifically, camera motion recovered from these videos provides an additional source of motion supervision that complements robot demonstrations. Building on this finding, we introduce CamAct, which incorporates this camera-motion s"
+    },
+    {
+      "title": "Analyse des dynamiques des systèmes alimentaires territoriaux combinant les modèles de langue et les graphes de connaissance",
+      "url": "https://hal.science/hal-05883794v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-25T00:00:00Z",
+      "domains": [
+        "IA & LLM"
+      ],
+      "keywords": [
+        "Information extraction",
+        "Ontology",
+        "Knowlede Graph",
+        "Large Language Model"
+      ],
+      "summary": "Les progrès des grands modèles de langue et des modèles pré-entraînés ont révolutionné le traitement de la langue écrite et l'accès à l'information, permettant l'accomplissement de tâches telles que l'extraction d'informations, le résumé automatique et la génération de textes. Cependant, ils rencontrent encore des difficultés à raisonner et à assimiler pleinement les données qu'ils traitent. En contraste, les graphes de connaissances offrent une représentation structurée de l'expertise, palliant ainsi les lacunes des modèles pré-entraînés. L'intégration de ces deux approches est au cœur des recherches actuelles et de cette thèse. Dans cette é"
     },
     {
       "title": "OmniAct: One Policy, One Million Embodiments",
@@ -4496,6 +4567,19 @@
       "summary": "Modularity in deep neural networks has been proposed as a means of improving both interpretability and training by promoting disentangled representations and reducing redundancy. In this work, we study the emergence of modular structure through competition dynamics between groups of neurons during training. We introduce a method that (i) maintains near-baseline accuracy, (ii) induces usage-based modularity by sparsely routing inputs to neuron groups, and (iii) encourages specialization of these modules, such that their activations are correlated with input classes. We evaluate the proposed approach on ImageNet-100 and CIFAR-100 and show that "
     },
     {
+      "title": "Grand Prix de Science « Pierre de Fermat » 2026. Grand Prix Académique",
+      "url": "https://hal.science/hal-05883923v1",
+      "source": "HAL",
+      "type": "Publication scientifique",
+      "published": "2026-11-23T00:00:00Z",
+      "domains": [
+        "Robotique sociale & HRI",
+        "IA & LLM"
+      ],
+      "keywords": [],
+      "summary": "Grand Prix de Science « Pierre de Fermat » 2026. Grand Prix Académique de l'Académie du Languedoc. 26-11-23 Prix Fermat 2026 ACADEMIE DU LANGUEDOC Grand Prix scientifique Pierre de FERMAT attribué à Paul SAVES Salle des Illustres du Capitole Séance solennelle du 23 novembre 2026 Présenté par Michel CARRIER Président de l’Académie Monsieur le Maire, Monsieur le SP Monsieur le SG Mesdames, Messieurs les Académiciens, Monsieur l’Académicien Eric NEUHOFF Mesdames, Messieurs, Paul SAVES est né en 1997 à Toulouse. C’est donc un jeune chercheur que nous honorons aujourd’hui. Après l’obtention de son baccalauréat scientifique il devient en 2020 ingén"
+    },
+    {
       "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
       "url": "http://arxiv.org/abs/2611.27967v1",
       "source": "arXiv",
@@ -5298,101 +5382,6 @@
       ],
       "keywords": [],
       "summary": "While existing methods for reconstructing deformable object manipulation have made impressive progress, they typically represent a thin object with a single particle set that must serve two purposes at once: modeling bending, and resolving contact with the robot. To bridge this gap, we present HermiteTwin, a framework that reconstructs a physical digital twin of a thin deformable object from multiview video of a robot manipulating it. Our key idea is to represent deformation and contact separately, each at its own resolution. The object is simulated as a bicubic Hermite shell, a coarse grid of $C^1$ elements whose nodal positions and derivati"
-    },
-    {
-      "title": "EAGLE: Entity-Aware Grounding with Layered Evidence for High-Resolution Image Understanding",
-      "url": "http://arxiv.org/abs/2611.27264v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-20T08:03:40Z",
-      "authors": [
-        "Zhongjian Zou",
-        "Quan Qian"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Multimodal large language models (MLLMs) still struggle with fine-grained understanding of high-resolution images: attention heads vary in their reliability for grounding target entities and their attributes, while localized details are often disconnected from the broader scene context. We propose EAGLE (Entity-Aware Grounding with Layered Evidence for High-Resolution Image Understanding), a plug-in framework that jointly selects grounding signals and organizes hierarchical visual evidence. EAGLE employs a fine-grained dataset to screen visually-grounded attention heads, followed by entity-aware grounding to extract target-specific regions. I"
-    },
-    {
-      "title": "No Perfect Guardrail & No Perfect Guard: On the Decidability of Output Policies for Large Language Models",
-      "url": "http://arxiv.org/abs/2611.27260v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-20T08:01:29Z",
-      "authors": [
-        "Ahmed Amer",
-        "Loren Kinczel",
-        "Darrell D. E. Long"
-      ],
-      "domains": [
-        "IA & LLM"
-      ],
-      "keywords": [],
-      "summary": "Expecting guardrails to provide a general guarantee of safety fails to recognize the limits of computational enforcement and policy specification. We argue that promising such perfection is an ethical failure of precision, and that invoking it to abdicate responsibility is a moral failure. Guardrails can support responsible action, but cannot relieve researchers, developers, policymakers, or users of their obligations to examine what they claim, permit, and prevent. We establish a precise computational boundary. If every finite string is a possible output of a language model, a computable guard that blocks every forbidden output and passes ev"
-    },
-    {
-      "title": "AceVLN: Asynchronous Cloud Edge Deployment of VLNs via Latent Scheduling and Compensation",
-      "url": "http://arxiv.org/abs/2611.27255v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-20T08:00:34Z",
-      "authors": [
-        "Zihao Zheng",
-        "Hangyu Cao",
-        "Yulong Han",
-        "Xichang Wu",
-        "Zhihao Mao",
-        "Maoliang Li",
-        "Jiayu Chen",
-        "Hailong Zou"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Cloud--edge deployment enables asynchronous dual-system VLN on resource-constrained robots, but inference and communication delays cause latent mismatch and navigation errors. Existing adaptation methods reuse historical guidance but cannot provide updated navigation information when it becomes inadequate. We propose AceVLN, a training-free framework for active latent refresh and edge-side compensation. Our analysis reveals that action-relevant mismatch is concentrated in a compact Critical Subspace and can be tracked through fast-system feature drift. Critical Feature Drift Entropy reflects navigation sensitivity and guides adaptive refresh,"
-    },
-    {
-      "title": "LiDAR Signals for Robot Locomotion: Spherical Range Images Enable Robust Sim-to-Real Transfer",
-      "url": "http://arxiv.org/abs/2611.27223v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-20T07:22:07Z",
-      "authors": [
-        "Nian Liu",
-        "Xinyi Tong",
-        "Ming Ren",
-        "Long Ye",
-        "Zhaofeng He"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "Existing legged-locomotion systems commonly rely on depth images or online elevation maps. However, depth-based policies suffer from perceptual sim-to-real discrepancies due to imperfect depth sensor modeling, while map-based approaches are vulnerable to drift and misalignment. LiDAR offers direct measurements of the surrounding geometry, but raw LiDAR scans lack a compact, structured representation for high-frequency control. We propose a LiDAR perception pipeline that maintains perceptual consistency across simulation and reality through sensing- and representation-level alignment. At the sensor level, we recover frame-wise angular sampling"
-    },
-    {
-      "title": "Bel: Step-Level Policy Improvement of Visual Agents Without Training",
-      "url": "http://arxiv.org/abs/2611.27222v1",
-      "source": "arXiv",
-      "type": "Preprint",
-      "published": "2026-11-20T07:21:43Z",
-      "authors": [
-        "Jiajun Fan",
-        "Ziwen Wang",
-        "Zhaoyu Zhu",
-        "Changyi Yang",
-        "Neil He",
-        "Chaoran Cheng",
-        "Ge Liu"
-      ],
-      "domains": [
-        "Recherche & technologies"
-      ],
-      "keywords": [],
-      "summary": "A visual agent acts on what it sees: it taps and types on a screen, or points on a camera image to show a robot where to act. One wrong step can fail its task, yet the right action is often among its own samples, passed over by its greedy decode. Choosing it is a visual judgment, since an action is best judged where it acts, not by its text or coordinates alone: as text, a tap is two numbers; drawn on the screen, it is the Post button of an empty draft. We find that this is decisive: given the screenshot and a tap's coordinates, a decision model chooses among GUI-R1-3B's samples significantly worse on average than when the tap is drawn where "
     }
   ]
 }
