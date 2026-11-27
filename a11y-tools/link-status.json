@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-26T17:03:58Z",
+  "checkedAt": "2026-11-27T16:48:52Z",
   "links": {
     "https://ablegamers.org/apx/": {
-      "state": "redirected",
+      "state": "ok",
       "code": 200,
-      "finalUrl": "https://ablegamers.org/our-programs/accessibility-unlocked/apx/"
+      "finalUrl": "https://ablegamers.org/apx/"
     },
     "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/": {
       "state": "ok",
